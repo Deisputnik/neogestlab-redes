@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """CONTROL DE AUDIO (DIRECTIVA DE VÍDEO 14/11/2026). Uso: python3 control_audio.py video.mp4 guion.json [--salida control_audio.json]
 Transcribe el audio final con faster-whisper y lo compara con la voz del guion; mide silencios con silencedetect (-45 dB, 0,6 s).
-RECHAZO (exit 1): duración > 30 s · silencio > 0,6 s DENTRO de la voz · palabra distinta del guion (salvo homófonos) · «ehm» ·
-falta el giro (escena remate) · sin atribución musical si el post.json la exige. Los silencios al inicio/fin del vídeo no cuentan.
+RECHAZO (exit 1): duración > 30 s (70 s si el guion tiene "set":"salon", biblia v5.2) · silencio > 0,6 s DENTRO de la voz ·
+palabra distinta del guion (salvo homófonos) · «ehm» · falta el giro (escena remate) · sin atribución musical si el
+post.json la exige. Los silencios al inicio/fin del vídeo no cuentan.
 Si falla, el reel NO se publica: publicar_gh.py anota el motivo en control_audio.json y lo deja sin publicar."""
 import json, os, re, subprocess, sys, unicodedata
 
 SIL_DB, SIL_S, DUR_MAX = -45, 0.6, 30.0
+DUR_MAX_SALON = 70.0  # 21/11/2026: biblia v5.2 ("El Jambo que sabe" en set "salon") pasa a sitcom de 45-70 s; ver control()
 LEXICO_RUTA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lexico_control.json")
 
 
@@ -256,9 +258,14 @@ def control(video, guion, post=None, tramos=None, wavs=None):
     g = json.load(open(guion, encoding="utf-8")) if isinstance(guion, str) else guion
     bloqueos, avisos = [], []
     d = dur(video)
-    if d > DUR_MAX: bloqueos.append(f"dura {d:.1f} s (máximo {DUR_MAX:.0f})")
+    # 21/11/2026: gen_episodios.py (reparto v5.2) pone el set de El Jambo en "salon" (biblia v5.2: sitcom
+    # de 45-70 s, ya no 15-25 s). DUR_MAX seguía en 30 s de la versión vieja y rechazaba todo episodio nuevo.
+    dur_max = DUR_MAX_SALON if g.get("set") == "salon" else DUR_MAX
+    if d > dur_max: bloqueos.append(f"dura {d:.1f} s (máximo {dur_max:.0f})")
     esc = g.get("escenas", [])
-    guion_txt = " ".join(re.sub(r"\*", "", e.get("voz", "")) for e in esc if e.get("voz"))
+    # 21/11/2026: gen_episodios.py escribe el texto de cada escena en la clave "v" (no "voz"); con "voz" el
+    # guion de referencia salía siempre vacío y toda la transcripción real se marcaba como "sobrante".
+    guion_txt = " ".join(re.sub(r"\*", "", e.get("v", "")) for e in esc if e.get("v"))
     pal = transcribir(video)
     texto = texto_de(pal)
     modo = str(g.get("modo") or "").lower()
@@ -267,7 +274,9 @@ def control(video, guion, post=None, tramos=None, wavs=None):
         # Hay escenas (reel generado por el motor de dibujo): se compara la voz con el guion palabra a palabra.
         # 21/11/2026 (Calidad, orden del dueño «sin cuellos de botella»): el giro (escena «remate») solo se exige en la serie
         # de humor (modo sketch); las promos de app (ANTES/DESPUÉS) no tienen «remate» y se bloqueaban todas en falso.
-        if modo in ("", "sketch") and not any(e.get("estilo") == "remate" for e in esc):
+        # 21/11/2026: la clave del tipo de escena es "e" (p. ej. "remate"), no "estilo" (gen_episodios.py);
+        # con "estilo" esta comprobación no encontraba nunca el giro y bloqueaba todos los episodios nuevos.
+        if modo in ("", "sketch") and not any(e.get("e") == "remate" for e in esc):
             bloqueos.append("falta el giro (escena «remate»)")
         faltan, sobran = verificar(guion_txt, texto)
         malas = [w for w in sobran if w in ("ehm", "eh", "em", "mm", "hmm")]
