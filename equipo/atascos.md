@@ -1,16 +1,15 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-21 23:20 UTC · 27 piezas paradas.
+Actualizado: 2026-11-21 23:22 UTC · 26 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 3, Creador 21, Mejora 1, Supervisor 2
+Por rol: Calidad 3, Creador 21, Mejora 1, Supervisor 1
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
 | URGENTE (hora pasada) | 337_appcc_facil_demo_reel | 2026-11-21T11:40:00+01:00 | rechazada | Creador | Bloqueo A3: en el fotograma ~t=10.7s la propia web grabada muestra el texto «Se integra con Gestión Integral 7D»; el _comprobado del post.json prohíbe explícitamente afirmar «integración con 7D» para APPCC Fácil. No se puede publicar un reel que capture en pan | Centro/Creador: volver a grabar el recorrido de la web evitando encuadrar o recortando el bloque de texto «Se integra con Gestión Integral 7D» (zoom, crop o cambiar el punto de scroll de esa pantalla). Aprovechar el re-render para reestructurar en ANTES/DESPUÉ |
 | URGENTE (hora pasada) | 328_jambo_inmobiliaria_decima_visita | 2026-11-21T19:00:00+01:00 | render_fallido | Mejora | KeyError: 'escenas' | si el guion no tiene escenas es un episodio del estudio: poner video_externo; si no, arreglar el generador |
 | URGENTE (hora pasada) | 351_jambo_wifi_robado | 2026-11-21T21:15:00+01:00 | sin_nota | Calidad | renderizada hace 1.7 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| URGENTE (hora pasada) | 352_jambo_perro_ladra | 2026-11-21T21:30:00+01:00 | aprobada_vencida | Supervisor | aprobada y con la hora pasada sin publicar | mirar registro.log (token, cuota) y lanzar ciclo.yml; si no hay hueco, mover «cuando» |
-| URGENTE (hora pasada) | 353_jambo_coche_mal_aparcado | 2026-11-21T21:45:00+01:00 | sin_nota | Calidad | renderizada hace 0.2 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| URGENTE (hora pasada) | 353_jambo_coche_mal_aparcado | 2026-11-21T21:45:00+01:00 | sin_nota | Calidad | renderizada hace 0.3 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 24 h | 108_cobrar_facturas_reel | 2026-11-22T17:10:00+01:00 | sin_render | Creador | episodio del estudio sin vídeo: nadie lo ha renderizado en Neogest Studio | renderizar en Neogest Studio (herramientas/estudio/LEEME.md) y poner video_externo + renderizado:false |
 | sale en < 24 h | 601_bar_pedido_web_reel | 2026-12-31T11:50:00+01:00 | sin_nota | Calidad | renderizada hace 8.1 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 72 h | 107_catalogo_stock_reel | 2026-11-23T17:10:00+01:00 | sin_render | Creador | episodio del estudio sin vídeo: nadie lo ha renderizado en Neogest Studio | renderizar en Neogest Studio (herramientas/estudio/LEEME.md) y poner video_externo + renderizado:false |
