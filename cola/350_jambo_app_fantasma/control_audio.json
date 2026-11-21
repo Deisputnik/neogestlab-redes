@@ -1,10 +1,14 @@
 {
-  "aprobado": true,
-  "duracion_s": 38.6,
-  "bloqueos": [],
+  "aprobado": false,
+  "duracion_s": 38.57,
+  "bloqueos": [
+    "dura 38.6 s (máximo 30)",
+    "falta el giro (escena «remate»)",
+    "voz distinta del guion: faltan [], sobran ['iyo', 'cindy', 'esta', 'app', 'te', 'paga', 'el', 'triple', 'por', 'cada', 'reparto', 'de', 'verdad', 'jambo', 'la', 'ultima', 'vez', 'que', 'me', 'prometiste', 'algo', 'gratis', 'acabe', 'pagando', 'yo', 'la', 'fianza', 'del', 'taladro', 'pues', 'instalala', 'ya', 'iyo', 'que', 'asi', 'dejamos', 'de', 'pagarte', 'las', 'horas', 'extra', 'rosa', 'en', 'este', 'barrio', 'hasta', 'las', 'apps', 'cobran', 'comision', 'las', 'unicas', 'gratis', 'sois', 'vosotros', 'los', 'jefes', 'adverificada', 'sin', 'comision', 'oculta', 'y', 'con', 'contrato', 'de', 'reparto', 'firmado', 'lo', 'gratis', 'que', 'promete', 'mucho', 'cuesta', 'caro'] (rehacer esas frases)"
+  ],
   "avisos": [],
-  "transcripcion": "¡Illo, Sindy! Esta app te paga el triple por cada reparto, ¡de verdad! Jambo, la última vez que me prometiste algo gratis, acabé pagando yo la fianza del taladro. ¡Pues instálala ya, illo, que así dejamos de pagarte las horas extra! Rosa, en este barrio hasta las apps cobran comisión. Las únicas gratis sois vosotros, los jefes. App verificada. Sin comisión oculta y con contrato de reparto firmado. Lo gratis que promete mucho, cuesta caro.",
-  "guion": "tmp_jb/eps_349_350.json",
+  "transcripcion": "Iyo, Cindy. Esta APP te paga el triple por cada reparto, ¿de verdad? Jambo, la última vez que me prometiste algo gratis, acabé pagando yo la fianza del taladro. Pues instalala ya, Iyo, que así dejamos de pagarte las horas extra. Rosa, en este barrio hasta las apps cobran comisión. Las únicas gratis sois vosotros, los jefes. Adverificada. Sin comisión oculta y con contrato de reparto firmado. Lo gratis que promete mucho. Cuesta caro.",
+  "guion": "",
   "lufs": -14.3,
   "pico_dbfs": -1.3
 }

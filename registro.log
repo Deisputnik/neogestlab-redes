@@ -1,16 +1,3 @@
-2026-11-20 00:02  Voz: silencios recortados por frase (s): [0.12, 0.12, 0.13, 0.13, 0.09, 0.13, 0.12]
-2026-11-20 00:02  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.7), np.float64(1.8), np.float64(3.6), np.float64(3.7), np.float64(3.0), np.float64(4.3), np.float64(2.7)]
-2026-11-20 00:02  Voz: alineación palabra a palabra (small, 15.3 s): 7/7 frases
-2026-11-20 00:03  Mezcla: voz -16.3 LUFS, música -22.0 LUFS (con ducking -25.1), la música baja 6.0 dB (p90) bajo la voz, ratio 2.309; máster -16.17 -> -13.9 LUFS, pico -1.3 dBFS; huecos de voz: []
-2026-11-20 00:03  Control de audio: OK; duración 18.17 s
-2026-11-20 00:03  327_jambo_black_friday_70: renderizado con voz y subido a la release 'cola'
-2026-11-20 00:03  Voz con edge-tts: 7 frases en 5 s
-2026-11-20 00:03  Voz: silencios recortados por frase (s): [0.12, 0.14, 0.13, 0.13, 0.13, 0.13, 0.14]
-2026-11-20 00:03  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.9), np.float64(0.6), np.float64(3.3), np.float64(4.7), np.float64(4.5), np.float64(4.6), np.float64(3.5)]
-2026-11-20 00:03  Voz: alineación palabra a palabra (small, 15.4 s): 7/7 frases
-2026-11-20 00:04  Mezcla: voz -16.3 LUFS, música -22.4 LUFS (con ducking -25.1), la música baja 6.0 dB (p90) bajo la voz, ratio 2.328; máster -16.09 -> -14.0 LUFS, pico -1.4 dBFS; huecos de voz: []
-2026-11-20 00:04  Control de audio: OK; duración 18.7 s
-2026-11-20 00:04  315_ias_oficina_ep19_desayuno: renderizado con voz y subido a la release 'cola'
 2026-11-20 00:16  325_jambo_whatsapp_23_47: publicando…
 2026-11-20 00:16  325_jambo_whatsapp_23_47: YouTube publicado https://youtube.com/shorts/SHkZYIl4ayc
 2026-11-20 00:17  325_jambo_whatsapp_23_47: Facebook publicado https://www.facebook.com/reel/2738332399946163
@@ -598,3 +585,16 @@ KeyError: 'escenas'
 2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:28  316_ias_oficina_ep20_pedido: publicando…
+2026-11-21 22:28  316_ias_oficina_ep20_pedido: fallo al publicar 1/3: gh release download cola: release not found
+2026-11-21 22:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:28  Control de audio: FALLA dura 41.8 s (máximo 30); falta el giro (escena «remate»); voz distinta del guion: faltan [], sobran ['jambo', 'se', 'llevo', 'mi', 'taladro', 'como', 'lo', 'del', 'sabado', 'pero', 'con', 'herramientas', 'pues', 'que', 'te', 'lo', 'devuelva', 'ya', 'hillo', 'y', 'asi', 'dejas', 'de', 'darme', 'la', ; duración 41.8 s
+2026-11-21 22:28  349_jambo_vecino_taladro: control de audio del vídeo externo: aprobado=False LUFS=-14.4 pico=-1.4
+2026-11-21 22:28  349_jambo_vecino_taladro: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-21 22:29  Control de audio: FALLA dura 38.6 s (máximo 30); falta el giro (escena «remate»); voz distinta del guion: faltan [], sobran ['iyo', 'cindy', 'esta', 'app', 'te', 'paga', 'el', 'triple', 'por', 'cada', 'reparto', 'de', 'verdad', 'jambo', 'la', 'ultima', 'vez', 'que', 'me', 'prometiste', 'algo', 'gratis', 'acabe', 'pagando',; duración 38.57 s
+2026-11-21 22:29  350_jambo_app_fantasma: control de audio del vídeo externo: aprobado=False LUFS=-14.3 pico=-1.3
+2026-11-21 22:29  350_jambo_app_fantasma: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-21 22:29  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:29  316_ias_oficina_ep20_pedido: publicando…
+2026-11-21 22:29  316_ias_oficina_ep20_pedido: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
