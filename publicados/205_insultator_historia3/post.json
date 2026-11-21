@@ -1,0 +1,28 @@
+{
+ "tipo": "historia",
+ "texto": "",
+ "cuando": "2026-11-13T15:30:00+01:00",
+ "renderizado": "2026-11-12T15:40:44+00:00",
+ "asset": "205_insultator_historia3.mp4",
+ "medio": "video",
+ "duracion_s": 10.3,
+ "formato": "pregunta",
+ "musica": {
+  "estilo": "house",
+  "bpm": 128.0,
+  "tono": 3,
+  "origen": "generada por código (sin licencias de terceros)"
+ },
+ "audio": {
+  "lufs_integrados": -13.9,
+  "pico_real_dbtp": -5.6,
+  "lra_lu": 0.1,
+  "medido_con": "ffmpeg ebur128=peak=true"
+ },
+ "app": "Insultator",
+ "publico": "Ocio y humor",
+ "fuentes": [
+  "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto «Insultator»: demo[] (capturas reales de la demo y sus textos), hechos_verificados y prohibido_afirmar (consulta 8/11/2026)."
+ ],
+ "origen": "herramientas/demo_app.py"
+}

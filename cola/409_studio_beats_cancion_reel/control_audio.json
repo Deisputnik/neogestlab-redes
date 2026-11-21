@@ -1,0 +1,10 @@
+{
+  "aprobado": true,
+  "duracion_s": 17.9,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['tarjeta'], sobran ['tarjetas'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Tu canción en cuatro pasos Eliges estilo, tono y modo Pulsas generar beat Terminar canción, mezcla y máster automáticos Y la descargas en MP3 Mándaselo a quien haga música Pide tu prueba gratuita, sin tarjetas, sin datos bancarios y sin compromiso",
+  "guion": "Tu canción en cuatro pasos. Eliges estilo, tono y modo. Pulsas Generar beat. Terminar canción: mezcla y máster automáticos. Y la descargas en MP3. Mándaselo a quien haga música. Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso."
+}

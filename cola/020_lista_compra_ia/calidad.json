@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 87,
+  "motivos": [
+    "H5/A1 (voz con errores): en el segundo tramo la voz dice «Fego la lista tal cual...» en vez de «Pego la lista tal cual...» (confirmado por control_audio.json: transcripción whisper trae 'fego' donde el guion dice 'pego'; no es variación de 1-2 letras, es una palabra inexistente en español y se nota como fallo de pronunciación real, no solo una errata de reconocimiento). Esto hace que suene a voz de síntesis defectuosa (máximo 89 por 'suena a IA').",
+    "Aviso secundario de control_audio: 'tarjeta' sale como 'tarjetas' en el cierre; más leve, pero refuerza el mismo patrón de imprecisión de la voz en esta toma."
+  ],
+  "como_arreglarlo": "CENTRO/motor de voz: regenerar solo el audio de la escena 2 (texto 'Pego la lista tal cual, toda desordenada...') y revisar la pronunciación de 'tarjeta' en el cierre; no hace falta tocar guion.json ni post.json (el texto ya es correcto, es un fallo de síntesis de voz). Marcar renderizado:false y relanzar el ciclo para que regenere audio+vídeo. Si este patrón de consonante inicial mal pronunciada ('p'→'f') se repite en otras piezas del mismo motor, pedirlo como URGENTE en equipo/peticiones_mejora.md en vez de ir pieza a pieza.",
+  "fecha": "2026-11-21T17:28:23Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T14:29:55+00:00"
+}

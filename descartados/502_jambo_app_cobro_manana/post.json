@@ -1,0 +1,38 @@
+{
+  "tipo": "reel",
+  "texto": "«Te pago mañana» lleva ya tres semanas siendo mañana. La Jupillo manda un enlace y cobra en un minuto. Humor negro de ficción.\n¿Cuánto llevas esperando un cobro? Cuéntalo en comentarios.\nEn Gestión Integral 7D la factura en PDF lleva enlace de pago: tarjeta, Bizum (si está activo) o transferencia.\nMándaselo a quien cobra a base de insistir.\n#humornegro #autonomos #pymes #cobros #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: \"Sneaky Snitch\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+  "cuando": "2026-11-22T16:40:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "autónomo / servicios",
+  "formula": "fórmula vídeos 14/11 (rehecho 15/11)",
+  "app": "Gestión Integral 7D",
+  "renderizado": false,
+  "_fuentes": [],
+  "_nota_creador": "15/11/2026 Creador (pasada extra, orden del dueño): guion rehecho con la fórmula vigente tras el rechazo de Calidad; renderizado:false para que el ciclo lo renderice de nuevo. Calidad: reevaluar tras el render.",
+  "comentario_fijado": "¿Cuánto llevas esperando un cobro? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Mañana: buscas el número de serie con linterna",
+  "portada_ms": 0,
+  "motor_voz": "edge",
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Sneaky Snitch",
+    "autor": "Kevin MacLeod",
+    "licencia": "CC BY 4.0",
+    "url": "https://incompetech.com/music/royalty-free/",
+    "archivo": "Sneaky_Snitch.mp3",
+    "bpm": 87.6
+  },
+  "_control_audio_fallo": {
+    "fecha": "2026-11-15T21:33:14+00:00",
+    "bloqueos": [
+      "voz distinta del guion: faltan [], sobran ['a'] (rehacer esas frases)"
+    ],
+    "guion_md5": "5852931e3da11fd6eb42c8f96c783ecc"
+  }
+}

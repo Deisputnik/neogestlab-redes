@@ -1,0 +1,36 @@
+{
+  "tipo": "reel",
+  "texto": "Que la IA te prepare la factura, bien. Que la envíe sin que la mires, no tanto. La Jupillo lo recuerda. Humor negro de ficción.\n¿Tú firmas sin mirar? Cuéntalo en comentarios.\nEn Gestión Integral 7D, los agentes de IA solo proponen: tú decides.\nMándaselo a quien se fía de la IA a ciegas.\n#humornegro #autonomos #pymes #facturacion #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: \"Sneaky Snitch\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+  "cuando": "2026-11-19T13:40:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "autónomo / oficina",
+  "formula": "fórmula vídeos 14/11 (rehecho 15/11)",
+  "app": "Gestión Integral 7D",
+  "renderizado": "2026-11-15T20:20:39+00:00",
+  "_fuentes": [],
+  "_nota_creador": "15/11/2026 Creador (pasada extra, orden del dueño): guion rehecho con la fórmula vigente tras el rechazo de Calidad; renderizado:false para que el ciclo lo renderice de nuevo. Calidad: reevaluar tras el render.",
+  "comentario_fijado": "¿Tú firmas sin mirar? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Mañana: «un cambio pequeñito» por decimocuarta vez",
+  "portada_ms": 0,
+  "motor_voz": "edge",
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Sneaky Snitch",
+    "autor": "Kevin MacLeod",
+    "licencia": "CC BY 4.0",
+    "url": "https://incompetech.com/music/royalty-free/",
+    "archivo": "Sneaky_Snitch.mp3",
+    "bpm": 87.6
+  },
+  "asset": "505_jambo_app_ia_propone.mp4",
+  "control_audio": {
+    "aprobado": true,
+    "duracion_s": 18.87
+  }
+}

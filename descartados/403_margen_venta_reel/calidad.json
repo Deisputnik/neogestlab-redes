@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 87,
+  "motivos": [
+    "Isotipo nuevo «N» de circuitos del kit 2026 confirmado en el cierre (t=18.96s) junto con \"By Neogest Lab\": el bloqueo anterior (B11/v10) queda resuelto.",
+    "B4 / _comprobado: el post.json y el campo _comprobado afirman que los datos de ejemplo están \"rotulados en pantalla (EJEMPLO · datos inventados)\", pero en los 3 fotogramas inspeccionados (t=1.69s, 10.53s, 18.96s) no aparece ese rótulo en ningún momento; solo se ve la cifra del gancho (4,52€) y las etiquetas de personajes (EL JAMBO, LA TRÁMITES). No puedo confirmar por imagen que la cifra inventada esté marcada como ejemplo, lo que exige el estándar para datos ficticios. Sin esa confirmación visual, lo trato como no verificado.",
+    "Audio y formato correctos (LUFS -14.11, pico -1.28 dB, 21.07s, sin silencios >0.6s, whisper coincide con el guion), pero el bloqueo de B4 por imagen impide aprobar."
+  ],
+  "como_arreglarlo": "Creador: confirmar en qué segundo exacto aparece el rótulo \"EJEMPLO · datos inventados\" (o similar) junto al sello de la cifra 4,52€/6,17€, y si no está en pantalla, añadirlo de forma legible (no tapado, dentro de y=500-1450) en el fotograma del sello. Re-renderizar si hace falta un cambio de render; si solo falta confirmar que ya está (por ejemplo entre los segundos 12-17 que no se capturaron), pedir al Creador que indique el timestamp exacto para una nueva inspección puntual antes de aprobar.",
+  "fecha": "2026-11-21T13:06:00Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T13:04:00+00:00"
+}

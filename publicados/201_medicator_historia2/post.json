@@ -1,0 +1,28 @@
+{
+ "tipo": "historia",
+ "texto": "",
+ "cuando": "2026-11-10T15:30:00+01:00",
+ "renderizado": "2026-11-09T17:52:11+00:00",
+ "asset": "201_medicator_historia2.mp4",
+ "medio": "video",
+ "duracion_s": 10.1,
+ "formato": "antes_despues",
+ "musica": {
+  "estilo": "pop",
+  "bpm": 107.0,
+  "tono": 1,
+  "origen": "generada por código (sin licencias de terceros)"
+ },
+ "audio": {
+  "lufs_integrados": -13.9,
+  "pico_real_dbtp": -3.4,
+  "lra_lu": 0.9,
+  "medido_con": "ffmpeg ebur128=peak=true"
+ },
+ "app": "MEDICATOR",
+ "publico": "Mayores y quien los cuida",
+ "fuentes": [
+  "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto «MEDICATOR»: demo[] (capturas reales de la demo y sus textos), hechos_verificados y prohibido_afirmar (consulta 8/11/2026)."
+ ],
+ "origen": "herramientas/demo_app.py"
+}

@@ -1,0 +1,15 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py (tmp_jb/eps_349_350.json) a partir del reparto v5.2 (Neogest Studio); el vídeo es video_externo.",
+  "motor": "neogest-studio",
+  "episodio": "350_jambo_app_fantasma",
+  "set": "salon",
+  "moraleja": "Lo gratis que promete mucho, cuesta caro",
+  "escenas": [
+    {"e": "gancho", "h": "jambo", "v": "¡Illo, Sindy! Esta app te paga el triple por cada reparto, ¡de verdad!"},
+    {"e": "gag", "h": "sindy", "v": "Jambo, la última vez que me prometiste algo gratis, acabé pagando yo la fianza del taladro."},
+    {"e": "gag", "h": "rosa", "v": "¡Pues instálala ya, illo, que así dejamos de pagarte las horas extra!"},
+    {"e": "gag", "h": "sindy", "v": "Rosa, en este barrio hasta las apps cobran comisión. Las únicas gratis sois vosotros, los jefes."},
+    {"e": "remate", "h": "neo", "v": "App verificada. Sin comisión oculta y con contrato de reparto firmado.", "sello": "APP VERIFICADA"},
+    {"e": "cierre", "h": "neo", "v": "Lo gratis que promete mucho, cuesta caro."}
+  ]
+}

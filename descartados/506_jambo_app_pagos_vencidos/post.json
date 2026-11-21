@@ -1,0 +1,38 @@
+{
+  "tipo": "reel",
+  "texto": "Se te olvidó pagar la luz. Otra vez. No eres un desastre: tienes la cabeza en todo. Humor negro de ficción.\n¿Qué recibo se te olvida siempre pagar? Cuéntalo en comentarios.\nGH PLUS avisa de los pagos vencidos y los marcas con «Marcar pagado».\nMándaselo a quien siempre paga el último día.\n#humornegro #finanzaspersonales #hogar #recibos #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+  "cuando": "2026-11-20T13:40:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "particular / hogar",
+  "formula": "fórmula vídeos 14/11 (rehecho 15/11)",
+  "app": "GH PLUS",
+  "renderizado": false,
+  "_fuentes": [],
+  "_nota_creador": "15/11/2026 Creador (pasada extra, orden del dueño): guion rehecho con la fórmula vigente tras el rechazo de Calidad; renderizado:false para que el ciclo lo renderice de nuevo. Calidad: reevaluar tras el render.",
+  "comentario_fijado": "¿Qué recibo se te olvida siempre pagar? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Mañana: cobras la nómina y no sabes adónde va",
+  "portada_ms": 0,
+  "motor_voz": "edge",
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Life of Riley",
+    "autor": "Kevin MacLeod",
+    "licencia": "CC BY 4.0",
+    "url": "https://incompetech.com/music/royalty-free/",
+    "archivo": "Life_of_Riley.mp3",
+    "bpm": 101.3
+  },
+  "_control_audio_fallo": {
+    "fecha": "2026-11-15T20:36:26+00:00",
+    "bloqueos": [
+      "voz distinta del guion: faltan ['be'], sobran ['b'] (rehacer esas frases)"
+    ],
+    "guion_md5": "ab7f7cc568aab3351b67a1c3a2c24fc8"
+  }
+}

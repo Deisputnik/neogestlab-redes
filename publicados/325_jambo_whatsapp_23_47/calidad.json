@@ -1,0 +1,8 @@
+{
+  "aprobado": true,
+  "nota": 91,
+  "comentario": "Render correcto con el motor vigente (no el sketch retirado que motivó el rechazo del 15/11). 18,9 s, 1080x1920, LUFS -14.04, pico -1.39 dB, silencio único de 0.6 s en el cierre (límite). Whisper coincide con el guion sin bloqueos ni avisos. Estructura de 5 tiempos completa: gancho con hora concreta, escalada en 3 golpes (presupuesto, factura, devolución), giro (chat equivocado) y cierre con pregunta fácil de contestar. Post con CTA único, atribución musical correcta, aviso de ficción/IA, comentario fijado y avance del siguiente episodio. Sin muletillas de IA ni afirmaciones no verificadas (post aclara que es ficción sin cifras de estudio).",
+  "fecha": "2026-11-19T23:14:43Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-19T22:49:30+00:00"
+}

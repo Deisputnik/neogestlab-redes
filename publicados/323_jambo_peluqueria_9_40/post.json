@@ -1,0 +1,48 @@
+{
+  "tipo": "reel",
+  "texto": "La de las 9 llega a las 9:40. Siempre. La Jupillo ha encontrado el truco. Humor negro de ficción.\n¿Cuánto esperas tú a quien llega tarde? Cuéntalo en comentarios.\nMándaselo a quien siempre espera a la clienta que llega tarde.\n#peluqueria #humornegro #agenda #autonomos #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-17T18:00:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "peluquería",
+  "formula": "fórmula vídeos 14/11 (rehecho 15/11)",
+  "_fuentes": [],
+  "_comprobado": "Sin cifras de estudio: solo cifras del guion de ficción; no se afirma ningún dato real.",
+  "_nota_creador": "15/11/2026 Creador (pasada extra, orden del dueño): guion rehecho con la fórmula vigente tras el rechazo de Calidad; renderizado:false para que el ciclo lo renderice de nuevo. Calidad: reevaluar tras el render.",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Cuánto esperas tú? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Mañana: tu ruta de visitas está en papel",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "comedia (biblioteca del estudio)",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "fuente": "Neogest Studio, herramientas/estudio/LEEME.md"
+  },
+  "renderizado": "2026-11-17T08:58:10+00:00",
+  "asset": "323_jambo_peluqueria_9_40.mp4",
+  "control_audio": {
+    "aprobado": true,
+    "duracion_s": 16.67
+  },
+  "motor": "neogest-studio",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/60ecacb45_323-master.mp4",
+  "youtube": {
+    "titulo": "Peluquería: cita a las 9:40 y la agenda en papel #Shorts",
+    "descripcion": "Peluquería: cita a las 9:40 y la agenda en papel. El Jambo, serie de humor de ficción.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "Shorts",
+      "humor",
+      "autonomos",
+      "neogestlab",
+      "peluqueria"
+    ]
+  },
+  "_movido_calidad": "16/11 15:44 UTC: de 16/11 18:45 a 17/11 09:40 (nota 88; máster corregido en el estudio sin subir) · 17/11 10:45 UTC: 09:40 ya vencida sin nota; aprobado y movido a 18:00"
+}

@@ -1,0 +1,40 @@
+{
+  "tipo": "reel",
+  "texto": "Jambo le vende a Sindy una app que \"paga el triple\". Spoiler: ya la conocemos. Rosa, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: lo gratis que promete mucho, cuesta caro.\n¿Te ha intentado colar alguien una app milagrosa? Cuéntalo.\nMándaselo a quien se cree todo lo que ve en el grupo de vecinos.\n#humornegro #estafasdigitales #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-21T21:00:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "formula": "El Jambo que sabe v5.2 (reparto Rosa/Sindy/Jambo/Neo, casa-salón, Neogest Studio)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales; no requiere fuente.",
+  "_nota_creador": "21/11/2026 Creador: segundo episodio del formato casa/salón con Jambo Reseco y recuerdo/callback al 349 (menciona la fianza del taladro). Renderizado con gen_episodios.py v5.2 + render.mjs --hoja: 38.6 s, -14.3 LUFS, pico -1.3 dBFS. Verificado por fotogramas: set salón real, tags correctos, créditos REPARTO. Calidad: evaluar de cero.",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Te la han intentado colar a ti también? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: nuevo lío con Jambo de vecino",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "youtube": {
+    "titulo": "La app milagrosa que vende el vecino #Shorts",
+    "descripcion": "Humor negro de ficción: Jambo intenta colarle a Sindy una app que 'paga el triple', hasta que Neo comprueba el contrato. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "estafasdigitales",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/64d928a04_350_jambo_app_fantasma.mp4"
+}

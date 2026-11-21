@@ -1,0 +1,8 @@
+{
+  "aprobado": true,
+  "nota": 91,
+  "comentario": "Re-render tras caducidad del 21/11 revisado de nuevo: 18,87 s, 1080x1920, -14,25 LUFS, pico -1,36 dB, sin silencios por encima del máximo, whisper = guion sin bloqueos ni avisos. Isotipo nuevo «N» de circuitos visible en todos los fotogramas incluido el cierre (sin logo antiguo NL). Gancho legible y audible en el fotograma 0 sobre el aviso rojo del seguro (cumple B1/B7). Afirmaciones (rojo/naranja, botón «Marcar pagado», dinero disponible = saldo menos pendientes) respaldadas por _comprobado citando hechos_verificados de GH PLUS y código fuente (cumple A3). Post con «nuestra app», modo demo con datos ficticios declarado, frase para enviar, comentario fijado y avance del siguiente, música con atribución correcta sin duplicar, cierre conforme a directiva. Texto legible, sin datos reales de terceros, sin marcas ajenas. Único detalle menor: 18,87 s queda algo por debajo del rango 20-45 s de la serie apps (v6); no es bloqueo duro pero resta en retención/claridad, de ahí 91 y no más.",
+  "fecha": "2026-11-21T19:29:00Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T15:00:15+00:00"
+}

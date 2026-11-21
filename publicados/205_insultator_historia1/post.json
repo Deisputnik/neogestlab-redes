@@ -1,0 +1,28 @@
+{
+ "tipo": "historia",
+ "texto": "",
+ "cuando": "2026-11-09T21:30:00+01:00",
+ "renderizado": "2026-11-08T17:22:08+00:00",
+ "asset": "205_insultator_historia1.mp4",
+ "medio": "video",
+ "duracion_s": 9.7,
+ "formato": "sabias",
+ "musica": {
+  "estilo": "trap",
+  "bpm": 136.0,
+  "tono": 3,
+  "origen": "generada por código (sin licencias de terceros)"
+ },
+ "audio": {
+  "lufs_integrados": -13.9,
+  "pico_real_dbtp": -5.9,
+  "lra_lu": 0.5,
+  "medido_con": "ffmpeg ebur128=peak=true"
+ },
+ "app": "Insultator",
+ "publico": "Ocio y humor",
+ "fuentes": [
+  "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto «Insultator»: demo[] (capturas reales de la demo y sus textos), hechos_verificados y prohibido_afirmar (consulta 8/11/2026)."
+ ],
+ "origen": "herramientas/demo_app.py"
+}

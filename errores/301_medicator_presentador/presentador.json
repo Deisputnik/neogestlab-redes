@@ -1,0 +1,128 @@
+{
+ "generado": "2026-11-08T21:30:35+00:00",
+ "duracion_s": 35.52,
+ "fotogramas": 1066,
+ "resolucion": "1080x1920",
+ "fps": 30,
+ "tiempo_voz_s": 458,
+ "tiempo_render_s": 252,
+ "tiempo_total_s": 728,
+ "voz": "chatterbox",
+ "audio": {
+  "voz_sobre_musica_lu": 5.9,
+  "ajuste_musica_db": 0.0,
+  "musica_bajo_voz_db": -2.6,
+  "ducking_db": 3.2,
+  "ducking_max_db": 5.0,
+  "lufs_integrados": -14.1,
+  "pico_real_dbtp": -1.9,
+  "lra_lu": 1.8,
+  "medido_con": "ffmpeg ebur128=peak=true",
+  "final": {
+   "lufs_integrados": -14.2,
+   "pico_real_dbtp": -1.6,
+   "lra_lu": 1.8,
+   "medido_con": "ffmpeg ebur128=peak=true"
+  }
+ },
+ "movimiento": {
+  "diferencia_media": 6.73,
+  "fotogramas_quietos_pct": 0.0,
+  "plano_quieto_max_s": 0.0,
+  "cortes_detectados": 37,
+  "medido_con": "ffmpeg 10 fps 108x192, |diferencia| media por fotograma"
+ },
+ "escenas": [
+  {
+   "a_s": 0.0,
+   "b_s": 2.37,
+   "fondo": "magenta",
+   "plano": "medio",
+   "presentador": "preocupada",
+   "bit": "entra",
+   "elemento": null
+  },
+  {
+   "a_s": 2.37,
+   "b_s": 4.73,
+   "fondo": "verde",
+   "plano": "primer",
+   "presentador": "senala",
+   "bit": "salta",
+   "elemento": null
+  },
+  {
+   "a_s": 4.73,
+   "b_s": 8.87,
+   "fondo": "morado",
+   "plano": "abajo",
+   "presentador": "explica",
+   "bit": "flota",
+   "elemento": "captura"
+  },
+  {
+   "a_s": 8.87,
+   "b_s": 12.43,
+   "fondo": "cian",
+   "plano": "abajo",
+   "presentador": "pulgar",
+   "bit": "asiente",
+   "elemento": "captura"
+  },
+  {
+   "a_s": 12.43,
+   "b_s": 17.03,
+   "fondo": "negro",
+   "plano": "medio",
+   "presentador": "idea",
+   "bit": "gira",
+   "elemento": null
+  },
+  {
+   "a_s": 17.03,
+   "b_s": 20.23,
+   "fondo": "verde",
+   "plano": "primer",
+   "presentador": "explica",
+   "bit": "corazon",
+   "elemento": null
+  },
+  {
+   "a_s": 20.23,
+   "b_s": 25.17,
+   "fondo": "magenta",
+   "plano": "abajo",
+   "presentador": "senala_arriba",
+   "bit": "flota",
+   "elemento": "captura"
+  },
+  {
+   "a_s": 25.17,
+   "b_s": 29.2,
+   "fondo": "morado",
+   "plano": "medio",
+   "presentador": "movil",
+   "bit": "saluda",
+   "elemento": null
+  },
+  {
+   "a_s": 29.2,
+   "b_s": 32.6,
+   "fondo": "negro",
+   "plano": "abajo",
+   "presentador": "manos",
+   "bit": "flota",
+   "elemento": "tarjeta"
+  },
+  {
+   "a_s": 32.6,
+   "b_s": 35.53,
+   "fondo": "rojo",
+   "plano": "abajo",
+   "presentador": "saluda",
+   "bit": "celebra",
+   "elemento": "cierre"
+  }
+ ],
+ "avisos": []
+}

@@ -1,0 +1,37 @@
+{
+ "_nota": "Contador de CLIENTES POTENCIALES, a mano por quien los vea (Creador/Estratega leen /panel/solicitudes del Centro vía Base44; el dueño, los DMs). Una línea por día con algo nuevo. 'ingresos_eur' solo lo confirma el dueño.",
+ "registros": [
+  {
+   "fecha": "2026-11-11",
+   "solicitudes_centro": 1,
+   "dms_con_intencion": null,
+   "pruebas_gratuitas": null,
+   "ingresos_eur": 0,
+   "nota": "lectura Base44 (SolicitudInfo/Clic) por el Analista de monetización 11/11: 1 solicitud total (8/11 21:40, origen demo, app-a-medida, sin contactar, posible prueba interna sin confirmar); 3 clics l.instagram.com el 8/11 y ninguno desde Instagram el 9-11/11; sin nombres ni emails en el repo. DMs: no medible (permiso Buzzfy)"
+  },
+  {
+   "fecha": "2026-11-13",
+   "solicitudes_centro": 1,
+   "dms_con_intencion": null,
+   "pruebas_gratuitas": null,
+   "ingresos_eur": 0,
+   "nota": "Pasada extraordinaria 13/11 12:26 UTC (Analista de monetización): SolicitudInfo sin nuevas (1 total, la del 8/11, estado «nueva», sin contactar); Clic: último registro desde la bio el 12/11 19:55 (aj-reparacion-web); ningún Clic de /solicitar porque esa página no registra clics. Sin nombres ni emails en el repo. DMs: n/d (permiso Buzzfy)."
+  },
+  {
+   "fecha": "2026-11-15",
+   "solicitudes_centro": 1,
+   "dms_con_intencion": null,
+   "pruebas_gratuitas": null,
+   "ingresos_eur": 0,
+   "nota": "Analista, domingo 15/11: SolicitudInfo del Centro sin nuevas (1 total, 8/11, origen demo; estado «cerrada» desde el 14/11 22:08). Clic de /solicitar no registrado. Sin nombres ni emails en el repo. DMs: n/d."
+  },
+  {
+   "fecha": "2026-11-21",
+   "solicitudes_centro": 1,
+   "dms_con_intencion": 1,
+   "pruebas_gratuitas": null,
+   "ingresos_eur": 0,
+   "nota": "Analista de monetización 21/11: SolicitudInfo sin nuevas (1 total, 8/11, demo, cerrada). ig_inbox: 1 hilo con mensaje «Precio» (10/11, sin respuesta registrada, ventana de 24 h cerrada; cuenta sin datos en el repo). Clic de /solicitar no registrado. Sin nombres ni emails en el repo."
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "titulo": "El Jambo que sabe y las IAs · ep. 4",
+ "semilla": 3004,
+ "modo": "sketch",
+ "serie": "El Jambo que sabe y las IAs",
+ "episodio": 4,
+ "negocio": "pyme / servicios",
+ "gancho_corto": "TE PAGAN A NOVENTA DÍAS",
+ "portada_texto": "POV: tu cliente te paga a noventa días",
+ "musica": true,
+ "_formato": "Modo 'sketch' (NUEVO, pendiente de Mejora). Escena = {estilo gancho|gag|delega|remate|mensaje|cierre, hablante jambo|jupillo|pelota|bola|tramites|null, voz (con *énfasis*), texto (globo o rótulo en pantalla)}. El mensaje y el cierre van serios, sin música de chiste, fotograma guardable con la fuente pequeña.",
+ "contador": {
+  "texto": "Veces que se lo ha pasado a la Jupillo",
+  "inicio": 3,
+  "valor": 4
+ },
+ "mensaje_final": {
+  "cifra": "60 días naturales de plazo máximo pactable de pago en operaciones comerciales",
+  "fuente": "Ley 3/2004, art. 4 (BOE, texto consolidado)"
+ },
+ "escenas": [
+  {
+   "estilo": "gancho",
+   "hablante": "jambo",
+   "voz": "¡¿Noventa días?! ¡El plazo es de *noventa*, lo sé yo!",
+   "texto": "POV: tu cliente te paga a noventa días",
+   "dibujo": {
+    "personajes": [
+     "jambo",
+     "pelota"
+    ],
+    "acciones": {
+     "jambo": "presume",
+     "pelota": "habla"
+    }
+   }
+  },
+  {
+   "estilo": "gag",
+   "hablante": "pelota",
+   "voz": "Segurísimo. Noventa. *Fijo*.",
+   "texto": "La Pelota",
+   "dibujo": {
+    "personajes": [
+     "jambo",
+     "pelota"
+    ],
+    "acciones": {
+     "jambo": "presume",
+     "pelota": "habla"
+    }
+   }
+  },
+  {
+   "estilo": "remate",
+   "hablante": "tramites",
+   "voz": "",
+   "texto": "",
+   "dibujo": {
+    "personajes": [
+     "jambo",
+     "tramites"
+    ],
+    "acciones": {
+     "jambo": "desespera",
+     "tramites": "habla"
+    },
+    "efecto": "sello",
+    "efecto_t": 0.7,
+    "sello_texto": "PENDIENTE"
+   },
+   "duracion": 2.4
+  },
+  {
+   "estilo": "delega",
+   "hablante": "jambo",
+   "voz": "Que lo haga la Jupillo.",
+   "texto": "Que lo haga la Jupillo.",
+   "dibujo": {
+    "personajes": [
+     "jambo",
+     "jupillo"
+    ],
+    "acciones": {
+     "jambo": "delega",
+     "jupillo": "habla"
+    }
+   },
+   "contar": true
+  },
+  {
+   "estilo": "gag",
+   "hablante": "jupillo",
+   "voz": "Reclamado. Y el plazo es de *sesenta*, Pelota.",
+   "texto": "La Jupillo",
+   "dibujo": {
+    "personajes": [
+     "jupillo",
+     "pelota"
+    ],
+    "acciones": {
+     "jupillo": "habla",
+     "pelota": "habla"
+    }
+   }
+  },
+  {
+   "estilo": "gag",
+   "hablante": "jambo",
+   "voz": "Cobrado. Se nota que sé del tema.",
+   "texto": "El Jambo",
+   "dibujo": {
+    "personajes": [
+     "jupillo",
+     "jambo"
+    ],
+    "acciones": {
+     "jupillo": "habla",
+     "jambo": "remata"
+    }
+   },
+   "cartel": "COBRADO · MÉRITO: EL JAMBO"
+  },
+  {
+   "estilo": "gag",
+   "hablante": "jupillo",
+   "voz": "Se nota.",
+   "texto": "La Jupillo",
+   "dibujo": {
+    "personajes": [
+     "jupillo"
+    ],
+    "acciones": {
+     "jupillo": "habla"
+    }
+   }
+  },
+  {
+   "estilo": "mensaje",
+   "hablante": null,
+   "voz": "Entre empresas, el máximo pactable son *sesenta días naturales*.",
+   "texto": "60 días naturales: máximo pactable entre empresas",
+   "dibujo": {
+    "personajes": [],
+    "accion": "serio"
+   }
+  },
+  {
+   "estilo": "cierre",
+   "hablante": null,
+   "voz": "Mándaselo a quien carga con todo.",
+   "texto": "Mándaselo a quien carga con todo",
+   "dibujo": {
+    "personajes": [],
+    "accion": "serio"
+   }
+  }
+ ],
+ "dibujo": {
+  "personajes": [
+   "jambo",
+   "jupillo",
+   "pelota",
+   "bola",
+   "tramites"
+  ]
+ },
+ "_guion_v2": "10/11/2026 noche: guion reescrito tras la crítica del dueño («sin sentido ni gracia») con patrones de reels virales de sketch de oficina: situación concreta, escalada en tres golpes, interpretación literal / error seguro de sí mismo, remate donde el mérito se lo lleva el Jambo y última frase seca de la IA (la que de verdad hace el trabajo).",
+ "_guion_v4": "11/11/2026 (Creador): fórmula del cambio 40 aplicada: conflicto desde el segundo 0 con el Jambo quejándose de algo que él causó, la IA responde SIN palabras con un sello enorme en la cara (efecto sello con sello_texto), él sigue presumiendo con cartel de mérito, última frase seca y dato serio con fuente."
+}

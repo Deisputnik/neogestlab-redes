@@ -1,0 +1,9 @@
+{
+  "aprobado": true,
+  "nota": 90,
+  "fecha": "2026-11-15T18:05:46+00:00",
+  "aprobado_por": "dueño",
+  "decision_dueno": "15/11/2026: visto bueno del dueño en la conversación tras ver medicator-diferencial.mp4 («Sí, que salga a las 21:00»).",
+  "observaciones": "36,3 s, 1080x1920, −14,1 LUFS, pico −1,5 dBTP; voz contrastada con faster-whisper; tomas reales con datos ficticios; hoja de fotogramas revisada.",
+  "nota_calidad": "15/11 19:42 UTC: Calidad la puntuó 86 (sin ANTES/DESPUÉS, faltan bloques youtube y avance_siguiente). No bloquea: manda el visto bueno del dueño. Sirve de guía para la siguiente promo."
+}

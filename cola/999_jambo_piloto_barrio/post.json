@@ -1,0 +1,48 @@
+{
+ "tipo": "reel",
+ "texto": "Esta casa del barrio tiene truco 👀\nUn contrato temporal medio ya dura más que muchos matrimonios. Rosa normaliza despidos disfrazados de renuncias, Concha no cobra desde marzo y Felipe lleva 3 años de «temporal». Hasta que llega Neo.\nGuarda este vídeo para la próxima vez que te digan que es «un favor».\n#humornegro #trabajo #ia #jefes #pymes\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso",
+ "cuando": null,
+ "compartir_en_feed": true,
+ "prueba_no_seguidores": true,
+ "formato": "Serie El Jambo",
+ "publico": "oficina",
+ "formula": "El Jambo que sabe v5.2 (salón de casa, registro paleto y vulgar con réplica inteligente, humor negro frío, bucle «Cosas de Casa» con gancho de texto en la apertura, ropa de ir por casa, créditos finales con reparto completo, personajes que se llaman por su nombre, risas de sitcom, 45-110 s, Rosa Melano/Felipe Lotas/Sindy Entes/Concha Quetón/Neo)",
+ "_fuentes": ["El Español, 26/05/2026, citando la EPA del INE"],
+ "_comprobado": "Cifra tomada del guion (equipo/guiones_gemini/usados/2026-11-20_jambo_piloto_barrio.json), con fuente citada por el guionista. No reverificada por Claude en esta pasada.",
+ "_nota_creador": "21/11/2026 madrugada: PILOTO v3 final (v9), tras feedback del dueño sobre v1-v8 (etiqueta de nombre apenas visible, apellido de Felipe mal como «Netra», quería créditos finales, ropa de oficina en vez de ir por casa, lenguaje demasiado fino, pidió trasladar la serie a un hogar con todo tipo de empleos en vez de solo oficina/contratos, estadísticas reales y temas sociales para empatizar, un hueco para que los personajes usen apps de IA que no siempre son buena idea hasta que llega Neo, y por último que las palabras paletas/tacos («illo», «joder», etc.) suenen CON ÉNFASIS). Corregido en esta pasada final: intro real de casa (vídeo IA) en bucle con interior de salón (no oficina) en las escenas de diálogo, apellido de Felipe corregido a Lotas, ropa de ir por casa (sin corbata) para Rosa/Felipe/Sindy, créditos finales con el reparto completo, lenguaje más paleto y vulgar, gancho de texto «Esta casa del barrio tiene truco» en la apertura, y palabras paletas/tacos envueltas en signos de exclamación («¡illo!», «¡joder!», «¡manda huevos!») para que edge-tts les dé más fuerza al leerlas — excepto Neo, que nunca dice tacos ni «illo» y sigue siempre correcto y neutro (el contraste es parte del gag). Dirección de hogar/todo-tipo-de-empleos/apps de IA ficticias/énfasis queda como biblia v5.2 (`equipo/serie_jambo.md`) para los PRÓXIMOS episodios — este piloto concreto mantiene el tema de contratos temporales porque ya estaba aprobado en la ronda anterior y re-rodarlo entero esta noche habría retrasado la entrega. NO programado (cuando: null): pendiente de que el dueño vea este v9 final y dé el visto bueno para publicar.",
+ "motor_voz": "edge",
+ "comentario_fijado": "Episodio nuevo cada día en @neogestlab",
+ "avance_siguiente": null,
+ "portada_ms": 0,
+ "monetizacion": {
+  "objetivo": "visita_perfil",
+  "oferta": "prueba gratuita en /solicitar (texto del post)",
+  "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+ },
+ "musica": {
+  "titulo": "Biblioteca Pixabay de Neogest Studio",
+  "autor": "Pixabay",
+  "licencia": "Licencia de contenido de Pixabay",
+  "archivo": "estudio"
+ },
+ "motor": "neogest-studio",
+ "asset": "999_jambo_piloto_barrio.mp4",
+ "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/ba76d8722_jambo-piloto-barrio-v3-final-v9-enfasis.mp4",
+ "_video_externo_anteriores_descartados": [
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/61db245cc_jambo-piloto-barrio.mp4",
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/31a9a6af0_jambo-piloto-barrio-v2.mp4",
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/07f2650f4_jambo-piloto-barrio-v3-final.mp4",
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/a51570341_jambo-piloto-barrio-v3-nombres-visibles.mp4",
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/bb90ec1bb_jambo-piloto-barrio-v3-final-gancho-apellidos.mp4",
+  "https://media.base44.com/videos/public/6af862101565c330cf06389f/1f1586f7b_jambo-piloto-barrio-v3-final-creditos-vulgar-casa.mp4"
+ ],
+ "_render": {
+  "duracion_s": 106.5,
+  "lufs": -14.1,
+  "pico_dbfs": -1.4,
+  "peso_mb": 18.06,
+  "voces": "edge-tts (borrador/gratis, sin ElevenLabs), rango de velocidad/tono por emoción ampliado, palabras paletas/tacos entre exclamaciones para dar énfasis (excepto Neo)",
+  "checkpoints_base44": ["jam-v9-dialogo-con-enfasis-exclamacion", "limpieza-final-jam-v9-subido"]
+ },
+ "_aviso_calidad_21-11-noche": "NO APROBAR SIN RE-VERIFICAR. Se ha comprobado con ffprobe/ffmpeg la URL de _video_externo_usado y NO coincide con lo descrito aquí: el vídeo real dura 106,5 s (sí coincide) pero son escenas de OFICINA con fondo de rascacielos y la etiqueta «Felipe Netra» (el apellido viejo, no «Lotas»), sin set «salón», sin bucle «Cosas de Casa», sin ropa de casa ni créditos REPARTO — es decir, el contenido de oficina del motor antiguo, no el piloto v9 del barrio que describe _nota_creador. Causa probable: en esta sesión se encontró que el sandbox de Neogest Studio tenía una copia vieja de gen_episodios.py sin el personaje Jambo (ver equipo/serie_jambo.md y tablón 21/11 noche) y probablemente sin el motor de sets salón/casa de aquel momento; el vídeo de este post parece un render heredado de antes del pivote de biblia, subido por error bajo el nombre del piloto v9. No publicar este asset tal cual. Recomendación: descartar este 999 y sustituirlo por un piloto nuevo re-renderizado con el motor actual (ya verificado correcto en 349/350 de esta misma noche)."
+}

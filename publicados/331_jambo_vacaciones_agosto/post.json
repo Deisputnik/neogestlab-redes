@@ -1,0 +1,35 @@
+{
+  "tipo": "reel",
+  "texto": "Vacaciones en agosto. La Jupillo lo arregla; el Jambo no tanto. Humor de oficina de ficción.\nDato: el Estatuto de los Trabajadores (art. 38) fija vacaciones mínimas de 30 días naturales al año y el derecho a conocer las fechas al menos dos meses antes (BOE, Real Decreto Legislativo 2/2015). No es asesoramiento legal.\n¿Te dejan coger agosto o te toca noviembre? Cuéntalo en comentarios.\nMándaselo a quien le pasa esto.\n#humor #trabajo #oficina #vacaciones #pymes #autonomos #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nVoz y personajes generados por IA\n\nMúsica: biblioteca libre de derechos de Pixabay",
+  "cuando": "2026-11-15T18:00:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "oficina",
+  "formula": "fórmula vídeos 14/11",
+  "_fuentes": [
+    "BOE"
+  ],
+  "_nota_creador": "15/11/2026 lote nuevo de 6 episodios, programado hoy por orden del dueño. | 15/11 17:05: rehecho en Neogest Studio por orden del dueño (formato de dibujos de calidad). Calidad: evaluar el vídeo nuevo.",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Te dejan coger agosto o te toca noviembre? Comenta",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Comedia 1 (biblioteca del estudio)",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay"
+  },
+  "renderizado": "2026-11-15T16:04:42+00:00",
+  "control_audio": {
+    "aprobado": true,
+    "duracion_s": 22.93
+  },
+  "motor": "neogest-studio (personajes animados, decorados y planos; apertura con clip real Flow/Gemini; voz edge-tts; música Pixabay de la biblioteca del estudio)",
+  "asset": "331_jambo_vacaciones_agosto.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/804b85253_jambo-331-vacaciones-agosto.mp4"
+}

@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 86,
+  "motivos": [
+    "Mismo render que el 10/11, no se ha corregido lo pedido en el rechazo anterior: la app sigue mostrando 'Hoy: 11 de noviembre' (fotogramas t=0,3s y t=8,85s) y una cita 'nov 18'; la pieza sale el 7/12/2026, así que en pantalla se ve una fecha pasada hace casi un mes, lo que delata grabación vieja/reciclada (contrario al criterio v9 de parecer hecho por humanos y a exactitud/confianza).",
+    "Sigue sin cifra ni resultado de peso: el gancho y el cierre solo dicen que 'se ordena sola' y marca 'mañana', sin ningún número o resultado guardable (se pidió explícitamente '3 citas, 0 olvidos' o similar y no se añadió).",
+    "Aviso técnico menor ya tolerado por control_audio.py: 'tarjeta' vs 'tarjetas' (1 letra, no bloquea)."
+  ],
+  "como_arreglarlo": "CREADOR: regrabar el caso con herramientas/grabar_caso.py quitando la línea 'Hoy: 11 de noviembre' de la interfaz (usar 'Hoy' sin fecha fija, o una fecha relativa tipo 'hoy/mañana/el jueves') y las citas con fechas absolutas visibles (nov 15, nov 18) por el mismo motivo; de paso añadir al gancho o al cierre un resultado con número (p. ej. '3 citas, 0 olvidos' o 'la de mañana, arriba del todo') para sumar en retención/guardado. Requiere nuevo render (marcar renderizado:false y relanzar ciclo), no es arreglo de solo texto.",
+  "fecha": "2026-11-21T17:28:44Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T14:43:14+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py (tmp_jb/eps_349_350.json) a partir del reparto v5.2 (Neogest Studio); el vídeo es video_externo.",
+  "motor": "neogest-studio",
+  "episodio": "349_jambo_vecino_taladro",
+  "set": "salon",
+  "moraleja": "Un favor sin fecha es un robo con permiso",
+  "escenas": [
+    {"e": "gancho", "h": "felipe", "v": "Jambo se llevó mi taladro. Como lo del sábado, pero con herramientas."},
+    {"e": "gag", "h": "rosa", "v": "¡Pues que te lo devuelva ya, illo! Y así dejas de darme la turra en horas de curro."},
+    {"e": "gag", "h": "jambo", "v": "¡Illo, tranquilo! ¡Que te lo devuelvo la semana que viene, te lo juro por mi madre!"},
+    {"e": "gag", "h": "sindy", "v": "Felipe, es el tercer taladro que Jambo te pide. Ya no es un préstamo, es una suscripción."},
+    {"e": "remate", "h": "neo", "v": "Préstamo registrado. Ahora cada objeto prestado manda un aviso automático al vecino hasta que se devuelve.", "sello": "DEVOLUCIÓN PROGRAMADA"},
+    {"e": "cierre", "h": "neo", "v": "Un favor sin fecha es un robo con permiso."}
+  ]
+}

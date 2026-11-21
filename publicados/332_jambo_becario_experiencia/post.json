@@ -1,0 +1,33 @@
+{
+  "tipo": "reel",
+  "texto": "Becario con experiencia. La Jupillo lo arregla; el Jambo no tanto. Humor de oficina de ficción.\n¿La oferta de empleo más absurda que has visto? Cuéntalo en comentarios.\nMándaselo a quien le pasa esto.\n#humor #trabajo #oficina #empleo #pymes #autonomos #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nVoz y personajes generados por IA\n\nMúsica: biblioteca libre de derechos de Pixabay",
+  "cuando": "2026-11-15T20:00:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "oficina",
+  "formula": "fórmula vídeos 14/11",
+  "_fuentes": [],
+  "_nota_creador": "15/11/2026 lote nuevo de 6 episodios, programado hoy por orden del dueño. | 15/11 17:05: rehecho en Neogest Studio por orden del dueño (formato de dibujos de calidad). Calidad: evaluar el vídeo nuevo.",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿La oferta de empleo más absurda que has visto? Comenta",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Comedia 1 (biblioteca del estudio)",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay"
+  },
+  "renderizado": "2026-11-15T16:04:46+00:00",
+  "control_audio": {
+    "aprobado": true,
+    "duracion_s": 22.03
+  },
+  "motor": "neogest-studio (personajes animados, decorados y planos; apertura con clip real Flow/Gemini; voz edge-tts; música Pixabay de la biblioteca del estudio)",
+  "asset": "332_jambo_becario_experiencia.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/d80e89110_jambo-332-becario-experiencia.mp4"
+}

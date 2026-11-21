@@ -1,0 +1,40 @@
+{
+  "tipo": "reel",
+  "texto": "Jambo le pidió el taladro a Felipe hace semanas. Y no ha vuelto. Rosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: un favor sin fecha es un robo con permiso.\n¿Tienes un vecino o compañero que \"ya te lo devuelve\"? Cuéntalo.\nMándaselo a quien todavía espera que le devuelvan algo.\n#humornegro #vecinos #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-21T20:45:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "formula": "El Jambo que sabe v5.2 (reparto Rosa/Felipe/Sindy/Jambo/Neo, casa-salón, Neogest Studio)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales; no requiere fuente.",
+  "_nota_creador": "21/11/2026 Creador: primer episodio real del formato casa/salón con Jambo Reseco (vecino tóxico, voz es-ES-AlvaroNeural rasgada) tras arreglar el bug de gen_episodios.py que impedía renderizar a Jambo (faltaba en VOZ/NOMBRES del sandbox). Renderizado con gen_episodios.py v5.2 + render.mjs --hoja: 41.8 s, -14.4 LUFS, pico -1.4 dBFS. Verificado por fotogramas: set salón real, tag 'Jambo Reseco' correcto, créditos REPARTO. Calidad: evaluar de cero.",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Te ha hecho esto algún vecino? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: Jambo vendiendo una app milagrosa",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "youtube": {
+    "titulo": "El vecino que no devuelve el taladro #Shorts",
+    "descripcion": "Humor negro de ficción: Jambo lleva semanas sin devolver el taladro de Felipe, hasta que Neo se encarga del aviso. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "vecinos",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/d2709634e_349_jambo_vecino_taladro.mp4"
+}

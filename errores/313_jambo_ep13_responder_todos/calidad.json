@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 78,
+  "motivos": [
+    "Re-render del 2026-11-15T19:35 con el motor «sketch» del repo, retirado para la serie desde el 15/11 (herramientas/estudio/LEEME.md, roles/creador.md): rechazo automático según roles/calidad.md",
+    "El control de audio de Actions pasa (duración 21.1 s), pero el formato exige dibujos de calidad de Neogest Studio"
+  ],
+  "como_arreglarlo": "Creador: rehacer el episodio en Neogest Studio según herramientas/estudio/LEEME.md (video_externo + motor neogest-studio + renderizado false) con la fórmula de 5 tiempos y moraleja; después lo evalúa Calidad.",
+  "fecha": "2026-11-15T19:43:18+00:00",
+  "revisor": "Calidad (pasada cada 2 h)",
+  "render": "2026-11-15T19:35:36+00:00"
+}

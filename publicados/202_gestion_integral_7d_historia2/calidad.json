@@ -1,0 +1,19 @@
+{
+ "aprobado": true,
+ "nota": 92,
+ "aprobado_por": "revisión del agente de demos (8/11)",
+ "revision": [
+  "historia en vídeo de 9.9 s: textos que entran animados, móvil que sube, zoom suave, whoosh/pop suaves",
+  "zonas seguras respetadas; formato «antes_despues»; datos fieles a demo[] y hechos_verificados",
+  "música en primer plano todo el tiempo (sin voz): dembow a 97 BPM, tono +6, generada por código (sin licencias de terceros)",
+  "máster medido con ffmpeg ebur128: -13.9 LUFS integrados, pico -3.8 dBTP, LRA 0.5 LU (objetivo -14 LUFS)",
+  "1080x1920, 30 fps, H.264 + AAC 192 kbps; fotogramas de control revisados (control/)",
+  "Montserrat, firma «By Neogest Lab» y logo NL original; español de España sin erratas"
+ ],
+ "audio": {
+  "lufs_integrados": -13.9,
+  "pico_real_dbtp": -3.8,
+  "lra_lu": 0.5,
+  "medido_con": "ffmpeg ebur128=peak=true"
+ }
+}

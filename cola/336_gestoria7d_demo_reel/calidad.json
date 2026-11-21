@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 70,
+  "motivos": [
+    "Bloqueo v10: logo antiguo «NL» (cuadrado neón) visible en el pie «By Neogest Lab» tanto en el fotograma inicial (demo app, t=2s) como en el cierre final (t=23s, con Bit). El estándar exige el isotipo nuevo «N» de circuitos del kit 2026; el cuadrado NL no se acepta aunque vaya acompañado del texto correcto.",
+    "El cierre con Bit (t=23s) es una escena de dibujo genérica que no coincide con el resto de la pieza (demo real de la app); revisar coherencia de estilo del cierre.",
+    "Pico de audio -1.44 dB: al límite del máximo permitido (-1 dB); conviene bajar un poco más de margen en el siguiente render."
+  ],
+  "como_arreglarlo": "Centro: re-renderizar con el pie de marca actualizado al isotipo nuevo «N» de circuitos del kit 2026 en todos los fotogramas donde aparezca «By Neogest Lab» (inicio, intermedios y cierre). Verificar que el cierre con Bit use el logo nuevo también. Ajustar pico de audio para dejar algo más de margen bajo -1 dB. Volver a Calidad con el nuevo render.",
+  "fecha": "2026-11-20T18:51:15Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-19T22:48:34+00:00"
+}

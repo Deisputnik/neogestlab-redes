@@ -1,0 +1,28 @@
+{
+ "tipo": "historia",
+ "texto": "",
+ "cuando": "2026-12-31T09:30:00+01:00",
+ "renderizado": "2026-11-10T19:25:02+00:00",
+ "asset": "206_aj_reparacion_web_historia2.mp4",
+ "medio": "video",
+ "duracion_s": 9.6,
+ "formato": "antes_despues",
+ "musica": {
+  "estilo": "house",
+  "bpm": 125.0,
+  "tono": 2,
+  "origen": "generada por código (sin licencias de terceros)"
+ },
+ "audio": {
+  "lufs_integrados": -13.9,
+  "pico_real_dbtp": -6.5,
+  "lra_lu": 0.2,
+  "medido_con": "ffmpeg ebur128=peak=true"
+ },
+ "app": "AJ Web",
+ "publico": "Cualquier negocio",
+ "fuentes": [
+  "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto «AJ Web»: demo[] (capturas reales de la demo y sus textos), hechos_verificados y prohibido_afirmar (consulta 8/11/2026)."
+ ],
+ "origen": "herramientas/demo_app.py"
+}

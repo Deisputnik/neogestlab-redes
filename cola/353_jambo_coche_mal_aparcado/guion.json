@@ -1,0 +1,15 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py (tmp_jb/eps_351_353.json) a partir del reparto v5.2 (Neogest Studio); el vídeo es video_externo.",
+  "motor": "neogest-studio",
+  "episodio": "353_jambo_coche_mal_aparcado",
+  "set": "salon",
+  "moraleja": "Ocupar un sitio no es lo mismo que tener derecho a él",
+  "escenas": [
+    {"e": "gancho", "h": "felipe", "v": "Jambo ha aparcado otra vez en mi plaza. Con dos ruedas en la acera."},
+    {"e": "gag", "h": "sindy", "v": "Felipe, llevas aparcando en la calle desde julio. A este paso te haces de la grúa."},
+    {"e": "gag", "h": "jambo", "v": "¡Illo, es que mi plaza tiene sombra y la tuya no, no es pa tanto!"},
+    {"e": "gag", "h": "rosa", "v": "¡Pues resuélvelo entre vosotros, illo, que yo no pienso bajar a mediar!"},
+    {"e": "remate", "h": "neo", "v": "Plaza asignada por turnos. Aviso automático al vecino diez minutos antes del cambio.", "sello": "TURNO ASIGNADO"},
+    {"e": "cierre", "h": "neo", "v": "Ocupar un sitio no es lo mismo que tener derecho a él."}
+  ]
+}

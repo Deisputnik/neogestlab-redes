@@ -1,0 +1,38 @@
+{
+  "tipo": "reel",
+  "texto": "Hace un ruido raro. Así. La Jupillo manda la avería con fotos y descubre de dónde venía el ruido. Humor negro de ficción.\n¿Tú explicas las averías con ruiditos? Cuéntalo en comentarios.\nEn la web de un taller real se hace la pre-entrada online: tipo de máquina, avería y hasta cuatro fotos.\nMándaselo a quien explica las averías con ruiditos.\n#humornegro #taller #pymes #webs #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: \"Fluffing a Duck\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+  "cuando": "2026-11-22T20:40:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "cliente de un taller",
+  "formula": "fórmula vídeos 14/11 (rehecho 15/11)",
+  "app": "Webs a medida Neogest Lab",
+  "renderizado": false,
+  "_fuentes": [],
+  "_nota_creador": "15/11/2026 Creador (pasada extra, orden del dueño): guion rehecho con la fórmula vigente tras el rechazo de Calidad; renderizado:false para que el ciclo lo renderice de nuevo. Calidad: reevaluar tras el render.",
+  "comentario_fijado": "¿Tú explicas las averías con ruiditos? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Mañana: buscas el número de serie con linterna",
+  "portada_ms": 0,
+  "motor_voz": "edge",
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Fluffing a Duck",
+    "autor": "Kevin MacLeod",
+    "licencia": "CC BY 4.0",
+    "url": "https://incompetech.com/music/royalty-free/",
+    "archivo": "Fluffing_a_Duck.mp3",
+    "bpm": 123.0
+  },
+  "_control_audio_fallo": {
+    "fecha": "2026-11-15T21:33:58+00:00",
+    "bloqueos": [
+      "voz distinta del guion: faltan ['sin', 'onomatopeyas', 'niic', 'niic'], sobran ['si', 'no', 'no', 'mato', 'pelas', 'yik', 'yik'] (rehacer esas frases)"
+    ],
+    "guion_md5": "0386850d31d350f2bc8aa9f9f46fd540"
+  }
+}

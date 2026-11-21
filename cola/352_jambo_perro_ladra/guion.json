@@ -1,0 +1,15 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py (tmp_jb/eps_351_353.json) a partir del reparto v5.2 (Neogest Studio); el vídeo es video_externo.",
+  "motor": "neogest-studio",
+  "episodio": "352_jambo_perro_ladra",
+  "set": "salon",
+  "moraleja": "La queja sin solución es solo ruido",
+  "escenas": [
+    {"e": "gancho", "h": "rosa", "v": "El perro de Jambo lleva ladrando desde las seis. ¡No hay quien trabaje así!"},
+    {"e": "gag", "h": "felipe", "v": "Rosa, llevo tres noches sin dormir. Hoy se me ha caído la cabeza en el teclado."},
+    {"e": "gag", "h": "jambo", "v": "¡Illo, el perro ladra porque me entiende! ¡Es que tiene mucho mundo!"},
+    {"e": "gag", "h": "sindy", "v": "Jambo, tu perro no tiene mundo. Tiene vecinos que ya no te hablan."},
+    {"e": "remate", "h": "neo", "v": "Horario de silencio registrado. Aviso automático al vecino a partir de las diez de la noche.", "sello": "SILENCIO PROGRAMADO"},
+    {"e": "cierre", "h": "neo", "v": "La queja sin solución es solo ruido."}
+  ]
+}

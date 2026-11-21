@@ -1,0 +1,14 @@
+{
+  "aprobado": false,
+  "nota": 85,
+  "motivos": [
+    "Técnico correcto: 1080x1920, 17.87s, -14.2 LUFS, pico -1.38 dB, sin silencios largos, isotipo nuevo 2026 visible en todos los fotogramas (sin logo antiguo).",
+    "Sigue sin resolverse el motivo de fondo señalado el 12/11: el resultado de la demo son solo tres contadores estáticos (3 planificados, 2 publicados, 4 libres) que no muestran una transformación ni resuelven una tensión real (no hay antes/después, no se propone contenido para el día vacío, no hay alerta de riesgo). Es el mismo guion y la misma demo de la versión anterior, solo re-renderizada.",
+    "Ritmo correcto pero sin vibración: el fotograma del gancho se mantiene relativamente estático y el cambio de plano en los tramos centrales es de ~4s, en el límite alto de lo aceptable.",
+    "No hay cifra o dato que genere 'motivo de guardar/enviar' más allá de lo genérico ('mándaselo a quien lleva las redes de un negocio')."
+  ],
+  "como_arreglarlo": "CREADOR: hace falta cambiar el guion y volver a grabar la demo (no es arreglo de texto): (1) que la web muestre un resultado accionable, no solo contadores: por ejemplo que marque en rojo el día sin idea o proponga automáticamente una idea para el hueco libre; (2) mostrar ese cambio de estado en pantalla como un antes/después claro (semana con huecos → semana completa o alerta resuelta); (3) considerar acortar la escena del gancho para que no se note estática. Si no se puede mejorar el resultado de la demo, mejor retirar esta pieza de la cola que repetir el mismo render con nota tope ~85.",
+  "fecha": "2026-11-21T17:29:07Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T14:43:46+00:00"
+}
