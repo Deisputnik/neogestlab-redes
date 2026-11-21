@@ -6,6 +6,7 @@ name: Reloj (dispara el ciclo cada 30 min)
 # exactamente lo que GitHub detecta como uso abusivo de runners y fue la causa más probable
 # de que se suspendiera la cuenta anterior (ajreparacion). Ahora cada ejecución es una pasada
 # corta (segundos) que dispara lo que toque y termina: sin bucle, sin auto-relanzarse.
+# 22/11/2026: toque de este archivo para forzar a GitHub a re-registrar el cron (0 ejecuciones programadas desde la migracion).
 
 on:
   workflow_dispatch:
