@@ -1,18 +1,3 @@
-    esc = g["escenas"]
-          ~^^^^^^^^^^^
-KeyError: 'escenas'
-
-2026-11-20 00:17  Voz primero no disponible (  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2568, in main
-    esc = g["escenas"]
-          ~^^^^^^^^^^^
-KeyError: 'escenas'
-); se renderiza como antes
-2026-11-20 00:17  342_jambo_pago_fuera_plazo: error al renderizar (2/3): El generador falló: Traceback (most recent call last):
-  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2702, in <module>
-    main()
-  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2568, in main
-    esc = g["escenas"]
-          ~^^^^^^^^^^^
 KeyError: 'escenas'
 
 2026-11-20 00:17  Grabación de pantalla: OK /tmp/render_337_appcc_facil_demo_reel/grabacion.mp4 (604 fotogramas, 20.1 s, total 44.1 s)
@@ -598,3 +583,18 @@ KeyError: 'escenas'
 2026-11-21 22:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 22:40  351_jambo_wifi_robado: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
 2026-11-21 22:40  352_jambo_perro_ladra: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-22 00:05  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 00:05  337_appcc_facil_demo_reel: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-22 00:05  349_jambo_vecino_taladro: publicando…
+2026-11-22 00:05  AVISO TOKEN Instagram/Meta: token caducado o anulado; renovar el secreto en GitHub (el ciclo sigue). Detalle: Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:36 PST
+2026-11-22 00:05  reel de prueba rechazado por la API (Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:36 PST. (código 190, subcódigo 463)); se publica como reel normal
+2026-11-22 00:05  349_jambo_vecino_taladro: fallo al publicar 1/3: Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:36 PST. (código 190, subcódigo 463)
+2026-11-22 00:05  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 00:05  Control de audio: OK; duración 36.97 s; avisos: ["voz distinta del guion: faltan ['acera'], sobran ['cera'] (rehacer esas frases)"]
+2026-11-22 00:05  353_jambo_coche_mal_aparcado: control de audio del vídeo externo: aprobado=True LUFS=-14.4 pico=-1.3
+2026-11-22 00:05  353_jambo_coche_mal_aparcado: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-22 00:05  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 00:05  349_jambo_vecino_taladro: publicando…
+2026-11-22 00:05  reel de prueba rechazado por la API (Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:54 PST. (código 190, subcódigo 463)); se publica como reel normal
+2026-11-22 00:05  349_jambo_vecino_taladro: fallo al publicar 2/3: Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:54 PST. (código 190, subcódigo 463)
+2026-11-22 00:05  Error en estadísticas: Error validating access token: Session has expired on Saturday, 21-Nov-26 15:00:00 PST. The current time is Saturday, 21-Nov-26 15:05:54 PST. (código 190, subcódigo 463)
