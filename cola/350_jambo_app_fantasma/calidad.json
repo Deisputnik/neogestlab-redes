@@ -1,0 +1,8 @@
+{
+    "aprobado": true,
+    "nota": 90,
+    "comentario": "Revision manual (Calidad automatica caida: falta ANTHROPIC_API_KEY en el repo). Render del 21/11 21:29 UTC con control_audio.py ya corregido (bugs de esquema v5.2 resueltos). Fotogramas revisados a ojo: isotipo 2026 N de circuitos correcto en todos, sin logo antiguo; personajes y rotulos de nombre correctos; subtitulos legibles; set salon correcto. El control_audio.json de esta carpeta esta desactualizado (ese ciclo corrio sin faster-whisper) y aun muestra el resultado del bug viejo; no tomar ese archivo como motivo de rechazo.",
+    "fecha": "2026-11-21T22:10:00Z",
+    "revisor": "Claude (revision manual temporal, sin ANTHROPIC_API_KEY)",
+    "render": "2026-11-21T21:29:22+00:00"
+}
