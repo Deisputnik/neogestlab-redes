@@ -1,6 +1,6 @@
 {
  "tema": "backmasking",
- "fecha": "2026-11-18T19:14:06Z",
+ "fecha": "2026-11-21T21:15:26Z",
  "hoja": "release pruebas: imagenes_backmasking.jpg",
  "candidatas": [
   {
@@ -229,17 +229,17 @@
    "n": 15
   },
   {
-   "titulo": "File:HMV Record Player 2.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/HMV_Record_Player_2.jpg/1280px-HMV_Record_Player_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url_original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/HMV_Record_Player_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "pagina": "https://commons.wikimedia.org/wiki/File:HMV_Record_Player_2.jpg",
+   "titulo": "File:Antique HMV gramophone- phonograph- record player.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Antique_HMV_gramophone-_phonograph-_record_player.jpg/1280px-Antique_HMV_gramophone-_phonograph-_record_player.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url_original": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Antique_HMV_gramophone-_phonograph-_record_player.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Antique_HMV_gramophone-_phonograph-_record_player.jpg",
    "licencia": "CC0",
    "autor": "Amitbalani",
    "credito": "Amitbalani · CC0 · Wikimedia Commons",
-   "descripcion": "Portable LP / Record Player (Gramophone/ Phonograph) encased in Black Box, manufactured by the HMV Corporation. These classic worldwide models were made in the UK into the late 1950s, and probably for longer in overseas markets.",
-   "fecha": "16 May 2024 (according to Exif data)",
-   "ancho": 1815,
-   "alto": 2983,
+   "descripcion": "Antique gramophone/ phonograph/ record player mounted on pure wood, manufactured by the HMV corporation",
+   "fecha": "27 May 2024 (according to Exif data)",
+   "ancho": 2724,
+   "alto": 3857,
    "consulta": "vinyl record turntable",
    "n": 16
   },
@@ -349,21 +349,6 @@
    "n": 23
   },
   {
-   "titulo": "File:Sony Reel-to-Reel Tape Player TC-388-4 (4031272650).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg/1280px-Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url_original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Sony_Reel-to-Reel_Tape_Player_TC-388-4_(4031272650).jpg",
-   "licencia": "CC BY 2.0",
-   "autor": "Everfalling",
-   "credito": "Everfalling · CC BY 2.0 · Wikimedia Commons",
-   "descripcion": "Sony Reel-to-Reel Tape Player TC-388-4",
-   "fecha": "2009-07-20 17:31",
-   "ancho": 1944,
-   "alto": 2592,
-   "consulta": "reel-to-reel tape recorder",
-   "n": 24
-  },
-  {
    "titulo": "File:VEB Fernmeldewerk Leipzig Tonband-Koffergerät KB100II.jpg",
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/VEB_Fernmeldewerk_Leipzig_Tonband-Kofferger%C3%A4t_KB100II.jpg/1280px-VEB_Fernmeldewerk_Leipzig_Tonband-Kofferger%C3%A4t_KB100II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "url_original": "https://upload.wikimedia.org/wikipedia/commons/9/94/VEB_Fernmeldewerk_Leipzig_Tonband-Kofferger%C3%A4t_KB100II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -375,6 +360,21 @@
    "fecha": "2020",
    "ancho": 5035,
    "alto": 4000,
+   "consulta": "reel-to-reel tape recorder",
+   "n": 24
+  },
+  {
+   "titulo": "File:Sony Reel-to-Reel Tape Player TC-388-4 (4031272650).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg/1280px-Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url_original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sony_Reel-to-Reel_Tape_Player_TC-388-4_%284031272650%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Sony_Reel-to-Reel_Tape_Player_TC-388-4_(4031272650).jpg",
+   "licencia": "CC BY 2.0",
+   "autor": "Everfalling",
+   "credito": "Everfalling · CC BY 2.0 · Wikimedia Commons",
+   "descripcion": "Sony Reel-to-Reel Tape Player TC-388-4",
+   "fecha": "2009-07-20 17:31",
+   "ancho": 1944,
+   "alto": 2592,
    "consulta": "reel-to-reel tape recorder",
    "n": 25
   },
@@ -484,21 +484,6 @@
    "n": 32
   },
   {
-   "titulo": "File:TELEX Copyette - Master Tape Side.jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/TELEX_Copyette_-_Master_Tape_Side.jpg/1280px-TELEX_Copyette_-_Master_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url_original": "https://upload.wikimedia.org/wikipedia/commons/7/7d/TELEX_Copyette_-_Master_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "pagina": "https://commons.wikimedia.org/wiki/File:TELEX_Copyette_-_Master_Tape_Side.jpg",
-   "licencia": "CC0",
-   "autor": "DiscoA340",
-   "credito": "DiscoA340 · CC0 · Wikimedia Commons",
-   "descripcion": "TELEX Copyette, for duplicating Cassette Tapes.",
-   "fecha": "2022-10-15 14:07:39",
-   "ancho": 4000,
-   "alto": 3000,
-   "consulta": "cassette tape",
-   "n": 33
-  },
-  {
    "titulo": "File:TELEX Copyette - Copy Tape Side.jpg",
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/TELEX_Copyette_-_Copy_Tape_Side.jpg/1280px-TELEX_Copyette_-_Copy_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "url_original": "https://upload.wikimedia.org/wikipedia/commons/f/fa/TELEX_Copyette_-_Copy_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -508,6 +493,21 @@
    "credito": "DiscoA340 · CC0 · Wikimedia Commons",
    "descripcion": "TELEX Copyette, for duplicating Cassette Tapes.",
    "fecha": "2022-10-15 14:07:47",
+   "ancho": 4000,
+   "alto": 3000,
+   "consulta": "cassette tape",
+   "n": 33
+  },
+  {
+   "titulo": "File:TELEX Copyette - Master Tape Side.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/TELEX_Copyette_-_Master_Tape_Side.jpg/1280px-TELEX_Copyette_-_Master_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url_original": "https://upload.wikimedia.org/wikipedia/commons/7/7d/TELEX_Copyette_-_Master_Tape_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:TELEX_Copyette_-_Master_Tape_Side.jpg",
+   "licencia": "CC0",
+   "autor": "DiscoA340",
+   "credito": "DiscoA340 · CC0 · Wikimedia Commons",
+   "descripcion": "TELEX Copyette, for duplicating Cassette Tapes.",
+   "fecha": "2022-10-15 14:07:39",
    "ancho": 4000,
    "alto": 3000,
    "consulta": "cassette tape",
@@ -589,17 +589,17 @@
    "n": 39
   },
   {
-   "titulo": "File:TASCAM Ministudio PortaOne - 4 track cassette tape recorder (c.1986).jpg",
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/TASCAM_Ministudio_PortaOne_-_4_track_cassette_tape_recorder_%28c.1986%29.jpg/1280px-TASCAM_Ministudio_PortaOne_-_4_track_cassette_tape_recorder_%28c.1986%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url_original": "https://upload.wikimedia.org/wikipedia/commons/6/6c/TASCAM_Ministudio_PortaOne_-_4_track_cassette_tape_recorder_%28c.1986%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "pagina": "https://commons.wikimedia.org/wiki/File:TASCAM_Ministudio_PortaOne_-_4_track_cassette_tape_recorder_(c.1986).jpg",
-   "licencia": "CC BY 2.0",
-   "autor": "Jose Mesa from island of Tenerife, Canary Islands, Spain",
-   "credito": "Jose Mesa from island of Tenerife, Canary Islands, Spain · CC BY 2.0 · Wikimedia Commons",
-   "descripcion": "Tascam Ministudio PortaOne - 4 track recorder on standard cassette tapes",
-   "fecha": "2012-08-22 10:54",
-   "ancho": 5184,
-   "alto": 3456,
+   "titulo": "File:2026.11.18 Elektronika-323-1 tape portable cassette recorder 03.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/2026.11.18_Elektronika-323-1_tape_portable_cassette_recorder_03.jpg/1280px-2026.11.18_Elektronika-323-1_tape_portable_cassette_recorder_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url_original": "https://upload.wikimedia.org/wikipedia/commons/8/80/2026.11.18_Elektronika-323-1_tape_portable_cassette_recorder_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:2026.11.18_Elektronika-323-1_tape_portable_cassette_recorder_03.jpg",
+   "licencia": "CC0",
+   "autor": "Agbarto",
+   "credito": "Agbarto · CC0 · Wikimedia Commons",
+   "descripcion": "Советский кассетный магнитофон «Электроника 323-1» в чёрном корпусе с крупной решёткой динамика слева, кассетоприёмником справа и клавишами управления снизу. Модель относится к переносным кассетным магнитофонам третьего класса с поддержкой компакт-кассет, встроенным микрофоном, регуляторами громкост",
+   "fecha": "2026-11-18 14:59:09",
+   "ancho": 3000,
+   "alto": 4000,
    "consulta": "cassette tape",
    "n": 40
   }
