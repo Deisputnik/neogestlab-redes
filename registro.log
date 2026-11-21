@@ -1,18 +1,3 @@
-2026-11-20 00:16  325_jambo_whatsapp_23_47: publicando…
-2026-11-20 00:16  325_jambo_whatsapp_23_47: YouTube publicado https://youtube.com/shorts/SHkZYIl4ayc
-2026-11-20 00:17  325_jambo_whatsapp_23_47: Facebook publicado https://www.facebook.com/reel/2738332399946163
-2026-11-20 00:17  325_jambo_whatsapp_23_47: publicado https://www.instagram.com/reel/Df8PU1GCNCp/
-2026-11-20 00:17  802_recepcionista_que_hace: error al renderizar (2/3): Falta guion.json o remaster.json
-2026-11-20 00:17  801_recepcionista_horario: error al renderizar (2/3): Falta guion.json o remaster.json
-2026-11-20 00:17  Voz primero no disponible (  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2568, in main
-    esc = g["escenas"]
-          ~^^^^^^^^^^^
-KeyError: 'escenas'
-); se renderiza como antes
-2026-11-20 00:17  341_jambo_horas_extra_gratis: error al renderizar (2/3): El generador falló: Traceback (most recent call last):
-  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2702, in <module>
-    main()
-  File "/home/runner/work/instagram/instagram/herramientas/hacer_reel.py", line 2568, in main
     esc = g["escenas"]
           ~^^^^^^^^^^^
 KeyError: 'escenas'
@@ -598,3 +583,18 @@ KeyError: 'escenas'
 2026-11-21 22:29  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 22:29  316_ias_oficina_ep20_pedido: publicando…
 2026-11-21 22:29  316_ias_oficina_ep20_pedido: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
+2026-11-21 22:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:39  349_jambo_vecino_taladro: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-21 22:39  349h_vecino_taladro_historia: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-21 22:39  350_jambo_app_fantasma: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-21 22:39  350h_app_fantasma_historia: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-21 22:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:40  Control de audio: FALLA voz distinta del guion: faltan ['j', 'a', 'm', 'b', 'illo', 'illo'], sobran ['jmm', 'y', 'yo', 'y', 'yo'] (rehacer esas frases); duración 40.13 s
+2026-11-21 22:40  351_jambo_wifi_robado: control de audio del vídeo externo: aprobado=False LUFS=-14.2 pico=-1.4
+2026-11-21 22:40  351_jambo_wifi_robado: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-21 22:40  Control de audio: OK; duración 38.33 s; avisos: ["voz distinta del guion: faltan ['illo'], sobran ['y', 'yo'] (rehacer esas frases)"]
+2026-11-21 22:40  352_jambo_perro_ladra: control de audio del vídeo externo: aprobado=True LUFS=-14.5 pico=-1.4
+2026-11-21 22:40  352_jambo_perro_ladra: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-21 22:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-21 22:40  351_jambo_wifi_robado: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
+2026-11-21 22:40  352_jambo_perro_ladra: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño

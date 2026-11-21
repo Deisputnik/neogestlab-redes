@@ -1,10 +1,12 @@
 {
   "aprobado": true,
-  "duracion_s": 38.3,
+  "duracion_s": 38.33,
   "bloqueos": [],
-  "avisos": [],
-  "transcripcion": "El perro de Jambo lleva ladrando desde las seis. ¡No hay quien trabaje así! Rosa, llevo tres noches sin dormir. Hoy se me ha caído la cabeza en el teclado. ¡Illo, el perro ladra porque me entiende! ¡Es que tiene mucho mundo! Jambo, tu perro no tiene mundo. Tiene vecinos que ya no te hablan. Horario de silencio registrado. Aviso automático al vecino a partir de las diez de la noche. La queja sin solución es solo ruido.",
-  "guion": "tmp_jb/eps_351_353.json",
+  "avisos": [
+    "voz distinta del guion: faltan ['illo'], sobran ['y', 'yo'] (rehacer esas frases)"
+  ],
+  "transcripcion": "El perro de Jambo lleva ladrando desde las seis. No hay quien trabaje así. Rosa, llevo tres noches sin dormir. Hoy se me ha caído la cabeza en el teclado. Y yo, el perro ladra porque me entiende. Es que tiene mucho mundo. Jambo, tu perro no tiene mundo. Tiene vecinos que ya no te hablan. Horario de silencio registrado. Aviso automático al vecino a partir de las diez de la noche. La queja sin solución es solo ruido.",
+  "guion": "El perro de Jambo lleva ladrando desde las seis. ¡No hay quien trabaje así! Rosa, llevo tres noches sin dormir. Hoy se me ha caído la cabeza en el teclado. ¡Illo, el perro ladra porque me entiende! ¡Es que tiene mucho mundo! Jambo, tu perro no tiene mundo. Tiene vecinos que ya no te hablan. Horario de silencio registrado. Aviso automático al vecino a partir de las diez de la noche. La queja sin solución es solo ruido.",
   "lufs": -14.5,
   "pico_dbfs": -1.4
 }

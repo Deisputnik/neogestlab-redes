@@ -1,10 +1,12 @@
 {
-  "aprobado": true,
-  "duracion_s": 40.1,
-  "bloqueos": [],
+  "aprobado": false,
+  "duracion_s": 40.13,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['j', 'a', 'm', 'b', 'illo', 'illo'], sobran ['jmm', 'y', 'yo', 'y', 'yo'] (rehacer esas frases)"
+  ],
   "avisos": [],
-  "transcripcion": "El wifi va fatal otra vez. Y mira quién está conectado: J-A-M-B-O-movil. ¡Illo, cambia la contraseña ya! Que así no se nos cuelga la reunión de las cinco. ¡Illo, qué contraseña ni qué nada, si yo solo entro pa ver un vídeo rapidito! Jambo, llevas 'un vídeo rapidito' viendo desde marzo. Te conozco el patrón. Red protegida. Contraseña nueva cada semana, solo para dispositivos autorizados. Lo que no es tuyo, tarde o temprano se nota.",
-  "guion": "tmp_jb/eps_351_353.json",
+  "transcripcion": "El Wi -Fi va fatal otra vez. Y mira quién está conectado, JMM o móvil. Y yo, cambia la contraseña ya. Que así no se nos cuelga la reunión de las cinco. Y yo, que contraseña ni que nada, si yo solo entro pa ver un vídeo rapidito. Jambo, llevas un vídeo rapidito, viendo desde marzo. Te conozco el patrón. Red protegida. Contraseña nueva cada semana, solo para dispositivos autorizados. Lo que no es tuyo, tarde o temprano se nota.",
+  "guion": "El wifi va fatal otra vez. Y mira quién está conectado: J-A-M-B-O-movil. ¡Illo, cambia la contraseña ya! Que así no se nos cuelga la reunión de las cinco. ¡Illo, qué contraseña ni qué nada, si yo solo entro pa ver un vídeo rapidito! Jambo, llevas 'un vídeo rapidito' viendo desde marzo. Te conozco el patrón. Red protegida. Contraseña nueva cada semana, solo para dispositivos autorizados. Lo que no es tuyo, tarde o temprano se nota.",
   "lufs": -14.2,
   "pico_dbfs": -1.4
 }
