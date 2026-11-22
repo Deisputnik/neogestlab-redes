@@ -1,17 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 82,
-  "motivos": [
-    "Duración 14.3 s: muy por debajo del rango 20-45 s que exige la serie APPS NEOGEST LAB (v6) y de 'Reglas de formato' del estándar v10.",
-    "El cierre queda atropellado por la duración corta: cada frase del CTA (\"sin datos bancarios\", \"sin compromiso\") se muestra menos de 1 s, apenas legible/seguible, aunque el audio en sí no tiene distorsión ni cortes.",
-    "El resto del contenido es correcto: coincide con hechos_verificados citados (pastilla que toca ahora, botón 'YA ME LA HE TOMADO', recordatorio de cita de mañana), datos ficticios, isotipo nuevo 2026 visible en todos los fotogramas (sin logo antiguo NL), LUFS -14.32 y pico -1.46 dB dentro de norma, sin silencios largos, CTA de cierre correcto sin embudo prohibido, pie del post con frase destinataria y estructura adecuada."
-  ],
-  "como_arreglarlo": "No es un problema de texto del post: hace falta RE-RENDER. El guion.json recorta el clip fuente a 14.2 s (último tramo 12.0-14.2) y las escenas de cierre se reparten en fracciones de segundo; hay que alargar la ventana del clip o repartir mejor los tiempos de las escenas de cierre para que el vídeo total entre en 20-45 s, dando al menos 1.5-2 s por frase del CTA final. Avisar en equipo/peticiones_mejora.md (render/motor) ya que es un patrón de duración corta que puede repetirse en otras piezas 40x de esta serie; si se repite en 2+ piezas, marcarlo URGENTE como fallo de motor en vez de corregir una a una.",
-  "fecha": "2026-11-22T21:59:35Z",
+  "aprobado": true,
+  "nota": 93,
+  "comentario": "Re-render corrige el problema de duración del ciclo anterior (ahora 28.53 s, dentro de 25-45 s de la serie APPS). 1080x1920, LUFS -14.16, pico -1.11 dB, sin silencios largos. Isotipo nuevo 2026 visible en todos los fotogramas, sin logo antiguo NL. Contenido coincide con hechos_verificados citados (pastilla que toca ahora, botón YA ME LA HE TOMADO, Todo en orden, recordatorio de cita de mañana), datos de ejemplo claramente marcados, aviso 'no sustituye a tu médico' en pantalla y voz. Sin afirmaciones de avisos a familiares/modo cuidador (correctamente excluidas). Pie del post con frase destinataria, CTA de cierre correcto sin embudo, atribución musical y aviso de voz IA presentes. Único aviso de whisper es 'tarjeta/tarjetas' (una letra), tolerable y no afecta a la comprensión.",
+  "fecha": "2026-11-22T22:18:43Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-22T21:54:08+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 82,
-  "caducado": "2026-11-22T22:17:11+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-22T22:17:11+00:00"
+  "render": "2026-11-22T22:17:11+00:00"
 }
