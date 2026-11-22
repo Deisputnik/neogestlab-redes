@@ -339,3 +339,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 1. Logo antiguo «NL» neón en el fotograma de cierre (07/07, t≈22s) — es un problema del render/asset de vídeo, no de metadata. No puedo corregirlo desde esta pasada (solo texto/metadata, nunca vídeo ni render).
 
 2. ' · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-22 22:04 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño

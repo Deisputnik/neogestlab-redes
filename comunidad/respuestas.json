@@ -4,47 +4,75 @@
   "id": "122110234317536765_3253501418174002",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Gestión Integral 7D gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook",
-  "error": "sion has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is Sunday, 22-Nov-26 09:48:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AKAYdTz1tgCAwRCoaotf3Ti\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANe32GJtcxhv4zV2z1JOhx3\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "Hola, de momento no puedo confirmar detalles de esa app concreta, pero puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "sion has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is Sunday, 22-Nov-26 09:48:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AWxV5R6J_lQnLhzVij1NIYb\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3w-1bdPDfsdvXpXLExpkip\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Buenas! Si quieres probar GPS Andaluz, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "sion has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is Sunday, 22-Nov-26 09:48:24 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AztCEF1NnpXMkGCtOlfdaU5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AcpQo3cAO6QmcKf5Y0oaGl8\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribir. MEDICATOR es orientativo y no sustituye a tu médico. Si quieres verla en acción, pide la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "sion has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is Sunday, 22-Nov-26 09:48:24 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AZl8TAZu-ZOCCftEXAR73AJ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ad8STP0b40eKpGUduQjKJ5t\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110234317536765_3253501418174002",
-  "accion": "ocultar"
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AxJVX6AYOIN6OnAXn_Fn-mh\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar"
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2M8qSLxFlE3kaE_R4AUWHr\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar"
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYyI6CmHtNYLIxWWrDc_s-E\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar"
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ABedLFaCP-n2oroIFsZHJcS\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110234317536765_3253501418174002",
+  "accion": "responder",
+  "texto": "¡Gracias por pasarte! Puedes probar Gestión Integral 7D sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "responder",
+  "texto": "Si quieres echarle un ojo, puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "responder",
+  "texto": "Puedes probar GPS Andaluz desde el enlace de la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "responder",
+  "texto": "Aquí tienes la prueba gratuita de MEDICATOR, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico."
  }
 ]
