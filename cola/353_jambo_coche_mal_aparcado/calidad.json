@@ -1,17 +1,14 @@
 {
   "aprobado": false,
-  "nota": 40,
+  "nota": 70,
   "motivos": [
-    "Gancho (t=0.3s) no pertenece a este episodio: aparece una foto real de una casa de noche con el texto \"Esta casa del barrio tiene truco 👀\", ajeno por completo al guion de Jambo/plaza de aparcamiento. Parece un vídeo externo mal emparejado o un render con la escena de gancho de otra pieza (de un formato de 'casas con truco') mezclada en este asset.",
-    "Duración 36.97 s: supera los 20 s fijados por la orden del dueño del 13/11 14:46 (DIRECTIVA §14a y lista §6) para episodios normales de la Serie El Jambo; el margen de 35 s es solo para un episodio especial, y este no lo es.",
-    "Aviso de control_audio: la voz dice 'cera' en vez de 'acera', no coincide exactamente con el guion (fallo menor, pero sumado a lo anterior confirma que el render no está limpio)."
+    "Duración 36.97 s: el formato vigente de El Jambo (v11, DIRECTIVA §5) exige 45-70 s; este render se queda por debajo del mínimo (faltan ~8-33 s de episodio).",
+    "Falta el bucle de cierre: el plano «Cosas de Casa» con el gancho «Esta casa del barrio tiene truco» aparece correctamente en la intro (t=0.3s) pero el último plano NO lo repite; el cierre actual son solo créditos/reparto sin volver al plano de casa. El estándar v11 exige que el último plano sea exactamente el mismo de la intro (bucle sin costura).",
+    "No se aprecia recuerdo de un episodio anterior en el guion ni en el vídeo, requisito del formato vigente.",
+    "Aviso menor de control_audio: la voz dice 'cera' en vez de 'acera' (no bloqueante por sí solo, pero a sumar en el re-render)."
   ],
-  "como_arreglarlo": "URGENTE al Centro/motor de render: revisar el pipeline que arma el vídeo final de este episodio, parece que ha incluido un fotograma/clip de gancho de otra pieza (estilo 'casa con truco', foto real) antes de la animación dibujada del Jambo — probablemente un fallo de emparejamiento de asset en neogest-studio o un video_externo cacheado de otro episodio. Hace falta RE-RENDER completo del 353_jambo_coche_mal_aparcado. Además, recortar el episodio a ≤20 s (quitar o acelerar el intercambio Sindy/Jambo/Rosa para dejar solo gancho-remate-cierre, como marca la directiva del 13/11) — esto requiere nuevo render, no es arreglable solo con texto del post. De paso, al re-renderizar, ajustar la frase de Felipe para que diga claramente 'acera' y no 'cera'.",
+  "como_arreglarlo": "RE-RENDER (no basta con texto del post): 1) Alargar el episodio a 45-70 s añadiendo o ampliando algún golpe de escalada (p.ej. un intercambio más entre Sindy/Jambo o un comentario de Rosa) para llegar al mínimo de 45 s manteniendo los 3 golpes de escalada. 2) Añadir al final, después de los créditos o sustituyendo el cierre actual, el MISMO plano de «Cosas de Casa» (foto de la casa + texto «Esta casa del barrio tiene truco») para cerrar en bucle exacto con la intro, tal como exige el formato vigente v11. 3) Añadir una línea de recuerdo de un episodio anterior de la serie (p.ej. Neo o algún personaje mencionando el lío anterior de Jambo). 4) De paso, corregir la pronunciación de 'acera' en el re-render. Esto es trabajo de guion+render (Creador/Centro), no arreglable solo con el post.json.",
+  "fecha": "2026-11-22T21:58:55Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T23:05:53+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 40,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "criterio de Calidad corregido el 22/11 (formato vigente: sitcom 45-70 s con intro de casa); reevaluar",
-  "fecha_anterior": "2026-11-22T21:08:04Z"
+  "render": "2026-11-21T23:05:53+00:00"
 }

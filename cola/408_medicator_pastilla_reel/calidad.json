@@ -1,11 +1,13 @@
 {
   "aprobado": false,
-  "nota": 91,
-  "fecha": "2026-11-21T19:29:50Z",
+  "nota": 82,
+  "motivos": [
+    "Duración 14.3 s: muy por debajo del rango 20-45 s que exige la serie APPS NEOGEST LAB (v6) y de 'Reglas de formato' del estándar v10.",
+    "El cierre queda atropellado por la duración corta: cada frase del CTA (\"sin datos bancarios\", \"sin compromiso\") se muestra menos de 1 s, apenas legible/seguible, aunque el audio en sí no tiene distorsión ni cortes.",
+    "El resto del contenido es correcto: coincide con hechos_verificados citados (pastilla que toca ahora, botón 'YA ME LA HE TOMADO', recordatorio de cita de mañana), datos ficticios, isotipo nuevo 2026 visible en todos los fotogramas (sin logo antiguo NL), LUFS -14.32 y pico -1.46 dB dentro de norma, sin silencios largos, CTA de cierre correcto sin embudo prohibido, pie del post con frase destinataria y estructura adecuada."
+  ],
+  "como_arreglarlo": "No es un problema de texto del post: hace falta RE-RENDER. El guion.json recorta el clip fuente a 14.2 s (último tramo 12.0-14.2) y las escenas de cierre se reparten en fracciones de segundo; hay que alargar la ventana del clip o repartir mejor los tiempos de las escenas de cierre para que el vídeo total entre en 20-45 s, dando al menos 1.5-2 s por frase del CTA final. Avisar en equipo/peticiones_mejora.md (render/motor) ya que es un patrón de duración corta que puede repetirse en otras piezas 40x de esta serie; si se repite en 2+ piezas, marcarlo URGENTE como fallo de motor en vez de corregir una a una.",
+  "fecha": "2026-11-22T21:59:35Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T14:58:29+00:00",
-  "aprobado_anterior": true,
-  "nota_anterior": 91,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-22T21:54:08+00:00 (mp4 nuevo en el repo nuevo; el del 21/11 se perdió)"
+  "render": "2026-11-22T21:54:08+00:00"
 }

@@ -1,18 +1,13 @@
 {
   "aprobado": false,
-  "nota": 55,
+  "nota": 58,
   "motivos": [
-    "Duración 40,1 s: más del doble del límite de 20 s para episodios de la Serie El Jambo (orden del dueño 13/11 14:46, DIRECTIVA §14a y lista §6); incumple lo mismo que 502-515.",
-    "control_audio.json del render viene en aprobado:false: la voz no coincide con el guion ('illo' se pierde y se oye 'y yo', 'J-A-M-B-O-movil' suena como 'JMM o móvil'); bloqueo H5 (voz con errores) del estándar v9.",
-    "El fotograma inicial (t=0,3s) muestra una foto real de una casa con el texto 'Esta casa del barrio tiene truco', que no es el gancho de este guion (gancho real: 'El wifi va fatal otra vez...') ni el modo dibujo del formato Jambo; parece metraje de otra pieza mezclado en el render, o un asset erróneo.",
-    "El resto del vídeo sí es modo dibujo correcto, con isotipo 2026 visible en todos los fotogramas y cierre de reparto correcto, pero los tres fallos anteriores son suficientes para no publicar."
+    "Audio roto (control_audio.json aprobado:false, bloqueo real no es jerga): 'J-A-M-B-O-movil' se pronuncia 'JMM o móvil' (deletreo ilegible, rompe el gancho) y las dos líneas con '¡Illo...!' de Rosa y de Jambo se oyen como 'Y yo...', perdiendo la interjección y el sentido de ambas réplicas del gag central.",
+    "Falta el bucle obligatorio del formato vigente: el último plano debe repetir EXACTAMENTE el plano de 'Cosas de Casa' con el gancho 'Esta casa del barrio tiene truco'; este render cierra en créditos de reparto (t=38.9-39.9s) sin volver al plano de la casa.",
+    "Duración 40,1 s, fuera del rango 45-70 s del formato vigente de sitcom (ni siquiera es el límite antiguo derogado, es insuficiente también para el nuevo mínimo)."
   ],
-  "como_arreglarlo": "Requiere RE-RENDER, no es arreglo de texto: (1) recortar a ≤20 s según el límite del formato; (2) regenerar las frases de audio que fallan el control (especialmente las líneas con 'illo' y el deletreo 'J-A-M-B-O-movil', que el motor de voz no está pronunciando bien) — si esto se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md; (3) revisar el asset de render: el primer fotograma no corresponde a este episodio, parece un fallo de ensamblado del vídeo externo — avisar al Creador/Centro para que regenere el video_externo correcto antes de volver a evaluar.",
+  "como_arreglarlo": "Requiere RE-RENDER (no es solo texto): 1) Regenerar audio de las frases que fallan control_audio.json, en especial el deletreo 'J-A-M-B-O-movil' (probar separarlo con guiones/pausas distintas o decirlo de otra forma que el motor sí pronuncie) y las dos líneas con '¡Illo...!' de Rosa/Jambo que el motor transcribe como 'Y yo' — si este patrón de deletreos y 'illo' al inicio de frase se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md. 2) Añadir al final el plano idéntico de 'Cosas de Casa' (mismo gancho de texto) para cerrar el bucle, en vez de terminar solo en créditos; esto es un ajuste del ensamblado/plantilla del Centro, no de texto del post. 3) Ajustar duración total a 45-70 s añadiendo el tiempo del bucle de cierre y, si hace falta, algo más de desarrollo en los gags para no quedar corto.",
+  "fecha": "2026-11-22T21:58:26Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T21:40:22+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 55,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "criterio de Calidad corregido el 22/11 (formato vigente: sitcom 45-70 s con intro de casa); reevaluar",
-  "fecha_anterior": "2026-11-22T21:07:37Z"
+  "render": "2026-11-21T21:40:22+00:00"
 }

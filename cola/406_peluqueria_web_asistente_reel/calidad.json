@@ -1,12 +1,12 @@
 {
   "aprobado": false,
-  "nota": 92,
-  "comentario": "Re-render correcto: voz y ritmo naturales (gancho con conflicto real, sin muletillas de IA), audio dentro de norma (LUFS -14.17, pico -1.45 dB, sin silencios), música de Kevin MacLeod con atribución completa y sin duplicar. Isotipo nuevo \"N\" de circuitos visible en el cierre (no hay logo antiguo). Cifra del tinte (35€/90 min) y rótulo del asistente coinciden con lo comprobado en _comprobado del post.json; no se afirma nada fuera de eso. Pie del post con gancho, historia, una sola petición, línea de prueba gratuita y hashtags correctos. Pregunta final concreta en el comentario fijado.",
-  "fecha": "2026-11-21T13:20:25Z",
+  "nota": 0,
+  "motivos": [
+    "No se ha podido inspeccionar el render: inspeccionar_video devuelve error 'post.json no tiene asset ni video_externo: nada que descargar'. No es un fallo de contenido, es imposibilidad técnica de verificación en este turno.",
+    "El calidad.json anterior (nota 92, aprobado=true) quedó marcado caducado por un re-render del ciclo 2026-11-22T21:52:56Z ('mp4 nuevo en el repo nuevo; el del 21/11 se perdió'); el estándar exige revisar de nuevo cualquier render nuevo antes de volver a aprobar, no se puede arrastrar la nota anterior sin ver el mp4 actual."
+  ],
+  "como_arreglarlo": "No es un arreglo de texto ni de guion: hace falta que el post.json de la release 'cola' incluya el campo 'asset' (o 'video_externo') apuntando al mp4 ya re-renderizado del 22/11, para poder descargarlo e inspeccionarlo (ffprobe, silencedetect, loudnorm y fotogramas). Si el render existe pero el post.json no lo referencia, es un fallo del ciclo/publicador: avisar como URGENTE en equipo/peticiones_mejora.md para que el ciclo adjunte el asset correcto antes de la próxima pasada de Calidad. En cuanto el asset esté enlazado, re-evaluar desde cero (no reutilizar el contenido del calidad.json de 92: el guion y el contenido comprobado en _comprobado parecen correctos y coherentes con las cifras del tinte y el rótulo del asistente, pero la nota debe basarse en el mp4 real, incluyendo isotipo 2026, LUFS/pico y silencios del render nuevo).",
+  "fecha": "2026-11-22T21:59:08Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T13:15:25+00:00",
-  "aprobado_anterior": true,
-  "nota_anterior": 92,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-22T21:52:56+00:00 (mp4 nuevo en el repo nuevo; el del 21/11 se perdió)"
+  "render": "2026-11-22T21:52:56+00:00"
 }
