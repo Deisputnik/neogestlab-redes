@@ -6,7 +6,8 @@
     "El calidad.json anterior (nota 92, aprobado=true) quedó marcado caducado por un re-render del ciclo 2026-11-22T21:52:56Z ('mp4 nuevo en el repo nuevo; el del 21/11 se perdió'); el estándar exige revisar de nuevo cualquier render nuevo antes de volver a aprobar, no se puede arrastrar la nota anterior sin ver el mp4 actual."
   ],
   "como_arreglarlo": "No es un arreglo de texto ni de guion: hace falta que el post.json de la release 'cola' incluya el campo 'asset' (o 'video_externo') apuntando al mp4 ya re-renderizado del 22/11, para poder descargarlo e inspeccionarlo (ffprobe, silencedetect, loudnorm y fotogramas). Si el render existe pero el post.json no lo referencia, es un fallo del ciclo/publicador: avisar como URGENTE en equipo/peticiones_mejora.md para que el ciclo adjunte el asset correcto antes de la próxima pasada de Calidad. En cuanto el asset esté enlazado, re-evaluar desde cero (no reutilizar el contenido del calidad.json de 92: el guion y el contenido comprobado en _comprobado parecen correctos y coherentes con las cifras del tinte y el rótulo del asistente, pero la nota debe basarse en el mp4 real, incluyendo isotipo 2026, LUFS/pico y silencios del render nuevo).",
-  "fecha": "2026-11-22T21:59:08Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-22T21:52:56+00:00"
+  "render": "2026-11-22T21:52:56+00:00",
+  "fecha_anterior": "2026-11-22T21:59:08Z",
+  "nota_tecnica": "22/11: la revisión de las 21:59 UTC no pudo descargar el vídeo (faltaba «asset» en post.json); restaurado, reevaluar"
 }
