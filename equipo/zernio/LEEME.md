@@ -8,14 +8,16 @@ Metricool, publica/programa de verdad desde el primer día — no solo borrador 
 tiene documentación pública confirmada (`docs_search` del propio MCP) y el post de prueba pasó
 `validate_post` sin avisos con el vídeo del Jambo ya subido a Base44.
 
-## Lo único que falta — 1 paso del dueño
+## Hecho (22/11/2026)
 
-1. Entrar en https://zernio.com/dashboard/api-keys (con la misma cuenta que conectó TikTok/IG).
-2. "Create API key" → copiarla (empieza por `sk_`, no se vuelve a mostrar).
-3. Pegarla como secreto del repo `ajreparacion/instagram`: Settings → Secrets and variables →
-   Actions → New repository secret → nombre `ZERNIO_API_KEY`, valor la clave copiada.
+Secreto `ZERNIO_API_KEY` ya creado y guardado en `Deisputnik/neogestlab-redes` (Settings → Secrets
+and variables → Actions). El workflow `redes_zernio.yml` ya puede publicar/programar de verdad en
+TikTok en su próxima pasada programada (12:45 o 19:45, hora de Madrid), o manualmente con
+"Run workflow" en la pestaña Actions.
 
-Sin ese secreto el workflow `redes_zernio.yml` se queda en espera sin hacer nada (no falla).
+Nota: este documento mencionaba antes el repo `ajreparacion/instagram` — ese repo quedó abandonado
+tras la suspensión de esa cuenta de GitHub (21/11/2026); todo el pipeline vive ahora en
+`Deisputnik/neogestlab-redes` (ver `equipo/github-cuenta` o la memoria del proyecto).
 
 ## Cómo funciona
 
