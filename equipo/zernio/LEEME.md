@@ -11,9 +11,12 @@ tiene documentación pública confirmada (`docs_search` del propio MCP) y el pos
 ## Hecho (22/11/2026)
 
 Secreto `ZERNIO_API_KEY` ya creado y guardado en `Deisputnik/neogestlab-redes` (Settings → Secrets
-and variables → Actions). El workflow `redes_zernio.yml` ya puede publicar/programar de verdad en
-TikTok en su próxima pasada programada (12:45 o 19:45, hora de Madrid), o manualmente con
-"Run workflow" en la pestaña Actions.
+and variables → Actions). Primer run manual de prueba (#2) con la clave real: autenticación OK,
+pero falló con 404 `account_not_found` porque la cuenta de TikTok `6b00b30e062d3d918320d801` fijada
+en `config.json` ya no existe — se había reconectado bajo un ID nuevo. Corregido: `account_id`
+actualizado a `6b01dae0a3545a8f6bb38ad6` (usuario `neogestlab`, sin punto) en `config.json`, leído
+en directo con `accounts_list` del MCP de Zernio. Pendiente: relanzar el workflow para confirmar que
+ahora programa de verdad.
 
 Nota: este documento mencionaba antes el repo `ajreparacion/instagram` — ese repo quedó abandonado
 tras la suspensión de esa cuenta de GitHub (21/11/2026); todo el pipeline vive ahora en
@@ -27,7 +30,7 @@ tras la suspensión de esa cuenta de GitHub (21/11/2026); todo el pipeline vive 
 - Publica con `POST /v1/posts` (contenido + `scheduledFor` + `platforms: [{platform: tiktok,
   accountId}]`), sin forzar `tiktokSettings` — si Zernio algún día exige privacidad/consentimiento
   explícitos, el error de la API lo dirá con el campo exacto y se añade entonces.
-- Cuenta ya fijada en `config.json` (`account_id`): `6b00b30e062d3d918320d801`.
+- Cuenta ya fijada en `config.json` (`account_id`): `6b01dae0a3545a8f6bb38ad6` (usuario `neogestlab`).
 
 ## Si algo falla
 
