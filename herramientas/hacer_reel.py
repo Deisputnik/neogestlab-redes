@@ -2545,6 +2545,12 @@ def main():
     MODO["app"] = modo == "app"
     MODO["sketch"] = modo == "sketch"
     MODO["datos"] = modo == "datos"
+    # Guion sin «escenas»: es una pieza del estudio (vídeo ya montado), que este generador no monta.
+    # Hasta el 22/11/2026 reventaba con KeyError: 'escenas' y la pieza se quedaba atascada sin explicación
+    # (p. ej. 328_jambo_inmobiliaria_decima_visita). Mejor parar con la instrucción concreta.
+    if not isinstance(g.get("escenas"), list) or not g["escenas"]:
+        sys.exit("guion.json sin «escenas»: si es un episodio del estudio, pon video_externo en post.json "
+                 "(y renderizado:false) para que el ciclo lo tome ya montado; si no, corrige el guion.")
     if MODO["app"]:
         cargar_video_app(str(g.get("video") or ""))
         APP["plantilla"] = bool(g.get("plantilla")) and APP["vertical"]
