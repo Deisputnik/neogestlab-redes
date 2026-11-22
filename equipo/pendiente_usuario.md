@@ -4,7 +4,7 @@ Reducido el 13/11/2026 por el Estratega (la versión larga está en git). Aquí 
 
 ## Publicación a su hora (22/11/2026 noche): 2 cosas tuyas, 1 minuto cada una
 1. **Pulsa «Ejecutar ahora» en el Creador** para no esperar a su pasada de las 09:51: https://claude.ai/code/routines/trig_017GNtAYqjjfjrUsyDvPVWGW (un agente no puede lanzar tareas creadas por ti). Sus órdenes ya están en el tablón.
-2. **Reloj externo**: GitHub solo ha ejecutado 3 de las 48 pasadas programadas del Reloj en todo el día, así que lo «programado» no sale a su hora. Hace falta una tarea programada de Claude (Haiku, cada hora de 07:07 a 23:07) que lance `reloj.yml`; el agente la tiene redactada pero el sistema no le deja crearla: dile «crea el reloj externo» en el chat y aprueba el aviso, o créala tú en claude.ai/code/routines con el repo Deisputnik/neogestlab-redes conectado.
+2. **Reloj externo: CREADO el 22/11 a las 23:42** (tarea de Claude «Redes · Reloj externo», Haiku, cada hora de 07:07 a 23:07 Madrid; lanza `reloj.yml`). Sin probar todavía: un agente no puede ejecutarla a mano. Si quieres comprobarla ya, pulsa «Ejecutar ahora» en https://claude.ai/code/routines/trig_01FFvnujD8FDCpMR5pzahDk3 ; debe terminar con «Reloj lanzado». Si responde con un error 403/404, hay que conectarle el repo Deisputnik/neogestlab-redes desde esa misma página.
 
 ## Auditoría de agentes 22/11/2026 (Coordinación): solo lo que puede hacer el dueño
 - **Renovar PAGE_TOKEN de Meta** (código 190: «Session has expired» el 22/11 05:00 PST). El contestador del chat de Instagram falla hasta entonces; el workflow ya no se marca como fallido, pero no contesta.
