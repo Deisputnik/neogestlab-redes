@@ -1,0 +1,16 @@
+{
+  "media_id": "18120732611322928",
+  "enlace": "https://www.instagram.com/reel/DgD36DWDL8I/",
+  "prueba_no_seguidores": true,
+  "publicado": "2026-11-22T22:26:06+00:00",
+  "youtube": {
+    "estado": "error",
+    "error": "YouTube HTTP 401: {\n  \"error\": \"invalid_client\",\n  \"error_description\": \"The provided client secret is invalid.\"\n}"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1946617002988803",
+    "enlace": "https://www.facebook.com/reel/1946617002988803",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
