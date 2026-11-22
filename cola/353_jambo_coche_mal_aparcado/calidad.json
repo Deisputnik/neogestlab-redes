@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 40,
+  "motivos": [
+    "Gancho (t=0.3s) no pertenece a este episodio: aparece una foto real de una casa de noche con el texto \"Esta casa del barrio tiene truco 👀\", ajeno por completo al guion de Jambo/plaza de aparcamiento. Parece un vídeo externo mal emparejado o un render con la escena de gancho de otra pieza (de un formato de 'casas con truco') mezclada en este asset.",
+    "Duración 36.97 s: supera los 20 s fijados por la orden del dueño del 13/11 14:46 (DIRECTIVA §14a y lista §6) para episodios normales de la Serie El Jambo; el margen de 35 s es solo para un episodio especial, y este no lo es.",
+    "Aviso de control_audio: la voz dice 'cera' en vez de 'acera', no coincide exactamente con el guion (fallo menor, pero sumado a lo anterior confirma que el render no está limpio)."
+  ],
+  "como_arreglarlo": "URGENTE al Centro/motor de render: revisar el pipeline que arma el vídeo final de este episodio, parece que ha incluido un fotograma/clip de gancho de otra pieza (estilo 'casa con truco', foto real) antes de la animación dibujada del Jambo — probablemente un fallo de emparejamiento de asset en neogest-studio o un video_externo cacheado de otro episodio. Hace falta RE-RENDER completo del 353_jambo_coche_mal_aparcado. Además, recortar el episodio a ≤20 s (quitar o acelerar el intercambio Sindy/Jambo/Rosa para dejar solo gancho-remate-cierre, como marca la directiva del 13/11) — esto requiere nuevo render, no es arreglable solo con texto del post. De paso, al re-renderizar, ajustar la frase de Felipe para que diga claramente 'acera' y no 'cera'.",
+  "fecha": "2026-11-22T21:08:04Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T23:05:53+00:00"
+}

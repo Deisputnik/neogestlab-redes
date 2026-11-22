@@ -1,11 +1,12 @@
 {
   "aprobado": false,
-  "nota": 91,
-  "fecha": "2026-11-12T11:45Z",
-  "revisado_por": "agente de CALIDAD (12/11, pasada de las 12:30)",
-  "comentario": "20,6 s, 1080x1920, -14,2 LUFS, pico -1,4 dBFS, sin silencios > 0,8 s, primer cambio a 2,0 s y ningún tramo > 2,3 s sin cambio. Gancho POV de 6 palabras con el carrito (35,00 € y «Enviar pedido») ya en el fotograma 0; un solo caso; frase para enviar; cierre único; sin «comenta X»; voz genérica; música audio_ig con volumen 0,5. Lo visto coincide con _comprobado (3 platos, total 35,00 €, no se pulsa «Enviar pedido» ni se afirma que el pedido entre en la gestión). Corregido el pie del post: ahora dice «nuestra app AJ Sistema» (A6). Descuentos: el formulario del carrito enseña 3 campos en blanco sin etiqueta y el botón verde de WhatsApp de la web flota en pantalla (no es marca de producto ajena en voz ni texto; se acepta como el resto de webs 509-515). Aviso a Mejora: recortar o difuminar los 3 campos vacíos.",
-  "aprobado_anterior": true,
-  "nota_anterior": 91,
-  "caducado": "2026-11-21T15:14:55+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-21T15:14:55+00:00"
+  "nota": 0,
+  "motivos": [
+    "No se puede inspeccionar el render actual: inspeccionar_video devuelve 'no encuentro el asset 601_bar_pedido_web_reel.mp4 en la release cola'. Sin ffprobe/silencedetect/LUFS/fotogramas reales no se puede verificar el vídeo.",
+    "El calidad.json anterior (91, aprobado) está marcado 'caducado' por un re-render del ciclo (2026-11-21T15:14:55Z); por el bloqueo 9 del estándar (aprobación caducada) no es válido para el render actual y hace falta una revisión nueva del vídeo nuevo, no de datos de texto."
+  ],
+  "como_arreglarlo": "No es un fallo de contenido (post, guion y control_audio.json ya están bien: control_audio aprobado, atribución musical correcta, A6 cumplido). Es un problema de disponibilidad del asset: hay que comprobar que el render post-ciclo del 21/11 subió correctamente el mp4 como asset de la release «cola» con el nombre esperado (601_bar_pedido_web_reel.mp4) antes de la próxima pasada de Calidad. Si el asset sigue sin aparecer en 2 pasadas, repórtalo como URGENTE en equipo/peticiones_mejora.md (fallo del publicador/ciclo, no del Creador) en vez de seguir rechazando la pieza una a una.",
+  "fecha": "2026-11-22T21:08:20Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T15:14:55+00:00"
 }

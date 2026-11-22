@@ -1,0 +1,14 @@
+{
+  "aprobado": false,
+  "nota": 55,
+  "motivos": [
+    "Duración 40,1 s: más del doble del límite de 20 s para episodios de la Serie El Jambo (orden del dueño 13/11 14:46, DIRECTIVA §14a y lista §6); incumple lo mismo que 502-515.",
+    "control_audio.json del render viene en aprobado:false: la voz no coincide con el guion ('illo' se pierde y se oye 'y yo', 'J-A-M-B-O-movil' suena como 'JMM o móvil'); bloqueo H5 (voz con errores) del estándar v9.",
+    "El fotograma inicial (t=0,3s) muestra una foto real de una casa con el texto 'Esta casa del barrio tiene truco', que no es el gancho de este guion (gancho real: 'El wifi va fatal otra vez...') ni el modo dibujo del formato Jambo; parece metraje de otra pieza mezclado en el render, o un asset erróneo.",
+    "El resto del vídeo sí es modo dibujo correcto, con isotipo 2026 visible en todos los fotogramas y cierre de reparto correcto, pero los tres fallos anteriores son suficientes para no publicar."
+  ],
+  "como_arreglarlo": "Requiere RE-RENDER, no es arreglo de texto: (1) recortar a ≤20 s según el límite del formato; (2) regenerar las frases de audio que fallan el control (especialmente las líneas con 'illo' y el deletreo 'J-A-M-B-O-movil', que el motor de voz no está pronunciando bien) — si esto se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md; (3) revisar el asset de render: el primer fotograma no corresponde a este episodio, parece un fallo de ensamblado del vídeo externo — avisar al Creador/Centro para que regenere el video_externo correcto antes de volver a evaluar.",
+  "fecha": "2026-11-22T21:07:37Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-21T21:40:22+00:00"
+}
