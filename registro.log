@@ -1,6 +1,3 @@
-2026-11-20 00:31  Voz: alineación palabra a palabra (small, 14.9 s): 7/7 frases
-2026-11-20 00:31  Mezcla: voz -16.6 LUFS, música -22.6 LUFS (con ducking -25.5), la música baja 5.79 dB (p90) bajo la voz, ratio 2.5; máster -16.17 -> -14.0 LUFS, pico -0.6 dBFS; huecos de voz: []
-2026-11-20 00:31  Control de audio: FALLA voz distinta del guion: faltan ['apruebas'], sobran ['aprueba'] (rehacer esas frases); duración 22.53 s
 2026-11-20 00:31  404_nota_examen_reel: NO se publica, control de audio: voz distinta del guion: faltan ['apruebas'], sobran ['aprueba'] (rehacer esas frases)
 2026-11-20 00:31  Voz con edge-tts: 7 frases en 3 s
 2026-11-20 00:31  Voz: silencios recortados por frase (s): [0.12, 0.12, 0.13, 0.13, 0.09, 0.13, 0.13]
@@ -598,3 +595,6 @@
 2026-11-22 09:51  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-22 09:51  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-22 09:51  Estadísticas actualizadas (30 posts, 1599 seguidores)
+2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
