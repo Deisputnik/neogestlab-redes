@@ -97,6 +97,7 @@ def _prompt(n):
         "hora": "entero 0-23 (hora del día de la escena)",
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
+        "bucle_visual": "CAMPO OBLIGATORIO, no lo omitas: 4-10 palabras describiendo qué pose, plano o elemento visual del gancho (escena 'e':'gancho') se repite igual en el cierre, para que el vídeo se pueda ver en bucle sin notar el corte entre el final y el siguiente visionado (p.ej. 'Rosa con el móvil en la mano, misma postura'; 'la taza de café a medio llenar en primer plano'). Describe la imagen, no la moraleja ni el texto.",
         "escenas": [
             {
                 "e": "gancho",
