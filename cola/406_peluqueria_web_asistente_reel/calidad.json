@@ -2,12 +2,11 @@
   "aprobado": false,
   "nota": 0,
   "motivos": [
-    "No se puede inspeccionar el vídeo: post.json no tiene campo 'asset' ni 'video_externo', la herramienta inspeccionar_video no tiene nada que descargar.",
-    "El calidad.json anterior (nota 92) está marcado como caducado por un re-render del 2026-11-22T21:52:56+00:00; no puede reutilizarse sin ver el mp4 nuevo (bloqueo 9 del estándar: aprobación caducada).",
-    "Sin ffprobe/silencedetect/LUFS/pico ni fotogramas no se puede confirmar isotipo 2026, ausencia de logo antiguo, cifras en pantalla ni cierre en bucle/formato correcto."
+    "No se ha podido inspeccionar el render: inspeccionar_video devuelve error 'post.json no tiene asset ni video_externo: nada que descargar'. No es un fallo de contenido, es imposibilidad técnica de verificación en este turno.",
+    "El calidad.json anterior (nota 92, aprobado=true) quedó marcado caducado por un re-render del ciclo 2026-11-22T21:52:56Z ('mp4 nuevo en el repo nuevo; el del 21/11 se perdió'); el estándar exige revisar de nuevo cualquier render nuevo antes de volver a aprobar, no se puede arrastrar la nota anterior sin ver el mp4 actual."
   ],
-  "como_arreglarlo": "Quien gestiona el render/publicación del post (Creador o Centro, según quién suba el asset de 406_peluqueria_web_asistente_reel) debe comprobar que el ciclo ha escrito la ruta del mp4 (asset de la release 'cola' o video_externo) en post.json tras el re-render del 22/11 21:52:56Z; probablemente un fallo de publicación de release o de escritura de campo que afecta al pipeline (candidato a 'otro' en lecciones_calidad.md / URGENTE en peticiones_mejora.md si se repite en más piezas). Cuando el campo exista y apunte al mp4 correcto, relanzar esta revisión de Calidad.",
-  "fecha": "2026-11-22T21:56:59Z",
+  "como_arreglarlo": "No es un arreglo de texto ni de guion: hace falta que el post.json de la release 'cola' incluya el campo 'asset' (o 'video_externo') apuntando al mp4 ya re-renderizado del 22/11, para poder descargarlo e inspeccionarlo (ffprobe, silencedetect, loudnorm y fotogramas). Si el render existe pero el post.json no lo referencia, es un fallo del ciclo/publicador: avisar como URGENTE en equipo/peticiones_mejora.md para que el ciclo adjunte el asset correcto antes de la próxima pasada de Calidad. En cuanto el asset esté enlazado, re-evaluar desde cero (no reutilizar el contenido del calidad.json de 92: el guion y el contenido comprobado en _comprobado parecen correctos y coherentes con las cifras del tinte y el rótulo del asistente, pero la nota debe basarse en el mp4 real, incluyendo isotipo 2026, LUFS/pico y silencios del render nuevo).",
+  "fecha": "2026-11-22T21:59:08Z",
   "revisor": "Calidad (API)",
   "render": "2026-11-22T21:52:56+00:00"
 }

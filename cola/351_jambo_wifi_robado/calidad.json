@@ -1,13 +1,13 @@
 {
   "aprobado": false,
-  "nota": 68,
+  "nota": 58,
   "motivos": [
-    "Duración 40,1 s: el formato vigente (DIRECTIVA §5, estándar v11) exige 45-70 s para episodios de El Jambo; este episodio se queda corto.",
-    "Bucle de cierre incompleto: la intro SÍ es el plano obligatorio 'Cosas de Casa' con el gancho 'Esta casa del barrio tiene truco' (correcto), pero el ÚLTIMO plano no repite ese mismo plano de la casa; el vídeo cierra con la pantalla de reparto/créditos. El estándar v11 exige que apertura y cierre sean el mismo plano exacto (bucle sin costura), y aquí falta ese plano final.",
-    "Voz con errores reales (bloqueo H5, no es jerga no transcrita): control_audio.json confirma que el motor pronuncia mal el deletreo 'J-A-M-B-O-movil' (se oye 'JMM o móvil') y sustituye las DOS instancias de '¡Illo!' por la palabra real 'Y yo', cambiando el sentido de los reproches de Rosa y Jambo. No es un caso de Whisper ignorando una muletilla sino de pronunciación defectuosa que daña la comprensión del gag."
+    "Audio roto (control_audio.json aprobado:false, bloqueo real no es jerga): 'J-A-M-B-O-movil' se pronuncia 'JMM o móvil' (deletreo ilegible, rompe el gancho) y las dos líneas con '¡Illo...!' de Rosa y de Jambo se oyen como 'Y yo...', perdiendo la interjección y el sentido de ambas réplicas del gag central.",
+    "Falta el bucle obligatorio del formato vigente: el último plano debe repetir EXACTAMENTE el plano de 'Cosas de Casa' con el gancho 'Esta casa del barrio tiene truco'; este render cierra en créditos de reparto (t=38.9-39.9s) sin volver al plano de la casa.",
+    "Duración 40,1 s, fuera del rango 45-70 s del formato vigente de sitcom (ni siquiera es el límite antiguo derogado, es insuficiente también para el nuevo mínimo)."
   ],
-  "como_arreglarlo": "Requiere RE-RENDER: (1) ajustar el guion/timing para llegar a 45-70 s (añadir o alargar algún gag, p. ej. reforzar el golpe de Felipe o añadir un remate extra antes del cierre) sin tocar la intro; (2) añadir al final, tras los créditos o en vez de cortar en el reparto, el mismo plano exacto de 'Cosas de Casa' con el texto 'Esta casa del barrio tiene truco' para cerrar el bucle — esto lo monta el Creador/Centro en el ensamblado del vídeo externo; (3) regenerar con el motor de voz las frases de Rosa y Jambo que llevan '¡Illo!' y la línea con el deletreo 'J-A-M-B-O-movil' (el motor no las pronuncia bien); si este fallo de deletreo/illo se repite en más piezas de la serie, pedir arreglo del motor de voz como URGENTE en equipo/peticiones_mejora.md en vez de rechazar una a una.",
-  "fecha": "2026-11-22T21:56:29Z",
+  "como_arreglarlo": "Requiere RE-RENDER (no es solo texto): 1) Regenerar audio de las frases que fallan control_audio.json, en especial el deletreo 'J-A-M-B-O-movil' (probar separarlo con guiones/pausas distintas o decirlo de otra forma que el motor sí pronuncie) y las dos líneas con '¡Illo...!' de Rosa/Jambo que el motor transcribe como 'Y yo' — si este patrón de deletreos y 'illo' al inicio de frase se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md. 2) Añadir al final el plano idéntico de 'Cosas de Casa' (mismo gancho de texto) para cerrar el bucle, en vez de terminar solo en créditos; esto es un ajuste del ensamblado/plantilla del Centro, no de texto del post. 3) Ajustar duración total a 45-70 s añadiendo el tiempo del bucle de cierre y, si hace falta, algo más de desarrollo en los gags para no quedar corto.",
+  "fecha": "2026-11-22T21:58:26Z",
   "revisor": "Calidad (API)",
   "render": "2026-11-21T21:40:22+00:00"
 }

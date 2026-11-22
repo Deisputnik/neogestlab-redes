@@ -1,12 +1,13 @@
 {
   "aprobado": false,
-  "nota": 80,
+  "nota": 82,
   "motivos": [
-    "A3: la escena de la cita (t≈7s, voz «Y mañana, la cita con el médico») muestra la pantalla «Mi calendario» (vista mensual completa, varias fechas marcadas en rosa, botón «ESCUCHAR» y un icono de perfil en el día 8), que NO es la pantalla citada en _comprobado («Mañana tienes cita · 10:30 · Dra. Elena Martín» en el inicio). Es una interfaz distinta, no descrita en los hechos_verificados citados por el propio post.json; no puedo verificarla como real sin la fuente, así que se trata como no verificada.",
-    "El resto del vídeo (gancho, botón YA ME LA HE TOMADO, cierre con isotipo 2026, audio -14.32 LUFS / pico -1.46 dB, sin silencios) cumple el estándar."
+    "Duración 14.3 s: muy por debajo del rango 20-45 s que exige la serie APPS NEOGEST LAB (v6) y de 'Reglas de formato' del estándar v10.",
+    "El cierre queda atropellado por la duración corta: cada frase del CTA (\"sin datos bancarios\", \"sin compromiso\") se muestra menos de 1 s, apenas legible/seguible, aunque el audio en sí no tiene distorsión ni cortes.",
+    "El resto del contenido es correcto: coincide con hechos_verificados citados (pastilla que toca ahora, botón 'YA ME LA HE TOMADO', recordatorio de cita de mañana), datos ficticios, isotipo nuevo 2026 visible en todos los fotogramas (sin logo antiguo NL), LUFS -14.32 y pico -1.46 dB dentro de norma, sin silencios largos, CTA de cierre correcto sin embudo prohibido, pie del post con frase destinataria y estructura adecuada."
   ],
-  "como_arreglarlo": "Necesita render nuevo: o bien recortar/sustituir el clip de 5.8-9.0s por el fragmento real de la pista del Centro que muestre literalmente la tarjeta de inicio «Mañana tienes cita · 10:30 · Dra. Elena Martín» (la que sí está en _comprobado), o si la pantalla de calendario es efectivamente parte de la función real de MEDICATOR, pedir al Centro que amplíe hechos_verificados/_comprobado del post.json describiendo esa pantalla de calendario antes de volver a aprobar. Esto lo resuelve el Creador/Centro, no es un simple cambio de texto del post.",
-  "fecha": "2026-11-22T21:57:16Z",
+  "como_arreglarlo": "No es un problema de texto del post: hace falta RE-RENDER. El guion.json recorta el clip fuente a 14.2 s (último tramo 12.0-14.2) y las escenas de cierre se reparten en fracciones de segundo; hay que alargar la ventana del clip o repartir mejor los tiempos de las escenas de cierre para que el vídeo total entre en 20-45 s, dando al menos 1.5-2 s por frase del CTA final. Avisar en equipo/peticiones_mejora.md (render/motor) ya que es un patrón de duración corta que puede repetirse en otras piezas 40x de esta serie; si se repite en 2+ piezas, marcarlo URGENTE como fallo de motor en vez de corregir una a una.",
+  "fecha": "2026-11-22T21:59:35Z",
   "revisor": "Calidad (API)",
   "render": "2026-11-22T21:54:08+00:00"
 }
