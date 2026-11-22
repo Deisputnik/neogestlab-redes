@@ -83,6 +83,7 @@ La tarea no puede leer workana.com ni ajreparacion.com (ENOTFOUND: fuera de los 
 ## Facebook · invitaciones
 - 2026-11-16 · Comunidad: sin lista de candidatos para invitar (no hay en el repo a quién invitar hoy; la API no permite invitar). Si quieres invitar, usa el botón «Invitar» de la página con quienes ya comentan o reaccionan en los reels de Neogest Lab.
 - 2026-11-16 · Calidad · Subir vídeos corregidos a la release «cola»: desde las sesiones en la nube no se puede (subida binaria bloqueada) y el sandbox del estudio da 401. 308 y 323 tienen el máster corregido en Neogest Studio (public/_render/fix-308.mp4 y fix-323.mp4) pero no pueden publicarse. Hace falta que Mejora habilite una vía en Actions (p. ej. que el ciclo descargue un video_externo con URL pública de media.base44.com) o que el dueño dé permiso de subida.
+- 2026-11-22 · Comunidad: sin candidatos nuevos para invitar hoy (el repo no tiene a quién invitar y la API no permite invitar). Si quieres invitar, usa el botón «Invitar» de la página con quienes ya comentan o reaccionan en los reels de esta semana.
 
 ## Migración de cuenta de GitHub (21/11/2026)
 - La cuenta ajreparacion quedó suspendida por GitHub; el repo se migró a Deisputnik/neogestlab-redes (todo el contenido, historia incluida). Secretos PAGE_TOKEN y FACEBOOK_PAGE_TOKEN reconfigurados. Causa más probable de la suspensión: reloj.yml mantenía un job de Actions corriendo casi 24h con auto-relanzado infinito; reescrito para que cada pasada sea corta (minuto 13/43, sin bucle).
