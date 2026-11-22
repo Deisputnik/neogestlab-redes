@@ -45,12 +45,12 @@ Cadena real: guion → render → mp4 en la release «cola» → nota de Calidad
 | Comunidad (cron) | Cada hora, duplicaba al Reloj | Baja | Respaldo a 4 al día | e636fcd |
 | `concurrency` | Faltaba en explorar_web, facebook_prueba, logo_perfil, revozear_centro | Baja | Sí | e636fcd |
 | `reloj.yml` | Sin cambios (correcto: pasada corta cada 30 min). Solo 3 ejecuciones programadas el 22/11 | Info | No tocar | n/a |
-| Cola | 999 (oficina, nota 45), 349h y 350h (historias caducadas) | Media | Movidas a `descartados/`; mp4 de 18 MB fuera del árbol (sigue en el historial de git) | f37cc7c |
+| Cola | 999 (oficina, nota 45), 349h y 350h (historias caducadas) | Media | Movidas a `descartados/`; mp4 de 18 MB fuera del árbol (sigue en el historial de git) | 3a2cde3 |
 | Cola | 107 y 108 (reels de app sin render, notas 55 y 40) siguen en cola | Baja | No: decide el Creador | n/a |
-| Directiva §2 | Mapa desfasado (Calidad 2 al día, cada 15 min, sin Autocrítica ni cadena real) | Media | Sí: reescrito con cron reales UTC/Madrid | 7a97311 |
-| Parrilla (§7, §8, `plan.json`) | Huecos repartidos y 2 reels + 5 Jambo > tope de 6 | Media | Sí: `parrilla_diaria` única y relevo | 7a97311 |
-| `guionista_gemini.py` | «1 episodio al día», «Neo correcto y neutro» | Media | Sí (5 al día, Neo culto y respetuoso, Jambo Reseco) | 7a97311 |
-| `roles/creador.md` | ≥ 3 al día, decorados de oficina, biblia v3, receta de 1,3 s | Media | Sí | 7a97311 |
+| Directiva §2 | Mapa desfasado (Calidad 2 al día, cada 15 min, sin Autocrítica ni cadena real) | Media | Sí: reescrito con cron reales UTC/Madrid | dfdab9a |
+| Parrilla (§7, §8, `plan.json`) | Huecos repartidos y 2 reels + 5 Jambo > tope de 6 | Media | Sí: `parrilla_diaria` única y relevo | dfdab9a |
+| `guionista_gemini.py` | «1 episodio al día», «Neo correcto y neutro» | Media | Sí (5 al día, Neo culto y respetuoso, Jambo Reseco) | dfdab9a |
+| `roles/creador.md` | ≥ 3 al día, decorados de oficina, biblia v3, receta de 1,3 s | Media | Sí | dfdab9a |
 | `roles/mejora.md`, `roles/supervisor.md` | Menciones a sketch / repo viejo | Baja | Repo viejo sí; sketch es mantenimiento del motor antiguo, se deja | 80bf74b |
 | `pre_entrega.py` avisos §14 | Avisos de una orden del 13/11 derogada («sin personaje en el segundo 0», «sin reenvío») | Baja | No: solo avisos, 0 errores | n/a |
 
