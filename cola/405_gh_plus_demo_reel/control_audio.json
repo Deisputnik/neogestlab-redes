@@ -1,0 +1,10 @@
+{
+  "aprobado": true,
+  "duracion_s": 28.07,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['recibos', 'tarjeta'], sobran ['recibo', 'tarjetas'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Se te pasó pagar el seguro del coche. Otra vez, los recibo se acumulan y nadie te dice cuál vence primero. En esta app, lo vencido sale en rojo y lo que viene en naranja. Cada aviso trae su propio botón, marcar pagado. Y arriba, tu dinero disponible, el saldo menos lo pendiente del mes. Así sabes con cuanto cuentas de verdad este mes. Mándaselo a quien se olvida de pagar los recibos. Pide tu prueba gratuita, sin tarjetas, sin datos bancarios y sin compromiso.",
+  "guion": "Se te pasó pagar el seguro del coche. Otra vez. Los recibos se acumulan y nadie te dice cuál vence primero. En esta app, lo vencido sale en rojo, y lo que viene, en naranja. Cada aviso trae su propio botón: Marcar pagado. Y arriba, tu dinero disponible: el saldo menos lo pendiente del mes. Así sabes con cuánto cuentas de verdad este mes. Mándaselo a quien se olvida de pagar los recibos. Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso."
+}

@@ -4,40 +4,52 @@
   "estilo": "gancho",
   "hablante": null,
   "inicio": 0.0,
-  "duracion": 1.833,
-  "texto": "Se te pasó pagar el seguro.",
+  "duracion": 3.133,
+  "texto": "Se te pasó pagar el seguro del coche. Otra vez.",
   "enfasis": [
-   5
+   8,
+   9
   ]
  },
  {
   "escena": 1,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 1.833,
-  "duracion": 3.167,
-  "texto": "Lo vencido sale en rojo, y lo que viene, en naranja.",
+  "inicio": 3.133,
+  "duracion": 3.3,
+  "texto": "Los recibos se acumulan y nadie te dice cuál vence primero.",
   "enfasis": [
-   4
+   9
   ]
  },
  {
   "escena": 2,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 5.0,
-  "duracion": 2.867,
-  "texto": "Cada aviso trae su botón: Marcar pagado.",
+  "inicio": 6.433,
+  "duracion": 3.9,
+  "texto": "En esta app, lo vencido sale en rojo, y lo que viene, en naranja.",
   "enfasis": [
-   5,
-   6
+   7
   ]
  },
  {
   "escena": 3,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 7.867,
+  "inicio": 10.333,
+  "duracion": 3.133,
+  "texto": "Cada aviso trae su propio botón: Marcar pagado.",
+  "enfasis": [
+   6,
+   7
+  ]
+ },
+ {
+  "escena": 4,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 13.467,
   "duracion": 4.1,
   "texto": "Y arriba, tu dinero disponible: el saldo menos lo pendiente del mes.",
   "enfasis": [
@@ -46,22 +58,34 @@
   ]
  },
  {
-  "escena": 4,
+  "escena": 5,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 11.967,
-  "duracion": 2.3,
-  "texto": "Mándaselo a quien se olvida de pagar.",
+  "inicio": 17.567,
+  "duracion": 2.867,
+  "texto": "Así sabes con cuánto cuentas de verdad este mes.",
   "enfasis": [
    3,
    4
   ]
  },
  {
-  "escena": 5,
+  "escena": 6,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 20.433,
+  "duracion": 3.033,
+  "texto": "Mándaselo a quien se olvida de pagar los recibos.",
+  "enfasis": [
+   3,
+   4
+  ]
+ },
+ {
+  "escena": 7,
   "estilo": "cierre",
   "hablante": null,
-  "inicio": 14.267,
+  "inicio": 23.467,
   "duracion": 4.6,
   "texto": "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.",
   "enfasis": [
