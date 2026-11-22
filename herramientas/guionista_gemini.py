@@ -272,7 +272,12 @@ Reglas duras (si no las cumples, el episodio se rechaza):
 9. Registro de habla de barrio con réplica inteligente, más paleto y vulgar (ver BIBLIA v5
    más abajo y orden del dueño 21/11 arriba) en Rosa, Felipe, Sindy y Concha Quetón; Neo
    es el ÚNICO culto: siempre correcto, educado y con respeto (orden del dueño 22/11). Jambo Reseco
-   (vecino chungo, voz rasgada, el más mal hablado) sale en los episodios cuando encaje.
+   (vecino chungo, voz rasgada, el más mal hablado) sale en los episodios.
+   Orden del dueño 22/11 (noche): MUY mal hablados y muy vulgares, con tacos en casi cada réplica de
+   Rosa, Felipe, Sindy, Concha y Jambo (no un taco suelto por episodio), sin perder el mensaje.
+   Felipe Lotas es el CUÑADO ENTERADO: no sabe nada y cree saberlo todo; sentencia con seguridad total
+   cosas falsas o inventadas y la realidad o Neo le dejan en evidencia. Jambo Reseco es el GORRÓN
+   CARADURA: se apunta a todo, nunca paga, se lleva lo que puede y encima exige.
 
 PERSONAJE QUE VUELVE (orden del dueño 21/11 mediodía): "jambo" (Jambo Reseco) vuelve al
 reparto del barrio — un tío chungo, de poca confianza, mal hablado (más tacos y más fuertes

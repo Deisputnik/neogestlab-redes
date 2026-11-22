@@ -349,7 +349,7 @@ FORMATO_VIGENTE = (
     "y las lecciones antiguas de 502-515 que citan 20 s no valen. El plano de casa «Cosas de Casa» con gancho de texto ≤ 8 palabras "
     "(p. ej. «Esta casa del barrio tiene truco») es la INTRO OBLIGATORIA del episodio, y el último plano debe repetir exactamente ese "
     "mismo plano (bucle): que apertura y cierre sean iguales es lo correcto, no un gancho ajeno. Evalúa además (orden del dueño 22/11): "
-    "todos hablan con vocabulario vulgar/choni de barrio y tacos comunes; Neo es el ÚNICO culto y habla con respeto; humor negro "
+    "todos hablan con vocabulario vulgar/choni de barrio y tacos comunes; Neo es el ÚNICO culto y habla con respeto; los demás MUY mal hablados y muy vulgares (no un taco suelto), Felipe Lotas como cuñado enterado y Jambo Reseco como gorrón caradura (orden del dueño 22/11 noche); humor negro "
     "real; Jambo Reseco presente cuando toque; giro de Neo, moraleja y recuerdo. «illo», «pa» y los tacos que Whisper no transcribe "
     "NO son error de voz. El listón de 90 se mantiene. Cierre fijo del post: «Pide tu prueba gratuita: sin tarjeta, sin datos "
     "bancarios y sin compromiso»; prohibido cualquier embudo («comenta X y te envío»). Repo vivo: Deisputnik/neogestlab-redes."

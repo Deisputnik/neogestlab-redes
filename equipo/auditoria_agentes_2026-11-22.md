@@ -4,7 +4,7 @@
 1. **El Jambo que sabe** es un sitcom de salón de barrio de **45-70 segundos**. Los formatos de 15-25 s y el Jambo de oficina están retirados para siempre.
 2. **Intro y cierre iguales (bucle):** el vídeo abre y cierra con el MISMO plano de la casa «Cosas de Casa». La apertura lleva un gancho de texto de 8 palabras como máximo (por ejemplo «Esta casa del barrio tiene truco»). Que apertura y cierre coincidan es lo correcto.
 3. **Reparto:** Rosa Melano, Felipe Lotas, Sindy Entes, Neo, Concha Quetón y Jambo Reseco (vecino chungo, de poca confianza, voz rasgada, el más mal hablado).
-4. **Cómo hablan:** todos con vocabulario vulgar de barrio, sin perder el mensaje. Neo es el único culto y siempre habla con respeto. Humor negro de verdad, moraleja de 6-9 palabras y recuerdo de un episodio anterior.
+4. **Cómo hablan:** todos muy mal hablados y muy vulgares, con vocabulario de barrio y tacos en casi cada réplica, sin perder el mensaje. Felipe Lotas hace de cuñado enterado (no sabe nada y cree saberlo todo) y Jambo Reseco de gorrón caradura (se apunta a todo, nunca paga y encima exige). Neo es el único culto y siempre habla con respeto. Humor negro de verdad, moraleja de 6-9 palabras y recuerdo de un episodio anterior.
 5. **Ritmo:** 5 episodios nuevos al día, publicados el mismo día, más 1 promo de app aprobada.
 6. **Parrilla fija (hora de Madrid):** 08:30, 11:30, 13:40 (promo de app), 16:30, 19:40 y 21:30. Máximo 6 publicaciones por canal y día y al menos 100 minutos entre piezas del mismo canal. Está en `equipo/plan.json`.
 7. **Relevo:** si una pieza no tiene nota de 90 o más a 60 minutos de su hueco, ese hueco lo ocupa la siguiente aprobada y la pieza pasa al siguiente hueco libre. Nunca queda un hueco vacío habiendo piezas aprobadas.

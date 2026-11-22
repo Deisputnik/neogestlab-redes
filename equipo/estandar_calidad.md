@@ -9,7 +9,7 @@ Para episodios de El Jambo que sabe (biblia v5.2, DIRECTIVA §5) NO se aplican: 
 - Duración 45-70 s, 1080x1920, −14 LUFS, pico ≤ −1 dB, silencios ≤ 0,6 s dentro de la voz.
 - Intro obligatoria: plano «Cosas de Casa» con gancho de texto ≤ 8 palabras (p. ej. «Esta casa del barrio tiene truco»); el cierre repite EXACTAMENTE el mismo plano (bucle sin costura). Que apertura y cierre sean iguales NO es un defecto. Si el plano de casa pertenece a otro texto o el vídeo no es del episodio, sí se rechaza.
 - Escalada en 3 golpes, giro de Neo, moraleja de 6-9 palabras, recuerdo de un episodio anterior, créditos con el reparto completo.
-- Registro (orden del dueño 22/11): todos los personajes con vocabulario vulgar/choni de barrio y tacos comunes sin perder el mensaje; Neo es el ÚNICO culto y habla con respeto; humor negro real (frialdad, no sarcasmo blanco); Jambo Reseco presente cuando toque. Faltar a esto resta nota; no es bloqueo salvo que el episodio no tenga humor negro ni giro.
+- Registro (orden del dueño 22/11): todos los personajes con vocabulario vulgar/choni de barrio y tacos comunes sin perder el mensaje; Neo es el ÚNICO culto y habla con respeto; los demás MUY mal hablados y muy vulgares (no un taco suelto), Felipe Lotas como cuñado enterado y Jambo Reseco como gorrón caradura (orden del dueño 22/11 noche); humor negro real (frialdad, no sarcasmo blanco); Jambo Reseco presente cuando toque. Faltar a esto resta nota; no es bloqueo salvo que el episodio no tenga humor negro ni giro.
 - La jerga que Whisper no entiende («illo», «pa», tacos) no es error de voz.
 Duración de promos de app: 25-45 s; trucos: 20-35 s (sin cambios).
 
