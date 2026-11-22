@@ -9,5 +9,9 @@
   "como_arreglarlo": "Requiere RE-RENDER (no es solo texto del post): (1) alargar el vídeo a al menos 20 s, por ejemplo extendiendo ligeramente la escena del remate o el cierre; (2) corregir la plantilla para que el texto del input de chat no quede cortado por el borde del móvil dibujado en la escena 'tramo' del minuto ~4-5s. Como ya es el tercer caso de texto cortado por la izquierda en esta serie (406, 407, 408), si se repite en una cuarta pieza, avisar como URGENTE en equipo/peticiones_mejora.md para arreglar la plantilla en el motor en vez de rechazar una a una.",
   "fecha": "2026-11-22T22:02:16Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-22T21:52:56+00:00"
+  "render": "2026-11-22T21:52:56+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 78,
+  "caducado": "2026-11-22T22:15:16+00:00",
+  "motivo_caducidad": "re-render del ciclo 2026-11-22T22:15:16+00:00"
 }

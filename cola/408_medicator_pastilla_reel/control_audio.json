@@ -1,0 +1,10 @@
+{
+  "aprobado": true,
+  "duracion_s": 28.53,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['tarjeta'], sobran ['tarjetas'] (rehacer esas frases)"
+  ],
+  "transcripcion": "¿Ya me tomé la pastilla? Otra vez la misma duda. Con tantas pastillas, es fácil perder la cuenta. Esta APP te enseña la que toca ahora con hora y cantidad, un botón grande, ya me la he tomado. Y responde todo en orden y cuando toca la próxima. Y si mañana tienes cita, el inicio te lo recuerda. La APP organiza, no sustituye a tu médico. Mandaselo a quien cuide de mamá. Pide tu prueba gratuita, sin tarjetas, sin datos bancarios y sin compromiso.",
+  "guion": "¿Ya me tomé la pastilla? Otra vez la misma duda. Con tantas pastillas, es fácil perder la cuenta. Esta app te enseña la que toca ahora, con hora y cantidad. Un botón grande: ya me la he tomado. Y responde: todo en orden, y cuándo toca la próxima. Y si mañana tienes cita, el inicio te lo recuerda. La app organiza; no sustituye a tu médico. Mándaselo a quien cuide de mamá. Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso."
+}

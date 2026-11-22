@@ -28,5 +28,11 @@
     "archivo": "Monkeys_Spinning_Monkeys.mp3",
     "bpm": 143.6
   },
-  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir."
+  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir.",
+  "renderizado": "2026-11-22T22:17:11+00:00",
+  "asset": "408_medicator_pastilla_reel.mp4",
+  "control_audio": {
+    "aprobado": true,
+    "duracion_s": 28.53
+  }
 }

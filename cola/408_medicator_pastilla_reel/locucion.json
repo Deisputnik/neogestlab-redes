@@ -4,8 +4,8 @@
   "estilo": "gancho",
   "hablante": null,
   "inicio": 0.0,
-  "duracion": 1.8,
-  "texto": "¿Ya me tomé la pastilla?",
+  "duracion": 3.133,
+  "texto": "¿Ya me tomé la pastilla? Otra vez la misma duda.",
   "enfasis": [
    4
   ]
@@ -14,20 +14,44 @@
   "escena": 1,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 1.8,
-  "duracion": 1.833,
-  "texto": "Aquí ves la que toca ahora.",
+  "inicio": 3.133,
+  "duracion": 2.933,
+  "texto": "Con tantas pastillas, es fácil perder la cuenta.",
   "enfasis": [
-   5
+   5,
+   6,
+   7
   ]
  },
  {
   "escena": 2,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 3.633,
-  "duracion": 1.833,
-  "texto": "Y sale: todo en orden.",
+  "inicio": 6.067,
+  "duracion": 3.2,
+  "texto": "Esta app te enseña la que toca ahora, con hora y cantidad.",
+  "enfasis": [
+   7
+  ]
+ },
+ {
+  "escena": 3,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 9.267,
+  "duracion": 2.4,
+  "texto": "Un botón grande: ya me la he tomado.",
+  "enfasis": [
+   2
+  ]
+ },
+ {
+  "escena": 4,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 11.667,
+  "duracion": 3.133,
+  "texto": "Y responde: todo en orden, y cuándo toca la próxima.",
   "enfasis": [
    2,
    3,
@@ -35,33 +59,34 @@
   ]
  },
  {
-  "escena": 3,
-  "estilo": "tramo",
-  "hablante": null,
-  "inicio": 5.467,
-  "duracion": 2.233,
-  "texto": "Y mañana, la cita con el médico.",
-  "enfasis": [
-   3
-  ]
- },
- {
-  "escena": 4,
-  "estilo": "tramo",
-  "hablante": null,
-  "inicio": 7.7,
-  "duracion": 2.1,
-  "texto": "Mándaselo a quien cuide de mamá.",
-  "enfasis": [
-   5
-  ]
- },
- {
   "escena": 5,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 14.8,
+  "duracion": 3.133,
+  "texto": "Y si mañana tienes cita, el inicio te lo recuerda.",
+  "enfasis": [
+   4
+  ]
+ },
+ {
+  "escena": 6,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 17.933,
+  "duracion": 5.0,
+  "texto": "La app organiza; no sustituye a tu médico. Mándaselo a quien cuide de mamá.",
+  "enfasis": [
+   3,
+   4
+  ]
+ },
+ {
+  "escena": 7,
   "estilo": "cierre",
   "hablante": null,
-  "inicio": 9.8,
-  "duracion": 4.6,
+  "inicio": 22.933,
+  "duracion": 5.6,
   "texto": "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.",
   "enfasis": [
    2,

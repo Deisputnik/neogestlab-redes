@@ -4,39 +4,73 @@
   "estilo": "gancho",
   "hablante": null,
   "inicio": 0.0,
-  "duracion": 3.8,
-  "texto": "Las once de la noche. Preguntan el precio y nadie contesta.",
+  "duracion": 4.233,
+  "texto": "Las once de la noche. Preguntan el precio del tinte y nadie contesta.",
   "enfasis": [
-   10
+   12
   ]
  },
  {
   "escena": 1,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 3.8,
-  "duracion": 3.0,
-  "texto": "En esta web de ejemplo, le pregunto por el tinte.",
+  "inicio": 4.233,
+  "duracion": 3.833,
+  "texto": "Si nadie coge el teléfono, esa pregunta se queda sin respuesta.",
   "enfasis": [
-   9
+   9,
+   10
   ]
  },
  {
   "escena": 2,
   "estilo": "tramo",
   "hablante": null,
-  "inicio": 6.8,
-  "duracion": 3.433,
+  "inicio": 8.067,
+  "duracion": 3.567,
+  "texto": "¿Y si contestara la web? Probamos con una web de ejemplo.",
+  "enfasis": [
+   2
+  ]
+ },
+ {
+  "escena": 3,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 11.633,
+  "duracion": 2.8,
+  "texto": "Le pregunto el precio y la duración del tinte.",
+  "enfasis": [
+   3
+  ]
+ },
+ {
+  "escena": 4,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 14.433,
+  "duracion": 2.933,
   "texto": "Y el asistente responde solo con lo que pone la web.",
   "enfasis": [
    4
   ]
  },
  {
-  "escena": 3,
+  "escena": 5,
+  "estilo": "tramo",
+  "hablante": null,
+  "inicio": 17.367,
+  "duracion": 3.6,
+  "texto": "La propia web lo avisa: responde solo con su información.",
+  "enfasis": [
+   6
+  ]
+ },
+ {
+  "escena": 6,
   "estilo": "remate",
   "hablante": null,
-  "inicio": 10.233,
+  "inicio": 20.967,
   "duracion": 3.133,
   "texto": "Nadie cogió el teléfono. La web sí contestó.",
   "enfasis": [
@@ -44,10 +78,10 @@
   ]
  },
  {
-  "escena": 4,
+  "escena": 7,
   "estilo": "cierre",
   "hablante": null,
-  "inicio": 13.367,
+  "inicio": 24.1,
   "duracion": 4.6,
   "texto": "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.",
   "enfasis": [

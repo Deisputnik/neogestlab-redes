@@ -9,5 +9,9 @@
   "como_arreglarlo": "No es un problema de texto del post: hace falta RE-RENDER. El guion.json recorta el clip fuente a 14.2 s (último tramo 12.0-14.2) y las escenas de cierre se reparten en fracciones de segundo; hay que alargar la ventana del clip o repartir mejor los tiempos de las escenas de cierre para que el vídeo total entre en 20-45 s, dando al menos 1.5-2 s por frase del CTA final. Avisar en equipo/peticiones_mejora.md (render/motor) ya que es un patrón de duración corta que puede repetirse en otras piezas 40x de esta serie; si se repite en 2+ piezas, marcarlo URGENTE como fallo de motor en vez de corregir una a una.",
   "fecha": "2026-11-22T21:59:35Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-22T21:54:08+00:00"
+  "render": "2026-11-22T21:54:08+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 82,
+  "caducado": "2026-11-22T22:17:11+00:00",
+  "motivo_caducidad": "re-render del ciclo 2026-11-22T22:17:11+00:00"
 }
