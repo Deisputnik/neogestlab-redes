@@ -79,7 +79,7 @@ Régimen transitorio: las piezas con «cuando» hasta el 11/11 23:59 conservan s
 - Portada (portada_ms) en un fotograma con el gancho completo y Bit o Paco visibles (5).
 
 ## Serie APPS NEOGEST LAB (v6, orden del usuario 7/11/2026)
-Excepción de estilo: la imagen es la demo de la app (no modo dibujo), 20-45 s, pie «By Neogest Lab»; Bit opcional en gancho o cierre. Se revisan al menos 5 fotogramas y el audio. Bloqueos propios (si falla uno, no se publica):
+Excepción de estilo: la imagen es la demo de la app (no modo dibujo), 25-45 s (DIRECTIVA §5; el «20-45 s» anterior queda derogado), pie «By Neogest Lab»; Bit opcional en gancho o cierre. Se revisan al menos 5 fotogramas y el audio. Bloqueos propios (si falla uno, no se publica):
 A1. Reel que declara locución pero tiene huecos sin voz de más de 1,5 s. (v7: un reel de presentación sin ninguna voz, con música en primer plano a −14 LUFS y texto en pantalla, es válido por la orden del dueño del 8/11 17:59 «la música tiene que resaltar»; si lleva voz, se aplica el límite de 1,5 s.)
 A2. Gancho flojo en los 2 primeros segundos (sin problema real del público, sin pregunta, número ni antes/después).
 A3. Cualquier afirmación (voz, rótulos o texto) fuera de hechos_verificados de la entidad Producto o dentro de prohibido_afirmar.
@@ -89,7 +89,7 @@ A6. El post no dice que es «nuestra app». También: app no «activo», GPS And
 El resto de la puntuación (100 puntos, mínimo 75) se aplica igual, cambiando «modo dibujo» por «demo clara de la app».
 
 ## Reglas de formato
-- 1080x1920, H.264 + AAC, menos de 60 s (trucos: 20-35 s; apps: 20-45 s) (válido también para YouTube Shorts) y menos de 100 MB. Pico de audio por debajo de -1 dBFS; voz claramente por encima de la música.
+- 1080x1920, H.264 + AAC, menos de 60 s (trucos: 20-35 s; apps: 25-45 s) (válido también para YouTube Shorts) y menos de 100 MB. Pico de audio por debajo de -1 dBFS; voz claramente por encima de la música.
 - Texto clave entre y=500 e y=1450. Nada importante en los 350 px de abajo ni en los 150 de arriba.
 - Números escritos con letra en la voz.
 
