@@ -1,4 +1,11 @@
 {
-  "enviados": {},
-  "ultimo_error": "2026-11-22T20:43:10.000Z · Zernio no confirmó el id del post creado: {\"post\": {\"_id\": \"6b0353e1e369fea0aa70326f\", \"userId\": \"6b00b15e7b27ab4239e9f9e0\", \"workspaceId\": \"6b00b15e7b27ab4239e9f9e2\", \"title\": \"\", \"content\": \"El presupuesto \\u00abcerrado\\u00bb de la reforma sali\\u00f3 por el doble. La Jupillo lee la letra peque\\u00f1a.\\n\\u00bfTe han cerrado alguna vez un p"
+  "enviados": {
+    "308_jambo_ep8_presupuesto": {
+      "dueAt": "2026-11-23T11:45:00.000Z",
+      "zernio_id": "6b0353e1e369fea0aa70326f",
+      "enviado": "2026-11-22T20:43:10.000Z",
+      "fichero": "308_jambo_ep8_presupuesto.mp4"
+    }
+  },
+  "ultimo_error": ""
 }

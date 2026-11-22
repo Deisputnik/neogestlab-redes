@@ -66,7 +66,8 @@ def crear_post(api_key, account_id, texto, cuando_iso, url):
         "platforms": [{"platform": "tiktok", "accountId": account_id}],
     }
     r = _pedir("POST", "/posts", api_key, cuerpo)
-    pid = r.get("id") or (r.get("post") or {}).get("id") or (r.get("data") or {}).get("id")
+    post = r.get("post") or r.get("data") or r
+    pid = r.get("id") or post.get("id") or post.get("_id")
     if not pid:
         raise RuntimeError(f"Zernio no confirmó el id del post creado: {json.dumps(r)[:300]}")
     return pid
