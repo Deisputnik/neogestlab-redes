@@ -214,10 +214,27 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -q -m "Ciclo automático $(date -u +%FT%H:%MZ)"
-          for i in 1 2 3; do
-            git pull --rebase --autostash -q && git push -q && exit 0
-            sleep 5
+          # 22/11/2026: si este paso falla, se pierde TODO lo que el ciclo acaba de anotar — incluida la
+          # marca «renderizado» de un vídeo ya subido a la release, que deja la pieza sin publicarse y
+          # caducando a las 36 h (pasó con 406_peluqueria_web_asistente_reel). Los demás workflows empujan
+          # a la vez, así que un rebase puede chocar: se aborta el rebase antes de reintentar (si no, el
+          # siguiente intento arranca en estado conflictivo y vuelve a fallar) y se espera cada vez más.
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main || true
+            if git rebase -q origin/main; then
+              git push -q origin HEAD:main && exit 0
+            else
+              git rebase --abort || true
+            fi
+            sleep $((5 * i))
           done
+          # Último recurso: nada de tirar el trabajo del ciclo. Se deja en una rama de rescate y se avisa.
+          RAMA="rescate/ciclo-${GITHUB_RUN_ID:-$(date -u +%s)}"
+          if git push -q origin "HEAD:${RAMA}"; then
+            echo "::error::No se pudo actualizar main tras 5 intentos. Los cambios del ciclo están a salvo en la rama ${RAMA}: hay que integrarlos a mano (incluye marcas «renderizado» de vídeos ya subidos)."
+          else
+            echo "::error::No se pudo actualizar main ni guardar la rama de rescate. Los cambios de este ciclo se han perdido."
+          fi
           exit 1
 
       - name: Aviso en rojo si se omitió el render por falta de motor de voz
