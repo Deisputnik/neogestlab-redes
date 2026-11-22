@@ -70,7 +70,20 @@ jobs:
             exit 0
           fi
           git commit -m "Calidad (API): pasada automática"
+          subido=0
           for i in 1 2 3; do
-            git push origin main && break
-            git pull --rebase origin main
+            if git push origin main; then
+              subido=1
+              break
+            fi
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Conflicto en el rebase (p.ej. una pieza movida por otro flujo a la vez): aborto y fusiono dando prioridad a los cambios de Calidad"
+              git rebase --abort
+              git merge -X ours origin/main -m "Calidad (API): fusión automática tras conflicto"
+            fi
           done
+          if [ "$subido" != "1" ]; then
+            echo "No se pudo subir el resultado de Calidad tras 3 intentos" >&2
+            exit 1
+          fi

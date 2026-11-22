@@ -45,6 +45,7 @@ DIRECTIVA = os.path.join(RAIZ, "equipo", "DIRECTIVA_VIGENTE.md")
 
 MODELO = "claude-sonnet-5"
 RELEASE = "cola"
+REPO = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
 MAX_PIEZAS = 4          # tope de piezas evaluadas por pasada (coste/tiempo)
 MAX_TURNOS = 6          # tope de turnos de tool-use por pieza
 
@@ -123,13 +124,13 @@ def descargar_video(pid, post, destino):
     nombre = post.get("asset")
     if not nombre:
         raise RuntimeError("post.json no tiene 'asset' ni 'video_externo': nada que descargar")
-    aid = _gh("api", f"repos/ajreparacion/instagram/releases/tags/{RELEASE}",
+    aid = _gh("api", f"repos/{REPO}/releases/tags/{RELEASE}",
                "--jq", f'.assets[] | select(.name=="{nombre}") | .id').strip()
     if not aid:
         raise RuntimeError(f"no encuentro el asset {nombre} en la release {RELEASE}")
     salida = subprocess.run(
         ["gh", "api", "-H", "Accept: application/octet-stream",
-         f"repos/ajreparacion/instagram/releases/assets/{aid}"],
+         f"repos/{REPO}/releases/assets/{aid}"],
         capture_output=True, timeout=180)
     if salida.returncode != 0:
         raise RuntimeError(f"descarga del asset {nombre}: {salida.stderr.decode()[-400:]}")
