@@ -2,7 +2,7 @@
   "tipo": "reel",
   "texto": "Factura enviada. ¿Y el cobro?\nSi tienes una pyme o eres autónomo, cobrar no debería ser otro trabajo.\nEn Gestión Integral 7D, nuestra app, cada factura puede llevar su enlace de pago: tarjeta, TPV o transferencia con IBAN.\nLo copias o lo mandas por correo, y la factura sale en PDF con tus datos fiscales y los del cliente.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nMándaselo a ese autónomo que persigue cobros por WhatsApp.\nVoz generada por IA. Demo con datos ficticios.\n\n#autonomos #pymes #facturacion #cobros #neogestlab",
   "cuando": "2026-11-23T11:30:00+01:00",
-  "renderizado": false,
+  "renderizado": "2026-11-22T23:10:28+00:00",
   "asset": "108_cobrar_facturas_reel.mp4",
   "portada_ms": 1000,
   "compartir_en_feed": true,
@@ -49,7 +49,7 @@
   ],
   "_comprobado": "22/11/2026: cada frase de la voz y cada rótulo sale de hechos_verificados de Gestión Integral 7D o se ve en la toma real (enlace de pago por factura; copiar o enviar por correo; pago con tarjeta o transferencia). El vídeo no nombra Stripe, Redsys ni Bizum ni ninguna marca ajena, no da cifras, plazos ni clientes. Datos de la demo ficticios (empresa «Neogest Lab · Pruebas»). Clip de ambiente generado con Gemini (Biblioteca, gemini-20-facturas-plazo), persona de espaldas, sin cara.",
   "_nota_creador": "22/11/2026 Creador (sesión de desatasco, orden del dueño): pieza REHECHA entera en Neogest Studio. Ya no es el reel de diapositivas del carrusel: es promo antes/después con voz. Logo 2026 en el cierre (escena outro del estudio). «cuando» movido del 22/11 17:10 (vencido sin vídeo) al hueco libre del 23/11 11:30 de la parrilla.",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/14d635467_108_cobrar_facturas_reel.mp4",
   "motor": "neogest-studio",
-  "gancho": "Factura enviada. ¿Y el cobro?"
+  "gancho": "Factura enviada. ¿Y el cobro?",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/14d635467_108_cobrar_facturas_reel.mp4"
 }

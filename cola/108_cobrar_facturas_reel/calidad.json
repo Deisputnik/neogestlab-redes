@@ -9,5 +9,9 @@
   "como_arreglarlo": "1) Re-renderizar el cierre (fotograma 07/07) con el isotipo nuevo «N» de circuitos del kit 2026, eliminando el círculo «NL» neón antiguo. 2) Añadir a post.json un campo _fuentes con el enlace a la documentación/ficha de Gestión Integral 7D que confirme las integraciones de pago citadas (Stripe, Redsys, Bizum, IBAN, PDF fiscal) o retirar las que no estén confirmadas en hechos_verificados del Producto. 3) Confirmar que el uso de los nombres Stripe/Redsys/Bizum está autorizado como integración real (no solo mención genérica) antes de volver a presentar la pieza.",
   "fecha": "2026-11-20T18:51:02Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-18T21:59:11+00:00"
+  "render": "2026-11-18T21:59:11+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 40,
+  "caducado": "2026-11-22T23:10:28+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-22T23:10:28+00:00"
 }
