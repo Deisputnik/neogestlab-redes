@@ -1,5 +1,16 @@
 # TikTok @neogestlab vía Metricool · segunda vía (20/11/2026)
 
+> **BLOQUEADO (22/11/2026, comprobado en directo):** la API de Metricool solo está disponible en
+> sus **planes de pago avanzados** — el plan gratis NO incluye acceso a la API (pantalla
+> "Configuración de la cuenta > API" muestra "Acceso a la API: planes avanzados y personalizados" +
+> botón "Mejora tu plan"). Por tanto `METRICOOL_TOKEN` no se puede conseguir gratis y esta vía
+> **no es viable sin pagar**. Se deja el código tal cual (no hace nada sin los 3 secretos, termina
+> bien), pero no se persigue más esta ruta salvo que el dueño decida pagar el plan de Metricool.
+> Alternativa gratis real para TikTok: la cuenta @neogestlab ya está conectada gratis en Zernio
+> (2ª cuenta, sin tarjeta); falta solo crear una API key de Zernio (acción que requiere
+> autorización explícita del dueño) y un script `herramientas/redes_zernio.py` que llame a
+> `POST https://zernio.com/api/v1/posts` igual que `facebook.py` llama a Graph API.
+
 Creado por orden del dueño: no depender de una sola herramienta (Buffer) ni de la aprobación de
 TikTok for Developers para publicar. Manda `equipo/DIRECTIVA_VIGENTE.md` para la cadencia.
 
