@@ -11,52 +11,78 @@
     {
       "estilo": "gancho",
       "texto": "Mamá: «¿ya me tomé la *pastilla*?»",
-      "voz": "¿Ya me tomé la *pastilla*?",
+      "voz": "¿Ya me tomé la *pastilla*? Otra vez la misma duda.",
       "clip": {
         "inicio": 0.0,
-        "fin": 2.6
+        "fin": 2.6,
+        "velocidad": 0.74
       }
     },
     {
       "estilo": "tramo",
+      "texto": "Con tantas pastillas...",
+      "voz": "Con tantas pastillas, es fácil *perder la cuenta*.",
       "clip": {
         "inicio": 2.6,
-        "fin": 5.8
-      },
-      "texto": "Un botón grande",
-      "voz": "Aquí ves la que toca *ahora*."
+        "fin": 5.0,
+        "velocidad": 0.8
+      }
     },
     {
       "estilo": "tramo",
+      "texto": "La que toca ahora",
+      "voz": "Esta app te enseña la que toca *ahora*, con hora y cantidad.",
+      "clip": {
+        "inicio": 3.0,
+        "fin": 6.0,
+        "velocidad": 0.7
+      }
+    },
+    {
+      "estilo": "tramo",
+      "texto": "Un botón grande",
+      "voz": "Un botón *grande*: ya me la he tomado.",
+      "clip": {
+        "inicio": 5.0,
+        "fin": 6.6,
+        "velocidad": 0.55
+      }
+    },
+    {
+      "estilo": "tramo",
+      "texto": "Todo en orden",
+      "voz": "Y responde: *todo en orden*, y cuándo toca la próxima.",
       "clip": {
         "inicio": 5.8,
-        "fin": 9.0
-      },
-      "texto": "Todo en orden",
-      "voz": "Y sale: *todo en orden*."
+        "fin": 8.0,
+        "velocidad": 0.6
+      }
     },
     {
       "estilo": "tramo",
+      "texto": "Y mañana, la cita",
+      "voz": "Y si mañana tienes *cita*, el inicio te lo recuerda.",
       "clip": {
         "inicio": 9.0,
-        "fin": 12.0
-      },
-      "texto": "Y mañana, la cita",
-      "voz": "Y mañana, la *cita* con el médico."
+        "fin": 12.0,
+        "velocidad": 0.86
+      }
     },
     {
       "estilo": "tramo",
-      "clip": {
-        "inicio": 12.0,
-        "fin": 14.2
-      },
       "texto": "Datos de ejemplo · No sustituye a tu médico",
-      "voz": "Mándaselo a quien cuide de *mamá*."
+      "voz": "La app organiza; *no sustituye* a tu médico. Mándaselo a quien cuide de mamá.",
+      "clip": {
+        "inicio": 11.0,
+        "fin": 14.2,
+        "velocidad": 0.64
+      }
     },
     {
       "estilo": "cierre",
       "texto": "Prueba gratuita · sin tarjeta · sin compromiso",
-      "voz": "Pide tu *prueba gratuita*: sin tarjeta, sin datos bancarios y sin compromiso."
+      "voz": "Pide tu *prueba gratuita*: sin tarjeta, sin datos bancarios y sin compromiso.",
+      "duracion": 5.6
     }
   ]
 }
