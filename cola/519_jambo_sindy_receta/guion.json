@@ -1,0 +1,60 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py v5.3 (Neogest Studio); el vídeo es video_externo. Guion a partir de equipo/guiones_gemini/usados con registro vulgar y roles Felipe cuñado / Jambo gorrón (orden 22/11 23:38).",
+  "motor": "neogest-studio",
+  "episodio": "519_jambo_sindy_receta",
+  "set": "salon",
+  "moraleja": "La máquina que inventa nunca sabe cocinar lentejas.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "sindy",
+      "v": "Que esta puta aplicación de cocina me manda echar pegamento al guiso, jefa."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "Si lo dice la aplicación, se hace, coño. Tú no tienes ni el graduado, y yo pago la puta luz."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "v": "¡Joder, si hasta me pide lejía para que las lentejas tengan brillo! ¡Brillo, hostia!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Eso es normal, joder, lo sé de buena tinta: la lejía es el secreto de los grandes cocineros."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "v": "Pues yo me apunto al guiso, hostia, y que lo pague Rosa. Y ponme pan, que soy invitado."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "v": "¡Hijo de puta, Jambo, siempre de gorra! Que lo resuelva el Neo, antes de que huela peor la cocina."
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "v": "La máquina no ha probado una lenteja en su vida. Inventa lo que no sabe, y lo dice con seguridad.",
+      "sello": "LO INVENTA"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "O sea que llevo un mes pagando a una máquina que no sabe ni hervir agua, ¡manda huevos!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Yo ya lo sabía, joder, que la máquina inventa. Igual que la aplicación del fantasma, que también la vi venir."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "v": "La máquina que inventa nunca sabe cocinar lentejas."
+    }
+  ]
+}
