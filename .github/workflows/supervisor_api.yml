@@ -51,5 +51,5 @@ jobs:
           git commit -m "Supervisor (API): pasada automática"
           for i in 1 2 3; do
             git push origin main && break
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
           done

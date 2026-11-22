@@ -31,5 +31,5 @@ jobs:
           git add atrasos
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -q -m "Centro: vídeos remezclados con la voz nueva en las colas de atrasos"
-          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep 7; done
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 7; done
           exit 1

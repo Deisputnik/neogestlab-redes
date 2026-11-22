@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: revozear_centro
+  cancel-in-progress: false
+
 jobs:
   revozear:
     runs-on: ubuntu-latest
@@ -46,5 +50,5 @@ jobs:
           git add atrasos/textos
           if git diff --cached --quiet; then exit 0; fi
           git commit -q -m "Centro: transcripción del vídeo ${{ matrix.n }} (voz rehecha)"
-          for i in 1 2 3 4 5 6 7 8; do git pull --rebase -q && git push -q && exit 0; sleep $((RANDOM % 15 + 5)); done
+          for i in 1 2 3 4 5 6 7 8; do git pull --rebase --autostash -q && git push -q && exit 0; sleep $((RANDOM % 15 + 5)); done
           exit 1

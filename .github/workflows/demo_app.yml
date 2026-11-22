@@ -81,5 +81,5 @@ jobs:
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add cola
           git commit -q -m "Demos de apps: capturas y piezas $(date -u +%FT%H:%MZ)" || exit 0
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 5; done
           exit 1

@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: facebook_prueba
+  cancel-in-progress: false
+
 jobs:
   comprobar:
     runs-on: ubuntu-latest
@@ -51,4 +55,4 @@ jobs:
           git config user.name "expedientes-bot"; git config user.email "expedientes-bot@users.noreply.github.com"
           git add atrasos; git diff --cached --quiet && exit 0
           git commit -q -m "Facebook: publicación de prueba"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done; exit 1
+          for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 5; done; exit 1

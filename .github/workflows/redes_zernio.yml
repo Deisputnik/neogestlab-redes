@@ -37,4 +37,4 @@ jobs:
           git add equipo/zernio/estado.json
           git diff --cached --quiet && exit 0
           git commit -m "Redes Zernio: cola de TikTok programada"
-          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 5; done

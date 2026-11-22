@@ -5,8 +5,7 @@ name: Respuestas del chat (ice breakers)
 # Reloj cada 15 min, porque el cron de GitHub se salta ejecuciones. Al subir cambios del script se
 # ejecuta en MODO PRUEBA (no envía nada) junto con el diagnóstico de vinculación.
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+  # 22/11/2026: sin cron propio; lo lanza reloj.yml cada 30 min (el cron duplicado solo gastaba minutos).
   push:
     branches: [main]
     paths:
@@ -44,4 +43,8 @@ jobs:
         env:
           PAGE_TOKEN: ${{ secrets.PAGE_TOKEN }}
           DRY_RUN: ${{ (github.event_name == 'push' || inputs.prueba) && '1' || '' }}
-        run: python3 herramientas/respuestas_chat.py
+        run: |
+          # Token de Meta caducado (código 190): se avisa sin dar el workflow por fallido cada 30 min (ver pendiente_usuario.md).
+          python3 herramientas/respuestas_chat.py 2>&1 | tee /tmp/chat.log; rc=${PIPESTATUS[0]}
+          if [ "$rc" != "0" ] && grep -q "código 190" /tmp/chat.log; then echo "::warning::PAGE_TOKEN caducado, renovar (pendiente_usuario.md)"; exit 0; fi
+          exit $rc

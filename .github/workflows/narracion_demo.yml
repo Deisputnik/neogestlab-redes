@@ -97,7 +97,7 @@ jobs:
           # los scripts pueden haber tocado otros ficheros seguidos (p. ej. registro.log): se descartan antes del pull
           git checkout -- . 2>/dev/null || true
           for i in 1 2 3 4; do
-            git pull --rebase -q && git push -q && exit 0
+            git pull --rebase --autostash -q && git push -q && exit 0
             git rebase --abort 2>/dev/null || true
             sleep 6
           done

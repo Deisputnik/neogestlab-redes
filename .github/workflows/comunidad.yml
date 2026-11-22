@@ -13,7 +13,7 @@ on:
     branches: [main]
     paths: ["comunidad/respuestas.json"]
   schedule:
-    - cron: "17 * * * *"   # respaldo; el Reloj lo lanza cada hora
+    - cron: "17 8,12,17,20 * * *"   # respaldo (22/11: antes cada hora, duplicaba al Reloj, que ya la lanza cada hora en el minuto 13)
 
 permissions:
   contents: write
@@ -50,5 +50,5 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -q -m "Comunidad $(date -u +%FT%H:%MZ)"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 5; done
           exit 1

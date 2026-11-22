@@ -6,9 +6,8 @@ name: Redes vía Metricool · segunda vía TikTok
 # Manual: equipo/metricool/LEEME.md
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "7 9 * * *"
-    - cron: "7 16 * * *"
+  # 22/11/2026 (Coordinación): cron DESACTIVADO, faltan METRICOOL_TOKEN/USER_ID/BLOG_ID y cada pasada fallaba. Se reactiva
+  # (09:07 y 16:07 UTC) cuando el dueño cree los secretos; ver equipo/pendiente_usuario.md. Mientras tanto, solo workflow_dispatch.
 
 permissions:
   contents: write
@@ -38,4 +37,4 @@ jobs:
           git add equipo/metricool/estado.json
           git diff --cached --quiet && exit 0
           git commit -m "Redes Metricool: borradores programados"
-          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 5; done
