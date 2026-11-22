@@ -1,6 +1,3 @@
-2026-11-20 00:31  404_nota_examen_reel: NO se publica, control de audio: voz distinta del guion: faltan ['apruebas'], sobran ['aprueba'] (rehacer esas frases)
-2026-11-20 00:31  Voz con edge-tts: 7 frases en 3 s
-2026-11-20 00:31  Voz: silencios recortados por frase (s): [0.12, 0.12, 0.13, 0.13, 0.09, 0.13, 0.13]
 2026-11-20 00:31  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.8), np.float64(1.8), np.float64(3.6), np.float64(3.7), np.float64(3.0), np.float64(4.3), np.float64(2.7)]
 2026-11-20 00:32  Voz: alineación palabra a palabra (small, 8.2 s): 7/7 frases
 2026-11-20 00:32  Mezcla: voz -16.3 LUFS, música -22.0 LUFS (con ducking -25.1), la música baja 6.0 dB (p90) bajo la voz, ratio 2.314; máster -16.18 -> -14.0 LUFS, pico -1.5 dBFS; huecos de voz: []
@@ -598,3 +595,6 @@
 2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-22 10:44  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 11:20  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 11:20  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-22 11:20  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
