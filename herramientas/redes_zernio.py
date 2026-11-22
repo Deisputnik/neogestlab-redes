@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Redes vía Zernio (API con documentación pública confirmada) — TERCERA vía de publicación en
 TikTok, independiente de Buffer (caído por su propia incidencia el 21/11/2026) y de Metricool
-(solo borradores, a la espera de confirmar tiktokData). El dueño ya tiene la cuenta @neogest.lab
+(solo borradores, a la espera de confirmar tiktokData). El dueño ya tiene la cuenta @neogestlab (sin punto; «neogest.lab» es otra cuenta, no se usa)
 conectada en Zernio (MCP, sesión del 21/11/2026) — mcp zernio, orden del dueño.
 
 Uso: python3 herramientas/redes_zernio.py tiktok [--simular]
@@ -105,7 +105,7 @@ def main():
         return
     antes = json.dumps(estado, sort_keys=True)
     try:
-        account_id = cfg.get("account_id") or cuenta_tiktok(api_key, cfg.get("usuario", "neogest.lab"))
+        account_id = cfg.get("account_id") or cuenta_tiktok(api_key, cfg.get("usuario", "neogestlab"))
         if not account_id:
             print(f"zernio/{canal} en espera: esa cuenta no está conectada en Zernio todavía.")
             return
