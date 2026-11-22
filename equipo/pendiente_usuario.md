@@ -2,6 +2,13 @@
 
 Reducido el 13/11/2026 por el Estratega (la versión larga está en git). Aquí solo queda lo que necesita tu identidad, tus datos o el móvil; el equipo hace todo lo demás.
 
+## Auditoría de agentes 22/11/2026 (Coordinación): solo lo que puede hacer el dueño
+- **Renovar PAGE_TOKEN de Meta** (código 190: «Session has expired» el 22/11 05:00 PST). El contestador del chat de Instagram falla hasta entonces; el workflow ya no se marca como fallido, pero no contesta.
+- **Decidir cómo se renderiza El Jambo sin sesión manual** (cuello de botella n.º 1, ver `equipo/auditoria_agentes_2026-11-22.md`): activar la sincronización de GitHub de Neogest Studio en Base44 (o exportar su código a un repo) para poder montar el render en Actions. Sin eso, el ritmo de 5 episodios al día depende de la tarea del Creador.
+- **Crear los 3 secretos de Metricool** (`METRICOOL_TOKEN`, `METRICOOL_USER_ID`, `METRICOOL_BLOG_ID`) solo si quieres esa vía: su cron está desactivado hasta entonces (no falla ni gasta).
+- **Pegar `ZERNIO_API_KEY` y `BUFFER_API_KEY`** (ya pedidas abajo) para que TikTok, LinkedIn y Google publiquen solos.
+- **Editar a mano 4 tareas programadas** (el agente solo puede editar las que creó él): «IG nube · Calidad (repo)», «IG nube · Calidad (noche) (repo)», «Ventas · Prospección (repo)» y «IG nube · Analista de monetización (repo)» siguen con prompts viejos (repo `ajreparacion/instagram`, límite de 30 s). Están desactivadas salvo la del Analista de monetización (domingos 18:17), que conviene desactivar porque duplica al Analista. Detalle en el informe.
+
 ## Acceso al repo (22/11/2026, Calidad de respaldo 18:41)
 - La sesión de la tarea «Calidad API» (respaldo) solo tiene acceso a Deisputnik/neogestlab-redes: `ajreparacion/instagram` devuelve 403 (`gh run list`, `gh workflow run calidad_api.yml`, descarga de la release «cola»). Sin eso Calidad no puede evaluar mp4 ni lanzar el ciclo. Pide conectar `ajreparacion/instagram` a esa tarea (o que la tarea corra en el repo correcto). Piezas bloqueadas por esto: 351, 353 (renderizadas el 21/11 sin nota), 601 (nota caducada del 12/11), 349h/350h (sin material).
 
