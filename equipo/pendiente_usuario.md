@@ -2,6 +2,9 @@
 
 Reducido el 13/11/2026 por el Estratega (la versión larga está en git). Aquí solo queda lo que necesita tu identidad, tus datos o el móvil; el equipo hace todo lo demás.
 
+## Acceso al repo (22/11/2026, Calidad de respaldo 18:41)
+- La sesión de la tarea «Calidad API» (respaldo) solo tiene acceso a Deisputnik/neogestlab-redes: `ajreparacion/instagram` devuelve 403 (`gh run list`, `gh workflow run calidad_api.yml`, descarga de la release «cola»). Sin eso Calidad no puede evaluar mp4 ni lanzar el ciclo. Pide conectar `ajreparacion/instagram` a esa tarea (o que la tarea corra en el repo correcto). Piezas bloqueadas por esto: 351, 353 (renderizadas el 21/11 sin nota), 601 (nota caducada del 12/11), 349h/350h (sin material).
+
 ## Tres acciones prioritarias (por orden de efecto)
 1. **Reconectar Buzzfy con permiso de mensajes** (buzzfy.co/connect/instagram?feature=messaging). Sin él no se pueden contar ni responder los DMs con intención, y hoy es la única señal de interés que no se mide.
 2. **En /panel/solicitudes, marcar la solicitud del 8/11** como contactada o descartada (o decir que fue una prueba) **y decir si alguna app tiene plan de pago o precio**. Sin eso el embudo no puede medir euros.
