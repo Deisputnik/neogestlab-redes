@@ -1,0 +1,1 @@
+- 2026-11-22 15:33 UTC: 2 sin material en ningún sitio del repo (sin tocar, para que el Creador decida retirarlas o rehacerlas): 349h_vecino_taladro_historia, 350h_app_fantasma_historia

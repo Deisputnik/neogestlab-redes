@@ -297,3 +297,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-22 12:42 UTC · Remasterizador · disparada en domingo, fuera de mi horario (lun/mié/vie 09:00): sin cambios · nada
 
 2026-11-22 14:55 UTC · Creador · pasada 15:51: producción bloqueada, sin cambios en cola/ (pendientes/ vacío, 341-344 siguen sin fuente primaria verificable desde la sesión, 107/108/801/802 sin render, 351/353 esperan nota de Calidad) · necesito de Calidad: nota de 351/353/601; de Centro/Mejora: render Studio de 107/108/801/802 y fuente BOE/INE para 341-344 o retirarlas
+2026-11-22 15:33 UTC · Repescador (API) · 2 sin material en ningún sitio del repo (sin tocar, para que el Creador decida retirarlas o rehacerlas): 349h_vecino_taladro_historia, 350h_app_fantasma_historia · Creador: revisar lo sin solución; Calidad: reevaluar lo recuperado · nada del dueño
