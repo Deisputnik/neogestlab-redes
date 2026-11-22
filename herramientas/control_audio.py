@@ -273,7 +273,9 @@ def control(video, guion, post=None, tramos=None, wavs=None):
     esc = g.get("escenas", [])
     # 21/11/2026: gen_episodios.py escribe el texto de cada escena en la clave "v" (no "voz"); con "voz" el
     # guion de referencia salía siempre vacío y toda la transcripción real se marcaba como "sobrante".
-    guion_txt = " ".join(re.sub(r"\*", "", e.get("v", "")) for e in esc if e.get("v"))
+    # 22/11/2026: los guiones de promo de app (hacer_reel.py) usan "voz" y los episodios del estudio "v": se leen las dos.
+    # Leyendo solo "v", el guion de toda promo salía vacío y su re-render se bloqueaba entero como «sobrante» (405, 406, 408).
+    guion_txt = " ".join(re.sub(r"\*", "", e.get("v") or e.get("voz") or "") for e in esc if (e.get("v") or e.get("voz")))
     pal = transcribir(video)
     texto = texto_de(pal)
     modo = str(g.get("modo") or "").lower()
@@ -284,7 +286,7 @@ def control(video, guion, post=None, tramos=None, wavs=None):
         # de humor (modo sketch); las promos de app (ANTES/DESPUÉS) no tienen «remate» y se bloqueaban todas en falso.
         # 21/11/2026: la clave del tipo de escena es "e" (p. ej. "remate"), no "estilo" (gen_episodios.py);
         # con "estilo" esta comprobación no encontraba nunca el giro y bloqueaba todos los episodios nuevos.
-        if modo in ("", "sketch") and not any(e.get("e") == "remate" for e in esc):
+        if modo in ("", "sketch") and not any("remate" in (e.get("e"), e.get("estilo")) for e in esc):
             bloqueos.append("falta el giro (escena «remate»)")
         faltan, sobran = verificar(guion_txt, texto)
         malas = [w for w in sobran if w in ("ehm", "eh", "em", "mm", "hmm")]

@@ -28,12 +28,5 @@
     "archivo": "life_of_riley.mp3",
     "bpm": 101.3
   },
-  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir.",
-  "_control_audio_fallo": {
-    "fecha": "2026-11-22T21:44:34+00:00",
-    "bloqueos": [
-      "voz distinta del guion: faltan [], sobran ['las', 'once', 'de', 'la', 'noche', 'preguntan', 'el', 'precio', 'y', 'nadie', 'contesta', 'en', 'esta', 'web', 'de', 'ejemplo', 'le', 'pregunto', 'por', 'el', 'tinte', 'y', 'el', 'asistente', 'responde', 'solo', 'con', 'lo', 'que', 'pone', 'la', 'web', 'nadie', 'cogio', 'el', 'telefono', 'la', 'web', 'si', 'contesto', 'pide', 'tu', 'prueba', 'gratuita', 'sin', 'tarjeta', 'sin', 'datos', 'bancarios', 'y', 'sin', 'compromiso'] (rehacer esas frases)"
-    ],
-    "guion_md5": "e88b63b475a85192ac027d893ced2d9f"
-  }
+  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir."
 }
