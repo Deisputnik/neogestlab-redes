@@ -1,0 +1,54 @@
+name: Autocritica Guionista-Calidad (Gemini, 22/11/2026)
+
+# Revisa cada borrador que Guionista (guionista_gemini.yml) dejo en
+# equipo/guiones_gemini/pendientes/ contra el MISMO criterio real que usa Calidad
+# (equipo/estandar_calidad.md y equipo/lecciones_calidad.md), ANTES de que el Creador
+# elija uno para renderizar (09:51 y 15:51 Madrid). Si Gemini ve riesgo de rechazo, mueve
+# el borrador a equipo/guiones_gemini/revisar/ con el motivo escrito dentro, para no gastar
+# un render en algo que Calidad va a rechazar igualmente. Ver herramientas/autocritica_gemini.py
+# y orden del dueno 22/11/2026.
+
+on:
+  workflow_dispatch:
+    schedule:
+        - cron: "20 8 * * *"
+            - cron: "20 14 * * *"
+
+            permissions:
+              contents: write
+
+              concurrency:
+                group: autocritica-gemini
+                  cancel-in-progress: false
+
+                  jobs:
+                    autocritica:
+                        runs-on: ubuntu-latest
+                            timeout-minutes: 8
+                                steps:
+                                      - uses: actions/checkout@v4
+
+                                            - uses: actions/setup-python@v5
+                                                    with:
+                                                              python-version: "3.12"
+
+                                                                    - name: Autocritica contra el criterio de Calidad
+                                                                            env:
+                                                                                      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+                                                                                              run: python3 herramientas/autocritica_gemini.py
+
+                                                                                                    - name: Guardar y subir
+                                                                                                            run: |
+                                                                                                                      git config user.name "expedientes-bot"
+                                                                                                                                git config user.email "expedientes-bot@users.noreply.github.com"
+                                                                                                                                          git add equipo/guiones_gemini/ equipo/tablon.md
+                                                                                                                                                    if git diff --cached --quiet; then
+                                                                                                                                                                echo "Sin cambios que commitear"
+                                                                                                                                                                            exit 0
+                                                                                                                                                                                      fi
+                                                                                                                                                                                                git commit -m "Autocritica Guionista/Calidad: revision previa al render"
+                                                                                                                                                                                                          for i in 1 2 3; do
+                                                                                                                                                                                                                      git push origin main && break
+                                                                                                                                                                                                                                  git pull --rebase origin main
+                                                                                                                                                                                                                                            done
+                                                                                                                                                                                                                                            
