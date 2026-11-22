@@ -1,0 +1,60 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py v5.3 (Neogest Studio); el vídeo es video_externo. Guion a partir de equipo/guiones_gemini/usados con registro vulgar y roles Felipe cuñado / Jambo gorrón (orden 22/11 23:38).",
+  "motor": "neogest-studio",
+  "episodio": "518_jambo_impuesto_aire",
+  "set": "salon",
+  "moraleja": "Cobrar lo que no existe te deja sin aire.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "v": "Desde hoy cobro un euro por cada hora que respiras en mi puto salón, Felipe."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Pues es legal, joder, lo sé de buena tinta: el oxígeno tributa desde dos mil diecinueve, me lo dijo un primo abogado."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "v": "¡Qué hijo de puta eres, Felipe, cuñado de los cojones! Yo respiro por la boca, ¿pago doble o qué?"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Qué bien, joder. Llevo años sintiendo que mi vida vale un euro la hora, y por fin lo ponen por escrito."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "v": "Yo respiro gratis, que soy invitado, joder. Y ponedme un cafelito, que me lo debéis."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "v": "¡Mecagüen todo, el Jambo otra vez de gorra! Que lo resuelva el Neo, que me va a dar algo, hostia."
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "v": "Un impuesto necesita una ley y un recibo. Usted solo tiene un salón y mucha imaginación, señora Melano.",
+      "sello": "SIN LEY"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "O sea que llevo toda la mañana cobrando algo que no existe, ¡manda huevos!, y sin aire de tanto gritar."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Yo ya lo sabía, joder, como lo de la reunión del jueves."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "v": "Cobrar lo que no existe te deja sin aire."
+    }
+  ]
+}
