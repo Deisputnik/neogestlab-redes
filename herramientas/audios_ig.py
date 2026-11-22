@@ -50,7 +50,7 @@ def probar(audio_id, asset=None, tipo="REELS"):
     tipo = "STORIES" if str(tipo).upper().startswith("STOR") else "REELS"
     cfg = P.cargar_config()
     if not asset:
-        repo = os.environ.get("GITHUB_REPOSITORY", "ajreparacion/instagram")
+        repo = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
         r = P.gh("api", f"repos/{repo}/releases/tags/{P.RELEASE}", "-q", ".assets[].name")
         nombres = [x for x in r.stdout.split() if x.endswith(".mp4")]
         if tipo == "STORIES":   # mejor con un vídeo de historia de verdad (duración y formato de historia)

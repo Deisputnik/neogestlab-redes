@@ -39,7 +39,7 @@ Aviso (18/11, orden del dueño, PR pendiente de revisión): Calidad pasa entera 
 
 ## 3. Protocolo de cada pasada
 0. Mira el mapa (§2): si tu tarea está fusionada, en pausa o se ha disparado fuera del día u hora de tu rol, termina en una línea sin hacer nada.
-1. Repo: las tareas son de tipo Claude Code con `ajreparacion/instagram` conectado. Nada de add_repo ni clonar de nuevo: `git checkout main && git pull --rebase origin main`.
+1. Repo: las tareas son de tipo Claude Code con `Deisputnik/neogestlab-redes` conectado. Nada de add_repo ni clonar de nuevo: `git checkout main && git pull --rebase origin main`.
 2. Lee esta directiva, tu rol y las últimas 40 líneas de `equipo/tablon.md`; atiende o responde lo que otro rol te pida allí.
 3. Trabaja. Lee solo lo que vayas a usar. Toca solo tus archivos: otros roles escriben a la vez en main.
 4. Al terminar, UNA línea al final de `equipo/tablon.md`: «AAAA-MM-DD HH:MM UTC · <rol> · qué hiciste · qué necesitas y de qué rol (o "nada")», dentro de tu commit.
@@ -108,7 +108,7 @@ Las cifras de 20, 22 o 35 s de textos antiguos quedan derogadas.
 - Todo lo programado debe salir a su hora: si una pieza no tiene nota ≥ 90 a 60 min de su hora, se mueve al siguiente hueco libre; nunca dos piezas en el mismo hueco ni encima de una aprobada.
 - Publicación: GitHub Actions (`ciclo.yml`, relanzado por `reloj.yml` cada 15 min) renderiza, publica en Instagram, Facebook (por ID de página, `/video_reels` para reels) y YouTube (Short con `herramientas/youtube.py`; `"youtube": {"omitir": true}` para no subir uno), y actualiza estadisticas.json y registro.log. Las llamadas a las API de Facebook y YouTube solo funcionan dentro de Actions.
 - Un `video_externo` en post.json (vídeo ya terminado, p. ej. de Neogest Studio) lo descarga el ciclo y lo sube a la release; su calidad.json anterior caduca.
-- Vídeos y audios nunca en git: van a la release «cola». Descarga: `ID=$(gh api repos/ajreparacion/instagram/releases/tags/cola --jq '.assets[] | select(.name=="NOMBRE.mp4") | .id')` y `gh api -H "Accept: application/octet-stream" repos/ajreparacion/instagram/releases/assets/$ID > NOMBRE.mp4`.
+- Vídeos y audios nunca en git: van a la release «cola». Descarga: `ID=$(gh api repos/Deisputnik/neogestlab-redes/releases/tags/cola --jq '.assets[] | select(.name=="NOMBRE.mp4") | .id')` y `gh api -H "Accept: application/octet-stream" repos/Deisputnik/neogestlab-redes/releases/assets/$ID > NOMBRE.mp4`.
 - post.json de un reel lleva siempre: `texto`, `cuando` (AAAA-MM-DDTHH:MM:00+01:00), `prueba_no_seguidores`, `comentario_fijado`, `avance_siguiente`, bloque `monetizacion` {objetivo, oferta, paso_embudo}, bloque `youtube` {titulo ≤ 100 caracteres con #Shorts, descripcion con /solicitar?…&src=youtube y «By Neogest Lab», etiquetas} y, si procede, `facebook`. `python3 herramientas/pre_entrega.py` sin ERRORES antes de entregar.
 - Sin textos repetidos. Si Meta rechaza el token (código 190), se anota la hora en pendiente_usuario.md; nadie publica a mano para compensar.
 

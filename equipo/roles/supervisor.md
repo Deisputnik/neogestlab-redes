@@ -17,7 +17,7 @@ Cuándo: 13:27 (Madrid), a diario. Modelo: Haiku.
 
 ## Actúa
 - Escribe en el tablón, dirigido al rol que toca, cada problema encontrado (con número de pieza y hora).
-- Si hay una pieza aprobada vencida sin publicar y no hay un «Ciclo Instagram» en curso ni de hace menos de 30 min (`gh api "repos/ajreparacion/instagram/actions/runs?per_page=5"`), puedes lanzar `gh workflow run ciclo.yml -R ajreparacion/instagram --ref main` una vez; si gh da 403, no insistas.
+- Si hay una pieza aprobada vencida sin publicar y no hay un «Ciclo Instagram» en curso ni de hace menos de 30 min (`gh api "repos/Deisputnik/neogestlab-redes/actions/runs?per_page=5"`), puedes lanzar `gh workflow run ciclo.yml -R Deisputnik/neogestlab-redes --ref main` una vez; si gh da 403, no insistas.
 - Mantén `equipo/pendiente_usuario.md`: añade lo que el tablón pide al dueño y no figure; marca como hecho lo resuelto; deja arriba las tres acciones de más efecto. Token caducado: apunta la hora exacta.
 - Aviso al dueño (1-2 líneas) solo si algo bloquea la publicación o el trabajo de un rol y solo él puede resolverlo.
 

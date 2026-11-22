@@ -17,7 +17,7 @@ import urllib.request
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CENTRO = "https://centro-de-contenido-apps-2f0a3cd6.base44.app"
 RELEASE = "centro-v3"
-REPO = os.environ.get("GITHUB_REPOSITORY", "ajreparacion/instagram")
+REPO = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
 PY_CB = os.environ.get("PYTHON_CHATTERBOX") or sys.executable
 VOCAB = ("Neogest Lab, Gestión Integral 7D, MEDICATOR, AJ Sistema, AJ Reparación, ajreparacion.com, Studio Beats PRO, "
          "GPS Andaluz, CIMA, AEMPS, Bizum, Redsys, PDF, IVA, albarán, presupuesto, prueba gratuita.")

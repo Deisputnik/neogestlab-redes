@@ -13,7 +13,7 @@ Reducido el 13/11/2026 por el Estratega (la versión larga está en git). Aquí 
 ## Zernio (21/11/2026): 1 paso tuyo, 2 minutos — tercera vía de TikTok, ya publica de verdad
 Conectaste TikTok (@neogest.lab) e Instagram (@neogestlab) en Zernio por MCP. Falta solo la clave para que el robot (workflow automático) también pueda usarla:
 1. Entra en https://zernio.com/dashboard/api-keys (misma cuenta que conectó TikTok/IG) → «Create API key» → cópiala (empieza por `sk_`, no se vuelve a mostrar).
-2. Pégala como secreto `ZERNIO_API_KEY` en https://github.com/ajreparacion/instagram/settings/secrets/actions/new .
+2. Pégala como secreto `ZERNIO_API_KEY` en https://github.com/Deisputnik/neogestlab-redes/settings/secrets/actions/new .
 En cuanto esté el secreto, `redes_zernio.yml` empieza a programar en TikTok dos veces al día (ver `equipo/zernio/LEEME.md`), sin depender de que Buffer vuelva. Mientras no la pegues, Coordinación puede publicar en TikTok a mano desde una sesión de Claude con MCP de Zernio (ya conectado, sin clave) — hecho hoy (21/11) con 2 reels de producto (Gestión Integral 7D, MEDICATOR) — pero no es automático: solo pasa cuando alguien lo pide expresamente.
 
 ## Fijar publicaciones en el perfil (21/11/2026): solo se puede desde el móvil, 1 minuto
@@ -28,12 +28,12 @@ Ya están en el perfil: **Neogest Lab**, **MEDICATOR** y **Gestión 7D**. Para l
 ## Guionista Gemini (17/11/2026): 1 paso tuyo, 2 minutos; después todo es automático
 Pediste automatizar que los guiones de El Jambo se pidan a Gemini porque no engachaban; ya está montado (`.github/workflows/guionista_gemini.yml` + `herramientas/guionista_gemini.py`), pero necesita una clave que solo tú puedes crear:
 1. Entra en https://aistudio.google.com/app/apikey con la cuenta de Google **darbish** (la misma que usas para Flow/Gemini) y pulsa «Create API key» (capa gratis, sin tarjeta).
-2. Copia la clave y pégala como secreto `GEMINI_API_KEY` en https://github.com/ajreparacion/instagram/settings/secrets/actions/new .
+2. Copia la clave y pégala como secreto `GEMINI_API_KEY` en https://github.com/Deisputnik/neogestlab-redes/settings/secrets/actions/new .
 En cuanto esté el secreto, el workflow empieza a dejar borradores de guion en `equipo/guiones_gemini/pendientes/` antes de cada pasada del Creador (09:51 y 15:51); si tarda en llegar, lánzalo tú con «Run workflow» en la pestaña Actions del repo para probarlo antes.
 
 ## TikTok (21/11/2026): cuenta creada y conectada — solo falta que Buffer vuelva (su caída, no tuya)
 Pasos 1 y 2 ya hechos (cuenta de empresa @neogestlab creada y conectada). Buffer está caído ahora mismo (caída del propio servicio, no de la cuenta): en cuanto vuelva, confirma que @neogestlab sigue apareciendo en Buffer → Channels y pega la clave de API:
-- **Clave de Buffer**: https://support.buffer.com/en-us/articles/how-to-create-your-buffer-api-key-ShIgYVwM6j , copia la clave → pégala como secreto `BUFFER_API_KEY` en https://github.com/ajreparacion/instagram/settings/secrets/actions/new . Ese mismo día salen programadas las 8 primeras piezas.
+- **Clave de Buffer**: https://support.buffer.com/en-us/articles/how-to-create-your-buffer-api-key-ShIgYVwM6j , copia la clave → pégala como secreto `BUFFER_API_KEY` en https://github.com/Deisputnik/neogestlab-redes/settings/secrets/actions/new . Ese mismo día salen programadas las 8 primeras piezas.
 - Mientras Buffer esté caído, hay dos vías de reserva que no dependen de él: **Zernio** (ver sección propia arriba, publica de verdad) y **Metricool** (`redes_metricool.yml`, solo deja los posts en BORRADOR hasta confirmar los campos exactos que pide TikTok) — los 3 secretos son `METRICOOL_TOKEN`, `METRICOOL_USER_ID`, `METRICOOL_BLOG_ID`, según `equipo/metricool/LEEME.md`.
 
 ## Recepcionista 24h (16/11/2026): grabar 3 llamadas reales con el móvil, unos 5 minutos

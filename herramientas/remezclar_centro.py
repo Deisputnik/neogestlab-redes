@@ -19,7 +19,7 @@ import urllib.request
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CENTRO = "https://centro-de-contenido-apps-2f0a3cd6.base44.app"
 RELEASE = "centro-v3"
-REPO = os.environ.get("GITHUB_REPOSITORY", "ajreparacion/instagram")
+REPO = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
 CIERRE = "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso."
 SEGUIR = "👉 Sigue a Neogest Lab para ver una pieza nueva cada día."
 

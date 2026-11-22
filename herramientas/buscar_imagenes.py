@@ -17,7 +17,7 @@ import io, json, os, re, sys, time, html, urllib.parse, urllib.request
 from PIL import Image, ImageDraw, ImageFont
 
 API = "https://commons.wikimedia.org/w/api.php"
-UA = "ExpedientesImposibles-buscador/1.0 (https://github.com/ajreparacion/instagram; reels con fuentes)"
+UA = "ExpedientesImposibles-buscador/1.0 (https://github.com/Deisputnik/neogestlab-redes; reels con fuentes)"
 ENTRADA = "equipo/busqueda_imagenes.json"
 SALIDA = "equipo/imagenes_candidatas"
 HOJAS = "/tmp/imagenes"

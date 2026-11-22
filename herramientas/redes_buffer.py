@@ -29,7 +29,7 @@ from zoneinfo import ZoneInfo
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MADRID = ZoneInfo("Europe/Madrid")
 RELEASE = "redes"
-REPO = os.environ.get("GITHUB_REPOSITORY", "ajreparacion/instagram")
+REPO = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
 BUFFER = "https://api.buffer.com"
 PROHIBIDO = re.compile(r"Escr[ií]beme|[Cc]omenta [A-ZÁÉÍÓÚ]{3,}\b|te (lo )?env[ií]o|palabra clave", re.U)
 CIERRE = "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso"
