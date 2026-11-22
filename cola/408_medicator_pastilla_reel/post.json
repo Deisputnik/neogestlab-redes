@@ -1,7 +1,7 @@
 {
   "tipo": "reel",
   "texto": "Mamá: «¿ya me tomé la pastilla?»\nEs MEDICATOR, nuestra app, grabada funcionando con una usuaria de ejemplo: ves la pastilla que toca ahora, pulsas «Ya me la he tomado» y la pantalla te dice «Todo en orden» y te recuerda la cita de mañana.\nMándaselo a quien cuide de sus padres. MEDICATOR organiza; no sustituye a tu médico.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso. https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=instagram\nVoz generada por IA\n\n#mayores #cuidadores #salud #apps #neogestlab\n\nMúsica: \"Monkeys Spinning Monkeys\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
-  "cuando": "2026-12-31T09:50:00+01:00",
+  "cuando": "2026-11-23T08:30:00+01:00",
   "compartir_en_feed": true,
   "portada_ms": 300,
   "prueba_no_seguidores": true,
@@ -20,7 +20,6 @@
   "_comprobado": "12/11/2026: hechos_verificados del Producto «MEDICATOR» en el Centro (consultado hoy): «Inicio: muestra la pastilla que toca ahora (nombre, cantidad, hora e indicaciones) con un botón grande «YA ME LA HE TOMADO»; si te equivocas, hay un botón para deshacerlo» y «En el inicio aparece un recordatorio cuando la cita es mañana u hoy». Visto en la pista de vídeo del Centro (VideoMezcla medicator, formato vertical, 1080x1920; usuaria de ejemplo «Carmen»): «Ahora te toca · Enalapril · 15:05», botón verde «YA ME LA HE TOMADO», después «Todo en orden · La próxima es a las 9 de la noche · ¿Te has equivocado? Toca aquí para deshacer» y «Mañana tienes cita · 10:30 · Dra. Elena Martín». La voz solo dice eso. NO se afirma: avisos a familiares ni modo cuidador, avisos que lleguen con garantías, lectura de cajas o papeles, botón «Llamar» (no sale en este recorte), diagnósticos ni promesas de salud. Aviso «no sustituye a tu médico» en pantalla y en el texto.",
   "_nota_creador": "12/11/2026. Sustituye la idea F6 original («llamando a mamá por tercera vez», que pedía enseñar «Llamar», no incluido en la pista del Centro) por «Mamá: ¿ya me tomé la pastilla?», que sí se contesta con lo grabado: el fotograma 0 YA muestra «Todo en orden» tras pulsar. Función más vistosa verificada y visible: el botón grande «YA ME LA HE TOMADO». demo.mp4 (16,6 s) sale de herramientas/recorte_centro.py con recorte.json de esta carpeta (solo la pantalla del móvil, sin rótulos del Centro; mp4 del Centro intacto). Seis escenas de 2,2-3,2 s con corte antes de 3 s; el último tramo con empuje de zoom para no acabar congelado; frase de envío y cierre único; sin «comenta X». Tiempos de demo.mp4: ahora te toca 2,6-5,8; pulsar 5,8-9,0 (clic ~7,4); todo en orden 9,0-12,0; cita 12,0-16,6. Datos de la usuaria: solo los de ejemplo del vídeo (nombre de pila Carmen, no se dice en voz). Música tranquila y cálida. 13/11: rehecho el recorte con tramos sin texto cortado (arreglo de Calidad 12/11); gancho sin cambios; la voz de la escena 2 ya no afirma el clic; pendiente de reevaluar y renderizar.",
   "motor_voz": "edge",
-  "asset": "408_medicator_pastilla_reel.mp4",
   "musica": {
     "titulo": "Monkeys Spinning Monkeys",
     "autor": "Kevin MacLeod",
@@ -29,9 +28,5 @@
     "archivo": "Monkeys_Spinning_Monkeys.mp3",
     "bpm": 143.6
   },
-  "renderizado": "2026-11-21T14:58:29+00:00",
-  "control_audio": {
-    "aprobado": true,
-    "duracion_s": 14.4
-  }
+  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir."
 }
