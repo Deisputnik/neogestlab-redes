@@ -1,4 +1,4 @@
 {
   "enviados": {},
-  "ultimo_error": ""
+  "ultimo_error": "2026-11-22T20:40:47.000Z · Zernio POST /posts: HTTP 404 — {\"error\":\"One or more accounts do not belong to this user: 6b00b30e062d3d918320d801. No account with this ID exists: it was deleted, or reconnected under a new ID. Refresh your account IDs from GET /v1/accounts.\",\"code\":\"account_not_found\"}"
 }
