@@ -9,5 +9,9 @@
   "como_arreglarlo": "1) Re-renderizar el cierre (diapositiva 07/07) con el isotipo nuevo «N» de circuitos del kit 2026 en vez del cuadrado «NL» neón; revisar que ningún otro fotograma del carrusel lleve el logo antiguo. 2) Añadir a post.json el campo '_fuentes' con el enlace a la documentación/ficha de Gestión Integral 7D que respalde: extracción de catálogo por IA desde Excel/CSV/PDF/imagen, numeración de albarán con descuento de stock automático, y herencia de IVA/retención en la factura. Si alguna de estas funciones no está en hechos_verificados del Producto, suavizar el texto (quitar la afirmación o marcarla como ejemplo) antes de relanzar el render.",
   "fecha": "2026-11-20T18:50:43Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-18T21:57:52+00:00"
+  "render": "2026-11-18T21:57:52+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 55,
+  "caducado": "2026-11-22T23:11:55+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-22T23:11:55+00:00"
 }

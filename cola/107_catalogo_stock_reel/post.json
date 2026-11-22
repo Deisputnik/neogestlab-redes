@@ -2,7 +2,7 @@
   "tipo": "reel",
   "texto": "¿Sigues apuntando el stock a mano?\nSirves un pedido y nadie descuenta lo que ha salido.\nEn Gestión Integral 7D, nuestra app, al servir un pedido se crea un albarán numerado que descuenta el stock.\nDespués, la factura hereda las líneas, el IVA y la retención. Y el catálogo se importa desde Excel, CSV, PDF o una imagen con extracción por IA (revisa siempre lo importado).\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nMándaselo a quien todavía copia el stock a mano.\nVoz generada por IA. Demo con datos ficticios.\n\n#stock #almacen #pymes #autonomos #neogestlab",
   "cuando": "2026-11-23T17:10:00+01:00",
-  "renderizado": false,
+  "renderizado": "2026-11-22T23:11:55+00:00",
   "asset": "107_catalogo_stock_reel.mp4",
   "portada_ms": 1000,
   "compartir_en_feed": true,
@@ -50,7 +50,7 @@
   ],
   "_comprobado": "22/11/2026: cada frase de la voz y cada rótulo sale de hechos_verificados de Gestión Integral 7D y se ve en la toma real (servir pedido → albarán numerado con stock descontado → factura que hereda líneas e IVA por línea). El vídeo trata UNA idea (el stock); la importación de catálogo solo se cita en el texto del post, con el aviso de revisar lo importado. Sin cifras, clientes ni marcas ajenas. Datos de la demo ficticios. Clip de ambiente generado con Gemini (Biblioteca, gemini-11-almacen), persona de espaldas, sin cara.",
   "_nota_creador": "22/11/2026 Creador (sesión de desatasco, orden del dueño): pieza REHECHA entera en Neogest Studio. Ya no es el reel de diapositivas del carrusel: es promo antes/después con voz, centrada en el stock. Logo 2026 en el cierre (escena outro del estudio).",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a2c39a450_107_catalogo_stock_reel.mp4",
   "motor": "neogest-studio",
-  "gancho": "¿El stock, apuntado a mano?"
+  "gancho": "¿El stock, apuntado a mano?",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a2c39a450_107_catalogo_stock_reel.mp4"
 }

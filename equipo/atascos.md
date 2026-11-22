@@ -1,8 +1,8 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-22 23:10 UTC · 22 piezas paradas.
+Actualizado: 2026-11-22 23:12 UTC · 22 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 2, Creador 14, Mejora 1, Supervisor 5
+Por rol: Calidad 4, Creador 14, Mejora 1, Supervisor 3
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
@@ -11,8 +11,8 @@ Por rol: Calidad 2, Creador 14, Mejora 1, Supervisor 5
 | URGENTE (hora pasada) | 353_jambo_coche_mal_aparcado | 2026-11-21T21:45:00+01:00 | rechazada | Creador | Duración 36.97 s: el formato vigente de El Jambo (v11, DIRECTIVA §5) exige 45-70 s; este render se queda por debajo del mínimo (faltan ~8-33 s de episodio).; Falta el bucle de cierre: el plano «Cosas de Casa» con el gancho «Esta casa del barrio tiene truco» ap | RE-RENDER (no basta con texto del post): 1) Alargar el episodio a 45-70 s añadiendo o ampliando algún golpe de escalada (p.ej. un intercambio más entre Sindy/Jambo o un comentario de Rosa) para llegar al mínimo de 45 s manteniendo los 3 golpes de escalada. 2)  |
 | sale en < 24 h | 517_jambo_concha_cobro | 2026-11-23T08:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 24 h | 108_cobrar_facturas_reel | 2026-11-23T11:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| sale en < 24 h | 107_catalogo_stock_reel | 2026-11-23T17:10:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
-| sale en < 24 h | 518_jambo_impuesto_aire | 2026-11-23T19:40:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
+| sale en < 24 h | 107_catalogo_stock_reel | 2026-11-23T17:10:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 518_jambo_impuesto_aire | 2026-11-23T19:40:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 24 h | 519_jambo_sindy_receta | 2026-11-23T21:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | sale en < 72 h | 343_jambo_registro_jornada_falso | 2026-11-24T12:40:00+01:00 | rechazada | Creador | Logo antiguo «NL» en cuadrado visible en el pecho del personaje a t≈5,9s (parche/chip con texto «NL»): bloqueo directo del estándar v10 (§10-11, no se acepta el cuadrado NL aunque el cierre ya lleve el isotipo nuevo correcto).; Afirmación legal («registro de j | Dos arreglos distintos: 1) RENDER: quitar/sustituir el parche «NL» que aparece pegado en el pecho del personaje en la escena de oficina (~t=5.9s); es un activo del kit antiguo que el motor sigue insertando, repórtalo como URGENTE en peticiones_mejora.md porque |
 | sale en < 72 h | 344_jambo_reunion_sin_fin | 2026-11-24T19:40:00+01:00 | rechazada | Creador | Cifra sin fuente primaria: «el 55% de las pymes pierde tiempo administrativo» en voz y pantalla; post.json trae _fuentes vacío y _comprobado dice explícitamente «sin documento primario citado... confirmar fuente o suavizar antes de publicar». No resuelto desde | Dos cosas distintas: (1) Guion/post — esto lo arregla el Creador con texto: quitar la cifra del 55% de la voz y de pantalla (moraleja sin número) o sustituirla por una con fuente primaria abierta citada en _fuentes; no requiere re-render si se regenera solo el |
