@@ -12,7 +12,24 @@
 9. **Orden de las automatizaciones:** Guionista Gemini, Autocrítica (arranca sola al terminar el Guionista), Creador y render, Calidad, publicación en Instagram/Facebook/YouTube, redes extra (TikTok, LinkedIn, Google), Supervisor, Comunidad y Analista. Detalle en la directiva §2.
 10. **Cierre fijo** de todo post: «Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso». Prohibido cualquier embudo («comenta X y te envío», «escríbeme X por privado»).
 11. **Repo vivo:** `Deisputnik/neogestlab-redes`. El repo `ajreparacion/instagram` está muerto.
-12. **Modelos:** Haiku para lo mecánico, Sonnet para redactar, evaluar y programar, Opus solo si Sonnet no basta, nunca Fable.
+12. **Modelos:** Haiku para lo mecánico, Sonnet para redactar, evaluar y programar, Opus solo si Sonnet no basta. Fable solo para desatascar la producción y publicación de vídeos (orden del dueño 22/11); en todo lo demás, nunca.
+13. **Promos de app:** 25-45 segundos, ANTES/DESPUÉS, hueco fijo de las 13:40. El estándar de Calidad decía 20-45 y 25-45 a la vez; queda 25-45.
+
+## Añadido de la noche del 22/11 (sesión de publicación, 23:30)
+**Publicado:** 406 (web de peluquería con asistente, nota 92) a las 23:26 en Instagram (https://www.instagram.com/reel/DgD36DWDL8I/) y Facebook (https://www.facebook.com/reel/1946617002988803). YouTube falló: «invalid_client» (el secreto YOUTUBE_CLIENT_SECRET no es válido).
+**Aprobado y programado:** 408 MEDICATOR (93) el 23/11 a las 13:40; 405 GH PLUS (94) el 24/11 a las 13:40.
+
+Hallazgos nuevos de esta sesión (todos corregidos salvo que se diga):
+| Qué | Efecto | Estado |
+|---|---|---|
+| `control_audio.py` leía el texto de las escenas solo en la clave «v» (cambio del 21/11 para los episodios del estudio); las promos de app usan «voz» | TODAS las promos de app se bloqueaban al renderizar («sobra toda la transcripción») desde el 21/11 | Corregido (lee las dos) |
+| Las 3 promos «aprobadas» (405, 406, 408) tenían su mp4 en la release del repo antiguo | Fallaban al publicar («no assets match») y acababan en `errores/` | Re-renderizadas en el repo nuevo |
+| Esas 3 promos duraban 14-19 s (el formato pide 25-45 s) y Calidad las aprobó el 21/11 y las rechazó el 22/11 con el mismo vídeo | La nota de Calidad no es reproducible en lo medible | Guiones alargados a 28 s; pendiente de Mejora: que duración, bucle y resolución se midan por código y lleguen a Calidad como hechos |
+| `reloj.yml` lanzaba Calidad y Comunidad solo si corría en el minuto exacto 13 o 43 | Con el retraso de GitHub casi nunca coincidía: «Calidad cada hora» no existía | Corregido: se lanzan si su última pasada tiene más de 50 min |
+| GitHub solo ejecutó 3 de las 48 pasadas programadas del Reloj el 22/11 (y 4 del ciclo) | Lo programado no sale a su hora aunque esté aprobado | SIN RESOLVER: hace falta un reloj externo (ver «Solo puede hacerlo el dueño») |
+| 351 y 353 (El Jambo), reevaluadas con el criterio corregido | Siguen rechazadas (58 y 70) por motivos reales: 37-40 s, sin plano de casa al cierre, voz que no dice el guion | Órdenes al Creador en el tablón; episodios nuevos en producción |
+| `herramientas/estudio/LEEME.md` (la receta que lee el Creador) describía aún oficina y «≤ 30 s» | Los episodios salían cortos y sin bucle | En corrección por el Creador de esta noche |
+| Un agente no puede lanzar ni editar las tareas programadas creadas por el dueño, ni crear tareas nuevas | Creador y Mejora no se pueden adelantar desde una sesión | Sus órdenes están en el tablón y en `peticiones_mejora.md` |
 
 ## Hallazgo n.º 1: por qué no salen episodios nuevos (cuello de botella)
 Cadena real: guion → render → mp4 en la release «cola» → nota de Calidad → publicación.
@@ -67,7 +84,10 @@ Cadena real: guion → render → mp4 en la release «cola» → nota de Calidad
 Horarios ideales propuestos (Madrid, sin cambiar nada yo): Creador 07:51 y 14:51 (para llegar a los huecos de 11:30 y 19:40); Cazador solo lunes; Calidad de respaldo 12:41 y 18:41 como está.
 
 ## Solo puede hacerlo el dueño
-- Renovar el PAGE_TOKEN de Meta (caducó el 22/11).
+- **Reloj externo:** aprobar la creación de una tarea programada de Claude (Haiku, cada hora de 07:07 a 23:07) que lance `reloj.yml`, o crearla a mano en claude.ai/code/routines con el repo conectado. Sin ella, la hora de publicación depende del cron de GitHub, que llega con horas de retraso.
+- **YouTube:** volver a pegar el secreto YOUTUBE_CLIENT_SECRET (error «invalid_client» el 22/11 a las 23:26) en los secretos de Actions del repo.
+- Pulsar «Ejecutar ahora» en el Creador cuando quiera producción fuera de sus horas (09:51 y 15:51).
+- El token de Meta (PAGE_TOKEN) funcionó a las 23:26 del 22/11, pero es de corta duración: pasarlo a larga duración o renovarlo cuando el registro avise del código 190.
 - Activar la sincronización de GitHub de Neogest Studio (o exportar su código) para poder renderizar en Actions.
 - Pegar `ZERNIO_API_KEY` y `BUFFER_API_KEY`; crear los 3 secretos de Metricool solo si quiere esa vía.
 - Editar a mano 4 tareas programadas (prompts viejos) y desactivar el Analista de monetización.
