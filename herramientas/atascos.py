@@ -115,7 +115,7 @@ def escribir(lista, ahora=None):
         lin.append(f"| {nombres.get(a.get('urgencia', 0))} | {a['pieza']} | {esc(a.get('cuando'))} | {a['tipo']} | {a['rol']} | "
                    f"{esc(a.get('motivo'))} | {esc(a.get('arreglo'))} |")
     nuevo = "\n".join(lin) + "\n"
-    try:   # solo reescribe si cambia algo más que la hora (el ciclo corre cada 15 min: sin commits vacíos)
+    try:   # solo reescribe si cambia algo más que la hora (el ciclo corre cada 15-30 min: sin commits vacíos)
         viejo = open(SALIDA, encoding="utf-8").read()
         quita = lambda t: "\n".join(x for x in t.splitlines() if not x.startswith("Actualizado:"))
         if quita(viejo) == quita(nuevo):

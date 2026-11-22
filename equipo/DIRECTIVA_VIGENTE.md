@@ -10,32 +10,40 @@ Versión limpia del 15/11/2026 (orden del dueño). Sustituye a todo lo anterior;
 - Modelos (orden del dueño 21/11/2026): por defecto, siempre el modelo más barato que resuelva bien la tarea (Haiku lo mecánico; Sonnet redactar/evaluar/programar; nunca Fable). Si hace falta más calidad y Sonnet no basta, autorizado subir a Opus sin pedir permiso; se deja constancia de por qué en el tablón o en el registro de cambios.
 - Monetización (orden del dueño 21/11/2026, «lo que sea para monetizar, tú mandas en estrategia»): el Estratega tiene autoridad para decidir y ejecutar cambios de estrategia de monetización por su cuenta, dejando constancia en `equipo/estrategia_monetizacion.md` y en el tablón; no hace falta pedir permiso salvo gasto de dinero real (eso sigue las reglas normales de pago/compra).
 
-## 2. Mapa del equipo y horarios (hora de Madrid)
+## 2. Mapa del equipo y horarios (comprobado el 22/11/2026 contra `.github/workflows/*.yml` y las tareas programadas de Claude)
+Los cron de Actions están en UTC fijo: en invierno Madrid = UTC+1 (en horario de verano todo se adelanta 1 h en la hora de Madrid). Los cron de GitHub son «mejor esfuerzo» y se han visto retrasos de varias horas: lo que importa es el ORDEN de la cadena, no la hora exacta.
+
+**Cadena de producción y publicación (en este orden; cada eslabón alimenta al siguiente)**
+| # | Eslabón | Cuándo (UTC → Madrid) | Qué corre y con qué modelo | Archivo |
+|---|---|---|---|---|
+| 1 | Guionista Gemini | 08:15 y 14:15 → 09:15 y 15:15 | Actions, Gemini API (gratis); borradores en `equipo/guiones_gemini/pendientes/` | `guionista_gemini.yml` |
+| 2 | Autocrítica Gemini | al terminar el Guionista (`workflow_run`; sin cron) | Actions, Gemini; revisa cada borrador con el criterio de Calidad | `autocritica_gemini.yml` |
+| 3 | Creador (Claude Code) | 08:51 y 14:51 → 09:51 y 15:51 | Tarea de Claude, Sonnet: elige guion, rehace lo rechazado y RENDERIZA en Neogest Studio (único paso que no corre en Actions) | roles/creador.md |
+| 3b | Creador API «piloto texto» | 09:51 y 15:51 → 10:51 y 16:51 | Actions, Sonnet API; solo arregla texto/metadata de piezas rechazadas, no renderiza | `creador_api.yml` |
+| 4 | Repescador | 8 pasadas al día (07:33-19:33 → 08:33-20:33), 8 min antes de Calidad en 11:33 y 17:33 | Actions, determinista; recoloca piezas cuyo material ya existe | `repescador_api.yml` |
+| 5 | Calidad (API) | cada hora (minuto 43, desde `reloj.yml`) + 10:41 y 16:41 → 11:41 y 17:41 | Actions, Sonnet API con tool use; respaldo de Claude (Haiku) 12:41 y 18:41 Madrid | `calidad_api.yml`, roles/calidad.md |
+| 6 | Ciclo (publica Instagram, Facebook y YouTube) | `reloj.yml` cada 30 min (minutos 13 y 43) + cron 17 y 47 de 11 a 22 UTC y 07:17 y 08:47 | Actions, sin modelo; solo publica piezas con `calidad.json` aprobado | `ciclo.yml` |
+| 7 | Redes extra (TikTok, LinkedIn, Google) | Zernio 11:51 y 18:51 → 12:51 y 19:51; Buffer 06:23 y 15:23 → 07:23 y 16:23; Metricool DESACTIVADO | Actions, sin modelo; republican lo ya aprobado y publicado. Zernio y Buffer esperan su clave (ver `pendiente_usuario.md`) | `redes_zernio.yml`, `redes_buffer.yml`, `redes_metricool.yml` |
+| 8 | Supervisor | 11:27 y 17:27 → 12:27 y 18:27 | Actions, Haiku API; vigila atascos | `supervisor_api.yml` |
+| 9 | Comunidad (Facebook y YouTube) | `reloj.yml` cada hora (minuto 13) + respaldo 08:17, 12:17, 17:17 y 20:17 UTC | Actions, Haiku API | `comunidad.yml`, `comunidad_api.py` |
+| 9b | Contestador del chat de Instagram | `reloj.yml` cada 30 min | Actions, reglas sin modelo (token de Meta caducado desde el 22/11: ver `pendiente_usuario.md`) | `respuestas_chat.yml` |
+| 10 | Analista | martes, jueves y domingo 23:23 Madrid | Tarea de Claude, Haiku (monetización los domingos) | roles/analista.md |
+
+`reloj.yml` es una pasada corta cada 30 min SIN bucle ni auto-relanzado (un job largo que se relanzaba fue la causa probable de la suspensión de la cuenta anterior): no se cambia ni se reintroducen jobs largos. Nada del ciclo corre «cada 15 min».
+
+**Otras tareas de Claude Code (Madrid)**
 | Rol | Cuándo | Modelo | Archivo |
 |---|---|---|---|
-| Creador | 09:51 y 15:51 a diario | Sonnet | roles/creador.md |
-| Calidad | 11:41 y 17:41 (tarea única «Calidad»; después de cada pasada del Creador) | Sonnet, **API directa con tool use (piloto, no Claude Code)** | roles/calidad.md + `herramientas/calidad_api.py` |
-| Supervisor | 12:27 y 18:27 a diario | Haiku, **API directa (no Claude Code)** | roles/supervisor.md + `herramientas/supervisor_api.py` |
-| Cazador de virales | lunes 08:23 | Sonnet | roles/cazador.md |
+| Cazador de virales | diario 08:23 (el rol dice lunes; ver auditoría) | Sonnet | roles/cazador.md |
 | Remasterizador | lunes, miércoles y viernes 09:00 | Sonnet | roles/remasterizador.md |
-| Analista (+ monetización los domingos) | martes, jueves y domingo 23:23 | Haiku | roles/analista.md |
 | Estratega | lunes 10:13 | Sonnet | roles/estratega.md |
 | Mejora de producción | miércoles 11:13 | Sonnet | roles/mejora.md |
-| Comunidad | 19:37 a diario | Haiku | roles/comunidad.md |
-| Centro (vídeos y demos del Centro) | lunes y jueves 11:17 | Sonnet | roles/centro.md |
-| Repescador (vía API, no Claude Code) | cada 2 h, 08:33-20:33 | determinista (sin modelo salvo varios casos) | roles/repescador.md + `herramientas/repescador_api.py` |
-| Ventas · prospección | L-V 09:43, EN PAUSA (ver su rol) | Sonnet | roles/ventas.md |
-Aviso (16/11, comprobado por Coordinación): la tarea programada llamada «IG nube · Supervisor (repo)» (13:27 a diario) NO ejecuta el checklist de `roles/supervisor.md` — su prompt real es «cerrar la cola de Gemini» (marcar `equipo/cola_gemini.md` con los assets ya subidos a Base44), tarea distinta y necesaria porque la tarea de Gemini no puede hacer push. El checklist real del Supervisor no tenía ninguna tarea programada propia desde el 15/11 (solo una prueba manual); desde el 16/11 corre por `.github/workflows/supervisor_api.yml` (ver fila de arriba). No tocar ni renombrar esa tarea de Claude Code sin avisar: sigue cerrando la cola de Gemini.
-Tareas en pausa desde el 15/11 (si alguna se dispara, NO trabaja: termina en una línea, sin tablón ni commit):
-- «IG nube · Calidad (repo)» de las 12:51 y «IG nube · Calidad (noche) (repo)» de las 19:31: fusionadas en la Calidad de cada 2 h.
-- «IG nube · Analista de monetización (repo)» (domingos 18:17): fusionada en el Analista.
-- «Ventas · Prospección (repo)»: en pausa.
-Fuera del repo (no leen este archivo, se citan para el mapa):
-- «Lote diario de comentarios» (08:21): prepara comentarios para que el dueño los publique a mano; doc del proyecto `claude/redes/comentarios_diarios.md`.
-- «Laboratorio de ideas» (sábados): propuestas de apps nuevas en el doc del proyecto `claude/ideas/propuestas-apps.md`.
-- «Gemini: procesar cola» (15:48, solo con el PC del dueño encendido): sirve `equipo/cola_gemini.md` y sube el resultado a la Biblioteca de Neogest Studio.
-- «Guionista Gemini (API)» (09:15 y 15:15, 36 min antes de cada Creador; orden del dueño 17/11): pide guiones de El Jambo a Gemini (API directa, gratis) con la biblia, los motivos de rechazo de Calidad y los patrones virales; deja borradores en `equipo/guiones_gemini/pendientes/` que el Creador usa, ajusta o descarta — nunca bloquea su pasada. `.github/workflows/guionista_gemini.yml` + `herramientas/guionista_gemini.py`.
-Aviso (18/11, orden del dueño, PR pendiente de revisión): Calidad pasa entera a API directa con tool use (`.github/workflows/calidad_api.yml` + `herramientas/calidad_api.py`, Sonnet, mismo horario y criterio que `roles/calidad.md`); no lee hechos_verificados/prohibido_afirmar de Base44 (ese MCP no existe fuera de Claude Code). Creador: SOLO la parte mecánica (texto/metadata de post.json de piezas rechazadas, sin tocar vídeo) pasa a API directa (`.github/workflows/creador_api.yml`, solo `workflow_dispatch` hasta validarlo); el resto del rol (guiones, render real en Neogest Studio) sigue en Claude Code porque necesita el MCP de Base44. Detalle y motivos en `equipo/tablon.md` (18/11/2026).
+| Centro (vídeos y demos) | lunes y jueves 11:17 | Sonnet | roles/centro.md |
+| Comunidad (Instagram, leads) | 19:37 a diario | Haiku | roles/comunidad.md |
+| Ventas · prospección | EN PAUSA | Sonnet | roles/ventas.md |
+Tareas en pausa o fusionadas (si alguna se dispara, NO trabaja: termina en una línea, sin tablón ni commit): «IG nube · Calidad (repo)» 12:51, «IG nube · Calidad (noche) (repo)» 19:31, «IG nube · Analista de monetización (repo)» (domingos 18:17; fusionada en el Analista) y «Ventas · Prospección (repo)».
+Fuera del repo: «Lote diario de comentarios» (08:21), «Laboratorio de ideas» (sábados), «Gemini: procesar cola» (15:48, solo con el PC del dueño encendido), «IG nube · Supervisor (repo)» (13:27: cierra `equipo/cola_gemini.md`, no ejecuta el checklist del Supervisor).
+**El render es el único eslabón manual:** el motor de los episodios vive en Neogest Studio (Base44) y solo lo ejecuta una sesión de Claude Code con el MCP de Base44. Mientras no exista render en Actions, el ritmo de episodios lo marca esa tarea del Creador (diagnóstico y propuesta en `equipo/auditoria_agentes_2026-11-22.md`).
 
 ## 3. Protocolo de cada pasada
 0. Mira el mapa (§2): si tu tarea está fusionada, en pausa o se ha disparado fuera del día u hora de tu rol, termina en una línea sin hacer nada.
@@ -105,15 +113,15 @@ Las cifras de 20, 22 o 35 s de textos antiguos quedan derogadas.
 ## 7. Control de calidad y publicación
 - Calidad revisa cada vídeo en cuanto está renderizado (no solo lo que sale pronto), en su pasada siguiente (11:41 o 17:41). Aprobado solo con nota ≥ 90 según `equipo/estandar_calidad.md` (v9: «parece hecho por humanos»; si suena a IA, máximo 89).
 - Los reels de redes se publican solo con `calidad.json` aprobado; el ciclo no publica sin él. Una pieza con visto bueno expreso del dueño (`"aprobado_por": "dueño"` en su calidad.json) no se reevalúa, no se rechaza ni se mueve: sale a su hora; Calidad solo añade sus observaciones en `nota_calidad`. Solo los vídeos de presentación del Centro esperan además el aprobado del dueño en el editor del Centro (VideoMezcla).
-- Todo lo programado debe salir a su hora: si una pieza no tiene nota ≥ 90 a 60 min de su hora, se mueve al siguiente hueco libre; nunca dos piezas en el mismo hueco ni encima de una aprobada.
-- Publicación: GitHub Actions (`ciclo.yml`, relanzado por `reloj.yml` cada 15 min) renderiza, publica en Instagram, Facebook (por ID de página, `/video_reels` para reels) y YouTube (Short con `herramientas/youtube.py`; `"youtube": {"omitir": true}` para no subir uno), y actualiza estadisticas.json y registro.log. Las llamadas a las API de Facebook y YouTube solo funcionan dentro de Actions.
+- Parrilla fija y relevo (orden del dueño 22/11): los huecos del día están en UN solo sitio, `equipo/plan.json` → `parrilla_diaria` (Madrid: 08:30, 11:30, 13:40, 16:30, 19:40, 21:30; mín. 100 min entre piezas de un canal, máx. 6 por canal y día). Creador, Calidad y el ciclo se refieren a esa parrilla. Si una pieza no tiene nota ≥ 90 a 60 min de su hueco, ese hueco lo ocupa la siguiente pieza aprobada y la pieza pasa al siguiente hueco libre; nunca un hueco vacío habiendo aprobadas en cola ni dos piezas en el mismo hueco.
+- Publicación: GitHub Actions (`ciclo.yml`, relanzado por `reloj.yml` cada 30 min) renderiza, publica en Instagram, Facebook (por ID de página, `/video_reels` para reels) y YouTube (Short con `herramientas/youtube.py`; `"youtube": {"omitir": true}` para no subir uno), y actualiza estadisticas.json y registro.log. Las llamadas a las API de Facebook y YouTube solo funcionan dentro de Actions.
 - Un `video_externo` en post.json (vídeo ya terminado, p. ej. de Neogest Studio) lo descarga el ciclo y lo sube a la release; su calidad.json anterior caduca.
 - Vídeos y audios nunca en git: van a la release «cola». Descarga: `ID=$(gh api repos/Deisputnik/neogestlab-redes/releases/tags/cola --jq '.assets[] | select(.name=="NOMBRE.mp4") | .id')` y `gh api -H "Accept: application/octet-stream" repos/Deisputnik/neogestlab-redes/releases/assets/$ID > NOMBRE.mp4`.
 - post.json de un reel lleva siempre: `texto`, `cuando` (AAAA-MM-DDTHH:MM:00+01:00), `prueba_no_seguidores`, `comentario_fijado`, `avance_siguiente`, bloque `monetizacion` {objetivo, oferta, paso_embudo}, bloque `youtube` {titulo ≤ 100 caracteres con #Shorts, descripcion con /solicitar?…&src=youtube y «By Neogest Lab», etiquetas} y, si procede, `facebook`. `python3 herramientas/pre_entrega.py` sin ERRORES antes de entregar.
 - Sin textos repetidos. Si Meta rechaza el token (código 190), se anota la hora en pendiente_usuario.md; nadie publica a mano para compensar.
 
 ## 7 bis. Cero cuellos de botella (orden del dueño 21/11/2026: «no quiero más cuellos de botella, estructúralo para que no vuelva a pasar»)
-- **Atascos visibles siempre.** `herramientas/atascos.py` corre en cada ciclo (cada 15 min) y deja `equipo/atascos.md`: cada pieza parada con su motivo, su urgencia y el rol al que le toca. TODOS los roles empiezan su pasada por sus filas de ese archivo, de arriba abajo, antes de hacer nada nuevo.
+- **Atascos visibles siempre.** `herramientas/atascos.py` corre en cada ciclo (cada 15-30 min) y deja `equipo/atascos.md`: cada pieza parada con su motivo, su urgencia y el rol al que le toca. TODOS los roles empiezan su pasada por sus filas de ese archivo, de arriba abajo, antes de hacer nada nuevo.
 - **Lo técnico lo arregla la máquina, no una persona.** Volumen, pico, silencio final, isotipo del cierre: los corrige el ciclo o el motor solos (máster automático de vídeos externos en `publicar_gh.py`, isotipo 2026 y cierre sin silencio en el motor). Si un fallo técnico se repite en 2 piezas, quien lo detecte lo arregla en el código en esa misma pasada (o lo deja en `peticiones_mejora.md` como URGENTE si no es su archivo); no se re-renderiza a mano pieza a pieza.
 - **Un control que bloquea en falso se corrige en el control, el mismo día.** Si un bloqueo automático no corresponde al formato (p. ej. exigir giro a una promo) o es un error del transcriptor (una letra), Mejora o quien lo vea ajusta `herramientas/control_audio.py` y relanza; no se reescriben guiones para contentar a Whisper.
 - **Calidad no espera al reloj de GitHub.** La Calidad (API) se lanza cada hora desde `reloj.yml`, además de su horario de 11:41 y 17:41, y hay una tarea de respaldo (12:41 y 18:41) que la lanza si no ha corrido. Ninguna pieza renderizada debe pasar más de 2 h sin nota.
@@ -122,8 +130,8 @@ Las cifras de 20, 22 o 35 s de textos antiguos quedan derogadas.
 - **El Supervisor vigila los atascos.** Lee `atascos` en su contexto y avisa en el tablón de lo que lleva > 12 h parado, con el rol responsable.
 
 ## 8. Cadencia
-- El Jambo que sabe (orden del dueño 21/11 noche, biblia v5.2 en `equipo/serie_jambo.md`): 5 episodios NUEVOS al día, de 45-70 s, publicados el mismo día (sustituye al «1 al día» del 20/11 y a los «2 episodios cortos»); formato sitcom con plano de casa al abrir y cerrar (bucle). No compite por hueco con la cadencia de abajo (presupuestos/facturas/trucos), que sigue igual.
-- Dos reels al día de apps (sin contar El Jambo) (orden del dueño 19/11/2026): 70 % para autónomos y pymes sobre presupuestos y facturas, y 30 % trucos de IA (reparto semanal aproximado de 10 y 4 en 14 piezas). Se publica solo con aprobación de Calidad ≥ 90 o aprobación expresa del dueño; si falta, el hueco queda libre.
+- El Jambo que sabe (orden del dueño 21/11 noche, biblia v5.2 en `equipo/serie_jambo.md`): 5 episodios NUEVOS al día, de 45-70 s, publicados el mismo día (sustituye al «1 al día» del 20/11 y a los «2 episodios cortos»); formato sitcom con plano de casa al abrir y cerrar (bucle). No compite por hueco con la cadencia de abajo (presupuestos/facturas/trucos), que sigue igual. Parrilla: 5 episodios en los huecos 08:30, 11:30, 16:30, 19:40 y 21:30 (Madrid); el hueco de las 13:40 es de la promo de app.
+- Promos de app (orden del dueño 19/11, ajustada el 22/11 al tope de 6 por canal): 1 promo aprobada al día en el hueco de las 13:40; un segundo reel de app solo ocupa un hueco de El Jambo que haya quedado libre. Mezcla de promos: 70 % presupuestos y facturas para autónomos y pymes, 30 % trucos de IA. Se publica solo con aprobación de Calidad ≥ 90 o aprobación expresa del dueño; si falta, el hueco lo ocupa la siguiente aprobada (§7).
 - Máximo 6 publicaciones al día por canal, con al menos 100 min entre piezas del mismo canal, salvo parrilla expresa del dueño (manda la suya ese día).
 - Facebook y YouTube publican además todo el material existente aprobado (colas de `atrasos/`, `atrasos/politica.json`), lo mejor primero, dentro de esos límites y de la cuota de YouTube (~6 subidas al día).
 - Redes vía Buffer gratis (workflow `redes_buffer.yml`, `herramientas/redes_buffer.py`; solo reels ya aprobados y publicados en Instagram con render desde el 14/11; sin producción propia; cada canal queda en espera hasta que el dueño lo conecte): **TikTok** 2 al día (13:30 y 20:30), 2 de El Jambo por 1 de app

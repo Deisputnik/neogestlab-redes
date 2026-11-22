@@ -48,7 +48,7 @@ MODELOS = [
     "gemini-3.5-flash",
     "gemini-2.5-flash",
 ]
-N_POR_DEFECTO = 4
+N_POR_DEFECTO = 4   # 2 pasadas al día x 4 = hasta 8 borradores para cubrir 5 episodios diarios tras el filtro del validador
 # 21/11/2026 (orden del dueño): Jambo Reseco vuelve al reparto del formato de barrio/salon
 # (tio chungo, de poca confianza, mal hablado) - ver equipo/serie_jambo.md.
 PERSONAJES_VALIDOS = {"rosa", "felipe", "sindy", "neo", "cliente", "conchaqueton", "jambo"}
@@ -267,11 +267,12 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    cualquier app real de Neogest Lab o de terceros en el vídeo (una app de IA FICTICIA e
    inventada, sin nombre de marca real, sí está permitida como fuente de gag — ver orden del
    dueño 21/11 arriba).
-8. Duración implícita del conjunto de frases: episodio de 45-70 s hablado (biblia v5, orden
-   del dueño 20/11 tarde: "1 al día pero de más duración"), nunca una escena de relleno.
+8. Duración implícita del conjunto de frases: episodio de 45-70 s hablado (biblia v5.2; ritmo de 5 episodios
+   nuevos al día, orden del dueño 21/11 noche), nunca una escena de relleno.
 9. Registro de habla de barrio con réplica inteligente, más paleto y vulgar (ver BIBLIA v5
    más abajo y orden del dueño 21/11 arriba) en Rosa, Felipe, Sindy y Concha Quetón; Neo
-   siempre correcto y neutro.
+   es el ÚNICO culto: siempre correcto, educado y con respeto (orden del dueño 22/11). Jambo Reseco
+   (vecino chungo, voz rasgada, el más mal hablado) sale en los episodios cuando encaje.
 
 PERSONAJE QUE VUELVE (orden del dueño 21/11 mediodía): "jambo" (Jambo Reseco) vuelve al
 reparto del barrio — un tío chungo, de poca confianza, mal hablado (más tacos y más fuertes
@@ -294,7 +295,7 @@ Tres cambios nuevos sobre todo lo de arriba (que sigue mandando):
    inteligente. El choque entre cómo hablan y lo listos que son es el gancho de personalidad;
    la pobreza es el escenario (viven en un barrio humilde), nunca el chiste — el chiste va
    siempre contra el sistema o contra la propia resignación del personaje, jamás contra cómo
-   habla la gente de barrio en la vida real. Neo sigue hablando correcto y neutro: ese
+   habla la gente de barrio en la vida real. Neo sigue hablando culto y con respeto: ese
    contraste con el resto es parte del gag.
    MAL (registro bajo sin inteligencia, solo vulgar): "Esto es una mierda y ya está."
    BIEN (registro bajo + réplica inteligente, lo que se pide): "A mí que me paguen las horas,
@@ -310,8 +311,8 @@ Tres cambios nuevos sobre todo lo de arriba (que sigue mandando):
    cobrar", "Felipe, cásate el sábado tranquilo") — ayuda a que se note quién es quién y refuerza
    el barrio como comunidad. No hace falta en todas las líneas, pero sí en la mayoría.
 2. DURACIÓN Y CADENCIA: episodios de 45-70 s hablados (no 15-25 s), con espacio para que los
-   3 golpes de la escalada respiren un poco más que antes; 1 episodio NUEVO al día (no varios
-   cortos). Usa entre 6 y 9 escenas (antes 5-7) para llenar ese tiempo sin relleno: puedes
+   3 golpes de la escalada respiren un poco más que antes; la serie publica 5 episodios NUEVOS
+   al día (orden del dueño 21/11 noche): cada guion es un episodio completo de 45-70 s, no un corto. Usa entre 6 y 9 escenas (antes 5-7) para llenar ese tiempo sin relleno: puedes
    añadir un golpe extra a la escalada (4 en vez de 3) si el conflicto lo pide, pero el remate
    y el cierre siguen siendo solo de Neo.
 3. RECUERDO/CONTINUIDAD (orden del dueño: "llevar un orden de recuerdo en los personajes por

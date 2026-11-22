@@ -41,6 +41,7 @@ Cuándo: Calidad (API) cada hora desde `reloj.yml` más 11:41 y 17:41 (Madrid); 
 - Haz `git pull` justo antes de escribir cada `calidad.json` para no pisar otra sesión.
 
 ## Horario de salida
+- Los huecos son los de `equipo/plan.json` → `parrilla_diaria` (DIRECTIVA §7). Relevo: si una pieza no llega a 90 a 60 min de su hueco, lo ocupa la siguiente aprobada y la pieza pasa al siguiente hueco libre.
 - Si una pieza sale en menos de 60 min sin nota ≥ 90, muévela al siguiente hueco libre (≥ 100 min de la anterior del mismo canal, nunca encima de una aprobada) y anótalo.
 
 ## Cierre

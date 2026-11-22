@@ -726,5 +726,39 @@
  "pendientes_dueño": [
   "Nombre visible «Neogest Lab · Apps a medida»: desde el móvil, a partir de ~25/11.",
   "Archivar desde el móvil las publicaciones repetidas del 8-10/11 (ver pendiente_usuario.md)."
- ]
+ ],
+ "parrilla_diaria": {
+  "_nota": "22/11/2026 (Coordinación, orden del dueño): ÚNICA fuente de los huecos del día (hora de Madrid). Creador, Calidad y el ciclo la leen; `dias` es histórico. Relevo: sin nota ≥ 90 a 60 min del hueco, lo ocupa la siguiente aprobada; nunca un hueco vacío habiendo aprobadas en cola.",
+  "huecos": [
+   {
+    "hora": "08:30",
+    "contenido": "El Jambo (episodio 1)"
+   },
+   {
+    "hora": "11:30",
+    "contenido": "El Jambo (episodio 2)"
+   },
+   {
+    "hora": "13:40",
+    "contenido": "promo de app aprobada (si no hay, siguiente Jambo aprobado)"
+   },
+   {
+    "hora": "16:30",
+    "contenido": "El Jambo (episodio 3)"
+   },
+   {
+    "hora": "19:40",
+    "contenido": "El Jambo (episodio 4)"
+   },
+   {
+    "hora": "21:30",
+    "contenido": "El Jambo (episodio 5)"
+   }
+  ],
+  "maximo_por_canal_y_dia": 6,
+  "minimo_minutos_entre_piezas_del_mismo_canal": 100,
+  "el_jambo_al_dia": 5,
+  "promos_al_dia": 1,
+  "produccion": "El render lo hace la tarea del Creador (09:51 y 15:51): lo renderizado en la pasada de la mañana alimenta 13:40 y 16:30; el de la tarde alimenta 19:40, 21:30 y los dos huecos de la mañana siguiente."
+ }
 }

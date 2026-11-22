@@ -2,7 +2,7 @@ name: Respuestas del chat (ice breakers)
 
 # Contestador gratuito del chat de Instagram (herramientas/respuestas_chat.py): botones de bienvenida
 # y mensajes cortos con palabra clave (precio, a medida, prueba, apps, hola). Lo lanza también el
-# Reloj cada 15 min, porque el cron de GitHub se salta ejecuciones. Al subir cambios del script se
+# Reloj cada 30 min, porque el cron de GitHub se salta ejecuciones. Al subir cambios del script se
 # ejecuta en MODO PRUEBA (no envía nada) junto con el diagnóstico de vinculación.
 on:
   # 22/11/2026: sin cron propio; lo lanza reloj.yml cada 30 min (el cron duplicado solo gastaba minutos).
