@@ -28,7 +28,8 @@ async def main():
             path = f"{OUT}/{n}_{i}.mp3"; words = await tts(e["v"], e.get("q", "narr"), path)
             dur = words[-1]["e"] + 0.05
             voice = {"text": e["v"], "provider": "edge", "speaker": e.get("q", "narr"), "url": path, "duration": dur, "words": words, "offset": 0.08, "tail": 0.1}
-            sc = {"id": uid(), "duration": round(dur + (0.75 if e.get("outro") else 0.3), 2), "transition": e.get("tr", "slide" if i else "none"), "voice": voice,
+            if e.get("outro"): voice["subtitles"] = False
+            sc = {"id": uid(), "duration": round(dur + (0.75 if e.get("outro") else 0.36), 2), "transition": e.get("tr", "slide" if i else "none"), "voice": voice,
                   "texts": [dict(t, id=uid()) for t in e.get("textos", [])]}
             if e.get("outro"): sc["kind"] = "outro"; sc["background"] = {"type": "gradient"}
             else: sc["background"] = e["bg"]
@@ -36,7 +37,7 @@ async def main():
             if e.get("sfx"): sc["sfx"] = e["sfx"]
             total += sc["duration"]; scenes.append(sc)
         spec = {"version": 1, "format": "9:16", "fps": 30, "music": {"track": ep.get("musica", "corporativo:1"), "volume": 0.3, "duck": True, "duckLevel": 0.45},
-                "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": False, "size": 0.07},
+                "subtitles": {"enabled": True, "words": 2, "style": "amarillo", "emojis": False, "size": 0.066},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.5}, "scenes": scenes}
         json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas", round(total, 1), "s")
 

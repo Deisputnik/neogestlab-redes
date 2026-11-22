@@ -1,31 +1,31 @@
 {
   "tipo": "reel",
-  "texto": "¿Cuántas veces al día te llaman solo para preguntar el horario?\nLlamada real al asistente telefónico de un negocio: saluda, da el horario y pregunta si te viene bien pasar. Se configura con la información de tu negocio, con la voz y el trato que elijas.\nNosotros lo configuramos y lo mantenemos. Desde 150 € al mes, sin permanencia.\n¿Qué te preguntan más por teléfono? Dilo en una palabra.\nMándaselo a quien no da abasto con el teléfono.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=instagram\nLa voz que se oye es la de un asistente virtual (generada por IA). Llamada real; se han quitado los datos del negocio.",
+  "texto": "¿Otra llamada solo para preguntar el horario?\nUn asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora.\nNosotros lo configuramos y lo mantenemos. Desde 150 € al mes, sin permanencia.\n¿Qué te preguntan más por teléfono? Dilo en una palabra.\nMándaselo a quien no da abasto con el teléfono.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=instagram\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA).",
   "cuando": "2026-11-29T19:40:00+01:00",
   "compartir_en_feed": true,
   "prueba_no_seguidores": true,
-  "formato": "Promo de app · llamada real",
+  "formato": "Promo de app · RECREACIÓN (rótulo «Recreación · voces sintéticas» durante toda la llamada; voces edge-tts; clips de la Biblioteca; música de la biblioteca del estudio)",
   "app": "Recepcionista 24h",
   "app_slug": "recepcionista-24h",
-  "gancho": "¿Y si tu teléfono se cogiera solo?",
+  "gancho": "¿Otra llamada por el horario?",
   "_fuentes": [
-    "Ficha Producto del Centro, slug recepcionista-24h (hechos verificados 16/11/2026)",
-    "Grabación propia del dueño, 16/11/2026"
+    "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto slug recepcionista-24h (estado activo; consultada por MCP el 22/11/2026): hechos_verificados «Atiende llamadas las 24 horas», «Reserva citas durante la llamada con Google Calendar, Outlook, Cal.com o Calendly», «Después de cada llamada llega un correo con el resumen», «Responde con la información del negocio a partir de documentos propios», «Neogest Lab se encarga del alta, la configuración y los cambios», precio «150 €/mes con hasta 100 llamadas… sin permanencia».",
+    "equipo/encargos/recepcionista_24h.md (formato RECREACIÓN y cierre «Solicita información gratuita»)."
   ],
-  "_comprobado": "Texto y audio contrastados con la ficha y con la transcripción de la llamada; sin nombre del negocio, web, teléfonos ni nombres de personas; no suena la voz del dueño.",
-  "_nota_creador": "16/11/2026 Coordinación: vídeo ya terminado (llamada real al asistente del dueño, montada fuera del ciclo). SIN MÚSICA: no había pistas con licencia accesibles desde la sesión; si Calidad lo exige, el Remasterizador añade música del estudio por debajo de la voz. Encargo: equipo/encargos/recepcionista_24h.md.",
-  "motor": "externo",
+  "_comprobado": "22/11/2026: el vídeo es una RECREACIÓN rotulada en pantalla durante toda la llamada (voces sintéticas edge-tts); no se presenta como llamada real ni como persona. Cada afirmación sale de hechos_verificados de la ficha: atiende a cualquier hora, responde con la información del negocio, reserva citas en el calendario, correo con el resumen. Precio solo en el post («desde 150 € al mes», «sin permanencia»). No se nombra al proveedor, no hay clientes, cifras de ahorro ni «prueba gratuita» (prohibido en la ficha: el cierre es «Solicita información gratuita»). El horario y el hueco de la cita que se oyen son de ejemplo. Sin datos de ningún negocio real ni voz del dueño.",
+  "_nota_creador": "22/11/2026 Creador (sesión de desatasco, orden del dueño): el vídeo de la llamada real del 16/11 se perdió con el repo anterior (cuenta suspendida) y no está en la release. Pieza REHECHA en Neogest Studio como RECREACIÓN (respaldo previsto en el encargo), con música. Si el dueño vuelve a grabar una llamada real, se puede sustituir.",
+  "motor": "neogest-studio",
   "comentario_fijado": "¿Qué te preguntan más por teléfono? Dilo en una palabra. Más en @neogestlab",
-  "avance_siguiente": "Parte 2 si este vídeo os sirve",
-  "portada_ms": 0,
+  "avance_siguiente": "Siguiente: qué pasa cuando llaman con el negocio cerrado",
+  "portada_ms": 1000,
   "monetizacion": {
     "objetivo": "solicitud_informacion",
     "oferta": "Recepcionista 24h: información gratuita en /solicitar",
     "paso_embudo": "alcance → visita al perfil → solicitud de información"
   },
   "youtube": {
-    "titulo": "¿Y si tu teléfono se cogiera solo? Llamada real a un asistente #Shorts",
-    "descripcion": "¿Cuántas veces al día te llaman solo para preguntar el horario? Llamada real al asistente telefónico de un negocio: saluda, da el horario y pregunta si te viene bien pasar. Se configura con la información de tu negocio, con la voz y el trato que elijas. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
+    "titulo": "¿Otra llamada solo para preguntar el horario? #Shorts",
+    "descripcion": "¿Otra llamada solo para preguntar el horario? Un asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora. Recreación con voces sintéticas. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
     "etiquetas": [
       "asistente telefónico",
       "recepcionista virtual",
@@ -35,8 +35,21 @@
     ]
   },
   "facebook": {
-    "texto": "¿Cuántas veces al día te llaman solo para preguntar el horario?\nLlamada real al asistente telefónico de un negocio: saluda, da el horario y pregunta si te viene bien pasar. Se configura con la información de tu negocio, con la voz y el trato que elijas.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
+    "texto": "¿Otra llamada solo para preguntar el horario?\nUn asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA)."
   },
   "asset": "801_recepcionista_horario.mp4",
-  "_video_externo_usado": "https://raw.githubusercontent.com/ajreparacion/instagram/entrada-videos/801_recepcionista_horario.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/9dd0c3d2e_801_recepcionista_horario.mp4",
+  "renderizado": false,
+  "duracion_s": 29.0,
+  "audio": {
+    "lufs_integrados": -13.8,
+    "pico_dbfs": -1.3,
+    "medido_con": "máster de Neogest Studio (scripts/masterizar.mjs, ebur128) y ffmpeg ebur128 sobre el mp4 subido"
+  },
+  "musica": {
+    "titulo": "Biblioteca de Neogest Studio · tech:1",
+    "licencia": "Pixabay Content License (sin atribución obligatoria)",
+    "origen": "src/studio/library.js de Neogest Studio"
+  },
+  "origen": "herramientas/estudio/gen_promos.py + promos_2026-11-22.json"
 }

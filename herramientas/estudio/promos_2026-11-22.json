@@ -64,20 +64,20 @@
       {
        "t": 0,
        "x": 0.5,
-       "y": 0.3,
+       "y": 0.35,
        "zoom": 1
       },
       {
        "t": 1.2,
-       "x": 0.75,
+       "x": 0.7,
        "y": 0.48,
-       "zoom": 1.9
+       "zoom": 1.3
       },
       {
        "t": 2.2,
        "x": 0.5,
        "y": 0.5,
-       "zoom": 1.5
+       "zoom": 1.1
       }
      ],
      "clicks": [
@@ -91,10 +91,10 @@
     "textos": [
      {
       "text": "Gestión Integral 7D · demo con datos ficticios",
-      "style": "caption",
-      "anim": "fade",
+      "style": "badge",
+      "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -104,35 +104,35 @@
     "bg": {
      "type": "video",
      "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4c4a51524_toma-factura.mp4",
-     "trimStart": 3.2,
+     "trimStart": 2.0,
      "camera": [
       {
-       "t": 3.2,
+       "t": 2.0,
        "x": 0.5,
        "y": 0.5,
-       "zoom": 1.5
+       "zoom": 1.1
       },
       {
-       "t": 5.0,
-       "x": 0.6,
-       "y": 0.43,
-       "zoom": 2.0
-      },
-      {
-       "t": 6.6,
+       "t": 4.0,
        "x": 0.5,
-       "y": 0.6,
-       "zoom": 1.8
+       "y": 0.46,
+       "zoom": 1.25
+      },
+      {
+       "t": 6.0,
+       "x": 0.5,
+       "y": 0.55,
+       "zoom": 1.25
       }
      ]
     },
     "textos": [
      {
       "text": "Gestión Integral 7D · demo con datos ficticios",
-      "style": "caption",
-      "anim": "fade",
+      "style": "badge",
+      "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -271,9 +271,9 @@
       },
       {
        "t": 1.0,
-       "x": 0.35,
-       "y": 0.47,
-       "zoom": 1.8
+       "x": 0.4,
+       "y": 0.45,
+       "zoom": 1.3
       }
      ],
      "clicks": [
@@ -287,10 +287,10 @@
     "textos": [
      {
       "text": "Gestión Integral 7D · demo con datos ficticios",
-      "style": "caption",
-      "anim": "fade",
+      "style": "badge",
+      "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -300,33 +300,33 @@
     "bg": {
      "type": "video",
      "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/22eb61680_toma-pedido.mp4",
-     "trimStart": 2.2,
+     "trimStart": 1.9,
      "camera": [
       {
-       "t": 2.2,
+       "t": 1.9,
        "x": 0.5,
-       "y": 0.1,
-       "zoom": 1.6
+       "y": 0.3,
+       "zoom": 1.05
       },
       {
-       "t": 3.6,
+       "t": 3.2,
        "x": 0.5,
        "y": 0.12,
-       "zoom": 1.9
+       "zoom": 1.3
       },
       {
-       "t": 4.8,
-       "x": 0.45,
-       "y": 0.3,
-       "zoom": 1.7
+       "t": 5.4,
+       "x": 0.5,
+       "y": 0.2,
+       "zoom": 1.2
       }
      ]
     },
     "textos": [
      {
       "text": "Gestión Integral 7D · demo con datos ficticios",
-      "style": "caption",
-      "anim": "fade",
+      "style": "badge",
+      "anim": "fijo",
       "start": 0,
       "y": 0.5,
       "sfx": false
@@ -338,19 +338,19 @@
     "bg": {
      "type": "video",
      "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/22eb61680_toma-pedido.mp4",
-     "trimStart": 3.6,
+     "trimStart": 1.5,
      "camera": [
       {
-       "t": 3.6,
-       "x": 0.4,
-       "y": 0.35,
-       "zoom": 1.5
+       "t": 1.5,
+       "x": 0.5,
+       "y": 0.3,
+       "zoom": 1.15
       },
       {
-       "t": 4.6,
-       "x": 0.3,
-       "y": 0.47,
-       "zoom": 2.0
+       "t": 3.4,
+       "x": 0.38,
+       "y": 0.45,
+       "zoom": 1.35
       }
      ],
      "clicks": [
@@ -364,16 +364,16 @@
     "textos": [
      {
       "text": "Gestión Integral 7D · demo con datos ficticios",
-      "style": "caption",
-      "anim": "fade",
+      "style": "badge",
+      "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
    },
    {
-    "v": "Sin copiar nada dos veces.",
+    "v": "Sin copiar nada dos veces, y con el stock al día.",
     "bg": {
      "type": "video",
      "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8d0a697c6_gemini-11-almacen.mp4",
@@ -461,6 +461,26 @@
     ]
    },
    {
+    "v": "Tú, con las manos ocupadas. Y el teléfono, sonando.",
+    "bg": {
+     "type": "video",
+     "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/5d2de8edb_gemini-21-hotel-recepcion.mp4",
+     "trimStart": 7,
+     "dim": 0.3,
+     "motion": "pan-left"
+    },
+    "overlays": [
+     {
+      "type": "emoji",
+      "text": "😤",
+      "x": 0.8,
+      "y": 0.3,
+      "start": 0.3,
+      "size": 0.12
+     }
+    ]
+   },
+   {
     "v": "¿Y si la cogiera un asistente telefónico?",
     "bg": {
      "type": "image",
@@ -486,7 +506,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -507,7 +527,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -528,7 +548,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -647,7 +667,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -668,7 +688,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]
@@ -689,7 +709,7 @@
       "style": "badge",
       "anim": "fijo",
       "start": 0,
-      "y": 0.2,
+      "y": 0.27,
       "sfx": false
      }
     ]

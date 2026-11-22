@@ -28,3 +28,6 @@ El motor «sketch» de este repo queda SUSTITUIDO para la serie. Cada episodio s
    Para re-masterizar un mp4 ya existente: `node scripts/masterizar.mjs entrada.mp4 salida.mp4` (imprime lufs, pico y MB).
 5. En `cola/NNN_…/post.json`: `"video_externo": "<esa URL>"`, `"renderizado": false` y `"motor": "neogest-studio"`. El ciclo de GitHub descarga el vídeo, pasa el control de audio y lo sube a la release; después lo evalúa Calidad.
 6. Si /tmp del sandbox se ha borrado, repite el paso 1; si Base44 responde «busy» o 503, espera y reintenta.
+
+## Promos de app en el estudio (22/11/2026)
+Las promos de app que no son El Jambo (108, 107, 801, 802) se generan con `gen_promos.py` y un JSON de guiones como `promos_2026-11-22.json` (clips de la Biblioteca + tomas reales de la app con `camera`, voz edge-tts, cierre `outro` con el logo 2026): `python3 gen_promos.py promos.json /tmp/pr` y luego `node scripts/render.mjs /tmp/pr/<n>.json /tmp/pr/<nombre>.mp4`. Mismo paso 4 para subir. Dos avisos: el sandbox responde «busy saving» varios minutos después de cada render (copia el mp4 a `public/entregas/`): lanza los renders con `nohup` y espera; y si se vuelve a renderizar una pieza, cambia el nombre del mp4 (la URL de `/entregas/` se sirve con caché). El zoom de `camera` sobre una toma de app no debe pasar de 1,3 o el texto se corta.
