@@ -1,0 +1,10 @@
+{
+ "aprobado": false,
+ "nota": 72,
+ "fecha": "2026-11-22T13:00:00Z",
+ "motivos": [
+  "Duración 40,1 s (el control de audio marca bloqueo) y whisper no coincide con el guion: el gancho deletreado «J-A-M-B-O-movil» sale como «JMM o móvil»",
+  "Sin mp4 accesible en esta sesión: imagen sin revisar"
+ ],
+ "como_arreglarlo": "Guion.json ya corregido (gancho sin deletreo: «el móvil de Jambo»). Lo arregla el Creador: re-render en Neogest Studio y subir como video_externo; no basta con texto del post."
+}

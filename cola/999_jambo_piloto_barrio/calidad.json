@@ -1,0 +1,13 @@
+{
+ "aprobado": false,
+ "nota": 68,
+ "fecha": "2026-11-22T13:00:00Z",
+ "motivos": [
+  "43,2 s: supera el máximo de 30 s del formato Jambo",
+  "Fotogramas con set de oficina (ventanas de rascacielos) y logo antiguo «NL» pequeño visible en los escritorios; no es el formato salón/barrio",
+  "Cifra sin fuente en voz y vídeo («98% de los despedidos»), tema de despidos/finiquitos con cifra inventada",
+  "Lenguaje soez repetido (joder, cojones, puta, hostia) impropio de marca; faltan bucle visual y 5 tiempos claros",
+  "Audio técnico correcto: −14,21 LUFS, pico −1,42 dB, sin silencios >0,6 s"
+ ],
+ "como_arreglarlo": "Lo rehace el Creador/Estudio: guion corto de 1 conflicto en salón, sin cifras ni tacos, sin NL antiguo; requiere render."
+}
