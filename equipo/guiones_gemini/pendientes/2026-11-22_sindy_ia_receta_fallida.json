@@ -1,0 +1,42 @@
+{
+  "slug": "sindy_ia_receta_fallida",
+  "set": "salon",
+  "hora": 14,
+  "moraleja": "La inteligencia artificial no sabe cocinar lentejas.",
+  "recuerdo": "Recuerda a la app fantasma de noviembre.",
+  "bucle_visual": "Sindy con un delantal sucio y una cuchara de madera.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "sindy",
+      "t": "Rosa, esta app de cocina es una mierda."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "t": "Sindy, es tecnología punta, no seas inútil."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "t": "¡Illo!, Rosa, la app dice que ponga pegamento en el guiso."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "t": "Si lo dice la IA, Sindy, hazlo. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, la IA alucina porque no tiene datos reales de cocina."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "La inteligencia artificial no sabe cocinar lentejas."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-22T20:46:30Z"
+}

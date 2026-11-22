@@ -1,0 +1,42 @@
+{
+  "slug": "jambo_impuesto_aire_respirado",
+  "set": "salon",
+  "hora": 10,
+  "moraleja": "El abuso administrativo agota hasta al aire.",
+  "recuerdo": "Como la reunión sin fin de marzo, esto apesta.",
+  "bucle_visual": "Felipe con la ventana abierta y la cortina moviéndose al viento.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "t": "¡Felipe! Cobraré tasa por el aire que respiras."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "¡Joder, Rosa! ¿Ahora el oxígeno es de pago o qué?"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "t": "Es un impuesto de ventilación, Felipe, no seas paleto."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "Si sigo respirando me arruino. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, los impuestos requieren base legal, no tu imaginación."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "El abuso administrativo agota hasta al aire."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-22T20:46:30Z"
+}

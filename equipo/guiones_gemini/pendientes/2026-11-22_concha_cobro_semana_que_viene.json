@@ -1,0 +1,42 @@
+{
+  "slug": "concha_cobro_semana_que_viene",
+  "set": "salon",
+  "hora": 17,
+  "moraleja": "La deuda antigua nunca envejece con gracia.",
+  "recuerdo": "Peor que cuando el vecino robó el wifi.",
+  "bucle_visual": "Concha Quetón con una manta vieja sobre los hombros.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "conchaqueton",
+      "t": "Tengo frío, Rosa, ¿puedo pagarte la próxima semana?"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "t": "Concha, llevas meses congelada en la misma deuda."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "t": "¡Illo!, Rosa, si el frío es gratis, la deuda también."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "t": "¡No me toques los cojones, Concha, paga ya! ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Concha, la ley dice que el plazo máximo es de sesenta días."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "La deuda antigua nunca envejece con gracia."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-22T20:46:30Z"
+}
