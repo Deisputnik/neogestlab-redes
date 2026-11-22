@@ -8,7 +8,11 @@
     "El resto del vídeo sí es modo dibujo correcto, con isotipo 2026 visible en todos los fotogramas y cierre de reparto correcto, pero los tres fallos anteriores son suficientes para no publicar."
   ],
   "como_arreglarlo": "Requiere RE-RENDER, no es arreglo de texto: (1) recortar a ≤20 s según el límite del formato; (2) regenerar las frases de audio que fallan el control (especialmente las líneas con 'illo' y el deletreo 'J-A-M-B-O-movil', que el motor de voz no está pronunciando bien) — si esto se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md; (3) revisar el asset de render: el primer fotograma no corresponde a este episodio, parece un fallo de ensamblado del vídeo externo — avisar al Creador/Centro para que regenere el video_externo correcto antes de volver a evaluar.",
-  "fecha": "2026-11-22T21:07:37Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T21:40:22+00:00"
+  "render": "2026-11-21T21:40:22+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 55,
+  "caducado": "2026-11-22T21:55:31+00:00",
+  "motivo_caducidad": "criterio de Calidad corregido el 22/11 (formato vigente: sitcom 45-70 s con intro de casa); reevaluar",
+  "fecha_anterior": "2026-11-22T21:07:37Z"
 }

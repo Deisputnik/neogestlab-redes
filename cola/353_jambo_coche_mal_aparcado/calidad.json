@@ -7,7 +7,11 @@
     "Aviso de control_audio: la voz dice 'cera' en vez de 'acera', no coincide exactamente con el guion (fallo menor, pero sumado a lo anterior confirma que el render no está limpio)."
   ],
   "como_arreglarlo": "URGENTE al Centro/motor de render: revisar el pipeline que arma el vídeo final de este episodio, parece que ha incluido un fotograma/clip de gancho de otra pieza (estilo 'casa con truco', foto real) antes de la animación dibujada del Jambo — probablemente un fallo de emparejamiento de asset en neogest-studio o un video_externo cacheado de otro episodio. Hace falta RE-RENDER completo del 353_jambo_coche_mal_aparcado. Además, recortar el episodio a ≤20 s (quitar o acelerar el intercambio Sindy/Jambo/Rosa para dejar solo gancho-remate-cierre, como marca la directiva del 13/11) — esto requiere nuevo render, no es arreglable solo con texto del post. De paso, al re-renderizar, ajustar la frase de Felipe para que diga claramente 'acera' y no 'cera'.",
-  "fecha": "2026-11-22T21:08:04Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T23:05:53+00:00"
+  "render": "2026-11-21T23:05:53+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 40,
+  "caducado": "2026-11-22T21:55:31+00:00",
+  "motivo_caducidad": "criterio de Calidad corregido el 22/11 (formato vigente: sitcom 45-70 s con intro de casa); reevaluar",
+  "fecha_anterior": "2026-11-22T21:08:04Z"
 }

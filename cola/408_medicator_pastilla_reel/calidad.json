@@ -1,7 +1,11 @@
 {
-  "aprobado": true,
+  "aprobado": false,
   "nota": 91,
   "fecha": "2026-11-21T19:29:50Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T14:58:29+00:00"
+  "render": "2026-11-21T14:58:29+00:00",
+  "aprobado_anterior": true,
+  "nota_anterior": 91,
+  "caducado": "2026-11-22T21:55:31+00:00",
+  "motivo_caducidad": "re-render del ciclo 2026-11-22T21:54:08+00:00 (mp4 nuevo en el repo nuevo; el del 21/11 se perdió)"
 }
