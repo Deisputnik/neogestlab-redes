@@ -34,7 +34,7 @@ COSAS_DE_CASA_VIDEO = "https://media.base44.com/videos/public/6af862101565c330cf
 # voz base por personaje: (voz, rate% base, pitch Hz base)
 VOZ = {"rosa": ("es-ES-ElviraNeural", 0, -4), "felipe": ("es-ES-AlvaroNeural", -4, -2), "sindy": ("es-ES-XimenaNeural", 8, 4),
        "neo": ("es-ES-AlvaroNeural", 0, 0), "cliente": ("es-ES-AlvaroNeural", -4, -10),
-       "conchaqueton": ("es-ES-ElviraNeural", -6, 2), None: ("es-ES-ElviraNeural", 0, 0)}
+       "conchaqueton": ("es-ES-ElviraNeural", -6, 2), "jambo": ("es-ES-AlvaroNeural", -18, -12), None: ("es-ES-ElviraNeural", 0, 0)}
 # modulacion por emocion de la escena (orden del dueño 20/11 noche: mas expresividad)
 EXPR_MOD = {"habla": (0, 0), "desespera": (18, 10), "delega": (-12, -8), "presume": (10, 6), "fria": (-8, -10)}
 EXPR = {"habla": "neutral", "desespera": "enfadado", "delega": "cansado", "presume": "chulo", "fria": "neutral"}
@@ -44,7 +44,7 @@ uid = lambda: "%08x" % random.getrandbits(32)
 # además de la etiqueta en pantalla al entrar cada personaje, que a veces pasa desapercibida,
 # el reparto completo se repite siempre al final como créditos de cine).
 NOMBRES = {"rosa": "Rosa Melano", "felipe": "Felipe Lotas", "sindy": "Sindy Entes", "neo": "Neo",
-           "conchaqueton": "Concha Quetón", "bit": "Bit", "cliente": "Cliente"}
+           "conchaqueton": "Concha Quetón", "bit": "Bit", "cliente": "Cliente", "jambo": "Jambo Reseco"}
 
 async def tts(text, who, path, emo="habla"):
     v, br, bp = VOZ[who]; mr, mp = EXPR_MOD.get(emo, (0, 0))
@@ -101,7 +101,7 @@ async def main():
                 if w not in xs: xs[w] = 0.72 if 0.72 not in xs.values() else 0.3
             cast = []
             for w in p[:2]:
-                ex = EXPR.get(e["a"].get(w, "habla"), "neutral")
+                ex = EXPR.get((e.get("a") or {}).get(w, "habla"), "neutral")
                 if e["e"] == "remate": ex = "chulo" if w == e["h"] else "sorprendido"
                 entry = {"who": w, "x": xs[w], "expr": ex}
                 if w not in vistos: entry["intro"] = True; vistos[w] = True
@@ -116,9 +116,11 @@ async def main():
             if e.get("sello"): sc["texts"].append({"id": uid(), "text": e["sello"], "style": "badge", "anim": "pop", "start": 0.4, "y": 0.3, "sfx": "impacto"})
             if e.get("risas"): sc["texts"].append({"id": uid(), "text": "😂", "style": "badge", "anim": "pop", "start": max(0.1, dur * 0.55), "y": 0.08, "sfx": "risas"})
             scenes.append(sc)
+        # v5.3 (22/11): los créditos van ANTES del plano de cierre; el ÚLTIMO plano del vídeo es la tarjeta
+        # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
         scenes.insert(0, bookend(hook=True))
-        scenes.append(bookend())
         scenes.append(creditos(list(vistos.keys())))
+        scenes.append(bookend())
         spec = {"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.16, "duck": True, "duckLevel": 0.3}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.6}, "scenes": scenes}
         json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas")

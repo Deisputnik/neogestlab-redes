@@ -1,0 +1,65 @@
+{
+  "_nota": "Spec generado con herramientas/estudio/gen_episodios.py v5.3 (Neogest Studio); el vídeo es video_externo. Guion a partir de equipo/guiones_gemini/usados con registro vulgar y roles Felipe cuñado / Jambo gorrón (orden 22/11 23:38).",
+  "motor": "neogest-studio",
+  "episodio": "517_jambo_concha_cobro",
+  "set": "salon",
+  "moraleja": "La semana que viene nunca llega sin fecha.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "conchaqueton",
+      "v": "Que tengo un frío de cojones, Rosa. Te pago la semana que viene, te lo juro."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "Llevas tres meses pagándome la semana que viene, joder. Esa semana ya tendrá nietos."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "v": "Pues eso prescribe, joder, lo sé de buena tinta. A los tres meses caduca, me lo dijo un primo abogado."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "¡Me cago en todo, Felipe! Tú no has acertado una en tu puta vida."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "v": "Yo no pago nada, joder, pero me apunto. Dame la manta, Concha, que soy muy de compartir."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "v": "¡Ni de coña, hijo de puta! Si te doy la manta, me quedo sin frío y sin excusa."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "¡Qué hartura, hostia! Que lo resuelva el Neo, que yo ya no puedo más."
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "v": "Propongo doce cuotas pequeñas, un aviso cada viernes y una fecha para cada pago, señora Quetón.",
+      "sello": "CON FECHA"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "v": "O sea que llevo tres meses persiguiendo a una mujer con una libreta. ¡Manda huevos!"
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "v": "Con mi perro pasó igual, joder: sin horario no se calla. Y apúntame un cafelito, que invita la casa."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "v": "La semana que viene nunca llega sin fecha."
+    }
+  ]
+}
