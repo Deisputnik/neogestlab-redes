@@ -28,5 +28,12 @@
     "archivo": "Monkeys_Spinning_Monkeys.mp3",
     "bpm": 143.6
   },
-  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir."
+  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir.",
+  "_control_audio_fallo": {
+    "fecha": "2026-11-22T21:45:45+00:00",
+    "bloqueos": [
+      "voz distinta del guion: faltan [], sobran ['ya', 'me', 'tome', 'la', 'pastilla', 'aqui', 'ves', 'la', 'que', 'toca', 'ahora', 'y', 'sale', 'todo', 'en', 'orden', 'y', 'manana', 'la', 'cita', 'con', 'el', 'medico', 'mandaselo', 'a', 'quien', 'cuide', 'de', 'mama', 'pide', 'tu', 'prueba', 'gratuita', 'sin', 'tarjeta', 'sin', 'datos', 'bancarios', 'y', 'sin', 'compromiso'] (rehacer esas frases)"
+    ],
+    "guion_md5": "53bdf877fe0299b76c5dd99e5f6a9ec4"
+  }
 }
