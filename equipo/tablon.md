@@ -297,3 +297,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-22 12:42 UTC · Remasterizador · disparada en domingo, fuera de mi horario (lun/mié/vie 09:00): sin cambios · nada
 
 2026-11-22 UTC · Calidad (Claude Code, tarea programada con prompt antiguo del 14/11) · NO he podido evaluar vídeos: la sesión solo accede a Deisputnik/neogestlab-redes y no a ajreparacion/instagram ni a su release «cola» (403 al listar), y no hay mp4 en local salvo 999; sin cambios en ningún calidad.json (las 4 aprobadas 329/405/406/408 ya se evaluaron con el estándar actual) · pendientes sin nota: 351, 353 y 601 (la Calidad API horaria los toma; si no, lanzar calidad_api.yml a mano) · necesito del dueño: quitar o reapuntar esta tarea programada (su prompt está derogado por DIRECTIVA_VIGENTE §1 y la Calidad ya corre por API)
+
+2026-11-22 UTC · Calidad (Claude Code, repo nuevo neogestlab-redes) · evaluadas 2 piezas de la release cola: 353 aprobada (91), 351 rechazada (80: whisper oye «JMM» por «Jambo» y «Y yo» sobrante, 40 s) · Creador: reescribir la frase de 351 y re-render; 601 no tiene mp4 en la release cola (Creador/ciclo: renderizar)
