@@ -100,9 +100,17 @@ def _alias(toks, lex):
     return out
 
 
+def _jerga(lex):
+    return set((lex.get("jerga") or {}).get("palabras") or [])
+
+
 def norm(t, lex=None):
     lex = lex or LEXICO
-    return _alias(_numerico(_tokens(t)), lex)
+    toks = _alias(_numerico(_tokens(t)), lex)
+    # 22/11/2026: la jerga/vulgarismos de barrio (illo, joder, pa...) no la transcribe Whisper de forma estable: se
+    # ignoran en ambos textos; el resto de palabras se compara como siempre (lexico_control.json «jerga»).
+    j = _jerga(lex)
+    return [w for w in toks if w not in j] if j else toks
 
 
 def _clave(w, lex=None):

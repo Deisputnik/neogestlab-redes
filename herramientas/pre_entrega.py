@@ -91,9 +91,11 @@ def revisar_14(carpeta, post, guion, e, a):
     serie = bool(guion.get("serie")) or "jambo" in nombre or "ias_oficina" in nombre
     texto = post.get("texto", "")
     d, de = duracion_s(carpeta, guion)
-    if serie and d is not None and d > 25:   # directiva 15/11 §5: episodios de 15-25 s, nunca más de 30
-        msg = "§5 dura %.1f s (%s): el formato pide 15-25 s" % (d, de)
-        (e if d > 30 else a).append(msg + (" · pasa de 30 s" if d > 30 else ""))
+    salon = (guion.get("set") == "salon")
+    if serie and d is not None and salon and not (40 <= d <= 70):   # directiva 22/11 §5: episodios de salón de 45-70 s
+        a.append("§5 dura %.1f s (%s): el formato de salón pide 45-70 s" % (d, de))
+    elif serie and d is not None and not salon and d > 70:
+        e.append("§5 dura %.1f s (%s): pasa de 70 s" % (d, de))
     if not REENVIO.search(texto) and not REENVIO.search(" ".join(textos(guion))):
         a.append("§14 sin reenvío a una persona concreta (p. ej. «Envíaselo a ese compañero que…»)")
     if serie:

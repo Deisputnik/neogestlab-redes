@@ -339,6 +339,29 @@ def evaluar_pieza(cliente, sistema, pid):
     return resultado
 
 
+# 22/11/2026 (Coordinación, auditoría): Calidad rechazaba en falso el formato vigente citando órdenes derogadas
+# (351: «40,1 s > 20 s»; 353: la foto de la casa con gancho = intro obligatoria). Este bloque va PRIMERO en el prompt y manda
+# sobre cualquier duración o ejemplo antiguo que aparezca en estandar_calidad.md o lecciones_calidad.md.
+FORMATO_VIGENTE = (
+    "FORMATO VIGENTE (manda sobre TODO lo que leas abajo si choca; DIRECTIVA §5, biblia v5.2): los episodios de El Jambo que sabe "
+    "(slug con 'jambo', guion con set 'salon') son sitcom de barrio de 45-70 s. Los límites de 20, 25, 30 o 35 s de las órdenes "
+    "del 13/11 y 15/11 y el Jambo de oficina de 15-25 s están DERROGADOS: nunca rechaces un episodio de 45-70 s por duración, "
+    "y las lecciones antiguas de 502-515 que citan 20 s no valen. El plano de casa «Cosas de Casa» con gancho de texto ≤ 8 palabras "
+    "(p. ej. «Esta casa del barrio tiene truco») es la INTRO OBLIGATORIA del episodio, y el último plano debe repetir exactamente ese "
+    "mismo plano (bucle): que apertura y cierre sean iguales es lo correcto, no un gancho ajeno. Evalúa además (orden del dueño 22/11): "
+    "todos hablan con vocabulario vulgar/choni de barrio y tacos comunes; Neo es el ÚNICO culto y habla con respeto; humor negro "
+    "real; Jambo Reseco presente cuando toque; giro de Neo, moraleja y recuerdo. «illo», «pa» y los tacos que Whisper no transcribe "
+    "NO son error de voz. El listón de 90 se mantiene. Cierre fijo del post: «Pide tu prueba gratuita: sin tarjeta, sin datos "
+    "bancarios y sin compromiso»; prohibido cualquier embudo («comenta X y te envío»). Repo vivo: Deisputnik/neogestlab-redes."
+)
+
+
+def _lecciones_vigentes():
+    """lecciones_calidad.md se genera sola con todos los motivos pasados: se quitan los de duración derogados (20/25/30 s)."""
+    txt = _leer(LECCIONES) or ""
+    return "\n".join(l for l in txt.split("\n")
+                     if not re.search(r"supera los 20 s|más del doble del límite de 20 s|margen de 35 s|15-25 s", l))
+
 def _sistema():
     return (
         "Eres el rol CALIDAD del equipo de redes de Neogest Lab, ejecutado vía API directa "
@@ -352,9 +375,10 @@ def _sistema():
         "verificarla, trátala como no verificada (no la aprueba el estándar v9/A3) y dilo en "
         "los motivos, no inventes ni la des por buena. Sé estricto: el mínimo real para publicar "
         "es 90, y si 'suena a IA' el máximo es 89. No relances ciclo.yml ni muevas 'cuando': "
-        "eso lo decide otra pasada.\n\n--- equipo/roles/calidad.md ---\n" + _leer(ROL)
+        "eso lo decide otra pasada.\n\n" + FORMATO_VIGENTE
+        + "\n\n--- equipo/roles/calidad.md ---\n" + _leer(ROL)
         + "\n\n--- equipo/estandar_calidad.md ---\n" + _leer(ESTANDAR)
-        + "\n\n--- equipo/lecciones_calidad.md (motivos de rechazo repetidos) ---\n" + _leer(LECCIONES)
+        + "\n\n--- equipo/lecciones_calidad.md (motivos de rechazo repetidos) ---\n" + _lecciones_vigentes()
     )
 
 

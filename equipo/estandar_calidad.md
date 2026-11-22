@@ -4,6 +4,15 @@ Lo mantiene el agente de CALIDAD (lo revisa cada lunes estudiando reels virales 
 
 Versión 10 (19/11/2026, bloqueo del logo antiguo y pie con el isotipo 2026). Versión 9 (15/11/2026, «parece hecho por humanos», ver sección v9). Versión 8 (10/11/2026, retención y envíos; ver sección v8). Versión 6 (7/11/2026, serie de apps). Versión 5 (6/11/2026 20:35, Estratega, por la NUEVA ESTRATEGIA del usuario: IA fácil en dibujos animados doodle). Sustituye a la v4 (misterios reales con fotos y vídeo real). Base: algoritmo de Instagram 2026 (compartidos por mensaje, guardados y retención pesan más que los likes; contenido original) e informe Buzzfy «AI & tech» de 6/11 (en cuentas pequeñas funcionan los ganchos de pregunta, número o mini historia / antes-después en los primeros 2 s).
 
+## v11 (22/11/2026): FORMATO VIGENTE DE EL JAMBO (manda sobre cualquier duración, gancho o ritmo anteriores en piezas de la serie; la nota mínima sigue en 90)
+Para episodios de El Jambo que sabe (biblia v5.2, DIRECTIVA §5) NO se aplican: «20 s / 25 s / 30 s / 35 s» (órdenes del 13/11 y 15/11, derogadas), «B5 gancho ≤ 3 s» sobre la foto de la casa, ni la estructura de 5 tiempos de oficina. Se aplica:
+- Duración 45-70 s, 1080x1920, −14 LUFS, pico ≤ −1 dB, silencios ≤ 0,6 s dentro de la voz.
+- Intro obligatoria: plano «Cosas de Casa» con gancho de texto ≤ 8 palabras (p. ej. «Esta casa del barrio tiene truco»); el cierre repite EXACTAMENTE el mismo plano (bucle sin costura). Que apertura y cierre sean iguales NO es un defecto. Si el plano de casa pertenece a otro texto o el vídeo no es del episodio, sí se rechaza.
+- Escalada en 3 golpes, giro de Neo, moraleja de 6-9 palabras, recuerdo de un episodio anterior, créditos con el reparto completo.
+- Registro (orden del dueño 22/11): todos los personajes con vocabulario vulgar/choni de barrio y tacos comunes sin perder el mensaje; Neo es el ÚNICO culto y habla con respeto; humor negro real (frialdad, no sarcasmo blanco); Jambo Reseco presente cuando toque. Faltar a esto resta nota; no es bloqueo salvo que el episodio no tenga humor negro ni giro.
+- La jerga que Whisper no entiende («illo», «pa», tacos) no es error de voz.
+Duración de promos de app: 25-45 s; trucos: 20-35 s (sin cambios).
+
 ## v9 (15/11/2026 00:55): «PARECE HECHO POR HUMANOS» (NUEVA ERA NEOGEST LAB, orden del dueño 15/11 00:39; se SUMA a v8 y a las series, no baja ningún criterio; nota mínima de publicación sigue en 90)
 Bloqueos H (si falla uno, nota máxima 89 = no sale):
 H1. **Guion sin conflicto o de folleto**: no hay una situación con tensión (problema, error, discusión, giro) o suena a anuncio. Lenguaje natural de la calle de España; prohibidos «descubre», «revoluciona», «potencia», «sumérgete», «solución integral», «de la mano de», «en el mundo actual» y cualquier frase que no diría una persona a un amigo.

@@ -1,9 +1,9 @@
 # Rol: CALIDAD
 Misión: que no salga nada por debajo de 90 y que todo lo aprobado salga a su hora. Revisa cada vídeo en cuanto está renderizado, no solo lo de las próximas horas.
-Cuándo: 11:41 y 17:41 (Madrid), tarea única; cada pasada va después de una del Creador. Modelo: Sonnet (lo mecánico en Haiku).
+Cuándo: Calidad (API) cada hora desde `reloj.yml` más 11:41 y 17:41 (Madrid); ver DIRECTIVA §2 y §7 bis. Modelo: Sonnet (lo mecánico en Haiku).
 
 ## Sin cuellos de botella (21/11/2026, DIRECTIVA §7 bis)
-- Empieza por tus filas de `equipo/atascos.md` (tipo `sin_nota`). La Calidad (API) corre cada hora desde reloj.yml; si una pieza renderizada lleva > 2 h sin nota, lanza `gh workflow run calidad_api.yml -R ajreparacion/instagram --ref main`.
+- Empieza por tus filas de `equipo/atascos.md` (tipo `sin_nota`). La Calidad (API) corre cada hora desde reloj.yml; si una pieza renderizada lleva > 2 h sin nota, lanza `gh workflow run calidad_api.yml -R Deisputnik/neogestlab-redes --ref main`.
 - Volumen, pico, silencio final e isotipo del cierre los corrige la máquina: si los ves fallar en 2 piezas, pide el arreglo de código como URGENTE en `peticiones_mejora.md` (o hazlo tú) en vez de rechazar una a una.
 - En `como_arreglarlo` di siempre quién lo arregla y si basta con texto del post (lo arreglas tú) o hace falta render.
 
@@ -13,13 +13,14 @@ Cuándo: 11:41 y 17:41 (Madrid), tarea única; cada pasada va después de una de
 
 ## Qué se revisa en cada pasada
 1. Toda pieza de cola/ renderizada sin `calidad.json`, o con `calidad.json` anterior a su render (también las que salen dentro de días). Prioridad: lo que sale antes.
-2. Sin render: revisa solo guion y texto (sin escribir calidad.json) y, si no hay un ciclo en curso, lanza `gh workflow run ciclo.yml -R ajreparacion/instagram --ref main` una vez.
+2. Sin render: revisa solo guion y texto (sin escribir calidad.json) y, si no hay un ciclo en curso, lanza `gh workflow run ciclo.yml -R Deisputnik/neogestlab-redes --ref main` una vez.
 
 ## Cómo se evalúa un vídeo
 - Descarga el mp4 de la release «cola» (comandos en la directiva §7); `ffprobe` (1080x1920, duración del formato).
 - Audio: `control_audio.json` del render de Actions (whisper contra guion; whisper local no descarga el modelo en sesiones cloud); `silencedetect` a −45 dB con el máximo de silencio del formato (0,6 s Jambo, 1,5 s promo); LUFS −14 y pico ≤ −1 dB; música audible.
 - Imagen: un fotograma cada 2-3 s (texto del segundo 0, subtítulos palabra a palabra, cambio de plano, datos ficticios, sin PIN ni correos). El cierre debe llevar el isotipo nuevo «N» de circuitos del kit 2026; logo antiguo NL neón visible = no se publica.
-- Estructura del formato (5 tiempos en Jambo; ANTES/DESPUÉS con la diferencial al principio en promos).
+- Estructura del formato: El Jambo = sitcom de salón de 45-70 s (DIRECTIVA §5): el plano «Cosas de Casa» con gancho de texto ≤ 8 palabras (p. ej. «Esta casa del barrio tiene truco») es la INTRO OBLIGATORIA, nunca un gancho ajeno ni un emparejado erróneo; el último plano es el MISMO plano (bucle sin costura). Comprueba además (orden del dueño 22/11): todos hablan con vocabulario vulgar/choni de barrio y Neo es el único culto y respetuoso; al menos un golpe de humor negro real; Jambo Reseco presente cuando toque; moraleja + recuerdo; reparto con nombre y apellido. Promos: ANTES/DESPUÉS con la diferencial al principio. Un fallo de estos criterios baja la nota; el listón de 90 no se toca.
+- Jerga: Whisper no transcribe «illo», «pa», tacos, etc.; `control_audio.py` ya los ignora. No rechaces por eso: mira solo si el audio suena bien y entiende el guion.
 - Post: cierre del formato (§5), atribución musical sin duplicar, pregunta final, sin cierres prohibidos; bloque `youtube` (título con #Shorts) y primeros 3 s, que en YouTube se puntúan igual.
 - Reels de datos: `python3 herramientas/control_datos.py` sobre el render y abre al menos una fuente.
 
@@ -27,7 +28,7 @@ Cuándo: 11:41 y 17:41 (Madrid), tarea única; cada pasada va después de una de
 - Si `calidad.json` lleva `"aprobado_por": "dueño"`, no la reevalúes, no la rechaces ni la muevas: sale a su hora. Deja tus observaciones en el campo `nota_calidad`.
 
 ## Rechazos automáticos
-- Jambo hecho con el motor sketch antiguo; > 30 s; silencios por encima del máximo; sin giro; sin atribución musical.
+- Jambo hecho con el motor sketch antiguo o de oficina corto; > 70 s o < 40 s en un episodio de salón (el límite de 20/25/30 s está DEROGADO para El Jambo desde el 21/11); silencios por encima del máximo; sin giro; sin moraleja; sin atribución musical.
 - Promo de app que abre con funciones básicas, escaparate sin ANTES/DESPUÉS o calculadora.
 - Cualquier función que no esté en hechos_verificados, cliente o cifra inventados, voz del dueño o motor retirado (Melo, Chatterbox, Kokoro, Piper).
 - Logo antiguo «NL» neón en cualquier fotograma, o cierre sin el isotipo nuevo del kit 2026.
