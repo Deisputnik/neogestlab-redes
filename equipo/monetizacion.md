@@ -1,10 +1,11 @@
 # Monetización de @neogestlab (Neogest Lab · escaparate de apps y webs)
 
-Analista (incluye monetización). Versión 11: 22/11/2026 (pasada dominical de embudo). Sustituye a la v10 del 21/11. Rige equipo/DIRECTIVA_VIGENTE.md (no se toca). Vías de Instagram y afiliados con fuentes: `monetizacion_v4_archivo.md`.
+Analista (incluye monetización). Versión 12: 22/11/2026 (pasada dominical nocturna, 23:23 Madrid). Las cifras de 15-22/11 son las de la v11 de las 17:19 UTC; cambia que `equipo/kpi_buzzfy.json` y `equipo/embudo.md` ya se han actualizado con ellas. Sustituye a la v11. Rige equipo/DIRECTIVA_VIGENTE.md (no se toca). Vías de Instagram y afiliados con fuentes: `monetizacion_v4_archivo.md`.
 Regla: lo que no se ha leído en una fuente va como «no consta» o «n/d». Sin gasto ni promociones sin visto bueno del dueño.
 Fuentes de hoy, solo lectura: Buzzfy (`ig_account_stats`, `ig_follower_growth`, `ig_inbox`, `ig_comments`; ventana 15-22/11) y Base44 del Centro (`SolicitudInfo`, app 6ae5244d4e2b32702f0a3cd6). `equipo/embudo.md` no se regeneró en esta pasada (su script cuenta mal el último paso, ver §5).
 
 ## 0. Resumen ejecutivo (15-22/11, 7 días)
+- **Pasada nocturna (22/11, 23:23):** misma foto. El paso más débil sigue siendo alcance → visita (0,08 %). Ninguna pieza de la ventana llega a 2× la mediana (115 de alcance, 144,5 vistas): sin secuela que lanzar por cifras. Aviso del embudo (`herramientas/embudo.py`, Mejora): el último paso compara solicitudes acumuladas con clics de la ventana; hasta que se corrija, el 100 % de ese paso no es una tasa real.
 - **Embudo:** 2.584 cuentas no seguidoras alcanzadas → **2 visitas al perfil (0,08 %; meta ≥ 3 %)** → **0 clics al enlace de la bio** → **0 solicitudes nuevas en el Centro** → **0 €**.
 - **Peor semana del periodo medido en el paso alcance → perfil:** 0,1 % la semana anterior (2 de 3.913) y ahora 0,08 % (2 de 2.584). El alcance no llega al perfil.
 - **Enlace sin uso:** 0 clics en el sitio web y 0 toques en el enlace en 7 días. Con 2 visitas al perfil no hay muestra, pero el paso visita → enlace ha bajado de 50 % a 0 %.

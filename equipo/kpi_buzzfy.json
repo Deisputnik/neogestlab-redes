@@ -1,20 +1,20 @@
 {
  "_nota": "Cifras que solo da Buzzfy/Instagram, copiadas a mano por el Analista (herramientas de solo lectura). Las actualiza el Analista cada noche. Si una cifra no se ha leído, dejarla en null.",
- "fecha": "2026-11-21 01:26 UTC",
+ "fecha": "2026-11-22 22:23 UTC",
  "dias": 7,
- "alcance_total": 3954,
- "alcance_no_seguidores_total": 3913,
- "alcance_seguidores_total": 47,
- "visualizaciones_no_seguidores": 4976,
- "clics_enlace": 1,
+ "alcance_total": 2627,
+ "alcance_no_seguidores_total": 2584,
+ "alcance_seguidores_total": 36,
+ "visualizaciones_no_seguidores": 3335,
+ "clics_enlace": 0,
  "visitas_perfil": 2,
- "seguidores_netos_dia": -0.3,
- "_seguidores_detalle": "ig_follower_growth 13-17/11 final: 2 altas, 4 bajas, net -2. 18 y 19/11 pendientes. Seguidores ahora: 1.600.",
+ "seguidores_netos_dia": -0.4,
+ "_seguidores_detalle": "ig_follower_growth 15-19/11 final: 4 altas, 6 bajas, net -2. 20 y 21/11 pendientes en Instagram. Seguidores ahora: 1.599.",
  "no_seguidores_por_reel": {},
  "toques_enlace": 0,
- "interacciones": 105,
- "guardados": 0,
- "compartidos": 8,
+ "interacciones": 53,
+ "guardados": 1,
+ "compartidos": 1,
  "comentarios": 0,
  "perfil": {
   "nombre_visible": null,
@@ -31,7 +31,7 @@
   "conv_visita_a_clic_pct": 21.4,
   "alcance_no_seguidores": 565
  },
- "_leido_por": "Analista de monetización, 21/11/2026 (ig_account_stats 7 días, ig_follower_growth 7 días, ig_inbox, ig_comments sin respuesta, SolicitudInfo del Centro)",
+ "_leido_por": "Analista (nocturna dominical 22/11 23:23 Madrid): ig_account_stats 7 días y ig_follower_growth 7 días (Buzzfy), ig_post_stats de 14 reels. Clics a /solicitar no registrados (ver embudo_centro).",
  "embudo_centro": {
   "solicitudes_totales": 1,
   "solicitudes_nuevas_7d": 0,
@@ -40,8 +40,8 @@
   "clics_solicitar_registrados": null,
   "_nota": "/solicitar no registra clics: la conversión clic → solicitud no se mide hasta que Mejora lo añada"
  },
- "_ventana": "14-21/11/2026 (UTC), ig_account_stats 7 días leído el 21/11 a las 01:26 UTC",
- "visualizaciones_total": 5320,
- "me_gusta": 65,
- "reposts": 24
+ "_ventana": "15-22/11/2026 (UTC), ig_account_stats 7 días leído el 22/11 a las 22:23 UTC",
+ "visualizaciones_total": 3524,
+ "me_gusta": 38,
+ "reposts": 12
 }
