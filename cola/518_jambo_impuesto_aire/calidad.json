@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 82,
+  "motivos": [
+    "H5/bloqueo de audio: control_audio.json del propio render marca aprobado=false por voz distinta del guion: 'cafelito'→'cacelito', 'mecagüen todo'→'me cagen en', y sobre todo 'de tanto gritar'→'de tanto vital' (no es jerga tipo illo/pa que Whisper no transcriba: son sustituciones de palabras reales, con 'vital' quedando sin sentido en la frase 'sin aire de tanto vital').",
+    "El resto del episodio cumple el formato vigente v11: duración 65,1 s (dentro de 45-70 s), intro 'Cosas de Casa' con gancho ≤8 palabras, cierre en bucle con el mismo plano, isotipo 2026 presente en todos los fotogramas, LUFS -13.96 y pico -1.29 dB correctos."
+  ],
+  "como_arreglarlo": "Hace falta RE-RENDER (no es solo texto del post): regenerar el audio/voz de las frases de Felipe ('cafelito', 'mecagüen todo') y de Rosa ('de tanto gritar') para que el TTS pronuncie esas palabras correctamente; el resto del vídeo (imagen, montaje, cierre, isotipo) no necesita cambios. Avisar al Creador/motor de voz (Neogest Studio) de estos 3 fallos de pronunciación como fallo de render, no de guion.",
+  "fecha": "2026-11-22T23:19:14Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:12:40+00:00"
+}

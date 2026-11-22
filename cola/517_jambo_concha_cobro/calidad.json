@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 72,
+  "motivos": [
+    "H5/control_audio: la voz no coincide con el guion en puntos que cambian el sentido, no son jerga tolerada: 'excusa' suena 'espusa', 'señora Quetón' suena 'señora ketón' (nombre del personaje irreconocible), 'cafelito' suena 'cacelito'.",
+    "Falta en el audio toda la frase de Rosa '¡Me cago en todo, Felipe! Tú no has acertado una en tu puta vida.' (no aparece en la transcripción de Whisper ni se percibe como línea separada): se pierde un golpe de humor negro/vulgar del guion.",
+    "Estructura, duración (68.7s), bucle del plano Cosas de Casa, LUFS (-14.07) y pico (-1.31 dB) e isotipo 2026 están correctos y no son el problema."
+  ],
+  "como_arreglarlo": "Esto es un fallo de síntesis de voz (motor), no de guion ni de post: hay que re-renderizar el audio de esas frases concretas (la de Rosa completa que falta, y las pronunciaciones de 'excusa', 'Quetón' y 'cafelito'). Pide el re-render al Centro/Creador citando este episodio como ejemplo; si el mismo motor falla en más piezas, escala como URGENTE en equipo/peticiones_mejora.md. No requiere cambio de texto del post ni de guion, solo nuevo render de audio.",
+  "fecha": "2026-11-22T23:18:50Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:10:21+00:00"
+}
