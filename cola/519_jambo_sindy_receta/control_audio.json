@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 64.2,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['lejia', 'lejia'], sobran ['a', 'elegia', 'elegia', 'a'] (rehacer esas frases)"
+  ],
+  "transcripcion": "¿Qué esta puta aplicación de cocina me manda a echar pegamento al guiso, jefa? Si lo dice la aplicación, se hace coño. Tú no tienes ni el graduado, y yo pago la puta luz. Joder, si hasta me pide elegía para que las lentejas tengan brillo. ¡Brillo, hostia! Eso es normal, joder, lo sé de buena tinta, la elegía es el secreto de los grandes cocineros. Pues yo me apunto al guiso, hostia, y que lo pague rosa. Y ponme pan, que soy invitado. Hijo de puta, jambo, siempre de gorra. Que lo resuelva el neo antes de que huela peor la cocina. La máquina no ha probado una lenteja en su vida. Inventa lo que no sabe, y lo dice con seguridad. O sea que llevo un mes pagando a una máquina que no sabe ni hervir agua a manda huevos. Yo ya lo sabía, joder, que la máquina inventa. Igual que la aplicación del fantasma, que también la vi venir. La máquina que inventa nunca sabe cocinar lentejas.",
+  "guion": "Que esta puta aplicación de cocina me manda echar pegamento al guiso, jefa. Si lo dice la aplicación, se hace, coño. Tú no tienes ni el graduado, y yo pago la puta luz. ¡Joder, si hasta me pide lejía para que las lentejas tengan brillo! ¡Brillo, hostia! Eso es normal, joder, lo sé de buena tinta: la lejía es el secreto de los grandes cocineros. Pues yo me apunto al guiso, hostia, y que lo pague Rosa. Y ponme pan, que soy invitado. ¡Hijo de puta, Jambo, siempre de gorra! Que lo resuelva el Neo, antes de que huela peor la cocina. La máquina no ha probado una lenteja en su vida. Inventa lo que no sabe, y lo dice con seguridad. O sea que llevo un mes pagando a una máquina que no sabe ni hervir agua, ¡manda huevos! Yo ya lo sabía, joder, que la máquina inventa. Igual que la aplicación del fantasma, que también la vi venir. La máquina que inventa nunca sabe cocinar lentejas.",
+  "lufs": -14.0,
+  "pico_dbfs": -1.4
+}
