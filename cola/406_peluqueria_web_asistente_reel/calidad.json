@@ -1,13 +1,13 @@
 {
   "aprobado": false,
-  "nota": 0,
+  "nota": 78,
   "motivos": [
-    "No se ha podido inspeccionar el render: inspeccionar_video devuelve error 'post.json no tiene asset ni video_externo: nada que descargar'. No es un fallo de contenido, es imposibilidad técnica de verificación en este turno.",
-    "El calidad.json anterior (nota 92, aprobado=true) quedó marcado caducado por un re-render del ciclo 2026-11-22T21:52:56Z ('mp4 nuevo en el repo nuevo; el del 21/11 se perdió'); el estándar exige revisar de nuevo cualquier render nuevo antes de volver a aprobar, no se puede arrastrar la nota anterior sin ver el mp4 actual."
+    "Duración 17.97 s: por debajo del mínimo de 20 s que exige el estándar para la serie APPS NEOGEST LAB (20-45 s, v6/v11); este vídeo no es un episodio de El Jambo, así que el derogado de duraciones no aplica aquí.",
+    "Bloqueo 2 (texto ilegible/cortado): en el fotograma ~4.49s el texto del input del chat ('¿Cuánto cuesta el tinte y cuán...') queda cortado por el borde de la pantalla del móvil dibujado, igual que el fallo ya detectado en 407 y 408 (mismo patrón repetido en la serie: puede ser fallo del motor/plantilla, no solo de esta pieza).",
+    "Resto de contenido correcto: cifras y rótulo del asistente coinciden con _comprobado (35€, 90 min, 'responde solo con la información de esta web'), isotipo 2026 presente en todos los fotogramas, LUFS -14.18 y pico -1.4 dB dentro de norma, sin silencios largos, pie del post con estructura correcta y cierre fijo sin embudo."
   ],
-  "como_arreglarlo": "No es un arreglo de texto ni de guion: hace falta que el post.json de la release 'cola' incluya el campo 'asset' (o 'video_externo') apuntando al mp4 ya re-renderizado del 22/11, para poder descargarlo e inspeccionarlo (ffprobe, silencedetect, loudnorm y fotogramas). Si el render existe pero el post.json no lo referencia, es un fallo del ciclo/publicador: avisar como URGENTE en equipo/peticiones_mejora.md para que el ciclo adjunte el asset correcto antes de la próxima pasada de Calidad. En cuanto el asset esté enlazado, re-evaluar desde cero (no reutilizar el contenido del calidad.json de 92: el guion y el contenido comprobado en _comprobado parecen correctos y coherentes con las cifras del tinte y el rótulo del asistente, pero la nota debe basarse en el mp4 real, incluyendo isotipo 2026, LUFS/pico y silencios del render nuevo).",
+  "como_arreglarlo": "Requiere RE-RENDER (no es solo texto del post): (1) alargar el vídeo a al menos 20 s, por ejemplo extendiendo ligeramente la escena del remate o el cierre; (2) corregir la plantilla para que el texto del input de chat no quede cortado por el borde del móvil dibujado en la escena 'tramo' del minuto ~4-5s. Como ya es el tercer caso de texto cortado por la izquierda en esta serie (406, 407, 408), si se repite en una cuarta pieza, avisar como URGENTE en equipo/peticiones_mejora.md para arreglar la plantilla en el motor en vez de rechazar una a una.",
+  "fecha": "2026-11-22T22:02:16Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-22T21:52:56+00:00",
-  "fecha_anterior": "2026-11-22T21:59:08Z",
-  "nota_tecnica": "22/11: la revisión de las 21:59 UTC no pudo descargar el vídeo (faltaba «asset» en post.json); restaurado, reevaluar"
+  "render": "2026-11-22T21:52:56+00:00"
 }
