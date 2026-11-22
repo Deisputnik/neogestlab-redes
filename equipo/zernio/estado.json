@@ -1,4 +1,4 @@
 {
   "enviados": {},
-  "ultimo_error": "2026-11-22T20:40:47.000Z · Zernio POST /posts: HTTP 404 — {\"error\":\"One or more accounts do not belong to this user: 6b00b30e062d3d918320d801. No account with this ID exists: it was deleted, or reconnected under a new ID. Refresh your account IDs from GET /v1/accounts.\",\"code\":\"account_not_found\"}"
+  "ultimo_error": "2026-11-22T20:43:10.000Z · Zernio no confirmó el id del post creado: {\"post\": {\"_id\": \"6b0353e1e369fea0aa70326f\", \"userId\": \"6b00b15e7b27ab4239e9f9e0\", \"workspaceId\": \"6b00b15e7b27ab4239e9f9e2\", \"title\": \"\", \"content\": \"El presupuesto \\u00abcerrado\\u00bb de la reforma sali\\u00f3 por el doble. La Jupillo lee la letra peque\\u00f1a.\\n\\u00bfTe han cerrado alguna vez un p"
 }
