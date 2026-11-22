@@ -1,11 +1,12 @@
 {
   "aprobado": false,
-  "nota": 91,
-  "fecha": "2026-11-21T19:29:50Z",
+  "nota": 80,
+  "motivos": [
+    "A3: la escena de la cita (t≈7s, voz «Y mañana, la cita con el médico») muestra la pantalla «Mi calendario» (vista mensual completa, varias fechas marcadas en rosa, botón «ESCUCHAR» y un icono de perfil en el día 8), que NO es la pantalla citada en _comprobado («Mañana tienes cita · 10:30 · Dra. Elena Martín» en el inicio). Es una interfaz distinta, no descrita en los hechos_verificados citados por el propio post.json; no puedo verificarla como real sin la fuente, así que se trata como no verificada.",
+    "El resto del vídeo (gancho, botón YA ME LA HE TOMADO, cierre con isotipo 2026, audio -14.32 LUFS / pico -1.46 dB, sin silencios) cumple el estándar."
+  ],
+  "como_arreglarlo": "Necesita render nuevo: o bien recortar/sustituir el clip de 5.8-9.0s por el fragmento real de la pista del Centro que muestre literalmente la tarjeta de inicio «Mañana tienes cita · 10:30 · Dra. Elena Martín» (la que sí está en _comprobado), o si la pantalla de calendario es efectivamente parte de la función real de MEDICATOR, pedir al Centro que amplíe hechos_verificados/_comprobado del post.json describiendo esa pantalla de calendario antes de volver a aprobar. Esto lo resuelve el Creador/Centro, no es un simple cambio de texto del post.",
+  "fecha": "2026-11-22T21:57:16Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T14:58:29+00:00",
-  "aprobado_anterior": true,
-  "nota_anterior": 91,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-22T21:54:08+00:00 (mp4 nuevo en el repo nuevo; el del 21/11 se perdió)"
+  "render": "2026-11-22T21:54:08+00:00"
 }

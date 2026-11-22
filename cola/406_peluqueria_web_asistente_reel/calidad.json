@@ -1,12 +1,13 @@
 {
   "aprobado": false,
-  "nota": 92,
-  "comentario": "Re-render correcto: voz y ritmo naturales (gancho con conflicto real, sin muletillas de IA), audio dentro de norma (LUFS -14.17, pico -1.45 dB, sin silencios), música de Kevin MacLeod con atribución completa y sin duplicar. Isotipo nuevo \"N\" de circuitos visible en el cierre (no hay logo antiguo). Cifra del tinte (35€/90 min) y rótulo del asistente coinciden con lo comprobado en _comprobado del post.json; no se afirma nada fuera de eso. Pie del post con gancho, historia, una sola petición, línea de prueba gratuita y hashtags correctos. Pregunta final concreta en el comentario fijado.",
-  "fecha": "2026-11-21T13:20:25Z",
+  "nota": 0,
+  "motivos": [
+    "No se puede inspeccionar el vídeo: post.json no tiene campo 'asset' ni 'video_externo', la herramienta inspeccionar_video no tiene nada que descargar.",
+    "El calidad.json anterior (nota 92) está marcado como caducado por un re-render del 2026-11-22T21:52:56+00:00; no puede reutilizarse sin ver el mp4 nuevo (bloqueo 9 del estándar: aprobación caducada).",
+    "Sin ffprobe/silencedetect/LUFS/pico ni fotogramas no se puede confirmar isotipo 2026, ausencia de logo antiguo, cifras en pantalla ni cierre en bucle/formato correcto."
+  ],
+  "como_arreglarlo": "Quien gestiona el render/publicación del post (Creador o Centro, según quién suba el asset de 406_peluqueria_web_asistente_reel) debe comprobar que el ciclo ha escrito la ruta del mp4 (asset de la release 'cola' o video_externo) en post.json tras el re-render del 22/11 21:52:56Z; probablemente un fallo de publicación de release o de escritura de campo que afecta al pipeline (candidato a 'otro' en lecciones_calidad.md / URGENTE en peticiones_mejora.md si se repite en más piezas). Cuando el campo exista y apunte al mp4 correcto, relanzar esta revisión de Calidad.",
+  "fecha": "2026-11-22T21:56:59Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T13:15:25+00:00",
-  "aprobado_anterior": true,
-  "nota_anterior": 92,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "re-render del ciclo 2026-11-22T21:52:56+00:00 (mp4 nuevo en el repo nuevo; el del 21/11 se perdió)"
+  "render": "2026-11-22T21:52:56+00:00"
 }

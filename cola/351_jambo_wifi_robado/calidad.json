@@ -1,18 +1,13 @@
 {
   "aprobado": false,
-  "nota": 55,
+  "nota": 68,
   "motivos": [
-    "Duración 40,1 s: más del doble del límite de 20 s para episodios de la Serie El Jambo (orden del dueño 13/11 14:46, DIRECTIVA §14a y lista §6); incumple lo mismo que 502-515.",
-    "control_audio.json del render viene en aprobado:false: la voz no coincide con el guion ('illo' se pierde y se oye 'y yo', 'J-A-M-B-O-movil' suena como 'JMM o móvil'); bloqueo H5 (voz con errores) del estándar v9.",
-    "El fotograma inicial (t=0,3s) muestra una foto real de una casa con el texto 'Esta casa del barrio tiene truco', que no es el gancho de este guion (gancho real: 'El wifi va fatal otra vez...') ni el modo dibujo del formato Jambo; parece metraje de otra pieza mezclado en el render, o un asset erróneo.",
-    "El resto del vídeo sí es modo dibujo correcto, con isotipo 2026 visible en todos los fotogramas y cierre de reparto correcto, pero los tres fallos anteriores son suficientes para no publicar."
+    "Duración 40,1 s: el formato vigente (DIRECTIVA §5, estándar v11) exige 45-70 s para episodios de El Jambo; este episodio se queda corto.",
+    "Bucle de cierre incompleto: la intro SÍ es el plano obligatorio 'Cosas de Casa' con el gancho 'Esta casa del barrio tiene truco' (correcto), pero el ÚLTIMO plano no repite ese mismo plano de la casa; el vídeo cierra con la pantalla de reparto/créditos. El estándar v11 exige que apertura y cierre sean el mismo plano exacto (bucle sin costura), y aquí falta ese plano final.",
+    "Voz con errores reales (bloqueo H5, no es jerga no transcrita): control_audio.json confirma que el motor pronuncia mal el deletreo 'J-A-M-B-O-movil' (se oye 'JMM o móvil') y sustituye las DOS instancias de '¡Illo!' por la palabra real 'Y yo', cambiando el sentido de los reproches de Rosa y Jambo. No es un caso de Whisper ignorando una muletilla sino de pronunciación defectuosa que daña la comprensión del gag."
   ],
-  "como_arreglarlo": "Requiere RE-RENDER, no es arreglo de texto: (1) recortar a ≤20 s según el límite del formato; (2) regenerar las frases de audio que fallan el control (especialmente las líneas con 'illo' y el deletreo 'J-A-M-B-O-movil', que el motor de voz no está pronunciando bien) — si esto se repite en más piezas, pedir arreglo del motor de voz como URGENTE en peticiones_mejora.md; (3) revisar el asset de render: el primer fotograma no corresponde a este episodio, parece un fallo de ensamblado del vídeo externo — avisar al Creador/Centro para que regenere el video_externo correcto antes de volver a evaluar.",
+  "como_arreglarlo": "Requiere RE-RENDER: (1) ajustar el guion/timing para llegar a 45-70 s (añadir o alargar algún gag, p. ej. reforzar el golpe de Felipe o añadir un remate extra antes del cierre) sin tocar la intro; (2) añadir al final, tras los créditos o en vez de cortar en el reparto, el mismo plano exacto de 'Cosas de Casa' con el texto 'Esta casa del barrio tiene truco' para cerrar el bucle — esto lo monta el Creador/Centro en el ensamblado del vídeo externo; (3) regenerar con el motor de voz las frases de Rosa y Jambo que llevan '¡Illo!' y la línea con el deletreo 'J-A-M-B-O-movil' (el motor no las pronuncia bien); si este fallo de deletreo/illo se repite en más piezas de la serie, pedir arreglo del motor de voz como URGENTE en equipo/peticiones_mejora.md en vez de rechazar una a una.",
+  "fecha": "2026-11-22T21:56:29Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-21T21:40:22+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 55,
-  "caducado": "2026-11-22T21:55:31+00:00",
-  "motivo_caducidad": "criterio de Calidad corregido el 22/11 (formato vigente: sitcom 45-70 s con intro de casa); reevaluar",
-  "fecha_anterior": "2026-11-22T21:07:37Z"
+  "render": "2026-11-21T21:40:22+00:00"
 }
