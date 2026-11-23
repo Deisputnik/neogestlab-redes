@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 63.9,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan [], sobran ['a'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Esta factura lleva el IVA y encima el IVA del IVA, joder. Así cobro doble. Eso es legal, coño, lo sé de buena tinta, el impuesto de un impuesto existe desde 2018, me lo dijo un primo gestor. ¿Qué hijo de puta eres, Felipe? Si pagamos impuestos por pagar impuestos, acabamos de viendo hasta por mirar la factura. Pues claro que sí, hostia. Mi cliente paga y yo me forro que para eso soy la jefa. Yo no pago ningún impuesto, joder, que soy invitado. Pero ponme un trozo de tarta de la nevera que invita a la casa. Joder, el jambo otra vez de gorra. Que lo resuelva el neo, que me va a dar algo, hostia. El impuesto se calcula sobre el precio, señora Melano, nunca sobre el propio impuesto. Esa factura es un error con membrete. O sea que llevo semanas inflando facturas, coño, y el cliente ya se ha ido a la competencia. Yo ya lo sabía, joder, como lo de la gotera del jueves. Un impuesto sobre otro impuesto es un atraco.",
+  "guion": "Esta factura lleva el IVA y encima el IVA del IVA, joder. Así cobro doble. Eso es legal, coño, lo sé de buena tinta: el impuesto de un impuesto existe desde dos mil dieciocho, me lo dijo un primo gestor. ¡Qué hijo de puta eres, Felipe! Si pagamos impuestos por pagar impuestos, acabamos debiendo hasta por mirar la factura. Pues claro que sí, hostia. Mi cliente paga y yo me forro, que para eso soy la jefa. Yo no pago ningún impuesto, joder, que soy invitado. Pero ponme un trozo de tarta de la nevera, que invita la casa. ¡Joder, el Jambo otra vez de gorra! Que lo resuelva el Neo, que me va a dar algo, hostia. El impuesto se calcula sobre el precio, señora Melano, nunca sobre el propio impuesto. Esa factura es un error con membrete. O sea que llevo semanas inflando facturas, coño, y el cliente ya se ha ido a la competencia. Yo ya lo sabía, joder, como lo de la gotera del jueves. Un impuesto sobre otro impuesto es un atraco.",
+  "lufs": -14.0,
+  "pico_dbfs": -1.4
+}
