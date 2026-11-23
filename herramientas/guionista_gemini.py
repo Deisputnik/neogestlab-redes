@@ -106,6 +106,9 @@ def _prompt(n):
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
         "bucle_visual": "CAMPO OBLIGATORIO, no lo omitas: 4-10 palabras describiendo qué pose, plano o elemento visual del gancho (escena 'e':'gancho') se repite igual en el cierre, para que el vídeo se pueda ver en bucle sin notar el corte entre el final y el siguiente visionado (p.ej. 'Rosa con el móvil en la mano, misma postura'; 'la taza de café a medio llenar en primer plano'). Describe la imagen, no la moraleja ni el texto.",
+        "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
+        "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
+        "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
         "escenas": [
             {
                 "e": "gancho",
@@ -116,9 +119,9 @@ def _prompt(n):
             {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 18 palabras), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
             {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
             {"e": "gag", "h": "jambo", "emo": "cansado", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, habla arrastrada: «Rosaaa, prima… un eurillo, que mañana te lo devuelvo…»)"},
-            {"e": "gag", "h": "felipe", "emo": "chulea", "t": "golpe 4: Felipe sentencia con seguridad total algo falso (cuñado enterado)"},
+            {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
-            {"e": "remate", "h": "neo", "emo": "seco", "t": "frase del giro (máx 24 palabras): Neo resuelve ESE conflicto y deja a Rosa en evidencia, nombrándola"},
+            {"e": "remate", "h": "neo", "emo": "seco", "t": "remate (máx 24 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
             {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
         ],
     }
@@ -355,7 +358,7 @@ en todos los episodios para el bucle) lo pone el código siempre, no hace falta 
 como escena ni pensar en "set"/"flow" para eso (corregido 20/11 noche: antes variaba por
 episodio y el bucle no quedaba idéntico; ahora es una tarjeta fija compartida).
 
-FORMATO VIGENTE v11 (23/11/2026). MANDA SOBRE TODO LO ANTERIOR: donde arriba leas «exactamente 3
+FORMATO VIGENTE v11 + RETENCIÓN v12 (23/11/2026). MANDA SOBRE TODO LO ANTERIOR: donde arriba leas «exactamente 3
 golpes», «5-7 escenas», «6 y 9 escenas» o «un episodio al día», vale lo de aquí.
 A) ESTRUCTURA: 1 gancho (máx 8 palabras) + entre {MIN_GAGS} y {MAX_GAGS} golpes "gag" en escalada (cada uno
    máx {MAX_PALABRAS_GAG} palabras, cada uno peor que el anterior) + 1 remate de Neo (máx 24 palabras) + 1 cierre
@@ -380,6 +383,28 @@ D) "emo" EN CADA ESCENA: la emoción con la que se dice esa réplica. Solo una d
    «sorpresa», «miedo» y «rie»; Jambo a «cansado», «susurra» y, de golpe, «grita» (cambia de humor en seco; nunca «normal»); Concha a «cansado» y «llora».
 E) "recuerdo": nombra un episodio CONCRETO de los ya usados ({temas}) con una palabra que lo identifique
    (el taladro, el perro, el wifi, la morosa…), no «lo del martes». Si ninguno encaja, null.
+F) RETENCIÓN v12 (orden del dueño 23/11 22:11: «ganchos potentes, giros inesperados, diseñado para maximizar
+   la retención y una conclusión satisfactoria; que sea imposible dejar de ver, que detenga el scroll»).
+   Cada episodio se escribe para que nadie pueda irse antes del final:
+   F1. GANCHO QUE PARA EL DEDO (primer segundo): arranca EN MITAD del lío, con algo en juego que se entiende
+       sin contexto (dinero, un plazo, un objeto, una amenaza). "gancho_tipo" dice cuál de estos cuatro es:
+       conflicto_en_marcha («¡Rosa, que se llevan el sofá!»), afirmacion_imposible («Felipe ha vendido la
+       oficina»), amenaza_con_plazo («Una hora o nos embargan, Rosa») o pregunta_abierta («¿Quién ha firmado
+       esto por mí?»). PROHIBIDO: saludar, presentarse, «hoy…», explicar antes de enseñar, preguntas
+       genéricas al espectador («¿te ha pasado…?»). Lleva «¡!», «¿?», una cifra o «…»: nunca una frase plana.
+   F2. PROMESA: el gancho abre UNA pregunta concreta que el espectador necesita ver resuelta (¿quién ha
+       sido?, ¿cómo salen de esta?, ¿qué hay en la caja?). Va en "promesa" y NO se responde hasta el remate.
+   F3. CADA GOLPE EMPUJA AL SIGUIENTE: da un dato nuevo o sube la apuesta (nunca repite el chiste anterior
+       con otras palabras) y deja algo colgando: una pregunta, una amenaza, un «y eso no es lo peor». Nunca
+       dos réplicas seguidas del mismo personaje: ping-pong.
+   F4. GIRO INESPERADO A MITAD: UN solo golpe, entre el 3.º y el penúltimo, lleva "giro": true y le da la
+       vuelta a lo que el espectador creía (el culpable era otro, lo malo era peor, quien mandaba ya no
+       manda). Tiene que estar SEMBRADO: una palabra u objeto del gancho o de los dos primeros golpes vuelve
+       ahí con otro sentido. Explícalo en el campo "giro". El giro NO es el remate de Neo: son dos sorpresas.
+   F5. CONCLUSIÓN SATISFACTORIA: el remate de Neo responde a la promesa con algo concreto (cifra, objeto,
+       nombre), deja a Rosa en evidencia Y repite una palabra u objeto del gancho (el espectador siente que
+       todo encaja). Nada de finales abiertos, «continuará» ni moralejas que no salen de lo visto.
+   F6. BUCLE: el cierre empalma con el gancho ("bucle_visual") para que el segundo visionado empiece solo.
 
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
@@ -523,7 +548,47 @@ def _validar(ep):
     remate = next((e for e in escenas if e.get("e") == "remate"), None)
     if remate and remate.get("h") != "neo":
         motivos.append("el remate no lo dice Neo")
+    motivos.extend(_validar_retencion(ep, escenas, gags, remate))
     return motivos
+
+
+# RETENCIÓN v12 (orden del dueño 23/11 22:11): gancho que para el dedo, promesa abierta, giro sembrado a mitad y
+# remate que responde. Lo que se puede comprobar a máquina se comprueba aquí; lo demás lo puntúa Calidad.
+GANCHO_FLOJO = re.compile(r"^\W*(hola|buen[oa]s|bienvenid|hoy\b|os cuento|te cuento|sab[ií]as|te ha pasado|alguna vez|en este v[ií]deo|mira esto)", re.I)
+_VACIAS = {"para", "pero", "como", "cuando", "donde", "porque", "esto", "esta", "este", "esos", "esas", "todo", "toda", "nada", "aqui", "aquí",
+           "tiene", "tengo", "tienes", "hace", "está", "esta", "están", "pues", "otra", "otro", "quien", "quién", "cómo", "qué", "sobre", "desde", "hasta"}
+
+
+def _raices(texto):
+    return {w[:5] for w in re.findall(r"[a-záéíóúüñ]{4,}", str(texto).lower()) if w not in _VACIAS and w not in PERSONAJES_VALIDOS}
+
+
+def _validar_retencion(ep, escenas, gags, remate):
+    m = []
+    if not escenas:
+        return m
+    gancho = str(escenas[0].get("t", ""))
+    if GANCHO_FLOJO.search(gancho):
+        m.append(f"el gancho empieza saludando o explicando ({gancho!r}): debe arrancar en mitad del lío, con algo en juego (F1)")
+    if gancho and not re.search(r"[¡!¿?…\d]|\.\.\.", gancho):
+        m.append(f"el gancho es una frase plana ({gancho!r}): lleva exclamación, pregunta, cifra o puntos suspensivos (F1)")
+    if ep.get("gancho_tipo") not in ("conflicto_en_marcha", "afirmacion_imposible", "amenaza_con_plazo", "pregunta_abierta"):
+        m.append("falta \"gancho_tipo\" (conflicto_en_marcha, afirmacion_imposible, amenaza_con_plazo o pregunta_abierta)")
+    if not 4 <= len(str(ep.get("promesa") or "").split()) <= 12:
+        m.append("falta \"promesa\" (5-10 palabras: la pregunta que abre el gancho y solo se responde en el remate)")
+    if not 5 <= len(str(ep.get("giro") or "").split()) <= 18:
+        m.append("falta \"giro\" (6-14 palabras: qué creía el espectador y qué resulta ser)")
+    con_giro = [i for i, g in enumerate(gags, 1) if g.get("giro") in (True, "true", "True", 1)]
+    if len(con_giro) != 1:
+        m.append(f"{len(con_giro)} golpes llevan \"giro\": true (debe ser exactamente uno: el giro inesperado de mitad de episodio)")
+    elif len(gags) >= 4 and not 3 <= con_giro[0] <= len(gags) - 1:
+        m.append(f"el giro está en el golpe {con_giro[0]} de {len(gags)}: va entre el 3.º y el penúltimo (ni al principio ni pegado al remate)")
+    for a_, b_ in zip(escenas, escenas[1:]):
+        if a_.get("h") and a_.get("h") == b_.get("h") and b_.get("e") in ("gag", "remate"):
+            m.append(f"dos réplicas seguidas de {a_['h']}: alterna personajes (F3)"); break
+    if remate and not (_raices(remate.get("t")) & (_raices(gancho) | _raices(ep.get("promesa")))):
+        m.append("el remate no recoge ninguna palabra del gancho ni de la promesa: debe responder a lo que se abrió al principio (F5)")
+    return m
 
 
 RONDAS_CORRECCION = 2
@@ -544,6 +609,9 @@ def _prompt_correccion(malos):
         "- Jambo Reseco (\"h\": \"jambo\") dice al menos un golpe; cada escena lleva \"emo\" (grita, enfado, sorpresa, ironia, chulea, cansado, "
         "susurra, miedo, llora, rie, seco, pregunta o normal) y casi ninguna es normal;\n"
         "- la moraleja tiene entre 6 y 9 palabras;\n"
+        "- retención: \"gancho_tipo\", \"promesa\" (5-10 palabras) y \"giro\" (6-14 palabras) van rellenos; el gancho arranca en mitad del lío (sin saludar "
+        "ni explicar) y lleva exclamación, pregunta, cifra o puntos suspensivos; exactamente UN golpe lleva \"giro\": true, entre el 3.º y el penúltimo; "
+        "nunca dos réplicas seguidas del mismo personaje; el remate de Neo repite una palabra del gancho o de la promesa y la responde;\n"
         "- el campo \"bucle_visual\" va relleno (qué elemento del gancho se repite en el cierre para que se vea en bucle);\n"
         "- el remate lo dice \"neo\"; no cambies \"set\", \"slug\" ni los nombres de personaje (\"h\").\n\n"
         "Guiones rechazados:\n" + json.dumps(casos, ensure_ascii=False, indent=1)
