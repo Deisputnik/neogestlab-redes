@@ -1,0 +1,43 @@
+{
+ "_nota": "Voces de El Jambo que sabe diseñadas con Gemini TTS (23/11/2026, orden del dueño: «que sean todas las voces naturales, diferentes y expresivas, busca soluciones gratis»). Voces sintéticas creadas a partir de una descripción escrita: no son la voz de nadie ni un clon. EN AUDICIÓN: no están en producción hasta que el dueño las apruebe de oído; hasta entonces manda edge-tts v6 (gen_episodios.py). Rehacer una: workflow «Audición de voces Gemini (El Jambo)» con redisenar=<personaje> (cambia la descripción en herramientas/audicion_gemini.py).",
+ "estado": "audicion",
+ "clave": "secreto de Actions GEMINI_API_KEY (la del Guionista, plan gratuito)",
+ "modelos": [
+  "gemini-3.8-flash-tts",
+  "gemini-3.8-flash-lite-tts"
+ ],
+ "cuota_medida": "23/11/2026: 10 peticiones por día y por modelo en el plan gratuito (GenerateRequestsPerDayPerProjectPerModel-FreeTier); se reinicia a las 09:00 de Madrid. Diseñar voces no gasta esa cuota. Con los dos modelos: 20 peticiones al día. Un episodio debe gastar como mucho una petición por personaje (todas sus réplicas juntas, una intención por frase).",
+ "voces": {
+  "rosa": "voice_99rp3vq423k6",
+  "felipe": "voice_8cpbu1bdppu8",
+  "sindy": "voice_mtya9dgnf5nm",
+  "neo": "voice_0c92tuvk9d7n",
+  "conchaqueton": "voice_g8r7hbsck4cp",
+  "jambo": "voice_8m527iisp3d8"
+ },
+ "medidas_audicion": {
+  "rosa": "200 Hz, 6,6 st",
+  "felipe": "89 Hz, 7,4 st",
+  "sindy": "261 Hz, 5,2 st",
+  "neo": "100 Hz, 7,6 st",
+  "conchaqueton": "237 Hz, 5,6 st",
+  "jambo": "138 Hz, 4,6 st",
+  "_referencia": "edge-tts v6: 3,3 st; ElevenLabs Johnny: 4,65 st (desviación del tono, más = más expresiva)"
+ },
+ "estilo_por_emo": {
+  "normal": "natural conversational pace",
+  "grita": "shouting, loud, fast",
+  "enfado": "angry, sharp, fast",
+  "sorpresa": "shocked, voice rising",
+  "ironia": "dry sarcasm, drawn out",
+  "chulea": "smug, cocky, relaxed but not slow",
+  "cansado": "tired, worn out, sighing",
+  "susurra": "whispering, secretive",
+  "miedo": "scared, voice shaking, hurried",
+  "llora": "whining, on the verge of tears",
+  "rie": "laughing while talking",
+  "seco": "flat, short, matter-of-fact",
+  "pregunta": "puzzled, questioning"
+ },
+ "pendiente": "llevarlo al render de episodios: una petición por personaje, cortar por réplica y sacar los tiempos de cada palabra con Whisper (probado: transcribe bien las seis voces)."
+}
