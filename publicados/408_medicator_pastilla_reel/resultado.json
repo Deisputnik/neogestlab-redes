@@ -1,0 +1,18 @@
+{
+  "media_id": "18036789116676164",
+  "enlace": "https://www.instagram.com/reel/DgFdegWEcfd/",
+  "prueba_no_seguidores": true,
+  "publicado": "2026-11-23T13:13:35+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "wWQyyAz1zVk",
+    "enlace": "https://youtube.com/shorts/wWQyyAz1zVk",
+    "titulo": "Mamá: «¿ya me tomé la pastilla?» #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "2904109043294947",
+    "enlace": "https://www.facebook.com/reel/2904109043294947",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
