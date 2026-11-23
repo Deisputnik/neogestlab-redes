@@ -61,7 +61,15 @@ PATRON_ARGUMENTO = re.compile(
     r"es (un|una) (derecho|obligación|falta de respeto)|eso (no )?es justo)\b",
     re.IGNORECASE,
 )
-MAX_PALABRAS_GAG = 14
+MAX_PALABRAS_GAG = 18
+# 23/11/2026 (orden del dueño: «haz que mejore el guionista y las expresiones de voz»). El guion pedía 3 golpes de 14
+# palabras (unas 70 palabras: 30 s) para un episodio de 45-70 s, y el validador exigía «exactamente 3» mientras el prompt
+# permitía 4: el Creador tenía que reescribir cada guion para alargarlo y muchos se rechazaban por contradicción.
+# Formato vigente (v11): gancho + 5-8 golpes + remate de Neo + cierre, 120-185 palabras de voz, con Jambo en escena y
+# una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
+MIN_GAGS, MAX_GAGS = 5, 8
+MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 105, 185
+EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
 
 
 def _leer(ruta, lineas=None):
@@ -102,12 +110,15 @@ def _prompt(n):
             {
                 "e": "gancho",
                 "h": "rosa",
+                "emo": "sorpresa",
                 "t": "texto exacto que dice o el texto en pantalla, máx 8 palabras, situación reconocible desde el fotograma 0 (visible en los primeros 0,5 s, antes incluso de que se lea el texto entero); dirígete a otro personaje por su nombre si tiene sentido",
             },
-            {"e": "gag", "h": "felipe|sindy", "t": "frase del golpe 1 de la escalada, registro de barrio con réplica inteligente, nombrando a quien se dirige o a quien menciona", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
-            {"e": "gag", "h": "rosa", "t": "frase del golpe 2, peor que el 1, nombrando a alguien"},
-            {"e": "gag", "h": "felipe|sindy", "t": "frase del golpe 3, peor que el 2, remata con 'Que lo resuelva el Neo'"},
-            {"e": "remate", "h": "neo", "t": "frase del giro: Neo resuelve ESE conflicto y deja a Rosa en evidencia, nombrándola"},
+            {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 18 palabras), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
+            {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
+            {"e": "gag", "h": "jambo", "emo": "chulea", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura)"},
+            {"e": "gag", "h": "felipe", "emo": "chulea", "t": "golpe 4: Felipe sentencia con seguridad total algo falso (cuñado enterado)"},
+            {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
+            {"e": "remate", "h": "neo", "emo": "seco", "t": "frase del giro (máx 24 palabras): Neo resuelve ESE conflicto y deja a Rosa en evidencia, nombrándola"},
             {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
         ],
     }
@@ -330,10 +341,35 @@ en todos los episodios para el bucle) lo pone el código siempre, no hace falta 
 como escena ni pensar en "set"/"flow" para eso (corregido 20/11 noche: antes variaba por
 episodio y el bucle no quedaba idéntico; ahora es una tarjeta fija compartida).
 
+FORMATO VIGENTE v11 (23/11/2026). MANDA SOBRE TODO LO ANTERIOR: donde arriba leas «exactamente 3
+golpes», «5-7 escenas», «6 y 9 escenas» o «un episodio al día», vale lo de aquí.
+A) ESTRUCTURA: 1 gancho (máx 8 palabras) + entre {MIN_GAGS} y {MAX_GAGS} golpes "gag" en escalada (cada uno
+   máx {MAX_PALABRAS_GAG} palabras, cada uno peor que el anterior) + 1 remate de Neo (máx 24 palabras) + 1 cierre
+   de Neo con la moraleja (6-9 palabras). En total entre {MIN_PALABRAS_VOZ} y {MAX_PALABRAS_VOZ} palabras de voz
+   (eso da 45-70 s). CUENTA las palabras de cada "t" antes de responder: si un golpe pasa de
+   {MAX_PALABRAS_GAG}, recórtalo; no lo partas en dos escenas iguales.
+B) JAMBO RESECO sale SIEMPRE: al menos una réplica suya ("h": "jambo") en la escalada, de gorrón
+   caradura (se apunta, no paga, exige). Felipe mete al menos una sentencia falsa de cuñado.
+C) ESCRIBE PARA LA VOZ (las voces son sintéticas y suenan planas si el texto es plano):
+   - Cada réplica son 2 o 3 frases CORTAS, no una frase larga con comas. Mezcla una exclamación, una
+     pregunta o unos puntos suspensivos con una frase seca: «¡Hostia, Rosa! ¿Otra vez? Pues nada…».
+   - Empieza muchas réplicas con una interjección o muletilla hablada: «¡Buah!», «Pff…», «A ver…»,
+     «¿Mande?», «¡Anda ya!», «Mira…», «¡Venga, hombre!». Se nota en la voz.
+   - Los tacos van dentro de la exclamación («¡Me cago en todo, Felipe!»), nunca en mitad de una
+     frase larga. Los puntos suspensivos marcan sorna o duda. Las mayúsculas no hacen nada.
+   - Nada de paréntesis, acotaciones, emojis ni risas escritas («jajaja») dentro de "t": se leerían.
+D) "emo" EN CADA ESCENA: la emoción con la que se dice esa réplica. Solo una de estas palabras:
+   normal, grita, enfado, sorpresa, ironia, chulea, cansado, susurra, miedo, llora, rie, seco, pregunta.
+   Varíalas: nunca tres réplicas seguidas con la misma, y casi ninguna «normal». Neo es «seco» o
+   «normal» (culto y tranquilo); Rosa tira a «enfado», «ironia» y «grita»; Felipe a «chulea»; Sindy a
+   «sorpresa», «miedo» y «rie»; Jambo a «chulea» y «cansado»; Concha a «cansado» y «llora».
+E) "recuerdo": nombra un episodio CONCRETO de los ya usados ({temas}) con una palabra que lo identifique
+   (el taladro, el perro, el wifi, la morosa…), no «lo del martes». Si ninguno encaja, null.
+
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
 cada guion; "h" solo puede ser rosa, felipe, sindy, neo, cliente, conchaqueton o jambo; "e" solo puede ser
-gancho, gag, remate o cierre; usa entre 6 y 9 escenas, con el patrón gancho, 3-4x gag,
+gancho, gag, remate o cierre; entre 8 y 11 escenas, con el patrón gancho, {MIN_GAGS}-{MAX_GAGS}x gag,
 remate, cierre):
 {json.dumps(esquema, ensure_ascii=False, indent=2)}
 """
@@ -435,16 +471,27 @@ def _validar(ep):
     if not isinstance(ep.get("bucle_visual"), str) or not ep["bucle_visual"].strip():
         motivos.append("falta bucle_visual (qué elemento del gancho se repite en el cierre para que se vea en bucle sin notar el corte)")
     escenas = ep.get("escenas") or []
-    if len(escenas) < 5:
-        motivos.append(f"solo {len(escenas)} escenas (mínimo 5: gancho + 3 golpes + remate)")
+    if len(escenas) < 8:
+        motivos.append(f"solo {len(escenas)} escenas (mínimo 8: gancho + {MIN_GAGS} golpes + remate + cierre)")
     estilos = [e.get("e") for e in escenas]
     if estilos[:1] != ["gancho"]:
         motivos.append("la primera escena no es el gancho")
     if "remate" not in estilos:
         motivos.append("falta el remate (giro de Neo)")
     gags = [e for e in escenas if e.get("e") == "gag"]
-    if len(gags) != 3:
-        motivos.append(f"{len(gags)} golpes de escalada (deben ser exactamente 3)")
+    if not (MIN_GAGS <= len(gags) <= MAX_GAGS):
+        motivos.append(f"{len(gags)} golpes de escalada (deben ser entre {MIN_GAGS} y {MAX_GAGS})")
+    voz = sum(len(str(e.get("t", "")).split()) for e in escenas)
+    if escenas and not (MIN_PALABRAS_VOZ <= voz <= MAX_PALABRAS_VOZ):
+        motivos.append(f"{voz} palabras de voz en total (deben ser entre {MIN_PALABRAS_VOZ} y {MAX_PALABRAS_VOZ} para durar 45-70 s)")
+    if escenas and not any(e.get("h") == "jambo" for e in escenas):
+        motivos.append("Jambo Reseco no dice ninguna réplica (debe salir siempre, al menos un golpe suyo)")
+    for e in escenas:
+        if isinstance(e, dict) and e.get("emo") not in EMOCIONES:
+            e["emo"] = "normal"   # una emoción desconocida o ausente no tumba el guion: se dice normal
+    emos = [e.get("emo") for e in escenas]
+    if len(escenas) >= 6 and emos.count("normal") > len(escenas) // 2:
+        motivos.append("más de la mitad de las réplicas van con emo «normal»: marca la emoción de cada una (grita, ironia, chulea, seco…)")
     for i, g in enumerate(gags, 1):
         texto = str(g.get("t", ""))
         if PATRON_ARGUMENTO.search(texto):
@@ -465,6 +512,7 @@ def _validar(ep):
 
 
 RONDAS_CORRECCION = 2
+MAX_EN_ESPERA = 8   # guiones sin usar en pendientes/ a partir de los cuales no se piden más
 
 
 def _prompt_correccion(malos):
@@ -475,8 +523,11 @@ def _prompt_correccion(malos):
         "Devuelve SOLO un array JSON con esos mismos episodios corregidos: mismas claves, mismo formato, misma situación, "
         "mismos personajes y mismo humor. Arregla exactamente los motivos indicados en cada uno y no rompas ninguna otra regla:\n"
         f"- la primera escena es el gancho (\"e\": \"gancho\") y su texto tiene 8 palabras como máximo;\n"
-        f"- hay exactamente 3 escenas \"e\": \"gag\" y el texto \"t\" de cada una tiene {MAX_PALABRAS_GAG} palabras como máximo "
+        f"- hay entre {MIN_GAGS} y {MAX_GAGS} escenas \"e\": \"gag\" y el texto \"t\" de cada una tiene {MAX_PALABRAS_GAG} palabras como máximo "
         "(cuenta las palabras: un golpe hablado, corto, no un argumento; recorta la frase, no la partas en dos escenas);\n"
+        f"- en total, entre {MIN_PALABRAS_VOZ} y {MAX_PALABRAS_VOZ} palabras de voz sumando todas las escenas; si faltan, añade golpes, no alargues los que hay;\n"
+        "- Jambo Reseco (\"h\": \"jambo\") dice al menos un golpe; cada escena lleva \"emo\" (grita, enfado, sorpresa, ironia, chulea, cansado, "
+        "susurra, miedo, llora, rie, seco, pregunta o normal) y casi ninguna es normal;\n"
         "- la moraleja tiene entre 6 y 9 palabras;\n"
         "- el campo \"bucle_visual\" va relleno (qué elemento del gancho se repite en el cierre para que se vea en bucle);\n"
         "- el remate lo dice \"neo\"; no cambies \"set\", \"slug\" ni los nombres de personaje (\"h\").\n\n"
@@ -487,6 +538,13 @@ def _prompt_correccion(malos):
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else N_POR_DEFECTO
     os.makedirs(PENDIENTES, exist_ok=True)
+
+    # 23/11/2026: el Reloj lanza al Guionista 4 veces al día (antes 2) para que una pasada fallida por cuota o
+    # saturación de Gemini se recupere sola; a cambio, si ya hay guiones de sobra esperando al Creador no se pide nada.
+    en_espera = [f for f in os.listdir(PENDIENTES) if f.endswith(".json")]
+    if len(en_espera) >= MAX_EN_ESPERA:
+        print(f"Ya hay {len(en_espera)} guiones en pendientes/ (tope {MAX_EN_ESPERA}): no se pide ninguno ni se gasta cuota.")
+        return 0
 
     guiones = _llamar_gemini(_prompt(n))
     hoy = datetime.date.today().isoformat()

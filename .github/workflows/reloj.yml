@@ -82,7 +82,7 @@ jobs:
               gh workflow run "$wf" -R "$REPO" --ref main || echo "no se pudo lanzar $wf"
             fi
           }
-          toca guionista_gemini.yml 09:15 15:15
+          toca guionista_gemini.yml 09:15 12:15 15:15 18:15   # 23/11: 4 pasadas; si Gemini falla en una, la siguiente lo recupera (el script no pide nada si ya hay 8 guiones esperando)
           toca creador_api.yml 10:51 16:51
           toca supervisor_api.yml 12:27 18:27
           toca repescador_api.yml 08:33 10:33 11:33 13:33 15:33 17:33 19:33 20:33

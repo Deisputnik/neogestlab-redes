@@ -397,7 +397,12 @@ MARCA_VIGENTE = (
     "RECREACIONES (Recepcionista 24h): el rótulo «Recreación · voces sintéticas» se exige mientras suena la llamada recreada (las voces "
     "del asistente y de quien llama), no en la locución del narrador que la presenta o la cierra. Ves pocos fotogramas sueltos: solo "
     "puedes rechazar por el rótulo si falta en un fotograma en el que claramente se está dentro de la llamada. "
-    "COHERENCIA: no rechaces por marca o por cierre una pieza que lleva la misma insignia y la misma tarjeta que otras ya aprobadas."
+    "COHERENCIA: no rechaces por marca o por cierre una pieza que lleva la misma insignia y la misma tarjeta que otras ya aprobadas. "
+    "VOZ DE LAS PROMOS DE APP (orden del dueño 23/11/2026: «en las aplicaciones usamos Eleven siempre»): toda promo, demo o recreación "
+    "de una app (cualquier pieza que NO sea un episodio de El Jambo) renderizada desde el 24/11/2026 debe llevar en post.json "
+    "\"motor_voz\": \"elevenlabs\". Si pone \"edge\" u otro motor, es bloqueo, salvo que post.json lleve \"_voz_nota\" diciendo que el "
+    "presupuesto de ElevenLabs estaba agotado; como_arreglarlo: «CREADOR: rehacer la voz con ElevenLabs (gen_promos.py + render.mjs "
+    "--final en Neogest Studio; ver herramientas/estudio/LEEME.md)». Los episodios de El Jambo van con edge-tts y eso es correcto."
 )
 
 
