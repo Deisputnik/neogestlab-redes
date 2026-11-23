@@ -1,12 +1,14 @@
 {
   "aprobado": false,
-  "nota": 86,
+  "nota": 85,
   "motivos": [
-    "Jambo Reseco no aparece en ninguna escena del guion (no tiene línea ni presencia activa), solo figura atenuado/difuminado en la tarjeta de créditos; la orden del dueño 22/11 exige a Jambo Reseco presente cuando toque como gorrón caradura, y en un episodio de salón con todo el reparto reunido (Rosa, Felipe, Sindy, Neo) su ausencia total es notoria.",
-    "El 'humor negro real' exigido por v11 no llega: el remate es ironía/sátira sobre vigilancia laboral sin fricción (frialdad ante algo grave), no un golpe de humor negro propiamente dicho.",
-    "El recuerdo de episodio anterior ('como lo de la reunión del martes') es demasiado vago/genérico; no identifica un episodio concreto de la serie, por lo que apenas cumple la función de recuerdo que pide el estándar."
+    "control_audio.json marca bloqueo real (no jerga): al final de la locución se repite/duplica la frase de cierre 'vigilar a quien no cobra' tras el remate correcto ('Vigilar a quien no cobra solo sale caro. Vigilar a quien no cobra.'), algo que no está en el guion. Es un defecto de síntesis/edición de audio, audible y objetivo, no un falso positivo de Whisper con jerga.",
+    "El recuerdo de episodio anterior ('como lo de la reunión del martes') sigue siendo demasiado vago y no identifica un episodio concreto de la serie ya publicado, por lo que apenas cumple la función de recuerdo que exige v11.",
+    "El remate de Neo es más ironía/sátira sobre vigilancia que un golpe de humor negro frío y duro; cumple parcialmente pero es el punto más flojo del guion.",
+    "Mejora respecto al rechazo anterior: Jambo Reseco ya tiene línea activa en escena como gorrón caradura (pide cerveza gratis), aunque en la tarjeta de créditos su nombre sigue atenuado/difuminado frente a los demás (detalle menor, no bloqueante)."
   ],
-  "como_arreglarlo": "Esto es guion, no render: lo puede arreglar el Creador sin tocar vídeo si se reescribe el episodio (quedaría 'renderizado\": false' y relanzar ciclo). Pide (1) dar a Jambo Reseco al menos una línea/gag como gorrón caradura dentro de las escenas, no solo en créditos; (2) sustituir el remate por un golpe de humor negro más frío/duro (p. ej. ligado a consecuencias reales de la vigilancia, no solo la ironía del dinero); (3) cambiar el recuerdo por una referencia reconocible a un episodio anterior ya publicado de la serie (con nombre o hecho concreto). Lo técnico (audio, bucle, marca, formato) ya está bien y no requiere cambios.",
-  "fecha": "2026-11-23T15:12:32Z",
-  "revisor": "Calidad (API)"
+  "como_arreglarlo": "Esto mezcla audio y guion: (1) El motor de voz debe regenerar solo el tramo final del remate de Neo/cierre para eliminar la repetición duplicada de 'vigilar a quien no cobra' (fallo de síntesis, posible URGENTE en peticiones_mejora.md si se repite en otras piezas del mismo render); con eso resuelto el control_audio.json pasaría a aprobado. (2) En guion (sin necesidad de render si se hace antes): cambiar el recuerdo de Felipe por una referencia concreta a un episodio anterior ya publicado (nombre o hecho identificable, no 'lo de la reunión del martes'). (3) Opcional para subir nota: afilar el remate de Neo hacia un golpe de humor negro más frío (consecuencia real, no solo ironía del dinero). Con el audio corregido y el recuerdo concretado, la pieza estaría cerca de 90.",
+  "fecha": "2026-11-23T16:13:08Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-23T15:13:05+00:00"
 }
