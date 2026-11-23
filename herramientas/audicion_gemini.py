@@ -173,7 +173,7 @@ def main():
         vid = (res["voces"].get(p) or {}).get("id")
         if not vid:
             res["frases"][p] = {"omitida": "sin voz diseñada"}; continue
-        res["frases"][p] = decir(vid, [tuple(x) for x in partes], f"frase_{p}.wav")
+        res["frases"][p] = decir(vid, [tuple(x) for x in partes], f"frase_{p}.wav", cfg.get("modelo") or "gemini-3.8-flash-tts")
         time.sleep(7)
 
     # sonda de cuota: peticiones mínimas hasta que Google diga el límite diario (el mensaje 429 lo trae)
