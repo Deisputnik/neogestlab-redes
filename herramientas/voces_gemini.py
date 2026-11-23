@@ -2,8 +2,9 @@
 
 El plan gratuito da 10 peticiones por día y por modelo, así que no se puede pedir réplica a réplica. Se hace en dos pasos:
   generar <pedido.json> <salida>   (necesita GEMINI_API_KEY; solo biblioteca estándar)
-      Por cada episodio y personaje manda TODAS sus réplicas en una sola petición, cada frase con su intención
-      (emoción de la escena + carácter del personaje). Guarda <n>_<personaje>.wav y <n>_plan.json.
+      Por cada personaje manda TODAS sus réplicas de TODOS los episodios del pedido en una sola petición, cada frase con su intención
+      (emoción de la escena + carácter del personaje). Guarda lote_<personaje>.wav y plan.json.
+  empaquetar <pedido.json> <salida>  voces.tar con los mp3 y los <n>_voces.json, subido a una URL pública temporal (listo.json).
   cortar <pedido.json> <salida>    (necesita faster-whisper, numpy y ffmpeg)
       Localiza cada palabra con Whisper, corta el audio por réplica, ajusta ritmo y volumen y escribe <n>_<i>.mp3 y
       <n>_voces.json (duración y tiempos de cada palabra, lo que necesita gen_episodios.py para los subtítulos).
@@ -17,14 +18,14 @@ API = "https://generativelanguage.googleapis.com/v1beta"
 # carácter fijo de cada personaje al decir cualquier frase (se suma a la emoción de la escena)
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
             "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
-            "jambo": "very slow drowsy drawl, hoarse, slurred, dragging and hissing every S sound, spaced-out",
+            "jambo": "slow, drawn-out dazed drawl, drowsy and spaced-out, lazy slurred tongue, stretching the vowels and trailing off",
             "cliente": "impatient"}
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
 # velocidad en el resto de voces». Jambo nunca se acelera; el resto se lleva a unas 3 palabras por segundo.
 LENTOS_QUIEN = {"jambo"}
-PAL_S = {None: 3.0, "jambo": 2.0, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
-TEMPO_MAX = {None: 1.3, "jambo": 1.6}                 # tope de aceleración sin cambiar el tono (atempo)
+PAL_S = {None: 3.0, "jambo": 1.6, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
+TEMPO_MAX = {None: 1.3, "jambo": 1.8}                 # tope de aceleración sin cambiar el tono (atempo)
 PAUSA_MAX = {None: 0.35, "jambo": 0.55}               # ninguna pausa interna más larga que esto (segundos)
 
 
@@ -44,6 +45,15 @@ def estilo(quien, emo, frase):
     if quien not in LENTOS_QUIEN:
         partes.append(RITMO)
     return ", ".join(p for p in partes if p)
+
+
+def fusionar(pedido):
+    """Todos los episodios del pedido como uno solo: así cada personaje gasta UNA petición por pedido (no por episodio)."""
+    escenas = []
+    for ep in pedido["episodios"]:
+        for i, e in enumerate(ep["escenas"]):
+            escenas.append({**e, "_n": ep["slug"][:3], "_i": i})
+    return {"slug": "lote", "escenas": escenas}
 
 
 def lineas_de(ep, quien):
@@ -75,8 +85,8 @@ def generar(pedido, out):
         json.dump(hechas, open(f"{out}/muestras.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if pedido.get("sin_generar"):
         return 0
-    for ep in pedido["episodios"]:
-        n = ep["slug"][:3]; plan = {"slug": ep["slug"], "personajes": {}}
+    for ep in [fusionar(pedido)]:
+        n = "lote"; plan = {"slug": ep["slug"], "personajes": {}}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h")):
             if pedido.get("solo") and quien not in pedido["solo"]:
                 continue
@@ -140,7 +150,7 @@ def generar(pedido, out):
                     break
             plan["personajes"][quien] = info; todo_bien = todo_bien and bool(info and info.get("archivo"))
             print(quien, json.dumps(info, ensure_ascii=False)[:400], flush=True); time.sleep(8)
-        json.dump(plan, open(f"{out}/{n}_plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        json.dump(plan, open(f"{out}/plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return 0 if todo_bien else 1
 
 
@@ -159,8 +169,8 @@ def cortar(pedido, out, modelo_whisper="small"):
     import numpy as np
     from faster_whisper import WhisperModel
     ff = os.environ.get("FFMPEG", "ffmpeg"); wm = WhisperModel(modelo_whisper, device="cpu", compute_type="int8"); ok = True
-    for ep in pedido["episodios"]:
-        n = ep["slug"][:3]; manifiesto = {}; informe = {}
+    for ep in [fusionar(pedido)]:
+        n = "lote"; manifiesto = {}; informe = {}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h") and e.get("v")):
             wav = f"{out}/{n}_{quien}.wav"; ls = lineas_de(ep, quien)
             if not os.path.exists(wav):
@@ -211,7 +221,7 @@ def cortar(pedido, out, modelo_whisper="small"):
                 objetivo = PAL_S.get(quien, PAL_S[None]); pps = len(pal) / max(dur, 0.1)
                 tempo = 1.0 if pps >= objetivo else min(TEMPO_MAX.get(quien, TEMPO_MAX[None]), objetivo / pps)
                 # el corte se hace sobre el wav original (24 kHz) con los mismos instantes, para no perder calidad
-                tmp = f"{out}/{n}_{i}_crudo.wav"; mp3 = f"{out}/{n}_{i}.mp3"
+                mp3 = f"{out}/{e['_n']}_{e['_i']}.mp3"
                 alta = np.frombuffer(subprocess.run([ff, "-v", "error", "-ss", f"{ini:.3f}", "-t", f"{fin - ini:.3f}", "-i", wav, "-ac", "1", "-ar", "48000", "-f", "s16le", "-"],
                                                     capture_output=True).stdout, np.int16).astype(np.float32) / 32768
                 for ta, tb in quitar:
@@ -247,16 +257,43 @@ def cortar(pedido, out, modelo_whisper="small"):
                     else:
                         j += 1
                 words = [{"w": w.strip(".,;:¡!¿?…«»"), "s": round(max(0, s_), 3), "e": round(min(max(en, s_ + 0.05), real), 3)} for (w, _), (s_, en) in zip(pal, tiempos)]
-                manifiesto[f"{n}_{i}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3),
+                manifiesto.setdefault(e["_n"], {})[f"{e['_n']}_{e['_i']}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3),
                                           "pal_s": round(len(pal) / real, 2), "texto": " ".join(w for w, _ in pal), "oido": " ".join(w.strip() for w, _, _ in r2)}
-        json.dump(manifiesto, open(f"{out}/{n}_voces.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        json.dump(informe, open(f"{out}/{n}_informe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        for nn, mm in manifiesto.items():
+            json.dump(mm, open(f"{out}/{nn}_voces.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        json.dump(informe, open(f"{out}/informe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         for q, v in informe.items():
             print(q, json.dumps(v, ensure_ascii=False)[:500])
     return 0 if ok else 1
 
 
+def empaquetar(pedido, out):
+    """Mete los mp3 y los <n>_voces.json en voces.tar y, si hay ZERNIO_API_KEY, lo sube a una URL pública temporal para
+    que el sandbox del estudio lo baje con curl (el repo es privado). Escribe listo.json con la URL."""
+    import tarfile, glob
+    ns = sorted({ep["slug"][:3] for ep in pedido["episodios"]}); ruta = f"{out}/voces.tar"; listo = {"episodios": ns, "url": None}
+    with tarfile.open(ruta, "w") as tar:
+        for nn in ns:
+            for f in sorted(glob.glob(f"{out}/{nn}_[0-9]*.mp3")) + glob.glob(f"{out}/{nn}_voces.json"):
+                tar.add(f, arcname=os.path.basename(f))
+    listo["archivos"] = len(tarfile.open(ruta).getnames()); clave = os.environ.get("ZERNIO_API_KEY")
+    if clave and listo["archivos"]:
+        try:
+            req = urllib.request.Request("https://zernio.com/api/v1/media/presign", data=json.dumps({"filename": f"voces_{'_'.join(ns)}.mp3", "contentType": "audio/mpeg"}).encode(),
+                                         method="POST", headers={"Authorization": "Bearer " + clave, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                pre = json.loads(r.read())
+            put = urllib.request.Request(pre["uploadUrl"], data=open(ruta, "rb").read(), method="PUT", headers={"Content-Type": "audio/mpeg"})
+            with urllib.request.urlopen(put, timeout=300):
+                pass
+            listo["url"] = pre["publicUrl"]
+        except Exception as e:
+            listo["error"] = f"{type(e).__name__}: {e}"[:300]
+    json.dump(listo, open(f"{out}/listo.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1); print(json.dumps(listo, ensure_ascii=False))
+    return 0 if listo["archivos"] else 1
+
+
 if __name__ == "__main__":
     modo, ruta, salida = sys.argv[1], sys.argv[2], sys.argv[3]; os.makedirs(salida, exist_ok=True)
     ped = json.load(open(ruta, encoding="utf-8"))
-    sys.exit(generar(ped, salida) if modo == "generar" else cortar(ped, salida))
+    sys.exit({"generar": generar, "cortar": cortar, "empaquetar": empaquetar}[modo](ped, salida))

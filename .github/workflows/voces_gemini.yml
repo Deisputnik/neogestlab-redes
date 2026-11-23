@@ -1,12 +1,16 @@
 name: Voces Gemini de un episodio (El Jambo)
 
-# Genera con Gemini TTS (clave gratuita del Guionista) el audio de cada personaje del pedido equipo/voces_gemini/pedido.json:
-# una petición por personaje (el plan gratuito da 10 al día por modelo). Deja los .wav como artefacto; el corte por réplica
-# se hace después con «voces_gemini.py cortar». No publica nada. Creado el 23/11/2026.
+# Voces de El Jambo con Gemini TTS (clave gratuita del Guionista) para los episodios de equipo/voces_gemini/pedido.json:
+#   1) generar: UNA petición por personaje con todas sus réplicas del pedido (el plan gratuito da 10 al día por modelo);
+#   2) cortar: Whisper localiza cada palabra, corta por réplica y ajusta ritmo y volumen;
+#   3) empaquetar: voces.tar (mp3 + <n>_voces.json) subido a una URL pública temporal; la URL queda en listo.json (artefacto
+#      «voces-gemini») y en el resumen de la ejecución.
+# Se lanza al subir el pedido a una rama voces/... o claude/voces-... (nunca desde main) o a mano. No publica nada.
+# Creado el 23/11/2026 (orden del dueño: voces naturales, distintas, expresivas y gratis; en producción desde ese día).
 on:
   workflow_dispatch:
   push:
-    branches: ["claude/voces-**"]
+    branches: ["claude/voces-**", "voces/**"]
     paths: ["equipo/voces_gemini/pedido.json"]
 
 permissions:
@@ -15,16 +19,33 @@ permissions:
 jobs:
   voces:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Generar una pista por personaje
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 herramientas/voces_gemini.py generar equipo/voces_gemini/pedido.json /tmp/voces
+      - name: Cortar por réplica y empaquetar
+        if: ${{ !cancelled() }}
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        run: |
+          ls /tmp/voces/lote_*.wav >/dev/null 2>&1 || { echo "Sin pistas que cortar"; exit 0; }
+          pip install --quiet faster-whisper numpy imageio-ffmpeg
+          export FFMPEG=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
+          python3 herramientas/voces_gemini.py cortar equipo/voces_gemini/pedido.json /tmp/voces
+          python3 herramientas/voces_gemini.py empaquetar equipo/voces_gemini/pedido.json /tmp/voces
+          echo '```' >> $GITHUB_STEP_SUMMARY; cat /tmp/voces/listo.json >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: voces-gemini
-          path: /tmp/voces/
+          path: |
+            /tmp/voces/*.json
+            /tmp/voces/*.wav
+            /tmp/voces/voces.tar
           if-no-files-found: ignore
