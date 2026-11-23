@@ -389,3 +389,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-23 16:10 UTC · Creador (API, piloto texto) · revisadas 1 de 1 piezas rechazadas: 521_jambo_fichar_en_casa sin arreglo de texto: Los tres motivos de rechazo de esta pieza son de guion/escena y de edición de vídeo, no de texto/metadata de post.json:
 
 1. "Jambo Reseco no aparece en ninguna escena del guion (no tiene línea ni presencia activa)" — esto exige añadir una línea/gag suyo DENTRO de las escenas del episodio. Eso es con · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-23 16:10 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
