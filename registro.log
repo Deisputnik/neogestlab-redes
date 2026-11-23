@@ -1,9 +1,3 @@
-2026-11-21 03:24  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 03:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 04:09  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 04:09  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +592,9 @@
 2026-11-23 17:16  subida directa fallida otra vez (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); reintento 2/2
 2026-11-23 17:17  subida directa fallida (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta con video_url desde la release
 2026-11-23 17:17  517_jambo_concha_cobro: fallo al publicar 2/3: el vídeo no es descargable desde la release (404); ¿el repositorio es privado?
+2026-11-23 17:32  517_jambo_concha_cobro: publicando…
+2026-11-23 17:32  subida directa fallida ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta en esta misma pasada
+2026-11-23 17:33  publicado por video_url desde la URL pública del vídeo (la subida directa falló)
+2026-11-23 17:33  517_jambo_concha_cobro: YouTube publicado https://youtube.com/shorts/2pifsUmCL1k
+2026-11-23 17:33  517_jambo_concha_cobro: Facebook publicado https://www.facebook.com/reel/1094074163684198
+2026-11-23 17:33  517_jambo_concha_cobro: publicado https://www.instagram.com/reel/DgF0VJFDClS/

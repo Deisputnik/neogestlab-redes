@@ -1,0 +1,19 @@
+{
+  "media_id": "18090629777293180",
+  "enlace": "https://www.instagram.com/reel/DgF0VJFDClS/",
+  "prueba_no_seguidores": true,
+  "metodo": "video_url",
+  "publicado": "2026-11-23T16:33:44+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "2pifsUmCL1k",
+    "enlace": "https://youtube.com/shorts/2pifsUmCL1k",
+    "titulo": "La morosa que paga «la semana que viene» #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1094074163684198",
+    "enlace": "https://www.facebook.com/reel/1094074163684198",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
