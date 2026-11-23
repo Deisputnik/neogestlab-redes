@@ -52,6 +52,29 @@ def lineas_de(ep, quien):
 
 def generar(pedido, out):
     clave = os.environ["GEMINI_API_KEY"]; modelos = pedido.get("modelos") or CFG["modelos"]; todo_bien = True
+    # "muestras": [{clave, genero, descripcion}] = solo diseñar voces candidatas y guardar la muestra que devuelve el
+    # diseño (no gasta la cuota diaria de voz). Con "sin_generar": true no se pide ninguna réplica.
+    if pedido.get("muestras"):
+        hechas = {}
+        for m in pedido["muestras"]:
+            cuerpo_v = {"store": True, "voice": {"model": "gemini-3.8-flash-tts", "type": "prompted", "display_name": "Jambo-serie · " + m["clave"],
+                                                 "gender": m["genero"], "language_code": "es-ES", "prompted": {"input": m["descripcion"]}}}
+            req = urllib.request.Request(f"{API}/voices", data=json.dumps(cuerpo_v).encode(), method="POST", headers={"x-goog-api-key": clave, "Content-Type": "application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=240) as r:
+                    rv = json.loads(r.read())
+                au = rv.get("sample_audio") or rv.get("sampleAudio") or {}
+                if au.get("data"):
+                    open(f"{out}/muestra_{m['clave']}.wav", "wb").write(base64.b64decode(au["data"]))
+                hechas[m["clave"]] = rv.get("id")
+            except urllib.error.HTTPError as e:
+                hechas[m["clave"]] = "ERROR " + e.read().decode("utf-8", "replace")[:300]
+            except Exception as e:
+                hechas[m["clave"]] = f"ERROR {type(e).__name__}: {e}"[:300]
+            print("muestra", m["clave"], hechas[m["clave"]], flush=True); time.sleep(3)
+        json.dump(hechas, open(f"{out}/muestras.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if pedido.get("sin_generar"):
+        return 0
     for ep in pedido["episodios"]:
         n = ep["slug"][:3]; plan = {"slug": ep["slug"], "personajes": {}}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h")):

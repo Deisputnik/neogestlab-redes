@@ -48,5 +48,11 @@
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
  "_nota_jambo": "v2: muy lento, arrastrando y siseando las eses. Sale a ~0,9 palabras por segundo; voces_gemini.py lo sube a ~2 (el resto va a 3) para que el episodio no pase de 70 s.",
  "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2; pausas internas máx. 0,35 s (Jambo 0,55).",
- "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «primo», «este», «el vecino»."
+ "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «primo», «este», «el vecino».",
+ "candidatas_jambo": {
+  "_nota": "23/11 22:42, el dueño: «el Jambo no suena a toxicómano». Tres voces diseñadas, muestras enviadas al dueño; pendiente de que elija. Por defecto se probará la B.",
+  "a_barrio_madrid": "voice_0l5tiwh9fm7h",
+  "b_barrio_sur": "voice_xnnl9tocgb79",
+  "c_nasal": "voice_j0owswua6qxb"
+ }
 }

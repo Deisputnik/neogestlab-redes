@@ -152,6 +152,18 @@ def bookend(hook=False, texto=None):
     texts = [{"id": uid(), "text": texto or HOOK_CASA, "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}] if hook else []
     return {"id": uid(), "duration": 1.6, "transition": "none", "voice": None, "background": bg, "texts": texts}
 
+# Música (orden del dueño 23/11 22:42: «falta música»): antes iba a 0,16 y bajaba a 0,3 bajo la voz, y medida quedaba a
+# -30 dB en los huecos y casi inaudible bajo las voces. Ahora 0,34 y 0,45 bajo la voz. "musica" en el episodio lo cambia.
+MUSICA = {"track": "comedia:1", "volume": 0.34, "duck": True, "duckLevel": 0.45}
+
+def promo_empresa():
+    # 3 s de promo de la empresa y sus aplicaciones entre los créditos y el plano final de la casa (orden del dueño
+    # 23/11 22:44). Tarjeta del logo 2026 + firma (la dibuja el estudio con kind "outro") y el cierre de la directiva.
+    return {"id": uid(), "kind": "outro", "duration": 3.0, "transition": "fade", "voice": None, "background": {"type": "gradient"}, "characters": [], "texts": [
+        {"id": uid(), "text": "Apps con IA para tu negocio", "style": "hook", "anim": "pop", "start": 0.25, "y": 0.17},
+        {"id": uid(), "text": "Pide tu prueba gratuita", "style": "hook", "anim": "pop", "start": 0.7, "y": 0.68},
+        {"id": uid(), "text": "Sin tarjeta · sin datos bancarios · sin compromiso", "style": "badge", "anim": "pop", "start": 1.0, "y": 0.78}]}
+
 def creditos(elenco):
     # Reparto completo como créditos de cine al final de cada episodio (orden del dueño 21/11
     # madrugada), sobre el mismo set de salón pero de noche para diferenciarlo de la escena.
@@ -207,8 +219,9 @@ async def main():
         # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
         scenes.insert(0, bookend(hook=True, texto=ep.get("gancho_casa")))   # gancho propio del episodio (retención v12); si no viene, el fijo
         scenes.append(creditos(list(vistos.keys())))
+        scenes.append(promo_empresa())
         scenes.append(bookend())
-        spec = {"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.16, "duck": True, "duckLevel": 0.3}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
+        spec = {"version": 1, "format": "9:16", "fps": 30, "music": {**MUSICA, **(ep.get("musica") or {})}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.6}, "scenes": scenes}
         json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas")
 
