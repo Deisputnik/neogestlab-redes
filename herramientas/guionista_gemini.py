@@ -115,7 +115,7 @@ def _prompt(n):
             },
             {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 18 palabras), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
             {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
-            {"e": "gag", "h": "jambo", "emo": "chulea", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura)"},
+            {"e": "gag", "h": "jambo", "emo": "cansado", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, habla arrastrada: «Rosaaa, prima… un eurillo, que mañana te lo devuelvo…»)"},
             {"e": "gag", "h": "felipe", "emo": "chulea", "t": "golpe 4: Felipe sentencia con seguridad total algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
             {"e": "remate", "h": "neo", "emo": "seco", "t": "frase del giro (máx 24 palabras): Neo resuelve ESE conflicto y deja a Rosa en evidencia, nombrándola"},
@@ -289,6 +289,20 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    Felipe Lotas es el CUÑADO ENTERADO: no sabe nada y cree saberlo todo; sentencia con seguridad total
    cosas falsas o inventadas y la realidad o Neo le dejan en evidencia. Jambo Reseco es el GORRÓN
    CARADURA: se apunta a todo, nunca paga, se lleva lo que puede y encima exige.
+   Orden del dueño 23/11 (noche): Jambo Reseco tiene RASGOS DE TOXICÓMANO de barrio de toda la vida, y se
+   tienen que notar en CADA réplica suya por cómo habla y por lo que pide (nunca porque alguien lo diga):
+   - habla arrastrada: alarga vocales («primoooo», «Rosaaa»), frases cortas que se quedan a medias con
+     «…», se le va el hilo («¿qué te estaba diciendo?») y lo retoma por otro lado;
+   - muletillas suyas: «primo/prima», «hermano», «te lo juro por mi madre», «un eurillo», «mañana te lo
+     devuelvo», «que estoy limpio, ¿eh?», «no digas mi nombre»;
+   - siempre pide algo (un euro, un cigarro, veinte pavos «pa'l autobús», que le fíen) o vende algo de
+     procedencia dudosa (un taladro «casi nuevo», un jamón sin etiqueta) y luego te lo pide prestado;
+   - cambia de humor en seco: del susurro pedigüeño al grito impaciente y otra vez a la calma, como si nada;
+   - es listo a lo pícaro: se sabe las deudas de todo el barrio y las trampas del sistema.
+   LÍNEAS ROJAS DE JAMBO (innegociables): no se nombra, se enseña ni se describe ninguna sustancia, dosis,
+   forma de conseguirla o de consumirla; nada de sobredosis, enfermedad, jeringuillas ni muerte; nadie le
+   llama «yonqui» ni «drogadicto»; el chiste es su cara dura y su despiste, jamás la adicción de la gente
+   real ni una invitación a consumir.
 
 PERSONAJE QUE VUELVE (orden del dueño 21/11 mediodía): "jambo" (Jambo Reseco) vuelve al
 reparto del barrio — un tío chungo, de poca confianza, mal hablado (más tacos y más fuertes
@@ -349,7 +363,8 @@ A) ESTRUCTURA: 1 gancho (máx 8 palabras) + entre {MIN_GAGS} y {MAX_GAGS} golpes
    (eso da 45-70 s). CUENTA las palabras de cada "t" antes de responder: si un golpe pasa de
    {MAX_PALABRAS_GAG}, recórtalo; no lo partas en dos escenas iguales.
 B) JAMBO RESECO sale SIEMPRE: al menos una réplica suya ("h": "jambo") en la escalada, de gorrón
-   caradura (se apunta, no paga, exige). Felipe mete al menos una sentencia falsa de cuñado.
+   caradura (se apunta, no paga, exige) y con su habla de toxicómano de barrio: arrastrada, con «…», con
+   una muletilla suya («primo», «un eurillo», «mañana te lo devuelvo») y, si cabe, perdiendo el hilo. Felipe mete al menos una sentencia falsa de cuñado.
 C) ESCRIBE PARA LA VOZ (las voces son sintéticas y suenan planas si el texto es plano):
    - Cada réplica son 2 o 3 frases CORTAS, no una frase larga con comas. Mezcla una exclamación, una
      pregunta o unos puntos suspensivos con una frase seca: «¡Hostia, Rosa! ¿Otra vez? Pues nada…».
@@ -362,7 +377,7 @@ D) "emo" EN CADA ESCENA: la emoción con la que se dice esa réplica. Solo una d
    normal, grita, enfado, sorpresa, ironia, chulea, cansado, susurra, miedo, llora, rie, seco, pregunta.
    Varíalas: nunca tres réplicas seguidas con la misma, y casi ninguna «normal». Neo es «seco» o
    «normal» (culto y tranquilo); Rosa tira a «enfado», «ironia» y «grita»; Felipe a «chulea»; Sindy a
-   «sorpresa», «miedo» y «rie»; Jambo a «chulea» y «cansado»; Concha a «cansado» y «llora».
+   «sorpresa», «miedo» y «rie»; Jambo a «cansado», «susurra» y, de golpe, «grita» (cambia de humor en seco; nunca «normal»); Concha a «cansado» y «llora».
 E) "recuerdo": nombra un episodio CONCRETO de los ya usados ({temas}) con una palabra que lo identifique
    (el taladro, el perro, el wifi, la morosa…), no «lo del martes». Si ninguno encaja, null.
 
