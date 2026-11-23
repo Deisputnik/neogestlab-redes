@@ -40,5 +40,10 @@
   "asset": "328_jambo_inmobiliaria_decima_visita.mp4",
   "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/9a73c74b7_328_jambo_inmobiliaria_decima_visita.mp4",
   "_intentos_render": 1,
-  "_error_render": "El generador falló: Traceback (most recent call last):\n  File \"/home/runner/work/instagram/instagram/herramientas/hacer_reel.py\", line 2702, in <module>\n    main()\n  File \"/home/runner/work/instagram/instagram/herramientas/hacer_reel.py\", line 2568, in main\n    esc = g[\"escenas\"]\n          ~^^^^^^^^^^^\nKeyError: 'escenas'\n"
+  "_error_render": "El generador falló: Traceback (most recent call last):\n  File \"/home/runner/work/instagram/instagram/herramientas/hacer_reel.py\", line 2702, in <module>\n    main()\n  File \"/home/runner/work/instagram/instagram/herramientas/hacer_reel.py\", line 2568, in main\n    esc = g[\"escenas\"]\n          ~^^^^^^^^^^^\nKeyError: 'escenas'\n",
+  "_descartado": {
+    "fecha": "2026-11-23",
+    "motivo": "hora pasada desde el 21/11 (más de 36 h), formato retirado (El Jambo v3, reparto sin Jambo) y render imposible (KeyError 'escenas'); ocupaba una fila URGENTE falsa en equipo/atascos.md",
+    "venia_de": "cola"
+  }
 }
