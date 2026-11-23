@@ -24,7 +24,14 @@ eps.json: [{"slug","set","hora","moraleja","escenas":[{"e":gancho|gag|remate|cie
 Humor negro real (biblia v5, guionista_gemini.py): tono frío, nunca sobre pobreza/enfermedad/muerte reales;
 los personajes se llaman por su nombre entre ellos (registro de barrio con réplica inteligente).
 """
-import json, asyncio, random, sys, re, os, shutil, subprocess, edge_tts
+import json, asyncio, random, sys, re, os, shutil, subprocess
+try:
+    import edge_tts
+except ImportError:   # con voces ya hechas (VOCES_PREFAB) no hace falta edge-tts
+    edge_tts = None
+# Voces ya generadas fuera (Gemini TTS, herramientas/voces_gemini.py): VOCES_PREFAB=<n>_voces.json con, por escena
+# "<n>_<i>": {"archivo", "duration", "words"}; los mp3 se dejan en la carpeta de salida con ese nombre de archivo.
+PREFAB = json.load(open(os.environ["VOCES_PREFAB"], encoding="utf-8")) if os.environ.get("VOCES_PREFAB") else {}
 EPS = json.load(open(sys.argv[1])); OUT = sys.argv[2]
 # Vídeo real para "Cosas de Casa" (pedido en equipo/cola_gemini.md el 20/11: Gemini/Flow o,
 # a mano, ChatGPT/Sora). En cuanto exista la URL pública, ponla aquí UNA vez y todos los
@@ -138,11 +145,11 @@ async def tts(text, who, path, accion="habla", emo=None):
 # noche de "nunca texto en pantalla". Solo en la apertura, nunca en el cierre, para no repetirlo).
 HOOK_CASA = "Esta casa del barrio tiene truco 👀"
 
-def bookend(hook=False):
+def bookend(hook=False, texto=None):
     # Misma tarjeta EXACTA en apertura y cierre de todos los episodios (bucle imperceptible); solo
     # cambia el overlay de texto, que va únicamente en la apertura (hook=True).
     bg = {"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0} if COSAS_DE_CASA_VIDEO else {"type": "set", "set": "casa", "hour": 19, "night": False}
-    texts = [{"id": uid(), "text": HOOK_CASA, "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}] if hook else []
+    texts = [{"id": uid(), "text": texto or HOOK_CASA, "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}] if hook else []
     return {"id": uid(), "duration": 1.6, "transition": "none", "voice": None, "background": bg, "texts": texts}
 
 def creditos(elenco):
@@ -163,7 +170,11 @@ async def main():
         vistos = {}  # dict en vez de set para conservar el orden de aparición (créditos finales)
         for i, e in enumerate(ep["escenas"]):
             accion = e["a"].get(e["h"], "habla") if e.get("a") else "habla"
-            path = f"{OUT}/{n}_{i}.mp3"; words = await tts(e["v"], e["h"], path, accion, e.get("emo")); dur = (words[-1]["e"] if words else 1.0) + 0.05
+            path = f"{OUT}/{n}_{i}.mp3"; hecho = PREFAB.get(f"{n}_{i}")
+            if hecho:
+                words = hecho["words"]; dur = hecho["duration"]
+            else:
+                words = await tts(e["v"], e["h"], path, accion, e.get("emo")); dur = (words[-1]["e"] if words else 1.0) + 0.05
             voice = {"text": e["v"], "provider": "edge", "speaker": e["h"] or "narrador", "url": path, "duration": dur, "words": words, "offset": 0.05, "tail": 0.12}
             if e["e"] == "cierre":
                 cierre_cast = [{"who": "felipe", "x": 0.3, "expr": "cansado"}, {"who": "neo", "x": 0.72, "expr": "feliz"}]
@@ -194,7 +205,7 @@ async def main():
             scenes.append(sc)
         # v5.3 (22/11): los créditos van ANTES del plano de cierre; el ÚLTIMO plano del vídeo es la tarjeta
         # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
-        scenes.insert(0, bookend(hook=True))
+        scenes.insert(0, bookend(hook=True, texto=ep.get("gancho_casa")))   # gancho propio del episodio (retención v12); si no viene, el fijo
         scenes.append(creditos(list(vistos.keys())))
         scenes.append(bookend())
         spec = {"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.16, "duck": True, "duckLevel": 0.3}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},

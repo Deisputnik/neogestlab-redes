@@ -1,5 +1,5 @@
 {
- "_nota": "Episodio de prueba de las voces Gemini + Jambo con rasgos nuevos + retención v12 (orden del dueño 23/11 22:21).",
+ "_nota": "Pasada 2 del 522 (orden del dueño 23/11 22:27): Rosa con voz de biblioteca de España (la diseñada sonaba sudamericana) y Jambo con voz nueva, más lenta y arrastrando las eses.",
  "modelos": [
   "gemini-3.8-flash-lite-tts",
   "gemini-3.8-flash-tts"
@@ -85,7 +85,8 @@
      ],
      "a": {
       "jambo": "delega"
-     }
+     },
+     "voz_tts": "<yawn> Primaaa… yo sssolo cargo el móvil. Un ratitooo… ¿Qué te essstaba diciendo? Ah, sssí. Déjame un eurillooo."
     },
     {
      "e": "gag",
@@ -115,7 +116,8 @@
       "jambo": "desespera"
      },
      "giro": true,
-     "risas": true
+     "risas": true,
+     "voz_tts": "¡Quieto, primooo, joder! Esse cable no esss mío. Va al trassstero… ¡a la sssauna que tiene essscondida Rosa!"
     },
     {
      "e": "gag",
@@ -157,5 +159,28 @@
     }
    ]
   }
- ]
+ ],
+ "solo": [
+  "rosa",
+  "jambo"
+ ],
+ "voces": {
+  "rosa": [
+   "es-es-podcaster-5"
+  ]
+ },
+ "disenar": {
+  "jambo": {
+   "genero": "male",
+   "orden": 0,
+   "nombre": "Jambo-serie · jambo v2",
+   "descripcion": "A scrawny, worn-out man in his late 40s who sounds much older, from a rough working-class barrio. He speaks European Spanish from Madrid, Spain: peninsular Castilian accent with the Spanish 'th' sound for z and c, uses 'vosotros' and 'vale'. Never Latin American, never Portuguese. Very slow, sleepy, drawling street speech: he drags and lengthens his words, stretches and hisses every S sound, slurs his consonants and trails off as if half asleep. Hoarse, raspy, broken, nasal voice. A wheedling, shameless scrounger who suddenly wakes up when he wants something."
+  },
+  "rosa": {
+   "genero": "female",
+   "orden": 1,
+   "nombre": "Jambo-serie · rosa v2",
+   "descripcion": "A woman in her early 50s who runs a small business. She speaks European Spanish from Madrid, Spain: peninsular Castilian accent with the Spanish 'th' sound for z and c, uses 'vosotros' and 'vale'. Never Latin American, never Portuguese. Medium-low, slightly husky, commanding voice; bossy, theatrical and affected, sweet on the surface and sharp underneath. Confident, quick delivery."
+  }
+ }
 }

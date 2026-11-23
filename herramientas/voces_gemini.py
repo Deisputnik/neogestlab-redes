@@ -16,10 +16,14 @@ CFG = json.load(open(os.path.join(RAIZ, "equipo", "voz_gemini.json"), encoding="
 API = "https://generativelanguage.googleapis.com/v1beta"
 # carácter fijo de cada personaje al decir cualquier frase (se suma a la emoción de la escena)
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
-            "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling", "jambo": "hoarse, slurred, dragging his words",
+            "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
+            "jambo": "very slow drowsy drawl, hoarse, slurred, dragging and hissing every S sound, spaced-out",
             "cliente": "impatient"}
-RITMO = "brisk sitcom pace"
-LENTOS = {("jambo", "cansado"), ("jambo", "susurra"), ("conchaqueton", "cansado")}
+RITMO = "fast, lively sitcom pace"
+# Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
+# velocidad en el resto de voces». Jambo nunca se acelera; el resto se lleva a unas 3 palabras por segundo.
+LENTOS_QUIEN = {"jambo"}
+PAL_S_OBJETIVO, TEMPO_MAX = 3.0, 1.3
 
 
 def frases(texto):
@@ -32,8 +36,10 @@ def estilo(quien, emo, frase):
         base = "questioning, " + base
     elif frase.count("!") and emo in ("normal", "seco", "cansado", "susurra") and quien != "neo":
         base = "sudden loud burst, " + base
+    if quien in LENTOS_QUIEN:   # nunca «fast» para Jambo: se altera, pero sigue arrastrando
+        base = base.replace(", fast", ", agitated but still drawling").replace("hurried", "agitated")
     partes = [CARACTER.get(quien, ""), base]
-    if (quien, emo) not in LENTOS:
+    if quien not in LENTOS_QUIEN:
         partes.append(RITMO)
     return ", ".join(p for p in partes if p)
 
@@ -47,7 +53,27 @@ def generar(pedido, out):
     for ep in pedido["episodios"]:
         n = ep["slug"][:3]; plan = {"slug": ep["slug"], "personajes": {}}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h")):
-            voz = CFG["voces"].get(quien)
+            if pedido.get("solo") and quien not in pedido["solo"]:
+                continue
+            candidatas = list((pedido.get("voces") or {}).get(quien) or [])
+            d = (pedido.get("disenar") or {}).get(quien)
+            if d:   # voz nueva a partir de una descripción (no gasta la cuota de peticiones de voz)
+                cuerpo_v = {"store": True, "voice": {"model": "gemini-3.8-flash-tts", "type": "prompted", "display_name": d.get("nombre") or f"Jambo-serie · {quien} v2",
+                                                     "gender": d["genero"], "language_code": "es-ES", "prompted": {"input": d["descripcion"]}}}
+                req = urllib.request.Request(f"{API}/voices", data=json.dumps(cuerpo_v).encode(), method="POST", headers={"x-goog-api-key": clave, "Content-Type": "application/json"})
+                try:
+                    with urllib.request.urlopen(req, timeout=240) as r:
+                        rv = json.loads(r.read())
+                    m = rv.get("sample_audio") or rv.get("sampleAudio") or {}
+                    if m.get("data"):
+                        open(f"{out}/{n}_diseno_{quien}.wav", "wb").write(base64.b64decode(m["data"]))
+                    plan.setdefault("disenadas", {})[quien] = rv.get("id"); candidatas.insert(d.get("orden", 0), rv.get("id"))
+                except urllib.error.HTTPError as e:
+                    plan.setdefault("disenadas", {})[quien] = "ERROR " + e.read().decode("utf-8", "replace")[:300]
+                except Exception as e:
+                    plan.setdefault("disenadas", {})[quien] = f"ERROR {type(e).__name__}: {e}"[:300]
+            candidatas = [c for c in candidatas if c] + [CFG["voces"].get(quien)]
+            voz = candidatas[0]
             if not voz:
                 plan["personajes"][quien] = {"error": "sin voz diseñada"}; todo_bien = False; continue
             partes = []
@@ -58,7 +84,10 @@ def generar(pedido, out):
             cuerpo = {"contents": [{"role": "user", "parts": partes}],
                       "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": voz}}}}
             info = None
-            for modelo in modelos:
+            for voz, modelo in [(v_, m_) for v_ in dict.fromkeys(candidatas) for m_ in modelos]:
+                cuerpo["generationConfig"]["speechConfig"]["voiceConfig"]["voice"] = voz
+                if info and info.get("http") == 429 and info.get("modelo") == modelo:
+                    continue   # ese modelo ya no tiene cuota hoy: no la gastes con otra voz
                 for intento in range(2):
                     req = urllib.request.Request(f"{API}/models/{modelo}:generateContent", data=json.dumps(cuerpo).encode(), method="POST",
                                                  headers={"x-goog-api-key": clave, "Content-Type": "application/json"})
@@ -74,9 +103,9 @@ def generar(pedido, out):
                             raw = base64.b64decode(d); pcm += raw[44:] if raw[:4] == b"RIFF" else raw
                         wav = (b"RIFF" + struct.pack("<I", 36 + len(pcm)) + b"WAVEfmt " + struct.pack("<IHHIIHH", 16, 1, 1, 24000, 48000, 2, 16) + b"data" + struct.pack("<I", len(pcm)) + pcm)
                         open(f"{out}/{n}_{quien}.wav", "wb").write(wav)
-                        info = {"modelo": modelo, "archivo": f"{n}_{quien}.wav", "segundos": round(len(pcm) / 48000, 2), "frases": len(partes)}; break
+                        info = {"modelo": modelo, "voz": voz, "archivo": f"{n}_{quien}.wav", "segundos": round(len(pcm) / 48000, 2), "frases": len(partes)}; break
                     except urllib.error.HTTPError as e:
-                        msg = e.read().decode("utf-8", "replace")[:500]; info = {"modelo": modelo, "http": e.code, "error": msg}
+                        msg = e.read().decode("utf-8", "replace")[:500]; info = {"modelo": modelo, "voz": voz, "http": e.code, "error": msg}
                         if e.code in (500, 503) and intento == 0:
                             time.sleep(15); continue
                         break
@@ -137,8 +166,8 @@ def cortar(pedido, out, modelo_whisper="small"):
                 fin = min(cortes[k + 1], (a + activos[-1]) / 16000 + 0.12) if len(activos) else lim[k][1]
                 ini = min(ini, lim[k][0]); fin = max(fin, lim[k][1]); dur = fin - ini
                 pal = [(w, v) for (kk, w), v in zip(esp, t) if kk == k]
-                pps = len(pal) / max(dur, 0.1); lento = (quien, e.get("emo")) in LENTOS
-                tempo = 1.0 if pps >= 2.4 else min(1.12 if lento else 1.22, 2.6 / pps)
+                pps = len(pal) / max(dur, 0.1)
+                tempo = 1.0 if (quien in LENTOS_QUIEN or pps >= PAL_S_OBJETIVO) else min(TEMPO_MAX, PAL_S_OBJETIVO / pps)
                 mp3 = f"{out}/{n}_{i}.mp3"
                 subprocess.run([ff, "-v", "error", "-y", "-ss", f"{ini:.3f}", "-t", f"{dur:.3f}", "-i", wav, "-af",
                                 f"afade=t=in:d=0.02,atempo={tempo:.3f},loudnorm=I=-17:TP=-2:LRA=11", "-ac", "1", "-ar", "44100", "-b:a", "128k", mp3], check=True)
