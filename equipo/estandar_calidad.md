@@ -49,7 +49,7 @@ Régimen transitorio: las piezas con «cuando» hasta el 11/11 23:59 conservan s
 8. Suena a anuncio o a IA: muletillas («sumérgete», «descubre», «en este vídeo», «revoluciona», «increíble»), voz de locutor plana, más de 2 emojis en el post. Debe sonar a alguien de España explicándoselo a un amigo.
 9. Aprobación caducada: un calidad.json aprobado vale solo para el render revisado; si cambian guion o vídeo, se revisa de nuevo.
 10. **Logo antiguo NL neón visible = no se publica.** Comprueba todos los fotogramas, incluido el cierre.
-11. **Pie de marca obligatorio:** el cierre del vídeo lleva el isotipo nuevo «N» de circuitos del kit 2026; no se acepta el cuadrado «NL» ni un pie sin isotipo.
+11. **Pie de marca obligatorio:** el cierre del vídeo lleva el isotipo nuevo «N» de circuitos del kit 2026; no se acepta el cuadrado «NL» ni un pie sin isotipo. El logo oficial 2026 completo (recuadro oscuro con la «N» de circuitos, el rótulo «NEOGESTLAB» y el lema «Sistemas Digitales, Automatización e IA a Medida») cumple este punto tanto de insignia como de tarjeta de cierre; la tarjeta vigente lleva además «By Neogest Lab» y «Enlace en el perfil» (DIRECTIVA §5). Referencia: `equipo/perfil_kit/logo_neogest_lab_oficial.png` (aclarado el 23/11/2026 tras tres rechazos en falso: 518, 801 y 802).
 
 ## Puntuación (100 puntos; mínimo 75 para publicar)
 **Gancho, primeros 2 s (25)**
