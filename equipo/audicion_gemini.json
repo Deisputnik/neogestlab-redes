@@ -1,0 +1,49 @@
+{
+ "_nota": "Pasada 3 (23/11 noche): Felipe, Neo y Jambo con el modelo Lite (cuota diaria aparte: 10 peticiones por modelo y día en el plan gratuito).",
+ "sonda_cuota": 0,
+ "frases": {
+  "felipe": [
+   [
+    "Eso lo sé yo de buena tinta, Sindy.",
+    "smug know-it-all, relaxed but not slow"
+   ],
+   [
+    "Hacienda, a los del barrio, ni nos mira.",
+    "lecturing with total confidence, natural conversational pace"
+   ],
+   [
+    "Me lo dijo un primo que casi fue gestor.",
+    "proud, as if it settled the matter, brisk"
+   ]
+  ],
+  "neo": [
+   [
+    "Tranquilos. Ya está hecho:",
+    "calm, warm, natural pace"
+   ],
+   [
+    "la factura está enviada, registrada y cobrada.",
+    "clear, efficient, slightly pleased"
+   ],
+   [
+    "No ha hecho falta gritar.",
+    "gentle irony, a hint of a smile"
+   ]
+  ],
+  "jambo": [
+   [
+    "<cough> Rosa, prima… déjame veinte euros, que mañana te los devuelvo…",
+    "hoarse, slurred, wheedling, dragging the last words"
+   ],
+   [
+    "¿Qué te estaba diciendo?",
+    "confused, lost his thread, slow"
+   ],
+   [
+    "¡Ah, sí! ¡Que me los des ya, joder, que tengo prisa!",
+    "sudden agitated burst, loud, impatient, fast"
+   ]
+  ]
+ },
+ "modelo": "gemini-3.8-flash-lite-tts"
+}
