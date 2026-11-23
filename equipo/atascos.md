@@ -1,10 +1,9 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-23 15:13 UTC · 2 piezas paradas.
+Actualizado: 2026-11-23 16:17 UTC · 1 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 2
+Por rol: Calidad 1
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 520_jambo_iva_del_iva | 2026-11-24T08:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| sale en < 24 h | 521_jambo_fichar_en_casa | 2026-11-24T11:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 521_jambo_fichar_en_casa | 2026-11-24T11:30:00+01:00 | sin_nota | Calidad | renderizada hace 1.1 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |

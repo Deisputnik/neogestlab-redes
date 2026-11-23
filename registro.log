@@ -1,15 +1,3 @@
-2026-11-21 02:24  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 02:54  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:09  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:09  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:09  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:24  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 03:24  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 03:24  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 03:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 03:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +586,15 @@
 2026-11-23 16:13  521_jambo_fichar_en_casa: control de audio del vídeo externo: aprobado=False LUFS=-14.1 pico=-1.0
 2026-11-23 16:13  521_jambo_fichar_en_casa: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-23 16:13  Estadísticas actualizadas (30 posts, 1599 seguidores)
+2026-11-23 17:10  517_jambo_concha_cobro: publicando…
+2026-11-23 17:11  subida directa fallida ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta en esta misma pasada
+2026-11-23 17:12  reel de prueba: fallo al subir/procesar ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se publica como reel normal
+2026-11-23 17:13  subida directa fallida otra vez (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); reintento 2/2
+2026-11-23 17:14  subida directa fallida (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta con video_url desde la release
+2026-11-23 17:14  517_jambo_concha_cobro: fallo al publicar 1/3: el vídeo no es descargable desde la release (404); ¿el repositorio es privado?
+2026-11-23 17:14  517_jambo_concha_cobro: publicando…
+2026-11-23 17:14  subida directa fallida ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta en esta misma pasada
+2026-11-23 17:15  reel de prueba: fallo al subir/procesar ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se publica como reel normal
+2026-11-23 17:16  subida directa fallida otra vez (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); reintento 2/2
+2026-11-23 17:17  subida directa fallida (:{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta con video_url desde la release
+2026-11-23 17:17  517_jambo_concha_cobro: fallo al publicar 2/3: el vídeo no es descargable desde la release (404); ¿el repositorio es privado?
