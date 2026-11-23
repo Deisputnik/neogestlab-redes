@@ -372,3 +372,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-23 10:08 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 - 2026-11-23 Autocritica Guionista-Calidad: 4 borrador(es) revisado(s), 4 movido(s) a revisar por riesgo de rechazo.
+
+2026-11-23 10:25 UTC · Centro · pasada de medición (sin tocar código ni vídeos): 801 y 802 ya aprobadas por Calidad (10:06), nada que rehacer; /solicitar desde el 22/11: 3 SolicitudInfo (mismo contacto, orígenes bio/instagram, ya contactadas) y ≥10 Clic externos (Facebook/Instagram/Google) → llegan, no hace falta subir el listón; sin notas nuevas del dueño en VideoMezcla; 0 caracteres ElevenLabs gastados · necesita: nada
