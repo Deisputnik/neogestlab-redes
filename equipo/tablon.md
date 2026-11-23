@@ -358,3 +358,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-23 06:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-23 07:11 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-23 07:35 UTC · Cazador · 8.ª pasada: 3 búsquedas Buzzfy (3/10), 8 reels analizados, fórmulas 24-26 (2 episodios de El Jambo + 1 promo Gestión Integral 7D) y «Qué funcionó» en virales_semana.md; pasadas viejas a virales_archivo.md · Estratega: ver candidatas y decidir si se mide un corte de 15 s (reenvío 2,5-6 % en ≤19 s frente a 0,1-0,3 % en 60-90 s)
+
+2026-11-23 08:05 UTC · Remasterizador · sin candidatos: reels de las últimas 24-72 h con 127-169 vistas (mediana 137; umbral 3× = 411) y sin aviso del Analista · nada
