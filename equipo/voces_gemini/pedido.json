@@ -1,21 +1,21 @@
 {
- "_nota": "Pedido del 522 (23/11/2026), ya generado y publicado en cola/522_jambo_factura_luz. Para otro episodio: cambiar «episodios» y subir a una rama claude/voces-<n> (o lanzar el workflow a mano); después «voces_gemini.py cortar» y gen_episodios.py con VOCES_PREFAB. Campos opcionales: solo (personajes), voces ({personaje: [voz]}), disenar ({personaje: {genero, descripcion}}), y por escena voz_tts (texto para la voz distinto del subtítulo) y quitar ([[a,b]] palabras a eliminar del audio).",
+ "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
  "modelos": [
-  "gemini-3.8-flash-lite-tts",
-  "gemini-3.8-flash-tts"
+  "gemini-3.8-flash-tts",
+  "gemini-3.8-flash-lite-tts"
  ],
  "episodios": [
   {
    "slug": "522_jambo_factura_luz",
    "set": "salon",
    "hora": 19,
-   "moraleja": "Antes de culpar a otro, mira tu contador",
+   "moraleja": "Lo que alquilas en negro te sale caro",
    "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
    "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
    "gancho_tipo": "pregunta_abierta",
    "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
    "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que Jambo robaba la luz y el cable es de Rosa",
+   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
    "escenas": [
     {
      "e": "gancho",
@@ -49,8 +49,8 @@
      "e": "gag",
      "h": "sindy",
      "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que sale por la ventana, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que sale por la ventana, qué?",
+     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
+     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
      "p": [
       "sindy",
       "felipe"
@@ -63,8 +63,8 @@
      "e": "gag",
      "h": "rosa",
      "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me roba la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me roba la luz lo denuncio hoy mismo!",
+     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
+     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
      "p": [
       "rosa",
       "sindy"
@@ -77,8 +77,8 @@
      "e": "gag",
      "h": "jambo",
      "emo": "susurra",
-     "v": "Prima… yo solo cargo el móvil. Un ratito… ¿Qué te estaba diciendo? Ah, sí. Déjame un eurillo.",
-     "t": "Prima… yo solo cargo el móvil. Un ratito… ¿Qué te estaba diciendo? Ah, sí. Déjame un eurillo.",
+     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
+     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
      "p": [
       "jambo",
       "rosa"
@@ -86,65 +86,59 @@
      "a": {
       "jambo": "delega"
      },
-     "voz_tts": "<yawn> Primaaa… yo sssolo cargo el móvil. Un ratitooo… ¿Qué te essstaba diciendo? Ah, sssí. Déjame un eurillooo."
+     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
     },
     {
      "e": "gag",
      "h": "felipe",
-     "emo": "enfado",
-     "v": "¡Ya está, coño! ¡Ha sido el Jambo! Ese cable llega hasta su puerta, lo sé yo.",
-     "t": "¡Ya está, coño! ¡Ha sido el Jambo! Ese cable llega hasta su puerta, lo sé yo.",
+     "emo": "grita",
+     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
      "p": [
       "felipe",
-      "jambo"
+      "rosa"
      ],
      "a": {
       "felipe": "desespera"
      },
-     "quitar": [
-      [
-       3,
-       6
-      ]
-     ]
+     "giro": true
     },
     {
      "e": "gag",
      "h": "jambo",
-     "emo": "grita",
-     "v": "¡Quieto, primo, joder! Ese cable no es mío. Va al trastero… ¡a la sauna que tiene escondida Rosa!",
-     "t": "¡Quieto, primo, joder! Ese cable no es mío. Va al trastero… ¡a la sauna que tiene escondida Rosa!",
+     "emo": "cansado",
+     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
      "p": [
       "jambo",
-      "rosa"
+      "felipe"
      ],
      "a": {
-      "jambo": "desespera"
+      "jambo": "delega"
      },
-     "giro": true,
      "risas": true,
-     "voz_tts": "¡Quieto, primooo, joder! Esse cable no esss mío. Va al trassstero… ¡a la sssauna que tiene essscondida Rosa!"
+     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
     },
     {
      "e": "gag",
      "h": "sindy",
-     "emo": "sorpresa",
-     "v": "¿Una sauna? ¡Y a nosotros nos apagas la estufa, tía rata! Que lo resuelva el Neo.",
-     "t": "¿Una sauna? ¡Y a nosotros nos apagas la estufa, tía rata! Que lo resuelva el Neo.",
+     "emo": "ironia",
+     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
      "p": [
       "sindy",
-      "rosa"
+      "jambo"
      ],
      "a": {
-      "sindy": "desespera"
+      "sindy": "habla"
      }
     },
     {
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de su sauna, Rosa: ocho horas al día. El móvil de Jambo gastó doce céntimos.",
-     "t": "Resuelto. Los novecientos euros de luz son de su sauna, Rosa: ocho horas al día. El móvil de Jambo gastó doce céntimos.",
+     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
      "p": [
       "neo",
       "rosa"
@@ -152,20 +146,14 @@
      "a": {
       "neo": "presume"
      },
-     "sello": "PILLADA",
-     "quitar": [
-      [
-       15,
-       21
-      ]
-     ]
+     "sello": "PILLADOS"
     },
     {
      "e": "cierre",
      "h": "neo",
      "emo": "normal",
-     "v": "Antes de culpar a otro, mira tu contador.",
-     "t": "Antes de culpar a otro, mira tu contador",
+     "v": "Lo que alquilas en negro te sale caro.",
+     "t": "Lo que alquilas en negro te sale caro",
      "p": null,
      "a": null
     }

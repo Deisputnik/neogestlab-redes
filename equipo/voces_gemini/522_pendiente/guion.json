@@ -1,0 +1,78 @@
+{
+ "_nota": "Spec generado con gen_episodios (voces diseñadas, herramientas/voces_gemini.py) en Neogest Studio. Directiva nueva del 23/11: voces por personaje, Jambo con rasgos de toxicómano de barrio, retención v12, música alta y promo de 3 s.",
+ "motor": "neogest-studio",
+ "episodio": "522_jambo_factura_luz",
+ "set": "salon",
+ "moraleja": "Lo que alquilas en negro te sale caro",
+ "gancho_tipo": "pregunta_abierta",
+ "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
+ "promesa": "¿Quién ha gastado novecientos euros de luz?",
+ "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+ "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
+ "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Novecientos euros de luz! ¿Quién ha sido?"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "rie",
+   "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!"
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "susurra",
+   "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+   "risas": true
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "ironia",
+   "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo."
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+   "sello": "PILLADOS"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Lo que alquilas en negro te sale caro."
+  }
+ ]
+}

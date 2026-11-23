@@ -1,6 +1,6 @@
 {
  "_nota": "Voces de El Jambo que sabe diseñadas con Gemini TTS (23/11/2026, orden del dueño: «que sean todas las voces naturales, diferentes y expresivas, busca soluciones gratis»). Voces sintéticas creadas a partir de una descripción escrita: no son la voz de nadie ni un clon. EN AUDICIÓN: no están en producción hasta que el dueño las apruebe de oído; hasta entonces manda edge-tts v6 (gen_episodios.py). Rehacer una: workflow «Audición de voces Gemini (El Jambo)» con redisenar=<personaje> (cambia la descripción en herramientas/audicion_gemini.py).",
- "estado": "piloto: episodio 522 (23/11) hecho con estas voces; pendiente del visto bueno del dueño",
+ "estado": "EN PRODUCCIÓN desde el 23/11/2026 (orden del dueño 22:57: «terminamos con esta nueva directiva a partir de hoy»). Respaldo si falla o no queda cuota: edge-tts v6.",
  "clave": "secreto de Actions GEMINI_API_KEY (la del Guionista, plan gratuito)",
  "modelos": [
   "gemini-3.8-flash-tts",
@@ -13,7 +13,7 @@
   "sindy": "voice_mtya9dgnf5nm",
   "neo": "voice_0c92tuvk9d7n",
   "conchaqueton": "voice_g8r7hbsck4cp",
-  "jambo": "voice_547fk3wuo8fy"
+  "jambo": "voice_rfaaj38z5daa"
  },
  "medidas_audicion": {
   "rosa": "200 Hz, 6,6 st",
@@ -39,20 +39,22 @@
   "seco": "flat, short, matter-of-fact",
   "pregunta": "puzzled, questioning"
  },
- "pendiente": "automatizar en el Creador: pedido → workflow «Voces Gemini de un episodio» → voces_gemini.py cortar → gen_episodios.py con VOCES_PREFAB.",
+ "pendiente": "pronunciación de «Jambo» (sale «Yambo»): probar respellings en voz_tts; hasta entonces nadie dice el nombre en voz.",
  "voces_anteriores": {
   "rosa": "voice_99rp3vq423k6",
   "jambo": "voice_8m527iisp3d8",
-  "_nota": "23/11 22:27, el dueño tras oír la audición: «Rosa suena a sudamericano; el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui; un poco de velocidad en el resto»."
+  "_nota": "23/11 22:27, el dueño tras oír la audición: «Rosa suena a sudamericano; el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui; un poco de velocidad en el resto».",
+  "jambo_v2": "voice_547fk3wuo8fy"
  },
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
- "_nota_jambo": "v2: muy lento, arrastrando y siseando las eses. Sale a ~0,9 palabras por segundo; voces_gemini.py lo sube a ~2 (el resto va a 3) para que el episodio no pase de 70 s.",
- "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2; pausas internas máx. 0,35 s (Jambo 0,55).",
+ "_nota_jambo": "B2: deje de barrio del sur, eses aspiradas, lento, arrastrado, como colocado y con sueño (su estado normal; el guion nunca lo dice). voces_gemini.py lo lleva a 1,6 palabras/s.",
+ "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 1,6; pausas internas máx. 0,35 s (Jambo 0,55).",
  "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «primo», «este», «el vecino».",
  "candidatas_jambo": {
-  "_nota": "23/11 22:42, el dueño: «el Jambo no suena a toxicómano». Tres voces diseñadas, muestras enviadas al dueño; pendiente de que elija. Por defecto se probará la B.",
+  "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada.",
   "a_barrio_madrid": "voice_0l5tiwh9fm7h",
   "b_barrio_sur": "voice_xnnl9tocgb79",
   "c_nasal": "voice_j0owswua6qxb"
- }
+ },
+ "gps_andaluz": "23/11 22:59, el dueño: la voz de Jambo (B2, voice_rfaaj38z5daa) se podrá usar más adelante en GPS Andaluz. Sin fecha; no hacer nada hasta que lo pida."
 }
