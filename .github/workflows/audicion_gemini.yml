@@ -15,7 +15,7 @@ on:
         required: false
   push:
     branches: ["claude/audicion-gemini"]
-    paths: ["herramientas/audicion_gemini.py", ".github/workflows/audicion_gemini.yml", "equipo/audicion_gemini_pasada.txt"]
+    paths: ["herramientas/audicion_gemini.py", ".github/workflows/audicion_gemini.yml", "equipo/audicion_gemini.json"]
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ permissions:
 jobs:
   audicion:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - name: Diseñar voces y decir las frases

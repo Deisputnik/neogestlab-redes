@@ -1,0 +1,86 @@
+{
+ "_nota": "Pasada 2 (23/11 noche): frases por partes (una intención por frase, ritmo de sitcom) y sonda de cuota diaria.",
+ "sonda_cuota": 70,
+ "frases": {
+  "rosa": [
+   [
+    "Felipe, cariño, hoy te quedas hasta las diez.",
+    "sugary, fake-sweet and bossy, brisk pace"
+   ],
+   [
+    "¡Y sin rechistar, coño, que para eso te pago!",
+    "sudden angry shout, fast"
+   ],
+   [
+    "Bueno… te pagaré.",
+    "muttering, evasive, under her breath"
+   ]
+  ],
+  "felipe": [
+   [
+    "Eso lo sé yo de buena tinta, Sindy.",
+    "smug know-it-all, relaxed but not slow"
+   ],
+   [
+    "Hacienda, a los del barrio, ni nos mira.",
+    "lecturing with total confidence, natural conversational pace"
+   ],
+   [
+    "Me lo dijo un primo que casi fue gestor.",
+    "proud, as if it settled the matter, brisk"
+   ]
+  ],
+  "sindy": [
+   [
+    "¡Anda ya, Rosa! <laugh>",
+    "mocking, laughing, fast"
+   ],
+   [
+    "Tres dientes me quedan y los tres te dicen lo mismo:",
+    "cheeky, fast, streetwise"
+   ],
+   [
+    "¡que me pagues marzo, hostia!",
+    "loud, fed up, shouting"
+   ]
+  ],
+  "neo": [
+   [
+    "Tranquilos. Ya está hecho:",
+    "calm, warm, natural pace"
+   ],
+   [
+    "la factura está enviada, registrada y cobrada.",
+    "clear, efficient, slightly pleased"
+   ],
+   [
+    "No ha hecho falta gritar.",
+    "gentle irony, a hint of a smile"
+   ]
+  ],
+  "conchaqueton": [
+   [
+    "Ay, hija, qué frío hace aquí… <sigh>",
+    "whiny, shivering with cold, natural conversational pace"
+   ],
+   [
+    "Lo de la factura, eso lo arreglamos la semana que viene, ¿eh?",
+    "wheedling, sly, quick"
+   ]
+  ],
+  "jambo": [
+   [
+    "<cough> Rosa, prima… déjame veinte euros, que mañana te los devuelvo…",
+    "hoarse, slurred, wheedling, dragging the last words"
+   ],
+   [
+    "¿Qué te estaba diciendo?",
+    "confused, lost his thread, slow"
+   ],
+   [
+    "¡Ah, sí! ¡Que me los des ya, joder, que tengo prisa!",
+    "sudden agitated burst, loud, impatient, fast"
+   ]
+  ]
+ }
+}

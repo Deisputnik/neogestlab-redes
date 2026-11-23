@@ -97,7 +97,7 @@ def g(d, *claves):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    res = {"fecha": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()), "modelos_tts": [], "biblioteca": {}, "voces": {}, "frases": {}}
+    res = {"fecha": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()), "modelos_tts": [], "biblioteca": {}, "voces": {}, "frases": {}, "sonda_cuota": None}
     if not KEY:
         res["error"] = "falta GEMINI_API_KEY"; json.dump(res, open(f"{OUT}/resultado.json", "w"), ensure_ascii=False, indent=1); return 1
 
@@ -130,47 +130,69 @@ def main():
             res["voces"][p] = {"id": mias[p], "reutilizada": True}; continue
         if p in mias:
             llamar("DELETE", f"/voices/{mias[p]}")
-        info = None
-        for modelo in MODELOS:
-            st, r = llamar("POST", "/voices", {"store": True, "voice": {"model": modelo, "type": "prompted", "display_name": PREFIJO + p,
-                                                                       "gender": genero, "language_code": "es-ES", "prompted": {"input": desc}}})
+        info = None; intentos = []
+        for modelo in ("gemini-3.8-flash-tts", None):
+            voz = {"type": "prompted", "display_name": PREFIJO + p, "gender": genero, "language_code": "es-ES", "prompted": {"input": desc}}
+            if modelo:
+                voz["model"] = modelo
+            st, r = llamar("POST", "/voices", {"store": True, "voice": voz})
             if st == 200 and r.get("id"):
-                info = {"id": r["id"], "modelo_diseno": modelo}
+                info = {"id": r["id"], "modelo_diseno": modelo or g(r, "model") or "por defecto", "intentos_fallidos": intentos}
                 m = g(r, "sample_audio", "sampleAudio") or {}
                 if m.get("data"):
                     info["muestra"] = f"diseno_{p}.wav"; info["muestra_s"] = guardar_audio(m["data"], f"{OUT}/diseno_{p}.wav")
                 break
-            info = {"http": st, "modelo_diseno": modelo, **error_de(r)}
+            intentos.append({"http": st, "modelo_diseno": modelo, **error_de(r)})
+            info = {"sin_voz": True, "intentos_fallidos": intentos}
+            time.sleep(5)
         res["voces"][p] = info
         time.sleep(2)
 
-    agotado = set()
-    for p in SOLO:
+    def decir(vid, partes, archivo, modelo="gemini-3.8-flash-tts"):
+        cuerpo = {"contents": [{"role": "user", "parts": [{"text": t, "speech_metadata": {"style": e}} if e else {"text": t} for t, e in partes]}],
+                  "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": vid}}}}
+        st, r = llamar("POST", f"/models/{modelo}:generateContent", cuerpo)
+        if st == 200:
+            ps = (((r.get("candidates") or [{}])[0].get("content") or {}).get("parts") or [])
+            datos = [g(x, "inlineData", "inline_data") for x in ps]; datos = [d for d in datos if d and d.get("data")]
+            if datos:
+                seg = guardar_audio(datos[0]["data"], f"{OUT}/{archivo}") if len(datos) == 1 else None
+                if seg is None:  # varias partes de audio: se guardan por separado
+                    seg = [guardar_audio(d["data"], f"{OUT}/{archivo[:-4]}_{i}.wav") for i, d in enumerate(datos)]
+                return {"modelo": modelo, "archivo": archivo, "segundos": seg, "partes_audio": len(datos), "tokens_audio": (g(r, "usageMetadata") or {}).get("candidatesTokenCount")}
+            return {"modelo": modelo, "http": 200, "mensaje": "respuesta sin audio: " + json.dumps(r)[:400]}
+        e = r.get("error", {}) if isinstance(r, dict) else {}
+        return {"modelo": modelo, "http": st, **error_de(r), "detalles": json.dumps(e.get("details"), ensure_ascii=False)[:900] if e.get("details") else None}
+
+    cfg = {}
+    try:
+        cfg = json.load(open(os.path.join(os.path.dirname(__file__), "..", "equipo", "audicion_gemini.json"), encoding="utf-8"))
+    except Exception:
+        pass
+    for p, partes in (cfg.get("frases") or {}).items():
         vid = (res["voces"].get(p) or {}).get("id")
-        _, _, estilo, frase = PERSONAJES[p]
         if not vid:
             res["frases"][p] = {"omitida": "sin voz diseñada"}; continue
-        info = None
-        for modelo in MODELOS:
-            if modelo in agotado:
-                continue
-            cuerpo = {"contents": [{"role": "user", "parts": [{"text": frase, "speech_metadata": {"style": estilo}}]}],
-                      "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": vid}}}}
-            st, r = llamar("POST", f"/models/{modelo}:generateContent", cuerpo)
-            if st == 200:
-                partes = (((r.get("candidates") or [{}])[0].get("content") or {}).get("parts") or [{}])
-                d = g(partes[0], "inlineData", "inline_data") or {}
-                if d.get("data"):
-                    info = {"modelo": modelo, "archivo": f"frase_{p}.wav", "segundos": guardar_audio(d["data"], f"{OUT}/frase_{p}.wav"),
-                            "uso": g(r, "usageMetadata", "usage_metadata")}
-                    break
-                info = {"modelo": modelo, "http": 200, "mensaje": "respuesta sin audio: " + json.dumps(r)[:400]}
-            else:
-                info = {"modelo": modelo, "http": st, **error_de(r)}
-                if st == 429:
-                    agotado.add(modelo)
-        res["frases"][p] = info or {"omitida": "cuota agotada en todos los modelos"}
+        res["frases"][p] = decir(vid, [tuple(x) for x in partes], f"frase_{p}.wav")
         time.sleep(7)
+
+    # sonda de cuota: peticiones mínimas hasta que Google diga el límite diario (el mensaje 429 lo trae)
+    n = int(cfg.get("sonda_cuota") or 0); vid = (res["voces"].get("neo") or {}).get("id"); sonda = {"ok": 0, "errores": []}
+    esperas = 0
+    for i in range(n):
+        if not vid:
+            break
+        r1 = decir(vid, [("Vale.", "")], "sonda.wav")
+        if r1.get("archivo"):
+            sonda["ok"] += 1; time.sleep(4); continue
+        sonda["errores"].append({"n": i, **{k: v for k, v in r1.items() if v}})
+        txt = (r1.get("mensaje") or "") + (r1.get("detalles") or "")
+        if r1.get("http") == 429 and ("PerMinute" in txt or "per minute" in txt.lower()) and "PerDay" not in txt and esperas < 6:
+            esperas += 1; time.sleep(62); continue
+        if r1.get("http") in (500, 503, 0) and esperas < 6:
+            esperas += 1; time.sleep(20); continue
+        break
+    res["sonda_cuota"] = sonda
 
     json.dump(res, open(f"{OUT}/resultado.json", "w"), ensure_ascii=False, indent=1)
     resumen = {k: v for k, v in res.items() if k != "biblioteca"}
