@@ -22,12 +22,13 @@ nada y termina bien: el canal queda en espera. --simular enseña qué enviaría,
 """
 import glob  # noqa: F401  (se usa dentro de candidatos(), importado vía redes_buffer)
 import json
+import urllib.parse
 import re
 import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from redes_buffer import RAIZ, candidatos, huecos_libres, leer, escribir, texto_canal, medio_publico  # noqa: E402
@@ -99,6 +100,39 @@ def ya_en_zernio(api_key):
     return claves
 
 
+def medio_zernio(api_key, nombre, post, res, canal):
+    """URL pública del vídeo para Zernio. 23/11/2026: antes se subía a la release «redes» de GitHub (medio_publico), pero el
+    repo es PRIVADO desde la migración y esa URL da 404 a quien no tenga sesión: ningún vídeo programado por este script podía
+    publicarse. Ahora el vídeo se baja de Instagram (el reel ya publicado y aprobado) y se sube al almacenamiento de Zernio
+    (POST /media/presign + PUT), que devuelve una URL pública. Si Instagram no da el fichero (música con licencia), se usa el
+    vídeo externo original de la pieza, que ya es público (media.base44.com)."""
+    fichero = "/tmp/%s_%s.mp4" % (canal, nombre)
+    try:
+        pub = leer(os.path.join(RAIZ, "equipo", "config_publico.json"), {})
+        url = "https://graph.facebook.com/%s/%s?%s" % (pub.get("version", "v27.0"), res["media_id"], urllib.parse.urlencode(
+            {"fields": "media_url", "access_token": os.environ["PAGE_TOKEN"]}))
+        with urllib.request.urlopen(url, timeout=60) as r:
+            media = json.load(r).get("media_url")
+        if not media:
+            raise RuntimeError("Instagram no da media_url")
+        urllib.request.urlretrieve(media, fichero)
+        if os.path.getsize(fichero) < 200_000:
+            raise RuntimeError("vídeo descargado demasiado pequeño")
+        pre = _pedir("POST", "/media/presign", api_key, {"filename": os.path.basename(fichero), "contentType": "video/mp4"})
+        with open(fichero, "rb") as f:
+            datos = f.read()
+        req = urllib.request.Request(pre["uploadUrl"], data=datos, method="PUT", headers={"Content-Type": "video/mp4"})
+        with urllib.request.urlopen(req, timeout=600):
+            pass
+        return pre["publicUrl"]
+    except Exception as e:
+        externo = post.get("video_externo") or post.get("_video_externo_usado")
+        if isinstance(externo, str) and externo.startswith("https://"):
+            print(f"{nombre}: sin copia de Instagram ({str(e)[:120]}); se usa el vídeo externo de la pieza")
+            return externo
+        raise
+
+
 def crear_post(api_key, account_id, texto, cuando_iso, url):
     cuerpo = {
         "content": texto,
@@ -163,9 +197,22 @@ def main():
                 else:
                     nuevas.append((nombre, post, res))
             lista = nuevas
-        for (nombre, post, res), cuando in zip(lista[:cupo], huecos_libres(cfg, estado, ahora)):
-            url = medio_publico(nombre, res["media_id"], canal, cfg)
-            pid = crear_post(api_key, account_id, texto_canal(nombre, post, cfg, canal), cuando, url)
+        if cfg.get("modo") == "espejo":
+            # 23/11/2026 (orden del dueño: «los mismos 5 vídeos en las 3 redes»): TikTok publica lo mismo que Instagram y el
+            # mismo día. Cada pasada (una por hora, desde reloj.yml) manda lo que Instagram ya ha publicado y TikTok aún no
+            # tiene: la primera pieza sale en 5 minutos y, si hay más de una pendiente, las siguientes cada 100 minutos.
+            cupo = min(cupo, int(cfg.get("max_por_pasada", 3)))
+            cuandos = ((ahora + timedelta(minutes=5 + 100 * i)).strftime("%Y-%m-%dT%H:%M:%S.000Z") for i in range(cupo))
+        else:
+            cuandos = huecos_libres(cfg, estado, ahora)
+        for (nombre, post, res), cuando in zip(lista[:cupo], cuandos):
+            try:
+                url = medio_zernio(api_key, nombre, post, res, canal)
+                pid = crear_post(api_key, account_id, texto_canal(nombre, post, cfg, canal), cuando, url)
+            except Exception as e:   # una pieza que falla no bloquea a las demás; se reintenta en la pasada siguiente
+                estado["ultimo_error"] = f"{ahora_iso} · {nombre}: {e}"[:500]
+                print(f"ERROR zernio/{canal} en {nombre}:", str(e)[:300])
+                continue
             estado["enviados"][nombre] = {"dueAt": cuando, "zernio_id": pid, "enviado": ahora_iso,
                                           "fichero": os.path.basename(url)}
             estado["ultimo_error"] = ""

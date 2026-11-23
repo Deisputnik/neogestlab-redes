@@ -6,13 +6,13 @@
     "12:45",
     "19:45"
   ],
-  "max_pendientes": 8,
+  "max_pendientes": 12,
   "render_desde": "2026-11-21",
   "orden_inicial": [],
   "incluir_antiguos": [],
   "excluir": [],
   "etiquetas": {
-    "jambo": "#humor #oficina #trabajo #autonomos #pymes",
+    "jambo": "#humor #humornegro #vecinos #barrio #serieeljambo",
     "app": "#autonomos #pymes #negocios #apps"
   },
   "cierres": {
@@ -21,11 +21,14 @@
   "servicio": "tiktok",
   "medio": "video",
   "mezcla": [
-    2,
+    1,
     1
   ],
   "enlace_en_texto": false,
   "max_caracteres": 2200,
   "recientes_primero": true,
-  "_nota_2026_11_23": "render_desde pasa al 21/11 (solo formato vigente: El Jambo de barrio v5.2 y promos nuevas; el Jambo de oficina y el reparto Jupillo/Trámites/Pelota/Bola están retirados, DIRECTIVA §5) y recientes_primero=true para que lo de hoy llegue a TikTok hoy."
+  "_nota_2026_11_23": "render_desde pasa al 21/11 (solo formato vigente: El Jambo de barrio v5.2 y promos nuevas; el Jambo de oficina y el reparto Jupillo/Trámites/Pelota/Bola están retirados, DIRECTIVA §5) y recientes_primero=true para que lo de hoy llegue a TikTok hoy.",
+  "modo": "espejo",
+  "max_por_pasada": 3,
+  "_nota_2026_11_23_espejo": "Orden del dueño 23/11 11:44: «los mismos 5 vídeos en las 3 redes». modo=espejo: TikTok publica lo mismo que Instagram el mismo día (cada hora se manda lo que Instagram ya ha publicado y TikTok no tiene). Los «huecos» de 12:45 y 19:45 ya no se usan en este modo."
 }

@@ -86,4 +86,9 @@ jobs:
           toca creador_api.yml 10:51 16:51
           toca supervisor_api.yml 12:27 18:27
           toca repescador_api.yml 08:33 10:33 11:33 13:33 15:33 17:33 19:33 20:33
-          toca redes_zernio.yml 12:51 19:51
+
+          # 23/11/2026 (orden del dueño: «los mismos 5 vídeos en las 3 redes»): TikTok en espejo de Instagram. Cada hora se
+          # manda a TikTok (Zernio) lo que Instagram ya ha publicado y TikTok aún no tiene; sale en 5 minutos.
+          if [ "$(hace redes_zernio.yml)" -ge 50 ]; then
+            gh workflow run redes_zernio.yml -R "$REPO" --ref main || echo "no se pudo lanzar zernio"
+          fi
