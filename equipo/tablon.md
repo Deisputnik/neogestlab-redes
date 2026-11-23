@@ -398,3 +398,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-23 18:08 UTC · Supervisor (API) · pasada de control: 521_jambo_fichar_en_casa rechazada (85) con bloqueo real de audio (frase de cierre duplicada) y sin re-render; sale el 24/11 11:30 y ya no hay pieza aprobada de reserva en ese hueco; atascos: urgencia 2, sin reemplazo en cola · Creador: regenerar el tramo final de voz de 521 y re-renderizar antes de las 11:30 (o cubrir el hueco con otra pieza aprobada) · necesita del dueño: nada
 
 2026-11-23 18:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-23 18:38 UTC · Comunidad · pasada Instagram (Buzzfy): sin comentarios sin responder ni DMs con intención nuevos (lo pendiente son cuentas del dueño o ventanas de 24 h cerradas); sin interesados nuevos; leads.json sin cambios · nada · nada del dueño
