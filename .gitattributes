@@ -1,0 +1,6 @@
+# 23/11/2026: archivos a los que todos los agentes y workflows AÑADEN líneas al final. Con «union», dos añadidos
+# simultáneos se quedan los dos en vez de dar conflicto (el Guionista perdió su pasada de las 10:08 por un conflicto
+# en el tablón y el paso «Guardar y subir» de varios workflows fallaba por lo mismo).
+equipo/tablon.md merge=union
+equipo/peticiones_mejora.md merge=union
+equipo/pendiente_usuario.md merge=union
