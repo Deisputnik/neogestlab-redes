@@ -60,3 +60,30 @@ jobs:
           if [ "$(hace calidad_api.yml)" -ge 50 ]; then
             gh workflow run calidad_api.yml -R "$REPO" --ref main -f origen=reloj || echo "no se pudo lanzar calidad"
           fi
+
+          # 23/11/2026 (orden del dueño: «no quiero fallos ni embudos en producción»): el cron propio de estos workflows
+          # llegaba 6-8 h tarde en esta cuenta (Guionista de las 09:15 a las 17:16, Creador API de las 10:51 a las 18:26,
+          # Supervisor de las 12:27 a las 19:37, TikTok/Zernio de las 19:51 a las 00:52), así que los guiones llegaban
+          # después de la pasada del Creador y TikTok salía de madrugada. Ahora los lanza el Reloj a SU hora (Madrid) y
+          # se les ha quitado el cron para que no corran dos veces. Cada hueco se lanza una sola vez: si ya pasó su hora
+          # y el workflow no ha corrido desde entonces. Si el Reloj llega tarde, se lanza en cuanto llegue (nunca se pierde).
+          toca() {  # $1 = workflow; resto = horas de Madrid HH:MM, de la primera a la última del día
+            wf="$1"; shift
+            ult=$(gh run list -R "$REPO" -w "$wf" -L 1 --json createdAt --jq '.[0].createdAt // empty' || true)
+            ult_s=0; if [ -n "$ult" ]; then ult_s=$(date -u -d "$ult" +%s); fi
+            ahora_s=$(date -u +%s)
+            debido=""
+            for h in "$@"; do
+              hueco_s=$(TZ=Europe/Madrid date -d "today $h" +%s)
+              if [ "$ahora_s" -ge "$hueco_s" ]; then debido="$hueco_s"; fi
+            done
+            if [ -n "$debido" ] && [ "$ult_s" -lt "$debido" ]; then
+              echo "$(TZ=Europe/Madrid date '+%F %H:%M') lanzo $wf"
+              gh workflow run "$wf" -R "$REPO" --ref main || echo "no se pudo lanzar $wf"
+            fi
+          }
+          toca guionista_gemini.yml 09:15 15:15
+          toca creador_api.yml 10:51 16:51
+          toca supervisor_api.yml 12:27 18:27
+          toca repescador_api.yml 08:33 10:33 11:33 13:33 15:33 17:33 19:33 20:33
+          toca redes_zernio.yml 12:51 19:51

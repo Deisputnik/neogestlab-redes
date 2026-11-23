@@ -14,19 +14,8 @@ name: Repescador · API directa (20/11/2026)
 
 on:
   workflow_dispatch:
-  schedule:
-    # Cada 2 h de 08:33 a 20:33 Madrid (UTC+1): barato (sin llamadas al modelo salvo que haya
-    # más de un caso), así que más frecuencia no cuesta casi nada y destraba piezas antes de
-    # que Calidad las reevalúe en vano (orden del dueño 20/11: "si hace falta más frecuencia
-    # para que todo mejore, se pone", siempre que sea vía API y no gaste el límite semanal).
-    - cron: "33 7 * * *"   # 08:33 Madrid
-    - cron: "33 9 * * *"   # 10:33 Madrid
-    - cron: "33 10 * * *"  # 11:33 Madrid, 8 min antes de Calidad
-    - cron: "33 12 * * *"  # 13:33 Madrid
-    - cron: "33 14 * * *"  # 15:33 Madrid
-    - cron: "33 16 * * *"  # 17:33 Madrid, 8 min antes de Calidad
-    - cron: "33 18 * * *"  # 19:33 Madrid
-    - cron: "33 19 * * *"  # 20:33 Madrid
+  # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
+  # (función «toca», horas de Madrid: 08:33, 10:33, 11:33, 13:33, 15:33, 17:33, 19:33 y 20:33). Para cambiar el horario, cambia la línea «toca repescador_api.yml» de reloj.yml.
 
 permissions:
   contents: write

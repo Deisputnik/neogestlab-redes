@@ -9,9 +9,8 @@ name: Guionista · El Jambo vía Gemini (API, 17/11/2026)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "15 8 * * *"  # 09:15 Madrid (UTC+1), 36 min antes del Creador
-    - cron: "15 14 * * *" # 15:15 Madrid (UTC+1), 36 min antes del Creador
+  # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
+  # (función «toca», horas de Madrid: 09:15 y 15:15). Para cambiar el horario, cambia la línea «toca guionista_gemini.yml» de reloj.yml.
 
 permissions:
   contents: write
