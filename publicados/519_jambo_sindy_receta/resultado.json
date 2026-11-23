@@ -1,0 +1,18 @@
+{
+  "media_id": "17878087146594118",
+  "enlace": "https://www.instagram.com/reel/DgE7Cm1Ff81/",
+  "prueba_no_seguidores": false,
+  "publicado": "2026-11-23T08:12:45+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "mF7dSYBQH4k",
+    "enlace": "https://youtube.com/shorts/mF7dSYBQH4k",
+    "titulo": "La aplicación de cocina que inventa recetas #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1655479565883597",
+    "enlace": "https://www.facebook.com/reel/1655479565883597",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
