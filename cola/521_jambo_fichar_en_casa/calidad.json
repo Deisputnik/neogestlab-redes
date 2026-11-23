@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 86,
+  "motivos": [
+    "Jambo Reseco no aparece en ninguna escena del guion (no tiene línea ni presencia activa), solo figura atenuado/difuminado en la tarjeta de créditos; la orden del dueño 22/11 exige a Jambo Reseco presente cuando toque como gorrón caradura, y en un episodio de salón con todo el reparto reunido (Rosa, Felipe, Sindy, Neo) su ausencia total es notoria.",
+    "El 'humor negro real' exigido por v11 no llega: el remate es ironía/sátira sobre vigilancia laboral sin fricción (frialdad ante algo grave), no un golpe de humor negro propiamente dicho.",
+    "El recuerdo de episodio anterior ('como lo de la reunión del martes') es demasiado vago/genérico; no identifica un episodio concreto de la serie, por lo que apenas cumple la función de recuerdo que pide el estándar."
+  ],
+  "como_arreglarlo": "Esto es guion, no render: lo puede arreglar el Creador sin tocar vídeo si se reescribe el episodio (quedaría 'renderizado\": false' y relanzar ciclo). Pide (1) dar a Jambo Reseco al menos una línea/gag como gorrón caradura dentro de las escenas, no solo en créditos; (2) sustituir el remate por un golpe de humor negro más frío/duro (p. ej. ligado a consecuencias reales de la vigilancia, no solo la ironía del dinero); (3) cambiar el recuerdo por una referencia reconocible a un episodio anterior ya publicado de la serie (con nombre o hecho concreto). Lo técnico (audio, bucle, marca, formato) ya está bien y no requiere cambios.",
+  "fecha": "2026-11-23T15:12:32Z",
+  "revisor": "Calidad (API)"
+}
