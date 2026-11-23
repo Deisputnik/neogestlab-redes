@@ -457,6 +457,26 @@ def _validar(ep):
     return motivos
 
 
+RONDAS_CORRECCION = 2
+
+
+def _prompt_correccion(malos):
+    """Devuelve a Gemini los guiones rechazados con sus motivos para que los arregle sin cambiar la idea."""
+    casos = [{"motivos_de_rechazo": motivos, "guion": ep} for ep, motivos in malos]
+    return (
+        "Eres el guionista de la serie de humor «El Jambo que sabe». El validador mecánico ha RECHAZADO estos guiones tuyos. "
+        "Devuelve SOLO un array JSON con esos mismos episodios corregidos: mismas claves, mismo formato, misma situación, "
+        "mismos personajes y mismo humor. Arregla exactamente los motivos indicados en cada uno y no rompas ninguna otra regla:\n"
+        f"- la primera escena es el gancho (\"e\": \"gancho\") y su texto tiene 8 palabras como máximo;\n"
+        f"- hay exactamente 3 escenas \"e\": \"gag\" y el texto \"t\" de cada una tiene {MAX_PALABRAS_GAG} palabras como máximo "
+        "(cuenta las palabras: un golpe hablado, corto, no un argumento; recorta la frase, no la partas en dos escenas);\n"
+        "- la moraleja tiene entre 6 y 9 palabras;\n"
+        "- el campo \"bucle_visual\" va relleno (qué elemento del gancho se repite en el cierre para que se vea en bucle);\n"
+        "- el remate lo dice \"neo\"; no cambies \"set\", \"slug\" ni los nombres de personaje (\"h\").\n\n"
+        "Guiones rechazados:\n" + json.dumps(casos, ensure_ascii=False, indent=1)
+    )
+
+
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else N_POR_DEFECTO
     os.makedirs(PENDIENTES, exist_ok=True)
@@ -474,23 +494,42 @@ def main():
     if not isinstance(guiones, list):
         guiones = [guiones]
 
+    # 23/11/2026 (orden del dueño: «no quiero fallos ni embudos en producción»): en 5 de las 6 últimas pasadas el
+    # validador tumbó los 4 guiones (gag de 15-21 palabras, falta bucle_visual, gancho de más de 8 palabras) y la
+    # pasada terminaba con 0 guardados: el Creador se quedaba sin guiones para los 5 episodios diarios. Ahora lo
+    # rechazado vuelve a Gemini con sus motivos para que lo corrija (hasta 2 rondas) antes de darlo por perdido.
     guardados, rechazados = [], []
-    for i, ep in enumerate(guiones):
-        if not isinstance(ep, dict):
-            rechazados.append((f"#{i}", ["no es un objeto JSON"]))
-            continue
-        motivos = _validar(ep)
-        if motivos:
-            rechazados.append((ep.get("slug", f"#{i}"), motivos))
-            continue
-        slug = re.sub(r"[^a-z0-9_]+", "_", str(ep["slug"]).lower()).strip("_") or f"ep{i}"
-        nombre = f"{hoy}_{slug}.json"
-        ruta = os.path.join(PENDIENTES, nombre)
-        ep["fuente"] = "gemini"
-        ep["generado"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        with open(ruta, "w", encoding="utf-8") as f:
-            json.dump(ep, f, ensure_ascii=False, indent=2)
-        guardados.append(nombre)
+    lote = guiones
+    for ronda in range(RONDAS_CORRECCION + 1):
+        malos = []
+        for i, ep in enumerate(lote):
+            if not isinstance(ep, dict):
+                rechazados.append((f"#{i}", ["no es un objeto JSON"]))
+                continue
+            motivos = _validar(ep)
+            if motivos:
+                malos.append((ep, motivos))
+                continue
+            slug = re.sub(r"[^a-z0-9_]+", "_", str(ep["slug"]).lower()).strip("_") or f"ep{i}"
+            nombre = f"{hoy}_{slug}.json"
+            ruta = os.path.join(PENDIENTES, nombre)
+            ep["fuente"] = "gemini"
+            ep["generado"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            if ronda:
+                ep["corregido_en_ronda"] = ronda
+            with open(ruta, "w", encoding="utf-8") as f:
+                json.dump(ep, f, ensure_ascii=False, indent=2)
+            guardados.append(nombre)
+        corregidos = None
+        if malos and ronda < RONDAS_CORRECCION:
+            print(f"Ronda de corrección {ronda + 1}: {len(malos)} guiones vuelven a Gemini con sus motivos")
+            corregidos = _llamar_gemini(_prompt_correccion(malos))
+            if isinstance(corregidos, dict):
+                corregidos = [corregidos]
+        if not isinstance(corregidos, list) or not corregidos:
+            rechazados += [(ep.get("slug", "?"), motivos) for ep, motivos in malos]
+            break
+        lote = corregidos
 
     resumen = f"{len(guardados)} guardados, {len(rechazados)} rechazados por el validador"
     if rechazados:
