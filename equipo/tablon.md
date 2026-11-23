@@ -381,3 +381,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-23 12:10 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-23 13:12 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-23 14:12 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
