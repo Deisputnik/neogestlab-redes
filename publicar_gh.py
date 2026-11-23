@@ -1554,9 +1554,18 @@ def url_directa_release(nombre):
         raise ErrorAPI(f"el vídeo no es descargable desde la release ({e.code}); ¿el repositorio es privado?")
 
 
-def crear_contenedor_url(cfg, params, video):
+def _externo_publico(post):
+    """URL pública del MISMO fichero que hay en la release (los vídeos de Neogest Studio se suben tal cual, byte a byte)."""
+    u = (post or {}).get("_video_externo_usado") or (post or {}).get("video_externo")
+    return u if isinstance(u, str) and u.startswith("https://") else None
+
+
+def crear_contenedor_url(cfg, params, video, post=None):
     p = {k: v for k, v in params.items() if k != "upload_type"}
-    p["video_url"] = url_directa_release(os.path.basename(video))
+    # 23/11/2026: con el repo privado la release da 404 y este plan B estaba muerto (517 agotó 2 de sus 3 intentos a las
+    # 17:10-17:17: 8 subidas directas fallidas y ninguna alternativa). Si la pieza viene de Neogest Studio, Instagram
+    # descarga el mismo fichero de su URL pública (media.base44.com); la release solo se usa si no hay esa URL.
+    p["video_url"] = _externo_publico(post) or url_directa_release(os.path.basename(video))
     try:
         r = api(cfg, f"{cfg['ig_user_id']}/media", "POST", **p)
         esperar_contenedor(cfg, r["id"])
@@ -1652,21 +1661,30 @@ def publicar_reel(cfg, video, post):
         # reel otra vez, después como reel normal, y solo al final video_url (por si el repo vuelve a ser público).
         log(f"subida directa fallida ({str(e)[-160:]}); se reintenta en esta misma pasada")
         cid = None
-        try:
-            cid = _subir_directo(cfg, params, video, intentos=1 if "trial_params" in params else 2)
-        except ErrorAPI as e1:
-            if "trial_params" in params:
-                log(f"reel de prueba: fallo al subir/procesar ({str(e1)[-160:]}); se publica como reel normal")
-                params.pop("trial_params")
-                prueba = None
-                try:
-                    cid = _subir_directo(cfg, params, video, intentos=2)
-                except ErrorAPI as e2:
-                    log(f"subida directa fallida ({str(e2)[-120:]}); se reintenta con video_url desde la release")
-            else:
-                log(f"subida directa fallida ({str(e1)[-120:]}); se reintenta con video_url desde la release")
+        if _externo_publico(post):
+            # Plan B fiable y rápido: Instagram baja el vídeo de su URL pública. Conserva el reel de prueba si lo era.
+            try:
+                cid = crear_contenedor_url(cfg, params, video, post)
+                metodo = "video_url"
+                log("publicado por video_url desde la URL pública del vídeo (la subida directa falló)")
+            except ErrorAPI as e0:
+                log(f"video_url desde la URL pública también falló ({str(e0)[-160:]}); se sigue con la subida directa")
         if cid is None:
-            cid = crear_contenedor_url(cfg, params, video)
+            try:
+                cid = _subir_directo(cfg, params, video, intentos=1 if "trial_params" in params else 2)
+            except ErrorAPI as e1:
+                if "trial_params" in params:
+                    log(f"reel de prueba: fallo al subir/procesar ({str(e1)[-160:]}); se publica como reel normal")
+                    params.pop("trial_params")
+                    prueba = None
+                    try:
+                        cid = _subir_directo(cfg, params, video, intentos=2)
+                    except ErrorAPI as e2:
+                        log(f"subida directa fallida ({str(e2)[-120:]}); se reintenta con video_url")
+                else:
+                    log(f"subida directa fallida ({str(e1)[-120:]}); se reintenta con video_url")
+        if cid is None:
+            cid = crear_contenedor_url(cfg, params, video, post)
             metodo = "video_url"
     mid = api(cfg, f"{cfg['ig_user_id']}/media_publish", "POST", creation_id=cid)["id"]
     enlace = ""
