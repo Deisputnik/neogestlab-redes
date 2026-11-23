@@ -1,0 +1,37 @@
+{
+  "slug": "jambo_cuidado_turnos_ia",
+  "set": "salon",
+  "hora": 19,
+  "moraleja": "Delegar turnos en bots genera siempre grandes conflictos",
+  "bucle_visual": "Concha Quetón tiritando con una manta",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "t": "Concha, la IA organizó tu turno hoy."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "t": "¡Hostia Rosa, la app dice que debo estar a bajo cero hasta medianoche!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "¡Illo, de buena tinta te digo que esa app no falla con horas!"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "t": "¡Pues estoy congelada y mi nariz es un cubito de hielo ahora mismo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, la IA asignó cuadrantes contradictorios al ignorar los descansos legales."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-23T10:07:49Z",
+  "corregido_en_ronda": 2
+}

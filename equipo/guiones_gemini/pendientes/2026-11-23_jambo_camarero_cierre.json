@@ -1,0 +1,37 @@
+{
+  "slug": "jambo_camarero_cierre",
+  "set": "salon",
+  "hora": 23,
+  "moraleja": "El trabajo gratuito reduce siempre el beneficio real",
+  "bucle_visual": "Rosa señalando el reloj de pared",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "t": "Sindy, limpia la barra, es medianoche."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "t": "¡Coño, el horario del bar cerró hace una hora y estoy agotada!"
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "t": "¡Manda huevos Sindy, ponme otro quinto gratis y lo recoges mañana tranquilamente!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "t": "¡Ni de coña me quedo limpiando barras gratis por tu cara bonita!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, el registro acumula ya noventa horas no pagadas esta semana."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-23T10:07:49Z",
+  "corregido_en_ronda": 2
+}

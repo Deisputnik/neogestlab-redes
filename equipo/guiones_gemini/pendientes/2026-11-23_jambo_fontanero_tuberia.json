@@ -1,0 +1,37 @@
+{
+  "slug": "jambo_fontanero_tuberia",
+  "set": "salon",
+  "hora": 22,
+  "moraleja": "Las guardias sin pago arruinan cualquier buen servicio",
+  "bucle_visual": "Felipe sosteniendo la llave inglesa goteando",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "t": "¡Felipe, la tubería del salón reventó!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "¡Illo, se arregla apretando la rosca con fuerza, no te preocupes tanto!"
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "t": "¡Manda huevos, si hay piscina gratis me traigo la toalla ahora mismo!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "¡La rosca ha saltado por completo, el agua inunda todo el salón!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, el seguro no cubre inundaciones por negligencia sin pago extra."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-23T10:07:49Z",
+  "corregido_en_ronda": 2
+}

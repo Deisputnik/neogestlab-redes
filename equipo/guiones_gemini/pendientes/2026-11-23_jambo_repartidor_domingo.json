@@ -1,0 +1,37 @@
+{
+  "slug": "jambo_repartidor_domingo",
+  "set": "salon",
+  "hora": 15,
+  "moraleja": "Exigir entregas en domingo es pura explotación laboral",
+  "bucle_visual": "Sindy sujetando una caja de cartón gigante",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "t": "Sindy, entrega este paquete antes de comer."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "t": "¡Coño Rosa, son las tres de un domingo y mi contrato expiró!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "t": "¡Illo, si no firmas tú la entrega nos multan a todos ahora!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "t": "¡Mi contrato no incluye trabajar mientras me como mi bocadillo de calamares!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "t": "Rosa, la normativa prohíbe entregas obligatorias fuera del horario registrado."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-23T10:07:49Z",
+  "corregido_en_ronda": 2
+}
