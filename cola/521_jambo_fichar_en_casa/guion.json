@@ -1,0 +1,60 @@
+{
+ "_nota": "Spec generado con gen_episodios v5.4 (v5.3 + gancho propio por episodio) en Neogest Studio; experimento A/B de gancho de plan.json.",
+ "motor": "neogest-studio",
+ "episodio": "521_jambo_fichar_en_casa",
+ "set": "salon",
+ "moraleja": "Vigilar a quien no cobra solo sale caro.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "v": "Desde hoy se ficha con la huella para entrar y salir de mi puto salón."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "v": "Y es obligatorio, joder, lo sé de buena tinta: fichar en casa lo pide la ley desde dos mil veinte, me lo dijo un primo inspector."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "v": "¡Qué cuñado de los cojones! Si ficho para ir a mear, ¿esas horas me las pagas o qué, Rosa?"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "v": "Ni de coña, hostia. Fichas para que yo vea lo vaga que eres, que para eso mando yo."
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "v": "Yo ficho lo que haga falta, joder, pero cobro como los demás. Y ponme una cerveza, que invita la casa."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "v": "¡Será cara dura, hostia! Que lo resuelva el Neo, que me va a estallar la cabeza."
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "v": "Registrar la jornada es cosa de la empresa con sus empleados, señora Melano. Aquí nadie cobra, y vigilar gratis sale carísimo.",
+   "sello": "NADIE COBRA"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "v": "O sea que llevo toda la tarde vigilando a gente que no me cuesta ni un euro. ¡Manda huevos!"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "v": "Yo ya lo sabía, joder, como lo de la reunión del martes."
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "v": "Vigilar a quien no cobra solo sale caro."
+  }
+ ]
+}

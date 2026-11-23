@@ -1,0 +1,42 @@
+{
+  "tipo": "reel",
+  "texto": "Rosa obliga a fichar con huella para entrar en su salón. Felipe jura que lo pide la ley con un dato inventado. Rosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: vigilar a quien no cobra solo sale caro.\n¿A quién vigilas sin que te cueste nada? Cuéntalo en los comentarios.\nMándaselo a tu cuñado, el que lo sabe todo.\n#humornegro #cuñados #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-24T11:30:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "formula": "El Jambo que sabe v5.2 (reparto Rosa/Felipe/Sindy/Jambo/Neo/Concha, casa-salón, Neogest Studio; registro vulgar, Felipe cuñado enterado, Jambo gorrón)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales verificables (el dato del cuñado es falso a propósito y Neo lo desmiente); no requiere fuente.",
+  "_nota_creador": "23/11/2026 Creador (pasada 15:51): episodio nuevo en Neogest Studio v5.4. Experimento A/B de gancho (plan.json): brazo A (gancho fijo).",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Tienes un cuñado que lo sabe todo? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: Jambo contra la factura de la luz",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "youtube": {
+    "titulo": "Fichar para entrar al salón: el cuñado lo defiende #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa ficha hasta a las visitas y Neo la deja en evidencia. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "cuñados",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "renderizado": false,
+  "asset": "521_jambo_fichar_en_casa.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/e15e3f50e1ace3097fa2ce58ece36261_521_jambo_fichar_en_casa_v1.mp4"
+}

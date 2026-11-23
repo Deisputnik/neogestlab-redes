@@ -1,0 +1,61 @@
+{
+ "_nota": "Spec generado con gen_episodios v5.4 (v5.3 + gancho propio por episodio) en Neogest Studio; experimento A/B de gancho de plan.json.",
+ "motor": "neogest-studio",
+ "episodio": "520_jambo_iva_del_iva",
+ "set": "salon",
+ "moraleja": "Un impuesto sobre otro impuesto es un atraco.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "v": "Esta factura lleva el IVA y encima el IVA del IVA, joder. Así cobro doble."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "v": "Eso es legal, coño, lo sé de buena tinta: el impuesto de un impuesto existe desde dos mil dieciocho, me lo dijo un primo gestor."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "v": "¡Qué hijo de puta eres, Felipe! Si pagamos impuestos por pagar impuestos, acabamos debiendo hasta por mirar la factura."
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "v": "Pues claro que sí, hostia. Mi cliente paga y yo me forro, que para eso soy la jefa."
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "v": "Yo no pago ningún impuesto, joder, que soy invitado. Pero ponme un trozo de tarta de la nevera, que invita la casa."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "v": "¡Joder, el Jambo otra vez de gorra! Que lo resuelva el Neo, que me va a dar algo, hostia."
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "v": "El impuesto se calcula sobre el precio, señora Melano, nunca sobre el propio impuesto. Esa factura es un error con membrete.",
+   "sello": "UNA SOLA VEZ"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "v": "O sea que llevo semanas inflando facturas, coño, y el cliente ya se ha ido a la competencia."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "v": "Yo ya lo sabía, joder, como lo de la gotera del jueves."
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "v": "Un impuesto sobre otro impuesto es un atraco."
+  }
+ ],
+ "gancho_texto": "Rosa cobra el IVA del IVA 👀"
+}

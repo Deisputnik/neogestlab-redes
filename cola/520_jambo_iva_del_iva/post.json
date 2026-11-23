@@ -1,0 +1,42 @@
+{
+  "tipo": "reel",
+  "texto": "Rosa cobra el IVA del IVA en su factura. Felipe jura que es legal con un dato inventado. Rosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: un impuesto sobre otro impuesto es un atraco.\n¿Te han cobrado alguna vez de más en una factura? Cuéntalo con un número: ¿cuántos euros?\nMándaselo a tu cuñado, el que lo sabe todo.\n#humornegro #cuñados #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-24T08:30:00+01:00",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "formula": "El Jambo que sabe v5.2 (reparto Rosa/Felipe/Sindy/Jambo/Neo/Concha, casa-salón, Neogest Studio; registro vulgar, Felipe cuñado enterado, Jambo gorrón)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales verificables (el dato del cuñado es falso a propósito y Neo lo desmiente); no requiere fuente.",
+  "_nota_creador": "23/11/2026 Creador (pasada 15:51): episodio nuevo en Neogest Studio v5.4. Experimento A/B de gancho (plan.json): brazo B (gancho de conflicto).",
+  "motor_voz": "edge",
+  "comentario_fijado": "¿Tienes un cuñado que lo sabe todo? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: Rosa ficha hasta para respirar",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "youtube": {
+    "titulo": "Rosa cobra el IVA del IVA: el cuñado lo defiende #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa cobra impuestos sobre impuestos y Neo la deja sin argumentos. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "cuñados",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "renderizado": false,
+  "asset": "520_jambo_iva_del_iva.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8c07f49191d4cf55c4250a2d13fd060c_520_jambo_iva_del_iva_v1.mp4"
+}
