@@ -180,6 +180,18 @@ def _lufs_pico(video):
         return {"error": "no se pudo medir LUFS/pico"}
 
 
+LOGO_REFERENCIA = os.path.join(RAIZ, "equipo", "perfil_kit", "logo_neogest_lab_oficial.png")
+
+
+def _logo_referencia():
+    """Logo oficial 2026 en base64 (PNG), para que el modelo compare la marca con el original y no de memoria."""
+    try:
+        with open(LOGO_REFERENCIA, "rb") as f:
+            return base64.b64encode(f.read()).decode()
+    except OSError:
+        return None
+
+
 def _fotogramas(video, duracion):
     out = []
     if not duracion or duracion <= 0:
@@ -188,7 +200,10 @@ def _fotogramas(video, duracion):
         # 21/11/2026 (cuellos de botella): 6 fotogramas y SIEMPRE el último; con 3 (8 %, 50 %, 90 %) nunca se veía la
         # tarjeta de cierre y el bloqueo 11 (isotipo 2026) se rechazaba «sin poder verificar» (329).
         instantes = sorted({round(min(0.3, duracion / 10), 2)} | {round(duracion * f, 2) for f in (0.25, 0.5, 0.75)}
-                           | {round(max(0.0, duracion - 1.2), 2), round(max(0.0, duracion - 0.25), 2)})
+                           | {round(max(0.0, duracion - 1.2), 2), round(max(0.0, duracion - 0.25), 2)}
+                           # 23/11/2026: y uno ~4 s antes del final: en las promos es el plano con la frase de cierre («Pide tu
+                           # prueba gratuita…»), que va justo antes de la tarjeta del logo y con 6 fotogramas no se veía (801, 802).
+                           | {round(max(0.0, duracion - 4.0), 2)})
     with tempfile.TemporaryDirectory() as tmp:
         for i, t in enumerate(instantes):
             jpg = os.path.join(tmp, f"f{i}.jpg")
@@ -306,6 +321,11 @@ def evaluar_pieza(cliente, sistema, pid):
                         contenido.append({"type": "text", "text": f"Fotograma t={foto['t']}s"})
                         contenido.append({"type": "image", "source": {
                             "type": "base64", "media_type": "image/jpeg", "data": foto["b64"]}})
+                    ref = _logo_referencia()
+                    if ref:
+                        contenido.append({"type": "text", "text": "REFERENCIA (no es un fotograma del vídeo): logo oficial 2026 de "
+                                          "Neogest Lab, el VÁLIDO. Si la insignia o la tarjeta de cierre coinciden con él, la marca es correcta."})
+                        contenido.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": ref}})
                     bloques_resultado.append({"type": "tool_result", "tool_use_id": llamada.id,
                                                "content": contenido})
                 except Exception as e:
@@ -356,6 +376,31 @@ FORMATO_VIGENTE = (
 )
 
 
+# 23/11/2026 (orden del dueño: «no quiero fallos ni embudos», «arregla todo»): Calidad rechazaba en falso por la marca.
+# 518 (70), 801 (58) y 802 (70) se tumbaron por «logo antiguo» cuando llevan EXACTAMENTE la misma insignia y la misma
+# tarjeta de cierre que 517, 519, 107 y 108, aprobadas con 91-93 (comprobado fotograma a fotograma). Lo que el modelo
+# llamaba «recuadro oscuro NEOGESTLAB antiguo» es el logo oficial 2026. Este bloque y la imagen de referencia
+# (equipo/perfil_kit/logo_neogest_lab_oficial.png, que se adjunta con los fotogramas) fijan qué es válido.
+MARCA_VIGENTE = (
+    "MARCA Y CIERRE VIGENTES (manda sobre lo que leas abajo si choca; DIRECTIVA §4 y §5). LOGO OFICIAL 2026 = recuadro oscuro de "
+    "esquinas redondeadas con la «N» hecha de pistas de circuito (azul-turquesa con nodos verdes) encima del rótulo «NEOGESTLAB» "
+    "(«NEOGEST» en blanco, «LAB» en turquesa) y, debajo, el lema pequeño «Sistemas Digitales, Automatización e IA a Medida». "
+    "Ese conjunto completo ES el logo nuevo y es CORRECTO en sus dos usos: como insignia pequeña arriba a la derecha en todos los "
+    "planos, y como tarjeta central del cierre. El isotipo «N» de circuitos puede ir solo o con el rótulo y el lema: las dos formas "
+    "cumplen el bloqueo 11. Nunca lo llames «logo antiguo», «recuadro antiguo» ni «cuadrado NEOGESTLAB antiguo». EL ÚNICO LOGO "
+    "PROHIBIDO (bloqueo 10) son las letras «NL» en neón, SIN la N de circuitos. Con los fotogramas recibes una imagen de referencia "
+    "del logo oficial: compara con ella; si lo que ves coincide, la marca está bien. "
+    "TARJETA DE CIERRE del vídeo (DIRECTIVA §5): plano estático de hasta 3 s con el logo 2026, «By Neogest Lab» y el botón «Enlace en "
+    "el perfil» (nunca una URL en pantalla). Esa tarjeta es la plantilla vigente: no la rechaces por no llevar escrita la frase de "
+    "prueba gratuita; el cierre fijo («Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso», o «Solicita "
+    "información gratuita…» en Recepcionista 24h) se exige en el TEXTO del post y suele ir además en el plano anterior a la tarjeta. "
+    "RECREACIONES (Recepcionista 24h): el rótulo «Recreación · voces sintéticas» se exige mientras suena la llamada recreada (las voces "
+    "del asistente y de quien llama), no en la locución del narrador que la presenta o la cierra. Ves pocos fotogramas sueltos: solo "
+    "puedes rechazar por el rótulo si falta en un fotograma en el que claramente se está dentro de la llamada. "
+    "COHERENCIA: no rechaces por marca o por cierre una pieza que lleva la misma insignia y la misma tarjeta que otras ya aprobadas."
+)
+
+
 def _lecciones_vigentes():
     """lecciones_calidad.md se genera sola con todos los motivos pasados: se quitan los de duración derogados (20/25/30 s)."""
     txt = _leer(LECCIONES) or ""
@@ -367,7 +412,7 @@ def _sistema():
         "Eres el rol CALIDAD del equipo de redes de Neogest Lab, ejecutado vía API directa "
         "(piloto de créditos, ver cabecera de herramientas/calidad_api.py). Sigue el criterio "
         "de los archivos de abajo. Evalúas UNA pieza por turno de usuario: usa la herramienta "
-        "`inspeccionar_video` para ver el vídeo (ffprobe, silencios, LUFS/pico y 6 fotogramas, el último es el cierre) "
+        "`inspeccionar_video` para ver el vídeo (ffprobe, silencios, LUFS/pico y 7 fotogramas, el último es el cierre) "
         "y después `escribir_calidad` con tu veredicto final (aprobado solo con nota >= 90). "
         "No tienes acceso a hechos_verificados/prohibido_afirmar de Base44 en este piloto: para "
         "reels de apps, contrasta solo con las fuentes que el propio post.json ya cita "
@@ -375,7 +420,7 @@ def _sistema():
         "verificarla, trátala como no verificada (no la aprueba el estándar v9/A3) y dilo en "
         "los motivos, no inventes ni la des por buena. Sé estricto: el mínimo real para publicar "
         "es 90, y si 'suena a IA' el máximo es 89. No relances ciclo.yml ni muevas 'cuando': "
-        "eso lo decide otra pasada.\n\n" + FORMATO_VIGENTE
+        "eso lo decide otra pasada.\n\n" + FORMATO_VIGENTE + "\n\n" + MARCA_VIGENTE
         + "\n\n--- equipo/roles/calidad.md ---\n" + _leer(ROL)
         + "\n\n--- equipo/estandar_calidad.md ---\n" + _leer(ESTANDAR)
         + "\n\n--- equipo/lecciones_calidad.md (motivos de rechazo repetidos) ---\n" + _lecciones_vigentes()
