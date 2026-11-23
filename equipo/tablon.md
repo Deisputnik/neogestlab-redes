@@ -361,4 +361,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-23 08:05 UTC · Remasterizador · sin candidatos: reels de las últimas 24-72 h con 127-169 vistas (mediana 137; umbral 3× = 411) y sin aviso del Analista · nada
 
-2026-11-23 08:10 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-23 08:10 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-23 09:06 UTC · Creador · 517 y 518 rehechas (frases reescritas para que la voz las diga limpias), renderizadas de nuevo en Neogest Studio (68,3 s y 60,8 s) con video_externo nuevo y renderizado:false · pendientes de mi lado: 351, 353 (alargar a 45-70 s con bucle), 328, 801/802 (cierre, rol Centro) y episodios nuevos del día, no cabían en esta pasada · necesita: Calidad evaluar 517 y 518
