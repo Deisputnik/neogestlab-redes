@@ -357,3 +357,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-23 03:08 UTC · Calidad (API) · evaluadas 1 piezas: 802_recepcionista_que_hace rechazada (70): Bloqueo 10/11: el cierre (t=25.5-26.7s) muestra el isotipo ANTIGUO 'NEOGESTLAB' (caja rectangular neón con el texto completo 'Sistemas Digitales, Automatización e IA a Medida'), no el isotipo nuevo «N» de circuitos aislado del kit 2026 que exige el estándar v10/v11. No se publica con este cierre.; B · Creador/Remasterizador: ver motivos arriba; necesito: nada del dueño
 
 2026-11-23 06:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-23 07:11 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
