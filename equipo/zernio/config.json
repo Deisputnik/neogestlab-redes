@@ -7,7 +7,7 @@
     "19:45"
   ],
   "max_pendientes": 8,
-  "render_desde": "2026-11-14",
+  "render_desde": "2026-11-21",
   "orden_inicial": [],
   "incluir_antiguos": [],
   "excluir": [],
@@ -25,5 +25,7 @@
     1
   ],
   "enlace_en_texto": false,
-  "max_caracteres": 2200
+  "max_caracteres": 2200,
+  "recientes_primero": true,
+  "_nota_2026_11_23": "render_desde pasa al 21/11 (solo formato vigente: El Jambo de barrio v5.2 y promos nuevas; el Jambo de oficina y el reparto Jupillo/Trámites/Pelota/Bola están retirados, DIRECTIVA §5) y recientes_primero=true para que lo de hoy llegue a TikTok hoy."
 }

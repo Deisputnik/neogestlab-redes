@@ -22,6 +22,7 @@ nada y termina bien: el canal queda en espera. --simular enseña qué enviaría,
 """
 import glob  # noqa: F401  (se usa dentro de candidatos(), importado vía redes_buffer)
 import json
+import re
 import os
 import sys
 import urllib.error
@@ -56,6 +57,46 @@ def cuenta_tiktok(api_key, usuario):
         if usuario.lstrip("@").lower() in str(c.get("username", "")).lower():
             return c.get("id") or c.get("_id")
     return None
+
+
+def _clave_texto(texto):
+    """Arranque del texto sin signos ni mayúsculas: sirve para reconocer el mismo vídeo aunque el texto se retocara a mano."""
+    return re.sub(r"[^a-z0-9áéíóúñü]", "", str(texto).lower())[:30]
+
+
+def ya_en_zernio(api_key):
+    """Claves de texto de lo que Zernio ya tiene publicado, publicándose o programado en la cuenta.
+    23/11/2026: el 21-22/11 se cruzaron a mano 36 vídeos a TikTok desde una sesión con el MCP de Zernio y este script no lo
+    sabía (su estado.json solo recuerda lo que programa él): volvió a programar 6 vídeos que ya estaban en TikTok («El
+    presupuesto cerrado» iba por la cuarta copia). Ahora se pregunta a Zernio antes de programar. Si la consulta falla, se
+    devuelve None y el script NO programa nada en esa pasada (mejor un hueco vacío que un duplicado)."""
+    claves = set()
+    try:
+        primero_anterior = None
+        for pagina in range(1, 21):
+            datos = _pedir("GET", f"/posts?limit=50&page={pagina}", api_key)
+            posts = datos.get("posts") or datos.get("data") or []
+            primero = (posts[0].get("_id") or posts[0].get("id")) if posts else None
+            if not posts or primero == primero_anterior:   # sin más páginas (o la API ignora «page»)
+                break
+            primero_anterior = primero
+            for p in posts:
+                if str(p.get("status", "")).lower() in ("failed", "cancelled", "draft"):
+                    continue
+                plataformas = p.get("platforms") or []
+                if plataformas and not any(str(x.get("platform", "")).lower() == "tiktok" for x in plataformas):
+                    continue
+                c = _clave_texto(p.get("content", ""))
+                if c:
+                    claves.add(c)
+            paginas = (datos.get("pagination") or {}).get("pages")
+            if paginas and pagina >= int(paginas):
+                break
+        print(f"zernio: {len(claves)} textos distintos ya publicados o programados en la cuenta")
+    except Exception as e:
+        print("zernio: no se pudo leer lo ya publicado:", str(e)[:300])
+        return None
+    return claves
 
 
 def crear_post(api_key, account_id, texto, cuando_iso, url):
@@ -109,6 +150,19 @@ def main():
         if not account_id:
             print(f"zernio/{canal} en espera: esa cuenta no está conectada en Zernio todavía.")
             return
+        existentes = ya_en_zernio(api_key)
+        if existentes is None:
+            estado["ultimo_error"] = f"{ahora_iso} · no se pudo leer de Zernio lo ya publicado; no se programa nada en esta pasada"
+            lista = []
+        else:
+            nuevas = []
+            for nombre, post, res in lista:
+                if _clave_texto(texto_canal(nombre, post, cfg, canal)) in existentes:
+                    estado["enviados"][nombre] = {"dueAt": "", "ya_en_tiktok": True, "enviado": ahora_iso}
+                    print(f"{nombre}: ya está en TikTok (o programado) según Zernio; no se repite")
+                else:
+                    nuevas.append((nombre, post, res))
+            lista = nuevas
         for (nombre, post, res), cuando in zip(lista[:cupo], huecos_libres(cfg, estado, ahora)):
             url = medio_publico(nombre, res["media_id"], canal, cfg)
             pid = crear_post(api_key, account_id, texto_canal(nombre, post, cfg, canal), cuando, url)

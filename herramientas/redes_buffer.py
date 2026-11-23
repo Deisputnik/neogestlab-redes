@@ -119,8 +119,12 @@ def candidatos(cfg, estado):
         if cfg.get("solo_apps") and (es_jambo(nombre, post) or not post.get("app_slug")):
             continue
         piezas[nombre] = (post, res)
+    # 23/11/2026 (orden del dueño: «en TikTok no hay nada publicado»): con "recientes_primero" sale antes lo último
+    # publicado en Instagram, para que el episodio de hoy llegue a TikTok hoy y no detrás de una cola de piezas viejas.
+    resto = sorted(piezas, key=lambda n: str(piezas[n][1].get("publicado", "")), reverse=True) \
+        if cfg.get("recientes_primero") else sorted(piezas)
     orden = [n for n in cfg.get("orden_inicial", []) if n in piezas] + \
-            [n for n in sorted(piezas) if n not in cfg.get("orden_inicial", [])]
+            [n for n in resto if n not in cfg.get("orden_inicial", [])]
     jambo = [n for n in orden if es_jambo(n, piezas[n][0])]
     apps = [n for n in orden if not es_jambo(n, piezas[n][0])]
     mezcla = []
