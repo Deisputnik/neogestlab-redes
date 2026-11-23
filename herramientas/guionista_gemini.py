@@ -68,7 +68,7 @@ MAX_PALABRAS_GAG = 18
 # Formato vigente (v11): gancho + 5-8 golpes + remate de Neo + cierre, 120-185 palabras de voz, con Jambo en escena y
 # una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
 MIN_GAGS, MAX_GAGS = 5, 8
-MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 105, 185
+MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 105, 170   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
 EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
 
 
@@ -296,7 +296,7 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    tienen que notar en CADA réplica suya por cómo habla y por lo que pide (nunca porque alguien lo diga):
    - habla arrastrada: alarga vocales («primoooo», «Rosaaa»), frases cortas que se quedan a medias con
      «…», se le va el hilo («¿qué te estaba diciendo?») y lo retoma por otro lado;
-   - muletillas suyas: «primo/prima», «hermano», «te lo juro por mi madre», «un eurillo», «mañana te lo
+   - muletillas suyas: «primo/prima», «válgame», «hermano», «te lo juro por mi madre», «un eurillo», «mañana te lo
      devuelvo», «que estoy limpio, ¿eh?», «no digas mi nombre»;
    - siempre pide algo (un euro, un cigarro, veinte pavos «pa'l autobús», que le fíen) o vende algo de
      procedencia dudosa (un taladro «casi nuevo», un jamón sin etiqueta) y luego te lo pide prestado;
