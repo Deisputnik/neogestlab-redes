@@ -171,5 +171,24 @@
     }
    ]
   }
+ ],
+ "_nota_muestras": "23/11 22:42, el dueño: «el Jambo no suena a toxicómano». Tres voces candidatas para Jambo (solo diseño y muestra, sin gastar cuota).",
+ "sin_generar": true,
+ "muestras": [
+  {
+   "clave": "jambo-a-barrio-madrid",
+   "genero": "male",
+   "descripcion": "A gaunt, worn-out man in his late 40s from a poor outskirts barrio of Madrid. He speaks street Spanish from Spain (European Spanish only, never Latin American). Thick working-class Madrid street drawl from the 1980s. Whiny, nasal, sing-song pleading tone that rises at the end of every phrase; he stretches the vowels, swallows and aspirates the S at the end of syllables, and slurs the words together. Hoarse, cracked, tired voice; half asleep, always begging for a small favour, then suddenly jumpy."
+  },
+  {
+   "clave": "jambo-b-barrio-sur",
+   "genero": "male",
+   "descripcion": "A skinny, worn-out man in his late 40s from a poor barrio in the south of Spain. He speaks street Spanish from Spain (European Spanish only, never Latin American). Strong Andalusian street accent: aspirated and dropped S, clipped word endings, melodic lamenting intonation full of dramatic exclamations. Hoarse, broken, raspy voice; drowsy and slurred, wheedling like someone always asking for a coin, dragging the last vowel of each phrase."
+  },
+  {
+   "clave": "jambo-c-nasal",
+   "genero": "male",
+   "descripcion": "A frail, scruffy man in his late 40s who sounds unwell and exhausted, from a rough barrio. He speaks street Spanish from Spain (European Spanish only, never Latin American). Extremely nasal, congested, reedy whine with a cracked hoarse edge; he speaks slowly through his nose with a lazy jaw, vowels stretched, consonants mushy, words melting into each other, with sniffles. Permanently sleepy, pleading and shameless."
+  }
  ]
 }
