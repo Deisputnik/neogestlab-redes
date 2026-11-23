@@ -399,3 +399,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-23 18:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-23 18:38 UTC · Comunidad · pasada Instagram (Buzzfy): sin comentarios sin responder ni DMs con intención nuevos (lo pendiente son cuentas del dueño o ventanas de 24 h cerradas); sin interesados nuevos; leads.json sin cambios · nada · nada del dueño
+
+2026-11-23 19:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
