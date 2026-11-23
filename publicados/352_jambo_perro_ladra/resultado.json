@@ -7,7 +7,12 @@
     "estado": "sin_credenciales"
   },
   "facebook": {
-    "estado": "error",
-    "error": "Facebook HTTP 403: {\"error\":{\"message\":\"(#200) Subject does not have permission to post videos on this target, due to lack of pages_manage_posts permission.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AoltyU3nsZH2N1OnmSxYpiG\"}}"
+    "estado": "publicado",
+    "video_id": "29040454105583182",
+    "enlace": "https://www.facebook.com/reel/29040454105583182",
+    "comentario": "sin_comentario",
+    "_reintentos": 1,
+    "publicado": "2026-11-23T09:10:55+00:00",
+    "recuperado": true
   }
 }

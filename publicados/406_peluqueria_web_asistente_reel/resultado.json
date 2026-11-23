@@ -4,8 +4,13 @@
   "prueba_no_seguidores": true,
   "publicado": "2026-11-22T22:26:06+00:00",
   "youtube": {
-    "estado": "error",
-    "error": "YouTube HTTP 401: {\n  \"error\": \"invalid_client\",\n  \"error_description\": \"The provided client secret is invalid.\"\n}"
+    "estado": "publicado",
+    "video_id": "9g712YErFEo",
+    "enlace": "https://youtube.com/shorts/9g712YErFEo",
+    "titulo": "POV: preguntan el precio de un tinte a las 23:00 #Shorts",
+    "_reintentos": 1,
+    "publicado": "2026-11-23T09:10:46+00:00",
+    "recuperado": true
   },
   "facebook": {
     "estado": "publicado",

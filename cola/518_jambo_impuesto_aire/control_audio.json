@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 60.8,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['ponedme'], sobran ['ponerme'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Desde hoy cobro un euro por cada hora que respiras en mi puto salón, Felipe. Pues es legal, joder, lo sé de buena tinta, el oxígeno tributa desde 2019, me lo dijo un primo abogado. Qué hijo de puta eres, Felipe, cuñado de los cojones. Yo respiro por la boca, pago doble o qué. Qué bien, joder. Llevo años sintiendo que mi vida vale un euro la hora, y por fin lo ponen por escrito. Yo respiro gratis, que soy invitado, joder. Y ponerme un café, que me lo debéis. Joder, el jambo otra vez de gorra. Que lo resuelva el neo, que me va a dar algo, hostia. Un impuesto necesita una ley y un recibo. Usted solo tiene un salón y mucha imaginación, señora Melano. O sea que llevo toda la mañana cobrando algo que no existe, joder, y sin aire de tanto chillar. Yo ya lo sabía, joder, como lo de la reunión del jueves. Cobrar lo que no existe te deja sin aire.",
+  "guion": "Desde hoy cobro un euro por cada hora que respiras en mi puto salón, Felipe. Pues es legal, joder, lo sé de buena tinta: el oxígeno tributa desde dos mil diecinueve, me lo dijo un primo abogado. ¡Qué hijo de puta eres, Felipe, cuñado de los cojones! Yo respiro por la boca, ¿pago doble o qué? Qué bien, joder. Llevo años sintiendo que mi vida vale un euro la hora, y por fin lo ponen por escrito. Yo respiro gratis, que soy invitado, joder. Y ponedme un café, que me lo debéis. ¡Joder, el Jambo otra vez de gorra! Que lo resuelva el Neo, que me va a dar algo, hostia. Un impuesto necesita una ley y un recibo. Usted solo tiene un salón y mucha imaginación, señora Melano. O sea que llevo toda la mañana cobrando algo que no existe, ¡joder!, y sin aire de tanto chillar. Yo ya lo sabía, joder, como lo de la reunión del jueves. Cobrar lo que no existe te deja sin aire.",
+  "lufs": -14.0,
+  "pico_dbfs": -1.4
+}
