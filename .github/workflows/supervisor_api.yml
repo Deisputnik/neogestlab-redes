@@ -9,9 +9,8 @@ name: Supervisor · API directa (piloto créditos API, 16/11/2026)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "27 11 * * *"  # 12:27 Madrid (UTC+1)
-    - cron: "27 17 * * *"  # 18:27 Madrid (UTC+1)
+  # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
+  # (función «toca», horas de Madrid: 12:27 y 18:27). Para cambiar el horario, cambia la línea «toca supervisor_api.yml» de reloj.yml.
 
 permissions:
   contents: write

@@ -7,9 +7,8 @@ name: Redes vía Zernio · tercera vía TikTok
 # Manual: equipo/zernio/LEEME.md
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "51 11 * * *"
-    - cron: "51 18 * * *"
+  # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
+  # (función «toca», horas de Madrid: 12:51 y 19:51). Para cambiar el horario, cambia la línea «toca redes_zernio.yml» de reloj.yml.
 
 permissions:
   contents: write

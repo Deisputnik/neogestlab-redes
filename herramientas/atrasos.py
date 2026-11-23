@@ -201,7 +201,8 @@ def _publicadas_hoy(canal):
         for f in glob.glob(os.path.join(RAIZ, "publicados", "*", "resultado.json")):
             r = _json(f, {})
             if (r.get("youtube") or {}).get("estado") == "publicado" and r.get("publicado"):
-                t = datetime.fromisoformat(r["publicado"]).replace(tzinfo=timezone.utc) if "+" not in r["publicado"] else datetime.fromisoformat(r["publicado"])
+                cuando = r["youtube"].get("publicado") or r["publicado"]   # 23/11/2026: un Short recuperado cuenta el día en que se subió
+                t = datetime.fromisoformat(cuando).replace(tzinfo=timezone.utc) if "+" not in cuando else datetime.fromisoformat(cuando)
                 if t.astimezone(MADRID).date() == hoy:
                     n += 1
     return n, ultima

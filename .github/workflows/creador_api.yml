@@ -15,9 +15,8 @@ name: Creador · API directa, piloto texto (18/11/2026)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "51 9 * * *"   # 10:51 Madrid (UTC+1), 1 h después del Creador (Claude Code)
-    - cron: "51 15 * * *"  # 16:51 Madrid (UTC+1)
+  # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
+  # (función «toca», horas de Madrid: 10:51 y 16:51). Para cambiar el horario, cambia la línea «toca creador_api.yml» de reloj.yml.
 
 permissions:
   contents: write

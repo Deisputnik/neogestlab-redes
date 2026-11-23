@@ -1581,6 +1581,22 @@ def _nota_cancion(post, params):
     return {"cancion_instagram": None, "falta_cancion": "Instagram no aplico la cancion; añadela editando el reel (Audio): sugerida «%s»" % (ai.get("titulo") or ai["audio_id"])}
 
 
+def _subir_directo(cfg, params, video, intentos=2, espera=20):
+    """Contenedor nuevo + subida directa del vídeo, con reintentos en la misma pasada (no gasta intentos de la pieza)."""
+    ultimo = None
+    for n in range(intentos):
+        time.sleep(espera)
+        try:
+            r = api(cfg, f"{cfg['ig_user_id']}/media", "POST", **params)
+            subir_y_esperar(cfg, r["id"], video, r.get("uri"))
+            return r["id"]
+        except ErrorAPI as e:
+            ultimo = e
+            if n + 1 < intentos:
+                log(f"subida directa fallida otra vez ({str(e)[-120:]}); reintento {n + 2}/{intentos}")
+    raise ultimo
+
+
 def publicar_reel(cfg, video, post):
     params = {"media_type": "REELS", "upload_type": "resumable",
               "caption": con_atribucion(post.get("texto", ""), post.get("motor_voz")),
@@ -1625,40 +1641,43 @@ def publicar_reel(cfg, video, post):
             prueba = None
             r = api(cfg, f"{cfg['ig_user_id']}/media", "POST", **params)
     cid = r["id"]
+    metodo = None
     try:
         subir_y_esperar(cfg, cid, video, r.get("uri"))
     except ErrorAPI as e:
-        if "trial_params" not in params:
-            # 7/11/2026: en la nube la subida «resumable» falla siempre con ProcessingFailedError (010 y 014).
-            # Plan B: Instagram descarga el vídeo él mismo desde la release (video_url; necesita repo público).
-            log(f"subida directa fallida ({str(e)[-120:]}); se reintenta con video_url desde la release")
-            cid = crear_contenedor_url(cfg, params, video)
-            mid = api(cfg, f"{cfg['ig_user_id']}/media_publish", "POST", creation_id=cid)["id"]
-            enlace = ""
-            try:
-                enlace = api(cfg, mid, fields="permalink").get("permalink", "")
-            except ErrorAPI:
-                pass
-            return {"media_id": mid, "enlace": enlace, "prueba_no_seguidores": False, "metodo": "video_url", **_nota_cancion(post, params)}
-        # 6/11/2026: el 010 (reel de prueba) falló en la subida con «ProcessingFailedError: Request processing
-        # failed». Si el contenedor de prueba no procesa el vídeo, se reintenta al momento como reel normal.
-        log(f"reel de prueba: fallo al subir/procesar ({str(e)[-160:]}); se publica como reel normal")
-        params.pop("trial_params")
-        prueba = None
+        # 23/11/2026 (orden del dueño: «no quiero fallos ni embudos»): la subida directa falla a ratos con
+        # «ProcessingFailedError» y al repetirla entra (519: falló a las 09:11 y entró a las 09:12, pero gastó 1 de
+        # los 3 intentos de la pieza y perdió el reel de prueba). Con el repo privado el plan B de video_url ya no
+        # existe (la release da 404), así que el reintento se hace AQUÍ, en la misma pasada: primero el mismo tipo de
+        # reel otra vez, después como reel normal, y solo al final video_url (por si el repo vuelve a ser público).
+        log(f"subida directa fallida ({str(e)[-160:]}); se reintenta en esta misma pasada")
+        cid = None
         try:
-            r = api(cfg, f"{cfg['ig_user_id']}/media", "POST", **params)
-            cid = r["id"]
-            subir_y_esperar(cfg, cid, video, r.get("uri"))
-        except ErrorAPI as e2:
-            log(f"subida directa fallida ({str(e2)[-120:]}); se reintenta con video_url desde la release")
+            cid = _subir_directo(cfg, params, video, intentos=1 if "trial_params" in params else 2)
+        except ErrorAPI as e1:
+            if "trial_params" in params:
+                log(f"reel de prueba: fallo al subir/procesar ({str(e1)[-160:]}); se publica como reel normal")
+                params.pop("trial_params")
+                prueba = None
+                try:
+                    cid = _subir_directo(cfg, params, video, intentos=2)
+                except ErrorAPI as e2:
+                    log(f"subida directa fallida ({str(e2)[-120:]}); se reintenta con video_url desde la release")
+            else:
+                log(f"subida directa fallida ({str(e1)[-120:]}); se reintenta con video_url desde la release")
+        if cid is None:
             cid = crear_contenedor_url(cfg, params, video)
+            metodo = "video_url"
     mid = api(cfg, f"{cfg['ig_user_id']}/media_publish", "POST", creation_id=cid)["id"]
     enlace = ""
     try:
         enlace = api(cfg, mid, fields="permalink").get("permalink", "")
     except ErrorAPI:
         pass
-    return {"media_id": mid, "enlace": enlace, "prueba_no_seguidores": bool(prueba), **_nota_cancion(post, params)}
+    res = {"media_id": mid, "enlace": enlace, "prueba_no_seguidores": bool(prueba), **_nota_cancion(post, params)}
+    if metodo:
+        res["metodo"] = metodo
+    return res
 
 
 def puede_publicar(carpeta):
@@ -1881,6 +1900,121 @@ def publicar_atrasos(cfg):
             log(f"atrasos {canal}: fallo aislado ({str(e)[-160:]})")
 
 
+REINTENTOS_RED = 4          # reintentos por canal y pieza
+REINTENTO_DIAS = 7          # solo piezas publicadas en Instagram en los últimos 7 días
+REINTENTO_SEPARACION = 50   # minutos desde lo último publicado en ese canal (las pasadas son cada hora; atrasos usa 60)
+
+
+def _redes_pendientes(res, post):
+    """Canales (youtube, facebook) en los que el reel NO salió y todavía se puede reintentar."""
+    pend = []
+    for canal in ("youtube", "facebook"):
+        v = res.get(canal)
+        if (post.get(canal) or {}).get("omitir") or not isinstance(v, dict):
+            continue
+        if v.get("estado") in ("error", "sin_credenciales") and int(v.get("_reintentos", 0)) < REINTENTOS_RED:
+            pend.append(canal)
+    return pend
+
+
+def _fecha_utc(texto):
+    d = datetime.fromisoformat(str(texto).strip().replace("Z", "+00:00"))
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def reintentar_redes(cfg):
+    """23/11/2026 (orden del dueño: «no quiero fallos ni embudos», las tres redes). Si YouTube o Facebook fallan al publicar
+    un reel (token caducado, sin credenciales, error puntual), se reintenta solo en las pasadas siguientes hasta que salga.
+    Antes el fallo se anotaba en resultado.json, el vídeo se borraba de la release y nadie lo repetía: 349, 350, 352 y 406
+    se quedaron sin YouTube y/o Facebook. Una pieza por pasada y canal, la más reciente primero. Respeta el horario
+    (09-22 Madrid), el tope diario del canal (dejando sitio a lo que hoy aún espera en cola/) y 50 min desde lo último del canal.
+    El vídeo sale de la release 'cola' y, si ya no está, del propio reel de Instagram (media_url)."""
+    madrid = timezone(timedelta(hours=1))
+    try:
+        from zoneinfo import ZoneInfo
+        madrid = ZoneInfo("Europe/Madrid")
+    except Exception:
+        pass
+    ahora = datetime.now(timezone.utc)
+    if not (9 <= ahora.astimezone(madrid).hour < 22):
+        return
+    hoy = ahora.astimezone(madrid).date()
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "herramientas"))
+    import atrasos
+    publicadas = []
+    for f in glob.glob(os.path.join(PUBLICADOS, "*", "resultado.json")):
+        r = leer_json(f)
+        if isinstance(r, dict) and r.get("publicado"):
+            publicadas.append((os.path.dirname(f), r))
+    # lo aprobado que hoy aún espera en cola/: tiene preferencia sobre los reintentos (cupo y separación)
+    reserva = 0
+    for cuando, carpeta, post in carpetas_cola():
+        if cuando.astimezone(madrid).date() == hoy and post.get("tipo", "reel") == "reel" and puede_publicar(carpeta):
+            reserva += 1
+    for canal in ("youtube", "facebook"):
+        n_hoy, ultima = atrasos._publicadas_hoy(canal)
+        for _, r in publicadas:
+            v = r.get(canal)
+            if not (isinstance(v, dict) and v.get("estado") == "publicado"):
+                continue
+            try:
+                t = _fecha_utc(v.get("publicado") or r["publicado"])
+            except Exception:
+                continue
+            ultima = max(ultima, t) if ultima else t
+            if canal == "facebook" and t.astimezone(madrid).date() == hoy:
+                n_hoy += 1   # en YouTube ya los cuenta atrasos._publicadas_hoy
+        if n_hoy + reserva >= atrasos.MAX_POR_CANAL.get(canal, atrasos.MAX_DIA):
+            continue
+        if ultima and ahora - ultima < timedelta(minutes=REINTENTO_SEPARACION):
+            continue
+        candidatas = []
+        for carpeta, r in publicadas:
+            post = leer_json(os.path.join(carpeta, "post.json")) or {}
+            if post.get("tipo", "reel") != "reel" or not r.get("media_id") or canal not in _redes_pendientes(r, post):
+                continue
+            try:
+                t = _fecha_utc(r["publicado"])
+            except Exception:
+                continue
+            if ahora - t <= timedelta(days=REINTENTO_DIAS):
+                candidatas.append((t, carpeta, r, post))
+        if not candidatas:
+            continue
+        _, carpeta, r, post = max(candidatas, key=lambda x: x[0])
+        nombre = os.path.basename(carpeta)
+        trabajo = os.path.join("/tmp", "red_" + nombre)
+        shutil.rmtree(trabajo, ignore_errors=True)
+        os.makedirs(trabajo)
+        previo = r[canal]
+        try:
+            asset = post.get("asset") or (nombre + ".mp4")
+            video = os.path.join(trabajo, asset)
+            if gh("release", "download", RELEASE, "-p", asset, "-D", trabajo, "--clobber", check=False).returncode != 0 \
+                    or not os.path.exists(video):
+                url = api(cfg, r["media_id"], fields="media_url").get("media_url")
+                if not url:
+                    raise ErrorAPI("el vídeo ya no está en la release e Instagram no da media_url")
+                descargar(url, video)
+            log(f"{nombre}: reintento de {canal} ({int(previo.get('_reintentos', 0)) + 1}/{REINTENTOS_RED}; antes: {previo.get('estado')})")
+            res = publicar_en_youtube(video, post, nombre) if canal == "youtube" else publicar_en_facebook(video, post, nombre, "reel")
+        except Exception as e:
+            res = {"estado": "error", "error": str(e)[-300:]}
+            log(f"{nombre}: reintento de {canal} sin vídeo: {str(e)[-200:]}")
+        finally:
+            shutil.rmtree(trabajo, ignore_errors=True)
+        res["_reintentos"] = int(previo.get("_reintentos", 0)) + 1
+        if res.get("estado") == "publicado":
+            res["publicado"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            res["recuperado"] = True
+        elif res.get("estado") == "sin_credenciales":
+            res["_reintentos"] = int(previo.get("_reintentos", 0))   # faltan secretos: no gasta reintento
+        r[canal] = res
+        escribir_json(os.path.join(carpeta, "resultado.json"), r)
+        if not _redes_pendientes(r, post) and post.get("asset"):
+            gh("release", "delete-asset", RELEASE, post["asset"], "-y", check=False)
+
+
 def publicar_pendientes(cfg):
     ahora = datetime.now(timezone.utc)
     sin_cdn = None  # si las imágenes no son públicas, carruseles e historias esperan sin gastar intentos
@@ -1935,7 +2069,10 @@ def publicar_pendientes(cfg):
             res["youtube"] = publicar_en_youtube(os.path.join(trabajo, post["asset"]), post, nombre)
             res["facebook"] = publicar_en_facebook(os.path.join(trabajo, post["asset"]), post, nombre, "reel")
             mover(carpeta, PUBLICADOS, res)
-            gh("release", "delete-asset", RELEASE, post["asset"], "-y", check=False)
+            # 23/11/2026: si YouTube o Facebook han fallado, el vídeo se queda en la release para que
+            # reintentar_redes() lo vuelva a subir en las pasadas siguientes; se borra cuando ya está en las tres.
+            if not _redes_pendientes(res, post):
+                gh("release", "delete-asset", RELEASE, post["asset"], "-y", check=False)
             log(f"{nombre}: publicado {res.get('enlace')}")
         except SinURLPublica as e:
             sin_cdn = str(e)
@@ -2081,7 +2218,8 @@ def ciclo():
     # 8/11/2026: primero se publica lo que ya toca y después se renderiza (renderizar tarda minutos por reel
     # y retrasaba las publicaciones); al final otra pasada de publicar por si algo se renderizó con hora pasada.
     pasos = [("publicar", publicar_pendientes), ("renderizar", renderizar_pendientes),
-             ("publicar", publicar_pendientes), ("atrasos", publicar_atrasos), ("comentarios", responder_comentarios)]
+             ("publicar", publicar_pendientes), ("reintento de redes", reintentar_redes), ("atrasos", publicar_atrasos),
+             ("comentarios", responder_comentarios)]
     if estadisticas_viejas() or os.environ.get("FORZAR_ESTADISTICAS"):
         pasos.append(("estadísticas", actualizar_estadisticas))
     for nombre, paso in pasos:
