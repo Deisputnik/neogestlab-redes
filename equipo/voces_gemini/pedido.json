@@ -1,16 +1,8 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57): Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero. Esta noche solo se diseña la voz B2 de Jambo (sin_generar); el 24/11 tras las 09:00 se quita «sin_generar» y «muestras» y se generan los cinco personajes. Uso general: ver herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
- ],
- "sin_generar": true,
- "muestras": [
-  {
-   "clave": "jambo-b2-barrio-sur-arrastrado",
-   "genero": "male",
-   "descripcion": "A skinny, scruffy, worn-out man in his late 40s from a poor barrio in the south of Spain. He speaks street Spanish from Spain (European Spanish only, never Latin American). Strong Andalusian street accent: aspirated and dropped S, clipped word endings, melodic lamenting intonation. Hoarse, broken, raspy voice. His normal state is dazed, spaced-out and heavy-lidded: he speaks very slowly with a lazy tongue, drags and stretches every word, lets each phrase trail off, and never sounds alert. Wheedling, always asking for a coin."
-  }
  ],
  "episodios": [
   {

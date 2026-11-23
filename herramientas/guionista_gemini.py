@@ -302,6 +302,11 @@ Reglas duras (si no las cumples, el episodio se rechaza):
      procedencia dudosa (un taladro «casi nuevo», un jamón sin etiqueta) y luego te lo pide prestado;
    - cambia de humor en seco: del susurro pedigüeño al grito impaciente y otra vez a la calma, como si nada;
    - es listo a lo pícaro: se sabe las deudas de todo el barrio y las trampas del sistema.
+   Orden del dueño 23/11 22:57: su estado NORMAL es de colocado y con sueño (nunca lo dice ni nadie lo
+   comenta: se le nota). Habla muy despacio, así que sus réplicas son CORTAS: máximo 12 palabras cada una.
+   Es el más desaliñado de todos (greñas, ojeras, barba, camiseta con manchas): los demás pueden aludir a
+   su pinta. NADIE pronuncia la palabra «Jambo» en ninguna réplica (la voz la dice mal): se le llama
+   «primo», «este», «el vecino», «el del trastero».
    LÍNEAS ROJAS DE JAMBO (innegociables): no se nombra, se enseña ni se describe ninguna sustancia, dosis,
    forma de conseguirla o de consumirla; nada de sobredosis, enfermedad, jeringuillas ni muerte; nadie le
    llama «yonqui» ni «drogadicto»; el chiste es su cara dura y su despiste, jamás la adicción de la gente
@@ -548,6 +553,11 @@ def _validar(ep):
     remate = next((e for e in escenas if e.get("e") == "remate"), None)
     if remate and remate.get("h") != "neo":
         motivos.append("el remate no lo dice Neo")
+    for e in escenas:
+        if e.get("h") == "jambo" and len(str(e.get("t", "")).split()) > 12:
+            motivos.append(f"réplica de Jambo con {len(str(e['t']).split())} palabras (máx 12: habla muy despacio)")
+        if e.get("h") and re.search(r"\bjambo\b", str(e.get("t", "")), re.I):
+            motivos.append("una réplica dice «Jambo»: nadie pronuncia ese nombre (se le llama «primo», «este», «el vecino»)")
     motivos.extend(_validar_retencion(ep, escenas, gags, remate))
     return motivos
 
@@ -609,6 +619,7 @@ def _prompt_correccion(malos):
         "- Jambo Reseco (\"h\": \"jambo\") dice al menos un golpe; cada escena lleva \"emo\" (grita, enfado, sorpresa, ironia, chulea, cansado, "
         "susurra, miedo, llora, rie, seco, pregunta o normal) y casi ninguna es normal;\n"
         "- la moraleja tiene entre 6 y 9 palabras;\n"
+        "- las réplicas de \"jambo\" tienen 12 palabras como máximo y ninguna réplica de nadie contiene la palabra «Jambo»;\n"
         "- retención: \"gancho_tipo\", \"promesa\" (5-10 palabras) y \"giro\" (6-14 palabras) van rellenos; el gancho arranca en mitad del lío (sin saludar "
         "ni explicar) y lleva exclamación, pregunta, cifra o puntos suspensivos; exactamente UN golpe lleva \"giro\": true, entre el 3.º y el penúltimo; "
         "nunca dos réplicas seguidas del mismo personaje; el remate de Neo repite una palabra del gancho o de la promesa y la responde;\n"

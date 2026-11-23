@@ -1,0 +1,42 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "900 € de luz y un cable que baja al trastero. Él dice que son tomates.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: lo que alquilas en negro te sale caro.\nMándaselo a quien tenga un trastero sospechoso.\n#humornegro #vecinos #facturadelaluz #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-24T11:00:00+01:00",
+  "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales verificables (el dato del cuñado sobre el contador es falso a propósito); no requiere fuente.",
+  "_nota_creador": "23/11/2026 Coordinación, v4 (orden del dueño 22:57): historia nueva (Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero), voz B2 de Jambo, aspecto muy desaliñado, música alta y promo de 3 s. Primer episodio de la directiva nueva; publicar en las tres redes.",
+  "motor_voz": "voz_disenada",
+  "_voz_nota": "Piloto de voces Gemini TTS (gratis, clave del Guionista): una voz por personaje, ver equipo/voz_gemini.json. No es edge-tts ni ElevenLabs; no es la voz de nadie ni un clon.",
+  "comentario_fijado": "¿Tomates con doce lámparas? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la cosecha del trastero",
+  "youtube": {
+    "titulo": "900 € de luz: «son tomates», dice el vecino #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa busca a quien le pincha la luz y Neo le saca las cuentas del trastero. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "vecinos",
+      "facturadelaluz",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "renderizado": false
+}
