@@ -33,5 +33,16 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-23T10:07:49Z",
-  "corregido_en_ronda": 2
+  "corregido_en_ronda": 2,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "Falta registro vulgar y de barrio en Rosa y Felipe (orden 22/11 exige que todos salvo Neo sean muy mal hablados y no lleven un taco suelto)",
+      "Falta el recuerdo explícito a un episodio anterior (requisito v11)",
+      "El gancho de Rosa es demasiado neutro y descriptivo (B1/H1)"
+    ],
+    "arreglo_sugerido": "Reescribir las frases de Rosa y Felipe metiendo tacos con exclamación (ej. «¡Coño Concha, la IA esa de mierda te ha liado el turno!»), añadir una mención a un episodio anterior en la réplica de Felipe o Neo, y dar más impacto al gancho.",
+    "fuente": "gemini",
+    "fecha": "2026-11-23T10:09:03.879999Z"
+  }
 }

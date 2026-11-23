@@ -33,5 +33,16 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-23T10:07:49Z",
-  "corregido_en_ronda": 2
+  "corregido_en_ronda": 2,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "Falta el recuerdo a un episodio anterior exigido por la v11.",
+      "Guion demasiado corto: 5 frases (aprox. 15 s de voz) darán un vídeo por debajo del rango obligatorio de 45-70 s de la v11.",
+      "Rosa habla neutra y sin el registro vulgar/choni de barrio exigido a los personajes que no son Neo."
+    ],
+    "arreglo_sugerido": "Ampliar la conversación a 45-70 s, incluir un recuerdo explícito a un episodio anterior y dotar a Rosa del registro vulgar/choni con tacos enfatizados.",
+    "fuente": "gemini",
+    "fecha": "2026-11-23T10:08:36.196105Z"
+  }
 }

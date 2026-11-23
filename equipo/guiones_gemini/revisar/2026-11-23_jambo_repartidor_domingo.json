@@ -33,5 +33,17 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-23T10:07:49Z",
-  "corregido_en_ronda": 2
+  "corregido_en_ronda": 2,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "Falta la intro obligatoria con el plano 'Cosas de Casa' y su gancho de texto",
+      "No hay escalada en 3 golpes (falta desarrollo entre el conflicto y el remate)",
+      "Faltan los créditos finales con el reparto",
+      "Falta el giro de Neo (la intervención es demasiado directa y poco 'giro de Neo')"
+    ],
+    "arreglo_sugerido": "Añadir al inicio el plano 'Cosas de Casa' con texto (ej: 'El domingo de reparto tiene trampa'), incluir una escena intermedia de escalada donde se note más la caradura del Jambo Reseco y cerrar con la escena de reparto obligatoria tras la moraleja.",
+    "fuente": "gemini",
+    "fecha": "2026-11-23T10:09:30.067407Z"
+  }
 }

@@ -33,5 +33,15 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-23T10:07:49Z",
-  "corregido_en_ronda": 2
+  "corregido_en_ronda": 2,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "Falta el recuerdo obligatorio a un episodio anterior (exigido en v11)",
+      "Desconexión entre el remate de Neo (cobertura del seguro por negligencia) y la moraleja ('guardias sin pago')"
+    ],
+    "arreglo_sugerido": "Añadir en el diálogo una alusión a un episodio anterior y ajustar la moraleja o el remate de Neo para que hablen del mismo problema (ej. el cobro de guardias o la cobertura del seguro).",
+    "fuente": "gemini",
+    "fecha": "2026-11-23T10:09:20.279496Z"
+  }
 }
