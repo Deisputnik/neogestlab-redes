@@ -1,19 +1,13 @@
 {
   "aprobado": false,
-  "nota": 82,
-  "fecha": "2026-11-17T10:43:42+00:00",
-  "revisor": "Calidad (pasada 11:41)",
-  "render": "2026-11-16T18:53:39+00:00",
+  "nota": 70,
   "motivos": [
-    "Promo sin música (§5 y §6: música en primer plano)",
-    "Silencio de 3,5-6 s al final (máximo de la promo 1,5 s); cierre estático > 3 s",
-    "Duración 21-25 s (formato de promo 25-45 s)",
-    "Bien: llamada real convincente, gancho legible en el segundo 0, logo 2026, −14 LUFS, pico ≤ −1,4 dBFS, sin datos del negocio ni voz del dueño",
-    "Observación: el post da precio («desde 150 € al mes»); confirmar que está en la ficha del Producto (§9, nada de precios inventados)"
+    "Bloqueo 10/11: el cierre (t=25.5-26.7s) muestra el isotipo ANTIGUO 'NEOGESTLAB' (caja rectangular neón con el texto completo 'Sistemas Digitales, Automatización e IA a Medida'), no el isotipo nuevo «N» de circuitos aislado del kit 2026 que exige el estándar v10/v11. No se publica con este cierre.",
+    "Bloqueo 11: el pie de marca del cierre dice 'Enlace en el perfil', pero el cierre fijo obligatorio del post (DIRECTIVA §5/§7) es 'Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso' (o en este caso 'Solicita información gratuita...' con el enlace directo que ya lleva el post). El cierre visual no refleja la CTA del texto del post ni el enlace con los parámetros UTM que sí aparecen en el texto.",
+    "Resto correcto: -14.29 LUFS, pico -1.46 dB, sin silencios detectados, duración 26.7s dentro de 25-45s de promo, rótulo RECREACIÓN·voces sintéticas presente en toda la llamada, afirmaciones conformes a hechos_verificados de la ficha (atiende 24h, reserva en calendario, correo resumen, precio 150€/mes sin permanencia)."
   ],
-  "como_arreglarlo": "Remasterizador/Centro: añadir música Pixabay del estudio por debajo de la voz (con voz baja como mucho 6 dB), recortar el silencio final y dejar el cierre en ≤ 3 s; si queda por debajo de 25 s, se acepta como excepción de llamada real solo con música y sin silencios. Volver a Calidad.",
-  "aprobado_anterior": false,
-  "nota_anterior": 82,
-  "caducado": "2026-11-22T23:20:03+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-22T23:20:03+00:00"
+  "como_arreglarlo": "Centro/Remasterizador: sustituir la plantilla de cierre por la plantilla 2026 con el isotipo nuevo «N» de circuitos (sin el rectángulo neón antiguo ni el subtítulo largo), y cambiar el texto del cierre de 'Enlace en el perfil' por la CTA real del post ('Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso' con el enlace). Es un fallo de plantilla de render que probablemente afecta a otras piezas del mismo lote de cierre — avisar como URGENTE en equipo/peticiones_mejora.md si se repite en más piezas. Tras el re-render, volver a Calidad.",
+  "fecha": "2026-11-23T03:08:43Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:20:03+00:00"
 }
