@@ -1,0 +1,49 @@
+name: Audición de voces Gemini (El Jambo)
+
+# Diseña una voz sintética por personaje con Gemini TTS (clave gratuita del Guionista) y dice una frase de cada uno.
+# Sube los audios y resultado.json a la release «pruebas» (audgem_*) y como artefacto. No publica nada en redes.
+# Se lanza a mano o al subir cambios a la rama de pruebas claude/audicion-gemini. Creado el 23/11/2026 (orden del dueño:
+# «que sean todas las voces naturales, diferentes y expresivas, busca soluciones gratis»).
+on:
+  workflow_dispatch:
+    inputs:
+      solo:
+        description: "Personajes separados por comas (vacío = todos)"
+        required: false
+      redisenar:
+        description: "Personajes cuya voz se vuelve a diseñar"
+        required: false
+  push:
+    branches: ["claude/audicion-gemini"]
+    paths: ["herramientas/audicion_gemini.py", ".github/workflows/audicion_gemini.yml", "equipo/audicion_gemini_pasada.txt"]
+
+permissions:
+  contents: write
+
+jobs:
+  audicion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Diseñar voces y decir las frases
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AUDICION_SOLO: ${{ inputs.solo }}
+          AUDICION_REDISENAR: ${{ inputs.redisenar }}
+        run: python3 herramientas/audicion_gemini.py /tmp/aud
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audicion-gemini
+          path: /tmp/aud/
+          if-no-files-found: ignore
+      - name: Subir a la release «pruebas»
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls /tmp/aud/ || exit 0
+          gh release view pruebas >/dev/null 2>&1 || gh release create pruebas --title "Pruebas de producción" --notes "Pruebas (no se publican)." || true
+          cd /tmp/aud && for f in *; do cp "$f" "/tmp/audgem_$f"; done
+          gh release upload pruebas /tmp/audgem_* --clobber || true
