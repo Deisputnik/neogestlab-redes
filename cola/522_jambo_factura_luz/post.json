@@ -1,0 +1,43 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": true,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "900 € de luz y todos miran al vecino. El cable que sale por la ventana no era suyo.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: antes de culpar a otro, mira tu contador.\nMándaselo a quien siempre le echa la culpa al vecino.\n#humornegro #vecinos #facturadelaluz #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-24T16:30:00+01:00",
+  "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras ni afirmaciones factuales verificables (el dato del cuñado sobre el contador es falso a propósito y el desenlace lo desmiente); no requiere fuente.",
+  "_nota_creador": "23/11/2026 Coordinación (orden directa del dueño 22:21: «prepara un vídeo y publica con los nuevos cambios así puedo ver el resultado»; ajustes de voz de las 22:27 aplicados: Rosa con voz de España, Jambo más lento y arrastrando las eses, resto más rápido). Gancho de texto propio en la tarjeta de casa (campo gancho_casa), fuera del experimento A/B de plan.json.",
+  "motor_voz": "voz_disenada",
+  "_voz_nota": "Piloto de voces Gemini TTS (gratis, clave del Guionista): una voz por personaje, ver equipo/voz_gemini.json. No es edge-tts ni ElevenLabs; no es la voz de nadie ni un clon.",
+  "comentario_fijado": "¿Quién paga la luz en tu casa y quién la gasta? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: lo que Rosa esconde en el trastero",
+  "youtube": {
+    "titulo": "900 € de luz: el cable no era del vecino #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa busca a quien le roba la luz y Neo le enseña su propio contador. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "vecinos",
+      "facturadelaluz",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "renderizado": false,
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a07153ca0651f49ad936dbc2a6a95da2_522_jambo_factura_luz_v1.mp4"
+}

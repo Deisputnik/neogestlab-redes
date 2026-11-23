@@ -23,7 +23,9 @@ RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
 # velocidad en el resto de voces». Jambo nunca se acelera; el resto se lleva a unas 3 palabras por segundo.
 LENTOS_QUIEN = {"jambo"}
-PAL_S_OBJETIVO, TEMPO_MAX = 3.0, 1.3
+PAL_S = {None: 3.0, "jambo": 2.0, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
+TEMPO_MAX = {None: 1.3, "jambo": 1.6}                 # tope de aceleración sin cambiar el tono (atempo)
+PAUSA_MAX = {None: 0.35, "jambo": 0.55}               # ninguna pausa interna más larga que esto (segundos)
 
 
 def frases(texto):
@@ -164,15 +166,51 @@ def cortar(pedido, out, modelo_whisper="small"):
                 a, b = int(cortes[k] * 16000), int(cortes[k + 1] * 16000); activos = np.nonzero(env[a:b] > umbral)[0]
                 ini = max(cortes[k], (a + activos[0]) / 16000 - 0.06) if len(activos) else lim[k][0]
                 fin = min(cortes[k + 1], (a + activos[-1]) / 16000 + 0.12) if len(activos) else lim[k][1]
-                ini = min(ini, lim[k][0]); fin = max(fin, lim[k][1]); dur = fin - ini
+                ini = min(ini, lim[k][0]); fin = max(fin, lim[k][1])
                 pal = [(w, v) for (kk, w), v in zip(esp, t) if kk == k]
-                pps = len(pal) / max(dur, 0.1)
-                tempo = 1.0 if (quien in LENTOS_QUIEN or pps >= PAL_S_OBJETIVO) else min(TEMPO_MAX, PAL_S_OBJETIVO / pps)
-                mp3 = f"{out}/{n}_{i}.mp3"
-                subprocess.run([ff, "-v", "error", "-y", "-ss", f"{ini:.3f}", "-t", f"{dur:.3f}", "-i", wav, "-af",
-                                f"afade=t=in:d=0.02,atempo={tempo:.3f},loudnorm=I=-17:TP=-2:LRA=11", "-ac", "1", "-ar", "44100", "-b:a", "128k", mp3], check=True)
-                # tiempos de palabra: los casados tal cual; los no casados, repartidos entre sus vecinos
-                tiempos = [((v[0] - ini) / tempo, (v[1] - ini) / tempo) if v else None for _, v in pal]; real = dur / tempo
+                seg = x[int(ini * 16000):int(fin * 16000)].copy(); quitar = []
+                # "quitar": [[a, b], ...] = palabras (índices, ambos incluidos) que se eliminan del audio ya grabado
+                for qa, qb in sorted(e.get("quitar") or [], reverse=True):
+                    ta = max(v[1] for _, v in pal[:qa] if v) + 0.08 if qa and any(v for _, v in pal[:qa]) else ini
+                    tb = min(v[0] for _, v in pal[qb + 1:] if v) - 0.06 if any(v for _, v in pal[qb + 1:]) else fin
+                    quitar.append((ta, tb)); pal = pal[:qa] + pal[qb + 1:]
+                for ta, tb in quitar:   # de atrás hacia delante: los índices anteriores no se mueven
+                    seg = np.concatenate([seg[:max(0, int((ta - ini) * 16000))], seg[max(0, int((tb - ini) * 16000)):]])
+                # pausas internas: ninguna pasa de PAUSA_MAX (retención)
+                ev = np.sqrt(np.convolve(seg ** 2, np.ones(320) / 320, mode="same")); callado = ev < max(ev.max() * 0.025, 1e-4)
+                trozos = []; q0 = 0; maxm = int(PAUSA_MAX.get(quien, PAUSA_MAX[None]) * 16000)
+                while q0 < len(seg):
+                    q1 = q0
+                    while q1 < len(seg) and callado[q1] == callado[q0]:
+                        q1 += 1
+                    trozos.append(seg[q0:q1] if not callado[q0] or q1 - q0 <= maxm else np.concatenate([seg[q0:q0 + maxm // 2], seg[q1 - maxm // 2:q1]])); q0 = q1
+                seg = np.concatenate(trozos); dur = len(seg) / 16000
+                objetivo = PAL_S.get(quien, PAL_S[None]); pps = len(pal) / max(dur, 0.1)
+                tempo = 1.0 if pps >= objetivo else min(TEMPO_MAX.get(quien, TEMPO_MAX[None]), objetivo / pps)
+                # el corte se hace sobre el wav original (24 kHz) con los mismos instantes, para no perder calidad
+                tmp = f"{out}/{n}_{i}_crudo.wav"; mp3 = f"{out}/{n}_{i}.mp3"
+                alta = np.frombuffer(subprocess.run([ff, "-v", "error", "-ss", f"{ini:.3f}", "-t", f"{fin - ini:.3f}", "-i", wav, "-ac", "1", "-ar", "48000", "-f", "s16le", "-"],
+                                                    capture_output=True).stdout, np.int16).astype(np.float32) / 32768
+                for ta, tb in quitar:
+                    alta = np.concatenate([alta[:max(0, int((ta - ini) * 48000))], alta[max(0, int((tb - ini) * 48000)):]])
+                ea = np.sqrt(np.convolve(alta ** 2, np.ones(960) / 960, mode="same")); ca = ea < max(ea.max() * 0.025, 1e-4); tz = []; q0 = 0; mm = maxm * 3
+                while q0 < len(alta):
+                    q1 = q0
+                    while q1 < len(alta) and ca[q1] == ca[q0]:
+                        q1 += 1
+                    tz.append(alta[q0:q1] if not ca[q0] or q1 - q0 <= mm else np.concatenate([alta[q0:q0 + mm // 2], alta[q1 - mm // 2:q1]])); q0 = q1
+                alta = np.concatenate(tz)
+                subprocess.run([ff, "-v", "error", "-y", "-f", "s16le", "-ar", "48000", "-ac", "1", "-i", "-", "-af",
+                                f"afade=t=in:d=0.02,atempo={tempo:.3f},loudnorm=I=-17:TP=-2:LRA=11", "-ac", "1", "-ar", "44100", "-b:a", "128k", mp3],
+                               input=(np.clip(alta, -1, 1) * 32767).astype(np.int16).tobytes(), check=True)
+                # tiempos de palabra medidos sobre el mp3 FINAL (segunda pasada de Whisper, solo esa réplica)
+                fin_raw = subprocess.run([ff, "-v", "error", "-i", mp3, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+                y = np.frombuffer(fin_raw, np.int16).astype(np.float32) / 32768; real = len(y) / 16000
+                s2, _ = wm.transcribe(y, language="es", word_timestamps=True); r2 = [(w.word, w.start, w.end) for sg in s2 for w in sg.words if _norm(w.word)]
+                m2 = difflib.SequenceMatcher(None, [_norm(w) for w, _ in pal], [_norm(w) for w, _, _ in r2], autojunk=False); tiempos = [None] * len(pal)
+                for a_, b_, size in m2.get_matching_blocks():
+                    for d in range(size):
+                        tiempos[a_ + d] = (r2[b_ + d][1], r2[b_ + d][2])
                 j = 0
                 while j < len(tiempos):
                     if tiempos[j] is None:
@@ -185,8 +223,9 @@ def cortar(pedido, out, modelo_whisper="small"):
                         j = h
                     else:
                         j += 1
-                words = [{"w": w.strip(".,;:¡!¿?…«»"), "s": round(max(0, s), 3), "e": round(min(max(en, s + 0.05), real), 3)} for (w, _), (s, en) in zip(pal, tiempos)]
-                manifiesto[f"{n}_{i}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3), "pal_s": round(len(pal) / real, 2)}
+                words = [{"w": w.strip(".,;:¡!¿?…«»"), "s": round(max(0, s_), 3), "e": round(min(max(en, s_ + 0.05), real), 3)} for (w, _), (s_, en) in zip(pal, tiempos)]
+                manifiesto[f"{n}_{i}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3),
+                                          "pal_s": round(len(pal) / real, 2), "texto": " ".join(w for w, _ in pal), "oido": " ".join(w.strip() for w, _, _ in r2)}
         json.dump(manifiesto, open(f"{out}/{n}_voces.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         json.dump(informe, open(f"{out}/{n}_informe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         for q, v in informe.items():

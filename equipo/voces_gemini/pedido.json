@@ -1,5 +1,5 @@
 {
- "_nota": "Pasada 2 del 522 (orden del dueño 23/11 22:27): Rosa con voz de biblioteca de España (la diseñada sonaba sudamericana) y Jambo con voz nueva, más lenta y arrastrando las eses.",
+ "_nota": "Pedido del 522 (23/11/2026), ya generado y publicado en cola/522_jambo_factura_luz. Para otro episodio: cambiar «episodios» y subir a una rama claude/voces-<n> (o lanzar el workflow a mano); después «voces_gemini.py cortar» y gen_episodios.py con VOCES_PREFAB. Campos opcionales: solo (personajes), voces ({personaje: [voz]}), disenar ({personaje: {genero, descripcion}}), y por escena voz_tts (texto para la voz distinto del subtítulo) y quitar ([[a,b]] palabras a eliminar del audio).",
  "modelos": [
   "gemini-3.8-flash-lite-tts",
   "gemini-3.8-flash-tts"
@@ -100,7 +100,13 @@
      ],
      "a": {
       "felipe": "desespera"
-     }
+     },
+     "quitar": [
+      [
+       3,
+       6
+      ]
+     ]
     },
     {
      "e": "gag",
@@ -146,7 +152,13 @@
      "a": {
       "neo": "presume"
      },
-     "sello": "PILLADA"
+     "sello": "PILLADA",
+     "quitar": [
+      [
+       15,
+       21
+      ]
+     ]
     },
     {
      "e": "cierre",
@@ -159,28 +171,5 @@
     }
    ]
   }
- ],
- "solo": [
-  "rosa",
-  "jambo"
- ],
- "voces": {
-  "rosa": [
-   "es-es-podcaster-5"
-  ]
- },
- "disenar": {
-  "jambo": {
-   "genero": "male",
-   "orden": 0,
-   "nombre": "Jambo-serie · jambo v2",
-   "descripcion": "A scrawny, worn-out man in his late 40s who sounds much older, from a rough working-class barrio. He speaks European Spanish from Madrid, Spain: peninsular Castilian accent with the Spanish 'th' sound for z and c, uses 'vosotros' and 'vale'. Never Latin American, never Portuguese. Very slow, sleepy, drawling street speech: he drags and lengthens his words, stretches and hisses every S sound, slurs his consonants and trails off as if half asleep. Hoarse, raspy, broken, nasal voice. A wheedling, shameless scrounger who suddenly wakes up when he wants something."
-  },
-  "rosa": {
-   "genero": "female",
-   "orden": 1,
-   "nombre": "Jambo-serie · rosa v2",
-   "descripcion": "A woman in her early 50s who runs a small business. She speaks European Spanish from Madrid, Spain: peninsular Castilian accent with the Spanish 'th' sound for z and c, uses 'vosotros' and 'vale'. Never Latin American, never Portuguese. Medium-low, slightly husky, commanding voice; bossy, theatrical and affected, sweet on the surface and sharp underneath. Confident, quick delivery."
-  }
- }
+ ]
 }
