@@ -350,8 +350,11 @@ def _llamar_un_modelo(modelo, api_key, body):
         headers={"Content-Type": "application/json"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=25) as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:   # 23/11/2026: con 25 s los modelos buenos no llegaban a contestar 4 guiones
         return json.loads(resp.read().decode("utf-8"))
+
+
+_ULTIMO_MODELO = []
 
 
 def _llamar_gemini(prompt):
@@ -368,13 +371,17 @@ def _llamar_gemini(prompt):
     }
 
     data = None
-    for modelo in MODELOS:
+    # 23/11/2026: el modelo que ya contestó en esta pasada va primero en las rondas de corrección (la pasada de las 11:01
+    # gastó 6 de sus 8 minutos repitiendo en cada ronda los mismos modelos saturados antes de llegar al que respondía).
+    orden = ([_ULTIMO_MODELO[0]] if _ULTIMO_MODELO else []) + [m for m in MODELOS if not _ULTIMO_MODELO or m != _ULTIMO_MODELO[0]]
+    for modelo in orden:
         # "Alta demanda" (503) suele ser cosa de segundos: 2 intentos cortos con espera antes
         # de pasar al siguiente modelo de la lista, en vez de darlo por perdido a la primera.
         for intento in range(2):
             try:
                 data = _llamar_un_modelo(modelo, api_key, body)
                 print(f"Modelo usado: {modelo}")
+                _ULTIMO_MODELO[:] = [modelo]
                 break
             except urllib.error.HTTPError as e:
                 detalle = e.read().decode("utf-8", "ignore")[:300]
@@ -395,7 +402,7 @@ def _llamar_gemini(prompt):
             break
 
     if data is None:
-        print(f"Ningún modelo de {MODELOS} respondió.")
+        print(f"Ningún modelo de {orden} respondió.")
         return None
 
     try:
