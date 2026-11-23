@@ -1,0 +1,30 @@
+name: Voces Gemini de un episodio (El Jambo)
+
+# Genera con Gemini TTS (clave gratuita del Guionista) el audio de cada personaje del pedido equipo/voces_gemini/pedido.json:
+# una petición por personaje (el plan gratuito da 10 al día por modelo). Deja los .wav como artefacto; el corte por réplica
+# se hace después con «voces_gemini.py cortar». No publica nada. Creado el 23/11/2026.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/voces-**"]
+    paths: ["equipo/voces_gemini/pedido.json"]
+
+permissions:
+  contents: read
+
+jobs:
+  voces:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generar una pista por personaje
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 herramientas/voces_gemini.py generar equipo/voces_gemini/pedido.json /tmp/voces
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: voces-gemini
+          path: /tmp/voces/
+          if-no-files-found: ignore

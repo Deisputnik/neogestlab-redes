@@ -1,0 +1,78 @@
+{
+ "_nota": "Spec generado con gen_episodios (voces ya hechas con Gemini TTS, herramientas/voces_gemini.py) en Neogest Studio. PILOTO de las órdenes del dueño del 23/11 noche: voces nuevas (una por personaje), Jambo con rasgos de toxicómano de barrio y guion en retención v12.",
+ "motor": "neogest-studio",
+ "episodio": "522_jambo_factura_luz",
+ "set": "salon",
+ "moraleja": "Antes de culpar a otro, mira tu contador",
+ "gancho_tipo": "pregunta_abierta",
+ "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
+ "promesa": "¿Quién ha gastado novecientos euros de luz?",
+ "giro": "Parecía que Jambo robaba la luz y el cable es de Rosa",
+ "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
+ "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Novecientos euros de luz! ¿Quién ha sido?"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "rie",
+   "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que sale por la ventana, qué?"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me roba la luz lo denuncio hoy mismo!"
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "susurra",
+   "v": "Prima… yo solo cargo el móvil. Un ratito… ¿Qué te estaba diciendo? Ah, sí. Déjame un eurillo."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "enfado",
+   "v": "¡Ya está, coño! Ese cable llega hasta su puerta, lo sé yo."
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "grita",
+   "v": "¡Quieto, primo, joder! Ese cable no es mío. Va al trastero… ¡a la sauna que tiene escondida Rosa!",
+   "giro": true,
+   "risas": true
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¿Una sauna? ¡Y a nosotros nos apagas la estufa, tía rata! Que lo resuelva el Neo."
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Los novecientos euros de luz son de su sauna, Rosa: ocho horas al día.",
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Antes de culpar a otro, mira tu contador."
+  }
+ ]
+}

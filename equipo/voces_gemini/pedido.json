@@ -1,0 +1,175 @@
+{
+ "_nota": "Pedido del 522 (23/11/2026), ya generado y publicado en cola/522_jambo_factura_luz. Para otro episodio: cambiar «episodios» y subir a una rama claude/voces-<n> (o lanzar el workflow a mano); después «voces_gemini.py cortar» y gen_episodios.py con VOCES_PREFAB. Campos opcionales: solo (personajes), voces ({personaje: [voz]}), disenar ({personaje: {genero, descripcion}}), y por escena voz_tts (texto para la voz distinto del subtítulo) y quitar ([[a,b]] palabras a eliminar del audio).",
+ "modelos": [
+  "gemini-3.8-flash-lite-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "episodios": [
+  {
+   "slug": "522_jambo_factura_luz",
+   "set": "salon",
+   "hora": 19,
+   "moraleja": "Antes de culpar a otro, mira tu contador",
+   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
+   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
+   "gancho_tipo": "pregunta_abierta",
+   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
+   "promesa": "¿Quién ha gastado novecientos euros de luz?",
+   "giro": "Parecía que Jambo robaba la luz y el cable es de Rosa",
+   "escenas": [
+    {
+     "e": "gancho",
+     "h": "rosa",
+     "emo": "grita",
+     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
+     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
+     "p": [
+      "rosa",
+      "felipe"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "chulea",
+     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
+     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
+     "p": [
+      "felipe",
+      "rosa"
+     ],
+     "a": {
+      "felipe": "presume"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "rie",
+     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que sale por la ventana, qué?",
+     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que sale por la ventana, qué?",
+     "p": [
+      "sindy",
+      "felipe"
+     ],
+     "a": {
+      "sindy": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "rosa",
+     "emo": "enfado",
+     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me roba la luz lo denuncio hoy mismo!",
+     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me roba la luz lo denuncio hoy mismo!",
+     "p": [
+      "rosa",
+      "sindy"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "susurra",
+     "v": "Prima… yo solo cargo el móvil. Un ratito… ¿Qué te estaba diciendo? Ah, sí. Déjame un eurillo.",
+     "t": "Prima… yo solo cargo el móvil. Un ratito… ¿Qué te estaba diciendo? Ah, sí. Déjame un eurillo.",
+     "p": [
+      "jambo",
+      "rosa"
+     ],
+     "a": {
+      "jambo": "delega"
+     },
+     "voz_tts": "<yawn> Primaaa… yo sssolo cargo el móvil. Un ratitooo… ¿Qué te essstaba diciendo? Ah, sssí. Déjame un eurillooo."
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "enfado",
+     "v": "¡Ya está, coño! ¡Ha sido el Jambo! Ese cable llega hasta su puerta, lo sé yo.",
+     "t": "¡Ya está, coño! ¡Ha sido el Jambo! Ese cable llega hasta su puerta, lo sé yo.",
+     "p": [
+      "felipe",
+      "jambo"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "quitar": [
+      [
+       3,
+       6
+      ]
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "grita",
+     "v": "¡Quieto, primo, joder! Ese cable no es mío. Va al trastero… ¡a la sauna que tiene escondida Rosa!",
+     "t": "¡Quieto, primo, joder! Ese cable no es mío. Va al trastero… ¡a la sauna que tiene escondida Rosa!",
+     "p": [
+      "jambo",
+      "rosa"
+     ],
+     "a": {
+      "jambo": "desespera"
+     },
+     "giro": true,
+     "risas": true,
+     "voz_tts": "¡Quieto, primooo, joder! Esse cable no esss mío. Va al trassstero… ¡a la sssauna que tiene essscondida Rosa!"
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "sorpresa",
+     "v": "¿Una sauna? ¡Y a nosotros nos apagas la estufa, tía rata! Que lo resuelva el Neo.",
+     "t": "¿Una sauna? ¡Y a nosotros nos apagas la estufa, tía rata! Que lo resuelva el Neo.",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "a": {
+      "sindy": "desespera"
+     }
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Los novecientos euros de luz son de su sauna, Rosa: ocho horas al día. El móvil de Jambo gastó doce céntimos.",
+     "t": "Resuelto. Los novecientos euros de luz son de su sauna, Rosa: ocho horas al día. El móvil de Jambo gastó doce céntimos.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "presume"
+     },
+     "sello": "PILLADA",
+     "quitar": [
+      [
+       15,
+       21
+      ]
+     ]
+    },
+    {
+     "e": "cierre",
+     "h": "neo",
+     "emo": "normal",
+     "v": "Antes de culpar a otro, mira tu contador.",
+     "t": "Antes de culpar a otro, mira tu contador",
+     "p": null,
+     "a": null
+    }
+   ]
+  }
+ ]
+}
