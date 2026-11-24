@@ -1,7 +1,13 @@
 {
-  "aprobado": true,
-  "nota": 93,
-  "comentario": "Episodio de 59.9s dentro de 45-70s. Intro \"Cosas de Casa\" con gancho ≤8 palabras (\"Fichar en casa: ¿hasta para mear?\") y cierre en bucle con el mismo plano, con la tarjeta de marca de 3s intercalada (correcto según orden 23/11 22:44). Isotipo 2026 correcto en insignia y tarjeta de cierre, coincide con la referencia. Registro de personajes correcto: Neo único culto y respetuoso, resto muy vulgares con tacos reales (coño, hostia); Jambo Reseco como gorrón pidiendo cerveza. Giro marcado en guion (Felipe acierta por una vez), humor negro real (explotación laboral/\"la gratitud no cotiza\"), moraleja clara y recuerdo del trastero. El remate de Neo responde a la pregunta del gancho y recoge el tema del fichaje. Audio sin silencios largos, pico -2.14dB (con margen bajo -1dB), LUFS -14.86 muy cerca del objetivo. Post con cierre fijo correcto, sin embudo, atribución musical presente, YouTube con #Shorts.",
-  "fecha": "2026-11-24T11:09:41Z",
-  "revisor": "Calidad (API)"
+  "aprobado": false,
+  "nota": 70,
+  "motivos": [
+    "control_audio.json marca bloqueo real (no es jerga tipo 'illo'/'pa'/tacos): en el remate, el nombre del protagonista 'Neo' se pronuncia/transcribe como 'Leo' justo en la frase clave 'Que lo resuelva el Neo' -> 'que lo resuelvan, Leo'; y 'de buena tinta' se oye 'de una tinta', perdiendo el sentido de la frase de Felipe.",
+    "El audio final de la pieza lleva pegada la coletilla 'Subtítulos por la comunidad de Amara.org', que es un crédito/marca de un tercero ajeno al proyecto colado al final de la pista de voz (bloqueo 4 del estándar: contenido ajeno/marca de terceros), probablemente arrastrado de un archivo de voz o subtítulos reutilizado por el motor.",
+    "La aprobación anterior (93) es anterior a este control_audio.json y no contempló estos fallos reales de voz; queda caducada (bloqueo 9 del estándar)."
+  ],
+  "como_arreglarlo": "CREADOR/CENTRO: regenerar solo el audio de las frases afectadas ('¡Eso lo sé de buena tinta!' y 'Que lo resuelva el Neo.') con voz_disenada y volver a renderizar; y revisar el pipeline de audio del motor para que no añada la coletilla de Amara.org al final de la pista (parece residuo de un paso de subtitulado/transcripción automática mezclado con el máster) - avisar como URGENTE en equipo/peticiones_mejora.md si aparece en más piezas, ya que sería un fallo del motor, no solo de esta pieza.",
+  "fecha": "2026-11-24T12:10:19Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-24T11:09:51+00:00"
 }
