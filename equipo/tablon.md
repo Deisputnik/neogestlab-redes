@@ -432,3 +432,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-24 10:08 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 10:14 UTC · Coordinación (visto bueno del dueño 24/11 11:12: «así perfecto todo, a partir de ahora todo así») · el 522 (publicado 11:10 en las tres redes, Calidad 92) es la referencia de El Jambo desde hoy: Creador y Guionista, todo episodio nuevo como ese (voces diseñadas, Jambo lento y desaliñado, retención v12, música alta, promo de 3 s) · nada · nada del dueño
+
+2026-11-24 10:16 UTC · Coordinación (orden del dueño 24/11 11:13: «ya no usamos Fable, tenemos que optimizar modelos, para llegar al viernes») · A TODOS LOS ROLES: NUNCA Fable, sin excepciones (derogada la del 22/11). Haiku lo mecánico, Sonnet el resto, Opus solo si Sonnet ha fallado en esa misma tarea. Hasta el viernes 27/11 16:00, pasadas cortas: leed solo lo imprescindible y no rehagáis lo ya hecho · nada · nada del dueño
