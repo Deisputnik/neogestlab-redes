@@ -4,7 +4,13 @@
   "prueba_no_seguidores": true,
   "publicado": "2026-11-21T23:19:59+00:00",
   "youtube": {
-    "estado": "sin_credenciales"
+    "estado": "publicado",
+    "video_id": "MviFlK-AY7A",
+    "enlace": "https://youtube.com/shorts/MviFlK-AY7A",
+    "titulo": "La app milagrosa que vende el vecino #Shorts",
+    "_reintentos": 1,
+    "publicado": "2026-11-24T11:09:56+00:00",
+    "recuperado": true
   },
   "facebook": {
     "estado": "publicado",

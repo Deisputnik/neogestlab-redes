@@ -1,43 +1,44 @@
 {
- "tipo": "reel",
- "compartir_en_feed": true,
- "prueba_no_seguidores": false,
- "formato": "Serie El Jambo",
- "publico": "barrio",
- "portada_ms": 0,
- "monetizacion": {
-  "objetivo": "visita_perfil",
-  "oferta": "prueba gratuita en /solicitar (texto del post)",
-  "paso_embudo": "alcance → visita al perfil → prueba gratuita"
- },
- "musica": {
-  "titulo": "Biblioteca Pixabay de Neogest Studio",
-  "autor": "Pixabay",
-  "licencia": "Licencia de contenido de Pixabay",
-  "archivo": "estudio"
- },
- "motor": "neogest-studio",
- "texto": "Rosa quiere que se fiche con huella hasta para ir al baño. Y Neo le recuerda quién incumple.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: quien ficha gratis trabaja gratis.\nMándaselo a tu jefe del fichaje.\n#humornegro #fichar #jornadalaboral #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
- "cuando": "2026-11-24T16:30:00+01:00",
- "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
- "_fuentes": [],
- "_comprobado": "Episodio de humor sin cifras verificables; el dato del cuñado es falso a propósito y Neo lo corrige.",
- "motor_voz": "voz_disenada",
- "_voz_nota": "Voces Gemini TTS diseñadas por personaje (equipo/voz_gemini.json), como el 522.",
- "comentario_fijado": "¿Tu jefe ficha lo que no paga? Episodio nuevo cada día en @neogestlab",
- "avance_siguiente": "Siguiente: la clienta que paga la semana que viene",
- "youtube": {
-  "titulo": "Fichar en casa hasta para mear #Shorts",
-  "descripcion": "Humor negro de ficción: Rosa impone fichar con huella y Neo le saca los colores. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
-  "etiquetas": [
-   "humornegro",
-   "fichar",
-   "jornadalaboral",
-   "serieeljambo",
-   "neogestlab"
-  ]
- },
- "_nota_creador": "24/11/2026 Creador (pasada 09:51): retención v12, voces diseñadas, referencia 522. Sin reel de prueba (orden 24/11).",
- "renderizado": false,
- "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4b88864b3033cd7a14111797762de2e1_521_jambo_fichar_en_casa_v2.mp4"
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Rosa quiere que se fiche con huella hasta para ir al baño. Y Neo le recuerda quién incumple.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: quien ficha gratis trabaja gratis.\nMándaselo a tu jefe del fichaje.\n#humornegro #fichar #jornadalaboral #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-24T16:30:00+01:00",
+  "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; el dato del cuñado es falso a propósito y Neo lo corrige.",
+  "motor_voz": "voz_disenada",
+  "_voz_nota": "Voces Gemini TTS diseñadas por personaje (equipo/voz_gemini.json), como el 522.",
+  "comentario_fijado": "¿Tu jefe ficha lo que no paga? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la clienta que paga la semana que viene",
+  "youtube": {
+    "titulo": "Fichar en casa hasta para mear #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa impone fichar con huella y Neo le saca los colores. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "fichar",
+      "jornadalaboral",
+      "serieeljambo",
+      "neogestlab"
+    ]
+  },
+  "_nota_creador": "24/11/2026 Creador (pasada 09:51): retención v12, voces diseñadas, referencia 522. Sin reel de prueba (orden 24/11).",
+  "renderizado": "2026-11-24T11:09:51+00:00",
+  "asset": "521_jambo_fichar_en_casa.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4b88864b3033cd7a14111797762de2e1_521_jambo_fichar_en_casa_v2.mp4"
 }
