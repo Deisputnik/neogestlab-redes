@@ -18,6 +18,7 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "/tmp/aud"
 MODELOS = ["gemini-3.8-flash-tts", "gemini-3.8-flash-lite-tts"]
 PREFIJO = "Jambo-serie · "
 ES = "Castilian Spanish from Spain with a clear peninsular (Madrid) accent, never Latin American."
+ES_AND = "Andalusian Spanish from southern Spain (Seville/Cadiz area): final s and d sounds consistently dropped or softened, aspirated or dropped h/j, relaxed consonants, warm melodic intonation; unmistakably Andalusian, never Madrid/Castilian, never Latin American."
 
 # personaje: (género, descripción de la voz para el diseño, estilo de la frase de prueba, frase de prueba)
 PERSONAJES = {
@@ -52,6 +53,21 @@ PERSONAJES = {
               "delivery with a nasal whine, runs out of breath, then sudden bursts of agitated energy. A wheedling, shameless scrounger.",
               "hoarse and slurred, dragging the words, loses his thread, then a sudden impatient burst",
               "<cough> Rosa, prima… déjame veinte euros, que mañana te los devuelvo… <short pause> ¿Qué te estaba diciendo? ¡Ah, sí! ¡Que me los des ya, joder, que tengo prisa!"),
+      "gpsand_mari": ("female",
+                                          f"A cheerful woman in her 40s from Seville, speaking {ES_AND} Warm, bright, friendly voice with constant "
+                                          "good humor, like a chatty neighbour giving directions; relaxed, melodic pace.",
+                                          "warm, cheerful, chatty",
+                                          "Illo, pues ahora giras a la izquierda, que te vas a liar como no me hagas caso. <short pause> Venga, tranquilo, que ya casi hemos llegao."),
+      "gpsand_paco": ("male",
+                                          f"A confident man in his 50s from Cadiz, speaking {ES_AND} Deep, calm, slightly raspy voice with the "
+                                          "relaxed authority of an old sailor giving directions; unhurried, warm delivery.",
+                                          "calm, deep, reassuring",
+                                          "Tranquilo compadre, en doscientos metros giras a la derecha. <short pause> Y no te pongas nervioso, que esto lo controlo yo mejol que nadie."),
+      "gpsand_lola": ("female",
+                                          f"A sharp-witted woman in her 30s from Jerez, speaking {ES_AND} Fast, playful, teasing voice full of sass "
+                                          "and street humor; quick retorts, lots of personality.",
+                                          "fast, playful, teasing",
+                                          "Illo, que te has pasao la salida, mi arma. <laugh> Na, tranquilo, que ahora te recoloco yo en un pispas."),
 }
 SOLO = [p for p in os.environ.get("AUDICION_SOLO", "").split(",") if p] or list(PERSONAJES)
 REDISENAR = [p for p in os.environ.get("AUDICION_REDISENAR", "").split(",") if p]
