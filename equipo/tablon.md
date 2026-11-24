@@ -431,3 +431,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 1) Duplicación/repetición de la frase de cierre en la locución sintetizada ('vigilar a quien no cobra' se repite tras el remate) — defecto de síntesis de audio dentro del mp4 renderizado; solo se corrige regenerando ese tramo de voz y rer · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
 
 2026-11-24 10:08 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-24 10:14 UTC · Coordinación (visto bueno del dueño 24/11 11:12: «así perfecto todo, a partir de ahora todo así») · el 522 (publicado 11:10 en las tres redes, Calidad 92) es la referencia de El Jambo desde hoy: Creador y Guionista, todo episodio nuevo como ese (voces diseñadas, Jambo lento y desaliñado, retención v12, música alta, promo de 3 s) · nada · nada del dueño
