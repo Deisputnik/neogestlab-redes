@@ -1,0 +1,72 @@
+{
+ "_nota": "Spec generado con gen_episodios (voces diseñadas) en Neogest Studio; retención v12.",
+ "motor": "neogest-studio",
+ "episodio": "523_jambo_clienta_sin_pagar",
+ "set": "salon",
+ "moraleja": "Lo que no reclamas, lo regalas",
+ "gancho_tipo": "pregunta_abierta",
+ "gancho_casa": "Ocho meses sin cobrar 😬",
+ "promesa": "¿Va a cobrar Rosa ocho meses de factura?",
+ "giro": "Concha lleva ocho meses calentándose gratis en el salón de Rosa",
+ "recuerdo": "Jambo ya pinchó la luz del trastero",
+ "bucle_visual": "Rosa con la factura impagada en alto, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Ocho meses sin cobrar, hostia! ¿Dónde está mi dinero, Concha?"
+  },
+  {
+   "e": "gag",
+   "h": "conchaqueton",
+   "emo": "chulea",
+   "v": "¡Ay, reina! Eso lo arreglamos la semana que viene. Tengo frío, joder, no me agobies."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Buah! Las facturas caducan al año, Rosa. Lo sé de buena tinta, que me lo dijo un notario."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "rie",
+   "v": "¿Caducan como el yogur? ¡Qué cuñado de los cojones! Ni un yogur aguanta ocho meses."
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "susurra",
+   "v": "Si me das veinte… la persigo yo. Mitad para mí…"
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "grita",
+   "v": "¡Rosa, que Concha lleva ocho meses calentándose en tu salón! ¡Eso es tu luz, coño!",
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¡Me cago en todo! ¡Encima me chupa la estufa! Que lo resuelva el Neo, joder.",
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Reclame por escrito: la ley da sesenta días para pagar, y desde el día sesenta y uno hay intereses. Concha le debe la factura y la calefacción. Y usted, señora Melano, lleva ocho meses regalándola.",
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Lo que no reclamas, lo regalas."
+  }
+ ]
+}

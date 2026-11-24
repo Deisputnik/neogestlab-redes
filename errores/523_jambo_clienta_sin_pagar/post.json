@@ -1,0 +1,48 @@
+{
+ "tipo": "reel",
+ "compartir_en_feed": true,
+ "prueba_no_seguidores": false,
+ "formato": "Serie El Jambo",
+ "publico": "barrio",
+ "portada_ms": 0,
+ "monetizacion": {
+  "objetivo": "visita_perfil",
+  "oferta": "prueba gratuita en /solicitar (texto del post)",
+  "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+ },
+ "musica": {
+  "titulo": "Biblioteca Pixabay de Neogest Studio",
+  "autor": "Pixabay",
+  "licencia": "Licencia de contenido de Pixabay",
+  "archivo": "estudio"
+ },
+ "motor": "neogest-studio",
+ "texto": "Ocho meses sin cobrar una factura y la clienta se calienta en tu salón. Neo le saca las cuentas.\nRosa, Felipe, Sindy, Concha Quetón, Jambo y Neo, humor negro de ficción.\nMoraleja: lo que no reclamas, lo regalas.\nMándaselo a quien tenga un cliente moroso.\n#humornegro #morosidad #autonomos #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+ "cuando": "2026-11-24T19:40:00+01:00",
+ "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
+ "_fuentes": [
+  {
+   "dato": "plazo máximo de pago de 60 días entre empresas",
+   "fuente": "Ley 3/2004 de medidas contra la morosidad",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21800"
+  }
+ ],
+ "_comprobado": "Plazo legal de 60 días de la Ley 3/2004; el resto es humor de ficción.",
+ "motor_voz": "voz_disenada",
+ "_voz_nota": "Piloto de voces Gemini TTS (gratis, clave del Guionista): una voz por personaje, ver equipo/voz_gemini.json. No es edge-tts ni ElevenLabs; no es la voz de nadie ni un clon.",
+ "comentario_fijado": "¿Cuánto llevas sin cobrar? Episodio nuevo cada día en @neogestlab",
+ "avance_siguiente": "Siguiente: Felipe y el seguro que lo cubre todo",
+ "youtube": {
+  "titulo": "Ocho meses sin cobrar: lo que no reclamas, lo regalas #Shorts",
+  "descripcion": "Humor negro de ficción: una clienta morosa y la ley de los sesenta días. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+  "etiquetas": [
+   "humornegro",
+   "morosidad",
+   "autonomos",
+   "serieeljambo",
+   "neogestlab"
+  ]
+ },
+ "_nota_creador": "24/11/2026 Creador (pasada 09:51): retención v12, voces diseñadas, referencia 522. Sin reel de prueba (orden 24/11).",
+ "renderizado": false
+}
