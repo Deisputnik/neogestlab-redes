@@ -1,0 +1,19 @@
+{
+  "media_id": "18129926860887254",
+  "enlace": "https://www.instagram.com/reel/DgHtQEBASgy/",
+  "prueba_no_seguidores": true,
+  "metodo": "video_url",
+  "publicado": "2026-11-24T10:10:14+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "8zuAH0Bj__Q",
+    "enlace": "https://youtube.com/shorts/8zuAH0Bj__Q",
+    "titulo": "900 € de luz: «son tomates», dice el vecino #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1459509452960727",
+    "enlace": "https://www.facebook.com/reel/1459509452960727",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
