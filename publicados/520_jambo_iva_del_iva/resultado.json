@@ -1,0 +1,19 @@
+{
+  "media_id": "18288664618289420",
+  "enlace": "https://www.instagram.com/reel/DgHfj1eDvSw/",
+  "prueba_no_seguidores": true,
+  "metodo": "video_url",
+  "publicado": "2026-11-24T08:10:36+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "MJ5wOk_1_Ng",
+    "enlace": "https://youtube.com/shorts/MJ5wOk_1_Ng",
+    "titulo": "Rosa cobra el IVA del IVA: el cuñado lo defiende #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1148252640923783",
+    "enlace": "https://www.facebook.com/reel/1148252640923783",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
