@@ -1,8 +1,3 @@
-2026-11-21 05:10  Estadísticas actualizadas (30 posts, 1599 seguidores)
-2026-11-21 05:25  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 05:25  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 05:25  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 05:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 05:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 05:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 05:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +593,8 @@
 2026-11-24 09:10  520_jambo_iva_del_iva: YouTube publicado https://youtube.com/shorts/MJ5wOk_1_Ng
 2026-11-24 09:10  520_jambo_iva_del_iva: Facebook publicado https://www.facebook.com/reel/1148252640923783
 2026-11-24 09:10  520_jambo_iva_del_iva: publicado https://www.instagram.com/reel/DgHfj1eDvSw/
+2026-11-24 10:09  Control de audio: OK; duración 67.06 s; avisos: ["voz distinta del guion: faltan ['buah', 'al', 'trastero', 'valgame', 'trastero', 'necesitan', 'lucecita', 'resuelto', 'trastero'], sobran ['bah', 'el', 'trasero', 'mordame', 'trasero', 'necesita', 'resuelta', 'trasero'] (rehacer esas frases)"]
+2026-11-24 10:09  522_jambo_factura_luz: control de audio del vídeo externo: aprobado=True LUFS=-14.5 pico=-1.3
+2026-11-24 10:09  522_jambo_factura_luz: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-24 10:09  352_jambo_perro_ladra: reintento de youtube (1/4; antes: sin_credenciales)
+2026-11-24 10:09  352_jambo_perro_ladra: YouTube publicado https://youtube.com/shorts/E4oHxwKPigI

@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 67.06,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['buah', 'al', 'trastero', 'valgame', 'trastero', 'necesitan', 'lucecita', 'resuelto', 'trastero'], sobran ['bah', 'el', 'trasero', 'mordame', 'trasero', 'necesita', 'resuelta', 'trasero'] (rehacer esas frases)"
+  ],
+  "transcripcion": "900 EUROS DE Luz, ¿Quién ha sido? ¡Bah! Eso es el contador, Rosa. De noche, cuenta doble. Lo sé de buena tinta. ¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja el trasero qué? ¡Qué cable! ¡Me cago en todo! Al que me pincha la luz, lo denuncio hoy mismo. Prima, mordame. Yo solo cargo el móvil. ¿Qué te estaba diciendo? Vengo del trasero, Rosa. Hay doce lámparas encendidas y una selva de macetas. Coño. Son tomates, primo. Tomates de los buenos. Necesita día y noche. ¿Tomates con doce lámparas? Sí, claro. Y yo soy notaria que lo resuelva el neo. Resuelta. Los 900 EUROS DE Luz son de esas doce lámparas. Y el trasero, Rosa. Se lo alquila usted en negro. Lo que alquilas en negro te sale caro.",
+  "guion": "¡Novecientos euros de luz! ¿Quién ha sido? ¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta. ¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué? ¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo! Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo? ¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño! Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche. ¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo. Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro. Lo que alquilas en negro te sale caro.",
+  "lufs": -14.5,
+  "pico_dbfs": -1.3
+}

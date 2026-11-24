@@ -4,7 +4,13 @@
   "prueba_no_seguidores": true,
   "publicado": "2026-11-21T23:22:13+00:00",
   "youtube": {
-    "estado": "sin_credenciales"
+    "estado": "publicado",
+    "video_id": "E4oHxwKPigI",
+    "enlace": "https://youtube.com/shorts/E4oHxwKPigI",
+    "titulo": "El perro del vecino no deja dormir a nadie #Shorts",
+    "_reintentos": 1,
+    "publicado": "2026-11-24T09:09:30+00:00",
+    "recuperado": true
   },
   "facebook": {
     "estado": "publicado",
