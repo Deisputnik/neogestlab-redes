@@ -64,8 +64,8 @@ PERSONAJES = {
                                           "calm, deep, reassuring",
                                           "Tranquilo compadre, en doscientos metros giras a la derecha. <short pause> Y no te pongas nervioso, que esto lo controlo yo mejol que nadie."),
       "gpsand_lola": ("female",
-                                          f"A sharp-witted woman in her 30s from Jerez, speaking {ES_AND} Fast, playful, teasing voice full of sass "
-                                          "and street humor; quick retorts, lots of personality.",
+                                          f"A quick-witted, cheerful woman in her 30s from Jerez, speaking {ES_AND} Fast, bright, playful voice bursting with personality "
+                                          "and warm comic energy, loves a joke, never unkind.",
                                           "fast, playful, teasing",
                                           "Illo, que te has pasao la salida, mi arma. <laugh> Na, tranquilo, que ahora te recoloco yo en un pispas."),
 }
