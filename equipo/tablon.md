@@ -447,3 +447,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-24 12:10 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 12:10 UTC · Calidad (API) · evaluadas 1 piezas: 521_jambo_fichar_en_casa rechazada (70): control_audio.json marca bloqueo real (no es jerga tipo 'illo'/'pa'/tacos): en el remate, el nombre del protagonista 'Neo' se pronuncia/transcribe como 'Leo' justo en la frase clave 'Que lo resuelva el Neo' -> 'que lo resuelvan, Leo'; y 'de buena tinta' se oye 'de una tinta', perdiendo el sentido de · Creador/Remasterizador: ver motivos arriba; necesito: nada del dueño
+2026-11-24 12:12 UTC · Guionista Gemini · no se ha podido pedir guiones (ver log del workflow) · el Creador escribe el suyo como hasta ahora
