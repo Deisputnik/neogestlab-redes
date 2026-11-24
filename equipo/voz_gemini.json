@@ -1,6 +1,6 @@
 {
  "_nota": "Voces de El Jambo que sabe diseñadas con Gemini TTS (23/11/2026, orden del dueño: «que sean todas las voces naturales, diferentes y expresivas, busca soluciones gratis»). Voces sintéticas creadas a partir de una descripción escrita: no son la voz de nadie ni un clon. EN AUDICIÓN: no están en producción hasta que el dueño las apruebe de oído; hasta entonces manda edge-tts v6 (gen_episodios.py). Rehacer una: workflow «Audición de voces Gemini (El Jambo)» con redisenar=<personaje> (cambia la descripción en herramientas/audicion_gemini.py).",
- "estado": "EN PRODUCCIÓN desde el 23/11/2026 (orden del dueño 22:57: «terminamos con esta nueva directiva a partir de hoy»). Respaldo si falla o no queda cuota: edge-tts v6.",
+ "estado": "EN PRODUCCIÓN y APROBADAS por el dueño de oído el 24/11/2026 11:12 tras ver el 522 publicado («así perfecto todo, a partir de ahora todo así»). Respaldo si falla o no queda cuota: edge-tts v6.",
  "clave": "secreto de Actions GEMINI_API_KEY (la del Guionista, plan gratuito)",
  "modelos": [
   "gemini-3.8-flash-tts",
