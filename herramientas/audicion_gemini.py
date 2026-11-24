@@ -63,6 +63,12 @@ PERSONAJES = {
                                           "relaxed authority of an old sailor giving directions; unhurried, warm delivery.",
                                           "calm, deep, reassuring",
                                           "Tranquilo compadre, en doscientos metros giras a la derecha. <short pause> Y no te pongas nervioso, que esto lo controlo yo mejol que nadie."),
+      "gpsand_paco2": ("male",
+                                                                 f"A boisterous, animated man in his 50s from Cadiz, speaking {ES_AND} Higher-pitched, lively, exaggerated "
+                                                                 "voice full of theatrical enthusiasm, like an over-the-top tour guide giving directions; fast, energetic delivery "
+                                                                 "with big swings in pitch and emphasis.",
+                                                                 "exaggerated, high-pitched, lively",
+                                                                 "¡Tranquilo compadre, en doscientos metros giras a la derecha! <short pause> ¡Y no te pongas nervioso, que esto lo controlo yo mejol que nadie!"),
       "gpsand_lola": ("female",
                                           f"A quick-witted, cheerful woman in her 30s from Jerez, speaking {ES_AND} Fast, bright, playful voice bursting with personality "
                                           "and warm comic energy, loves a joke, never unkind.",
