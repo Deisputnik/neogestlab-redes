@@ -50,7 +50,7 @@ def _cifras(t):
     t = re.sub(r"(\d+),(\d{1,2})\s*€", lambda m: "%d coma %d " % (int(m.group(1)), int(m.group(2))), t)   # 9,90 € (el «euros» final no se oye distinto)
     t = re.sub(r"(\d+)\s*€", r"\1 euros ", t)
     t = re.sub(r"(\d+)\s*\$", r"\1 dolares ", t)
-    t = re.sub(r"(\d+),(\d+)", r"\1 coma \2", t)                        # 2,5 -> 2 coma 5 (9,90 -> 9 coma 90)
+    t = re.sub(r"(\d),(\d+),", r"\1 coma \2", t)                        # 2,5 -> 2 coma 5 (9,90 -> 9 coma 90)
     t = re.sub(r"(\d)\s*%", r"\1 por ciento", t)
     t = re.sub(r"(\d)\s*h\b", r"\1 horas", t)
     t = re.sub(r"(\d)[:.](\d)", r"\1 \2", t)                            # 23:47 -> 23 47
@@ -170,9 +170,37 @@ def silencios(v):
     return [(max(0, e - d), e, d) for e, d in fin]
 
 
+# 24/11/2026 (Calidad, bloqueo real en 521_jambo_fichar_en_casa): sin VAD, Whisper alucina texto en los tramos sin
+# voz real (silencio final, música sola, colas de fade-out) porque su modelo se entrenó también con subtítulos de
+# vídeos reales. La coletilla "Subtítulos realizados por la comunidad de Amara.org" es una alucinación CONOCIDA y
+# documentada de Whisper/faster-whisper en exactamente ese tipo de tramo, no texto que el motor de voz haya puesto
+# en el audio. Arreglo de fondo: vad_filter=True (quita del audio los tramos sin voz antes de transcribir, así no
+# hay silencio/música sobre el que alucinar) + una lista de alucinaciones conocidas como red de seguridad adicional,
+# por si VAD deja pasar algún tramo borde. Ver HALUCINACIONES_CONOCIDAS más abajo.
+HALUCINACIONES_CONOCIDAS = (
+    "subtitulos realizados por la comunidad de amara",
+    "subtitulos por la comunidad de amara",
+    "subtitulado por la comunidad de amara",
+    "amara.org",
+    "amara org",
+    "subtitulos de pepe",
+    "gracias por ver el video",
+    "suscribete al canal",
+    "mas videos en",
+)
+
+
+def _es_alucinacion(frase):
+    """True si una frase coincide con una alucinación conocida de Whisper (se compara en forma normalizada)."""
+    f = " ".join(_tokens(frase))
+    return any(" ".join(_tokens(h)) in f for h in HALUCINACIONES_CONOCIDAS)
+
+
 def transcribir(v, lex=None):
     """[(palabra, inicio, fin)] con faster-whisper. Se le pasan como contexto los nombres de personaje y de las apps
-    (lexico_control.json «contexto_whisper»; hotwords si la versión lo admite, si no initial_prompt): solo nombres, nunca el guion."""
+    (lexico_control.json «contexto_whisper»; hotwords si la versión lo admite, si no initial_prompt): solo nombres, nunca el guion.
+    vad_filter=True: Whisper solo transcribe los tramos con voz real (si no, alucina texto de sus subtítulos de
+    entrenamiento sobre silencio o música sola; ver HALUCINACIONES_CONOCIDAS)."""
     import inspect
     from faster_whisper import WhisperModel
     m = WhisperModel("small", device="cpu", compute_type="int8")
@@ -183,8 +211,10 @@ def transcribir(v, lex=None):
             kw = {"hotwords": ctx} if "hotwords" in inspect.signature(m.transcribe).parameters else {"initial_prompt": ctx}
         except (TypeError, ValueError):
             kw = {"initial_prompt": ctx}
-    seg, _ = m.transcribe(v, language="es", beam_size=5, word_timestamps=True, vad_filter=False, **kw)
-    return [(w.word.strip(), w.start, w.end) for s in seg for w in s.words]
+    seg, _ = m.transcribe(v, language="es", beam_size=5, word_timestamps=True, vad_filter=True,
+                           vad_parameters=dict(min_silence_duration_ms=500), **kw)
+    segs = [s for s in seg if not _es_alucinacion(s.text)]
+    return [(w.word.strip(), w.start, w.end) for s in segs for w in s.words]
 
 
 def texto_de(pal):
