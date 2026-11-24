@@ -470,4 +470,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-24 18:37 UTC · Comunidad · pasada 19:37 Madrid: Instagram sin comentarios ni DMs con ventana abierta que atender; sin interesados nuevos; Facebook: el permiso para ocultar comentarios por API falta (App Review de Meta), anotado en pendiente_usuario.md · nada · nada urgente del dueño
 
 2026-11-24 19:08 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
-2026-11-24 19:32 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-24 19:32 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-24 20:52 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (3 al día, 0 sin render todavía) · nada
