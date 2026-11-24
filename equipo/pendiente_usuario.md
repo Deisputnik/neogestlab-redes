@@ -97,6 +97,8 @@ La tarea no puede leer workana.com ni ajreparacion.com (ENOTFOUND: fuera de los 
 - 2026-11-22 · Comunidad: sin candidatos nuevos para invitar hoy (el repo no tiene a quién invitar y la API no permite invitar). Si quieres invitar, usa el botón «Invitar» de la página con quienes ya comentan o reaccionan en los reels de esta semana.
 - 2026-11-23 · Comunidad: sin candidatos nuevos para invitar hoy (el repo no tiene a quién invitar y la API no permite invitar). Si quieres invitar, usa el botón «Invitar» de la página con quienes ya comentan o reaccionan en los reels de esta semana.
 
+- 2026-11-24 · Comunidad: Facebook no deja ocultar comentarios por API (permiso `ages_manage_engagement` no disponible; falta aprobación de App Review de Meta). Lo que haga falta ocultar, hazlo a mano desde la página (menú ⋯ del comentario). Sin urgencia.
+
 ## Migración de cuenta de GitHub (21/11/2026)
 - La cuenta ajreparacion quedó suspendida por GitHub; el repo se migró a Deisputnik/neogestlab-redes (todo el contenido, historia incluida). Secretos PAGE_TOKEN y FACEBOOK_PAGE_TOKEN reconfigurados. Causa más probable de la suspensión: reloj.yml mantenía un job de Actions corriendo casi 24h con auto-relanzado infinito; reescrito para que cada pasada sea corta (minuto 13/43, sin bucle).
 - Pendientes que solo puede resolver el dueño: secretos YOUTUBE_CLIENT_ID/SECRET/REFRESH_TOKEN no están en el repo nuevo (hace falta la consola de Google Cloud del proyecto OAuth original). El token de Facebook/Instagram usado es de corta duración (generado desde Graph API Explorer); si en unas horas falla la publicación, hay que regenerarlo o conseguir el App Secret para hacerlo de larga duración.
