@@ -4,7 +4,13 @@
   "prueba_no_seguidores": true,
   "publicado": "2026-11-21T23:19:20+00:00",
   "youtube": {
-    "estado": "sin_credenciales"
+    "estado": "publicado",
+    "video_id": "9-f5Z1qIEsA",
+    "enlace": "https://youtube.com/shorts/9-f5Z1qIEsA",
+    "titulo": "El vecino que no devuelve el taladro #Shorts",
+    "_reintentos": 1,
+    "publicado": "2026-11-24T14:11:27+00:00",
+    "recuperado": true
   },
   "facebook": {
     "estado": "publicado",
