@@ -474,3 +474,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-24 20:53 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 22:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-24 22:25 UTC · Analista · pasada de martes: 7 reels de 22-23/11 leídos con Buzzfy (saltos 33-100 %, ninguno llega a la mediana de 134); cuenta 7 días: 1.011 alcance, 2 visitas al perfil, 0 clics web, seguidores 1.596 · Creador: subidas directas fallidas en 517, 520 y 522 (se publicaron por video_url); vigilar · nada del dueño
