@@ -1,70 +1,28 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "Pedido del Creador 24/11 (pasada 09:51): 521 rehecho y 523 nuevo, retención v12.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "521_jambo_fichar_en_casa",
    "set": "salon",
    "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
+   "moraleja": "Quien ficha gratis trabaja gratis",
+   "recuerdo": "Jambo ya pinchó la luz del trastero",
+   "bucle_visual": "Rosa con el lector de huella en alto, misma pose",
    "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+   "gancho_casa": "Fichar en casa: ¿hasta para mear? 🕒",
+   "promesa": "¿Quién va a pagarle las horas de fichar a Sindy?",
+   "giro": "Fichar sin cobrar es trabajar gratis y la que incumple es Rosa",
    "escenas": [
     {
      "e": "gancho",
      "h": "rosa",
      "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "p": [
-      "rosa",
-      "felipe"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "felipe",
-     "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "presume"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "p": [
-      "sindy",
-      "felipe"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
+     "v": "¡Desde hoy se ficha con la huella, coño! ¡Hasta para ir a mear!",
+     "t": "¡Desde hoy se ficha con la huella, coño! ¡Hasta para ir a mear!",
      "p": [
       "rosa",
       "sindy"
@@ -75,87 +33,214 @@
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "p": [
-      "jambo",
-      "rosa"
-     ],
-     "a": {
-      "jambo": "delega"
-     },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
-    },
-    {
-     "e": "gag",
      "h": "felipe",
-     "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "emo": "chulea",
+     "v": "¡Buah! Es obligatorio en casa, Rosa. Lo pide la ley desde dos mil veinte. Me lo dijo un primo inspector.",
+     "t": "¡Buah! Es obligatorio en casa, Rosa. Lo pide la ley desde dos mil veinte. Me lo dijo un primo inspector.",
      "p": [
       "felipe",
       "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "enfado",
+     "v": "¿Y esas horas me las pagas, Rosa? ¡Que llevo tres años sin ver un puto euro!",
+     "t": "¿Y esas horas me las pagas, Rosa? ¡Que llevo tres años sin ver un puto euro!",
+     "p": [
+      "sindy",
+      "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "rosa",
+     "emo": "enfado",
+     "v": "¡Ni de coña, hostia! Fichas para que yo vea lo vaga que eres. Para eso mando yo.",
+     "t": "¡Ni de coña, hostia! Fichas para que yo vea lo vaga que eres. Para eso mando yo.",
+     "p": [
+      "rosa",
+      "sindy"
      ],
      "a": {
-      "felipe": "desespera"
-     },
-     "giro": true
+      "rosa": "presume"
+     }
     },
     {
      "e": "gag",
      "h": "jambo",
      "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "v": "Yo ficho… pero invita la casa. ¿No? Una cervecita…",
+     "t": "Yo ficho… pero invita la casa. ¿No? Una cervecita…",
      "p": [
       "jambo",
-      "felipe"
+      "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¡Rosa, que fichar sin cobrar es trabajar gratis, coño! ¡Eso lo sé de buena tinta!",
+     "t": "¡Rosa, que fichar sin cobrar es trabajar gratis, coño! ¡Eso lo sé de buena tinta!",
+     "p": [
+      "felipe",
+      "rosa"
      ],
-     "a": {
-      "jambo": "delega"
-     },
-     "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
+     "giro": true,
+     "risas": true
     },
     {
      "e": "gag",
      "h": "sindy",
      "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "v": "¿Por una vez el cuñado acierta? ¡Pues sí que es raro! Que lo resuelva el Neo.",
+     "t": "¿Por una vez el cuñado acierta? ¡Pues sí que es raro! Que lo resuelva el Neo.",
      "p": [
       "sindy",
-      "jambo"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
+      "neo"
+     ]
     },
     {
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "v": "Registrar la jornada es obligatorio, señora Melano. Pero solo si hay sueldo. Aquí quien incumple es usted: lleva tres años pagando con gratitud. La gratitud no cotiza.",
+     "t": "Registrar la jornada es obligatorio, señora Melano. Pero solo si hay sueldo. Aquí quien incumple es usted: lleva tres años pagando con gratitud. La gratitud no cotiza.",
      "p": [
       "neo",
       "rosa"
      ],
-     "a": {
-      "neo": "presume"
-     },
-     "sello": "PILLADOS"
+     "sello": "PILLADA"
     },
     {
      "e": "cierre",
      "h": "neo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "v": "Quien ficha gratis trabaja gratis.",
+     "t": "Quien ficha gratis trabaja gratis.",
+     "p": [
+      "neo"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "523_jambo_clienta_sin_pagar",
+   "set": "salon",
+   "hora": 19,
+   "moraleja": "Lo que no reclamas, lo regalas",
+   "recuerdo": "Jambo ya pinchó la luz del trastero",
+   "bucle_visual": "Rosa con la factura impagada en alto, misma pose",
+   "gancho_tipo": "pregunta_abierta",
+   "gancho_casa": "Ocho meses sin cobrar 😬",
+   "promesa": "¿Va a cobrar Rosa ocho meses de factura?",
+   "giro": "Concha lleva ocho meses calentándose gratis en el salón de Rosa",
+   "escenas": [
+    {
+     "e": "gancho",
+     "h": "rosa",
+     "emo": "grita",
+     "v": "¡Ocho meses sin cobrar, hostia! ¿Dónde está mi dinero, Concha?",
+     "t": "¡Ocho meses sin cobrar, hostia! ¿Dónde está mi dinero, Concha?",
+     "p": [
+      "rosa",
+      "conchaqueton"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "chulea",
+     "v": "¡Ay, reina! Eso lo arreglamos la semana que viene. Tengo frío, joder, no me agobies.",
+     "t": "¡Ay, reina! Eso lo arreglamos la semana que viene. Tengo frío, joder, no me agobies.",
+     "p": [
+      "conchaqueton",
+      "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "chulea",
+     "v": "¡Buah! Las facturas caducan al año, Rosa. Lo sé de buena tinta, que me lo dijo un notario.",
+     "t": "¡Buah! Las facturas caducan al año, Rosa. Lo sé de buena tinta, que me lo dijo un notario.",
+     "p": [
+      "felipe",
+      "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "rie",
+     "v": "¿Caducan como el yogur? ¡Qué cuñado de los cojones! Ni un yogur aguanta ocho meses.",
+     "t": "¿Caducan como el yogur? ¡Qué cuñado de los cojones! Ni un yogur aguanta ocho meses.",
+     "p": [
+      "sindy",
+      "felipe"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "susurra",
+     "v": "Si me das veinte… la persigo yo. Mitad para mí…",
+     "t": "Si me das veinte… la persigo yo. Mitad para mí…",
+     "p": [
+      "jambo",
+      "rosa"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "grita",
+     "v": "¡Rosa, que Concha lleva ocho meses calentándose en tu salón! ¡Eso es tu luz, coño!",
+     "t": "¡Rosa, que Concha lleva ocho meses calentándose en tu salón! ¡Eso es tu luz, coño!",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "rosa",
+     "emo": "enfado",
+     "v": "¡Me cago en todo! ¡Encima me chupa la estufa! Que lo resuelva el Neo, joder.",
+     "t": "¡Me cago en todo! ¡Encima me chupa la estufa! Que lo resuelva el Neo, joder.",
+     "p": [
+      "rosa",
+      "neo"
+     ],
+     "risas": true
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Reclame por escrito: la ley da sesenta días para pagar, y desde el día sesenta y uno hay intereses. Concha le debe la factura y la calefacción. Y usted, señora Melano, lleva ocho meses regalándola.",
+     "t": "Resuelto. Reclame por escrito: la ley da sesenta días para pagar, y desde el día sesenta y uno hay intereses. Concha le debe la factura y la calefacción. Y usted, señora Melano, lleva ocho meses regalándola.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "sello": "PILLADA"
+    },
+    {
+     "e": "cierre",
+     "h": "neo",
+     "emo": "normal",
+     "v": "Lo que no reclamas, lo regalas.",
+     "t": "Lo que no reclamas, lo regalas.",
+     "p": [
+      "neo"
+     ]
     }
    ]
   }
