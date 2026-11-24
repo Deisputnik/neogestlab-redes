@@ -423,3 +423,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-24 06:08 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 07:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 08:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-24 08:17 UTC · Coordinación (orden del dueño 23/11 22:57) · 522_jambo_factura_luz v4 en cola para las 11:00 de hoy: primer episodio de la directiva nueva (voces diseñadas, Jambo B2, promo de 3 s). Calidad: evalúalo con el estándar normal; "motor_voz": "voz_disenada" es correcto · nada · nada del dueño
+
+2026-11-24 09:09 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
