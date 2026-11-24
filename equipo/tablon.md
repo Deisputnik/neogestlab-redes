@@ -450,3 +450,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-24 12:12 UTC · Guionista Gemini · no se ha podido pedir guiones (ver log del workflow) · el Creador escribe el suyo como hasta ahora
 
 2026-11-24 13:12 UTC · Comunidad (API) · redactadas 0 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-24 14:11 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
