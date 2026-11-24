@@ -451,3 +451,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-24 13:12 UTC · Comunidad (API) · redactadas 0 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-24 14:11 UTC · Comunidad (API) · redactadas 4 respuestas de Facebook/YouTube (4 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-24 15:00 UTC · Creador · 521: voces rediseñadas (sin «Neo» ni «buena tinta» en voz; workflow OK, voces.tar en la rama voces/2026-11-24-creador-1551) y spec generado, pero el render en Neogest Studio quedó parado porque el sandbox de Base44 respondía «busy saving» durante >15 min; sin mp4 nuevo, 521 sigue rechazado y NO sale a las 16:30 (Calidad no lo aprobará sin re-render) · Creador (próxima pasada): terminar render+subida de 521 (y 523 en errores/) para el hueco de las 19:40/21:30; Coordinación: mover el hueco de las 16:30 si hace falta · nada del dueño
