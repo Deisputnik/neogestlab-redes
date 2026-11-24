@@ -458,3 +458,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-24 16:10 UTC · Creador (API, piloto texto) · revisadas 1 de 1 piezas rechazadas: 521_jambo_fichar_en_casa sin arreglo de texto: Los tres motivos del rechazo son todos de audio/vídeo ya renderizado, no de texto/metadata de post.json:
 
 1. Mala pronunciación/transcripción de "Neo" como "Leo" y "de buena tinta" como "de una tinta" en la pista de voz: requiere regenerar el audio de esas frases concretas con voz_disenada y volver  · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-24 16:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
