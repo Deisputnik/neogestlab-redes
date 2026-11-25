@@ -1,4 +1,3 @@
-2026-11-21 07:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 07:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 07:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 07:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +597,4 @@
 2026-11-25 08:10  Control de audio: FALLA voz distinta del guion: faltan ['buah', 'las', 'pagas', 'no', 'eso', 'lo', 'se', 'de', 'buena', 'tinta', 'resuelva', 'el', 'neo', 'quien'], sobran ['fua', 'la', 'paga', 'me', 'a', 'es', 'solo', 'sello', 'seguro', 'resuelvan', 'listo', 'que'] (rehacer esas frases); duración 59.9 s
 2026-11-25 08:10  521_jambo_fichar_en_casa: control de audio del vídeo externo: aprobado=False LUFS=-14.8 pico=-1.8
 2026-11-25 08:10  521_jambo_fichar_en_casa: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-25 12:09  Estadísticas actualizadas (30 posts, 1596 seguidores)

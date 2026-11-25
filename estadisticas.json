@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-25T04:09:40+00:00",
+  "actualizado": "2026-11-25T11:09:35+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1596,
@@ -39,15 +39,15 @@
       "permalink": "https://www.instagram.com/reel/DgHtQEBASgy/",
       "timestamp": "2026-11-24T10:10:06+0000",
       "metricas": {
-        "reach": 11,
-        "views": 22,
+        "reach": 13,
+        "views": 25,
         "saved": 0,
         "shares": 2,
         "comments": 0,
         "likes": 4,
         "total_interactions": 9,
-        "ig_reels_avg_watch_time": 16109,
-        "ig_reels_video_view_total_time": 273857
+        "ig_reels_avg_watch_time": 12733,
+        "ig_reels_video_view_total_time": 292874
       }
     },
     {
@@ -60,15 +60,15 @@
       "permalink": "https://www.instagram.com/reel/DgHfj1eDvSw/",
       "timestamp": "2026-11-24T08:10:28+0000",
       "metricas": {
-        "reach": 50,
-        "views": 60,
+        "reach": 86,
+        "views": 102,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 1,
         "total_interactions": 2,
-        "ig_reels_avg_watch_time": 14188,
-        "ig_reels_video_view_total_time": 723634
+        "ig_reels_avg_watch_time": 16401,
+        "ig_reels_video_view_total_time": 1443324
       }
     },
     {
@@ -130,8 +130,8 @@
         "comments": 0,
         "likes": 2,
         "total_interactions": 4,
-        "ig_reels_avg_watch_time": 6075,
-        "ig_reels_video_view_total_time": 30375
+        "ig_reels_avg_watch_time": 16833,
+        "ig_reels_video_view_total_time": 100999
       }
     },
     {
@@ -922,6 +922,10 @@
     },
     {
       "fecha": "2026-11-25T04:09+00:00",
+      "seguidores": 1596
+    },
+    {
+      "fecha": "2026-11-25T11:09+00:00",
       "seguidores": 1596
     }
   ]
