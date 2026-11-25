@@ -1,0 +1,41 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Rosa quiere saber quién se cenó las tortillas fiadas, hasta que Sindy descubre que las cuatro cuentas pendientes eran invitaciones de la propia Rosa.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: fiar sin registro contable convierte la pérdida en norma.\nMándaselo a quien lleva la libreta de fiados del barrio.\n#humornegro #hosteleria #cuentas #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-27T09:30:00+01:00",
+  "formula": "El Jambo que sabe v5.2 (gancho pregunta abierta, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; las invitaciones de Rosa son el giro de ficción que destapa Neo, no un dato real.",
+  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
+  "_voz_nota": "Reescritas las líneas de Felipe para evitar 'de buena tinta' (sustituida por 'tengo entendido que') y 'Que lo resuelva el Neo' (sustituido por 'que lo resuelva la aplicación'), tras los fallos de pronunciación de esas frases en el episodio 521. El remate de Neo dice su propio nombre con su propia voz ('Soy Neo, y esto no es negociable'). Sin IA ni inglés en las líneas habladas de otros personajes.",
+  "comentario_fijado": "¿En tu barrio también hay libreta de fiados? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la guardia del domingo que nadie cobra",
+  "youtube": {
+    "titulo": "¿Quién paga la cuenta fiada? #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa pregunta quién se cenó las tortillas fiadas, hasta que se descubre que las invitaciones eran suyas. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": ["humornegro", "hosteleria", "cuentas", "serieeljambo", "neogestlab"]
+  },
+  "facebook": {
+    "texto": "Rosa pregunta quién se cenó las tortillas fiadas, hasta que se descubre que las invitaciones eran suyas. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "asset": "528_jambo_barrio_cuenta_fiada.mp4",
+  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_barrio_cuenta_fiada.json), renderizado completo con gen_episodios.py + render.mjs --hoja en Neogest Studio. 56.6 s, -14.7 LUFS, pico -1.2 dB. Pendiente de Calidad.",
+  "renderizado": "2026-11-25T15:40:00+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/fc99460ddd9442ef16948df31da3d73b_barrio_cuenta_fiada.mp4"
+}

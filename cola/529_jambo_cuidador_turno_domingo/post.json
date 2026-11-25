@@ -1,0 +1,41 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Rosa ficha el domingo por dos personas y exige doce horas seguidas «por empatía con los ancianos», hasta que se descubre que ella misma se cobró la prima dominical.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: el trabajo en festivo sin compensar roba vida privada.\nMándaselo a quien curra el domingo sin cobrar extra.\n#humornegro #cuidados #festivos #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-27T12:30:00+01:00",
+  "formula": "El Jambo que sabe v5.2 (gancho afirmación imposible, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; la prima dominical cobrada por Rosa es el giro de ficción que destapa Neo, no un dato real.",
+  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
+  "_voz_nota": "Reescrita la línea de Felipe para evitar 'de buena fuente' (sustituida por 'tengo confirmado') y 'Que lo resuelva el Neo' (sustituido por 'que lo resuelva la aplicación'), tras los fallos de pronunciación de esas frases en el episodio 521. El remate de Neo dice su propio nombre con su propia voz ('Soy Neo, y esto no es negociable'). Sin IA ni inglés en las líneas habladas de otros personajes.",
+  "comentario_fijado": "¿A ti también te piden currar el domingo «por vocación»? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la fuga de madrugada y la factura del fontanero",
+  "youtube": {
+    "titulo": "El domingo que nadie cobra #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa exige doce horas de guardia el domingo «por empatía», sin contar que ella ya se cobró la prima festiva. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": ["humornegro", "cuidados", "festivos", "serieeljambo", "neogestlab"]
+  },
+  "facebook": {
+    "texto": "Rosa exige doce horas de guardia el domingo «por empatía», sin contar que ella ya se cobró la prima festiva. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "asset": "529_jambo_cuidador_turno_domingo.mp4",
+  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_cuidador_turno_domingo.json), renderizado completo con gen_episodios.py + render.mjs --hoja en Neogest Studio. 60.8 s, -14.5 LUFS, pico -1.2 dB. Pendiente de Calidad.",
+  "renderizado": "2026-11-25T15:44:00+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8ce0da088a9096f339643315a3b65455_cuidador_turno_domingo.mp4"
+}

@@ -1,0 +1,41 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Felipe tira tres cajas de cerveza y Rosa quiere descontarle el sueldo entero, hasta que se descubre quién tiró de verdad el barril.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: los riesgos del negocio jamás deben cargarse al trabajador.\nMándaselo a quien le han descontado una rotura del sueldo.\n#humornegro #hostelería #nomina #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-26T22:00:00+01:00",
+  "formula": "El Jambo que sabe v5.2 (gancho afirmación imposible, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; la rotura y el vecino del barril son el giro de ficción que destapa Neo, no un dato real.",
+  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
+  "_voz_nota": "Reescrita la línea de Felipe para evitar 'de buena tinta' (sustituida por 'información segura') y 'Resuélvelo, Neo' (sustituido por 'que lo resuelva la aplicación'), tras los fallos de pronunciación de esas frases en el episodio 521. El remate de Neo dice su propio nombre con su propia voz ('Soy Neo, y esto no es negociable'), que sí lo pronuncia bien. Sin IA ni inglés en las líneas habladas de otros personajes.",
+  "comentario_fijado": "¿A ti también te han descontado una rotura del sueldo? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la cuenta fiada que nadie apuntó bien",
+  "youtube": {
+    "titulo": "¿Quién paga las botellas rotas? #Shorts",
+    "descripcion": "Humor negro de ficción: Felipe tira tres cajas de cerveza y Rosa quiere descontarle el sueldo entero, hasta que se descubre quién tiró de verdad el barril. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": ["humornegro", "hosteleria", "nomina", "serieeljambo", "neogestlab"]
+  },
+  "facebook": {
+    "texto": "Felipe tira tres cajas de cerveza y Rosa quiere descontarle el sueldo entero, hasta que se descubre quién tiró de verdad el barril. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "asset": "526_jambo_camarero_inventario_roturas.mp4",
+  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_526_camarero_inventario_roturas.json), renderizado completo con gen_episodios.py + render.mjs --hoja en Neogest Studio. 67.3 s, -14.6 LUFS, pico -1.3 dB. Pendiente de Calidad.",
+  "renderizado": "2026-11-25T15:36:00+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/13397dc104cc1f3909cc1e04ef505eb8_526_camarero_inventario_roturas.mp4"
+}
