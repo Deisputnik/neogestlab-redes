@@ -1,11 +1,12 @@
 {
   "aprobado": false,
-  "nota": 72,
+  "nota": 70,
   "motivos": [
-    "Falta el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado); aquí no hay ninguno de los dos y no se puede verificar que la voz se generó con ElevenLabs.",
-    "Bloqueo 2 (texto ilegible/cortado): en el fotograma ~t=16.5s (transición ANTES/DESPUÉS de la demo) los rótulos se solapan y quedan cortados por los bordes: \"FACTUR...\", \"PED-20...\", \"8 nov 2...\" cortados a la izquierda, y el texto animado \"DESPUÉS LA\" se superpone con el botón \"Serv...\" de la interfaz, haciendo ambos ilegibles durante esa escena."
+    "Sigue faltando el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado). No está ninguno de los dos, así que no se puede verificar que la voz se generó con ElevenLabs. Este motivo ya se señaló en el calidad.json anterior y no se ha corregido.",
+    "Bloqueo 2 (texto ilegible/cortado), mismo fallo que el rechazo anterior sin corregir: en el fotograma ~t=16.5s (transición ANTES/DESPUÉS de la demo) el banner 'Gestión Integral 7D · demo con datos ficticios' se superpone con los rótulos de la interfaz ('FACTUR...', 'PED-20...', etc.) cortándolos por el borde, y el texto animado 'DESPUÉS LA' se solapa con el botón 'Serv...' de la app, dejando ambos ilegibles durante esa escena."
   ],
-  "como_arreglarlo": "CREADOR: (1) añadir en post.json el campo \\\"motor_voz\\\": \\\"elevenlabs\\\" (o si se usó edge, justificar con \\\"_voz_nota\\\" el motivo de presupuesto) y si la voz actual no es de ElevenLabs, rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md); (2) CREADOR/CENTRO: re-renderizar o reencuadrar la transición ANTES/DESPUÉS sobre la captura de la app para que el texto animado no se superponga con los rótulos de la interfaz (bajar el banner \\\"DESPUÉS\\\" o recortar el encuadre para que los datos del albarán no queden cortados por el borde izquierdo).",
-  "fecha": "2026-11-25T17:09:55Z",
-  "revisor": "Calidad (API)"
+  "como_arreglarlo": "CREADOR: (1) añadir en post.json el campo \"motor_voz\": \"elevenlabs\" (o, si se usó edge por falta de presupuesto, justificarlo con \"_voz_nota\") y si la voz actual no es de ElevenLabs, rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md); (2) CREADOR/CENTRO: re-renderizar o reencuadrar la transición ANTES/DESPUÉS en torno a t=16.5s para que el banner de texto animado no se superponga con los rótulos de la interfaz de la app (bajar o reposicionar el banner \"DESPUÉS\" y asegurar que los datos del albarán y el botón de la interfaz queden completos dentro del encuadre, sin cortes por los bordes).",
+  "fecha": "2026-11-25T18:14:03Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T17:11:42+00:00"
 }

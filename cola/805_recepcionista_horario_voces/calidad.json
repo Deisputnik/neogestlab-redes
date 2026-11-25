@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 80,
+  "motivos": [
+    "Falta el campo \"motor_voz\" en post.json. Orden del dueño 23/11/2026: toda promo/demo/recreación de app renderizada desde esa fecha debe llevar \"motor_voz\": \"elevenlabs\", salvo que post.json incluya \"_voz_nota\" explicando que el presupuesto de ElevenLabs estaba agotado. Aquí no hay ni una cosa ni la otra, así que no se puede verificar que la voz cumpla la orden vigente.",
+    "El resto de la pieza está correcto (duración 31.7s dentro de 25-45s, LUFS -14.58 y pico -1.08dB en rango, sin silencios largos, logo 2026 correcto en insignia y cierre, rótulo de recreación presente durante la llamada recreada, cierre fijo correcto en pantalla y en texto del post, ANTES/DESPUÉS claro, sin afirmaciones no verificadas)."
+  ],
+  "como_arreglarlo": "CREADOR: añadir en post.json el campo \"motor_voz\": \"elevenlabs\" si la voz ya se generó con ElevenLabs (y si es así, no haría falta rehacer nada, solo completar el metadato); si en realidad se usó edge u otro motor, rehacer la voz con ElevenLabs (gen_promos.py + render.mjs --final en Neogest Studio; ver herramientas/estudio/LEEME.md) o, si no había cuota, añadir \"_voz_nota\" explicándolo.",
+  "fecha": "2026-11-25T18:14:47Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T18:01:18+00:00"
+}

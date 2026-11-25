@@ -1,11 +1,12 @@
 {
   "aprobado": false,
-  "nota": 82,
+  "nota": 83,
   "motivos": [
-    "post.json no declara \"motor_voz\" (ni \"elevenlabs\" ni \"edge\") y tampoco lleva \"_voz_nota\" justificando otro motor. Orden del dueño 23/11/2026: toda promo de app renderizada desde esa fecha debe llevar \"motor_voz\": \"elevenlabs\" explícito en post.json, salvo nota de presupuesto agotado. Sin ese campo no se puede verificar el cumplimiento, así que se trata como no conforme.",
-    "Fotograma t=16.05s: el rótulo 'MANDAS POR' queda tapado/cortado por el botón 'Abrir enlace' de la interfaz, mismo patrón de bloqueo 2 (texto ilegible/cortado) ya señalado en piezas 407 y 408."
+    "post.json sigue sin declarar \"motor_voz\" (ni \"elevenlabs\" ni \"edge\") ni \"_voz_nota\" justificando otro motor. Orden del dueño 23/11/2026: toda promo de app renderizada desde esa fecha debe llevar \"motor_voz\": \"elevenlabs\" explícito en post.json, salvo nota de presupuesto agotado. Sigue sin poderse verificar el cumplimiento de la orden.",
+    "Fotograma t=16.05s: el subtítulo 'MANDAS POR' sigue tapando/solapando el botón azul 'Abrir enlace' de la interfaz de la demo, el mismo fallo señalado en la revisión anterior (y en 407/408) sin corregir en este render."
   ],
-  "como_arreglarlo": "CENTRO/CREADOR: (1) añadir explícitamente \"motor_voz\": \"elevenlabs\" en post.json (o \"_voz_nota\" si se usó edge por falta de cuota) — esto puede arreglarse como edición de texto sin re-render si la voz real ya es ElevenLabs; verificarlo antes de tocar solo el JSON. (2) CREADOR: re-renderizar el tramo de la demo (segundo ~14-18s) ajustando la posición del subtítulo \"MANDAS POR\" para que no quede tapado por el botón \"Abrir enlace\" de la interfaz (subir el texto o bajar el recuadro del botón en el compositor de Neogest Studio).",
-  "fecha": "2026-11-25T17:10:18Z",
-  "revisor": "Calidad (API)"
+  "como_arreglarlo": "CENTRO: añadir explícitamente \"motor_voz\": \"elevenlabs\" en post.json (o \"_voz_nota\" si se usó edge por falta de cuota); si la voz ya es ElevenLabs, esto es solo edición de texto sin re-render. CREADOR: re-renderizar el tramo ~14-18s subiendo el subtítulo \"MANDAS POR\" (o bajando/recolocando el botón \"Abrir enlace\") en el compositor de Neogest Studio para que texto y botón no se solapen; este fallo técnico ya se repite en varias piezas (407, 408, 110), considerar pedirlo como arreglo de plantilla en peticiones_mejora.md si vuelve a aparecer.",
+  "fecha": "2026-11-25T18:14:23Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T17:11:48+00:00"
 }

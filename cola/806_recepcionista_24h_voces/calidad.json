@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 88,
+  "motivos": [
+    "Técnica, marca, rótulo de recreación y cierre están correctos: 1080x1920, 27.8s (dentro de 25-45s para promos de app), LUFS -14.95, pico -1.34 dB, sin silencios; insignia e isotipo 2026 correctos en todos los fotogramas; tarjeta de cierre con 'By Neogest Lab' y 'Enlace en el perfil'; rótulo 'RECREACIÓN · voces sintéticas' presente durante el tramo de la llamada recreada; texto del post respeta _comprobado (no nombra proveedor, no promete 'prueba gratuita' sino 'información gratuita', sin cifras ni llamadas ilimitadas inventadas); cierre fijo correcto en pantalla y en el texto del post.",
+    "No verificable: el resumen de post.json entregado no incluye el campo \"motor_voz\" ni \"_voz_nota\". Por la orden del dueño del 23/11/2026 ('en las aplicaciones usamos Eleven siempre'), toda promo/recreación de app renderizada desde esa fecha debe declarar \"motor_voz\": \"elevenlabs\", salvo justificación de cuota agotada en \"_voz_nota\". Al no constar ese campo no puedo confirmar que cumple la orden; no lo doy por bueno ni lo rechazo como bloqueo de motor retirado, pero no llega a 90 hasta confirmarlo."
+  ],
+  "como_arreglarlo": "CENTRO/CREADOR: confirmar en post.json el campo \"motor_voz\". Si ya es \"elevenlabs\", basta con añadirlo al post.json (arreglo de texto, sin necesidad de re-render) y Calidad lo revisa de nuevo. Si el render se hizo con otro motor sin \"_voz_nota\" justificando cuota agotada, CREADOR: rehacer la voz con ElevenLabs (gen_promos.py + render.mjs --final en Neogest Studio; ver herramientas/estudio/LEEME.md).",
+  "fecha": "2026-11-25T18:15:13Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T18:01:24+00:00"
+}
