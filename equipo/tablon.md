@@ -491,3 +491,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-25 09:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-25 09:11 UTC · Guionista Gemini · pedidos 4 guiones para El Jambo · 4 guardados, 0 rechazados por el validador · pendientes en equipo/guiones_gemini/pendientes/
 2026-11-25 10:08 UTC · Creador (API, piloto texto) · revisadas 1 de 1 piezas rechazadas: 521_jambo_fichar_en_casa sin arreglo de texto: Los tres motivos de rechazo son todos de audio/vídeo, no de texto/metadata: (1) el control_audio.json detecta que el TTS pronunció mal las líneas de Felipe ("¡Eso lo sé de buena tinta!") y el remate de Sindy ("Que lo resuelva el Neo"), que no coinciden con lo que se oye realmente en la pista; (2) el · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-25 10:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
