@@ -399,3 +399,8 @@ La muestra del cambio 37 llevaba la pista generada por código (prueba_voz.yml n
 4. publicar_gh.py: el vídeo externo (Neogest Studio) se masteriza en el ciclo si llega fuera de −14 ±1 LUFS o con pico > −1 dB (loudnorm −14 / −1,5, vídeo copiado). Probado en 345: −14,8/−0,3 → −14,2/−1,4. Sustituye a subir mp4 corregidos a mano (bloqueado en las sesiones).
 5. Calidad (API) cada hora desde reloj.yml (origen=reloj, silenciosa si no hay nada): el cron de calidad_api.yml llegaba con 2-6 h de retraso.
 Piezas relanzadas: 316, 329, 403 (render nuevo), 341-348 (vídeo externo recuperado; logo 2026 ya en el vídeo), 020, 023, 024, 404-409, 601 (bloqueos del control antiguo).
+
+## Mejora 25/11/2026 · pasada de miércoles, sin cambios de código
+- **Comprobado:** el bloqueo de 521_jambo_fichar_en_casa (control_audio, 82) es REAL, no un falso del control: tras el hotword «Neo» del 24/11 ya no sale «Leo», pero Whisper oye «es solo sello seguro» por «¡Eso lo sé de buena tinta!» y «que lo resuelvan listo» por «que lo resuelva el Neo»; es defecto del TTS en esas dos frases. Le toca al Creador regenerarlas (fila de atascos.md); no se relaja el control.
+- **Pendiente cerrado:** el aviso de `pre_entrega.py` sobre «prueba gratuita» solo mira los textos de las escenas del vídeo (venta dentro del vídeo, vigente); el texto del post ya exige el cierre de prueba gratuita (§5). Nada que alinear.
+- **Sin tocar:** peticiones URGENTES del 22/11 (marco del móvil, render en Actions) siguen abiertas; no las empiezo a mitad de pasada sin poder probar en Actions.
