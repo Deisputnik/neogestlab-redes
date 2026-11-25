@@ -29,7 +29,13 @@
   "youtube": {
     "titulo": "El turno de noche que nadie paga #Shorts",
     "descripcion": "Humor negro de ficción: Rosa pide el turno de noche «por compromiso con la familia» sin saber que ya se ha cobrado la guardia. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
-    "etiquetas": ["humornegro", "cuidados", "turnonoche", "serieeljambo", "neogestlab"]
+    "etiquetas": [
+      "humornegro",
+      "cuidados",
+      "turnonoche",
+      "serieeljambo",
+      "neogestlab"
+    ]
   },
   "facebook": {
     "texto": "Rosa pide el turno de noche «por compromiso», sin contar que ya se ha cobrado la guardia. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
@@ -37,5 +43,6 @@
   "asset": "525_jambo_cuidado_mayores_turno_noche.mp4",
   "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_525_cuidado_mayores_turno_noche.json), renderizado completo con gen_episodios_v54.py + render.mjs --hoja en Neogest Studio. 66.0 s, -14 LUFS, pico -1.4 dB. Pendiente de Calidad.",
   "renderizado": "2026-11-25T15:18:00+00:00",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/e101a34efa172fa10c889e6858598aef_525_jambo_cuidado_mayores_turno_noche.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/e101a34efa172fa10c889e6858598aef_525_jambo_cuidado_mayores_turno_noche.mp4",
+  "_intentos": 2
 }
