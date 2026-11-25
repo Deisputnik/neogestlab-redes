@@ -1,0 +1,41 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Cien paquetes en dos horas, sin furgoneta y sin pagar la gasolina. Rosa amenaza con despedir a todos si no llegan, y la app que se inventó Felipe manda medio reparto al bar de la esquina.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: el tiempo de trabajo no pagado es un robo.\nMándaselo a quien le descuentan la gasolina del sueldo.\n#humornegro #reparto #horasextra #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-25T19:40:00+01:00",
+  "formula": "El Jambo que sabe v5.2 (gancho en mitad del lío, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; los datos de la app de reparto son ficticios y Neo corrige la situación, no afirma datos reales.",
+  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
+  "_voz_nota": "Reescritas las frases que rompían la pronunciación en episodios anteriores: se evitó decir 'de buena tinta' y el nombre 'Neo' en voz alta (se sustituyó por 'el asistente' en el audio, dejando el rótulo 'QUE LO RESUELVA EL NEO' como texto en pantalla). Sin IA ni inglés en las líneas habladas.",
+  "comentario_fijado": "¿A ti también te descuentan la gasolina del sueldo? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: el turno de noche que nadie paga",
+  "youtube": {
+    "titulo": "Cien paquetes en dos horas, sin furgoneta #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa exige cien paquetes en dos horas y la app que se inventó Felipe manda la mitad al bar de la esquina. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": ["humornegro", "reparto", "horasextra", "serieeljambo", "neogestlab"]
+  },
+  "facebook": {
+    "texto": "Cien paquetes en dos horas, sin furgoneta y sin pagar la gasolina. Humor negro de ficción con la serie El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "asset": "524_jambo_repartidor_turnos_paquetes.mp4",
+  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_524_repartidor_turnos_paquetes.json), renderizado completo con gen_episodios_v54.py + render.mjs --hoja en Neogest Studio. 59.0 s, -14.2 LUFS, pico -1.3 dB. Pendiente de Calidad.",
+  "renderizado": "2026-11-25T15:18:00+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a84df3e435f42ec759bdfff9cceb1a0c_524_jambo_repartidor_turnos_paquetes.mp4"
+}

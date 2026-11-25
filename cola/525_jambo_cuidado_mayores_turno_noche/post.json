@@ -1,0 +1,41 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "texto": "Rosa le pide a Felipe el turno de noche «por compromiso con la familia», sin mirar el reloj. Lo que no cuenta es que a esa misma familia ya le han pagado trescientos euros por la guardia.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: la vocación no justifica regalar el descanso laboral.\nMándaselo a quien trabaja «por cariño» gratis.\n#humornegro #cuidados #turnonoche #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-25T21:30:00+01:00",
+  "formula": "El Jambo que sabe v5.2 (gancho en pregunta abierta, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; el pago de los trescientos euros es el giro de ficción que destapa Neo, no un dato real.",
+  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
+  "_voz_nota": "Reescrita la línea de Felipe para evitar 'de buena tinta' (sustituida por 'de primera mano') y el nombre 'Neo' en voz alta (sustituido por 'el asistente' en el audio, con el rótulo 'QUE LO RESUELVA EL NEO' como texto en pantalla), tras los fallos de pronunciación de esas frases en el episodio 521. Sin IA ni inglés en las líneas habladas.",
+  "comentario_fijado": "¿A ti también te piden currar «por vocación»? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: la fuga de agua y el fontanero sin factura",
+  "youtube": {
+    "titulo": "El turno de noche que nadie paga #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa pide el turno de noche «por compromiso con la familia» sin saber que ya se ha cobrado la guardia. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+    "etiquetas": ["humornegro", "cuidados", "turnonoche", "serieeljambo", "neogestlab"]
+  },
+  "facebook": {
+    "texto": "Rosa pide el turno de noche «por compromiso», sin contar que ya se ha cobrado la guardia. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "asset": "525_jambo_cuidado_mayores_turno_noche.mp4",
+  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_525_cuidado_mayores_turno_noche.json), renderizado completo con gen_episodios_v54.py + render.mjs --hoja en Neogest Studio. 66.0 s, -14 LUFS, pico -1.4 dB. Pendiente de Calidad.",
+  "renderizado": "2026-11-25T15:18:00+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/e101a34efa172fa10c889e6858598aef_525_jambo_cuidado_mayores_turno_noche.mp4"
+}
