@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 72,
+  "motivos": [
+    "Falta el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado); aquí no hay ninguno de los dos y no se puede verificar que la voz se generó con ElevenLabs.",
+    "Bloqueo 2 (texto ilegible/cortado): en el fotograma ~t=16.5s (transición ANTES/DESPUÉS de la demo) los rótulos se solapan y quedan cortados por los bordes: \"FACTUR...\", \"PED-20...\", \"8 nov 2...\" cortados a la izquierda, y el texto animado \"DESPUÉS LA\" se superpone con el botón \"Serv...\" de la interfaz, haciendo ambos ilegibles durante esa escena."
+  ],
+  "como_arreglarlo": "CREADOR: (1) añadir en post.json el campo \\\"motor_voz\\\": \\\"elevenlabs\\\" (o si se usó edge, justificar con \\\"_voz_nota\\\" el motivo de presupuesto) y si la voz actual no es de ElevenLabs, rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md); (2) CREADOR/CENTRO: re-renderizar o reencuadrar la transición ANTES/DESPUÉS sobre la captura de la app para que el texto animado no se superponga con los rótulos de la interfaz (bajar el banner \\\"DESPUÉS\\\" o recortar el encuadre para que los datos del albarán no queden cortados por el borde izquierdo).",
+  "fecha": "2026-11-25T17:09:55Z",
+  "revisor": "Calidad (API)"
+}

@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 82,
+  "motivos": [
+    "post.json no declara \"motor_voz\" (ni \"elevenlabs\" ni \"edge\") y tampoco lleva \"_voz_nota\" justificando otro motor. Orden del dueño 23/11/2026: toda promo de app renderizada desde esa fecha debe llevar \"motor_voz\": \"elevenlabs\" explícito en post.json, salvo nota de presupuesto agotado. Sin ese campo no se puede verificar el cumplimiento, así que se trata como no conforme.",
+    "Fotograma t=16.05s: el rótulo 'MANDAS POR' queda tapado/cortado por el botón 'Abrir enlace' de la interfaz, mismo patrón de bloqueo 2 (texto ilegible/cortado) ya señalado en piezas 407 y 408."
+  ],
+  "como_arreglarlo": "CENTRO/CREADOR: (1) añadir explícitamente \"motor_voz\": \"elevenlabs\" en post.json (o \"_voz_nota\" si se usó edge por falta de cuota) — esto puede arreglarse como edición de texto sin re-render si la voz real ya es ElevenLabs; verificarlo antes de tocar solo el JSON. (2) CREADOR: re-renderizar el tramo de la demo (segundo ~14-18s) ajustando la posición del subtítulo \"MANDAS POR\" para que no quede tapado por el botón \"Abrir enlace\" de la interfaz (subir el texto o bajar el recuadro del botón en el compositor de Neogest Studio).",
+  "fecha": "2026-11-25T17:10:18Z",
+  "revisor": "Calidad (API)"
+}
