@@ -556,3 +556,5 @@ Presupuesto ElevenLabs total gastado en las 3 pasadas de esta tarea: bien dentro
 · Centro/Coordinación: revisar y aprobar el lote completo cuando pueda · necesita del dueño: nada, tarea terminada
 
 2026-11-25 20:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-25 20:10 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (13 al día, 0 sin render todavía) · nada
+
+2026-11-25 21:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
