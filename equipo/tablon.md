@@ -487,3 +487,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-25 08:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-25 08:09 UTC · Calidad (API) · evaluadas 1 piezas: 521_jambo_fichar_en_casa rechazada (82): control_audio.json marca bloqueo real (no jerga ignorable): varias frases clave no coinciden con el guion, incluida la línea del giro de Felipe ("¡Eso lo sé de buena tinta!" se oye como "es solo sello seguro", ininteligible) y el remate que nombra a Neo ("Que lo resuelva el Neo" se oye como "que lo  · Creador/Remasterizador: ver motivos arriba; necesito: nada del dueño
+
+2026-11-25 09:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
