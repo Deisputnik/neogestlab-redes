@@ -1,0 +1,8 @@
+{
+  "aprobado": true,
+  "nota": 92,
+  "comentario": "Episodio de El Jambo (521_jambo_fichar_en_casa) cumple el formato vigente v11: 59.9 s, 1080x1920, LUFS -14.82, pico -1.79 dB, sin silencios largos. Intro \"Fichar en casa: ¿hasta para mear?\" (≤8 palabras) y cierre con el mismo plano de la casa en bucle, con la tarjeta de marca de empresa intercalada (correcta según orden 23/11 22:44). Logo/insignia \"N\" de circuitos coincide con la referencia oficial en todos los fotogramas y en la tarjeta de cierre. Registro correcto: Rosa/Felipe/Sindy/Jambo vulgares y con tacos, Neo único culto y respetuoso (\"señora Melano\", sello PILLADA). Giro (Felipe acierta por una vez) sembrado antes del remate, remate de Neo responde a la pregunta del gancho (quién incumple el fichaje), moraleja corta y clara, recuerdo de episodio anterior en el guion, Jambo Reseco presente con su gorroneo, humor negro real (gratitud que no cotiza). Voz diseñada por personaje (neogest-studio), acorde a la orden de voces del 23/11 para la serie. Post con cierre fijo correcto y sin embudo, atribución musical sin duplicar.",
+  "como_arreglarlo": "No bloquea, pero el CREADOR podría revisar el subtítulo del tramo del remate de Neo (fotograma ~t=45s muestra \"ES USTED LLEVA\", posible desalineación o corte de línea) en el próximo ciclo de control_audio si se detectan más letras perdidas en esa escena.",
+  "fecha": "2026-11-25T07:10:05Z",
+  "revisor": "Calidad (API)"
+}
