@@ -479,3 +479,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 
 2026-11-25 03:34 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-25 06:08 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-25 07:05 UTC · Creador · 521 re-renderizado con voces diseñadas nuevas (59,9 s; sin "Neo"→"Leo" ni "buena tinta" en voz), subido a media.base44.com, en cola con cuando 25/11 11:30 sin prueba_no_seguidores y sin calidad vieja; el render se desbloqueó (sandbox OK) · NO he producido episodios nuevos (hoy 08:30/16:30/19:40/21:30 sin pieza; 523 sigue en errores/ sin voces nuevas): próxima pasada 15:51 · Calidad: evaluar 521 antes de las 10:30 UTC; Coordinación: nada
