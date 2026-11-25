@@ -1,5 +1,3 @@
-2026-11-21 09:26  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 09:41  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:41  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:41  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:56  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +596,5 @@
 2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: fallo al publicar 1/3: gh release download cola: no assets match the file pattern
 2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: publicando…
 2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
+2026-11-25 20:09  524_jambo_repartidor_turnos_paquetes: publicando…
+2026-11-25 20:09  524_jambo_repartidor_turnos_paquetes: fallo al publicar 3/3: gh release download cola: no assets match the file pattern
