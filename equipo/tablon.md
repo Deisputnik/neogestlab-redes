@@ -554,3 +554,5 @@ PENDIENTE (6 de 24 por hacer): Studio Beats PRO (horizontal 6af0ed42abe890d9e03c
 Guiones de GPS Andaluz, AJ Sistema, AJ Web y Studio Beats PRO sin footage real de la app (no hay capturas en la biblioteca de Neogest Studio para esos 3 productos): fondos de gradiente con kenburns/pan y texto, igual que las "outro" ya usadas en otras promos.
 Presupuesto ElevenLabs total gastado en las 3 pasadas de esta tarea: bien dentro del límite mensual (quedaba de sobra según el saldo consultado al empezar cada producto).
 · Centro/Coordinación: revisar y aprobar el lote completo cuando pueda · necesita del dueño: nada, tarea terminada
+
+2026-11-25 20:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
