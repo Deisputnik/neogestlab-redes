@@ -592,3 +592,5 @@ Orden del dueño tras ver dos maquetas (Opción 1 elegida). Hecho directamente s
 - Build verificado con `vite build` antes de desplegar (sin errores).
 
 Pendiente si se quiere ir más lejos: limpiar también `public/videos/*.mp4` antiguos (requiere tocar `demoData.js`/`Demo.jsx`, fuera de esta orden) y decidir si se recuperan reseñas reales para volver a mostrar `OpinionesEstudio`.
+
+2026-11-25 23:20 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
