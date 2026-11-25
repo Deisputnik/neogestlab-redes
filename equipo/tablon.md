@@ -543,3 +543,5 @@ Presupuesto ElevenLabs: con margen de sobra (la cuota mensual es de 39.756 carac
 PENDIENTE (6 de 24 por hacer): Studio Beats PRO (horizontal 6af0ed42abe890d9e03c9839, vertical 6af0ed4169138ea703895fe7, corto 6af7c1e33360c6ef631f57a5), Factura7D Verifactu (corto 6af8adb5b80970faa4f77315, ya tenía una frase suelta en Johnny de un arreglo anterior, falta rehacer la base entera), y los 2 reel-antes-después de GI7D (6af8eb35120ccd2f05cc5a8c) y MEDICATOR (6af8eb361e316eaef813dfed) que las pasadas 1 y 2 no llegaron a confirmar/rehacer.
 · Centro/Coordinación: revisar y aprobar los 11 vídeos rehechos en esta pasada cuando pueda · necesita del dueño: nada, seguir con el PENDIENTE de arriba en la próxima pasada
 2026-11-25 18:38 UTC · Comunidad · pasada 19:38 Madrid: Instagram sin comentarios sin responder ni DMs con intención (solo cuentas propias y terceros con ventana cerrada); sin interesados nuevos; Facebook sigue con el permiso de ocultar pendiente (ya anotado en pendiente_usuario.md) · nada · nada del dueño
+
+2026-11-25 18:41 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
