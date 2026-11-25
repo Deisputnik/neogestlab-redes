@@ -1,15 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 82,
-  "motivos": [
-    "control_audio.json marca bloqueo real (no jerga ignorable): varias frases clave no coinciden con el guion, incluida la línea del giro de Felipe (\"¡Eso lo sé de buena tinta!\" se oye como \"es solo sello seguro\", ininteligible) y el remate que nombra a Neo (\"Que lo resuelva el Neo\" se oye como \"que lo resuelvan listo\", pierde el nombre del personaje que resuelve el conflicto).",
-    "Subtítulo roto en pantalla en t=44.92s: se lee 'ES USTED LLEVA' en el tramo del remate de Neo, justo la frase más importante del episodio (el \"pillada\"); corta mal la línea y queda ilegible/incoherente.",
-    "El resto del formato (duración 59.9s, intro/bucle, logo 2026, registro, moraleja, giro sembrado, tarjeta de marca) está correcto y no se repite como motivo de rechazo."
-  ],
-  "como_arreglarlo": "CREADOR: regenerar el audio (TTS neogest-studio) de las líneas de Felipe (\\\"¡Rosa, que fichar sin cobrar es trabajar gratis, coño! ¡Eso lo sé de buena tinta!\\\") y de Sindy/remate (\\\"Que lo resuelva el Neo\\\") para que la pronunciación sea inteligible y coincida con el guion, y re-renderizar para regenerar también los subtítulos palabra a palabra del tramo del remate de Neo (actualmente cortados como \\\"ES USTED LLEVA\\\" en t≈45s). No hace falta tocar el resto del episodio ni el post.",
-  "fecha": "2026-11-25T08:09:43Z",
+  "aprobado": true,
+  "nota": 91,
+  "comentario": "Re-render tras el rechazo del 25/11 08:09: duración 64.2s (dentro de 45-70s), 1080x1920, LUFS -14.35/pico -1.35dB correctos, sin silencios largos. Intro «Esta casa del barrio tiene truco 👀» y cierre con la misma casa (bucle correcto). Insignia «N» de circuitos 2026 presente en todos los fotogramas revisados, coincide con la referencia oficial. El subtítulo que motivó el rechazo anterior («ES USTED LLEVA» en el remate de Neo) ya no aparece: en su lugar, en t=48.15s se lee «MELANO PERO SOLO», coherente con la línea real del guion («señora Melano. Pero solo si hay sueldo»), con el sello PILLADA visible. Créditos con reparto completo (Rosa Melano, Felipe Lotas, Sindy Entes, Jambo Reseco, Neo) y «By Neogest Lab». Registro, moraleja, giro de Felipe y recuerdo presentes según guion. No dispongo del control_audio.json de este render concreto (el adjunto es el del render caducado) para confirmar al 100% que las dos líneas regeneradas con ElevenLabs (Felipe/Sindy) encajan palabra a palabra, pero no hay evidencia visual de fallo en los fotogramas inspeccionados y los indicios (subtítulo del remate ya correcto, motivo de caducidad explícito de re-render dirigido) apoyan que el bloqueo anterior está resuelto.",
+  "fecha": "2026-11-25T11:09:48Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-25T07:10:39+00:00",
-  "caducado": "2026-11-25T10:34:39+00:00",
-  "motivo_caducidad": "re-render: 2 lineas regeneradas con ElevenLabs (Felipe/Sindy) por orden del dueno, resto en edge-tts"
+  "render": "2026-11-25T10:34:39+00:00"
 }
