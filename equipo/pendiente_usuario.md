@@ -2,6 +2,14 @@
 
 Reducido el 13/11/2026 por el Estratega (la versión larga está en git). Aquí solo queda lo que necesita tu identidad, tus datos o el móvil; el equipo hace todo lo demás.
 
+## Web propia en todos los perfiles (25/11/2026): 1 minuto por red, pegar y guardar
+Pediste poner **www.neogestlab.com** como web en todos los perfiles. Ningún conector (Buzzfy, Zernio ni Meta Business) puede editar el campo «sitio web»/«enlace» del perfil: solo se puede desde la propia red, con tu sesión iniciada. El enlace `/solicitar` de Base44 no se toca (sigue siendo el CTA de prueba gratuita dentro de los posts); esto es solo el campo de «web» del perfil.
+1. **Instagram** (@neogestlab): app móvil o web → Editar perfil → Sitio web → pega `https://www.neogestlab.com` (sustituye lo que haya ahora).
+2. **Facebook** (página Neogestlab): Configuración de la página → Información de la página → Sitio web → pega `https://www.neogestlab.com` → Guardar.
+3. **YouTube** (canal NeogestLab, @neogestlab): YouTube Studio → Personalización → Información básica → Enlaces → añade `www.neogestlab.com` (o edítalo si ya hay uno de Base44).
+4. **TikTok** (@neogestlab): solo la app móvil deja añadir enlace de sitio web en el perfil (cuenta de empresa/creador) → Editar perfil → Sitio web.
+5. **LinkedIn / Google Business Profile**: en cuanto las crees (siguen pendientes más abajo), pon ahí `www.neogestlab.com` como web directamente al darlas de alta.
+
 ## Publicación a su hora (22/11/2026 noche): 2 cosas tuyas, 1 minuto cada una
 1. **Pulsa «Ejecutar ahora» en el Creador** para no esperar a su pasada de las 09:51: https://claude.ai/code/routines/trig_017GNtAYqjjfjrUsyDvPVWGW (un agente no puede lanzar tareas creadas por ti). Sus órdenes ya están en el tablón.
 2. **Reloj externo: CREADO el 22/11 a las 23:42** (tarea de Claude «Redes · Reloj externo», Haiku, cada hora de 07:07 a 23:07 Madrid; lanza `reloj.yml`). Sin probar todavía: un agente no puede ejecutarla a mano. Si quieres comprobarla ya, pulsa «Ejecutar ahora» en https://claude.ai/code/routines/trig_01FFvnujD8FDCpMR5pzahDk3 ; debe terminar con «Reloj lanzado». Si responde con un error 403/404, hay que conectarle el repo Deisputnik/neogestlab-redes desde esa misma página.
