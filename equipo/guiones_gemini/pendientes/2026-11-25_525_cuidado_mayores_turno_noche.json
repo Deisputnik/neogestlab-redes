@@ -1,0 +1,77 @@
+{
+  "slug": "525_cuidado_mayores_turno_noche",
+  "set": "salon",
+  "hora": 22,
+  "moraleja": "La vocación no justifica regalar el descanso laboral.",
+  "recuerdo": "Como cuando nos cobraron el impuesto del aire por respirar.",
+  "bucle_visual": "Rosa de pie junto al sillón agitando los papeles nocturnos.",
+  "gancho_tipo": "pregunta_abierta",
+  "promesa": "¿Quién trabajará doce horas de noche gratis por compromiso?",
+  "giro": "Rosa ya había cobrado la guardia pero pretendía que Felipe fuera gratis.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "sindy",
+      "emo": "pregunta",
+      "t": "¡Rosa! ¿Quién hace el turno de noche?"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "t": "¡Felipe, hijo! El compromiso con la empresa se demuestra velando sin mirar jamás el reloj."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, Rosa! Eso lo sé de buena tinta: las veladas nocturnas desgravan en la declaración."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "t": "Primoooo… me quedo velando si me das un eurillo pa’ tomar café…"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "giro": true,
+      "t": "¡Hostia! ¡Si la familia le ha pagado ya a Rosa trescientos euros por la guardia!"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "cansado",
+      "t": "¡Manda huevos! El turno me mata. Pagar las horas lo arreglamos la semana que viene."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Calla ya! El abuelo necesita cuidados constantes y la vocación no se negocia."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "llora",
+      "t": "¡Joder, Rosa! ¡Si cuido gratis doce horas me muero del sueño! ¡Que lo resuelva Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, nadie trabajará doce horas de noche gratis si cobraste ya la guardia nocturna."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "seco",
+      "t": "La vocación no justifica regalar el descanso laboral."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T12:11:17Z",
+  "corregido_en_ronda": 1
+}

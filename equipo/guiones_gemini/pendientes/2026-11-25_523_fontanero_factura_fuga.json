@@ -1,0 +1,77 @@
+{
+  "slug": "523_fontanero_factura_fuga",
+  "set": "salon",
+  "hora": 14,
+  "moraleja": "Sin facturas oficiales, los destrozos los pagas tú.",
+  "recuerdo": "Como la factura de la luz del mes pasado, pero con charco.",
+  "bucle_visual": "Rosa señalando con el móvil el charco en el salón.",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién pagará los destrozos de la fuga?",
+  "giro": "Felipe culpó al fontanero pero Rosa contrató uno pirata.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Felipe, el agua llega a los tobillos!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Tranquila! Eso lo sé de buena tinta: la tubería es del Ayuntamiento."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "t": "¡Manda huevos! Si sale de tu retrete, la tubería huele que apesta."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "t": "Primoooo… dame un eurillo pa’ la fregona, que me ahogo aquí."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "giro": true,
+      "t": "¡Coño! La culpa es del fontanero pirata que contrataste por internet, Rosa."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "llora",
+      "t": "¡Hostia! A mí no me mires, el presupuesto congelado lo arreglamos la semana que viene."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡Manda huevos! El seguro no cubre chapuzas y se lava las manos."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "miedo",
+      "t": "¡Joder! Llevamos tres días sin ducharnos en este barrizal. ¡Que lo resuelva Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, nadie pagará los destrozos de la fuga si contratas fontaneros piratas sin factura legal."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Sin facturas oficiales, los destrozos los pagas tú."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T12:11:47Z",
+  "corregido_en_ronda": 2
+}

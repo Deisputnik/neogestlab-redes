@@ -1,0 +1,77 @@
+{
+  "slug": "526_camarero_inventario_roturas",
+  "set": "salon",
+  "hora": 16,
+  "moraleja": "Los riesgos del negocio jamás deben cargarse al trabajador.",
+  "recuerdo": "Como la merma del bar del mes pasado pero con botellas.",
+  "bucle_visual": "Felipe mirando con pánico la botella rota en la mano.",
+  "gancho_tipo": "afirmacion_imposible",
+  "promesa": "¿Quién pagará la factura de las botellas rotas?",
+  "giro": "Felipe no tiró las cajas sino el vecino al intentar sustraer un barril.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Felipe tiró tres cajas de cerveza al suelo!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, Rosa! De buena tinta sé que las mermas las paga la Unión Europea."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "rie",
+      "t": "¡Coño, Felipe! Si la única merma europea es lo que le quitas tú a las tapas."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "t": "Rosaaa… primaaaa… tropecé con el barril sin querer… me traspuse un segundo…"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "giro": true,
+      "t": "¡Hostia, Rosa! ¡Si el vecino llevaba el barril a cuestas hacia su trastero!"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "cansado",
+      "t": "¡Manda huevos! El cristal roto lo arreglamos la semana que viene sin prisa."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡Silencio! Esto lo descuento de la nómina de Felipe aunque no coma este mes."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "llora",
+      "t": "¡Joder, Rosa! Si me descuentas las botellas, mi sueldo pasa a ser negativo. ¡Resuélvelo, Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, nadie pagará esa factura descontando cervezas rotas del sueldo de un empleado."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Los riesgos del negocio jamás deben cargarse al trabajador."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T12:11:17Z",
+  "corregido_en_ronda": 1
+}

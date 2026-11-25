@@ -1,0 +1,71 @@
+{
+  "slug": "524_repartidor_turnos_paquetes",
+  "set": "salon",
+  "hora": 18,
+  "moraleja": "El tiempo de trabajo no pagado es un robo.",
+  "recuerdo": "Igual que cuando fichábamos en casa a medianoche.",
+  "bucle_visual": "Sindy sujetando el paquete arrugado en mitad del salón.",
+  "gancho_tipo": "amenaza_con_plazo",
+  "promesa": "¿Cómo van a entregar cien paquetes sin furgoneta limpia?",
+  "giro": "La app de Felipe envió las cajas al bar y el vecino las vendió.",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Cien paquetes en dos horas o nos echan!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "t": "¡Hostia, Rosa! Si me despiden hoy, al menos me ahorro el combustible de mi bolsillo."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, relaja! Con la app esta de IA que inventé, la ruta nos saca los paquetes."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "t": "Rosaaa… primaaaa… vendí las cajas del maletero por cinco pavos pa'l autobús…"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "giro": true,
+      "t": "¡Coño, Felipe! ¡Tu app ha enviado cincuenta paquetes al bar de abajo en vez de al cliente!"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "t": "¡Manda huevos! Si no entregáis, este mes descontamos el combustible de la nómina de todos."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "miedo",
+      "t": "¡Joder, Rosa! Trabajamos catorce horas diarias por amor al arte. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, para entregar cien paquetes debéis cumplir la jornada legal sin regalar horas extra."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "seco",
+      "t": "El tiempo de trabajo no pagado es un robo."
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T12:11:17Z",
+  "corregido_en_ronda": 1
+}
