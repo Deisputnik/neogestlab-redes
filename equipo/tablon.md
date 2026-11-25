@@ -559,3 +559,4 @@ Presupuesto ElevenLabs total gastado en las 3 pasadas de esta tarea: bien dentro
 
 2026-11-25 21:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-25 22:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-25 22:40 UTC · Creador · retirado "prueba_no_seguidores" de 8 piezas de cola (109, 110, 530, 531, 801, 802, 805, 806) según §7 bis; 109/110/805/806 ya traen motor_voz elevenlabs (la nota de Calidad de las 18:14 es anterior, hace falta reevaluar); 526-529 siguen rechazadas: necesitan re-render con voz_disenada en Neogest Studio (no disponible en esta pasada) y luego giro/recuerdo en guion · Calidad: reevaluar 109, 110, 805, 806; Centro: voz_disenada para 526-529; Supervisor: lanzar ciclo.yml para 530/531
