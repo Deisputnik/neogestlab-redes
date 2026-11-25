@@ -1,0 +1,35 @@
+{
+  "tipo": "reel",
+  "texto": "¿Te llaman solo para preguntar el horario?\nUn asistente telefónico con IA contesta las 24 horas, con tu propio número, y te manda el resumen de cada llamada por correo. Se configura con tu negocio, tu voz y tu trato.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nRecreación con voces sintéticas.\n\n#autonomos #pymes #atencioncliente #neogestlab",
+  "cuando": "2026-11-26T16:30:00+01:00",
+  "compartir_en_feed": true,
+  "portada_ms": 0,
+  "prueba_no_seguidores": true,
+  "formato": "Promo de app · recreación · Neogest Studio",
+  "publico": "Autónomos y pymes",
+  "app": "Recepcionista 24h",
+  "app_slug": "recepcionista-24h",
+  "gancho": "¿Y si tu teléfono se cogiera solo?",
+  "comentario_fijado": "¿Qué te preguntan más por teléfono?",
+  "monetizacion": {
+    "objetivo": "solicitud_informacion",
+    "oferta": "Recepcionista 24h: información gratuita en /solicitar",
+    "paso_embudo": "alcance → visita al perfil → solicitud de información"
+  },
+  "_fuentes": ["Ficha Producto del Centro, slug recepcionista-24h, hechos_verificados 16/11/2026"],
+  "_comprobado": "No nombra al proveedor; no dice 'prueba gratuita' (prohibido en la ficha), solo 'información gratuita'; no afirma llamadas ilimitadas ni cifras de clientes.",
+  "_nota_creador": "25/11/2026 madrugada: renderizada en Neogest Studio (gen_promos.py) con voces ElevenLabs Johnny/Lydia/Raquel (orden del dueño 24/11 noche). Es recreación con guion propio, no la llamada real de 801_recepcionista_horario (que sigue en cola para el 29/11, contenido distinto: llamada real grabada).",
+  "motor": "neogest-studio",
+  "motor_voz": "elevenlabs",
+  "voces": ["Johnny", "Lydia", "Raquel"],
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8e140b76d9f69d520f6f27a7770a8003_promo_801_recepcionista.mp4",
+  "renderizado": false,
+  "youtube": {
+    "titulo": "¿Y si tu teléfono se cogiera solo? #Shorts",
+    "descripcion": "Un asistente telefónico con IA contesta 24 horas, con tu propio número, y te resume cada llamada por correo. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
+    "etiquetas": ["asistente telefonico", "recepcionista virtual", "autonomos", "pymes"]
+  },
+  "facebook": {
+    "texto": "¿Te llaman solo para preguntar el horario?\nUn asistente telefónico con IA contesta las 24 horas, con tu propio número.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
+  }
+}
