@@ -16,20 +16,33 @@
     "oferta": "Recepcionista 24h: información gratuita en /solicitar",
     "paso_embudo": "alcance → visita al perfil → solicitud de información"
   },
-  "_fuentes": ["Ficha Producto del Centro, slug recepcionista-24h, hechos_verificados 16/11/2026"],
+  "_fuentes": [
+    "Ficha Producto del Centro, slug recepcionista-24h, hechos_verificados 16/11/2026"
+  ],
   "_comprobado": "No nombra al proveedor; no dice 'prueba gratuita' (prohibido en la ficha), solo 'información gratuita'; no afirma llamadas ilimitadas ni cifras de clientes.",
   "_nota_creador": "25/11/2026 madrugada: renderizada en Neogest Studio (gen_promos.py) con voces ElevenLabs Johnny/Lydia/Raquel (orden del dueño 24/11 noche). Es recreación con guion propio, no la llamada real de 801_recepcionista_horario (que sigue en cola para el 29/11, contenido distinto: llamada real grabada).",
   "motor": "neogest-studio",
   "motor_voz": "elevenlabs",
-  "voces": ["Johnny", "Lydia", "Raquel"],
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8e140b76d9f69d520f6f27a7770a8003_promo_801_recepcionista.mp4",
-  "renderizado": false,
+  "voces": [
+    "Johnny",
+    "Lydia",
+    "Raquel"
+  ],
+  "renderizado": "2026-11-25T18:01:18+00:00",
   "youtube": {
     "titulo": "¿Y si tu teléfono se cogiera solo? #Shorts",
     "descripcion": "Un asistente telefónico con IA contesta 24 horas, con tu propio número, y te resume cada llamada por correo. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
-    "etiquetas": ["asistente telefonico", "recepcionista virtual", "autonomos", "pymes"]
+    "etiquetas": [
+      "asistente telefonico",
+      "recepcionista virtual",
+      "autonomos",
+      "pymes"
+    ]
   },
   "facebook": {
     "texto": "¿Te llaman solo para preguntar el horario?\nUn asistente telefónico con IA contesta las 24 horas, con tu propio número.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
-  }
+  },
+  "_master_ciclo": "2026-11-25T18:01:11+00:00: LUFS -15.1 / pico -2.2 -> loudnorm -14 / -1,5",
+  "asset": "805_recepcionista_horario_voces.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8e140b76d9f69d520f6f27a7770a8003_promo_801_recepcionista.mp4"
 }

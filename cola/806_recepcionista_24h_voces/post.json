@@ -16,20 +16,32 @@
     "oferta": "Recepcionista 24h: información gratuita en /solicitar",
     "paso_embudo": "alcance → visita al perfil → solicitud de información"
   },
-  "_fuentes": ["Ficha Producto del Centro, slug recepcionista-24h, hechos_verificados 16/11/2026"],
+  "_fuentes": [
+    "Ficha Producto del Centro, slug recepcionista-24h, hechos_verificados 16/11/2026"
+  ],
   "_comprobado": "No nombra al proveedor; no dice 'prueba gratuita', solo 'información gratuita'; no afirma llamadas ilimitadas ni cifras de clientes.",
   "_nota_creador": "25/11/2026 madrugada: renderizada en Neogest Studio (gen_promos.py) con voces ElevenLabs Johnny/Lydia/Raquel. Recreación con guion propio, distinta de 802_recepcionista_que_hace (llamada real grabada, cola 30/11).",
   "motor": "neogest-studio",
   "motor_voz": "elevenlabs",
-  "voces": ["Johnny", "Lydia", "Raquel"],
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/b9c0680987bc3ab190db79695cff4c42_promo_802_recepcionista.mp4",
-  "renderizado": false,
+  "voces": [
+    "Johnny",
+    "Lydia",
+    "Raquel"
+  ],
+  "renderizado": "2026-11-25T18:01:24+00:00",
   "youtube": {
     "titulo": "¿Cuántas llamadas pierdes al día? #Shorts",
     "descripcion": "El asistente telefónico con IA atiende 24 horas, todos los días, reserva citas y te manda el resumen de cada llamada. Solicita información gratuita → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
-    "etiquetas": ["asistente telefonico", "recepcionista virtual", "autonomos", "pymes"]
+    "etiquetas": [
+      "asistente telefonico",
+      "recepcionista virtual",
+      "autonomos",
+      "pymes"
+    ]
   },
   "facebook": {
     "texto": "¿Y si tu teléfono no dejara nunca a nadie sin respuesta?\nEl asistente telefónico con IA atiende 24 horas, todos los días.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
-  }
+  },
+  "asset": "806_recepcionista_24h_voces.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/b9c0680987bc3ab190db79695cff4c42_promo_802_recepcionista.mp4"
 }

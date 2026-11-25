@@ -1,9 +1,3 @@
-2026-11-21 08:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 08:40  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 08:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 08:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 08:55  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 09:10  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:10  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:10  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 09:26  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +592,9 @@
 2026-11-25 18:11  109_gestion7d_stock_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-25 18:11  110_gestion7d_cobro_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.1 pico=-1.5
 2026-11-25 18:11  110_gestion7d_cobro_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-25 19:01  805_recepcionista_horario_voces: vídeo externo masterizado en el ciclo (LUFS -15.1, pico -2.2 -> -14 / -1,5)
+2026-11-25 19:01  805_recepcionista_horario_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.5 pico=-1.1
+2026-11-25 19:01  805_recepcionista_horario_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-25 19:01  806_recepcionista_24h_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.7 pico=-1.3
+2026-11-25 19:01  806_recepcionista_24h_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-25 19:01  Estadísticas actualizadas (30 posts, 1597 seguidores)
