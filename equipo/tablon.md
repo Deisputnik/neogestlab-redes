@@ -478,3 +478,4 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-25 01:02 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (3 al día, 0 sin render todavía) · nada
 
 2026-11-25 03:34 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-25 06:08 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
