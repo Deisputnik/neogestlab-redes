@@ -18,11 +18,11 @@
   },
   "motor": "neogest-studio",
   "texto": "Rosa quiere que se fiche con huella hasta para ir al baño. Y Neo le recuerda quién incumple.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: quien ficha gratis trabaja gratis.\nMándaselo a tu jefe del fichaje.\n#humornegro #fichar #jornadalaboral #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
-  "cuando": "2026-11-25T11:30:00+01:00",
+  "cuando": "2026-11-25T16:30:00+01:00",
   "formula": "El Jambo que sabe v5.2 + retención v12 (gancho en mitad del lío, promesa, giro sembrado a mitad, remate que responde); Jambo con rasgos de toxicómano de barrio; una voz sintética diseñada por personaje",
   "_fuentes": [],
   "_comprobado": "Episodio de humor sin cifras verificables; el dato del cuñado es falso a propósito y Neo lo corrige.",
-  "motor_voz": "voz_disenada",
+  "motor_voz": "mixto: voz_disenada→edge-tts + elevenlabs (2 lineas, orden del dueno 25/11)",
   "_voz_nota": "Voces Gemini TTS diseñadas por personaje (equipo/voz_gemini.json), como el 522.",
   "comentario_fijado": "¿Tu jefe ficha lo que no paga? Episodio nuevo cada día en @neogestlab",
   "avance_siguiente": "Siguiente: la clienta que paga la semana que viene",
@@ -37,8 +37,9 @@
       "neogestlab"
     ]
   },
-  "_nota_creador": "24/11/2026 Creador (pasada 09:51): retención v12, voces diseñadas, referencia 522. Sin reel de prueba (orden 24/11).",
-  "renderizado": "2026-11-25T07:10:39+00:00",
+  "_nota_creador": "24/11/2026 Creador (pasada 09:51): retención v12, voces diseñadas, referencia 522. Sin reel de prueba (orden 24/11). | 25/11/2026 Creador (Claude Code): regeneradas con ElevenLabs las lineas de Felipe (Johnny) y Sindy (Lydia) que el TTS disenado pronunciaba mal; resto del episodio en edge-tts; rerenderizado completo (64.2s). Pendiente de Calidad.",
+  "renderizado": "2026-11-25T10:34:39+00:00",
   "asset": "521_jambo_fichar_en_casa.mp4",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6ae5244d4e2b32702f0a3cd6/213fcc579b37ffaf33edce3247f1d3db_521_jambo_fichar_en_casa_v2.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/506c3122f6fd9e63ee891a0f8ac525d5_521_jambo_fichar_en_casa_v3.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/506c3122f6fd9e63ee891a0f8ac525d5_521_jambo_fichar_en_casa_v3.mp4"
 }

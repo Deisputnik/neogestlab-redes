@@ -9,5 +9,7 @@
   "como_arreglarlo": "CREADOR: regenerar el audio (TTS neogest-studio) de las líneas de Felipe (\\\"¡Rosa, que fichar sin cobrar es trabajar gratis, coño! ¡Eso lo sé de buena tinta!\\\") y de Sindy/remate (\\\"Que lo resuelva el Neo\\\") para que la pronunciación sea inteligible y coincida con el guion, y re-renderizar para regenerar también los subtítulos palabra a palabra del tramo del remate de Neo (actualmente cortados como \\\"ES USTED LLEVA\\\" en t≈45s). No hace falta tocar el resto del episodio ni el post.",
   "fecha": "2026-11-25T08:09:43Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-25T07:10:39+00:00"
+  "render": "2026-11-25T07:10:39+00:00",
+  "caducado": "2026-11-25T10:34:39+00:00",
+  "motivo_caducidad": "re-render: 2 lineas regeneradas con ElevenLabs (Felipe/Sindy) por orden del dueno, resto en edge-tts"
 }
