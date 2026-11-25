@@ -17,21 +17,32 @@
     "oferta": "cta_principal de la ficha Producto",
     "paso_embudo": "visita_perfil -> clic_enlace"
   },
-  "_fuentes": ["Ficha Producto del Centro, slug gestion-integral-7d (hechos_verificados, comprobado src/lib/planes.js y portada 14/11/2026)"],
+  "_fuentes": [
+    "Ficha Producto del Centro, slug gestion-integral-7d (hechos_verificados, comprobado src/lib/planes.js y portada 14/11/2026)"
+  ],
   "_comprobado": "Descuento de stock por albarán y módulo de compras son hechos verificados de la ficha; sin cifras ni funciones fuera de ella.",
   "_nota_creador": "25/11/2026 madrugada: renderizada en Neogest Studio (gen_promos.py) con voces ElevenLabs variadas (orden del dueño 24/11 noche: gastar créditos, variar voces, siempre castellano). Reemplaza la versión anterior de voz única (107_catalogo_stock_reel, publicada 22-23/11), que queda retirada de la cola de reciclaje (revision/) por orden del dueño 25/11.",
   "motor": "neogest-studio",
   "motor_voz": "elevenlabs",
-  "voces": ["Johnny"],
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/2ff5c9365acc02d371318b0add43ffda_promo_107_gestion7d.mp4",
-  "renderizado": false,
+  "voces": [
+    "Johnny"
+  ],
+  "renderizado": "2026-11-25T17:11:42+00:00",
   "avance_siguiente": "Mañana: la factura que nadie cobra",
   "youtube": {
     "titulo": "¿Apuntas el stock en una libreta? #Shorts",
     "descripcion": "Con Gestión Integral 7D, cada venta descuenta el stock sola en cuanto sale el albarán. Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube · By Neogest Lab",
-    "etiquetas": ["gestion integral 7d", "autonomos", "pymes", "stock", "facturacion"]
+    "etiquetas": [
+      "gestion integral 7d",
+      "autonomos",
+      "pymes",
+      "stock",
+      "facturacion"
+    ]
   },
   "facebook": {
     "texto": "¿Apuntas el stock en una libreta o en la cabeza?\nCon Gestión Integral 7D, cada venta descuenta el stock sola en cuanto sale el albarán.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
-  }
+  },
+  "asset": "109_gestion7d_stock_voces.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/2ff5c9365acc02d371318b0add43ffda_promo_107_gestion7d.mp4"
 }

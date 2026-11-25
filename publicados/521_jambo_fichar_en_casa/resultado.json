@@ -1,0 +1,19 @@
+{
+  "media_id": "18151125055491570",
+  "enlace": "https://www.instagram.com/reel/DgLCN23q85Q/",
+  "prueba_no_seguidores": false,
+  "metodo": "video_url",
+  "publicado": "2026-11-25T17:11:17+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "7v3RgUku78M",
+    "enlace": "https://youtube.com/shorts/7v3RgUku78M",
+    "titulo": "Fichar en casa hasta para mear #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1145673608361166",
+    "enlace": "https://www.facebook.com/reel/1145673608361166",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
