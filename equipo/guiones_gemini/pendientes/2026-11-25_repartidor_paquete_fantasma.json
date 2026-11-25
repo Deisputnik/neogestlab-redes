@@ -1,0 +1,72 @@
+{
+  "slug": "repartidor-paquete-fantasma",
+  "set": "salon",
+  "hora": 23,
+  "moraleja": "Intentar entregar sin tiempo es la trampa del reparto",
+  "recuerdo": "Como la entrega del perro, pero a oscuras",
+  "bucle_visual": "Sindy mirando la pantalla del móvil iluminada en la mano",
+  "gancho_tipo": "amenaza_con_plazo",
+  "promesa": "¿Cómo van a recoger la entrega antes de medianoche?",
+  "giro": "El aviso de ausente se emitió automáticamente antes de salir del almacén",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "t": "¡Diez minutos o devuelven el paquete, Felipe!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, Sindy! Eso me lo conozco yo, si no abres en tres segundos el repartidor se evapora."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡Joder, Felipe! Baja corriendo las escaleras, que la reputación de esta casa depende de esa entrega."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "t": "Felipeee, hermano… si ves al del paquete, me debe un cigarro."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "ironia",
+      "giro": true,
+      "t": "¡Manda huevos, Rosa! El sistema dice que estábamos ausentes a las ocho, cuando ni existía la ruta."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "llora",
+      "t": "¡Joder! A mí los paquetes a deshoras me alteran el pulso y me dan taquicardia."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "risas": "true",
+      "t": "¡Hostia, Rosa! Nos cobran el reintento sin moverse de la central. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Felipe, para recoger la entrega del paquete el aviso es falso y la reclamación procede gratis."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "normal",
+      "t": "Intentar entregar sin tiempo es la trampa del reparto"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T09:11:12Z",
+  "corregido_en_ronda": 1
+}

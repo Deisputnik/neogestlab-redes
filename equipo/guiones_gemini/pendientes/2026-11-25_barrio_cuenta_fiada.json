@@ -1,0 +1,66 @@
+{
+  "slug": "barrio-cuenta-fiada",
+  "set": "salon",
+  "hora": 20,
+  "moraleja": "Fiar sin registro contable convierte la pérdida en norma",
+  "recuerdo": "Como las mermas del bar, pero con la libreta",
+  "bucle_visual": "Rosa sosteniendo la libreta de cuentas fiadas abierta",
+  "gancho_tipo": "pregunta_abierta",
+  "promesa": "¿Cómo recuperará el bar el dinero de la cuenta fiada?",
+  "giro": "Las consumiciones fiadas no eran de clientes sino invitaciones personales de Rosa",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Sindy, ¿quién se ha cenado las tortillas fiadas?!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "t": "¡Manda huevos, Rosa! Aquí todo el mundo apunta en la libreta y luego la libreta pierde las hojas."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo! Eso lo sé de buena tinta, si la deuda pasa de un mes legalmente prescribe, Rosa."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "t": "Rosaaa, prima… apunta dos raciones a mi cuenta, mañana te las pago."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "giro": true,
+      "t": "¡Joder, Felipe! Si las cuatro partes fiadas llevan la firma de Rosa como invitación particular."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "grita",
+      "risas": "true",
+      "t": "¡Hostia, Rosa! Nos culpas de la merma y estás invitando al barrio. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, para recuperar el dinero de las tortillas fiadas debes pagar de tu bolsillo tus propias invitaciones."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "normal",
+      "t": "Fiar sin registro contable convierte la pérdida en norma"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T09:11:12Z",
+  "corregido_en_ronda": 1
+}

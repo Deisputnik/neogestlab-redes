@@ -1,0 +1,72 @@
+{
+  "slug": "fontanero-madrugada-factura",
+  "set": "salon",
+  "hora": 2,
+  "moraleja": "Las horas nocturnas no pagadas siguen siendo trabajo regalado",
+  "recuerdo": "Como lo de la factura de la luz, pero con agua",
+  "bucle_visual": "Rosa señalando el charco del suelo en el salón",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién va a pagar las horas nocturnas del fontanero?",
+  "giro": "La factura era por la comisión y no por arreglar",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "sorpresa",
+      "t": "¡Felipe, la fuga del fregadero inundó todo!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Joder, Rosa! Eso lo sé yo de buena tinta, a medianoche la tarifa es doble."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "t": "¡Manda huevos, Rosa! Llevo tres horas achicando agua y esto no figura en la nómina."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "t": "Rosaaa, prima… pásame un cubo y un euro pa’l autobús."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "giro": true,
+      "t": "¡Coño! Si el fontanero no cobra el arreglo, cobra cincuenta euros solo por descolgar el teléfono."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, Rosa! Legalmente el agua estancada cuenta como patrimonio del inmueble, lo vi en internet."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "risas": "true",
+      "t": "¡Hostia ya! ¿Esto quién lo paga? ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Rosa, las horas nocturnas sin contrato son nulas y la factura del fontanero la pagas tú."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "normal",
+      "t": "Las horas nocturnas no pagadas siguen siendo trabajo regalado"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T09:11:12Z",
+  "corregido_en_ronda": 1
+}

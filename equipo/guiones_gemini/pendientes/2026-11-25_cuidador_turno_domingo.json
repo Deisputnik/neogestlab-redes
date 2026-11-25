@@ -1,0 +1,72 @@
+{
+  "slug": "cuidador-turno-domingo",
+  "set": "salon",
+  "hora": 15,
+  "moraleja": "El trabajo en festivo sin compensar roba vida privada",
+  "recuerdo": "Como lo del fichaje en casa, pero el domingo",
+  "bucle_visual": "Felipe sentado en el sofá mirando la agenda de papel",
+  "gancho_tipo": "afirmacion_imposible",
+  "promesa": "¿Quién cubrirá legalmente la guardia del domingo sin cobrar extra?",
+  "giro": "Rosa se autoasignó la prima de festivo cargando las horas en Felipe",
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "t": "¡Rosa ha fichado el domingo por dos personas!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "t": "¡Manda huevos, Felipe! Que yo el domingo descanso aunque se hunda el barrio entero."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "t": "¡Coño, Sindy! En esta casa la empatía con los ancianos se demuestra haciendo doce horas seguidas sin protestar."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "t": "Rosaaa… me quedo de guardia por diez pavos y un bocadillo."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "giro": true,
+      "t": "¡Illo! Sé de buena fuente que la prima dominical fue cobrada a tu cuenta, Rosa."
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "llora",
+      "t": "¡Hostia! A mí el frío del domingo me quita la salud, eso lo arreglamos la semana que viene."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "risas": "true",
+      "t": "¡Joder, Rosa! Nos dejas el marrón y tú te llevas el dinero. ¡Que lo resuelva el Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "t": "Felipe, nadie debe cubrir la guardia del domingo gratis y Rosa tiene que pagar el plus completo."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "emo": "normal",
+      "t": "El trabajo en festivo sin compensar roba vida privada"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-25T09:11:12Z",
+  "corregido_en_ronda": 1
+}
