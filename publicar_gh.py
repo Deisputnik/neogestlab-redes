@@ -1541,17 +1541,28 @@ class _SinRedireccion(urllib.request.HTTPRedirectHandler):
 
 def url_directa_release(nombre):
     """URL directa (firmada, sin redirección) del asset de la release 'cola'. Solo funciona con el repo PÚBLICO.
-    Instagram descarga el vídeo desde ahí con video_url. La firma dura minutos: se pide justo antes de usarla."""
+    Instagram descarga el vídeo desde ahí con video_url. La firma dura minutos: se pide justo antes de usarla.
+    25/11/2026 (el dueño: «no quiero más fallos de conexión al repo»): el 404 no siempre era repo privado —
+    un asset recién subido a la release tarda unos segundos en propagarse por la CDN de GitHub antes de poder
+    descargarse. Antes esto se trataba como fallo definitivo a la primera; ahora se reintenta con espera breve
+    antes de darse por vencido, para que una pieza no pierda un intento de publicación por pura carrera."""
     repo = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
     url = f"https://github.com/{repo}/releases/download/{RELEASE}/{urllib.parse.quote(nombre)}"
     opener = urllib.request.build_opener(_SinRedireccion)
-    try:
-        opener.open(urllib.request.Request(url, method="HEAD"), timeout=60)
-        return url
-    except urllib.error.HTTPError as e:
-        if e.code in (301, 302, 303, 307, 308) and e.headers.get("Location"):
-            return e.headers["Location"]
-        raise ErrorAPI(f"el vídeo no es descargable desde la release ({e.code}); ¿el repositorio es privado?")
+    ultimo = None
+    for intento, espera in enumerate((0, 3, 8)):
+        if espera:
+            time.sleep(espera)
+        try:
+            opener.open(urllib.request.Request(url, method="HEAD"), timeout=60)
+            return url
+        except urllib.error.HTTPError as e:
+            if e.code in (301, 302, 303, 307, 308) and e.headers.get("Location"):
+                return e.headers["Location"]
+            ultimo = e
+            if e.code != 404:
+                break  # otro código (p.ej. 403) no es una carrera de propagación: no insistir
+    raise ErrorAPI(f"el vídeo no es descargable desde la release ({ultimo.code}); ¿el repositorio es privado?")
 
 
 def _externo_publico(post):
