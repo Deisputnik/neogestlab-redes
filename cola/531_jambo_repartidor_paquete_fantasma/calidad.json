@@ -1,0 +1,15 @@
+{
+  "aprobado": false,
+  "nota": 76,
+  "motivos": [
+    "Falta la atribución musical en el texto del post: rechazo automático.",
+    "Voz edge-tts sin motor_voz voz_disenada: suena a IA, tope 89.",
+    "Sin giro: el hilo no sorprende. Moraleja débil («Intentar entregar sin tiempo es la trampa del reparto»), no se entiende como lección.",
+    "Neo afirma «la reclamación procede gratis» como consejo legal no verificado.",
+    "Ninguna réplica recuerda un episodio anterior."
+  ],
+  "como_arreglarlo": "Texto del post (Creador): añadir la línea de música. Creador: moraleja concreta, giro sembrado, recuerdo previo y sin consejo legal. Centro: voz_disenada.",
+  "fecha": "2026-11-25T17:50:00Z",
+  "revisor": "Calidad (respaldo)",
+  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json."
+}

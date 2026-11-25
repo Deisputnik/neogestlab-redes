@@ -1,0 +1,14 @@
+{
+  "aprobado": false,
+  "nota": 85,
+  "motivos": [
+    "Voz edge-tts en todas las réplicas; el estándar v11 exige motor_voz voz_disenada desde el 23/11 y _voz_nota no justifica el fallback. Suena a IA: tope 89.",
+    "Falta el campo giro en guion.json; el giro del remate (quién tiró el barril) es confuso y el post lo promete sin resolverlo con claridad.",
+    "Ninguna réplica recuerda un episodio anterior (criterio recuerdo, v11).",
+    "Humor negro flojo: conflicto laboral con tono de sitcom."
+  ],
+  "como_arreglarlo": "Centro: re-render con voz_disenada. Creador: añadir giro sembrado, aclarar en la escena Jambo/Sindy quién tira el barril, meter un recuerdo de episodio anterior y subir la frialdad del humor negro.",
+  "fecha": "2026-11-25T17:50:00Z",
+  "revisor": "Calidad (respaldo)",
+  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json."
+}
