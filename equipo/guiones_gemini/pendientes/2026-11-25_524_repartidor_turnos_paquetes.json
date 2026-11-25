@@ -67,5 +67,12 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-25T12:11:17Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": false,
+    "motivos": [],
+    "arreglo_sugerido": "El guion cumple perfectamente con el formato v11 y la biblia de la serie: set de salon, duración estimada adecuada, 9 golpes en total dentro del rango de escalada (5 a 8-9), uso correcto de tildes y signos de exclamación para los tacos exigidos («¡Hostia!», «¡Illo!», «¡Coño!», etc.), presencia del giro claro en el campo correspondiente (y marcado en la escena de Sindy), contraste de Neo culto frente al lenguaje choni del resto, moraleja final y recuerdo bien estructurados. Listo para renderizar.",
+    "fuente": "gemini",
+    "fecha": "2026-11-25T16:08:28.367247Z"
+  }
 }

@@ -73,5 +73,12 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-25T12:11:17Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": false,
+    "motivos": [],
+    "arreglo_sugerido": "Guion sólido, cumple rigurosamente con los 5-8 golpes de escalada de la v11, presenta el conflicto en el primer segundo, incluye el giro inesperado en la mitad (el vecino sustrayendo el barril) y cuenta con los personajes con el registro choni adecuado frente al respeto formal de Neo. Moraleja clara y cierre coherente con el gancho.",
+    "fuente": "gemini",
+    "fecha": "2026-11-25T16:09:01.947308Z"
+  }
 }

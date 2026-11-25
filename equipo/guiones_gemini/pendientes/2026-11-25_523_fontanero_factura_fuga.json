@@ -73,5 +73,12 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-25T12:11:47Z",
-  "corregido_en_ronda": 2
+  "corregido_en_ronda": 2,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": false,
+    "motivos": [],
+    "arreglo_sugerido": "El guion cumple perfectamente con el estándar v11 y v12: arranca en mitad del lío con un conflicto claro, incluye vocabulario vulgar y choni en los personajes de barrio, contrasta con el tono educado y seco de Neo, presenta un giro sembrado a mitad (Felipe culpando al fontanero pirata de Rosa), cumple con la estructura de escalada de golpes, incluye la moraleja, el recuerdo, y la duración estimada es óptima. Apto para producción.",
+    "fuente": "gemini",
+    "fecha": "2026-11-25T16:08:12.303571Z"
+  }
 }

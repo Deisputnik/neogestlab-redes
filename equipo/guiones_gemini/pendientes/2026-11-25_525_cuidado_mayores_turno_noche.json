@@ -73,5 +73,12 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-25T12:11:17Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": false,
+    "motivos": [],
+    "arreglo_sugerido": "",
+    "fuente": "mecanica",
+    "fecha": "2026-11-25T16:08:49.929128Z"
+  }
 }
