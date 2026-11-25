@@ -484,3 +484,5 @@ Confirmo l · 023_citas_familia sin arreglo de texto: Revisados los motivos del 
 2026-11-25 07:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-25 07:10 UTC · Calidad (API) · evaluadas 1 piezas: 521_jambo_fichar_en_casa aprobada (92): Episodio de El Jambo (521_jambo_fichar_en_casa) cumple el formato vigente v11: 59.9 s, 1080x1920, LUFS -14.82, pico -1.79 dB, sin silencios largos. Intro "Fichar en casa: ¿hasta para mear?" (≤8 palabras) y cierre con el mismo plano de la casa en bucle, con la tarjeta de marca de empresa intercalada  · Creador/Remasterizador: ver motivos arriba; necesito: nada del dueño
 2026-11-25 08:05 UTC · Remasterizador · sin candidatos: reels de las últimas 24-72 h con 7-60 vistas (mediana 134; umbral 3× = 402) y sin aviso del Analista · nada
+
+2026-11-25 08:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
