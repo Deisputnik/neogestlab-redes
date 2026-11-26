@@ -56,8 +56,9 @@ jobs:
             gh workflow run comunidad.yml -R "$REPO" --ref main || echo "no se pudo lanzar comunidad"
           fi
 
-          # Calidad (API): una vez por hora; ninguna pieza renderizada debe pasar más de 2 h sin nota (DIRECTIVA §7 bis)
-          if [ "$(hace calidad_api.yml)" -ge 50 ]; then
+          # Calidad (API): en cada pasada del reloj (cada 30 min; antes 1/h). 26/11/2026, orden del dueño «haz que calidad
+          # pase más veces al día». Sin piezas pendientes no llama a la API (coste cero). Además la lanza el ciclo al subir un render.
+          if [ "$(hace calidad_api.yml)" -ge 25 ]; then
             gh workflow run calidad_api.yml -R "$REPO" --ref main -f origen=reloj || echo "no se pudo lanzar calidad"
           fi
 

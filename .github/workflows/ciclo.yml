@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 26/11/2026: para lanzar Calidad (API) en cuanto hay un render nuevo sin nota
 
 concurrency:
   group: ciclo-instagram
@@ -236,6 +237,23 @@ jobs:
             echo "::error::No se pudo actualizar main ni guardar la rama de rescate. Los cambios de este ciclo se han perdido."
           fi
           exit 1
+
+      - name: Lanzar Calidad (API) si hay renders nuevos sin nota (26/11/2026, orden del dueño)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(python3 -c "import sys; sys.path.insert(0,'herramientas'); import calidad_api as c; print(len(c.piezas_pendientes()[0]))" || echo 0)
+          echo "Piezas pendientes de Calidad: $n"
+          if [ "${n:-0}" -gt 0 ]; then
+            activos=$(gh run list -R "$GITHUB_REPOSITORY" -w calidad_api.yml -L 3 --json status \
+              --jq '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="pending")] | length' || echo 0)
+            if [ "${activos:-0}" = "0" ]; then
+              gh workflow run calidad_api.yml -R "$GITHUB_REPOSITORY" --ref main -f origen=ciclo || echo "no se pudo lanzar calidad"
+            else
+              echo "Calidad ya está en marcha o en cola"
+            fi
+          fi
 
       - name: Aviso en rojo si se omitió el render por falta de motor de voz
         if: env.OMITIR_RENDER == '1'
