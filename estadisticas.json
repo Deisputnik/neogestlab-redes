@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T03:07:55+00:00",
+  "actualizado": "2026-11-26T09:17:02+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1597,
@@ -18,15 +18,15 @@
       "permalink": "https://www.instagram.com/reel/DgLCN23q85Q/",
       "timestamp": "2026-11-25T17:11:11+0000",
       "metricas": {
-        "reach": 11,
-        "views": 15,
+        "reach": 12,
+        "views": 16,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 1,
         "total_interactions": 2,
-        "ig_reels_avg_watch_time": 15801,
-        "ig_reels_video_view_total_time": 173811
+        "ig_reels_avg_watch_time": 14888,
+        "ig_reels_video_view_total_time": 178659
       }
     },
     {
@@ -934,6 +934,10 @@
     },
     {
       "fecha": "2026-11-26T03:07+00:00",
+      "seguidores": 1597
+    },
+    {
+      "fecha": "2026-11-26T09:17+00:00",
       "seguidores": 1597
     }
   ]
