@@ -1,5 +1,5 @@
 {
- "_nota": "Rehacer solo réplicas con dicción rechazada por Calidad (527, 528, 529), 26/11/2026. Las escenas sin h/v se conservan para mantener el índice.",
+ "_nota": "Reintento solo de Jambo en 527 y 528, 26/11/2026.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
@@ -63,7 +63,7 @@
      "a": {
       "jambo": "habla"
      },
-     "voz_tts": "Primo… dame un eurillo para la fregona. Que me ahogo aquí."
+     "voz_tts": "Primo… dame un eurillo para la fregona. Que me ahogo, aquí."
     },
     {
      "e": "gag",
@@ -80,9 +80,7 @@
     },
     {
      "e": "gag",
-     "h": "conchaqueton",
      "emo": "llora",
-     "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
      "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
      "p": [
       "conchaqueton"
@@ -90,8 +88,7 @@
      "a": {
       "conchaqueton": "habla"
      },
-     "risas": true,
-     "voz_tts": "A mí no me mires. Eso, lo arreglamos la semana que viene. ¡Qué frío, hostia!"
+     "risas": true
     },
     {
      "e": "gag",
@@ -200,7 +197,7 @@
      "a": {
       "jambo": "habla"
      },
-     "voz_tts": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro."
+     "voz_tts": "Prima… apúntame, dos raciones. Mañana te las pago. Te lo juro."
     },
     {
      "e": "gag",
@@ -228,9 +225,7 @@
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "grita",
-     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
      "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
      "p": [
       "felipe"
@@ -238,8 +233,7 @@
      "a": {
       "felipe": "desespera"
      },
-     "risas": true,
-     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Neo."
+     "risas": true
     },
     {
      "e": "remate",
@@ -267,138 +261,9 @@
      }
     }
    ]
-  },
-  {
-   "slug": "529_jambo_cuidador_turno_domingo",
-   "set": "salon",
-   "hora": 15,
-   "moraleja": "El trabajo en festivo sin compensar roba vida privada",
-   "gancho_tipo": "afirmacion_imposible",
-   "gancho_casa": "Doce horas de domingo… ¿gratis? 👀",
-   "promesa": "¿Quién va a cubrir gratis la guardia del domingo?",
-   "giro": "Parecía un domingo gratis y Rosa ya se había cobrado la prima",
-   "recuerdo": "Rosa ya hizo fichar con huella a todo el mundo (521)",
-   "bucle_visual": "Felipe en el sofá con la agenda de papel, misma pose",
-   "escenas": [
-    {
-     "e": "gancho",
-     "emo": "sorpresa",
-     "t": "¡La jefa ha fichado el domingo por dos personas! ¡Y una soy yo!",
-     "p": [
-      "felipe",
-      "sindy"
-     ],
-     "a": {
-      "felipe": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "emo": "enfado",
-     "t": "¡Pues manda huevos! Yo el domingo descanso. ¡Aunque se hunda el barrio entero!",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "rosa",
-     "emo": "ironia",
-     "v": "¡Qué poca empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar.",
-     "t": "¡Qué poca empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar.",
-     "p": [
-      "rosa"
-     ],
-     "a": {
-      "rosa": "presume"
-     },
-     "voz_tts": "¡Qué poca… empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar."
-    },
-    {
-     "e": "gag",
-     "emo": "cansado",
-     "t": "Prima… yo hago la guardia. Diez pavos y un bocadillo.",
-     "p": [
-      "jambo"
-     ],
-     "a": {
-      "jambo": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "emo": "chulea",
-     "t": "¡Espera, espera! La prima del domingo ya está cobrada. Y en tu cuenta, Rosa. Lo sé de buena tinta.",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "presume"
-     },
-     "giro": true
-    },
-    {
-     "e": "gag",
-     "h": "conchaqueton",
-     "emo": "llora",
-     "v": "A mí el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene.",
-     "t": "A mí el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene.",
-     "p": [
-      "conchaqueton"
-     ],
-     "a": {
-      "conchaqueton": "habla"
-     },
-     "voz_tts": "A mí, el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene."
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "grita",
-     "v": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva el Neo.",
-     "t": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva el Neo.",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "desespera"
-     },
-     "risas": true,
-     "voz_tts": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva, el Neo."
-    },
-    {
-     "e": "remate",
-     "h": "neo",
-     "emo": "seco",
-     "v": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala, señora Melano. O haga usted las doce horas.",
-     "t": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala, señora Melano. O haga usted las doce horas.",
-     "p": [
-      "neo",
-      "rosa"
-     ],
-     "a": {
-      "neo": "fria"
-     },
-     "sello": "PILLADA",
-     "voz_tts": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala usted, señora Melano. O haga usted las doce horas."
-    },
-    {
-     "e": "cierre",
-     "emo": "normal",
-     "t": "El trabajo en festivo sin compensar roba vida privada.",
-     "p": [
-      "felipe",
-      "neo"
-     ],
-     "a": {
-      "neo": "habla"
-     }
-    }
-   ]
   }
+ ],
+ "solo": [
+  "jambo"
  ]
 }
