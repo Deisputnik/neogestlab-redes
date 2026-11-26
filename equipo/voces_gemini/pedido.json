@@ -1,144 +1,10 @@
 {
- "_nota": "Reintento solo de Jambo en 527 y 528, 26/11/2026.",
+ "_nota": "Reintento solo de Jambo en 528.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
  "episodios": [
-  {
-   "slug": "527_jambo_fontanero_factura_fuga",
-   "set": "salon",
-   "hora": 14,
-   "moraleja": "Sin factura oficial, los destrozos los pagas tú",
-   "gancho_tipo": "conflicto_en_marcha",
-   "gancho_casa": "Una fuga en casa: ¿quién paga? 💦",
-   "promesa": "¿Quién va a pagar los destrozos de la fuga?",
-   "giro": "Parecía culpa del Ayuntamiento y fue el fontanero pirata de Rosa",
-   "recuerdo": "Rosa ya alquilaba el trastero en negro (522)",
-   "bucle_visual": "Rosa señalando el charco del salón, misma pose",
-   "escenas": [
-    {
-     "e": "gancho",
-     "emo": "grita",
-     "t": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto?",
-     "p": [
-      "rosa",
-      "felipe"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "emo": "chulea",
-     "t": "¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta.",
-     "p": [
-      "felipe"
-     ],
-     "a": {
-      "felipe": "presume"
-     }
-    },
-    {
-     "e": "gag",
-     "emo": "ironia",
-     "t": "¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes?",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "jambo",
-     "emo": "cansado",
-     "v": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
-     "t": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
-     "p": [
-      "jambo"
-     ],
-     "a": {
-      "jambo": "habla"
-     },
-     "voz_tts": "Primo… dame un eurillo para la fregona. Que me ahogo, aquí."
-    },
-    {
-     "e": "gag",
-     "emo": "grita",
-     "t": "¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa!",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "desespera"
-     },
-     "giro": true
-    },
-    {
-     "e": "gag",
-     "emo": "llora",
-     "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
-     "p": [
-      "conchaqueton"
-     ],
-     "a": {
-      "conchaqueton": "habla"
-     },
-     "risas": true
-    },
-    {
-     "e": "gag",
-     "emo": "enfado",
-     "t": "¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos!",
-     "p": [
-      "rosa"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "emo": "enfado",
-     "t": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "desespera"
-     }
-    },
-    {
-     "e": "remate",
-     "emo": "seco",
-     "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
-     "p": [
-      "neo",
-      "rosa"
-     ],
-     "a": {
-      "neo": "fria"
-     },
-     "sello": "SIN FACTURA"
-    },
-    {
-     "e": "cierre",
-     "emo": "normal",
-     "t": "Sin factura oficial, los destrozos los pagas tú.",
-     "p": [
-      "felipe",
-      "neo"
-     ],
-     "a": {
-      "neo": "habla"
-     }
-    }
-   ]
-  },
   {
    "slug": "528_jambo_barrio_cuenta_fiada",
    "set": "salon",
@@ -197,7 +63,7 @@
      "a": {
       "jambo": "habla"
      },
-     "voz_tts": "Prima… apúntame, dos raciones. Mañana te las pago. Te lo juro."
+     "voz_tts": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro."
     },
     {
      "e": "gag",
