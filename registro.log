@@ -1,19 +1,3 @@
-2026-11-21 14:13  Voz con edge-tts: 7 frases en 7 s
-2026-11-21 14:13  Voz: silencios recortados por frase (s): [0.12, 0.13, 0.12, 0.13, 0.13, 0.12, 0.11]
-2026-11-21 14:13  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.3), np.float64(3.3), np.float64(2.1), np.float64(2.6), np.float64(4.6), np.float64(4.8), np.float64(3.6)]
-2026-11-21 14:13  Voz: alineación palabra a palabra (small, 14.3 s): 7/7 frases
-2026-11-21 14:13  Mezcla: voz -17.4 LUFS, música -22.9 LUFS (con ducking -25.9), la música baja 5.71 dB (p90) bajo la voz, ratio 2.5; máster -16.98 -> -14.0 LUFS, pico -1.4 dBFS; huecos de voz: []
-2026-11-21 14:13  Control de audio: OK; duración 20.03 s; avisos: ["voz distinta del guion: faltan ['mmm'], sobran ['mmn'] (rehacer esas frases)"]
-2026-11-21 14:13  329_jambo_cena_empresa_navidad: renderizado con voz y subido a la release 'cola'
-2026-11-21 14:14  Grabación de pantalla: OK /tmp/render_406_peluqueria_web_asistente_reel/grabacion.mp4 (708 fotogramas, 23.6 s, total 44.0 s)
-2026-11-21 14:14  Voz con edge-tts: 5 frases en 4 s
-2026-11-21 14:14  Voz: silencios recortados por frase (s): [0.12, 0.12, 0.14, 0.14, 0.13]
-2026-11-21 14:14  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(3.1), np.float64(4.4), np.float64(3.3), np.float64(4.0), np.float64(4.5)]
-2026-11-21 14:14  Voz: alineación palabra a palabra (small, 8.2 s): 5/5 frases
-2026-11-21 14:15  Mezcla: voz -16.0 LUFS, música -23.0 LUFS (con ducking -26.1), la música baja 6.0 dB (p90) bajo la voz, ratio 2.379; máster -15.96 -> -14.0 LUFS, pico -1.5 dBFS; huecos de voz: []
-2026-11-21 14:15  Control de audio: OK; duración 17.97 s
-2026-11-21 14:15  406_peluqueria_web_asistente_reel: renderizado con voz y subido a la release 'cola'
-2026-11-21 14:15  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 14:27  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 14:27  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 14:27  343_jambo_registro_jornada_falso: vídeo externo masterizado en el ciclo (LUFS -15.0, pico -0.6 -> -14 / -1,5)
@@ -598,3 +582,19 @@
 2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:11  806_recepcionista_24h_voces: publicando…
+2026-11-26 13:12  806_recepcionista_24h_voces: YouTube publicado https://youtube.com/shorts/Yuu88nHxI0c
+2026-11-26 13:12  806_recepcionista_24h_voces: Facebook publicado https://www.facebook.com/reel/4485323061689909
+2026-11-26 13:12  806_recepcionista_24h_voces: publicado https://www.instagram.com/reel/DgNE4FOBHbg/
+2026-11-26 13:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 13:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
