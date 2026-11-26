@@ -1,7 +1,7 @@
 {
   "tipo": "reel",
   "texto": "¿Te llaman solo para preguntar el horario?\nUn asistente telefónico con IA contesta las 24 horas, con tu propio número, y te manda el resumen de cada llamada por correo. Se configura con tu negocio, tu voz y tu trato.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nRecreación con voces sintéticas.\n\n#autonomos #pymes #atencioncliente #neogestlab",
-  "cuando": "2026-11-26T16:30:00+01:00",
+  "cuando": "2026-11-26T11:25:00+01:00",
   "compartir_en_feed": true,
   "portada_ms": 0,
   "formato": "Promo de app · recreación · Neogest Studio",
@@ -43,5 +43,6 @@
   },
   "_master_ciclo": "2026-11-25T18:01:11+00:00: LUFS -15.1 / pico -2.2 -> loudnorm -14 / -1,5",
   "asset": "805_recepcionista_horario_voces.mp4",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8e140b76d9f69d520f6f27a7770a8003_promo_801_recepcionista.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/8e140b76d9f69d520f6f27a7770a8003_promo_801_recepcionista.mp4",
+  "_cuando_anterior": "2026-11-26T16:30:00+01:00"
 }

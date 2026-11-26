@@ -1,7 +1,7 @@
 {
   "tipo": "reel",
   "texto": "¿Y si tu teléfono no dejara nunca a nadie sin respuesta?\nEl asistente telefónico con IA atiende 24 horas, todos los días, con tu número de siempre, reserva citas en tu calendario y te manda el resumen de cada llamada.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nRecreación con voces sintéticas.\n\n#autonomos #pymes #atencioncliente #neogestlab",
-  "cuando": "2026-11-26T19:30:00+01:00",
+  "cuando": "2026-11-26T13:05:00+01:00",
   "compartir_en_feed": true,
   "portada_ms": 0,
   "formato": "Promo de app · recreación · Neogest Studio",
@@ -42,5 +42,6 @@
     "texto": "¿Y si tu teléfono no dejara nunca a nadie sin respuesta?\nEl asistente telefónico con IA atiende 24 horas, todos los días.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
   },
   "asset": "806_recepcionista_24h_voces.mp4",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/b9c0680987bc3ab190db79695cff4c42_promo_802_recepcionista.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/b9c0680987bc3ab190db79695cff4c42_promo_802_recepcionista.mp4",
+  "_cuando_anterior": "2026-11-26T19:30:00+01:00"
 }

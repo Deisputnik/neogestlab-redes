@@ -1,7 +1,7 @@
 {
   "tipo": "reel",
   "texto": "¿Apuntas el stock en una libreta o en la cabeza?\nCon Gestión Integral 7D, cada venta descuenta el stock sola en cuanto sale el albarán, y el módulo de compras te avisa qué falta reponer.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\n¿Cuántas veces te has quedado sin stock sin enterarte? Cuéntalo en comentarios.\nVoz generada por IA\n\n#autonomos #pymes #stock #gestion #neogestlab",
-  "cuando": "2026-11-26T10:30:00+01:00",
+  "cuando": "2026-11-26T16:25:00+01:00",
   "compartir_en_feed": true,
   "portada_ms": 0,
   "formula": "promos de app con voces variadas ElevenLabs (orden del dueño 24/11 noche)",
@@ -44,5 +44,6 @@
   },
   "asset": "109_gestion7d_stock_voces.mp4",
   "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/2ff5c9365acc02d371318b0add43ffda_promo_107_gestion7d.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/bc46925558e361efac080db7835ae6ec_promo_109_gestion7d_v3.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/bc46925558e361efac080db7835ae6ec_promo_109_gestion7d_v3.mp4",
+  "_cuando_anterior": "2026-11-26T10:30:00+01:00"
 }

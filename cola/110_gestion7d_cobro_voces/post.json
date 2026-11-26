@@ -1,7 +1,7 @@
 {
   "tipo": "reel",
   "texto": "Factura enviada... ¿y el cobro?\nCon Gestión Integral 7D mandas la factura con un enlace de pago: tarjeta, TPV o transferencia, y ves al momento si ya ha entrado.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\n¿Cuánto tardan en pagarte tus clientes? Dilo en comentarios.\nVoz generada por IA\n\n#autonomos #pymes #facturacion #cobros #neogestlab",
-  "cuando": "2026-11-26T13:30:00+01:00",
+  "cuando": "2026-11-26T14:45:00+01:00",
   "compartir_en_feed": true,
   "portada_ms": 0,
   "formula": "promos de app con voces variadas ElevenLabs (orden del dueño 24/11 noche)",
@@ -44,5 +44,6 @@
   },
   "asset": "110_gestion7d_cobro_voces.mp4",
   "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/b3d1b7b849848cfe62a1643c666e9025_promo_108_gestion7d.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/cb5f46f6e2db2d3ea4b2cf6a489b0e1b_promo_110_gestion7d_v3.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/cb5f46f6e2db2d3ea4b2cf6a489b0e1b_promo_110_gestion7d_v3.mp4",
+  "_cuando_anterior": "2026-11-26T13:30:00+01:00"
 }
