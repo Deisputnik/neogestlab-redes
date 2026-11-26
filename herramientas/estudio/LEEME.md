@@ -1,3 +1,30 @@
+## HyperFrames (herramienta de vídeo, orden del dueño 26/11/2026)
+Framework de código abierto de HeyGen (Apache 2.0, https://github.com/heygen-com/hyperframes) para componer y renderizar vídeo. La composición se escribe en HTML/CSS/JS con atributos `data-*` para tiempo y pistas (compatible con GSAP/CSS/Lottie/Three.js, sin React); el CLI captura cada fotograma con Chrome headless y lo codifica con FFmpeg. Paquete npm `hyperframes`, requiere Node 22+ (el sandbox de Neogest Studio ya tiene v24) y FFmpeg.
+
+**Estado:** instalado y probado de extremo a extremo el 26/11/2026 en el sandbox de Neogest Studio (Base44 `6af862101565c330cf06389f`): `npx hyperframes init` → `npm run check` → `npm run render` produjo un MP4 real (1920×1080, H.264, 10 s) sin errores. Ningún formato de producción (El Jambo, promos de app) está migrado todavía — por ahora es la herramienta estándar disponible para cualquier vídeo nuevo, a partir de ahora.
+
+**Dependencias del sandbox (no persisten entre arranques en frío — instalar cada vez antes de usar):**
+```
+apt-get update && apt-get install -y ffmpeg \
+  libnspr4 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
+  libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 \
+  libgbm1 libasound2 libpango-1.0-0 libcairo2 libatspi2.0-0
+```
+Sin esto, `npm run check`/`npm run render` fallan porque Chrome headless no encuentra sus librerías compartidas (`libnspr4.so: cannot open shared object file`).
+
+**Comandos:**
+- `npx hyperframes init <nombre> --non-interactive` — nuevo proyecto de vídeo (scaffold con `index.html`, `package.json`, `hyperframes.json`).
+- `npx hyperframes preview` / `npm run dev` — previsualizar en el navegador.
+- `npx hyperframes lint` / `npm run check` — validar la composición ANTES de renderizar (pistas solapadas, `data-composition-id` que falte, contraste WCAG, si hay audio). Pásalo siempre antes de `render`.
+- `npx hyperframes render` / `npm run render` — exporta a MP4 (queda en `renders/`).
+- `npx hyperframes add <bloque>` — instala un bloque del catálogo (~450: transiciones, subtítulos, gráficos…).
+
+**La voz NO cambia:** sigue siendo ElevenLabs (Johnny) o edge-tts exactamente como dice la Directiva §6 — HyperFrames solo compone la imagen/vídeo y renderiza; el clip de audio ya generado se mete en la composición como cualquier otro recurso de la pista de audio.
+
+**Subida a Base44, igual que siempre:** copiar el MP4 de `renders/` a `public/entregas/` → `create_checkpoint` → deploy → esperar 200 en la URL pública de `entregas/` → `upload_app_asset` con ese `fileUrl` → URL de `media.base44.com` → borrar de `entregas/`, checkpoint, deploy otra vez. Verificar con ffprobe antes de dar el vídeo por bueno.
+
+---
+
 # El Jambo en Neogest Studio · receta del Creador (biblia v5.2, actualizada 22/11/2026)
 
 Fuente de verdad del formato: `equipo/DIRECTIVA_VIGENTE.md` §5-§7 y `equipo/serie_jambo.md`. Este archivo es solo la receta técnica.

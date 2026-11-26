@@ -597,3 +597,12 @@ Pendiente si se quiere ir más lejos: limpiar también `public/videos/*.mp4` ant
 
 2026-11-26 02:54 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-26 05:29 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+## 2026-11-26 — 📢 AVISO A TODO EL EQUIPO: nueva herramienta de vídeo, HyperFrames
+Orden del dueño: «Instala skill hyperframes y la vamos a utilizar para nuestros vídeos, avisa a todos los agentes».
+
+- HyperFrames (HeyGen, Apache 2.0, https://github.com/heygen-com/hyperframes): composición de vídeo en HTML/CSS/JS, render con Chrome headless + FFmpeg. Paquete npm `hyperframes`.
+- **Instalado y probado de verdad** en el sandbox de Neogest Studio (Base44 `6af862101565c330cf06389f`): `npx hyperframes init` → `npm run check` → `npm run render` → MP4 real (1920×1080, H.264, 10 s) verificado con ffprobe, sin errores. Node del sandbox ya es v24 (cumple el mínimo v22). FFmpeg y las librerías de Chrome headless NO estaban instaladas de serie — hubo que instalarlas con apt (lista completa en `herramientas/estudio/LEEME.md`); no persisten entre arranques en frío del sandbox, hay que reinstalarlas cada vez.
+- Documentado en detalle: `equipo/DIRECTIVA_VIGENTE.md` §6 bis (nueva) y `herramientas/estudio/LEEME.md` (sección nueva al principio). Puntero añadido también en `equipo/INSTRUCCIONES_EQUIPO.md`.
+- La voz NO cambia: ElevenLabs (Johnny)/edge-tts siguen igual que en la Directiva §6 — HyperFrames es solo la pieza de composición/render, no sustituye la generación de voz.
+- Pendiente: ningún formato de producción (El Jambo, promos de app) está migrado todavía a HyperFrames; de momento solo queda verificado que la herramienta funciona en este sandbox. Migrar los formatos existentes es tarea aparte, sin asignar todavía.
+- Nota aparte: al dueño se le mostró también una tarjeta de `propose_skills` para instalar esta misma herramienta como skill de Claude (pendiente de que él la guarde desde la interfaz; eso no lo puede hacer un agente).
