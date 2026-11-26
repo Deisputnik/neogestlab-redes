@@ -695,3 +695,4 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 
 2026-11-26 18:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-26 18:28 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-26 18:38 UTC · Comunidad (Claude Code) · Instagram: 0 comentarios sin responder en los 10 posts más recientes (2 días); DMs con respuesta pendiente solo de cuentas propias del dueño (excluidas) y de terceros con ventana de 24 h cerrada, sin propuesta; 0 leads nuevos; invitaciones de Facebook sin candidatos nuevos · nada · nada del dueño
