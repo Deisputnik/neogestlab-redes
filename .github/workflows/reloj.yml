@@ -4,7 +4,7 @@ name: Reloj (dispara el ciclo cada 30 min)
 # dormía y despertaba cada 15 min durante casi 6 horas seguidas, las 24h del día (encadenando
 # un job con el siguiente sin parar). Ese patrón de "proceso continuo" dentro de Actions es
 # exactamente lo que GitHub detecta como uso abusivo de runners y fue la causa más probable
-# de que se suspendiera la cuenta anterior (ajreparacion). Ahora cada ejecución es una pasada
+# de que se suspendiera la cuenta de GitHub anterior. Ahora cada ejecución es una pasada
 # corta (segundos) que dispara lo que toque y termina: sin bucle, sin auto-relanzarse.
 # 22/11/2026: toque de este archivo para forzar a GitHub a re-registrar el cron (0 ejecuciones programadas desde la migracion).
 

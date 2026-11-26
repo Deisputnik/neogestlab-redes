@@ -11,7 +11,6 @@
 8. **Calidad:** el listón sigue en 90. Ahora se evalúa contra este formato (ya no rechaza por «más de 20 s» ni por la foto de la casa del principio).
 9. **Orden de las automatizaciones:** Guionista Gemini, Autocrítica (arranca sola al terminar el Guionista), Creador y render, Calidad, publicación en Instagram/Facebook/YouTube, redes extra (TikTok, LinkedIn, Google), Supervisor, Comunidad y Analista. Detalle en la directiva §2.
 10. **Cierre fijo** de todo post: «Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso». Prohibido cualquier embudo («comenta X y te envío», «escríbeme X por privado»).
-11. **Repo vivo:** `Deisputnik/neogestlab-redes`. El repo `ajreparacion/instagram` está muerto.
 12. **Modelos:** Haiku para lo mecánico, Sonnet para redactar, evaluar y programar, Opus solo si Sonnet no basta. Fable solo para desatascar la producción y publicación de vídeos (orden del dueño 22/11); en todo lo demás, nunca.
 13. **Promos de app:** 25-45 segundos, ANTES/DESPUÉS, hueco fijo de las 13:40. El estándar de Calidad decía 20-45 y 25-45 a la vez; queda 25-45.
 
@@ -23,7 +22,6 @@ Hallazgos nuevos de esta sesión (todos corregidos salvo que se diga):
 | Qué | Efecto | Estado |
 |---|---|---|
 | `control_audio.py` leía el texto de las escenas solo en la clave «v» (cambio del 21/11 para los episodios del estudio); las promos de app usan «voz» | TODAS las promos de app se bloqueaban al renderizar («sobra toda la transcripción») desde el 21/11 | Corregido (lee las dos) |
-| Las 3 promos «aprobadas» (405, 406, 408) tenían su mp4 en la release del repo antiguo | Fallaban al publicar («no assets match») y acababan en `errores/` | Re-renderizadas en el repo nuevo |
 | Esas 3 promos duraban 14-19 s (el formato pide 25-45 s) y Calidad las aprobó el 21/11 y las rechazó el 22/11 con el mismo vídeo | La nota de Calidad no es reproducible en lo medible | Guiones alargados a 28 s; pendiente de Mejora: que duración, bucle y resolución se midan por código y lleguen a Calidad como hechos |
 | `reloj.yml` lanzaba Calidad y Comunidad solo si corría en el minuto exacto 13 o 43 | Con el retraso de GitHub casi nunca coincidía: «Calidad cada hora» no existía | Corregido: se lanzan si su última pasada tiene más de 50 min |
 | GitHub solo ejecutó 3 de las 48 pasadas programadas del Reloj el 22/11 (y 4 del ciclo) | Lo programado no sale a su hora aunque esté aprobado | SIN RESOLVER: hace falta un reloj externo (ver «Solo puede hacerlo el dueño») |
@@ -53,8 +51,6 @@ Cadena real: guion → render → mp4 en la release «cola» → nota de Calidad
 | `control_audio.py` | Bloqueaba por «illo»/jerga y por letras deletreadas (J-A-M-B-O) | Alta | Sí: lista `jerga` y alias en `lexico_control.json`; 351 pasa con 0 diferencias y los 45 casos de prueba siguen OK | ea81d4c |
 | `pre_entrega.py` | Avisaba/rechazaba episodios de salón > 25-30 s | Media | Sí (40-70 s para `salon`) | ea81d4c |
 | Repo viejo en archivos vivos | Directiva, supervisor.md, publicar_gh.py, 4 scripts, pendiente_usuario, UA | Media | Sí | 80bf74b |
-| `atrasos/facebook.json`, `youtube.json` | 22 URLs a la release `centro-v3` del repo viejo; en el repo nuevo esa release NO existe | Alta | No reescritas (los mp4 no están): re-subir a una release nueva o descartar | n/a |
-| `cola/801` y `802` | `_video_externo_usado` apunta a rama del repo viejo (solo registro histórico) | Baja | No | n/a |
 | Autocrítica Gemini | YAML inválido (llave de más); cron 5 min tras el Guionista | Alta | Sí: reescrito, encadenado por `workflow_run` | e636fcd |
 | Comunidad, Calidad API, Metricool, Redes (push) | Fallaban en «Guardar» por `git pull --rebase` con cambios sin añadir | Alta | Sí: `--autostash` en 20 workflows; Calidad rebase con autostash | e636fcd |
 | Redes vía Metricool | Falla siempre: faltan 3 secretos | Media | Cron desactivado (queda `workflow_dispatch`) | e636fcd |
@@ -91,4 +87,3 @@ Horarios ideales propuestos (Madrid, sin cambiar nada yo): Creador 07:51 y 14:51
 - Activar la sincronización de GitHub de Neogest Studio (o exportar su código) para poder renderizar en Actions.
 - Pegar `ZERNIO_API_KEY` y `BUFFER_API_KEY`; crear los 3 secretos de Metricool solo si quiere esa vía.
 - Editar a mano 4 tareas programadas (prompts viejos) y desactivar el Analista de monetización.
-- Decidir qué hacer con los 22 vídeos de `atrasos/` cuyos mp4 estaban en el repo viejo.

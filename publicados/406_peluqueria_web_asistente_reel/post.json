@@ -28,7 +28,6 @@
     "archivo": "life_of_riley.mp3",
     "bpm": 101.3
   },
-  "_nota_coordinacion": "22/11/2026: el mp4 renderizado el 21/11 se quedó en la release del repo antiguo (cuenta suspendida). Se quita «renderizado» para que el ciclo lo vuelva a renderizar y subir aquí; Calidad lo reevalúa antes de salir. · 22/11/2026: el mp4 ya estaba subido a la release «cola» pero post.json no tenía «renderizado», así que el ciclo lo saltaba y la pieza iba a caducar sin publicarse; se restaura la marca con la fecha real de subida del asset (no es un re-render: la aprobación de Calidad sigue vigente).",
   "renderizado": "2026-11-22T22:15:16+00:00",
   "asset": "406_peluqueria_web_asistente_reel.mp4",
   "control_audio": {

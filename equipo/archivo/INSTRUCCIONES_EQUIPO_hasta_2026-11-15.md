@@ -37,16 +37,16 @@ Sustituye por completo a «HUMANIZAR AL MÁXIMO» y al enfoque de misterios. Man
 ## Contexto
 - Cuenta de Instagram @neogestlab (estado del perfil en DIRECTIVA_VIGENTE §6 «Perfil»). Dueño: el usuario (Neogest Lab). Ha dado control total y autorización para trabajar de forma 100 % autónoma. OBJETIVO PRINCIPAL: MONETIZAR. El crecimiento y la viralidad son el medio. El usuario ha dado control y permisos absolutos.
 - Regla de prioridad para todos los agentes: antes de decidir, lee equipo/monetizacion.md y elige siempre la opción que más acerque a ingresos reales (requisitos de monetización de Instagram, seguidores, alcance a no seguidores, retención, compartidos y guardados, temas con mayor valor comercial). Si dos opciones empatan, gana la que más monetiza. Nunca uses tácticas que pongan en riesgo la cuenta (spam, compra de seguidores, contenido engañoso o copiado).
-- Nada depende de ningún dispositivo del usuario: todo vive en el repositorio PÚBLICO GitHub ajreparacion/instagram, y GitHub Actions (publicar_gh.py, cada 30 min de 12:05 a 23:35) renderiza, pone la voz, publica, responde comentarios y actualiza estadisticas.json.
+- Nada depende de ningún dispositivo del usuario: todo vive en el repositorio PÚBLICO GitHub Deisputnik/neogestlab-redes, y GitHub Actions (publicar_gh.py, cada 30 min de 12:05 a 23:35) renderiza, pone la voz, publica, responde comentarios y actualiza estadisticas.json.
 - Escribe siempre en español de España. No hagas preguntas: decide tú y deja constancia.
 
 ## Cómo trabajar con el repositorio
-1. Conecta el repo con la herramienta mcp__claude-code-remote__add_repo (owner "ajreparacion", repo "instagram", access "push") y clónalo como te indique su respuesta (git clone --depth 1 https://github.com/ajreparacion/instagram /home/claude/instagram).
+1. Conecta el repo con la herramienta mcp__claude-code-remote__add_repo (owner "Deisputnik", repo "neogestlab-redes", access "push") y clónalo como te indique su respuesta (git clone --depth 1 https://github.com/Deisputnik/neogestlab-redes /home/claude/instagram).
 2. Trabaja en /home/claude/instagram. Al terminar: git add -A; git commit -m "<rol>: <qué>"; git pull --rebase; git push. Si el push falla por conflicto, vuelve a hacer pull --rebase y push (máx. 3 intentos).
 3. Nunca subas vídeos ni audios al historial de git (solo JSON, Markdown y scripts). Los vídeos renderizados están en la release "cola" del repo.
 4. Para descargar un vídeo renderizado (asset "<carpeta>.mp4" de la release cola):
-   ID=$(gh api repos/ajreparacion/instagram/releases/tags/cola --jq '.assets[] | select(.name=="NOMBRE.mp4") | .id')
-   gh api -H "Accept: application/octet-stream" repos/ajreparacion/instagram/releases/assets/$ID > NOMBRE.mp4
+   ID=$(gh api repos/Deisputnik/neogestlab-redes/releases/tags/cola --jq '.assets[] | select(.name=="NOMBRE.mp4") | .id')
+   gh api -H "Accept: application/octet-stream" repos/Deisputnik/neogestlab-redes/releases/assets/$ID > NOMBRE.mp4
 5. No toques .github/ ni publicar_gh.py salvo el rol de Mejora (y solo con prueba previa). Nunca escribas tokens ni secretos en ningún archivo.
 
 ## Carpetas
@@ -124,7 +124,7 @@ Reel con la presentadora **Nea** (personaje 3D original de Neogest Lab: gafas, m
 Cómo hacer uno (Creador, a diario):
 1. Hechos: solo `hechos_verificados` del Producto (Centro de Contenido Apps, appId 6ae5244d4e2b32702f0a3cd6) y nada de `prohibido_afirmar`. Las capturas son las de `demo[].imagen` (se descargan solas dentro de Actions).
 2. Crea `cola/NNN_<app>_presentador/guion.json` SIN post.json (el post va dentro del guion; el workflow escribe post.json con "renderizado" al terminar, y así el ciclo no intenta renderizarlo).
-3. Lanza el workflow «Modo presentador» con `guion` = esa ruta, `voz` = sí, `subir` = sí (API: `gh api -X POST repos/ajreparacion/instagram/actions/workflows/presentador.yml/dispatches -f ref=main -f 'inputs[guion]=cola/NNN_.../guion.json' -f 'inputs[voz]=true' -f 'inputs[subir]=true'`). Tarda ~12 min (voz ~6 min, render ~5 min).
+3. Lanza el workflow «Modo presentador» con `guion` = esa ruta, `voz` = sí, `subir` = sí (API: `gh api -X POST repos/Deisputnik/neogestlab-redes/actions/workflows/presentador.yml/dispatches -f ref=main -f 'inputs[guion]=cola/NNN_.../guion.json' -f 'inputs[voz]=true' -f 'inputs[subir]=true'`). Tarda ~12 min (voz ~6 min, render ~5 min).
 4. Haz `git pull` y revisa `cola/NNN_.../control/*.jpg` (fotograma del gancho, uno por escena y el cierre) y `presentador.json` (duración, LUFS, ducking, movimiento, avisos). El MP4 está en la release «cola». Calidad escribe calidad.json (nota ≥ 90) y el ciclo lo publica a su hora.
 Formato del guion (ejemplos completos: `cola/301_medicator_presentador/guion.json` y `cola/302_gestion_integral_7d_presentador/guion.json`):
 ```

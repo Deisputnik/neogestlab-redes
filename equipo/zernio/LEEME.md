@@ -18,9 +18,6 @@ actualizado a `6b01dae0a3545a8f6bb38ad6` (usuario `neogestlab`, sin punto) en `c
 en directo con `accounts_list` del MCP de Zernio. Pendiente: relanzar el workflow para confirmar que
 ahora programa de verdad.
 
-Nota: este documento mencionaba antes el repo `ajreparacion/instagram` — ese repo quedó abandonado
-tras la suspensión de esa cuenta de GitHub (21/11/2026); todo el pipeline vive ahora en
-`Deisputnik/neogestlab-redes` (ver `equipo/github-cuenta` o la memoria del proyecto).
 
 ## Cómo funciona
 

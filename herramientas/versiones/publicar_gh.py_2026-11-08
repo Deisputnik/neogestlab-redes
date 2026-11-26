@@ -918,7 +918,7 @@ class _SinRedireccion(urllib.request.HTTPRedirectHandler):
 def url_directa_release(nombre):
     """URL directa (firmada, sin redirección) del asset de la release 'cola'. Solo funciona con el repo PÚBLICO.
     Instagram descarga el vídeo desde ahí con video_url. La firma dura minutos: se pide justo antes de usarla."""
-    repo = os.environ.get("GITHUB_REPOSITORY", "ajreparacion/instagram")
+    repo = os.environ.get("GITHUB_REPOSITORY", "Deisputnik/neogestlab-redes")
     url = f"https://github.com/{repo}/releases/download/{RELEASE}/{urllib.parse.quote(nombre)}"
     opener = urllib.request.build_opener(_SinRedireccion)
     try:
