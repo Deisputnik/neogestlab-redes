@@ -108,7 +108,7 @@ def _prompt(n):
 
     esquema = {
         "slug": "texto-corto-sin-espacios, 2-4 palabras, nueva situación",
-        "set": "salon (por defecto, interior de la casa — orden del dueño 21/11: los episodios nuevos transcurren en el salón de una casa, no en la oficina) | oficina | despacho | bar | calle | reunion (estos últimos solo si la situación concreta de verdad lo pide, p.ej. un cliente en su tienda); la apertura/cierre es SIEMPRE la tarjeta fija 'Cosas de Casa' que pone el código, igual en todos los episodios — no va aquí, no hace falta flow ni bucle_visual desde la corrección del 20/11 noche",
+        "set": "salon (por defecto, interior de la casa — orden del dueño 21/11: los episodios nuevos transcurren en una casa, no en la oficina) | cocina (si la situación es de verdad de cocina: comida, fregar, una cena, un recibo de la compra) | dormitorio (si es de verdad de dormitorio: irse a dormir, levantarse, una discusión de madrugada, estar enfermo en la cama) | oficina | despacho | bar | calle | reunion (estos últimos solo si la situación concreta de verdad lo pide, p.ej. un cliente en su tienda); no cambies de estancia solo por variar, solo cuando la propia situación transcurra ahí; la apertura/cierre es SIEMPRE la tarjeta fija 'Cosas de Casa' que pone el código, igual en todos los episodios — no va aquí, no hace falta flow ni bucle_visual desde la corrección del 20/11 noche",
         "hora": "entero 0-23 (hora del día de la escena)",
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
@@ -521,7 +521,9 @@ def _validar(ep):
     # 21/11/2026 (hallazgo real en auditoria de agentes, orden del dueno): "salon" faltaba
     # aqui pese a ser el set por defecto que el propio prompt pide desde el cambio de formato
     # de esa madrugada - todo guion nuevo se estaba rechazando por "set invalido: 'salon'".
-    if ep.get("set") not in {"salon", "oficina", "despacho", "bar", "calle", "reunion"}:
+    # 26/11/2026: se añaden "cocina" y "dormitorio" como estancias de la casa (orden del dueño,
+    # "ampliar partes de la casa"), ya dibujadas en Neogest Studio (characters.js SETS).
+    if ep.get("set") not in {"salon", "cocina", "dormitorio", "oficina", "despacho", "bar", "calle", "reunion"}:
         motivos.append(f"set inválido: {ep.get('set')!r}")
     moraleja_palabras = len(str(ep.get("moraleja", "")).split())
     if not (6 <= moraleja_palabras <= 9):
