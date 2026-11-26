@@ -20,13 +20,13 @@
     "Ficha Producto del Centro, slug gestion-integral-7d (hechos_verificados, comprobado src/lib/planes.js y portada 14/11/2026)"
   ],
   "_comprobado": "Descuento de stock por albarán y módulo de compras son hechos verificados de la ficha; sin cifras ni funciones fuera de ella.",
-  "_nota_creador": "25/11/2026 madrugada: renderizada en Neogest Studio (gen_promos.py) con voces ElevenLabs variadas (orden del dueño 24/11 noche: gastar créditos, variar voces, siempre castellano). Reemplaza la versión anterior de voz única (107_catalogo_stock_reel, publicada 22-23/11), que queda retirada de la cola de reciclaje (revision/) por orden del dueño 25/11.",
+  "_nota_creador": "26/11/2026 (desatasco, orden del dueño): re-render completo en Neogest Studio (render.mjs --final, voz ElevenLabs Johnny, 410 caracteres) para corregir el solape del rechazo de Calidad (t≈16,5 s). Las tres tomas de la app (≈10-21 s) ya no van a pantalla completa con zoom: van dentro de un marco de móvil a zoom 1 (frame phone, sin isla), con el rótulo «Gestión Integral 7D · demo con datos ficticios» en una línea por ENCIMA del móvil (y=0,125) y los subtítulos por DEBAJO (y=0,84), así ni el rótulo ni el subtítulo pisan la interfaz ni se corta texto por el borde. Empalmar solo el tramo no era limpio (el cambio afecta a las tres escenas de app y la duración depende de la voz), por eso pieza completa. Comprobado en fotogramas t=14, 15, 16, 16,5, 17 y 18 s: sin solapes. 33,6 s, −13,9 LUFS, pico −1,4 dB. motor_voz ya estaba en elevenlabs. Guion y texto sin cambios. Nota anterior (25/11): reemplaza la versión de voz única 107_catalogo_stock_reel.",
   "motor": "neogest-studio",
   "motor_voz": "elevenlabs",
   "voces": [
     "Johnny"
   ],
-  "renderizado": "2026-11-25T17:11:42+00:00",
+  "renderizado": false,
   "avance_siguiente": "Mañana: la factura que nadie cobra",
   "youtube": {
     "titulo": "¿Apuntas el stock en una libreta? #Shorts",
@@ -43,5 +43,6 @@
     "texto": "¿Apuntas el stock en una libreta o en la cabeza?\nCon Gestión Integral 7D, cada venta descuenta el stock sola en cuanto sale el albarán.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
   "asset": "109_gestion7d_stock_voces.mp4",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/2ff5c9365acc02d371318b0add43ffda_promo_107_gestion7d.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/2ff5c9365acc02d371318b0add43ffda_promo_107_gestion7d.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/bc46925558e361efac080db7835ae6ec_promo_109_gestion7d_v3.mp4"
 }
