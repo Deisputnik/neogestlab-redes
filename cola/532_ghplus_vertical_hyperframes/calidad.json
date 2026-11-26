@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 0,
+  "motivos": [
+    "No se puede evaluar: el asset 532_ghplus_vertical_hyperframes.mp4 no existe en la release «cola» (inspeccionar_video devuelve error 'no encuentro el asset'). Sin vídeo no hay ffprobe, silencedetect, LUFS ni fotogramas que revisar, así que no se puede dar un veredicto de contenido.",
+    "post.json no trae control_audio.json ni guion.json: tampoco hay forma de contrastar el audio con el guion por otra vía.",
+    "Nota 0 es un marcador técnico de 'sin render para revisar', no una valoración del contenido del post ni de la app GH PLUS."
+  ],
+  "como_arreglarlo": "CENTRO/CREADOR: falta el render en la release 'cola' para esta pieza (532_ghplus_vertical_hyperframes). Hay que comprobar si el ciclo de render falló o no se ha ejecutado todavía para este asset y relanzarlo (si no hay un ciclo en curso, lanzar ciclo.yml); una vez esté el mp4 en la release, Calidad debe volver a inspeccionarlo y sustituir este calidad.json antes de que la pieza pueda salir.",
+  "fecha": "2026-11-26T09:19:35Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T08:48:47+00:00"
+}
