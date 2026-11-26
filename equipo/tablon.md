@@ -596,3 +596,4 @@ Pendiente si se quiere ir más lejos: limpiar también `public/videos/*.mp4` ant
 2026-11-25 23:20 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño2026-11-26 00:39 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (12 al día, 0 sin render todavía) · nada
 
 2026-11-26 02:54 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-26 05:29 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
