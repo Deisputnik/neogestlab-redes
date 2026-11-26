@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-25T18:01:34+00:00",
+  "actualizado": "2026-11-26T03:07:55+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1597,
@@ -12,21 +12,21 @@
       "id": "18151125055491570",
       "caption": "Rosa quiere que se fiche con huella hasta para ir al baño. Y Neo le recuerda quién incumple.\nRosa, Felipe, Sindy, Jambo y Neo, humor negro de ficción.\nMoraleja: quien ficha gratis trabaja gratis.\nMándaselo a tu jefe del fichaje.\n#humornegro #fichar #jornadalaboral #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
       "comments_count": 0,
-      "like_count": 0,
+      "like_count": 1,
       "media_product_type": "REELS",
       "media_type": "VIDEO",
       "permalink": "https://www.instagram.com/reel/DgLCN23q85Q/",
       "timestamp": "2026-11-25T17:11:11+0000",
       "metricas": {
-        "reach": 0,
-        "views": 1,
+        "reach": 11,
+        "views": 15,
         "saved": 0,
         "shares": 0,
         "comments": 0,
-        "likes": 0,
-        "total_interactions": 0,
-        "ig_reels_avg_watch_time": 0,
-        "ig_reels_video_view_total_time": 0
+        "likes": 1,
+        "total_interactions": 2,
+        "ig_reels_avg_watch_time": 15801,
+        "ig_reels_video_view_total_time": 173811
       }
     },
     {
@@ -930,6 +930,10 @@
     },
     {
       "fecha": "2026-11-25T18:01+00:00",
+      "seguidores": 1597
+    },
+    {
+      "fecha": "2026-11-26T03:07+00:00",
       "seguidores": 1597
     }
   ]
