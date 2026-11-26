@@ -1,0 +1,14 @@
+{
+  "aprobado": false,
+  "nota": 40,
+  "motivos": [
+    "Bloqueo de contenido: en ningún fotograma se ve la app APPCC Fácil ni su interfaz (temperaturas, acción correctora, proveedores, informe PDF). Todo el vídeo es B-roll genérico (almacén, dormitorio con móvil) sin relación visible con el producto: escaparate sin demo = no pasa (lista de Calidad / A2 gancho sin problema mostrado con la app).",
+    "Tarjeta de cierre incorrecta: muestra 'Muy pronto' en vez del botón 'Enlace en el perfil' y no lleva el cierre fijo 'Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso' que sí aparece en el texto del post (incoherencia plantilla DIRECTIVA §5).",
+    "Subtítulos palabra a palabra rotos/desordenados: 'TEMPERATURA EL', 'PIDE LA', fragmentos sueltos que no corresponden a una frase coherente del guion; indica desincronización o error de render del control de audio.",
+    "No se puede verificar si la voz es ElevenLabs (orden del dueño 23/11: todas las promos de apps deben llevar motor_voz=elevenlabs); post.json no incluye el campo motor_voz ni _voz_nota."
+  ],
+  "como_arreglarlo": "CREADOR: re-renderizar con Neogest Studio mostrando capturas/demo real de la app APPCC Fácil (pantallas de registro de temperatura, acción correctora, proveedores con RGSEAA, informe PDF) en vez de B-roll genérico de almacén/dormitorio; sustituir la tarjeta de cierre 'Muy pronto' por la plantilla vigente 2026 con 'By Neogest Lab' y botón 'Enlace en el perfil'; revisar y corregir los subtítulos palabra a palabra para que coincidan con el guion/voz; confirmar y añadir \"motor_voz\":\"elevenlabs\" en post.json (o \"_voz_nota\" si no había cuota) según orden del dueño 23/11.",
+  "fecha": "2026-11-26T09:58:19Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T22:47:47+00:00"
+}

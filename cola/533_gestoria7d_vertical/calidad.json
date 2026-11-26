@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 0,
+  "motivos": [
+    "No se pudo inspeccionar la pieza: inspeccionar_video devolvió HTTP 403 Forbidden al intentar descargar el mp4 (asset de la release «cola» o video_externo del post.json). Sin ffprobe, silencedetect, LUFS/pico ni fotogramas no hay base para evaluar formato, audio, logo/cierre ni cumplimiento de A1-A6/B1-B9.",
+    "No es un rechazo de contenido ni de guion: es un bloqueo de acceso al render (permisos del asset o release no publicada/expirada)."
+  ],
+  "como_arreglarlo": "CENTRO/CREADOR: comprobar que el asset de la release «cola» para 533_gestoria7d_vertical (o el video_externo de su post.json) es público/descargable (token de GitHub release o URL del video_externo caducada/privada). Una vez accesible, relanzar Calidad para re-evaluar con inspeccionar_video. Si es un fallo recurrente del pipeline de publicación de assets, añadir petición URGENTE en equipo/peticiones_mejora.md.",
+  "fecha": "2026-11-26T09:57:57Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-25T22:34:54+00:00"
+}
