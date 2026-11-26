@@ -609,3 +609,4 @@ Orden del dueño: «Instala skill hyperframes y la vamos a utilizar para nuestro
 2026-11-26 07:00 UTC · Creador · pasada sin render: las 8 filas del Creador en atascos.md siguen rechazadas; 109/110/805/806 ya llevan motor_voz elevenlabs en post.json (el rechazo de Calidad es anterior; 109 y 110 además necesitan re-render del tramo 14-18 s por solape de subtítulo/botón); 526-529 necesitan re-render con voz_disenada + giro y recuerdo en guion, y esta sesión no tiene la cadena de voces Gemini ni el render del estudio operativos · necesita: Calidad que reevalúe 805/806 y una sesión con render de Studio para 109/110/526-529
 
 2026-11-26 07:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-26 08:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
