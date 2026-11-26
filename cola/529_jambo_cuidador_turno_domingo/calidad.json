@@ -1,17 +1,8 @@
 {
   "aprobado": false,
-  "nota": 86,
-  "motivos": [
-    "Voz edge-tts sin motor_voz voz_disenada: suena a IA, tope 89.",
-    "Falta giro en guion.json aunque la revelación (Rosa se cobró la prima dominical) existe.",
-    "Ninguna réplica recuerda un episodio anterior."
-  ],
-  "como_arreglarlo": "Centro: re-render con voz_disenada. Creador: marcar giro y añadir recuerdo de episodio anterior. El resto no necesita cambios.",
-  "fecha": "2026-11-25T17:50:00Z",
-  "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
-  "aprobado_anterior": false,
-  "nota_anterior": 86,
-  "caducado": "2026-11-26T11:11:47+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T11:11:47+00:00"
+  "nota": 84,
+  "motivos": "[\"H5 (voz con errores reales, no jerga ignorada por Whisper): varias palabras clave salen mal pronunciadas o sustituidas por la voz diseñada, confirmado por control_audio.json con bloqueo explícito. Ejemplos: 'empatía' suena 'impadia'; 'Que lo resuelva el Neo' se oye como 'que no me sube el balneo' (pierde sentido, y es justo la línea que conecta con el recuerdo del ep. 521); 'Devuélvala, señora Melano' se oye 'Devuelvo a la señora Melano' (cambia el imperativo del remate de Neo); 'A mí el frío del domingo me mata' se oye 'También al frío del domingo me mata'. No son tacos ni 'illo/pa': son palabras de guion mal dichas por el motor de voz.\", \"El resto de la pieza cumple el formato v11/v12: duración 63 s dentro de 45-70 s, intro y cierre con el mismo plano de casa (bucle correcto), tarjeta de marca intercalada válida, logo 2026 correcto en insignia y cierre, giro marcado y sembrado, recuerdo del ep. 521 presente, moraleja correcta, humor negro real, registro vulgar correcto salvo Neo.\"], \"como_arreglarlo\": \"Centro: re-render de audio con voz_disenada corrigiendo la dicción de esas 4 frases (especialmente 'Que lo resuelva el Neo' y 'Devuélvala, señora Melano', que son las líneas de recuerdo y remate). No hace falta tocar guion.json ni vídeo/imagen, ya están bien; solo el audio de esas réplicas.\"",
+  "fecha": "2026-11-26T11:13:18Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T11:11:47+00:00"
 }

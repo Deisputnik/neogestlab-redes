@@ -1,18 +1,13 @@
 {
   "aprobado": false,
-  "nota": 84,
+  "nota": 82,
   "motivos": [
-    "Voz edge-tts sin motor_voz voz_disenada: suena a IA, tope 89.",
-    "Falta giro en guion.json aunque la revelación (Rosa invitó a las cuatro cuentas) existe en el diálogo.",
-    "Ninguna réplica recuerda un episodio anterior.",
-    "Réplica final de Neo de unos 9,5 s, larga y explicativa para el remate."
+    "control_audio.json en bloqueo real (no jerga): falta por completo la réplica de Jambo Reseco del guion (\"Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.\"), que no aparece en la transcripción; el audio salta de \"...hasta baramear\" directo a \"¿Y los fiados?\". Jambo Reseco no está presente con su línea donde toca (criterio obligatorio del formato).",
+    "La réplica de Felipe \"¡Hay que joderse! Que lo resuelva el Neo\" (el pie que da entrada al remate de Neo) se oye como \"Ay, joder... Que lo resuelvan, jo\": pierde la mención a Neo y suena a audio mal generado/cortado en esa frase, no a acento o taco no transcrito.",
+    "Resto de audio correcto (LUFS -14,66, pico -1,5 dB, sin silencios), vídeo, bucle casa-casa, logo 2026 y tarjeta de marca correctos; duración 60,4 s válida para el formato."
   ],
-  "como_arreglarlo": "Creador: marcar giro, recortar la réplica final de Neo a unas 20 palabras y añadir recuerdo. Centro: voz_disenada.",
-  "fecha": "2026-11-25T17:50:00Z",
-  "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
-  "aprobado_anterior": false,
-  "nota_anterior": 84,
-  "caducado": "2026-11-26T11:11:21+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T11:11:21+00:00"
+  "como_arreglarlo": "CENTRO: regenerar solo las dos líneas afectadas con voz_disenada (Gemini TTS) sin perder sílabas: (1) la réplica completa de Jambo \\\"Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.\\\" tiene que sonar entera y audible; (2) la réplica de Felipe debe conservar \\\"¡Hay que joderse! Que lo resuelva el Neo\\\" completa. No hace falta tocar guion.json (el giro, recuerdo y remate ya están bien marcados); re-renderizar con render.mjs --final tras arreglar el audio de esas dos escenas y volver a pasar por Calidad.",
+  "fecha": "2026-11-26T11:12:49Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T11:11:21+00:00"
 }
