@@ -630,3 +630,5 @@ Orden directa del dueño: «ya se puede promocionar todo» (respuesta a la pregu
 2026-11-26 10:30 UTC · Creador (desatasco, orden expresa del dueño) · 805 y 806: añadido "aprobado_por":"dueño" + nota_calidad en calidad.json (motor_voz ya estaba en post.json desde fa7c897, bloqueo falso); el aprobado=true solo no bastaba porque publicar_gh.py exige nota ≥ 90 o aprobado_por=dueño. Salen hoy a las 16:30 y 19:30 · Calidad: no reevaluar
 2026-11-26 10:03 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (13 al día, 0 sin render todavía) · nada
 2026-11-26 10:04 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (13 al día, 0 sin render todavía) · nada
+
+2026-11-26 10:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
