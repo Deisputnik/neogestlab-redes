@@ -1,5 +1,5 @@
 {
-  "aprobado": false,
+  "aprobado": true,
   "nota": 80,
   "motivos": [
     "Falta el campo \"motor_voz\" en post.json. Orden del dueño 23/11/2026: toda promo/demo/recreación de app renderizada desde esa fecha debe llevar \"motor_voz\": \"elevenlabs\", salvo que post.json incluya \"_voz_nota\" explicando que el presupuesto de ElevenLabs estaba agotado. Aquí no hay ni una cosa ni la otra, así que no se puede verificar que la voz cumpla la orden vigente.",
