@@ -12,5 +12,9 @@
   "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: (1) Jambo 'Primo… suelta un euro para la fregona. Que me mojo entero.' (vigilar especialmente 'fregona', que ya lleva tres intentos fallidos con palabras distintas cada vez: probar con pausa o énfasis distinto si vuelve a fallar); (2) Concha '¡Qué frío, hostia!' (comprobar que la frase entera está presente en el audio renderizado, parece haberse perdido); (3) Neo 'Los destrozos, señora Melano, los paga usted' (vigilar 'señora', que se oye como 'señor'). No hace falta tocar guion, vídeo, giro, recuerdo, la réplica de Sindy (ya correcta) ni el resto del audio.",
   "fecha": "2026-11-26T15:46:01Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:45:00+00:00"
+  "render": "2026-11-26T15:45:00+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 85,
+  "caducado": "2026-11-26T16:24:51+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T16:24:51+00:00"
 }
