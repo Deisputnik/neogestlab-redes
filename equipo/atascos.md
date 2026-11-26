@@ -1,12 +1,12 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-26 15:45 UTC · 7 piezas paradas.
+Actualizado: 2026-11-26 15:47 UTC · 7 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 1, Creador 4, Supervisor 2
+Por rol: Creador 5, Supervisor 2
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T19:40:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T19:40:00+01:00 | rechazada | Creador | control_audio.json sigue en bloqueo en este re-render: faltan ['fregona','que','frio','con','el','senora'] y sobran ['freguna','lo','del','senor'] respecto al guion.; Jambo: guion 'suelta un euro para la fregona' se dice 'freguna' en el audio (confirmado por l | CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: (1) Jambo 'Primo… suelta un euro para la fregona. Que me mojo entero.' (vigilar especialmente 'fr |
 | sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | rechazada | Creador | control_audio.json sigue en bloqueo real tras el re-render del 26/11 (jb528_d2.mp4): faltan ['para','mear','buah','neo'], sobran ['baramear','va','a','nego']. La réplica de Jambo Reseco se arregló (ahora completa y audible), pero persisten dos fallos de pronun | CENTRO: regenerar solo dos frases con voz_disenada (Gemini TTS), sin perder sílabas ni sustituir palabras: (1) la línea de Sindy '...aquí se ficha con huella hasta para mear' debe pronunciar claramente 'para mear', no 'baramear'; (2) la línea de Felipe '¡Hay q |
 | sale en < 24 h | 530_jambo_fontanero_madrugada_factura | 2026-11-27T15:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | sale en < 72 h | 531_jambo_repartidor_paquete_fantasma | 2026-11-27T18:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
