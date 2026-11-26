@@ -1,70 +1,29 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "528 Sindy y Felipe con variantes (escenas 9-13), solo modelo lite, 26/11/2026.",
  "modelos": [
-  "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
+ ],
+ "solo": [
+  "sindy",
+  "felipe"
  ],
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "528_jambo_barrio_cuenta_fiada",
    "set": "salon",
-   "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
+   "hora": 20,
+   "moraleja": "Fiar sin registro contable convierte la pérdida en norma",
    "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+   "gancho_casa": "¿Quién se cenó las tortillas fiadas? 👀",
+   "promesa": "¿Quién va a pagar las tortillas fiadas?",
+   "giro": "Parecían deudas del barrio y eran invitaciones firmadas por Rosa",
+   "recuerdo": "Rosa ya hizo fichar con huella hasta para mear (521)",
+   "bucle_visual": "Rosa con la libreta de fiados abierta, misma pose",
    "escenas": [
     {
      "e": "gancho",
-     "h": "rosa",
      "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "p": [
-      "rosa",
-      "felipe"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "felipe",
-     "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "presume"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "p": [
-      "sindy",
-      "felipe"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
+     "t": "¿Quién se ha cenado las tortillas fiadas? ¡Me falta dinero en la caja!",
      "p": [
       "rosa",
       "sindy"
@@ -75,87 +34,178 @@
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
+     "h": "sindy",
+     "emo": "ironia",
+     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
      "p": [
-      "jambo",
-      "rosa"
+      "sindy"
      ],
      "a": {
-      "jambo": "delega"
+      "sindy": "habla"
      },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
+     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta, para mear. ¿Y los fiados? En una libreta que firma cualquiera."
     },
     {
      "e": "gag",
      "h": "felipe",
-     "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "emo": "chulea",
+     "v": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+     "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
      "p": [
-      "felipe",
+      "felipe"
+     ],
+     "a": {
+      "felipe": "presume"
+     },
+     "voz_tts": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta."
+    },
+    {
+     "e": "gag",
+     "emo": "susurra",
+     "t": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "sorpresa",
+     "t": "¡Espera, coño! Las cuatro cuentas llevan tu firma, Rosa. ¡Pone «invita la jefa»!",
+     "p": [
+      "sindy",
       "rosa"
      ],
      "a": {
-      "felipe": "desespera"
+      "sindy": "desespera"
      },
      "giro": true
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "emo": "enfado",
+     "t": "¡Era por imagen, hostia! Una jefa generosa vende. Que lo pague la plantilla.",
      "p": [
-      "jambo",
-      "felipe"
+      "rosa"
      ],
      "a": {
-      "jambo": "delega"
-     },
-     "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "p": [
-      "sindy",
-      "jambo"
-     ],
-     "a": {
-      "sindy": "habla"
+      "rosa": "presume"
      }
     },
     {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true,
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Neo."
+    },
+    {
      "e": "remate",
-     "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "t": "Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja.",
      "p": [
       "neo",
       "rosa"
      ],
      "a": {
-      "neo": "presume"
+      "neo": "fria"
      },
-     "sello": "PILLADOS"
+     "sello": "PILLADA"
     },
     {
      "e": "cierre",
-     "h": "neo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "t": "Fiar sin registro contable convierte la pérdida en norma.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "ironia",
+     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para ir a mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "habla"
+     },
+     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta para ir a mear. ¿Y los fiados? En una libreta que firma cualquiera."
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "ironia",
+     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "habla"
+     },
+     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta… para mear. ¿Y los fiados? En una libreta que firma cualquiera."
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true,
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Néo."
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Neo, resuélvelo tú.",
+     "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true,
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Neo, resuélvelo tú."
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "chulea",
+     "v": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+     "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "presume"
+     },
+     "voz_tts": "¡Buuah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta."
     }
    ]
   }
