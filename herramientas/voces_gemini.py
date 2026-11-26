@@ -180,11 +180,15 @@ def cortar(pedido, out, modelo_whisper="small"):
             segs, _ = wm.transcribe(x, language="es", word_timestamps=True)
             rec = [(w.word, w.start, w.end) for s in segs for w in s.words if _norm(w.word)]
             esp = [(k, w) for k, (_, e) in enumerate(ls) for w in _palabras(e["v"])]
-            sm = difflib.SequenceMatcher(None, [_norm(w) for _, w in esp], [_norm(w) for w, _, _ in rec], autojunk=False)
-            t = [None] * len(esp)
-            for a, b, size in sm.get_matching_blocks():
-                for d in range(size):
-                    t[a + d] = (rec[b + d][1], rec[b + d][2])
+            t = [None] * len(esp); ptr = 0   # alineación secuencial réplica a réplica (ventana), para réplicas casi repetidas
+            for k in range(len(ls)):
+                idx = [j for j, (kk, _) in enumerate(esp) if kk == k]
+                ws = [_norm(esp[j][1]) for j in idx]; ventana = rec[ptr:ptr + int(len(ws) * 1.5) + 4]
+                sm = difflib.SequenceMatcher(None, ws, [_norm(w) for w, _, _ in ventana], autojunk=False); ultimo = -1
+                for a, b, size in sm.get_matching_blocks():
+                    for d in range(size):
+                        t[idx[a + d]] = (ventana[b + d][1], ventana[b + d][2]); ultimo = max(ultimo, b + d)
+                ptr += ultimo + 1 if ultimo >= 0 else len(ws)
             casadas = sum(1 for v in t if v); informe[quien] = {"palabras": len(esp), "casadas": casadas, "oido": " ".join(w.strip() for w, _, _ in rec)}
             # límites de cada réplica: del primer al último tiempo conocido; los cortes van en mitad del hueco entre réplicas
             lim = []

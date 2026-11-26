@@ -1,10 +1,9 @@
 {
- "_nota": "528 Sindy y Felipe con variantes (escenas 9-13), solo modelo lite, 26/11/2026.",
+ "_nota": "528 Felipe con variantes (escenas 2, 6, 11, 12, 13), modelo lite; Sindy ya salió bien en el primer intento.",
  "modelos": [
   "gemini-3.8-flash-lite-tts"
  ],
  "solo": [
-  "sindy",
   "felipe"
  ],
  "episodios": [
