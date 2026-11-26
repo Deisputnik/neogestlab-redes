@@ -54,15 +54,15 @@
    "e": "gag",
    "h": "jambo",
    "emo": "cansado",
-   "v": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
-   "t": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
+   "v": "Primo… suelta un euro para la fregona. Que me mojo entero.",
+   "t": "Primo… suelta un euro para la fregona. Que me mojo entero.",
    "p": [
     "jambo"
    ],
    "a": {
     "jambo": "habla"
    },
-   "voz_tts": "Primooo… dame un eurillo pa la fregonaaa. Que me ahogo aquííí."
+   "voz_tts": "Primo… suelta un euro para la fregona. Que me mojo entero."
   },
   {
    "e": "gag",
