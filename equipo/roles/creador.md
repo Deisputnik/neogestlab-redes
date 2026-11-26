@@ -31,7 +31,7 @@ Antes de escribir un guion desde cero, mira `equipo/guiones_gemini/pendientes/`:
 - En post.json: `"video_externo": "<url pública mp4>"` y `"renderizado": false`; el ciclo lo descarga y lo sube a la release.
 - Receta (v5.2, `gen_episodios.py`): apertura y cierre con el MISMO plano «Cosas de Casa» (set `casa`, gancho de texto ≤ 8 palabras en la apertura); escenas en el set `salon` con rosa, felipe, sindy, neo, conchaqueton y jambo; 45-70 s; plano distinto por frase; emoji en cada golpe; sello + impacto en el remate; barra de progreso; música Pixabay «comedia» del estudio con ducking.
 - Registro (22/11): todos con vocabulario vulgar/choni de barrio salvo Neo, único culto y respetuoso; muy mal hablados y muy vulgares, Felipe Lotas de cuñado enterado y Jambo Reseco de gorrón caradura (22/11 noche); humor negro real; créditos finales con el reparto.
-- Guion: Rosa (jefa tirana) pide algo absurdo · Felipe y/o Sindy lo sufren y escalan en 3 golpes, cada uno peor · entra Neo con el giro que resuelve ESE conflicto y deja a Rosa en evidencia · moraleja de 6-9 palabras en el cierre + pregunta.
+- Guion (estándar retención v12, 26/11 alineado): Rosa (jefa tirana) pide algo absurdo · Felipe y/o Sindy lo sufren y escalan en 5-8 golpes, cada uno peor · UN giro a mitad (golpe con `giro: true`, sembrado antes, DISTINTO del remate de Neo) · Neo resuelve ESE conflicto y deja a Rosa en evidencia · moraleja de 6-9 palabras en el cierre + pregunta, sin contradecir lo que dice Neo · una réplica recuerda un episodio anterior YA publicado (campo `recuerdo`).
 - Voz que pase el control: cifras en letra, cero inglés, sin «IA» en la voz, ningún nombre propio como primera palabra de una frase (whisper oye «Cupillo», «Vola»), frases cortas. Revisa el guion en voz alta antes de entregarlo.
 - Ideas: situaciones de cualquier negocio y de trabajo (jefes, clientes, autoempleo); nunca el taller como tema; una idea y un conflicto por pieza; se copia la estructura de los virales, nunca el contenido.
 
@@ -42,8 +42,17 @@ Antes de escribir un guion desde cero, mira `equipo/guiones_gemini/pendientes/`:
 ## Reels de datos (6xx)
 - Manual `equipo/FORMATO_DATOS.md`. Ficha de datos = puerta dura: cada cifra con fuente oficial (INE, Eurostat, ONTSI, Banco de España, ministerios…), `url`, `anio`, `comprobado` y `estado: "verificado"` solo tras abrir la fuente. Nunca `--ensayo` en cola/. Ejemplo: `herramientas/ejemplo_guion_datos.json`.
 
+## Antes de entregar: los 6 rechazos más repetidos (20-26/11) — `pre_entrega.py` los da como ERROR
+1. Episodio: `"motor_voz": "voz_disenada"` (voces Gemini, LEEME «Voces nuevas»); edge-tts solo con `_voz_nota` explicando el fallo del workflow o la cuota.
+2. Promo de app: `"motor_voz": "elevenlabs"` (render `--final`); edge solo con `_voz_nota` de cuota agotada.
+3. `guion.json` del episodio (no el spec) con `giro` y `recuerdo`, y el recuerdo dicho en una réplica.
+4. Atribución musical en el TEXTO del post («Música: …»), no solo en el campo `musica`.
+5. Moraleja del post coherente con la última réplica de Neo; réplica final de Neo ≤ 20 palabras.
+6. Tomas de app dentro del marco de móvil a zoom 1 con rótulo encima y subtítulos debajo (evita el solape subtítulo/botón de 109, 110, 407 y 408; LEEME).
+Sin `pre_entrega.py` a 0 ERRORES no se entrega: se arregla primero.
+
 ## Escribe
-- `cola/NNN_<tema>/guion.json` (o spec del estudio) y `post.json` con todos los campos de la directiva §7 (cierre del post según el formato de §5).
+- `cola/NNN_<tema>/guion.json` = el GUION del episodio (el JSON del Guionista Gemini o `eps.json` con escenas, moraleja, `giro` y `recuerdo`), NUNCA el spec de render (`scenes`/`format`): Calidad busca `giro` y `recuerdo` ahí y rechaza si no están (pasó con 526-531). El spec va, si acaso, como `spec.json`. Y `post.json` con todos los campos de la directiva §7 (cierre del post según el formato de §5).
 - Si falta material visual: una línea en `equipo/cola_gemini.md` y sigue con lo que haya.
 - Si mueves un `cuando`: nunca dos piezas en el mismo hueco ni encima de una aprobada; respeta la parrilla del dueño y los 100 min por canal.
 - Línea en el tablón (qué has creado, qué necesita render o evaluación).

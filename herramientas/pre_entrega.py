@@ -59,7 +59,33 @@ def revisar(carpeta):
         if "jambo" in os.path.basename(carpeta) and not re.search(r"prueba gratuita", t, re.I):
             a.append("§5 el texto del post de un episodio no lleva el cierre «Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso» con el enlace /solicitar")
         revisar_14(carpeta, post, guion, e, a)
+        revisar_26(carpeta, post, guion, e, a)
     return e, a
+
+def revisar_26(carpeta, post, guion, e, a):
+    """26/11/2026 (orden del dueño: «Calidad siempre rechaza al Creador»): los motivos de rechazo más repetidos del 20-26/11
+    que se pueden ver sin abrir el vídeo pasan a ERROR aquí, para que el Creador los corrija ANTES de entregar."""
+    nombre = os.path.basename(carpeta)
+    jambo = "jambo" in nombre
+    mv = str(post.get("motor_voz") or "")
+    nota_voz = bool(post.get("_voz_nota"))
+    if jambo and str(post.get("motor") or "") == "neogest-studio":
+        if mv != "voz_disenada" and not nota_voz:
+            e.append("VOZ episodio con motor_voz «%s»: debe ser \"voz_disenada\" (voces Gemini, LEEME «Voces nuevas») o llevar _voz_nota con el fallo/cuota" % (mv or "falta"))
+        if "scenes" in guion and "escenas" not in guion:
+            e.append("GUION guion.json es el spec de render (scenes/format): guarda el guion del episodio (escenas, moraleja, giro, recuerdo)")
+        if not guion.get("giro"):
+            e.append("GIRO falta el campo «giro» en guion.json (6-14 palabras: qué se creía y qué resulta ser; estándar retención v12)")
+        if not guion.get("recuerdo"):
+            e.append("RECUERDO falta el campo «recuerdo» en guion.json (episodio anterior ya publicado, dicho en una réplica)")
+        elif not any(norm(guion["recuerdo"])[:25] in norm(x) or norm(x)[:25] in norm(guion["recuerdo"]) for x in textos(guion.get("escenas") or [])):
+            a.append("RECUERDO el campo «recuerdo» no aparece en ninguna réplica: tiene que decirlo un personaje")
+        if (post.get("musica") or guion.get("musica")) and not re.search(r"m[uú]sica\s*:", post.get("texto", ""), re.I):
+            e.append("MÚSICA falta la atribución «Música: …» en el texto del post (rechazo automático de Calidad)")
+    elif (not jambo and (post.get("app") or post.get("app_slug")) and str(post.get("motor") or "") == "neogest-studio"
+          and not (isinstance(post.get("renderizado"), str) and post["renderizado"][:10] < "2026-11-24")):   # orden 23/11: renders desde el 24/11
+        if mv != "elevenlabs" and not nota_voz:
+            e.append("VOZ promo de app con motor_voz «%s»: debe ser \"elevenlabs\" (gen_promos.py + render.mjs --final) o llevar _voz_nota de cuota agotada" % (mv or "falta"))
 
 # ---- Lista de Calidad del 13/11 (virales_13_11_navegador.md §6 y DIRECTIVA §14), la parte que se puede medir sin ver el vídeo ----
 VENTA_EN_VIDEO = re.compile(r"prueba gratuita|sin compromiso|sin tarjeta|pide tu|ajreparacion|maqueta|m[aá]s asequibles|\bdesde\s+\d+\s?€|\d+\s?€\s?/\s?mes", re.I)   # «presupuesto» y las cifras en euros del gag NO cuentan: son tema de la historia, no venta

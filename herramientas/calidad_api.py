@@ -271,9 +271,10 @@ HERRAMIENTAS = [
 
 
 def _bloque_contexto(pid, post, cal_anterior, guion, control_audio):
-    resumen_post = {k: post.get(k) for k in (
-        "formato", "texto", "cuando", "app", "app_slug", "comentario_fijado",
-        "avance_siguiente", "youtube", "_fuentes", "_comprobado", "musica", "control_audio")}
+    # 26/11/2026: antes se pasaba un resumen de 12 campos SIN motor_voz/_voz_nota/voces/motor, y el prompt exige comprobar
+    # motor_voz: toda promo de app salía rechazada por «falta motor_voz» aunque el campo estuviera (805, 806, 109, 110).
+    # Ahora va el post.json entero (salvo campos de servicio largos), así Calidad ve lo mismo que el Creador entregó.
+    resumen_post = {k: v for k, v in post.items() if k not in ("_master_ciclo",)}
     return (
         f"Pieza: {pid}\n\npost.json (resumen):\n```json\n"
         + json.dumps(resumen_post, ensure_ascii=False, indent=1)
@@ -402,7 +403,10 @@ MARCA_VIGENTE = (
     "de una app (cualquier pieza que NO sea un episodio de El Jambo) renderizada desde el 24/11/2026 debe llevar en post.json "
     "\"motor_voz\": \"elevenlabs\". Si pone \"edge\" u otro motor, es bloqueo, salvo que post.json lleve \"_voz_nota\" diciendo que el "
     "presupuesto de ElevenLabs estaba agotado; como_arreglarlo: «CREADOR: rehacer la voz con ElevenLabs (gen_promos.py + render.mjs "
-    "--final en Neogest Studio; ver herramientas/estudio/LEEME.md)». Los episodios de El Jambo van con edge-tts y eso es correcto."
+    "--final en Neogest Studio; ver herramientas/estudio/LEEME.md)». "
+    "VOZ DE EL JAMBO (orden del dueño 23/11 22:57, estándar §voces): los episodios llevan \"motor_voz\": \"voz_disenada\" (voces Gemini por "
+    "personaje); edge-tts solo vale si post.json lleva \"_voz_nota\" diciendo que el workflow de voces falló o no quedaba cuota. "
+    "Antes de rechazar por un campo de post.json o guion.json, búscalo en el JSON que se te da: si está, no es motivo de rechazo."
 )
 
 
