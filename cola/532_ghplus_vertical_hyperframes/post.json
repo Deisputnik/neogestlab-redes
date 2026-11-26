@@ -1,0 +1,32 @@
+{
+  "tipo": "reel",
+  "texto": "¿Sabes exactamente cuánto dinero te queda este mes?\nGH PLUS apunta tus gastos fijos solos, cada mes, sin repetir nada. Pon un límite por categoría y te avisa antes de pasarte.\nHaz una foto a un recibo y la app rellena los datos, tú los revisas.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nVoz generada por IA\n\n#finanzaspersonales #ahorro #gestionhogar #neogestlab",
+  "cuando": null,
+  "compartir_en_feed": true,
+  "portada_ms": 0,
+  "formula": "promo de app, primer vídeo de producción con HyperFrames (orden del dueño 26/11/2026)",
+  "formato": "Promo de app · Neogest Studio · HyperFrames",
+  "publico": "Particulares y familias que gestionan la economía doméstica",
+  "app": "GH PLUS · Gestión Hogar",
+  "app_slug": "gh-plus",
+  "gancho": "¿Sabes cuánto dinero te queda este mes?",
+  "comentario_fijado": "¿Llevas la cuenta de tus gastos fijos o se te escapan?",
+  "monetizacion": {
+    "objetivo": "clic_enlace",
+    "oferta": "cta_principal de la ficha Producto",
+    "paso_embudo": "visita_perfil -> clic_enlace"
+  },
+  "_fuentes": [
+    "Ficha Producto del Centro, slug gh-plus (hechos_verificados y prohibido_afirmar comprobados 26/11/2026)"
+  ],
+  "_comprobado": "Gastos fijos automáticos, límite por categoría con aviso y lectura de recibo por foto con revisión del usuario son hechos verificados de la ficha; sin cifras ni funciones fuera de ella.",
+  "_nota_creador": "26/11/2026: benchmark de velocidad/coste de HyperFrames (orden del dueño 'vamos a usarlo ya, quiero ver el resultado en velocidad y gasto de uso'). El objetivo inicial era Gestoría7D, pero su ficha tiene prohibido_afirmar='Promocionarla en publicaciones o vídeos todavía: no promocionar hasta que el dueño lo decida', así que se sustituyó por GH PLUS (sin bloqueo, y le faltaba el formato vertical). Primer vídeo de Neogest Lab compuesto con HyperFrames en vez del pipeline anterior (gen_promos.py + render.mjs). Voz ElevenLabs Johnny sin cambios, 320 caracteres.",
+  "motor": "neogest-studio-hyperframes",
+  "motor_voz": "elevenlabs",
+  "voces": ["Johnny"],
+  "renderizado": "2026-11-26T08:48:47+00:00",
+  "asset": "532_ghplus_vertical_hyperframes.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/60178b6cc4a92690d8db3afb07d4c609_gestoria7d-vertical-hyperframes.mp4",
+  "_nota_archivo": "El nombre del archivo subido conserva 'gestoria7d' por error (quedó del guion inicial antes de cambiar a GH PLUS); el contenido es 100% GH PLUS, verificado.",
+  "_pendiente": "Sin 'cuando': Coordinación debe asignarle hueco en la parrilla."
+}
