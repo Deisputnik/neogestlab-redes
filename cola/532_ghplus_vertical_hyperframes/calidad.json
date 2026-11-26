@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "nota": 0,
+  "motivos": [
+    "No se puede evaluar: inspeccionar_video no encuentra el asset 532_ghplus_vertical_hyperframes.mp4 en la release «cola» (error de la herramienta, no del contenido).",
+    "Sin el mp4 no hay ffprobe, silencedetect, LUFS/pico ni fotogramas que revisar: no se puede comprobar duración, isotipo 2026 en el cierre, textos en pantalla ni audio.",
+    "No hay control_audio.json de Actions ni guion.json para contrastar la voz con el texto del post."
+  ],
+  "como_arreglarlo": "CENTRO/CREADOR: comprobar que el render de 532_ghplus_vertical_hyperframes subió el asset correcto a la release «cola» de GitHub (nombre exacto 532_ghplus_vertical_hyperframes.mp4) y volver a publicar el artefacto si falta o el nombre no coincide; si el render falló o quedó incompleto, relanzar el ciclo para esta pieza. Una vez el asset esté disponible, relanzar Calidad (API) para re-evaluar; no se puede dar nota real hasta entonces.",
+  "fecha": "2026-11-26T09:18:50Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T08:48:47+00:00"
+}
