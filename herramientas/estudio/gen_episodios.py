@@ -148,7 +148,16 @@ HOOK_CASA = "Esta casa del barrio tiene truco 👀"
 def bookend(hook=False, texto=None):
     # Misma tarjeta EXACTA en apertura y cierre de todos los episodios (bucle imperceptible); solo
     # cambia el overlay de texto, que va únicamente en la apertura (hook=True).
-    bg = {"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0} if COSAS_DE_CASA_VIDEO else {"type": "set", "set": "casa", "hour": 19, "night": False}
+    # Empuje de cámara hacia el porche/puerta iluminada (orden del dueño 26/11: "ampliar partes de la
+    # casa" y que tenga profundidad, gratis). Son keyframes [{t,x,y,zoom}] del motor (engine.js
+    # camAt/drawFocus) sobre el mismo vídeo real ya generado: no es una nueva pieza ni gasta más
+    # créditos, solo recorta y escala el fotograma existente. x,y en fracción del fotograma
+    # (comprobado visualmente: el porche/puerta queda en torno a x≈0.39, y≈0.60). Al ir de t=0 a
+    # t=1.6 con move=1.6 se anima el empuje durante TODO el plano, no solo al final.
+    bg = {"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0, "camera": [
+        {"t": 0.0, "x": 0.5, "y": 0.52, "zoom": 1.0},
+        {"t": 1.6, "x": 0.39, "y": 0.60, "zoom": 1.38, "move": 1.6},
+    ]} if COSAS_DE_CASA_VIDEO else {"type": "set", "set": "casa", "hour": 19, "night": False}
     texts = [{"id": uid(), "text": texto or HOOK_CASA, "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}] if hook else []
     return {"id": uid(), "duration": 1.6, "transition": "none", "voice": None, "background": bg, "texts": texts}
 
