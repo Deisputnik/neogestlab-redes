@@ -78,8 +78,8 @@ def revisar_26(carpeta, post, guion, e, a):
             e.append("GIRO falta el campo «giro» en guion.json (6-14 palabras: qué se creía y qué resulta ser; estándar retención v12)")
         if not guion.get("recuerdo"):
             e.append("RECUERDO falta el campo «recuerdo» en guion.json (episodio anterior ya publicado, dicho en una réplica)")
-        elif not (lambda r: any(r[-25:] in norm(x) or r[:25] in norm(x) for x in textos(guion.get("escenas") or [])))(
-                re.sub(r"\s*\(\d+\)\s*$", "", norm(guion["recuerdo"])).strip()):
+        elif not (lambda cl: not cl or any(sum(w in norm(x) for w in cl) >= max(1, len(cl) // 2) for x in textos(guion.get("escenas") or [])))(
+                [w for w in re.findall(r"[a-z]{5,}", norm(guion["recuerdo"])) if w not in ("mismo", "misma", "vecino", "todos", "mundo")]):   # palabras clave, admite paráfrasis
             a.append("RECUERDO el campo «recuerdo» no aparece en ninguna réplica: tiene que decirlo un personaje")
         if (post.get("musica") or guion.get("musica")) and not re.search(r"m[uú]sica\s*:", post.get("texto", ""), re.I):
             e.append("MÚSICA falta la atribución «Música: …» en el texto del post (rechazo automático de Calidad)")
