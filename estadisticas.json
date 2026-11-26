@@ -1,53 +1,74 @@
 {
-  "actualizado": "2026-11-26T15:28:30+00:00",
+  "actualizado": "2026-11-26T22:09:34+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1597,
     "follows_count": 177,
-    "media_count": 60,
+    "media_count": 61,
     "username": "neogestlab"
   },
   "posts": [
     {
+      "id": "18171747814467696",
+      "caption": "Rosa quiere descontarle a Felipe tres cajas de cerveza rotas, hasta que Sindy ve quién las tiró de verdad: el vecino, que se llevaba un barril a cuestas.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: los riesgos del negocio jamás deben cargarse al trabajador.\nMándaselo a quien le han descontado una rotura del sueldo.\n#humornegro #hostelería #nomina #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+      "comments_count": 0,
+      "like_count": 1,
+      "media_product_type": "REELS",
+      "media_type": "VIDEO",
+      "permalink": "https://www.instagram.com/reel/DgNxdXKhF-F/",
+      "timestamp": "2026-11-26T18:42:24+0000",
+      "metricas": {
+        "reach": 3,
+        "views": 6,
+        "saved": 0,
+        "shares": 0,
+        "comments": 0,
+        "likes": 1,
+        "total_interactions": 2,
+        "ig_reels_avg_watch_time": 22793,
+        "ig_reels_video_view_total_time": 68380
+      }
+    },
+    {
       "id": "18186668863430938",
       "caption": "¿Apuntas el stock en una libreta o en la cabeza?\nCon Gestión Integral 7D, cada venta descuenta el stock sola en cuanto sale el albarán, y el módulo de compras te avisa qué falta reponer.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\n¿Cuántas veces te has quedado sin stock sin enterarte? Cuéntalo en comentarios.\nVoz generada por IA\n\n#autonomos #pymes #stock #gestion #neogestlab",
       "comments_count": 0,
-      "like_count": 0,
+      "like_count": 1,
       "media_product_type": "REELS",
       "media_type": "VIDEO",
       "permalink": "https://www.instagram.com/reel/DgNbOAxAZWt/",
       "timestamp": "2026-11-26T15:27:40+0000",
       "metricas": {
-        "reach": 0,
-        "views": 0,
+        "reach": 5,
+        "views": 10,
         "saved": 0,
         "shares": 0,
         "comments": 0,
-        "likes": 0,
-        "total_interactions": 0,
-        "ig_reels_avg_watch_time": 0,
-        "ig_reels_video_view_total_time": 0
+        "likes": 1,
+        "total_interactions": 2,
+        "ig_reels_avg_watch_time": 15013,
+        "ig_reels_video_view_total_time": 105092
       }
     },
     {
       "id": "18123872197973521",
       "caption": "Factura enviada... ¿y el cobro?\nCon Gestión Integral 7D mandas la factura con un enlace de pago: tarjeta, TPV o transferencia, y ves al momento si ya ha entrado.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\n¿Cuánto tardan en pagarte tus clientes? Dilo en comentarios.\nVoz generada por IA\n\n#autonomos #pymes #facturacion #cobros #neogestlab",
       "comments_count": 0,
-      "like_count": 1,
+      "like_count": 2,
       "media_product_type": "REELS",
       "media_type": "VIDEO",
       "permalink": "https://www.instagram.com/reel/DgNSez3NiHz/",
       "timestamp": "2026-11-26T14:11:26+0000",
       "metricas": {
-        "reach": 1,
-        "views": 1,
+        "reach": 4,
+        "views": 5,
         "saved": 0,
         "shares": 0,
         "comments": 0,
-        "likes": 1,
-        "total_interactions": 2,
-        "ig_reels_avg_watch_time": 31406,
-        "ig_reels_video_view_total_time": 31406
+        "likes": 2,
+        "total_interactions": 3,
+        "ig_reels_avg_watch_time": 8490,
+        "ig_reels_video_view_total_time": 50940
       }
     },
     {
@@ -60,15 +81,15 @@
       "permalink": "https://www.instagram.com/reel/DgNE4FOBHbg/",
       "timestamp": "2026-11-26T12:12:27+0000",
       "metricas": {
-        "reach": 1,
-        "views": 5,
+        "reach": 3,
+        "views": 8,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 1,
         "total_interactions": 2,
-        "ig_reels_avg_watch_time": 14743,
-        "ig_reels_video_view_total_time": 14743
+        "ig_reels_avg_watch_time": 7067,
+        "ig_reels_video_view_total_time": 28269
       }
     },
     {
@@ -81,15 +102,15 @@
       "permalink": "https://www.instagram.com/reel/DgM4sR3x8Hl/",
       "timestamp": "2026-11-26T10:25:58+0000",
       "metricas": {
-        "reach": 7,
-        "views": 16,
+        "reach": 8,
+        "views": 17,
         "saved": 0,
         "shares": 1,
         "comments": 0,
         "likes": 1,
         "total_interactions": 3,
-        "ig_reels_avg_watch_time": 11573,
-        "ig_reels_video_view_total_time": 104163
+        "ig_reels_avg_watch_time": 9885,
+        "ig_reels_video_view_total_time": 108736
       }
     },
     {
@@ -172,8 +193,8 @@
         "comments": 0,
         "likes": 1,
         "total_interactions": 2,
-        "ig_reels_avg_watch_time": 16401,
-        "ig_reels_video_view_total_time": 1443324
+        "ig_reels_avg_watch_time": 16223,
+        "ig_reels_video_view_total_time": 1443891
       }
     },
     {
@@ -616,27 +637,6 @@
         "ig_reels_avg_watch_time": 8986,
         "ig_reels_video_view_total_time": 1321020
       }
-    },
-    {
-      "id": "17918506854521511",
-      "caption": "Parte 2: el cliente que paga a 90 días. La ley dice 60. Humor negro de ficción.\nDato: la Ley 3/2004, de medidas contra la morosidad en las operaciones comerciales, art. 4, fija un máximo de 60 días naturales para pagar entre empresas (BOE). Esto no es asesoramiento legal.\n¿A cuántos días te pagan a ti? Comenta.\nMándaselo a quien cobra tarde.\n#humornegro #morosidad #autonomos #ia #pymes\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → enlace /solicitar del perfil (Neogest Lab).\nVoz y personajes generados por IA\n\nMúsica: \"Investigations\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\n\nVoz generada por IA",
-      "comments_count": 0,
-      "like_count": 13,
-      "media_product_type": "REELS",
-      "media_type": "VIDEO",
-      "permalink": "https://www.instagram.com/reel/DfzSqdiD9jZ/",
-      "timestamp": "2026-11-16T11:52:41+0000",
-      "metricas": {
-        "reach": 1101,
-        "views": 1389,
-        "saved": 0,
-        "shares": 0,
-        "comments": 0,
-        "likes": 13,
-        "total_interactions": 14,
-        "ig_reels_avg_watch_time": 11542,
-        "ig_reels_video_view_total_time": 12523552
-      }
     }
   ],
   "historial_cuenta": [
@@ -942,6 +942,10 @@
     },
     {
       "fecha": "2026-11-26T15:28+00:00",
+      "seguidores": 1597
+    },
+    {
+      "fecha": "2026-11-26T22:09+00:00",
       "seguidores": 1597
     }
   ]
