@@ -2,19 +2,11 @@
   "aprobado": false,
   "nota": 85,
   "motivos": [
-    "control_audio.json sigue en bloqueo en este re-render: faltan ['fregona','que','frio','con','el','senora'] y sobran ['freguna','lo','del','senor'] respecto al guion.",
-    "Jambo: guion 'suelta un euro para la fregona' se dice 'freguna' en el audio (confirmado por la transcripción whisper); es la tercera réplica de Jambo con una sustitución de palabra real distinta a la del guion (antes fallaron 'eurillo' y 'ahogo' en intentos previos), no es jerga tipo illo/pa.",
-    "Concha: la frase '¡Qué frío, hostia!' del guion no aparece en la transcripción del audio (se salta directamente de 'la semana que viene' a 'Me cago en todo'); parece un corte o pérdida de la frase en el render de voz, no una jerga ignorable.",
-    "Neo: guion 'los destrozos, señora Melano' se oye 'señor Melano' en el audio; cambio de género de una palabra real y con significado concreto (referencia al personaje Rosa), no es variante de pronunciación aceptable.",
-    "Positivo: 'trastero' de Sindy ya se dice correctamente en este render (antes se oía 'trasero'), ese punto del rechazo previo queda resuelto.",
-    "Resto del episodio correcto: estructura v11/v12, bucle casa-casa exacto, logo 2026 correcto en todos los fotogramas y en la tarjeta de marca, LUFS -14.76 y pico -1.44 dB en rango, 64.6 s dentro de 45-70 s."
+    "control_audio.json en bloqueo: la réplica de Rosa '¡Me cago en todo!' se oye como 'Cabún todo' (faltan ['me','cago','en'], sobra ['cabun']); no es jerga tipo illo/pa sino una frase real e inteligible sustituida por una palabra sin sentido, confirmado por Whisper y coincide con la duda que ya apuntaba la nota del creador.",
+    "Resto del episodio correcto: duración 62.8s dentro de 45-70s, LUFS -14.85 y pico -1.44dB en rango, bucle casa-casa exacto (mismo plano de apertura y cierre), tarjeta de marca con logo 2026 correcto, estructura v11/v12 con giro de Felipe, remate de Neo, moraleja y recuerdo del trastero (522) presentes, registro vulgar/choni correcto salvo Neo."
   ],
-  "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: (1) Jambo 'Primo… suelta un euro para la fregona. Que me mojo entero.' (vigilar especialmente 'fregona', que ya lleva tres intentos fallidos con palabras distintas cada vez: probar con pausa o énfasis distinto si vuelve a fallar); (2) Concha '¡Qué frío, hostia!' (comprobar que la frase entera está presente en el audio renderizado, parece haberse perdido); (3) Neo 'Los destrozos, señora Melano, los paga usted' (vigilar 'señora', que se oye como 'señor'). No hace falta tocar guion, vídeo, giro, recuerdo, la réplica de Sindy (ya correcta) ni el resto del audio.",
-  "fecha": "2026-11-26T15:46:01Z",
+  "como_arreglarlo": "CENTRO: regenerar solo la réplica de Rosa '¡Me cago en todo!' con voz_disenada Gemini TTS (rama voces/2026-11-26-desatasco o similar), verificando contra Whisper antes de resubir que se oye 'me cago en' y no una palabra sin sentido. No hace falta tocar guion, vídeo, giro, recuerdo, bucle, ni el resto del audio (Jambo/fregona, Concha/frío y Neo/señora ya quedaron resueltos en este render).",
+  "fecha": "2026-11-26T16:25:43Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:45:00+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 85,
-  "caducado": "2026-11-26T16:24:51+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T16:24:51+00:00"
+  "render": "2026-11-26T16:24:51+00:00"
 }
