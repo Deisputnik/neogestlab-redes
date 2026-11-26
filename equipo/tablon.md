@@ -632,3 +632,13 @@ Orden directa del dueño: «ya se puede promocionar todo» (respuesta a la pregu
 2026-11-26 10:04 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (13 al día, 0 sin render todavía) · nada
 
 2026-11-26 10:09 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-26 10:10 UTC · Creador (API, piloto texto) · revisadas 4 de 11 piezas rechazadas: 109_gestion7d_stock_voces sin arreglo de texto: De los dos motivos de rechazo, ninguno requiere (o admite) arreglo de texto/metadata real:
+
+1. "Falta motor_voz" — es un falso positivo contra el estado actual del post.json: el campo YA está presente ("motor_voz": "elevenlabs", además con "voces": ["Johnny"]). No hay nada que escribir aquí; probabl · 110_gestion7d_cobro_voces sin arreglo de texto: Revisado el post.json actual: el primer motivo de rechazo ya no aplica — "motor_voz": "elevenlabs" está presente explícitamente (y "voces": ["Johnny"]), así que no hace falta ninguna edición de texto por ese punto.
+
+El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fotogram · 526_jambo_camarero_inventario_roturas sin arreglo de texto: Los 4 motivos de rechazo son todos de guion/render, no de metadata de post.json:
+
+1. "Voz edge-tts... exige motor_voz voz_disenada" → requiere re-render completo con voces diseñadas (equipo/voz_gemini.json + workflow «Voces Gemini»), no un cambio de etiqueta.
+2. "Falta el campo giro en guion.json; e · 527_jambo_fontanero_factura_fuga sin arreglo de texto: Los 4 motivos de rechazo de 527_jambo_fontanero_factura_fuga son todos de vídeo/guion, no de texto/metadata del post.json:
+
+1. Contradicción Neo vs. moraleja (t≈42-45 vs t≈48): la réplica contradictoria está DICHA en el audio del vídeo ya renderizado. No se arregla reescribiendo el texto del post (a · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
