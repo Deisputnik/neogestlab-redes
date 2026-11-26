@@ -1,17 +1,13 @@
 {
   "aprobado": false,
-  "nota": 82,
+  "nota": 83,
   "motivos": [
-    "control_audio.json en bloqueo real (no jerga): falta por completo la réplica de Jambo Reseco del guion (\"Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.\"), que no aparece en la transcripción; el audio salta de \"...hasta baramear\" directo a \"¿Y los fiados?\". Jambo Reseco no está presente con su línea donde toca (criterio obligatorio del formato).",
-    "La réplica de Felipe \"¡Hay que joderse! Que lo resuelva el Neo\" (el pie que da entrada al remate de Neo) se oye como \"Ay, joder... Que lo resuelvan, jo\": pierde la mención a Neo y suena a audio mal generado/cortado en esa frase, no a acento o taco no transcrito.",
-    "Resto de audio correcto (LUFS -14,66, pico -1,5 dB, sin silencios), vídeo, bucle casa-casa, logo 2026 y tarjeta de marca correctos; duración 60,4 s válida para el formato."
+    "control_audio.json sigue en bloqueo real tras el re-render del 26/11 (jb528_d2.mp4): faltan ['para','mear','buah','neo'], sobran ['baramear','va','a','nego']. La réplica de Jambo Reseco se arregló (ahora completa y audible), pero persisten dos fallos de pronunciación: (1) 'hasta para mear' suena 'hasta baramear' (rompe el gag de Sindy); (2) el nombre 'Neo' en la frase de Felipe '¡Hay que joderse! Que lo resuelva el Neo' se oye 'nego', perdiendo el nombre propio que da pie al remate de Neo, pieza clave del giro.",
+    "No son casos de jerga no transcrita (illo/pa/tacos): son palabras completas sustituidas por otras sin sentido, señal de audio mal generado en esas dos frases concretas.",
+    "Resto correcto: vídeo 1080x1920, 59,94 s (dentro de 45-70 s), LUFS -14,68, pico -1,47 dB, sin silencios; bucle casa-casa con el mismo plano y gancho de texto ≤8 palabras; logo 2026 correcto en insignia y en tarjeta de cierre (coincide con la referencia oficial); tarjeta de marca de 3 s con 'Apps con IA para tu negocio' + prueba gratuita antes del cierre; texto del post con el cierre fijo correcto."
   ],
-  "como_arreglarlo": "CENTRO: regenerar solo las dos líneas afectadas con voz_disenada (Gemini TTS) sin perder sílabas: (1) la réplica completa de Jambo \\\"Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.\\\" tiene que sonar entera y audible; (2) la réplica de Felipe debe conservar \\\"¡Hay que joderse! Que lo resuelva el Neo\\\" completa. No hace falta tocar guion.json (el giro, recuerdo y remate ya están bien marcados); re-renderizar con render.mjs --final tras arreglar el audio de esas dos escenas y volver a pasar por Calidad.",
-  "fecha": "2026-11-26T11:12:49Z",
+  "como_arreglarlo": "CENTRO: regenerar solo dos frases con voz_disenada (Gemini TTS), sin perder sílabas ni sustituir palabras: (1) la línea de Sindy '...aquí se ficha con huella hasta para mear' debe pronunciar claramente 'para mear', no 'baramear'; (2) la línea de Felipe '¡Hay que joderse! Que lo resuelva el Neo' debe pronunciar 'el Neo' con claridad, no 'el nego'. El resto del audio y el guion.json están bien, no hace falta tocarlos. Re-renderizar con render.mjs --final solo esas dos escenas y volver a pasar por Calidad.",
+  "fecha": "2026-11-26T15:40:23Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T11:11:21+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 82,
-  "caducado": "2026-11-26T15:39:07+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:39:07+00:00"
+  "render": "2026-11-26T15:39:07+00:00"
 }

@@ -1,16 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 84,
-  "motivos": [
-    "H5 (voz con errores reales, no jerga ignorada por Whisper): varias palabras clave salen mal pronunciadas o sustituidas por la voz diseñada, confirmado por control_audio.json con bloqueo explícito. Ejemplos: 'empatía' suena 'impadia'; 'Que lo resuelva el Neo' se oye como 'que no me sube el balneo' (pierde sentido, y es justo la línea que conecta con el recuerdo del ep. 521); 'Devuélvala, señora Melano' se oye 'Devuelvo a la señora Melano' (cambia el imperativo del remate de Neo); 'A mí el frío del domingo me mata' se oye 'También al frío del domingo me mata'. No son tacos ni 'illo/pa': son palabras de guion mal dichas por el motor de voz.",
-    "El resto de la pieza cumple el formato v11/v12: duración 63 s dentro de 45-70 s, intro y cierre con el mismo plano de casa (bucle correcto), tarjeta de marca intercalada válida, logo 2026 correcto en insignia y cierre, giro marcado y sembrado, recuerdo del ep. 521 presente, moraleja correcta, humor negro real, registro vulgar correcto salvo Neo."
-  ],
-  "como_arreglarlo": "Centro: re-render de audio con voz_disenada corrigiendo la dicción de esas 4 frases (especialmente 'Que lo resuelva el Neo' y 'Devuélvala, señora Melano', que son las líneas de recuerdo y remate). No hace falta tocar guion.json ni vídeo/imagen, ya están bien; solo el audio de esas réplicas.",
-  "fecha": "2026-11-26T11:13:18Z",
+  "aprobado": true,
+  "nota": 92,
+  "comentario": "Re-render de audio (jb529_d2.mp4) corrige las 4 frases señaladas en el rechazo anterior: 'empatía', 'Que lo resuelva el Neo', 'Devuélvala, señora Melano' y 'A mí el frío del domingo me mata' se transcriben ahora correctamente según control_audio.json (sin bloqueos). Solo queda un aviso menor no crítico ('tinta'→'tenta' en 'lo sé de buena tinta'), que no afecta el sentido de ninguna línea clave. Duración 63,58 s dentro de 45-70 s v11/v12, LUFS -14,64, pico -0,99 dB, sin silencios. Intro y cierre repiten el mismo plano de casa (bucle correcto), tarjeta de marca intercalada válida antes del cierre, logo 2026 correcto en insignia y en tarjeta de cierre. Giro de Felipe/Neo sembrado y pagado, recuerdo del ep. 521 presente, moraleja clara y registro vulgar correcto salvo Neo (único culto). Cumple v11/v12 y el estándar v10.",
+  "fecha": "2026-11-26T15:40:42Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T11:11:47+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 84,
-  "caducado": "2026-11-26T15:39:26+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:39:26+00:00"
+  "render": "2026-11-26T15:39:26+00:00"
 }
