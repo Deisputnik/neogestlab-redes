@@ -642,3 +642,5 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 2. "Falta el campo giro en guion.json; e · 527_jambo_fontanero_factura_fuga sin arreglo de texto: Los 4 motivos de rechazo de 527_jambo_fontanero_factura_fuga son todos de vídeo/guion, no de texto/metadata del post.json:
 
 1. Contradicción Neo vs. moraleja (t≈42-45 vs t≈48): la réplica contradictoria está DICHA en el audio del vídeo ya renderizado. No se arregla reescribiendo el texto del post (a · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-26 10:25 UTC · Centro · solo medición (esta sesión no tiene el sandbox de vídeo-studio, no se rehízo ningún vídeo): SolicitudInfo sin altas nuevas desde el 22/11 (las 3 últimas son del propio dueño, la anterior del 08/11); Clic: ~22 externos del 22 al 26/11 (2 hoy) y 3 internos hoy, 0 solicitudes reales · Calidad/Creador: sin peticiones CENTRO nuevas; /solicitar convierte 0 de ~22 clics, subir el listón de /solicitar y /demo en la próxima pasada con sandbox · nada del dueño
