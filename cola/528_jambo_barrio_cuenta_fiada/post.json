@@ -22,20 +22,26 @@
   "formula": "El Jambo que sabe v5.2 (gancho pregunta abierta, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
   "_fuentes": [],
   "_comprobado": "Episodio de humor sin cifras verificables; las invitaciones de Rosa son el giro de ficción que destapa Neo, no un dato real.",
-  "motor_voz": "edge-tts (voces por personaje de la biblia v5.2)",
-  "_voz_nota": "Reescritas las líneas de Felipe para evitar 'de buena tinta' (sustituida por 'tengo entendido que') y 'Que lo resuelva el Neo' (sustituido por 'que lo resuelva la aplicación'), tras los fallos de pronunciación de esas frases en el episodio 521. El remate de Neo dice su propio nombre con su propia voz ('Soy Neo, y esto no es negociable'). Sin IA ni inglés en las líneas habladas de otros personajes.",
+  "motor_voz": "voz_disenada",
+  "_voz_nota": "Voces diseñadas por personaje con Gemini TTS (rama voces/2026-11-26-desatasco). Jambo con vocales alargadas vía voz_tts. Sin IA ni inglés en las líneas habladas.",
   "comentario_fijado": "¿En tu barrio también hay libreta de fiados? Episodio nuevo cada día en @neogestlab",
   "avance_siguiente": "Siguiente: la guardia del domingo que nadie cobra",
   "youtube": {
     "titulo": "¿Quién paga la cuenta fiada? #Shorts",
     "descripcion": "Humor negro de ficción: Rosa pregunta quién se cenó las tortillas fiadas, hasta que se descubre que las invitaciones eran suyas. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
-    "etiquetas": ["humornegro", "hosteleria", "cuentas", "serieeljambo", "neogestlab"]
+    "etiquetas": [
+      "humornegro",
+      "hosteleria",
+      "cuentas",
+      "serieeljambo",
+      "neogestlab"
+    ]
   },
   "facebook": {
     "texto": "Rosa pregunta quién se cenó las tortillas fiadas, hasta que se descubre que las invitaciones eran suyas. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
   "asset": "528_jambo_barrio_cuenta_fiada.mp4",
-  "_nota_creador": "25/11/2026 Creador (Claude Code): guion del Guionista Gemini (equipo/guiones_gemini/pendientes/2026-11-25_barrio_cuenta_fiada.json), renderizado completo con gen_episodios.py + render.mjs --hoja en Neogest Studio. 56.6 s, -14.7 LUFS, pico -1.2 dB. Pendiente de Calidad.",
-  "renderizado": "2026-11-25T15:40:00+00:00",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/fc99460ddd9442ef16948df31da3d73b_barrio_cuenta_fiada.mp4"
+  "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini; giro marcado (las cuatro cuentas llevan la firma «invita la jefa»), recuerdo en réplica de Sindy (fichar con huella hasta para mear, ep. 521) y remate de Neo recortado a 20 palabras. Duración 60,4 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
+  "renderizado": false,
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/ae13f414fef193dd94beeeb8cc3a6b32_jb528_d1.mp4"
 }

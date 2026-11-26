@@ -1,1 +1,139 @@
-{"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.34, "duck": true, "duckLevel": 0.45}, "subtitles": {"enabled": true, "words": 3, "style": "amarillo", "emojis": true, "size": 0.07}, "brand": {"watermark": true, "watermarkPos": "right", "progress": true}, "sfx": {"enabled": true, "volume": 0.6}, "scenes": [{"id": "5e2747f4", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": [{"id": "a2ef5846", "text": "Esta casa del barrio tiene truco 👀", "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}]}, {"id": "61bd236a", "duration": 2.726, "transition": "none", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "rosa", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Sindy, ¿quién se ha cenado las tortillas fiadas?!", "provider": "edge", "speaker": "rosa", "url": "/tmp/jb/bar_0.mp3", "duration": 2.376, "words": [{"w": "Sindy", "s": 0.091, "e": 0.446}, {"w": "quién", "s": 0.639, "e": 0.822}, {"w": "se", "s": 0.822, "e": 0.975}, {"w": "ha", "s": 0.975, "e": 1.036}, {"w": "cenado", "s": 1.036, "e": 1.371}, {"w": "las", "s": 1.371, "e": 1.493}, {"w": "tortillas", "s": 1.493, "e": 1.94}, {"w": "fiadas", "s": 1.95, "e": 2.326}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": []}, {"id": "dddc6661", "duration": 6.332999999999999, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Manda huevos, Rosa! Aquí todo el mundo apunta en la libreta y luego la libreta pierde las hojas.", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/bar_1.mp3", "duration": 5.983, "words": [{"w": "Manda", "s": 0.1, "e": 0.482}, {"w": "huevos", "s": 0.491, "e": 0.825}, {"w": "Rosa", "s": 0.921, "e": 1.35}, {"w": "Aquí", "s": 1.64, "e": 1.993}, {"w": "todo", "s": 2.007, "e": 2.265}, {"w": "el", "s": 2.279, "e": 2.36}, {"w": "mundo", "s": 2.374, "e": 2.686}, {"w": "apunta", "s": 2.7, "e": 3.121}, {"w": "en", "s": 3.135, "e": 3.23}, {"w": "la", "s": 3.243, "e": 3.325}, {"w": "libreta", "s": 3.338, "e": 3.841}, {"w": "y", "s": 3.855, "e": 3.923}, {"w": "luego", "s": 3.936, "e": 4.235}, {"w": "la", "s": 4.249, "e": 4.344}, {"w": "libreta", "s": 4.357, "e": 4.792}, {"w": "pierde", "s": 4.806, "e": 5.173}, {"w": "las", "s": 5.186, "e": 5.404}, {"w": "hojas", "s": 5.417, "e": 5.933}], "offset": 0.05, "tail": 0.12}, "shot": "medio", "texts": [], "overlays": [{"id": "42beccde", "type": "emoji", "text": "🤯", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "94d25141", "duration": 5.403999999999999, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral", "intro": true}], "voice": {"text": "¡Illo! Tengo entendido que si la deuda pasa de un mes legalmente prescribe, Rosa.", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/bar_2.mp3", "duration": 5.053999999999999, "words": [{"w": "Illo", "s": 0.099, "e": 0.617}, {"w": "Tengo", "s": 0.907, "e": 1.241}, {"w": "entendido", "s": 1.254, "e": 1.773}, {"w": "que", "s": 1.786, "e": 1.897}, {"w": "si", "s": 1.909, "e": 2.021}, {"w": "la", "s": 2.033, "e": 2.132}, {"w": "deuda", "s": 2.145, "e": 2.429}, {"w": "pasa", "s": 2.442, "e": 2.726}, {"w": "de", "s": 2.739, "e": 2.838}, {"w": "un", "s": 2.85, "e": 2.949}, {"w": "mes", "s": 2.961, "e": 3.122}, {"w": "legalmente", "s": 3.135, "e": 3.679}, {"w": "prescribe", "s": 3.692, "e": 4.211}, {"w": "Rosa", "s": 4.496, "e": 5.004}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": [], "overlays": [{"id": "077b128a", "type": "emoji", "text": "😱", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "80ee4753", "duration": 7.489, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "jambo", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "Rosaaa, prima… apunta dos raciones a mi cuenta, mañana te las pago.", "provider": "edge", "speaker": "jambo", "url": "/tmp/jb/bar_3.mp3", "duration": 7.139, "words": [{"w": "Rosaaa", "s": 0.1, "e": 1.121}, {"w": "prima", "s": 1.561, "e": 2.213}, {"w": "apunta", "s": 2.714, "e": 3.392}, {"w": "dos", "s": 3.41, "e": 3.642}, {"w": "raciones", "s": 3.66, "e": 4.303}, {"w": "a", "s": 4.321, "e": 4.374}, {"w": "mi", "s": 4.392, "e": 4.553}, {"w": "cuenta", "s": 4.571, "e": 5.089}, {"w": "mañana", "s": 5.482, "e": 5.964}, {"w": "te", "s": 5.982, "e": 6.124}, {"w": "las", "s": 6.142, "e": 6.392}, {"w": "pago", "s": 6.41, "e": 7.089}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [], "overlays": [{"id": "0fbcacff", "type": "emoji", "text": "💸", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "26f03a3f", "duration": 5.39, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral"}], "voice": {"text": "¡Joder, Felipe! Si las cuatro partes fiadas llevan la firma de Rosa como invitación particular.", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/bar_4.mp3", "duration": 5.04, "words": [{"w": "Joder", "s": 0.1, "e": 0.501}, {"w": "Felipe", "s": 0.606, "e": 1.016}, {"w": "Si", "s": 1.306, "e": 1.514}, {"w": "las", "s": 1.525, "e": 1.668}, {"w": "cuatro", "s": 1.679, "e": 1.942}, {"w": "partes", "s": 1.953, "e": 2.282}, {"w": "fiadas", "s": 2.293, "e": 2.633}, {"w": "llevan", "s": 2.644, "e": 2.907}, {"w": "la", "s": 2.918, "e": 3.006}, {"w": "firma", "s": 3.017, "e": 3.28}, {"w": "de", "s": 3.291, "e": 3.356}, {"w": "Rosa", "s": 3.367, "e": 3.674}, {"w": "como", "s": 3.685, "e": 3.916}, {"w": "invitación", "s": 3.927, "e": 4.409}, {"w": "particular", "s": 4.42, "e": 4.99}], "offset": 0.05, "tail": 0.12}, "shot": "general", "texts": [], "overlays": [{"id": "58242309", "type": "emoji", "text": "🙄", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "bd4bcfa7", "duration": 5.7909999999999995, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral"}], "voice": {"text": "¡Hostia, Rosa! Nos culpas de la merma y estás invitando al barrio. ¡Que lo resuelva la aplicación!", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/bar_5.mp3", "duration": 5.441, "words": [{"w": "Hostia", "s": 0.1, "e": 0.51}, {"w": "Rosa", "s": 0.751, "e": 1.14}, {"w": "Nos", "s": 1.427, "e": 1.701}, {"w": "culpas", "s": 1.712, "e": 1.997}, {"w": "de", "s": 2.008, "e": 2.074}, {"w": "la", "s": 2.085, "e": 2.162}, {"w": "merma", "s": 2.173, "e": 2.458}, {"w": "y", "s": 2.469, "e": 2.512}, {"w": "estás", "s": 2.523, "e": 2.765}, {"w": "invitando", "s": 2.776, "e": 3.17}, {"w": "al", "s": 3.181, "e": 3.247}, {"w": "barrio", "s": 3.258, "e": 3.73}, {"w": "Que", "s": 4.056, "e": 4.204}, {"w": "lo", "s": 4.215, "e": 4.289}, {"w": "resuelva", "s": 4.3, "e": 4.66}, {"w": "la", "s": 4.671, "e": 4.734}, {"w": "aplicación", "s": 4.745, "e": 5.391}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [{"id": "129ee3fd", "text": "😂", "style": "badge", "anim": "pop", "start": 2.99255, "y": 0.08, "sfx": "risas"}], "overlays": [{"id": "c469a313", "type": "emoji", "text": "😳", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "a601d140", "duration": 9.538, "transition": "flash", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "neo", "x": 0.72, "expr": "chulo", "intro": true}], "voice": {"text": "Rosa, para recuperar el dinero de las tortillas fiadas debes pagar de tu bolsillo tus propias invitaciones. Soy Neo, y esto no es negociable.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/bar_6.mp3", "duration": 9.188, "words": [{"w": "Rosa", "s": 0.102, "e": 0.687}, {"w": "para", "s": 0.993, "e": 1.179}, {"w": "recuperar", "s": 1.192, "e": 1.684}, {"w": "el", "s": 1.697, "e": 1.777}, {"w": "dinero", "s": 1.79, "e": 2.083}, {"w": "de", "s": 2.096, "e": 2.176}, {"w": "las", "s": 2.189, "e": 2.336}, {"w": "tortillas", "s": 2.349, "e": 2.868}, {"w": "fiadas", "s": 2.881, "e": 3.24}, {"w": "debes", "s": 3.253, "e": 3.559}, {"w": "pagar", "s": 3.572, "e": 3.852}, {"w": "de", "s": 3.865, "e": 3.971}, {"w": "tu", "s": 3.985, "e": 4.091}, {"w": "bolsillo", "s": 4.104, "e": 4.623}, {"w": "tus", "s": 4.636, "e": 4.836}, {"w": "propias", "s": 4.849, "e": 5.235}, {"w": "invitaciones", "s": 5.248, "e": 6.179}, {"w": "Soy", "s": 6.512, "e": 6.905}, {"w": "Neo", "s": 6.919, "e": 7.285}, {"w": "y", "s": 7.551, "e": 7.65}, {"w": "esto", "s": 7.664, "e": 7.945}, {"w": "no", "s": 7.959, "e": 8.169}, {"w": "es", "s": 8.183, "e": 8.296}, {"w": "negociable", "s": 8.31, "e": 9.138}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": []}, {"id": "68df67a9", "duration": 3.905, "transition": "zoom", "background": {"type": "set", "set": "salon", "hour": 20, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "cansado"}, {"who": "neo", "x": 0.72, "expr": "feliz"}], "shot": "general", "voice": {"text": "Fiar sin registro contable convierte la pérdida en norma.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/bar_7.mp3", "duration": 3.3049999999999997, "words": [{"w": "Fiar", "s": 0.1, "e": 0.513}, {"w": "sin", "s": 0.525, "e": 0.707}, {"w": "registro", "s": 0.719, "e": 1.192}, {"w": "contable", "s": 1.204, "e": 1.641}, {"w": "convierte", "s": 1.653, "e": 2.115}, {"w": "la", "s": 2.127, "e": 2.248}, {"w": "pérdida", "s": 2.26, "e": 2.636}, {"w": "en", "s": 2.649, "e": 2.733}, {"w": "norma", "s": 2.746, "e": 3.255}], "offset": 0.05, "tail": 0.12}, "texts": [{"id": "e54bb592", "text": "Fiar sin registro contable convierte la pérdida en norma.", "style": "badge", "anim": "pop", "y": 0.12, "sfx": "impacto"}, {"id": "53495bf1", "text": "Fiar sin registro contable convierte la pérdida en norma.", "style": "hook", "anim": "pop", "start": 0.5, "y": 0.26}]}, {"id": "32c1a535", "duration": 3.8499999999999996, "transition": "fade", "voice": null, "background": {"type": "set", "set": "salon", "hour": 22, "night": true}, "characters": [], "texts": [{"id": "4cf71e9c", "text": "REPARTO", "style": "badge", "anim": "pop", "start": 0.0, "y": 0.1, "sfx": "impacto"}, {"id": "67a576a0", "text": "Rosa Melano", "style": "hook", "anim": "pop", "start": 0.3, "y": 0.24}, {"id": "2462d752", "text": "Sindy Entes", "style": "hook", "anim": "pop", "start": 0.6499999999999999, "y": 0.36}, {"id": "124a1c5d", "text": "Felipe Lotas", "style": "hook", "anim": "pop", "start": 1.0, "y": 0.48}, {"id": "bace1a17", "text": "Jambo Reseco", "style": "hook", "anim": "pop", "start": 1.3499999999999999, "y": 0.6}, {"id": "1f8932ec", "text": "Neo", "style": "hook", "anim": "pop", "start": 1.7, "y": 0.72}, {"id": "2812a759", "text": "By Neogest Lab", "style": "badge", "anim": "pop", "start": 2.25, "y": 0.98}]}, {"id": "058d9a0d", "kind": "outro", "duration": 3.0, "transition": "fade", "voice": null, "background": {"type": "gradient"}, "characters": [], "texts": [{"id": "95ffb6ad", "text": "Apps con IA para tu negocio", "style": "hook", "anim": "pop", "start": 0.25, "y": 0.17}, {"id": "e702f107", "text": "Pide tu prueba gratuita", "style": "hook", "anim": "pop", "start": 0.7, "y": 0.68}, {"id": "62c1b1be", "text": "Sin tarjeta · sin datos bancarios · sin compromiso", "style": "badge", "anim": "pop", "start": 1.0, "y": 0.78}]}, {"id": "9c3d7202", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": []}]}
+{
+ "slug": "528_jambo_barrio_cuenta_fiada",
+ "set": "salon",
+ "hora": 20,
+ "moraleja": "Fiar sin registro contable convierte la pérdida en norma",
+ "gancho_tipo": "pregunta_abierta",
+ "gancho_casa": "¿Quién se cenó las tortillas fiadas? 👀",
+ "promesa": "¿Quién va a pagar las tortillas fiadas?",
+ "giro": "Parecían deudas del barrio y eran invitaciones firmadas por Rosa",
+ "recuerdo": "Rosa ya hizo fichar con huella hasta para mear (521)",
+ "bucle_visual": "Rosa con la libreta de fiados abierta, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¿Quién se ha cenado las tortillas fiadas? ¡Me falta dinero en la caja!",
+   "t": "¿Quién se ha cenado las tortillas fiadas? ¡Me falta dinero en la caja!",
+   "p": [
+    "rosa",
+    "sindy"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "ironia",
+   "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+   "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+   "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "susurra",
+   "v": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.",
+   "t": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "voz_tts": "Primaaa… apúntame dos racioneees. Mañana te las pagooo. Te lo juro."
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¡Espera, coño! Las cuatro cuentas llevan tu firma, Rosa. ¡Pone «invita la jefa»!",
+   "t": "¡Espera, coño! Las cuatro cuentas llevan tu firma, Rosa. ¡Pone «invita la jefa»!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "desespera"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¡Era por imagen, hostia! Una jefa generosa vende. Que lo pague la plantilla.",
+   "t": "¡Era por imagen, hostia! Una jefa generosa vende. Que lo pague la plantilla.",
+   "p": [
+    "rosa"
+   ],
+   "a": {
+    "rosa": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+   "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja.",
+   "t": "Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Fiar sin registro contable convierte la pérdida en norma.",
+   "t": "Fiar sin registro contable convierte la pérdida en norma.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}
