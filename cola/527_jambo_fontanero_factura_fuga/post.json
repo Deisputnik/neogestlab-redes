@@ -42,8 +42,7 @@
   },
   "asset": "527_jambo_fontanero_factura_fuga.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco dicción): solo audio de dos réplicas rehecho con voz diseñada Gemini (rama voces/2026-11-26-diccion, pedido con voz_tts): Jambo «Primo… dame un eurillo para la fregona. Que me ahogo aquí.» (Whisper: «dame un eurillo para la fregona») y Concha «A mí no me mires. Eso lo arreglamos la semana que viene.» (Whisper: «Eso lo arreglamos»). Guion, vídeo, giro y recuerdo sin cambios; mp4 nuevo jb527_d2.mp4 (64,8 s, −14,8 LUFS, pico −1,4 dB). Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
+  "renderizado": "2026-11-26T15:28:17+00:00",
   "_cuando_anterior": "2026-11-26T08:30:00+01:00",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/c25f659b0f9fa088155c8801705b01ab_jb527_d1.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/9332f530208484c28104d3a9ff0a27f4_jb527_d2.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/9332f530208484c28104d3a9ff0a27f4_jb527_d2.mp4"
 }

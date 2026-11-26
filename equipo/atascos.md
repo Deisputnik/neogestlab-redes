@@ -1,12 +1,12 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-26 15:09 UTC · 8 piezas paradas.
+Actualizado: 2026-11-26 15:28 UTC · 8 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Creador 6, Supervisor 2
+Por rol: Calidad 1, Creador 5, Supervisor 2
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T18:05:00+01:00 | rechazada | Creador | Dicción defectuosa de la voz diseñada (no es jerga tipo 'illo/pa'): en la réplica de Jambo el guion dice 'dame un eurillo pa' la fregona' y se oye 'amé un orillo para la fregona'; son sustituciones de palabras reales que cambian el sentido, no elisiones coloqu | CENTRO: regenerar solo esas dos líneas de audio (Jambo: 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' / Concha: 'A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!') con voz_disenada Gemini TTS y volver a mezclar; no hace |
+| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T18:05:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | rechazada | Creador | control_audio.json en bloqueo real (no jerga): falta por completo la réplica de Jambo Reseco del guion ("Prima… apúntame dos raciones. Mañana te las pago. Te lo juro."), que no aparece en la transcripción; el audio salta de "...hasta baramear" directo a "¿Y lo | CENTRO: regenerar solo las dos líneas afectadas con voz_disenada (Gemini TTS) sin perder sílabas: (1) la réplica completa de Jambo \"Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.\" tiene que sonar entera y audible; (2) la réplica de Felipe debe |
 | sale en < 24 h | 529_jambo_cuidador_turno_domingo | 2026-11-27T12:30:00+01:00 | rechazada | Creador | H5 (voz con errores reales, no jerga ignorada por Whisper): varias palabras clave salen mal pronunciadas o sustituidas por la voz diseñada, confirmado por control_audio.json con bloqueo explícito. Ejemplos: 'empatía' suena 'impadia'; 'Que lo resuelva el Neo' s | Centro: re-render de audio con voz_disenada corrigiendo la dicción de esas 4 frases (especialmente 'Que lo resuelva el Neo' y 'Devuélvala, señora Melano', que son las líneas de recuerdo y remate). No hace falta tocar guion.json ni vídeo/imagen, ya están bien;  |
 | sale en < 24 h | 530_jambo_fontanero_madrugada_factura | 2026-11-27T15:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |

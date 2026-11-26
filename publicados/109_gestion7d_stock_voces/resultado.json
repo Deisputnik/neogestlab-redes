@@ -1,0 +1,18 @@
+{
+  "media_id": "18186668863430938",
+  "enlace": "https://www.instagram.com/reel/DgNbOAxAZWt/",
+  "prueba_no_seguidores": false,
+  "publicado": "2026-11-26T15:27:46+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "tsmF9CycwPQ",
+    "enlace": "https://youtube.com/shorts/tsmF9CycwPQ",
+    "titulo": "¿Apuntas el stock en una libreta? #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "2981166972222806",
+    "enlace": "https://www.facebook.com/reel/2981166972222806",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}

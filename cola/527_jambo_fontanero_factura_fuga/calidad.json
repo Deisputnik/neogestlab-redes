@@ -9,5 +9,9 @@
   "como_arreglarlo": "CENTRO: regenerar solo esas dos líneas de audio (Jambo: 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' / Concha: 'A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!') con voz_disenada Gemini TTS y volver a mezclar; no hace falta rehacer el resto del vídeo ni el guion, que ya está correcto (giro, moraleja y recuerdo resueltos respecto al rechazo anterior).",
   "fecha": "2026-11-26T11:11:28Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:45:54+00:00"
+  "render": "2026-11-26T10:45:54+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 87,
+  "caducado": "2026-11-26T15:28:17+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:28:17+00:00"
 }
