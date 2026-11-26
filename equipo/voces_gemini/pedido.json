@@ -1,10 +1,9 @@
 {
- "_nota": "528 Felipe con variantes (escenas 2, 6, 11, 12, 13), modelo lite; Sindy ya salió bien en el primer intento.",
+ "_nota": "528 Felipe, variantes de «el Neo» (escenas 6, 9, 10, 11); lite.",
  "modelos": [
   "gemini-3.8-flash-lite-tts"
  ],
  "solo": [
-  "sindy",
   "felipe"
  ],
  "episodios": [
@@ -34,31 +33,25 @@
     },
     {
      "e": "gag",
-     "h": "sindy",
      "emo": "ironia",
-     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
      "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
      "p": [
       "sindy"
      ],
      "a": {
       "sindy": "habla"
-     },
-     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta, para mear. ¿Y los fiados? En una libreta que firma cualquiera."
+     }
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "chulea",
-     "v": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
      "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
      "p": [
       "felipe"
      ],
      "a": {
       "felipe": "presume"
-     },
-     "voz_tts": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta."
+     }
     },
     {
      "e": "gag",
@@ -108,60 +101,13 @@
       "felipe": "desespera"
      },
      "risas": true,
-     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Neo."
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva… ¡el Neo!"
     },
     {
-     "e": "remate",
-     "emo": "seco",
-     "t": "Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja.",
-     "p": [
-      "neo",
-      "rosa"
-     ],
-     "a": {
-      "neo": "fria"
-     },
-     "sello": "PILLADA"
+     "e": "gag"
     },
     {
-     "e": "cierre",
-     "emo": "normal",
-     "t": "Fiar sin registro contable convierte la pérdida en norma.",
-     "p": [
-      "felipe",
-      "neo"
-     ],
-     "a": {
-      "neo": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para ir a mear. ¿Y los fiados? En una libreta que firma cualquiera.",
-     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "habla"
-     },
-     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta para ir a mear. ¿Y los fiados? En una libreta que firma cualquiera."
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
-     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
-     "p": [
-      "sindy"
-     ],
-     "a": {
-      "sindy": "habla"
-     },
-     "voz_tts": "¡Pues manda huevos! Aquí se ficha con huella hasta… para mear. ¿Y los fiados? En una libreta que firma cualquiera."
+     "e": "gag"
     },
     {
      "e": "gag",
@@ -176,13 +122,13 @@
       "felipe": "desespera"
      },
      "risas": true,
-     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Néo."
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo, ¡el Neo!"
     },
     {
      "e": "gag",
      "h": "felipe",
      "emo": "grita",
-     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Neo, resuélvelo tú.",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
      "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
      "p": [
       "felipe"
@@ -191,21 +137,22 @@
       "felipe": "desespera"
      },
      "risas": true,
-     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Neo, resuélvelo tú."
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Pues que lo resuelva. ¡El Neo!"
     },
     {
      "e": "gag",
      "h": "felipe",
-     "emo": "chulea",
-     "v": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
-     "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+     "emo": "grita",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
      "p": [
       "felipe"
      ],
      "a": {
-      "felipe": "presume"
+      "felipe": "desespera"
      },
-     "voz_tts": "¡Buuah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta."
+     "risas": true,
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el… Ne-o."
     }
    ]
   }
