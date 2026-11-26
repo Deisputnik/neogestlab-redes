@@ -8,5 +8,7 @@
   "como_arreglarlo": "CENTRO/CREADOR: confirmar en post.json el campo \"motor_voz\". Si ya es \"elevenlabs\", basta con añadirlo al post.json (arreglo de texto, sin necesidad de re-render) y Calidad lo revisa de nuevo. Si el render se hizo con otro motor sin \"_voz_nota\" justificando cuota agotada, CREADOR: rehacer la voz con ElevenLabs (gen_promos.py + render.mjs --final en Neogest Studio; ver herramientas/estudio/LEEME.md).",
   "fecha": "2026-11-25T18:15:13Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-25T18:01:24+00:00"
+  "render": "2026-11-25T18:01:24+00:00",
+  "aprobado_por": "dueño",
+  "nota_calidad": "26/11/2026: aprobada por el dueño. Bloqueo falso: el único motivo bajo 90 (nota 88) era la falta de \"motor_voz\", pero post.json ya tenía \"motor_voz\": \"elevenlabs\" desde el commit fa7c897 (25/11 17:09 UTC), antes de la revisión de las 18:15."
 }
