@@ -1,15 +1,3 @@
-2026-11-21 22:29  Control de audio: FALLA dura 38.6 s (máximo 30); falta el giro (escena «remate»); voz distinta del guion: faltan [], sobran ['iyo', 'cindy', 'esta', 'app', 'te', 'paga', 'el', 'triple', 'por', 'cada', 'reparto', 'de', 'verdad', 'jambo', 'la', 'ultima', 'vez', 'que', 'me', 'prometiste', 'algo', 'gratis', 'acabe', 'pagando',; duración 38.57 s
-2026-11-21 22:29  350_jambo_app_fantasma: control de audio del vídeo externo: aprobado=False LUFS=-14.3 pico=-1.3
-2026-11-21 22:29  350_jambo_app_fantasma: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-21 22:29  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 22:29  316_ias_oficina_ep20_pedido: publicando…
-2026-11-21 22:29  316_ias_oficina_ep20_pedido: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
-2026-11-21 22:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 22:39  349_jambo_vecino_taladro: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
-2026-11-21 22:39  349h_vecino_taladro_historia: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
-2026-11-21 22:39  350_jambo_app_fantasma: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
-2026-11-21 22:39  350h_app_fantasma_historia: NO publicado, sin aprobación de Calidad (nota >= 90) ni del dueño
-2026-11-21 22:39  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 22:40  Control de audio: FALLA voz distinta del guion: faltan ['j', 'a', 'm', 'b', 'illo', 'illo'], sobran ['jmm', 'y', 'yo', 'y', 'yo'] (rehacer esas frases); duración 40.13 s
 2026-11-21 22:40  351_jambo_wifi_robado: control de audio del vídeo externo: aprobado=False LUFS=-14.2 pico=-1.4
 2026-11-21 22:40  351_jambo_wifi_robado: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
@@ -598,3 +586,15 @@
 2026-11-26 19:42  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 19:42  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 19:42  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 20:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
