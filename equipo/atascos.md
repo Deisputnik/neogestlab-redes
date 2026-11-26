@@ -1,12 +1,12 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-26 16:24 UTC · 7 piezas paradas.
+Actualizado: 2026-11-26 17:09 UTC · 7 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 1, Creador 4, Supervisor 2
+Por rol: Creador 5, Supervisor 2
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T19:40:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T19:40:00+01:00 | rechazada | Creador | control_audio.json en bloqueo: la réplica de Rosa '¡Me cago en todo!' se oye como 'Cabún todo' (faltan ['me','cago','en'], sobra ['cabun']); no es jerga tipo illo/pa sino una frase real e inteligible sustituida por una palabra sin sentido, confirmado por Whisp | CENTRO: regenerar solo la réplica de Rosa '¡Me cago en todo!' con voz_disenada Gemini TTS (rama voces/2026-11-26-desatasco o similar), verificando contra Whisper antes de resubir que se oye 'me cago en' y no una palabra sin sentido. No hace falta tocar guion,  |
 | sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | rechazada | Creador | control_audio.json del render jb528_d3.mp4 sigue en bloqueo real: faltan ['buena','tinta','neo'], sobran ['guanatinta','a','a','ne']. El re-render del 26/11 arregló las dos frases del rechazo anterior (Sindy 'para mear' y Jambo Reseco completo) pero genera DOS | CENTRO: tercer intento, esta vez SOLO regenerar con voz_disenada (Gemini TTS) las dos frases que fallan en ESTE render, sin tocar las que ya quedaron bien (Sindy 'para mear' y Jambo Reseco ya están correctas, no reprocesarlas): (1) la línea de Felipe '...Eso e |
 | sale en < 24 h | 530_jambo_fontanero_madrugada_factura | 2026-11-27T15:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | sale en < 72 h | 531_jambo_repartidor_paquete_fantasma | 2026-11-27T18:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
