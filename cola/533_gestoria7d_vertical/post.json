@@ -1,0 +1,30 @@
+{
+  "tipo": "reel",
+  "texto": "¿Sigues pagando a tu gestor por hacer cuentas que podrías ver tú mismo?\nGestoría7D lleva tus ingresos y gastos, calcula tus modelos trimestrales (303, 130, 111, 115) y el resumen anual, y te guía para presentarlos tú en la Sede de la AEAT.\nHazle una foto a una factura o ticket y la IA propone los datos: tú los revisas y confirmas.\nSi usas Factura7D, tus facturas emitidas pueden entrar solas como ingresos.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nVoz generada por IA\n\n#gestoria #autonomos #impuestos #neogestlab",
+  "cuando": null,
+  "compartir_en_feed": true,
+  "portada_ms": 0,
+  "formula": "promo de app, primera publicación de Gestoría7D tras ser aprobada para promoción",
+  "formato": "Promo de app · Neogest Studio · vertical",
+  "publico": "Autónomos y sociedades (SL/SA) que llevan su gestoría o quieren depender menos de ella",
+  "app": "Gestoría7D",
+  "app_slug": "gestoria7d",
+  "gancho": "¿Sigues pagando a tu gestor por hacer cuentas que podrías ver tú mismo?",
+  "comentario_fijado": "¿Llevas tú los números de tu negocio o se lo dejas todo al gestor?",
+  "monetizacion": {
+    "objetivo": "clic_enlace",
+    "oferta": "cta_principal de la ficha Producto",
+    "paso_embudo": "visita_perfil -> clic_enlace"
+  },
+  "_fuentes": [
+    "Ficha Producto del Centro, slug gestoria7d (hechos_verificados y prohibido_afirmar comprobados 26/11/2026, tras la aprobación del dueño para promocionar)"
+  ],
+  "_comprobado": "Libros de ingresos/gastos, cálculo de modelos 303/130/111/115 y resumen 390, lectura de facturas con IA revisada por el usuario, e importación de facturas desde Factura7D son hechos verificados de la ficha. No se afirma que presente ante la AEAT, que sustituya a un gestor, ni que dé asesoramiento fiscal/laboral (prohibido_afirmar). No se mencionan precios ni límites del plan Gratis en el texto para evitar desactualizarlo si cambian.",
+  "_nota_creador": "26/11/2026: el dueño aprobó promocionar Gestoría7D del todo (\"ya se puede promocionar todo\"), tras estar retenida desde el 14/11/2026. Se reutiliza el vídeo vertical ya aprobado (VideoMezcla id 6b07628e06b32617a5066200, 22.7s, voz ElevenLabs Johnny) hecho el 25/11 para la web del Centro — no se ha renderizado uno nuevo porque este ya sirve para redes (formato y duración correctos). Pendiente real sin resolver: la app no se ha probado con una sesión completa de principio a fin; si algo no coincide con lo verificado en código, avisar.",
+  "motor": "neogest-studio",
+  "motor_voz": "elevenlabs",
+  "voces": ["Johnny"],
+  "renderizado": "2026-11-25T22:34:54+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6ae5244d4e2b32702f0a3cd6/0d57a77d52827c0a604fbf22dd63085d_gestoria7d_presentacion.mp4",
+  "_pendiente": "Sin 'cuando': Coordinación debe asignarle hueco en la parrilla."
+}

@@ -1,0 +1,30 @@
+{
+  "tipo": "reel",
+  "texto": "¿Tienes un bar, restaurante, obrador o cualquier negocio de alimentación? Por ley tienes que llevar un registro de autocontrol (APPCC): temperaturas, limpieza, proveedores... y casi siempre acaba en papel pegado en la nevera.\nAPPCC Fácil pone esos registros en el móvil: temperaturas, aceite, limpieza y recepción de mercancía, con acción correctora cuando algo sale de rango.\nProveedores con su registro sanitario a mano, e informe por fechas listo para imprimir o guardar en PDF cuando venga una inspección.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso.\nVoz generada por IA\n\n#appcc #hosteleria #autocontrol #neogestlab",
+  "cuando": null,
+  "compartir_en_feed": true,
+  "portada_ms": 0,
+  "formula": "promo de app, primera publicación de APPCC Fácil tras ser aprobada para promoción",
+  "formato": "Promo de app · Neogest Studio · vertical",
+  "publico": "Bares, restaurantes, cafeterías, obradores, comedores y negocios de alimentación",
+  "app": "APPCC Fácil",
+  "app_slug": "appcc-facil",
+  "gancho": "¿Tienes bar o negocio de alimentación? Así llevas el registro de autocontrol sin papeles",
+  "comentario_fijado": "¿Cómo lleváis vosotros los registros de temperatura y limpieza?",
+  "monetizacion": {
+    "objetivo": "clic_enlace",
+    "oferta": "cta_principal de la ficha Producto",
+    "paso_embudo": "visita_perfil -> clic_enlace"
+  },
+  "_fuentes": [
+    "Ficha Producto del Centro, slug appcc-facil (hechos_verificados y prohibido_afirmar comprobados 26/11/2026, tras la aprobación del dueño para promocionar)"
+  ],
+  "_comprobado": "Registro de temperatura/aceite con acción correctora obligatoria si sale de rango, plantilla de 7 puntos de control, proveedores con registro sanitario (RGSEAA) e informe por periodo con PDF son hechos verificados de la ficha. Que el autocontrol APPCC es una obligación legal para negocios de alimentación es conocimiento público del sector (no específico de esta app); la app no se presenta como 'el plan APPCC oficial' (prohibido_afirmar). No se afirma lectura de albaranes con IA, avisos automáticos, pago dentro de la app, ni presencia en Google Play (prohibido_afirmar). No se mencionan precios, duración de prueba ni límites del plan Gratis en el texto para evitar desactualizarlo si cambian.",
+  "_nota_creador": "26/11/2026: el dueño aprobó promocionar APPCC Fácil del todo (\"ya se puede promocionar todo\"), tras estar retenida desde el 14/11/2026. Se reutiliza el vídeo vertical ya aprobado (VideoMezcla id 6b076593fc46da4c14b4e872, 20.7s, voz ElevenLabs Johnny) hecho el 25/11 para la web del Centro. Pendiente real sin resolver: la app no se ha probado con sesión real completa ni hay cuenta demo; si algo no coincide con lo verificado en código, avisar.",
+  "motor": "neogest-studio",
+  "motor_voz": "elevenlabs",
+  "voces": ["Johnny"],
+  "renderizado": "2026-11-25T22:47:47+00:00",
+  "video_externo": "https://media.base44.com/videos/public/6ae5244d4e2b32702f0a3cd6/06392116318885cd9987c99f4ed31a6b_appcc-facil-presentacion.mp4",
+  "_pendiente": "Sin 'cuando': Coordinación debe asignarle hueco en la parrilla."
+}
