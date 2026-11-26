@@ -42,8 +42,7 @@
   },
   "asset": "527_jambo_fontanero_factura_fuga.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco dicción 3): réplica de Jambo reescrita en guion y voz, «Primo… suelta un euro para la fregona. Que me mojo entero.» (antes eurillo/ahogo, que Gemini no dijo bien en dos intentos), y Sindy con voz_tts «Como lo del trastero, en negro… Que lo resuelva, el Neo» (subtítulo sin cambios). Pedido en rama voces/2026-11-26-diccion5 con variantes. Whisper sobre el mp4 MEZCLADO jb527_d3.mp4: «Primo, suelta un euro para la fregona. Que me mojo entero.» y «Como lo del trastero, en negro, pero con charco. Que lo resuelva. El neo.». Resto del vídeo y audio sin cambios. Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
+  "renderizado": "2026-11-26T15:45:00+00:00",
   "_cuando_anterior": "2026-11-26T08:30:00+01:00",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/9332f530208484c28104d3a9ff0a27f4_jb527_d2.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/66511689351458e7c4bab9d09a03dd37_jb527_d3.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/66511689351458e7c4bab9d09a03dd37_jb527_d3.mp4"
 }

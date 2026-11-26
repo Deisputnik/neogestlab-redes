@@ -1,14 +1,13 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-26 15:39 UTC · 8 piezas paradas.
+Actualizado: 2026-11-26 15:45 UTC · 7 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 2, Creador 4, Supervisor 2
+Por rol: Calidad 1, Creador 4, Supervisor 2
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T18:05:00+01:00 | rechazada | Creador | El reintento de dicción no resolvió el problema original: la réplica de Jambo sigue mal ('dame un eurillo pa' la fregona. Que me ahogo aquí' se oye 'dame un neurillo para la fregona que me hago aquí'); 'eurillo'→'neurillo' y 'ahogo'→'hago' son sustituciones de | CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: Jambo 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' (vigilar especialmente 'eurillo |
-| sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| sale en < 24 h | 529_jambo_cuidador_turno_domingo | 2026-11-27T12:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T19:40:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | rechazada | Creador | control_audio.json sigue en bloqueo real tras el re-render del 26/11 (jb528_d2.mp4): faltan ['para','mear','buah','neo'], sobran ['baramear','va','a','nego']. La réplica de Jambo Reseco se arregló (ahora completa y audible), pero persisten dos fallos de pronun | CENTRO: regenerar solo dos frases con voz_disenada (Gemini TTS), sin perder sílabas ni sustituir palabras: (1) la línea de Sindy '...aquí se ficha con huella hasta para mear' debe pronunciar claramente 'para mear', no 'baramear'; (2) la línea de Felipe '¡Hay q |
 | sale en < 24 h | 530_jambo_fontanero_madrugada_factura | 2026-11-27T15:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | sale en < 72 h | 531_jambo_repartidor_paquete_fantasma | 2026-11-27T18:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | más adelante | 532_ghplus_vertical_hyperframes |  | rechazada | Creador | No se puede evaluar: el asset 532_ghplus_vertical_hyperframes.mp4 no existe en la release «cola» (inspeccionar_video devuelve error 'no encuentro el asset'). Sin vídeo no hay ffprobe, silencedetect, LUFS ni fotogramas que revisar, así que no se puede dar un ve | CENTRO/CREADOR: falta el render en la release 'cola' para esta pieza (532_ghplus_vertical_hyperframes). Hay que comprobar si el ciclo de render falló o no se ha ejecutado todavía para este asset y relanzarlo (si no hay un ciclo en curso, lanzar ciclo.yml); una |

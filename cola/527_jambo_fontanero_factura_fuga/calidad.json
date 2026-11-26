@@ -10,5 +10,9 @@
   "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: Jambo 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' (vigilar especialmente 'eurillo' y 'ahogo', que ya fallaron en dos intentos) y Sindy '¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.' (vigilar 'trastero' y 'lo resuelva'). No hace falta tocar guion, vídeo, giro, recuerdo ni el resto del audio, que ya están correctos.",
   "fecha": "2026-11-26T15:29:56Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:28:17+00:00"
+  "render": "2026-11-26T15:28:17+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 86,
+  "caducado": "2026-11-26T15:45:00+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:45:00+00:00"
 }
