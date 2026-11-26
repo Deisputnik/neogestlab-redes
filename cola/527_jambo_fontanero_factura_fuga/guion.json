@@ -1,1 +1,152 @@
-{"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.34, "duck": true, "duckLevel": 0.45}, "subtitles": {"enabled": true, "words": 3, "style": "amarillo", "emojis": true, "size": 0.07}, "brand": {"watermark": true, "watermarkPos": "right", "progress": true}, "sfx": {"enabled": true, "volume": 0.6}, "scenes": [{"id": "a4712ac4", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": [{"id": "ada95a03", "text": "Una fuga en casa: ¿quién paga? 💦", "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}]}, {"id": "8fc027ad", "duration": 3.0220000000000002, "transition": "none", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "rosa", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Felipe, el agua nos llega a los tobillos!", "provider": "edge", "speaker": "rosa", "url": "/tmp/jb/527_0.mp3", "duration": 2.672, "words": [{"w": "Felipe", "s": 0, "e": 0.44}, {"w": "el", "s": 0.92, "e": 1.1}, {"w": "agua", "s": 1.1, "e": 1.28}, {"w": "nos", "s": 1.28, "e": 1.46}, {"w": "llega", "s": 1.46, "e": 1.66}, {"w": "a", "s": 1.66, "e": 1.76}, {"w": "los", "s": 1.76, "e": 1.88}, {"w": "tobillos", "s": 1.88, "e": 2.38}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": []}, {"id": "1e3b47ec", "duration": 4.361, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral", "intro": true}], "voice": {"text": "¡Tranquila! Eso lo sé yo de siempre: la tubería es del Ayuntamiento.", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/527_1.mp3", "duration": 4.011, "words": [{"w": "Tranquila", "s": 0, "e": 0.72}, {"w": "Eso", "s": 1.18, "e": 1.36}, {"w": "lo", "s": 1.36, "e": 1.5}, {"w": "sé", "s": 1.5, "e": 1.6}, {"w": "yo", "s": 1.6, "e": 1.7}, {"w": "de", "s": 1.7, "e": 1.8}, {"w": "siempre", "s": 1.8, "e": 2.02}, {"w": "la", "s": 2.38, "e": 2.48}, {"w": "tubería", "s": 2.48, "e": 2.92}, {"w": "es", "s": 2.92, "e": 2.98}, {"w": "del", "s": 2.98, "e": 3.12}, {"w": "Ayuntamiento", "s": 3.12, "e": 3.72}], "offset": 0.05, "tail": 0.12}, "shot": "medio", "texts": [], "overlays": [{"id": "5ce4c53c", "type": "emoji", "text": "🤯", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "a6f6c4c6", "duration": 4.353, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Manda huevos! Si sale de tu retrete, la tubería huele que apesta.", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/527_2.mp3", "duration": 4.003, "words": [{"w": "Manda", "s": 0, "e": 0.52}, {"w": "huevos", "s": 0.52, "e": 1.04}, {"w": "Si", "s": 1.3, "e": 1.46}, {"w": "sale", "s": 1.46, "e": 1.68}, {"w": "de", "s": 1.68, "e": 1.8}, {"w": "tu", "s": 1.8, "e": 1.9}, {"w": "retrete", "s": 1.9, "e": 2.28}, {"w": "la", "s": 2.48, "e": 2.56}, {"w": "tubería", "s": 2.56, "e": 2.98}, {"w": "huele", "s": 2.98, "e": 3.36}, {"w": "que", "s": 3.36, "e": 3.52}, {"w": "apesta", "s": 3.52, "e": 3.86}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": [], "overlays": [{"id": "1e5fd3ba", "type": "emoji", "text": "😱", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "579674a5", "duration": 7.02, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "jambo", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "Primo, dame un eurillo pa' la fregona… que me ahogo aquí.", "provider": "edge", "speaker": "jambo", "url": "/tmp/jb/527_3.mp3", "duration": 6.67, "words": [{"w": "Primo", "s": 0, "e": 0.52}, {"w": "dame", "s": 1.3, "e": 1.9}, {"w": "un", "s": 1.9, "e": 2.08}, {"w": "eurillo", "s": 2.08, "e": 2.68}, {"w": "pa'", "s": 2.68, "e": 3.3}, {"w": "la", "s": 3.3, "e": 3.92}, {"w": "fregona", "s": 3.92, "e": 4.54}, {"w": "que", "s": 4.54, "e": 4.8}, {"w": "me", "s": 4.8, "e": 5.04}, {"w": "ahogo", "s": 5.04, "e": 5.46}, {"w": "aquí", "s": 5.46, "e": 5.8}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [], "overlays": [{"id": "d3fa9da3", "type": "emoji", "text": "💸", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "04d9681e", "duration": 6.502, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral"}], "voice": {"text": "¡Coño! La culpa es del fontanero pirata que contrataste por internet, Rosa.", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/527_4.mp3", "duration": 6.152, "words": [{"w": "Coño", "s": 0, "e": 0.6}, {"w": "La", "s": 2.32, "e": 2.5}, {"w": "culpa", "s": 2.5, "e": 2.72}, {"w": "es", "s": 2.72, "e": 3.28}, {"w": "del", "s": 3.28, "e": 3.4}, {"w": "fontanero", "s": 3.4, "e": 3.88}, {"w": "pirata", "s": 3.88, "e": 4.22}, {"w": "que", "s": 4.22, "e": 4.32}, {"w": "contrataste", "s": 4.32, "e": 4.82}, {"w": "por", "s": 4.82, "e": 4.94}, {"w": "internet", "s": 4.94, "e": 5.28}, {"w": "Rosa", "s": 5.42, "e": 5.58}], "offset": 0.05, "tail": 0.12}, "shot": "general", "texts": [], "overlays": [{"id": "3e678e7a", "type": "emoji", "text": "🙄", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "bc95dc65", "duration": 5.6899999999999995, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "conchaqueton", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Hostia! A mí no me mires. Eso lo arreglamos la semana que viene, que tengo frío.", "provider": "edge", "speaker": "conchaqueton", "url": "/tmp/jb/527_5.mp3", "duration": 5.34, "words": [{"w": "Hostia", "s": 0, "e": 0.46}, {"w": "A", "s": 0.86, "e": 0.94}, {"w": "mí", "s": 0.94, "e": 1.12}, {"w": "no", "s": 1.12, "e": 1.24}, {"w": "me", "s": 1.24, "e": 1.36}, {"w": "mires", "s": 1.36, "e": 1.78}, {"w": "Eso", "s": 2.1, "e": 2.32}, {"w": "lo", "s": 2.32, "e": 2.44}, {"w": "arreglamos", "s": 2.44, "e": 2.82}, {"w": "la", "s": 2.82, "e": 2.96}, {"w": "semana", "s": 2.96, "e": 3.2}, {"w": "que", "s": 3.2, "e": 3.42}, {"w": "viene", "s": 3.42, "e": 3.74}, {"w": "que", "s": 4.0, "e": 4.06}, {"w": "tengo", "s": 4.06, "e": 4.26}, {"w": "frío", "s": 4.4, "e": 4.84}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [], "overlays": [{"id": "070e9710", "type": "emoji", "text": "😳", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "e9605f41", "duration": 5.032, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "rosa", "x": 0.72, "expr": "neutral"}], "voice": {"text": "¡Manda huevos! El seguro no cubre chapuzas, y se lava las manos.", "provider": "edge", "speaker": "rosa", "url": "/tmp/jb/527_6.mp3", "duration": 4.682, "words": [{"w": "Manda", "s": 0, "e": 0.94}, {"w": "huevos", "s": 0.94, "e": 1.38}, {"w": "El", "s": 1.64, "e": 1.8}, {"w": "seguro", "s": 1.8, "e": 2.1}, {"w": "no", "s": 2.1, "e": 2.36}, {"w": "cubre", "s": 2.36, "e": 2.7}, {"w": "chapuzas", "s": 2.7, "e": 3.18}, {"w": "y", "s": 3.18, "e": 3.46}, {"w": "se", "s": 3.46, "e": 3.58}, {"w": "lava", "s": 3.58, "e": 3.76}, {"w": "las", "s": 3.76, "e": 3.94}, {"w": "manos", "s": 3.94, "e": 4.16}], "offset": 0.05, "tail": 0.12}, "shot": "medio", "texts": [], "overlays": [{"id": "3a74d966", "type": "emoji", "text": "😤", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "a1a3061e", "duration": 4.952, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral"}], "voice": {"text": "¡Joder! Llevamos tres días sin ducharnos en este barrizal. ¡Que alguien haga algo!", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/527_7.mp3", "duration": 4.602, "words": [{"w": "Joder", "s": 0.74, "e": 1.12}, {"w": "Llevamos", "s": 1.52, "e": 1.8}, {"w": "tres", "s": 1.8, "e": 1.98}, {"w": "días", "s": 1.98, "e": 2.12}, {"w": "sin", "s": 2.12, "e": 2.28}, {"w": "ducharnos", "s": 2.28, "e": 2.54}, {"w": "en", "s": 2.54, "e": 2.68}, {"w": "este", "s": 2.68, "e": 2.78}, {"w": "barrizal", "s": 2.78, "e": 3.48}, {"w": "Que", "s": 3.48, "e": 3.68}, {"w": "alguien", "s": 3.68, "e": 3.84}, {"w": "haga", "s": 3.84, "e": 3.98}, {"w": "algo", "s": 3.98, "e": 4.16}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": [], "overlays": [{"id": "9deca3ef", "type": "emoji", "text": "🤯", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "4f16c3a6", "duration": 4.643, "transition": "flash", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "neo", "x": 0.72, "expr": "chulo", "intro": true}], "voice": {"text": "Nadie pagará los destrozos, señora Melano, si contrata fontaneros piratas sin factura.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/527_8.mp3", "duration": 4.293, "words": [{"w": "Nadie", "s": 0, "e": 0.6}, {"w": "pagará", "s": 0.6, "e": 0.96}, {"w": "los", "s": 0.96, "e": 1.08}, {"w": "destrozos", "s": 1.08, "e": 1.6}, {"w": "señora", "s": 1.66, "e": 1.86}, {"w": "Melano", "s": 1.86, "e": 2.13}, {"w": "si", "s": 2.13, "e": 2.4}, {"w": "contrata", "s": 2.4, "e": 2.78}, {"w": "fontaneros", "s": 2.78, "e": 3.22}, {"w": "piratas", "s": 3.22, "e": 3.6}, {"w": "sin", "s": 3.6, "e": 3.76}, {"w": "factura", "s": 3.76, "e": 4.12}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": []}, {"id": "b1cf5c11", "duration": 3.472, "transition": "zoom", "background": {"type": "set", "set": "salon", "hour": 14, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "cansado"}, {"who": "neo", "x": 0.72, "expr": "feliz"}], "shot": "general", "voice": {"text": "Sin factura oficial, los destrozos los pagas tú.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/527_9.mp3", "duration": 2.872, "words": [{"w": "Sin", "s": 0, "e": 0.42}, {"w": "factura", "s": 0.42, "e": 0.76}, {"w": "oficial", "s": 0.76, "e": 1.02}, {"w": "los", "s": 1.44, "e": 1.54}, {"w": "destrozos", "s": 1.54, "e": 1.92}, {"w": "los", "s": 1.92, "e": 2.06}, {"w": "pagas", "s": 2.06, "e": 2.38}, {"w": "tú", "s": 2.38, "e": 2.46}], "offset": 0.05, "tail": 0.12}, "texts": [{"id": "5f280390", "text": "Sin factura oficial, los destrozos los pagas tú", "style": "badge", "anim": "pop", "y": 0.12, "sfx": "impacto"}, {"id": "1d1d6272", "text": "Sin factura oficial, los destrozos los pagas tú.", "style": "hook", "anim": "pop", "start": 0.5, "y": 0.26}]}, {"id": "510c4a77", "duration": 4.199999999999999, "transition": "fade", "voice": null, "background": {"type": "set", "set": "salon", "hour": 22, "night": true}, "characters": [], "texts": [{"id": "d6309eef", "text": "REPARTO", "style": "badge", "anim": "pop", "start": 0.0, "y": 0.1, "sfx": "impacto"}, {"id": "78edb9c6", "text": "Rosa Melano", "style": "hook", "anim": "pop", "start": 0.3, "y": 0.24}, {"id": "74dfe62a", "text": "Felipe Lotas", "style": "hook", "anim": "pop", "start": 0.6499999999999999, "y": 0.36}, {"id": "b760ea17", "text": "Sindy Entes", "style": "hook", "anim": "pop", "start": 1.0, "y": 0.48}, {"id": "ebf9d756", "text": "Jambo Reseco", "style": "hook", "anim": "pop", "start": 1.3499999999999999, "y": 0.6}, {"id": "4465021e", "text": "Concha Quetón", "style": "hook", "anim": "pop", "start": 1.7, "y": 0.72}, {"id": "8c1b71ed", "text": "Neo", "style": "hook", "anim": "pop", "start": 2.05, "y": 0.84}, {"id": "86f6b6b9", "text": "By Neogest Lab", "style": "badge", "anim": "pop", "start": 2.5999999999999996, "y": 1.1}]}, {"id": "1704ec16", "kind": "outro", "duration": 3.0, "transition": "fade", "voice": null, "background": {"type": "gradient"}, "characters": [], "texts": [{"id": "9e3fe2e1", "text": "Apps con IA para tu negocio", "style": "hook", "anim": "pop", "start": 0.25, "y": 0.17}, {"id": "7df5e0e7", "text": "Pide tu prueba gratuita", "style": "hook", "anim": "pop", "start": 0.7, "y": 0.68}, {"id": "44ed174f", "text": "Sin tarjeta · sin datos bancarios · sin compromiso", "style": "badge", "anim": "pop", "start": 1.0, "y": 0.78}]}, {"id": "d6e23a05", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": []}]}
+{
+ "slug": "527_jambo_fontanero_factura_fuga",
+ "set": "salon",
+ "hora": 14,
+ "moraleja": "Sin factura oficial, los destrozos los pagas tú",
+ "gancho_tipo": "conflicto_en_marcha",
+ "gancho_casa": "Una fuga en casa: ¿quién paga? 💦",
+ "promesa": "¿Quién va a pagar los destrozos de la fuga?",
+ "giro": "Parecía culpa del Ayuntamiento y fue el fontanero pirata de Rosa",
+ "recuerdo": "Rosa ya alquilaba el trastero en negro (522)",
+ "bucle_visual": "Rosa señalando el charco del salón, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto?",
+   "t": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto?",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta.",
+   "t": "¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "ironia",
+   "v": "¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes?",
+   "t": "¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes?",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
+   "t": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "voz_tts": "Primooo… dame un eurillo pa la fregonaaa. Que me ahogo aquííí."
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa!",
+   "t": "¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa!",
+   "p": [
+    "felipe",
+    "rosa"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "conchaqueton",
+   "emo": "llora",
+   "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+   "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+   "p": [
+    "conchaqueton"
+   ],
+   "a": {
+    "conchaqueton": "habla"
+   },
+   "risas": true
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos!",
+   "t": "¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos!",
+   "p": [
+    "rosa"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
+   "t": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "desespera"
+   }
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+   "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "SIN FACTURA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Sin factura oficial, los destrozos los pagas tú.",
+   "t": "Sin factura oficial, los destrozos los pagas tú.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}
