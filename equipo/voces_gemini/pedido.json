@@ -1,28 +1,26 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "Rehacer solo réplicas con dicción rechazada por Calidad (527, 528, 529), 26/11/2026. Las escenas sin h/v se conservan para mantener el índice.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "527_jambo_fontanero_factura_fuga",
    "set": "salon",
-   "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
-   "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+   "hora": 14,
+   "moraleja": "Sin factura oficial, los destrozos los pagas tú",
+   "gancho_tipo": "conflicto_en_marcha",
+   "gancho_casa": "Una fuga en casa: ¿quién paga? 💦",
+   "promesa": "¿Quién va a pagar los destrozos de la fuga?",
+   "giro": "Parecía culpa del Ayuntamiento y fue el fontanero pirata de Rosa",
+   "recuerdo": "Rosa ya alquilaba el trastero en negro (522)",
+   "bucle_visual": "Rosa señalando el charco del salón, misma pose",
    "escenas": [
     {
      "e": "gancho",
-     "h": "rosa",
      "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
+     "t": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto?",
      "p": [
       "rosa",
       "felipe"
@@ -33,13 +31,10 @@
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
+     "t": "¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta.",
      "p": [
-      "felipe",
-      "rosa"
+      "felipe"
      ],
      "a": {
       "felipe": "presume"
@@ -47,13 +42,10 @@
     },
     {
      "e": "gag",
-     "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
+     "emo": "ironia",
+     "t": "¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes?",
      "p": [
-      "sindy",
-      "felipe"
+      "sindy"
      ],
      "a": {
       "sindy": "habla"
@@ -61,39 +53,22 @@
     },
     {
      "e": "gag",
-     "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "p": [
-      "rosa",
-      "sindy"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
      "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
+     "emo": "cansado",
+     "v": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
+     "t": "Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.",
      "p": [
-      "jambo",
-      "rosa"
+      "jambo"
      ],
      "a": {
-      "jambo": "delega"
+      "jambo": "habla"
      },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
+     "voz_tts": "Primo… dame un eurillo para la fregona. Que me ahogo aquí."
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "t": "¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa!",
      "p": [
       "felipe",
       "rosa"
@@ -105,57 +80,323 @@
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
      "p": [
-      "jambo",
-      "felipe"
+      "conchaqueton"
      ],
      "a": {
-      "jambo": "delega"
+      "conchaqueton": "habla"
      },
      "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
+     "voz_tts": "A mí no me mires. Eso, lo arreglamos la semana que viene. ¡Qué frío, hostia!"
     },
     {
      "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "emo": "enfado",
+     "t": "¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos!",
      "p": [
-      "sindy",
-      "jambo"
+      "rosa"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "enfado",
+     "t": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "desespera"
+     }
+    },
+    {
+     "e": "remate",
+     "emo": "seco",
+     "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "SIN FACTURA"
+    },
+    {
+     "e": "cierre",
+     "emo": "normal",
+     "t": "Sin factura oficial, los destrozos los pagas tú.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "528_jambo_barrio_cuenta_fiada",
+   "set": "salon",
+   "hora": 20,
+   "moraleja": "Fiar sin registro contable convierte la pérdida en norma",
+   "gancho_tipo": "pregunta_abierta",
+   "gancho_casa": "¿Quién se cenó las tortillas fiadas? 👀",
+   "promesa": "¿Quién va a pagar las tortillas fiadas?",
+   "giro": "Parecían deudas del barrio y eran invitaciones firmadas por Rosa",
+   "recuerdo": "Rosa ya hizo fichar con huella hasta para mear (521)",
+   "bucle_visual": "Rosa con la libreta de fiados abierta, misma pose",
+   "escenas": [
+    {
+     "e": "gancho",
+     "emo": "grita",
+     "t": "¿Quién se ha cenado las tortillas fiadas? ¡Me falta dinero en la caja!",
+     "p": [
+      "rosa",
+      "sindy"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "ironia",
+     "t": "¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera.",
+     "p": [
+      "sindy"
      ],
      "a": {
       "sindy": "habla"
      }
     },
     {
+     "e": "gag",
+     "emo": "chulea",
+     "t": "¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "presume"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.",
+     "t": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     },
+     "voz_tts": "Prima… apúntame dos raciones. Mañana te las pago. Te lo juro."
+    },
+    {
+     "e": "gag",
+     "emo": "sorpresa",
+     "t": "¡Espera, coño! Las cuatro cuentas llevan tu firma, Rosa. ¡Pone «invita la jefa»!",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "a": {
+      "sindy": "desespera"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "emo": "enfado",
+     "t": "¡Era por imagen, hostia! Una jefa generosa vende. Que lo pague la plantilla.",
+     "p": [
+      "rosa"
+     ],
+     "a": {
+      "rosa": "presume"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "t": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true,
+     "voz_tts": "¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Neo."
+    },
+    {
      "e": "remate",
-     "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "t": "Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja.",
      "p": [
       "neo",
       "rosa"
      ],
      "a": {
-      "neo": "presume"
+      "neo": "fria"
      },
-     "sello": "PILLADOS"
+     "sello": "PILLADA"
     },
     {
      "e": "cierre",
-     "h": "neo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "t": "Fiar sin registro contable convierte la pérdida en norma.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "529_jambo_cuidador_turno_domingo",
+   "set": "salon",
+   "hora": 15,
+   "moraleja": "El trabajo en festivo sin compensar roba vida privada",
+   "gancho_tipo": "afirmacion_imposible",
+   "gancho_casa": "Doce horas de domingo… ¿gratis? 👀",
+   "promesa": "¿Quién va a cubrir gratis la guardia del domingo?",
+   "giro": "Parecía un domingo gratis y Rosa ya se había cobrado la prima",
+   "recuerdo": "Rosa ya hizo fichar con huella a todo el mundo (521)",
+   "bucle_visual": "Felipe en el sofá con la agenda de papel, misma pose",
+   "escenas": [
+    {
+     "e": "gancho",
+     "emo": "sorpresa",
+     "t": "¡La jefa ha fichado el domingo por dos personas! ¡Y una soy yo!",
+     "p": [
+      "felipe",
+      "sindy"
+     ],
+     "a": {
+      "felipe": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "enfado",
+     "t": "¡Pues manda huevos! Yo el domingo descanso. ¡Aunque se hunda el barrio entero!",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "rosa",
+     "emo": "ironia",
+     "v": "¡Qué poca empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar.",
+     "t": "¡Qué poca empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar.",
+     "p": [
+      "rosa"
+     ],
+     "a": {
+      "rosa": "presume"
+     },
+     "voz_tts": "¡Qué poca… empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar."
+    },
+    {
+     "e": "gag",
+     "emo": "cansado",
+     "t": "Prima… yo hago la guardia. Diez pavos y un bocadillo.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "chulea",
+     "t": "¡Espera, espera! La prima del domingo ya está cobrada. Y en tu cuenta, Rosa. Lo sé de buena tinta.",
+     "p": [
+      "felipe",
+      "rosa"
+     ],
+     "a": {
+      "felipe": "presume"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "A mí el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene.",
+     "t": "A mí el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene.",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     },
+     "voz_tts": "A mí, el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene."
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "grita",
+     "v": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva el Neo.",
+     "t": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva el Neo.",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "desespera"
+     },
+     "risas": true,
+     "voz_tts": "¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva, el Neo."
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala, señora Melano. O haga usted las doce horas.",
+     "t": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala, señora Melano. O haga usted las doce horas.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "PILLADA",
+     "voz_tts": "Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala usted, señora Melano. O haga usted las doce horas."
+    },
+    {
+     "e": "cierre",
+     "emo": "normal",
+     "t": "El trabajo en festivo sin compensar roba vida privada.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
     }
    ]
   }
