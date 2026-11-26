@@ -41,7 +41,8 @@
     "texto": "Rosa pregunta quién se cenó las tortillas fiadas, hasta que se descubre que las invitaciones eran suyas. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
   "asset": "528_jambo_barrio_cuenta_fiada.mp4",
-  "_nota_creador": "26/11/2026 Creador (desatasco dicción): solo audio de dos réplicas rehecho con voz diseñada Gemini (ramas voces/2026-11-26-diccion y diccion4, voz_tts): Jambo «Prima… apúntame dos raciones. Mañana te las pago. Te lo juro.» (ahora completa; Whisper: «apúntame dos raciones, mañana te las pago, te lo juro») y Felipe «¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva, el Neo.» (Whisper de la réplica suelta: «¡Que lo resuelva el Neo!»; en la transcripción del vídeo mezclado Whisper small no la recoge entera, ojo). Guion, vídeo, giro y recuerdo sin cambios; mp4 nuevo jb528_d2.mp4 (59,9 s, LUFS −14,6). Pendiente de que Calidad reevalúe.",
-  "renderizado": "2026-11-26T15:39:07+00:00",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a0531facd43a9b0d1d20627f0947f658_jb528_d2.mp4"
+  "_nota_creador": "26/11/2026 Creador (desatasco dicción 3, modelo lite por cuota agotada; pedido en rama voces/2026-11-26-diccion6 con variantes): Sindy ahora «aquí se ficha con huella hasta para ir a mear» (subtítulo y voz reescritos; «para mear» salía «baramear»); Felipe scene 2 sin «¡Buah!» (en subtítulo y audio; la voz no lo decía) y réplica «¡Hay que joderse! Que lo resuelva el Neo» regenerada (voz_tts «Que lo resuelva… ¡el Neo!»). Whisper small sobre el mp4 MEZCLADO jb528_d3.mp4: «hasta para ir a mear» y «Una deuda de más de un mes prescribe» bien; la de Felipe sale «Invitas tú y pagamos nosotros. Ay, qué joderse. Que lo resuelva el ne.» (Neo cortado en la transcripción; suelta se oye «el neo»), riesgo residual. Jambo, giro y recuerdo sin cambios. Mp4 59,0 s. Pendiente de que Calidad reevalúe.",
+  "renderizado": false,
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/a0531facd43a9b0d1d20627f0947f658_jb528_d2.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/92473cda9a05e7c1429a6976b1a010bb_jb528_d3.mp4"
 }
