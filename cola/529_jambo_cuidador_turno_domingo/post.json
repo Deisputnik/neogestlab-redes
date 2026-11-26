@@ -42,7 +42,6 @@
   },
   "asset": "529_jambo_cuidador_turno_domingo.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco dicción): solo audio de cuatro réplicas rehecho con voz diseñada Gemini (ramas voces/2026-11-26-diccion y diccion2, voz_tts): «empatía» (Rosa), «Que lo resuelva, el Neo» (Sindy), «Devuélvala. Usted, señora Melano.» (Neo) y «A mí, el frío del domingo me mata» (Concha). Whisper sobre el vídeo mezclado: «Qué poca empatía», «que lo resuelva el neo», «Devuélbala, usted, señora Melano», «A mí el frío del domingo me mata». Guion, vídeo, giro y recuerdo sin cambios; mp4 nuevo jb529_d2.mp4 (63,4 s). Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/81c62f506bf4d043a99d56721c62d120_jb529_d1.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/f2a9fb24c18756891c60ebf013af795e_jb529_d2.mp4"
+  "renderizado": "2026-11-26T15:39:26+00:00",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/f2a9fb24c18756891c60ebf013af795e_jb529_d2.mp4"
 }

@@ -8,5 +8,9 @@
   "como_arreglarlo": "Centro: re-render de audio con voz_disenada corrigiendo la dicción de esas 4 frases (especialmente 'Que lo resuelva el Neo' y 'Devuélvala, señora Melano', que son las líneas de recuerdo y remate). No hace falta tocar guion.json ni vídeo/imagen, ya están bien; solo el audio de esas réplicas.",
   "fecha": "2026-11-26T11:13:18Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T11:11:47+00:00"
+  "render": "2026-11-26T11:11:47+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 84,
+  "caducado": "2026-11-26T15:39:26+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:39:26+00:00"
 }

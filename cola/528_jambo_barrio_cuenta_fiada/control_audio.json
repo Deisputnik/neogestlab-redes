@@ -1,11 +1,11 @@
 {
   "aprobado": false,
-  "duracion_s": 60.4,
+  "duracion_s": 59.94,
   "bloqueos": [
-    "voz distinta del guion: faltan ['para', 'mear', 'buah', 'prima', 'apuntame', 'dos', 'raciones', 'manana', 'te', 'las', 'pago', 'te', 'lo', 'juro', 'joderse', 'que', 'resuelva', 'el', 'neo'], sobran ['baramear', 'va', 'a', 'resuelvan', 'jo'] (rehacer esas frases)"
+    "voz distinta del guion: faltan ['para', 'mear', 'buah', 'neo'], sobran ['baramear', 'va', 'a', 'nego'] (rehacer esas frases)"
   ],
   "avisos": [],
-  "transcripcion": "¿Quién se ha cenado las tortillas fiadas? Me falta dinero en la caja. Pues manda huevos. Aquí se ficha con huella hasta baramear. ¿Y los fiados? En una libreta que firma cualquiera. Va, una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta. Espera, coño. Las cuatro cuentas llevan tu firma, Rosa. Poné, invita a la jefa. Era por imagen, hostia. Una jefa generosa vende. Que lo pague la plantilla. ¿Invitas tú y pagamos nosotros? Ay, joder. Que lo resuelvan, jo. Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja. Fiar sin registro contable convierte la pérdida en norma.",
+  "transcripcion": "¿Quién se ha cenado las tortillas fiadas? Me falta dinero en la caja. Pues manda huevos, aquí se ficha con huella hasta baramear. ¿Y los fiados? En una libreta que firma cualquiera. Va, una deuda de más de un mes prescribe. Eso es ley, lo sé de buena tinta. Prima, apúntame dos raciones, mañana te las pago, te lo juro. Espera coño, las cuatro cuentas llevan tu firma, Rosa. Poné, invita a la jefa. Era por imagen, hostia. Una jefa generosa vende, que lo pague la plantilla. ¿Invitas tú y pagamos nosotros? Ay, que joderse, que lo resuelva el nego. Resuelto, las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada, se lo debe usted a la caja. Fiar sin registro contable convierte la pérdida en norma.",
   "guion": "¿Quién se ha cenado las tortillas fiadas? ¡Me falta dinero en la caja! ¡Pues manda huevos! Aquí se ficha con huella hasta para mear. ¿Y los fiados? En una libreta que firma cualquiera. ¡Buah! Una deuda de más de un mes prescribe. Eso es ley. Lo sé de buena tinta. Prima… apúntame dos raciones. Mañana te las pago. Te lo juro. ¡Espera, coño! Las cuatro cuentas llevan tu firma, Rosa. ¡Pone «invita la jefa»! ¡Era por imagen, hostia! Una jefa generosa vende. Que lo pague la plantilla. ¿Invitas tú y pagamos nosotros? ¡Hay que joderse! Que lo resuelva el Neo. Resuelto. Las cuatro cuentas son invitaciones suyas, señora Melano. Nadie le debe nada. Se lo debe usted a la caja. Fiar sin registro contable convierte la pérdida en norma.",
   "lufs": -14.6,
   "pico_dbfs": -1.5
