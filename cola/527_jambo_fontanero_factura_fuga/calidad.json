@@ -1,17 +1,14 @@
 {
   "aprobado": false,
-  "nota": 87,
+  "nota": 86,
   "motivos": [
-    "Dicción defectuosa de la voz diseñada (no es jerga tipo 'illo/pa'): en la réplica de Jambo el guion dice 'dame un eurillo pa' la fregona' y se oye 'amé un orillo para la fregona'; son sustituciones de palabras reales que cambian el sentido, no elisiones coloquiales.",
-    "Segunda discrepancia en la réplica de Concha: guion 'Eso lo arreglamos la semana que viene' vs locución 'Sólo arreglamos la semana que viene'.",
-    "El resto del episodio cumple v11/v12: giro sembrado y presente, remate de Neo coincide con la moraleja, recuerdo del trastero en negro (522), bucle casa-casa correcto, logo 2026 correcto en todos los fotogramas, LUFS -14.95 y pico -1.44 dB dentro de rango, 64.5 s dentro de 45-70 s."
+    "El reintento de dicción no resolvió el problema original: la réplica de Jambo sigue mal ('dame un eurillo pa' la fregona. Que me ahogo aquí' se oye 'dame un neurillo para la fregona que me hago aquí'); 'eurillo'→'neurillo' y 'ahogo'→'hago' son sustituciones de palabras reales con cambio de sentido, no jerga tipo illo/pa que el control deba ignorar.",
+    "Nueva discrepancia de dicción en la réplica de Sindy, no señalada en el rechazo anterior y que no se tocó en este re-render: guion 'Como con el trastero en negro, pero con charco. Que lo resuelva el Neo' se oye 'Como con el trasero negro, pero con charco. Que los resuelva el neo'. 'trastero'→'trasero' es grave porque es la palabra clave del recuerdo del episodio 522 (trastero en negro) y queda irreconocible.",
+    "La réplica de Concha ('Eso lo arreglamos la semana que viene') sí quedó arreglada respecto al rechazo anterior.",
+    "Resto del episodio correcto: estructura v11/v12 (gancho conflicto en marcha, escalada, giro de Felipe sembrado, remate de Neo con moraleja, recuerdo del trastero intencionado aunque mal pronunciado), bucle casa-casa exacto, logo 2026 correcto en todos los fotogramas incluida la tarjeta de marca, LUFS -14.92 y pico -1.44 dB en rango, 64.9 s dentro de 45-70 s."
   ],
-  "como_arreglarlo": "CENTRO: regenerar solo esas dos líneas de audio (Jambo: 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' / Concha: 'A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!') con voz_disenada Gemini TTS y volver a mezclar; no hace falta rehacer el resto del vídeo ni el guion, que ya está correcto (giro, moraleja y recuerdo resueltos respecto al rechazo anterior).",
-  "fecha": "2026-11-26T11:11:28Z",
+  "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: Jambo 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' (vigilar especialmente 'eurillo' y 'ahogo', que ya fallaron en dos intentos) y Sindy '¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.' (vigilar 'trastero' y 'lo resuelva'). No hace falta tocar guion, vídeo, giro, recuerdo ni el resto del audio, que ya están correctos.",
+  "fecha": "2026-11-26T15:29:56Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:45:54+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 87,
-  "caducado": "2026-11-26T15:28:17+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:28:17+00:00"
+  "render": "2026-11-26T15:28:17+00:00"
 }
