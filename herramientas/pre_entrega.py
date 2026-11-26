@@ -81,6 +81,15 @@ def revisar_26(carpeta, post, guion, e, a):
         elif not (lambda cl: not cl or any(sum(w in norm(x) for w in cl) >= max(1, len(cl) // 2) for x in textos(guion.get("escenas") or [])))(
                 [w for w in re.findall(r"[a-z]{5,}", norm(guion["recuerdo"])) if w not in ("mismo", "misma", "vecino", "todos", "mundo")]):   # palabras clave, admite paráfrasis
             a.append("RECUERDO el campo «recuerdo» no aparece en ninguna réplica: tiene que decirlo un personaje")
+        dif = (cargar(os.path.join(RAIZ, "equipo", "voz_palabras_dificiles.json")) or {}).get("palabras") or {}
+        voz = " ".join(str(x.get("v") or x.get("t") or "") for x in (guion.get("escenas") or []) if isinstance(x, dict))
+        if not isinstance(post.get("renderizado"), str):   # solo lo que aún no se ha renderizado (lo ya renderizado lo juzga Calidad)
+            for w in dif:
+                if re.search(r"(?<![a-z])" + re.escape(norm(w)) + r"(?![a-z])", norm(voz)):
+                    e.append("VOZ palabra que la voz diseñada dice mal: «%s» (equipo/voz_palabras_dificiles.json): cámbiala antes del pedido de voces" % w)
+            for x in (guion.get("escenas") or []):
+                if isinstance(x, dict) and x.get("h") == "jambo" and len(str(x.get("v") or x.get("t") or "").split()) > 10:
+                    a.append("VOZ réplica de Jambo de más de 10 palabras: más riesgo de fallo de dicción")
         if (post.get("musica") or guion.get("musica")) and not re.search(r"m[uú]sica\s*:", post.get("texto", ""), re.I):
             e.append("MÚSICA falta la atribución «Música: …» en el texto del post (rechazo automático de Calidad)")
     elif (not jambo and (post.get("app") or post.get("app_slug")) and str(post.get("motor") or "") == "neogest-studio"

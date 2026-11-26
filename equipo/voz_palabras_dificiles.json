@@ -1,0 +1,19 @@
+{
+  "_nota": "26/11/2026, orden del dueño (opción b): palabras y giros que la voz diseñada de El Jambo (Gemini TTS) dijo mal y que el control de audio de Calidad (Whisper) rechazó. El Guionista no los usa (guionista_gemini.py los rechaza) y pre_entrega.py da ERROR si aparecen en un episodio. Si Calidad rechaza otra palabra por dicción, se añade aquí con su fecha y pieza.",
+  "palabras": {
+    "fregona": "527, 26/11: se oyó «freguna»",
+    "eurillo": "527, 26/11: se oyó «neurillo» / «orillo»",
+    "ahogo": "527, 26/11: se oyó «hago»",
+    "buena tinta": "528, 26/11: se oyó «guanatinta»",
+    "para mear": "528, 26/11: se oyó «baramear» (vale «para ir a mear»)",
+    "empatía": "529, 26/11: se oyó «impadia»",
+    "trastero": "527, 26/11: se oyó «trasero» (cambia el sentido)",
+    "devuélvala": "529, 26/11: se oyó «devuelvo a la»"
+  },
+  "reglas": [
+    "Réplicas cortas: golpe ≤ 14 palabras, remate de Neo ≤ 20, Jambo ≤ 10; frases de 3 a 8 palabras separadas por punto.",
+    "Nada de diminutivos inventados (-illo, -ito) en palabras raras, ni palabras poco comunes de cuatro o más sílabas.",
+    "Imperativos con pronombre pegado (devuélvala, apúntamelo) y tratamientos con género (señora/señor) justo antes de un nombre: mejor el nombre solo o el verbo sin pronombre.",
+    "Interjecciones sueltas («¡Buah!», «Pff») no cuentan como palabra del guion: van en el campo emo o fuera del texto."
+  ]
+}

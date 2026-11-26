@@ -49,6 +49,7 @@ Antes de escribir un guion desde cero, mira `equipo/guiones_gemini/pendientes/`:
 4. Atribución musical en el TEXTO del post («Música: …»), no solo en el campo `musica`.
 5. Moraleja del post coherente con la última réplica de Neo; réplica final de Neo ≤ 20 palabras.
 6. Tomas de app dentro del marco de móvil a zoom 1 con rótulo encima y subtítulos debajo (evita el solape subtítulo/botón de 109, 110, 407 y 408; LEEME).
+7. Voz que se entienda (26/11, orden del dueño, opción b): golpes ≤ 14 palabras, remate de Neo ≤ 20, Jambo ≤ 10, frases de 3-8 palabras separadas por punto y ninguna palabra de `equipo/voz_palabras_dificiles.json` (fregona, eurillo, buena tinta…). Si Calidad rechaza otra palabra por dicción, se añade a esa lista. Se arregla en el guion antes del pedido de voces, no regenerando la voz una y otra vez.
 Sin `pre_entrega.py` a 0 ERRORES no se entrega: se arregla primero.
 
 ## Escribe

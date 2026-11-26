@@ -61,14 +61,21 @@ PATRON_ARGUMENTO = re.compile(
     r"es (un|una) (derecho|obligación|falta de respeto)|eso (no )?es justo)\b",
     re.IGNORECASE,
 )
-MAX_PALABRAS_GAG = 18
+MAX_PALABRAS_GAG = 14   # 26/11/2026 (orden del dueño, opción b): 18 → 14; réplicas largas = más fallos de dicción de la voz diseñada
+MAX_PALABRAS_REMATE, MAX_PALABRAS_JAMBO = 20, 10
+# 26/11/2026: palabras que la voz diseñada (Gemini TTS) dice mal y que Calidad rechaza por control_audio (equipo/voz_palabras_dificiles.json)
+try:
+    _VPD = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "equipo", "voz_palabras_dificiles.json"), encoding="utf-8"))
+    PALABRAS_DIFICILES = list((_VPD.get("palabras") or {}).keys())
+except Exception:
+    PALABRAS_DIFICILES = []
 # 23/11/2026 (orden del dueño: «haz que mejore el guionista y las expresiones de voz»). El guion pedía 3 golpes de 14
 # palabras (unas 70 palabras: 30 s) para un episodio de 45-70 s, y el validador exigía «exactamente 3» mientras el prompt
 # permitía 4: el Creador tenía que reescribir cada guion para alargarlo y muchos se rechazaban por contradicción.
 # Formato vigente (v11): gancho + 5-8 golpes + remate de Neo + cierre, 120-185 palabras de voz, con Jambo en escena y
 # una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
 MIN_GAGS, MAX_GAGS = 5, 8
-MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 105, 170   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
+MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 100, 170   # 26/11: mínimo 105 → 100 al acortar las réplicas   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
 EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
 
 
@@ -116,12 +123,12 @@ def _prompt(n):
                 "emo": "sorpresa",
                 "t": "texto exacto que dice o el texto en pantalla, máx 8 palabras, situación reconocible desde el fotograma 0 (visible en los primeros 0,5 s, antes incluso de que se lea el texto entero); dirígete a otro personaje por su nombre si tiene sentido",
             },
-            {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 18 palabras), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
+            {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 14 palabras, en frases de 3-8 palabras separadas por punto), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
             {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
             {"e": "gag", "h": "jambo", "emo": "cansado", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, habla arrastrada: «Rosaaa, prima… un eurillo, que mañana te lo devuelvo…»)"},
             {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
-            {"e": "remate", "h": "neo", "emo": "seco", "t": "remate (máx 24 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
+            {"e": "remate", "h": "neo", "emo": "seco", "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
             {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
         ],
     }
@@ -276,6 +283,12 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    justo antes del giro, solo una vez).
 6. Cifras siempre en letra, cero palabras en inglés, ningún nombre propio como primera
    palabra de una frase.
+6 bis. VOZ QUE SE ENTIENDA (26/11/2026, orden del dueño): las réplicas se dicen con una voz sintética
+   y se comprueban con un transcriptor; si una palabra se oye mal, el episodio se rechaza. Por eso:
+   frases de 3 a 8 palabras separadas por punto; golpes de 14 palabras como mucho, remate de 20,
+   Jambo 10; palabras corrientes, nada de diminutivos inventados ni palabras raras largas; nada de
+   imperativos con pronombre pegado («devuélvala») ni «señora/señor» delante del nombre. PROHIBIDAS
+   (la voz las dice mal): {', '.join(PALABRAS_DIFICILES)}.
 7. Prohibido: suicidio, autolesión, enfermedades o muertes reales, víctimas, política de
    partido, colectivos, marcas o empresas reales, consejos médicos/legales/financieros,
    cualquier app real de Neogest Lab o de terceros en el vídeo (una app de IA FICTICIA e
@@ -303,7 +316,7 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    - cambia de humor en seco: del susurro pedigüeño al grito impaciente y otra vez a la calma, como si nada;
    - es listo a lo pícaro: se sabe las deudas de todo el barrio y las trampas del sistema.
    Orden del dueño 23/11 22:57: su estado NORMAL es de colocado y con sueño (nunca lo dice ni nadie lo
-   comenta: se le nota). Habla muy despacio, así que sus réplicas son CORTAS: máximo 12 palabras cada una.
+   comenta: se le nota). Habla muy despacio, así que sus réplicas son CORTAS: máximo 10 palabras cada una.
    Es el más desaliñado de todos (greñas, ojeras, barba, camiseta con manchas): los demás pueden aludir a
    su pinta. NADIE pronuncia la palabra «Jambo» en ninguna réplica (la voz la dice mal): se le llama
    «primo», «este», «el vecino», «el del trastero».
@@ -366,7 +379,7 @@ episodio y el bucle no quedaba idéntico; ahora es una tarjeta fija compartida).
 FORMATO VIGENTE v11 + RETENCIÓN v12 (23/11/2026). MANDA SOBRE TODO LO ANTERIOR: donde arriba leas «exactamente 3
 golpes», «5-7 escenas», «6 y 9 escenas» o «un episodio al día», vale lo de aquí.
 A) ESTRUCTURA: 1 gancho (máx 8 palabras) + entre {MIN_GAGS} y {MAX_GAGS} golpes "gag" en escalada (cada uno
-   máx {MAX_PALABRAS_GAG} palabras, cada uno peor que el anterior) + 1 remate de Neo (máx 24 palabras) + 1 cierre
+   máx {MAX_PALABRAS_GAG} palabras, cada uno peor que el anterior) + 1 remate de Neo (máx 20 palabras) + 1 cierre
    de Neo con la moraleja (6-9 palabras). En total entre {MIN_PALABRAS_VOZ} y {MAX_PALABRAS_VOZ} palabras de voz
    (eso da 45-70 s). CUENTA las palabras de cada "t" antes de responder: si un golpe pasa de
    {MAX_PALABRAS_GAG}, recórtalo; no lo partas en dos escenas iguales.
@@ -553,9 +566,15 @@ def _validar(ep):
     remate = next((e for e in escenas if e.get("e") == "remate"), None)
     if remate and remate.get("h") != "neo":
         motivos.append("el remate no lo dice Neo")
+    if remate and len(str(remate.get("t", "")).split()) > MAX_PALABRAS_REMATE:
+        motivos.append(f"remate de Neo con {len(str(remate.get('t', '')).split())} palabras (máx {MAX_PALABRAS_REMATE})")
     for e in escenas:
-        if e.get("h") == "jambo" and len(str(e.get("t", "")).split()) > 12:
-            motivos.append(f"réplica de Jambo con {len(str(e['t']).split())} palabras (máx 12: habla muy despacio)")
+        tl = str(e.get("t", "")).lower()
+        for w in PALABRAS_DIFICILES:
+            if re.search(r"(?<![a-záéíóúñ])" + re.escape(w) + r"(?![a-záéíóúñ])", tl):
+                motivos.append(f"palabra que la voz dice mal: «{w}» (equipo/voz_palabras_dificiles.json): cámbiala")
+        if e.get("h") == "jambo" and len(str(e.get("t", "")).split()) > MAX_PALABRAS_JAMBO:
+            motivos.append(f"réplica de Jambo con {len(str(e['t']).split())} palabras (máx {MAX_PALABRAS_JAMBO}: habla muy despacio)")
         if e.get("h") and re.search(r"\bjambo\b", str(e.get("t", "")), re.I):
             motivos.append("una réplica dice «Jambo»: nadie pronuncia ese nombre (se le llama «primo», «este», «el vecino»)")
     motivos.extend(_validar_retencion(ep, escenas, gags, remate))
@@ -619,7 +638,7 @@ def _prompt_correccion(malos):
         "- Jambo Reseco (\"h\": \"jambo\") dice al menos un golpe; cada escena lleva \"emo\" (grita, enfado, sorpresa, ironia, chulea, cansado, "
         "susurra, miedo, llora, rie, seco, pregunta o normal) y casi ninguna es normal;\n"
         "- la moraleja tiene entre 6 y 9 palabras;\n"
-        "- las réplicas de \"jambo\" tienen 12 palabras como máximo y ninguna réplica de nadie contiene la palabra «Jambo»;\n"
+        "- las réplicas de \"jambo\" tienen 10 palabras como máximo, los golpes 14 y el remate 20, sin palabras de la lista de voz difícil y ninguna réplica de nadie contiene la palabra «Jambo»;\n"
         "- retención: \"gancho_tipo\", \"promesa\" (5-10 palabras) y \"giro\" (6-14 palabras) van rellenos; el gancho arranca en mitad del lío (sin saludar "
         "ni explicar) y lleva exclamación, pregunta, cifra o puntos suspensivos; exactamente UN golpe lleva \"giro\": true, entre el 3.º y el penúltimo; "
         "nunca dos réplicas seguidas del mismo personaje; el remate de Neo repite una palabra del gancho o de la promesa y la responde;\n"
