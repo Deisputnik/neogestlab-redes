@@ -1,13 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 82,
-  "motivos": [
-    "Sigue faltando el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado). No está ninguno de los dos, así que no se puede verificar que la voz se generó con ElevenLabs tal y como exige la orden vigente. Este motivo ya se señaló en el calidad.json anterior y no se ha corregido.",
-    "El bloqueo 2 (texto cortado en la transición ANTES/DESPUÉS ~t=16.5-16.8s) SÍ está arreglado en este render: el banner 'Gestión Integral 7D · demo con datos ficticios' y los rótulos de la interfaz se ven completos y legibles."
-  ],
-  "como_arreglarlo": "CREADOR: añadir en post.json el campo \"motor_voz\": \"elevenlabs\" si la voz de este render ya se generó con ElevenLabs (bastaría con editar el texto del post, sin re-render), o \"_voz_nota\" justificando que se usó edge por presupuesto agotado. Si la voz NO es de ElevenLabs y no hay justificación de presupuesto, hay que rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md). El resto de la pieza (imagen, audio, cierre, contenido) ya está correcto.",
+  "aprobado": true,
+  "nota": 93,
+  "comentario": "Re-render correcto: el solape de t≈16.5s del rechazo anterior está resuelto (fotogramas 14-18s limpios, banner de app por encima del móvil y subtítulos por debajo, sin cortes ni pisadas). motor_voz: elevenlabs ya presente en post.json (confirmado el fix del bug de calidad_api.py que no lo leía). Audio -13.9 LUFS / pico -1.4 dB, sin distorsión. Duración 33.6s dentro de 25-45s de promos de app. Gancho con pregunta concreta en el primer segundo, demo de app con datos ficticios rotulados, ANTES/DESPUÉS claro (SIGUES APUNTANDO → YA DESCONTADO). Cierre con tarjeta e isotipo 2026 correctos, \"By Neogest Lab\" y \"Enlace en el perfil\". Afirmaciones (descuento de stock por albarán, módulo de compras) respaldadas por _fuentes/_comprobado de la ficha. Texto del post con cierre fijo correcto y sin embudo prohibido.",
+  "fecha": "2026-11-26T10:48:08Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:26:35+00:00",
-  "fecha_evaluacion_invalida": "2026-11-26T10:29:17Z",
-  "reevaluar": "26/11 11:05 UTC: evaluación hecha con el bug de calidad_api.py (no recibía motor_voz de post.json; arreglado en 6167365). post.json sí lleva \"motor_voz\": \"elevenlabs\". Sin «fecha», piezas_pendientes la vuelve a evaluar."
+  "render": "2026-11-26T10:26:35+00:00"
 }

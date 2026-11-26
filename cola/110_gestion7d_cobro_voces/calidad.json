@@ -1,13 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 87,
-  "motivos": [
-    "post.json sigue sin declarar \"motor_voz\" (ni \"elevenlabs\" ni \"edge\") ni \"_voz_nota\" justificando otro motor. Orden del dueño 23/11/2026: toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" explícito en post.json, salvo nota de presupuesto agotado. Sin ese campo no se puede verificar el cumplimiento de la orden, así que no se aprueba.",
-    "El fallo de solape de subtítulo sobre el botón 'Abrir enlace' señalado en la revisión anterior SÍ está corregido en este render (fotograma t=16.9s): texto y UI ya no se pisan. Se deja constancia por si ayuda a cerrar la petición de plantilla en peticiones_mejora.md."
-  ],
-  "como_arreglarlo": "CENTRO: añadir explícitamente \"motor_voz\": \"elevenlabs\" en post.json (o \"_voz_nota\" si se usó edge por falta de cuota). Es edición de texto en post.json, sin necesidad de re-render ya que el vídeo y el audio en sí están correctos (LUFS -13.88, pico -1.5dB, sin solapes de UI). En cuanto se añada ese campo, la pieza queda lista para aprobar.",
+  "aprobado": true,
+  "nota": 93,
+  "comentario": "Re-render del 26/11 corrige el solape de subtítulo sobre el botón \"Abrir enlace\" (comprobado limpio en t=14,15,16,16.9,17,18s con el marco de móvil nuevo). post.json ya declara \"motor_voz\": \"elevenlabs\" explícito (el rechazo anterior fue por un bug del verificador que no leía ese campo, ya arreglado en 6167365). Logo 2026 correcto en insignia y tarjeta de cierre (coincide con la referencia oficial). Audio -13.88 LUFS, pico -1.5dB, sin silencios largos. Duración 33.8s dentro de 25-45s de promo. Texto no nombra Stripe/Redsys/Bizum (cumple prohibido_afirmar), cierre fijo de prueba gratuita presente en el pie. Gancho con conflicto concreto (\"Factura enviada... ¿y el cobro?\"), demo con datos ficticios rotulada, ANTES/DESPUÉS claro (factura enviada -> cobro confirmado).",
+  "fecha": "2026-11-26T10:48:23Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:26:27+00:00",
-  "fecha_evaluacion_invalida": "2026-11-26T10:29:33Z",
-  "reevaluar": "26/11 11:05 UTC: evaluación hecha con el bug de calidad_api.py (no recibía motor_voz de post.json; arreglado en 6167365). post.json sí lleva \"motor_voz\": \"elevenlabs\". Sin «fecha», piezas_pendientes la vuelve a evaluar."
+  "render": "2026-11-26T10:26:27+00:00"
 }
