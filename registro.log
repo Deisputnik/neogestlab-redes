@@ -1,21 +1,3 @@
-2026-11-21 19:58  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 19:58  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:13  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:13  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:13  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 20:43  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 22:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 22:28  316_ias_oficina_ep20_pedido: publicando…
-2026-11-21 22:28  316_ias_oficina_ep20_pedido: fallo al publicar 1/3: gh release download cola: release not found
-2026-11-21 22:28  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 22:28  Control de audio: FALLA dura 41.8 s (máximo 30); falta el giro (escena «remate»); voz distinta del guion: faltan [], sobran ['jambo', 'se', 'llevo', 'mi', 'taladro', 'como', 'lo', 'del', 'sabado', 'pero', 'con', 'herramientas', 'pues', 'que', 'te', 'lo', 'devuelva', 'ya', 'hillo', 'y', 'asi', 'dejas', 'de', 'darme', 'la', ; duración 41.8 s
-2026-11-21 22:28  349_jambo_vecino_taladro: control de audio del vídeo externo: aprobado=False LUFS=-14.4 pico=-1.4
-2026-11-21 22:28  349_jambo_vecino_taladro: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-21 22:29  Control de audio: FALLA dura 38.6 s (máximo 30); falta el giro (escena «remate»); voz distinta del guion: faltan [], sobran ['iyo', 'cindy', 'esta', 'app', 'te', 'paga', 'el', 'triple', 'por', 'cada', 'reparto', 'de', 'verdad', 'jambo', 'la', 'ultima', 'vez', 'que', 'me', 'prometiste', 'algo', 'gratis', 'acabe', 'pagando',; duración 38.57 s
 2026-11-21 22:29  350_jambo_app_fantasma: control de audio del vídeo externo: aprobado=False LUFS=-14.3 pico=-1.3
 2026-11-21 22:29  350_jambo_app_fantasma: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
@@ -598,3 +580,21 @@
 2026-11-26 19:09  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 19:09  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 19:09  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:40  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:40  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:40  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:40  526_jambo_camarero_inventario_roturas: publicando…
+2026-11-26 19:41  subida directa fallida ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta en esta misma pasada
+2026-11-26 19:42  publicado por video_url desde la URL pública del vídeo (la subida directa falló)
+2026-11-26 19:42  526_jambo_camarero_inventario_roturas: YouTube publicado https://youtube.com/shorts/Ydc1T7sMQQ4
+2026-11-26 19:42  526_jambo_camarero_inventario_roturas: Facebook publicado https://www.facebook.com/reel/2331022447695235
+2026-11-26 19:42  526_jambo_camarero_inventario_roturas: publicado https://www.instagram.com/reel/DgNxdXKhF-F/
+2026-11-26 19:42  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 19:42  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')

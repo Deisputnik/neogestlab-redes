@@ -1,0 +1,19 @@
+{
+  "media_id": "18171747814467696",
+  "enlace": "https://www.instagram.com/reel/DgNxdXKhF-F/",
+  "prueba_no_seguidores": false,
+  "metodo": "video_url",
+  "publicado": "2026-11-26T18:42:30+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "Ydc1T7sMQQ4",
+    "enlace": "https://youtube.com/shorts/Ydc1T7sMQQ4",
+    "titulo": "¿Quién paga las botellas rotas? #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "2331022447695235",
+    "enlace": "https://www.facebook.com/reel/2331022447695235",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
