@@ -1,28 +1,31 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "527 d4: Jambo corto, Concha y Neo con variantes (10-15).",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
+ "solo": [
+  "jambo",
+  "conchaqueton",
+  "neo"
+ ],
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "527_jambo_fontanero_factura_fuga",
    "set": "salon",
-   "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
-   "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+   "hora": 14,
+   "moraleja": "Sin factura oficial, los destrozos los pagas tú",
+   "gancho_tipo": "conflicto_en_marcha",
+   "gancho_casa": "Una fuga en casa: ¿quién paga? 💦",
+   "promesa": "¿Quién va a pagar los destrozos de la fuga?",
+   "giro": "Parecía culpa del Ayuntamiento y fue el fontanero pirata de Rosa",
+   "recuerdo": "Rosa ya alquilaba el trastero en negro (522)",
+   "bucle_visual": "Rosa señalando el charco del salón, misma pose",
    "escenas": [
     {
      "e": "gancho",
-     "h": "rosa",
      "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
+     "t": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto?",
      "p": [
       "rosa",
       "felipe"
@@ -33,13 +36,10 @@
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
+     "t": "¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta.",
      "p": [
-      "felipe",
-      "rosa"
+      "felipe"
      ],
      "a": {
       "felipe": "presume"
@@ -47,13 +47,10 @@
     },
     {
      "e": "gag",
-     "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
+     "emo": "ironia",
+     "t": "¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes?",
      "p": [
-      "sindy",
-      "felipe"
+      "sindy"
      ],
      "a": {
       "sindy": "habla"
@@ -61,39 +58,22 @@
     },
     {
      "e": "gag",
-     "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "p": [
-      "rosa",
-      "sindy"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
      "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
+     "emo": "cansado",
+     "v": "Primo… suelta un euro. Que me mojo entero.",
+     "t": "Primo… suelta un euro. Que me mojo entero.",
      "p": [
-      "jambo",
-      "rosa"
+      "jambo"
      ],
      "a": {
-      "jambo": "delega"
+      "jambo": "habla"
      },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
+     "voz_tts": "Primo… suelta un euro. Que me mojo entero."
     },
     {
      "e": "gag",
-     "h": "felipe",
      "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "t": "¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa!",
      "p": [
       "felipe",
       "rosa"
@@ -105,57 +85,158 @@
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
      "p": [
-      "jambo",
-      "felipe"
+      "conchaqueton"
      ],
      "a": {
-      "jambo": "delega"
+      "conchaqueton": "habla"
      },
      "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
+     "voz_tts": "A mí no me mires. Eso, lo arreglamos la semana que viene. ¡Qué frío, hostia!"
     },
     {
      "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "emo": "enfado",
+     "t": "¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos!",
      "p": [
-      "sindy",
-      "jambo"
+      "rosa"
      ],
      "a": {
-      "sindy": "habla"
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "emo": "enfado",
+     "t": "¡Tres días sin ducharnos, joder! Como lo del trastero, en negro, pero con charco. Que lo resuelva el Neo.",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "desespera"
      }
     },
     {
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "v": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
      "p": [
       "neo",
       "rosa"
      ],
      "a": {
-      "neo": "presume"
+      "neo": "fria"
      },
-     "sello": "PILLADOS"
+     "sello": "SIN FACTURA",
+     "voz_tts": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros."
     },
     {
      "e": "cierre",
-     "h": "neo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "t": "Sin factura oficial, los destrozos los pagas tú.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Primo… suelta un euro. Que me mojo todo.",
+     "t": "Primo… suelta un euro. Que me mojo entero.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     },
+     "voz_tts": "Primo… suelta un euro. Que me mojo todo."
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Primo… dame un euro. Que me mojo entero.",
+     "t": "Primo… suelta un euro. Que me mojo entero.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     },
+     "voz_tts": "Primo… dame un euro. Que me mojo entero."
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     },
+     "risas": true,
+     "voz_tts": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío! ¡Hostia!"
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "t": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     },
+     "risas": true,
+     "voz_tts": "A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!"
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "SIN FACTURA",
+     "voz_tts": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora… Melano, los paga usted. Enteros."
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "t": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "SIN FACTURA",
+     "voz_tts": "Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. ¡Enteros!"
     }
    ]
   }
