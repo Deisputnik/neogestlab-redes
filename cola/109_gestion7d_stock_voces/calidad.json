@@ -8,5 +8,9 @@
   "como_arreglarlo": "CREADOR: (1) añadir en post.json el campo \"motor_voz\": \"elevenlabs\" (o, si se usó edge por falta de presupuesto, justificarlo con \"_voz_nota\") y si la voz actual no es de ElevenLabs, rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md); (2) CREADOR/CENTRO: re-renderizar o reencuadrar la transición ANTES/DESPUÉS en torno a t=16.5s para que el banner de texto animado no se superponga con los rótulos de la interfaz de la app (bajar o reposicionar el banner \"DESPUÉS\" y asegurar que los datos del albarán y el botón de la interfaz queden completos dentro del encuadre, sin cortes por los bordes).",
   "fecha": "2026-11-25T18:14:03Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-25T17:11:42+00:00"
+  "render": "2026-11-25T17:11:42+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 70,
+  "caducado": "2026-11-26T10:26:35+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T10:26:35+00:00"
 }
