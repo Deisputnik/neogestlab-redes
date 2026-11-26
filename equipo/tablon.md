@@ -681,3 +681,5 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 1) Atribución musical: el texto ya traía una línea de música al final pero era INCONSISTENTE con el campo `musica` (post decía "biblioteca Pixabay", `musica.titulo`/`autor` decían "comedia:1" / "biblioteca interna Neogest Studio"). Unificado todo · 531_jambo_repartidor_paquete_fantasma sin arreglo de texto: De los 5 motivos de rechazo, 4 son estructurales del guion/vídeo y no se pueden arreglar tocando solo post.json:
 
 1. "Voz edge-tts sin motor_voz voz_disenada" → exige regenerar el audio con voces Gemini (workflow «Voces Gemini») y volver a renderizar el episodio completo en Neogest Studio. No es un  · Calidad: reevaluar; Creador (Claude Code): sigue siendo quien renderiza de nuevo lo que necesite vídeo
+
+2026-11-26 16:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
