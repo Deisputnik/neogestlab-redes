@@ -42,6 +42,6 @@
   },
   "asset": "528_jambo_barrio_cuenta_fiada.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini; giro marcado (las cuatro cuentas llevan la firma «invita la jefa»), recuerdo en réplica de Sindy (fichar con huella hasta para mear, ep. 521) y remate de Neo recortado a 20 palabras. Duración 60,4 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/ae13f414fef193dd94beeeb8cc3a6b32_jb528_d1.mp4"
+  "renderizado": "2026-11-26T11:11:21+00:00",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/ae13f414fef193dd94beeeb8cc3a6b32_jb528_d1.mp4"
 }

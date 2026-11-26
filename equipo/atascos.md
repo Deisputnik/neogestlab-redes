@@ -1,17 +1,15 @@
 # Atascos de la cola (generado por herramientas/atascos.py; no editar a mano)
-Actualizado: 2026-11-26 10:46 UTC · 11 piezas paradas.
+Actualizado: 2026-11-26 11:11 UTC · 9 piezas paradas.
 Regla (DIRECTIVA §7 bis): cada rol empieza su pasada por SUS filas de aquí, de arriba abajo.
 
-Por rol: Calidad 2, Creador 5, Supervisor 4
+Por rol: Calidad 4, Creador 3, Supervisor 2
 
 | Urgencia | Pieza | Sale | Tipo | Rol | Motivo | Arreglo |
 |---|---|---|---|---|---|---|
-| sale en < 24 h | 110_gestion7d_cobro_voces | 2026-11-26T14:45:00+01:00 | rechazada | Creador | post.json sigue sin declarar "motor_voz" (ni "elevenlabs" ni "edge") ni "_voz_nota" justificando otro motor. Orden del dueño 23/11/2026: toda promo de app debe llevar "motor_voz": "elevenlabs" explícito en post.json, salvo nota de presupuesto agotado. Sin ese  | CENTRO: añadir explícitamente "motor_voz": "elevenlabs" en post.json (o "_voz_nota" si se usó edge por falta de cuota). Es edición de texto en post.json, sin necesidad de re-render ya que el vídeo y el audio en sí están correctos (LUFS -13.88, pico -1.5dB, sin |
-| sale en < 24 h | 109_gestion7d_stock_voces | 2026-11-26T16:25:00+01:00 | rechazada | Creador | Sigue faltando el campo "motor_voz" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar "motor_voz": "elevenlabs" (o "_voz_nota" justificando edge por presupuesto agotado). No está ninguno de los dos, así que no se puede verificar q | CREADOR: añadir en post.json el campo "motor_voz": "elevenlabs" si la voz de este render ya se generó con ElevenLabs (bastaría con editar el texto del post, sin re-render), o "_voz_nota" justificando que se usó edge por presupuesto agotado. Si la voz NO es de  |
-| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T18:05:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| sale en < 24 h | 526_jambo_camarero_inventario_roturas | 2026-11-26T22:00:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
-| sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
-| sale en < 72 h | 529_jambo_cuidador_turno_domingo | 2026-11-27T12:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
+| sale en < 24 h | 527_jambo_fontanero_factura_fuga | 2026-11-26T18:05:00+01:00 | sin_nota | Calidad | renderizada hace 0.4 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 526_jambo_camarero_inventario_roturas | 2026-11-26T22:00:00+01:00 | sin_nota | Calidad | renderizada hace 0.4 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 24 h | 528_jambo_barrio_cuenta_fiada | 2026-11-27T09:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
+| sale en < 72 h | 529_jambo_cuidador_turno_domingo | 2026-11-27T12:30:00+01:00 | sin_nota | Calidad | renderizada hace 0.0 h sin calidad.json vigente | la Calidad (API) corre cada hora desde reloj.yml; si pasa de 2 h, lanzar calidad_api.yml a mano |
 | sale en < 72 h | 530_jambo_fontanero_madrugada_factura | 2026-11-27T15:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | sale en < 72 h | 531_jambo_repartidor_paquete_fantasma | 2026-11-27T18:30:00+01:00 | sin_render | Supervisor | esperando al ciclo (descarga del vídeo externo) | si pasa de 1 h, lanzar ciclo.yml |
 | más adelante | 532_ghplus_vertical_hyperframes |  | rechazada | Creador | No se puede evaluar: el asset 532_ghplus_vertical_hyperframes.mp4 no existe en la release «cola» (inspeccionar_video devuelve error 'no encuentro el asset'). Sin vídeo no hay ffprobe, silencedetect, LUFS ni fotogramas que revisar, así que no se puede dar un ve | CENTRO/CREADOR: falta el render en la release 'cola' para esta pieza (532_ghplus_vertical_hyperframes). Hay que comprobar si el ciclo de render falló o no se ha ejecutado todavía para este asset y relanzarlo (si no hay un ciclo en curso, lanzar ciclo.yml); una |

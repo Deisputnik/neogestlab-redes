@@ -1,21 +1,3 @@
-2026-11-21 14:02  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 14:02  Voz con edge-tts: 7 frases en 6 s
-2026-11-21 14:02  Voz: silencios recortados por frase (s): [0.13, 0.1, 0.13, 0.14, 0.12, 0.13, 0.13]
-2026-11-21 14:02  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.6), np.float64(1.8), np.float64(3.7), np.float64(3.0), np.float64(4.3), np.float64(4.6), np.float64(4.3)]
-2026-11-21 14:02  Voz: alineación palabra a palabra (small, 13.3 s): 7/7 frases
-2026-11-21 14:02  Mezcla: voz -15.9 LUFS, música -22.0 LUFS (con ducking -24.6), la música baja 6.0 dB (p90) bajo la voz, ratio 2.212; máster -15.76 -> -14.0 LUFS, pico -1.3 dBFS; huecos de voz: []
-2026-11-21 14:03  Control de audio: OK; duración 18.93 s
-2026-11-21 14:03  316_ias_oficina_ep20_pedido: renderizado con voz y subido a la release 'cola'
-2026-11-21 14:03  Voz con edge-tts: 7 frases en 8 s
-2026-11-21 14:03  Voz: silencios recortados por frase (s): [0.14, 0.13, 0.13, 0.12, 0.13, 0.12, 0.1]
-2026-11-21 14:03  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(4.1), np.float64(4.3), np.float64(3.4), np.float64(2.3), np.float64(4.6), np.float64(5.2), np.float64(4.1)]
-2026-11-21 14:03  Voz: alineación palabra a palabra (small, 10.6 s): 7/7 frases
-2026-11-21 14:03  Mezcla: voz -15.6 LUFS, música -22.3 LUFS (con ducking -25.4), la música baja 6.0 dB (p90) bajo la voz, ratio 2.088; máster -15.47 -> -14.0 LUFS, pico -1.3 dBFS; huecos de voz: []
-2026-11-21 14:03  Control de audio: OK; duración 21.07 s
-2026-11-21 14:04  403_margen_venta_reel: renderizado con voz y subido a la release 'cola'
-2026-11-21 14:04  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 14:12  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-21 14:12  999_jambo_piloto_barrio: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-21 14:13  Voz con edge-tts: 7 frases en 7 s
 2026-11-21 14:13  Voz: silencios recortados por frase (s): [0.12, 0.13, 0.12, 0.13, 0.13, 0.12, 0.11]
 2026-11-21 14:13  Voz: pico de cada frase normalizado a -6 dBFS (ganancia aplicada, dB): [np.float64(2.3), np.float64(3.3), np.float64(2.1), np.float64(2.6), np.float64(4.6), np.float64(4.8), np.float64(3.6)]
@@ -598,3 +580,21 @@
 2026-11-26 11:46  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 11:46  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 11:46  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  Control de audio: FALLA voz distinta del guion: faltan ['para', 'mear', 'buah', 'prima', 'apuntame', 'dos', 'raciones', 'manana', 'te', 'las', 'pago', 'te', 'lo', 'juro', 'joderse', 'que', 'resuelva', 'el', 'neo'], sobran ['baramear', 'va', 'a', 'resuelvan', 'jo'] (rehacer esas frases); duración 60.4 s
+2026-11-26 12:11  528_jambo_barrio_cuenta_fiada: control de audio del vídeo externo: aprobado=False LUFS=-14.6 pico=-1.5
+2026-11-26 12:11  528_jambo_barrio_cuenta_fiada: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-26 12:11  Control de audio: FALLA voz distinta del guion: faltan ['empatia', 'a', 'mi', 'el', 'que', 'en', 'lo', 'resuelva', 'neo', 'devuelvala'], sobran ['impadia', 'tambien', 'al', 'el', 'no', 'me', 'sube', 'balneo', 'devuelvo', 'a', 'la', 'a'] (rehacer esas frases); duración 62.99 s
+2026-11-26 12:11  529_jambo_cuidador_turno_domingo: control de audio del vídeo externo: aprobado=False LUFS=-14.6 pico=-1.2
+2026-11-26 12:11  529_jambo_cuidador_turno_domingo: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-26 12:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')

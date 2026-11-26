@@ -42,6 +42,6 @@
   },
   "asset": "529_jambo_cuidador_turno_domingo.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini; giro marcado (Rosa ya se cobró la prima del domingo) y recuerdo en réplica de Sindy (fichar con huella, ep. 521); remate de Neo sin cambios de fondo. Duración 63,0 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/81c62f506bf4d043a99d56721c62d120_jb529_d1.mp4"
+  "renderizado": "2026-11-26T11:11:47+00:00",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/81c62f506bf4d043a99d56721c62d120_jb529_d1.mp4"
 }

@@ -9,5 +9,9 @@
   "como_arreglarlo": "Centro: re-render con voz_disenada. Creador: marcar giro y añadir recuerdo de episodio anterior. El resto no necesita cambios.",
   "fecha": "2026-11-25T17:50:00Z",
   "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json."
+  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
+  "aprobado_anterior": false,
+  "nota_anterior": 86,
+  "caducado": "2026-11-26T11:11:47+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T11:11:47+00:00"
 }

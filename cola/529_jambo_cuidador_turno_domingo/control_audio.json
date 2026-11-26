@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "duracion_s": 62.99,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['empatia', 'a', 'mi', 'el', 'que', 'en', 'lo', 'resuelva', 'neo', 'devuelvala'], sobran ['impadia', 'tambien', 'al', 'el', 'no', 'me', 'sube', 'balneo', 'devuelvo', 'a', 'la', 'a'] (rehacer esas frases)"
+  ],
+  "avisos": [],
+  "transcripcion": "La jefa ha fichado el domingo por dos personas y una soy yo. Pues manda, huevos. Yo el domingo descansó, aunque se hunda el barrio entero. Que poca impadía, coño. A los abuelos se les quiere 12 horas seguidas y sin protestar. Prima, yo hago la guardia. 10 pavos y un bocadillo. Espera, espera. La prima del domingo ya está cobrada. Y en tu cuenta, Rosa. Lo sé de buena tinta. También al frío del domingo me mata. Hostia, frío. Eso lo arreglamos la semana que viene. Tu cobras. ¿Y nosotros curramos? Como lo de fichar con huella, joder. Pero el festivo, que no me sube el balneo. Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuelvo a la señora Melano. ¿O haga usted las 12 horas? El trabajo en festivo sin compensar roba a vida privada.",
+  "guion": "¡La jefa ha fichado el domingo por dos personas! ¡Y una soy yo! ¡Pues manda huevos! Yo el domingo descanso. ¡Aunque se hunda el barrio entero! ¡Qué poca empatía, coño! A los abuelos se les quiere doce horas seguidas. Y sin protestar. Prima… yo hago la guardia. Diez pavos y un bocadillo. ¡Espera, espera! La prima del domingo ya está cobrada. Y en tu cuenta, Rosa. Lo sé de buena tinta. A mí el frío del domingo me mata. ¡Hostia, qué frío! Eso lo arreglamos la semana que viene. ¿Tú cobras y nosotros curramos? ¡Como lo de fichar con huella, joder, pero en festivo! Que lo resuelva el Neo. Resuelto. La prima del domingo la cobra quien trabaja el domingo. Devuélvala, señora Melano. O haga usted las doce horas. El trabajo en festivo sin compensar roba vida privada.",
+  "lufs": -14.6,
+  "pico_dbfs": -1.2
+}
