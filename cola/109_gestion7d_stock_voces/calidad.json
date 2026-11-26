@@ -1,16 +1,12 @@
 {
   "aprobado": false,
-  "nota": 70,
+  "nota": 82,
   "motivos": [
-    "Sigue faltando el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado). No está ninguno de los dos, así que no se puede verificar que la voz se generó con ElevenLabs. Este motivo ya se señaló en el calidad.json anterior y no se ha corregido.",
-    "Bloqueo 2 (texto ilegible/cortado), mismo fallo que el rechazo anterior sin corregir: en el fotograma ~t=16.5s (transición ANTES/DESPUÉS de la demo) el banner 'Gestión Integral 7D · demo con datos ficticios' se superpone con los rótulos de la interfaz ('FACTUR...', 'PED-20...', etc.) cortándolos por el borde, y el texto animado 'DESPUÉS LA' se solapa con el botón 'Serv...' de la app, dejando ambos ilegibles durante esa escena."
+    "Sigue faltando el campo \"motor_voz\" en post.json: desde la orden del dueño 23/11/2026 toda promo de app debe llevar \"motor_voz\": \"elevenlabs\" (o \"_voz_nota\" justificando edge por presupuesto agotado). No está ninguno de los dos, así que no se puede verificar que la voz se generó con ElevenLabs tal y como exige la orden vigente. Este motivo ya se señaló en el calidad.json anterior y no se ha corregido.",
+    "El bloqueo 2 (texto cortado en la transición ANTES/DESPUÉS ~t=16.5-16.8s) SÍ está arreglado en este render: el banner 'Gestión Integral 7D · demo con datos ficticios' y los rótulos de la interfaz se ven completos y legibles."
   ],
-  "como_arreglarlo": "CREADOR: (1) añadir en post.json el campo \"motor_voz\": \"elevenlabs\" (o, si se usó edge por falta de presupuesto, justificarlo con \"_voz_nota\") y si la voz actual no es de ElevenLabs, rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md); (2) CREADOR/CENTRO: re-renderizar o reencuadrar la transición ANTES/DESPUÉS en torno a t=16.5s para que el banner de texto animado no se superponga con los rótulos de la interfaz de la app (bajar o reposicionar el banner \"DESPUÉS\" y asegurar que los datos del albarán y el botón de la interfaz queden completos dentro del encuadre, sin cortes por los bordes).",
-  "fecha": "2026-11-25T18:14:03Z",
+  "como_arreglarlo": "CREADOR: añadir en post.json el campo \"motor_voz\": \"elevenlabs\" si la voz de este render ya se generó con ElevenLabs (bastaría con editar el texto del post, sin re-render), o \"_voz_nota\" justificando que se usó edge por presupuesto agotado. Si la voz NO es de ElevenLabs y no hay justificación de presupuesto, hay que rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md). El resto de la pieza (imagen, audio, cierre, contenido) ya está correcto.",
+  "fecha": "2026-11-26T10:29:17Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-25T17:11:42+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 70,
-  "caducado": "2026-11-26T10:26:35+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T10:26:35+00:00"
+  "render": "2026-11-26T10:26:35+00:00"
 }
