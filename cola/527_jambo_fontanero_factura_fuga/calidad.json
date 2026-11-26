@@ -10,5 +10,9 @@
   "como_arreglarlo": "Creador: reescribir la réplica de Neo para que coincida con la moraleja, añadir giro y recuerdo. Centro: voz_disenada.",
   "fecha": "2026-11-25T17:50:00Z",
   "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json."
+  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
+  "aprobado_anterior": false,
+  "nota_anterior": 82,
+  "caducado": "2026-11-26T10:45:54+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T10:45:54+00:00"
 }

@@ -42,6 +42,6 @@
   },
   "asset": "526_jambo_camarero_inventario_roturas.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini (rama voces/2026-11-26-desatasco); guion con giro sembrado (Sindy ve al vecino con el barril: tropezó y tumbó las tres cajas), recuerdo dicho en réplica de Felipe (el vecino que pinchó la luz para sus tomates, ep. 522), humor negro más frío en el remate de Neo. Duración 63,5 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/13c9e27d9ae66b0b7e421fbe876dec82_jb526_d1.mp4"
+  "renderizado": "2026-11-26T10:46:14+00:00",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/13c9e27d9ae66b0b7e421fbe876dec82_jb526_d1.mp4"
 }

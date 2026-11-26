@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "duracion_s": 64.5,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['dame', 'eurillo', 'eso', 'lo', 'que', 'frio', 'en', 'lo'], sobran ['ame', 'orillo', 'para', 'solo', 'los'] (rehacer esas frases)"
+  ],
+  "avisos": [],
+  "transcripcion": "El agua nos llega a los tobillos. ¿Quién coño paga esto? Tranquila, jefa. La tubería es del ayuntamiento. Paga el alcalde. Lo sé de buena tinta. ¿Del alcalde? Si sale de tu retrete, hostia. ¿No te lo arreglo uno el martes? Primo, amé un orillo para la fregona. Que me ahogo aquí. ¡Ahí está! Coño. El fontanero pirata que pillaste por internet. Sin factura, Rosa. A mí no me mires. Sólo arreglamos la semana que viene. Me cago en todo. El seguro no cubre nada sin factura. Se lava las manos. Tres días sin ducharnos, joder. Como con el trastero negro, pero con charco. Que los resuelva el neo. Resuelto. Sin factura no hay seguro ni garantía ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros. Sin factura oficial, los destrozos los pagas tú.",
+  "guion": "¡El agua nos llega a los tobillos! ¿Quién coño paga esto? ¡Tranquila, jefa! La tubería es del Ayuntamiento. Paga el alcalde. Lo sé de buena tinta. ¿Del alcalde? ¡Si sale de tu retrete, hostia! ¿No te lo arregló uno el martes? Primo… dame un eurillo pa' la fregona. Que me ahogo aquí. ¡Ahí está, coño! El fontanero pirata que pillaste por internet. ¡Sin factura, Rosa! A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia! ¡Me cago en todo! El seguro no cubre nada sin factura. ¡Se lava las manos! ¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo. Resuelto. Sin factura no hay seguro, ni garantía, ni fontanero. Los destrozos, señora Melano, los paga usted. Enteros. Sin factura oficial, los destrozos los pagas tú.",
+  "lufs": -14.9,
+  "pico_dbfs": -1.4
+}

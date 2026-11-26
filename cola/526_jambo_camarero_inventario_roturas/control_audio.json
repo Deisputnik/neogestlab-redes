@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "duracion_s": 63.5,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['cerveza', 'buah', 'lo', 'se', 'tinta', 'era', 'prestado', 'prima', 'manana', 'te', 'lo', 'devuelvo', 'vacio', 'cene', 'el'], sobran ['cervezas', 'bah', 'a', 'los', 'he', 'cinta', 'a', 'escene', 'al'] (rehacer esas frases)"
+  ],
+  "avisos": [],
+  "transcripcion": "Tres cajas de cervezas reventadas en el suelo. Esto lo paga, Felipe. Bah, tranquila, jefa. Las roturas las paga a Europa. Los he de buena cinta. ¿Qué paga a Europa? Andalla, y ese reguero de cerveza, hasta el trastero, ¿qué? Prima, válgame. Yo solo pasaba. ¿Qué te estaba diciendo? Lo he visto yo, Rosa. El vecino se llevaba un barril acuestas, tropezó y tumbó las tres cajas, hostia. Me da igual quien fuera. Se lo descuento a Felipe, que escene el mes que viene. Yo? Si fué este, joder. El mismo que pinchó la luz para sus tomates, que lo resuelva al neo. Resuelto. La rotura la causó el vecino, y ahí testigo. Descontar la de otra nomina no es contabilidad, señora Melano. Es venganza. Los riesgos del negocio jamás deben cargarse al trabajador.",
+  "guion": "¡Tres cajas de cerveza reventadas en el suelo! ¡Esto lo paga Felipe! ¡Buah! Tranquila, jefa. Las roturas las paga Europa. Lo sé de buena tinta. ¿Que paga Europa? ¡Anda ya! ¿Y ese reguero de cerveza hasta el trastero, qué? Prima… válgame. Yo solo pasaba… ¿Qué te estaba diciendo? ¡Lo he visto yo, Rosa! El vecino se llevaba un barril a cuestas. ¡Tropezó y tumbó las tres cajas, hostia! Era prestado, prima… Mañana te lo devuelvo. Vacío. Me da igual quién fuera. Se lo descuento a Felipe. Que cene el mes que viene. ¿Yo? ¡Si fue este, joder! El mismo que pinchó la luz para sus tomates. Que lo resuelva el Neo. Resuelto. La rotura la causó el vecino, y hay testigo. Descontarla de otra nómina no es contabilidad, señora Melano. Es venganza. Los riesgos del negocio jamás deben cargarse al trabajador.",
+  "lufs": -14.6,
+  "pico_dbfs": -1.6
+}

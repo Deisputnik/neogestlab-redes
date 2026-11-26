@@ -42,7 +42,7 @@
   },
   "asset": "527_jambo_fontanero_factura_fuga.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini; Neo ya no dice «nadie pagará» y coincide con la moraleja (sin factura no hay seguro y los destrozos los paga Rosa); giro sembrado (el fontanero pirata que contrató Rosa) y recuerdo en réplica de Sindy (trastero en negro, ep. 522). Duración 64,5 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
-  "renderizado": false,
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/c25f659b0f9fa088155c8801705b01ab_jb527_d1.mp4",
-  "_cuando_anterior": "2026-11-26T08:30:00+01:00"
+  "renderizado": "2026-11-26T10:45:54+00:00",
+  "_cuando_anterior": "2026-11-26T08:30:00+01:00",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/c25f659b0f9fa088155c8801705b01ab_jb527_d1.mp4"
 }
