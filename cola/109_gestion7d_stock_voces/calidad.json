@@ -6,7 +6,8 @@
     "El bloqueo 2 (texto cortado en la transición ANTES/DESPUÉS ~t=16.5-16.8s) SÍ está arreglado en este render: el banner 'Gestión Integral 7D · demo con datos ficticios' y los rótulos de la interfaz se ven completos y legibles."
   ],
   "como_arreglarlo": "CREADOR: añadir en post.json el campo \"motor_voz\": \"elevenlabs\" si la voz de este render ya se generó con ElevenLabs (bastaría con editar el texto del post, sin re-render), o \"_voz_nota\" justificando que se usó edge por presupuesto agotado. Si la voz NO es de ElevenLabs y no hay justificación de presupuesto, hay que rehacerla con gen_promos.py + render.mjs --final en Neogest Studio (ver herramientas/estudio/LEEME.md). El resto de la pieza (imagen, audio, cierre, contenido) ya está correcto.",
-  "fecha": "2026-11-26T10:29:17Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:26:35+00:00"
+  "render": "2026-11-26T10:26:35+00:00",
+  "fecha_evaluacion_invalida": "2026-11-26T10:29:17Z",
+  "reevaluar": "26/11 11:05 UTC: evaluación hecha con el bug de calidad_api.py (no recibía motor_voz de post.json; arreglado en 6167365). post.json sí lleva \"motor_voz\": \"elevenlabs\". Sin «fecha», piezas_pendientes la vuelve a evaluar."
 }

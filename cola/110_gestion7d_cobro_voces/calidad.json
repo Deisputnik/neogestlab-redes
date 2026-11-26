@@ -6,7 +6,8 @@
     "El fallo de solape de subtítulo sobre el botón 'Abrir enlace' señalado en la revisión anterior SÍ está corregido en este render (fotograma t=16.9s): texto y UI ya no se pisan. Se deja constancia por si ayuda a cerrar la petición de plantilla en peticiones_mejora.md."
   ],
   "como_arreglarlo": "CENTRO: añadir explícitamente \"motor_voz\": \"elevenlabs\" en post.json (o \"_voz_nota\" si se usó edge por falta de cuota). Es edición de texto en post.json, sin necesidad de re-render ya que el vídeo y el audio en sí están correctos (LUFS -13.88, pico -1.5dB, sin solapes de UI). En cuanto se añada ese campo, la pieza queda lista para aprobar.",
-  "fecha": "2026-11-26T10:29:33Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T10:26:27+00:00"
+  "render": "2026-11-26T10:26:27+00:00",
+  "fecha_evaluacion_invalida": "2026-11-26T10:29:33Z",
+  "reevaluar": "26/11 11:05 UTC: evaluación hecha con el bug de calidad_api.py (no recibía motor_voz de post.json; arreglado en 6167365). post.json sí lleva \"motor_voz\": \"elevenlabs\". Sin «fecha», piezas_pendientes la vuelve a evaluar."
 }

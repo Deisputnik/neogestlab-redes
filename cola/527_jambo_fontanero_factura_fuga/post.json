@@ -18,7 +18,7 @@
   },
   "motor": "neogest-studio",
   "texto": "El agua llega a los tobillos y Felipe jura que la tubería es del Ayuntamiento. La realidad: el fontanero «pirata» que contrató Rosa por internet, sin factura.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: sin factura oficial, los destrozos los pagas tú.\nMándaselo a quien contrata «lo barato» sin factura.\n#humornegro #fontaneria #facturas #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
-  "cuando": "2026-11-26T08:30:00+01:00",
+  "cuando": "2026-11-26T18:05:00+01:00",
   "formula": "El Jambo que sabe v5.2 (gancho conflicto en marcha, escalada de 3 golpes con giro, remate de Neo, moraleja + recuerdo)",
   "_fuentes": [],
   "_comprobado": "Episodio de humor sin cifras verificables; el fontanero sin factura es el giro de ficción, no un caso real.",
@@ -43,5 +43,6 @@
   "asset": "527_jambo_fontanero_factura_fuga.mp4",
   "_nota_creador": "26/11/2026 Creador (desatasco, Claude Code): qué cambió: re-render con voces diseñadas Gemini; Neo ya no dice «nadie pagará» y coincide con la moraleja (sin factura no hay seguro y los destrozos los paga Rosa); giro sembrado (el fontanero pirata que contrató Rosa) y recuerdo en réplica de Sindy (trastero en negro, ep. 522). Duración 64,5 s, LUFS entre −14,6 y −14,9, qc sin avisos. Pendiente de que Calidad reevalúe.",
   "renderizado": false,
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/c25f659b0f9fa088155c8801705b01ab_jb527_d1.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/c25f659b0f9fa088155c8801705b01ab_jb527_d1.mp4",
+  "_cuando_anterior": "2026-11-26T08:30:00+01:00"
 }
