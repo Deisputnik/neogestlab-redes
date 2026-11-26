@@ -4,1406 +4,1427 @@
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "Hola, de momento no puedo confirmar detalles de esa app concreta, pero puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Abw3ZzfTVwCR_TF8ogkgo4b\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AzG4pbr3GYOwEEe6mfShpZ3\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Buenas! Si quieres probar GPS Andaluz, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_rmAHL39H6_aPK22ftwEI2\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXanU_d8PRvpReulnw3KKVK\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribir. MEDICATOR es orientativo y no sustituye a tu médico. Si quieres verla en acción, pide la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AdvzB39-eCQz1pPJWIZZgsw\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9_3jlK-1ne4iEWyQOYME56\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AcrzByp1E3y8-sJgVAv9fnl\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ah6EGat_0jnHYhyZwoeLmNv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AfdFrUvBj2fwVIHHZPLmm8R\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ActiTjCCGy5L6JStFhixXRv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9l5ZpONRqcPowfHtJjtz4f\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AG5czC0ZHsjXUQuPNGRTEGB\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "Si quieres echarle un ojo, puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXTyXO8BsyJCHn3Q-qKspTu\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQQySuQ469VGFLfRnHa5D9K\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Puedes probar GPS Andaluz desde el enlace de la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkcM3OsXgf556u-_Z74-9mN\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A4i-RKi4YfjX_aRULrP1qJW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Aquí tienes la prueba gratuita de MEDICATOR, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkW-HTsLfTLSFXXV3G6oGeC\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AR5hiLmAJ4vgEDlPst-_1Oz\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASqMB1ODebe5mZDPr4TW_Vx\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArnION-5t1j-KDx5CjAk1eX\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AV9aI2_LERNvKc94QKR3BjX\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AymK4P5dXCSXb0SaM3eFTys\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2P7pNhfkN-i82xqNMppAau\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AH3QcRRpX4kX1P2oPIieYTT\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "Hola, de momento no puedo confirmarte detalles de esa app concreta por aquí. Lo que sí puedes hacer es probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ACKkgzzjKQ4yxLTgLpKvzUg\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQXKZUk4SV_bglPNIArAP8c\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Si quieres echarle un vistazo, puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJ6IAWwjbWBtvhgWVL6y86z\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUkWdYuFHaijB1ecvIfNaL8\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué tal! Puedes probar Medicator sin tarjeta, sin datos bancarios y sin compromiso en este enlace: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Recuerda que es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aala56VmLEsK79widJVufnO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Az0PyDiaE4FgWDW6TbUon8M\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A8j52PUkjCXle1lAK4hdyTY\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AcMUZ0IpPrlcrnBVZDIXj5s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APnbJlUz1PV66og0sQrW1CY\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsIjnMUgJWdASnUrThQ_xBY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AWaPn2V-alB-l-cOOHQ5dEg\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aq6cWEm8AQINsi6o-8rPx9s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJY1qbSpE3r4Ij-x0f9N0mo\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AFWh2TIcTxBAfnD8GIzFIrA\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AN6MXi6PIprhCOuBvkafy9D\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGFLCn_gz9rDQaQaQhwD7DF\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Auib_IM_f_zy2PTjmFim_1U\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "spam",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AyM3w9nFbadvr7T64O-m026\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "spam",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIV_i4eEhpAFxiktA9QLZ09\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "spam",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AvXSgo2dJ-3Wq69DEOhrrcV\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYfElEEZ_flG7n93qKDGoW5\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUFrT6NC4kcuaytcsFg5SgC\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhepDmqHJYaUUlVcK46cLZF\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6osN5GHrrQPhjyVzUHQzgN\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AiziKR8J0ry4OPKYr67VAPk\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3fg1vNkU8B7U9SV8BknLR9\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADXQ5u4wBpj9rgV6ChJQmDB\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2AGPbjKGnGYU3XAscwQAbu\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUUo0H9IDhrXlredMc6t57u\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQXiAIc05kAPKlOhgr3hWEW\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0St56MTIgtCV0848CGizZZ\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aup2f__fx2mceSuFpUVCo-B\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOLxQB9uzEuufs97jX8vH_H\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aw8bFPY4msZNbOVis7OLDAH\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AFfYsmYlE7-42ZSBBkEl07S\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3qTwE_0pC8d_VqKbrMC4Fk\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "spam",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADQk-p_QheFFAi8dHWoKQBi\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A637FIFdUbgANXyQE3JuJPe\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "spam",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A5BNuOM_KVL35VBzQ7e1V5k\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQyzegVVCVkZFxUlOwtLw1s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "spam",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A-UgKV0fT3cji4omoOnW6_u\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aexho99CoEs2i2NkXw_8Jtj\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AK0U6dHhYeKFrlaotU8WaKd\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHIIbW8nyHOhQUsJSEx15SC\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASgF70lajq6h0-75b1i2nLi\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AwNRsogIN8eW6CNJqLkpyW_\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A1R4Ba5BLC5cCaY9V8PBKo3\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AbA_s_iAIV77dWPfbPhyIco\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AEGpQGYu67A_0OMT977I1R_\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ar14sjUW8pLeVIvuYpUkPhL\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANmy2T584yosxnYAxi2SEpu\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0ntRBjTi9pQ6u3_X6ntL0p\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQu-0vWqKxazQNvmdaKOCJj\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aj_zDpCcYvoWn1mcYkPpqq5\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AnOUXVMMKe2QLvK-sdgtIfF\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APB_sObxx25mxGSFj5KCUTj\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110265391536765_1126425530299455",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATPtjZooozV8Dnx0XdESwvN\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110331751536765_1145656004541910",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVjCLhxE9nGD4PhttgxsU3t\"}}"
- },
- {
-  "canal": "facebook",
-  "id": "122110443915536765_1132614266144733",
-  "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVue4kxfc6a1LD_dLx5sRsY\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AeSeGWQslgzjlr_rDoAHp4F\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AuU6VtK7Hexgwa_4Xf61Wdd\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ai-1W_ATf0NsTkxj3_qc3H5\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AcDhvVk9qUMuZG5sd8KVfY_\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADBzDDUI_mLGw43kHNW0D3b\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aq81toNENlSBWouXCCDiDl5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIpOwftpq_tjVg8G4N_NHc5\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhCkT7rX8nPL4mtpcKWaY06\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJtZ15IEK5WotLwSgMAK1yT\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATnvCJ8sqspSQFcV3o73ZrB\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"At5p2sXqLZEUAi_jLi4lnYG\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AS9EQJBlg87yfzpNubbpwAu\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQtxxLrjfLeAWPESQENJQbH\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYLZ5njphC3_r0fH6P67Q-A\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aj3IA_k1h9I2gcDQJ0kXl_W\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsC5Pm0b5sti3WnzBnicd1T\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "spam",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGJLwFoy71Nryxj53neo_tq\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "spam",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AucdyjAtqQ1dMA0c8G_AnMl\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "spam",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0mNj0K4cssqCxxQ7F-c7Qq\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQWZ-1I8Dsu7fS35DLUVSz8\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AX7P9px558toWpopCPCfZk7\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APZIW7PYhjcAdfmhZvLvo18\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AehFhRPsMtWCrMZmhoQ5pID\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Azab7xZWoBvA3dryvX8jT4R\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AxNl3xGuRlFTQtDQr4Wcbyk\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A8k-l6ZHOY8Nv0Hlt6H_Xms\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHJvnx7756SKGpqZ2eZBUJ-\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AxBhuioE93Bhb-Wo2aBvXX9\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_06S6T1iqYbaf8GqsZWOaM\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Am85bouqAFSpwm34lVxbo_b\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOyxIRQtO_6f9oHP6Iodlws\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhwQguAw_NIAaR0kB9VbctP\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ABFjrrRY7tf7KLUj0uPlLGL\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "texto": "",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AuPizLUlsUDKuU0Cx56c2Te\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AnCjeyPJrR6FJFqnn22HGp2\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AV7-LsGLLCB5lYujzmMMWC-\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "ocultar",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXNIiRyZzq9761tTM8JmseC\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "Hola, de momento no puedo darte detalles sobre esa app concreta, pero puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso y ver todo por ti mismo: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AY4dcRmkQRV0XnOxZzojk67\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AibLi6l0FfKL5UCHeICevBh\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Si quieres echarle un vistazo, la prueba es gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVZS7NU_XyGIJdyE725Wmyi\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0WlpvYQbFloLNKUVcMuChn\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Gracias por escribir! Puedes probar MEDICATOR sin tarjeta, sin datos bancarios y sin compromiso. Recuerda que es orientativo y no sustituye a tu médico: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A8q-HA4j6dE88If3qIjAhmk\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHL1xGeWH8wg5wd4OHAAz3I\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A89fvVTfTsQN4L7lzdlb-Xo\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AptSjDLNUN636X4fF8lD_OA\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9Ww08kxYbDvwsW_Mc2uug_\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AAgpL-obxmY-nvSQpqOaZdv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlKHprfgFephQkLXLmFKeJl\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9pg-FuOy2ab2ZOn79WYQzU\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0SYO6tftkK82wSerfBGQpN\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_PVeU-z8q7TJ8ZvIOGp9Ot\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AxXZ4lGxPieOwFEP2miUHl5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aoowcmdu9NATv8p2BULEyDd\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AKSkRbHAcaepOxPWrE1HRTp\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjNwJ9VqNLu7DAtGETLT_6O\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7AeouVh9qBTauuqXT7eQ7O\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AgGXFV8XCfVwGdqCb2SeOAz\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ALuxaHuPASCUkcQ4dprtTaa\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Az-3VpGlni1ke8B5pZZti70\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AROUxXbaxyXnHY6iEnFrDIO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Akc8V3gBAVvFyItb2-Ip_Fe\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATsC5WDb64l1OecukIA7FHS\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AT7HbLTTxpVkT9bB3jyOswU\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AMPYbo6y7O0eZlGHmi8i0Q0\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AWnhGrx4wzzLvRarobPiJnq\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AqCL-vCE7_yreqJ_8hIcYG9\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7llmx2R-5LAgOXrT0yW3fy\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ara1fmspV_J8w_v_criDZX7\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3wZls7dzMYJkMsHDcLscNP\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlWsbiE0gVFZo1-Sk-XijvP\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AoYnns9bu6oC2q47wS6-7u9\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AveMaFcxvSDv17tv2LKVTdU\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AwA03QLJ2OJz6sGEcqsYGFn\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AgsQudyHXESf6FM_dXozDee\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AyI3WD_h4eOtey0aVeeSD9R\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2JIsDKgo9r3JHzj7XUi5Oy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ALQxPLY9Qoqycwr0XFYfgAq\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A5zDos8RMT2LYGrQo-_fW-l\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHmTxAOhIxJQEq2YJOzZ9Cs\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArJ0YVdyq6Qghxl2aYomiu9\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkQGUfcS11dMtTDqKN921Td\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AiUud_s4ZivA-x-srD6Ce7z\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ah-DCLrExJkWce2ESMDep1q\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
   "texto": "",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsPgPcuDadifunvTmTNbwrZ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AD2v5phGnUvVOE82XQp_hWn\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AzKAYv3iGMfTBMrx026vTXm\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9PMsipb65ItEgimKQ8692_\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AenT_MOWyB4OjXhQUVSx2kP\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANXfhz85TgGqDG_9KKg0uds\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "ocultar",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AwQFolSp1lviigTezl4uVeH\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A8vHjehJRvNsNw1cTQOzwry\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ac_D2L9MRCehwHVQdP_ymjA\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASpeKnQGIqsAjZ8doA5Bol2\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, la prueba gratuita es sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ax9pQ4CHzeGEDGNu5ihfSph\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Az6OIyYrAXB8YqmzXCXCSZ2\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por interesarte. MEDICATOR es orientativo y no sustituye a tu médico. Puedes solicitar la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGX8jq_Xk-pmKjJ11-tC_JO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANpRPPIbTVGM5p1ykxGRYMF\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aud1Lwk189OlGHF-1VOx-VG\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AeauuN-S3tVfsGnkalMpZpY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Hola, si quieres echarle un vistazo a GPS Andaluz puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhPtpDS3YTnzYp1CaQ0lzfo\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjRT5Lon0G7TfWaS3Ct4SQz\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Aquí tienes la prueba gratuita de MEDICATOR, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AEjHsOtSzoYjt0QWtDZ0zEd\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsNC9FOgIFEYwwPQE1yb1HV\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_Nqes2JQasFOZHdREhqSYd\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AV4584u7Ix2iNe3vG_2U3u-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ApnOpXGQP1bgSxI7ZfkdMa3\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArcreGrqDKuX_CcPGsNuVAN\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Claro, puedes probar MEDICATOR gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6HK58uyZBaifLzsbNBGwsV\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Avv6K13DZiRHdZv2m_gAlNO\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ALs-idOzYGD6rT9ErUFtWBO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AI0T3_uDaZaKCmY9M1Cwq6B\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes pedir la prueba gratuita sin tarjeta ni compromiso en este enlace: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6M1t-t6QJde_K_kkCYEDsl\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ah5qFlO4-j3O-9Dg_HnhiQ0\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "MEDICATOR está pensada para personas mayores y quien les cuida: pastillas del día, citas y constantes. Puedes solicitar la prueba gratuita sin tarjeta ni datos bancarios aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHopLAdZBAlPIP6sff6YBro\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_XwowCRqYt0fu5-n17HiLg\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres ver cómo funciona Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQonmZeyLO2q_Lc9HuaPKM_\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AIFZY2pGCTp0rkggsRhn8aC\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Puedes probar GPS Andaluz cuando quieras; de momento te dejo el enlace para pedir tu prueba: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaDMQU5VE5c_Svb4D7EB-xl\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AP_D0yWgwqwN2XI0___DrWL\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribir. MEDICATOR es orientativo y no sustituye a tu médico, pero puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aw_CPTUl7pzSouGhnSXrpnD\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkoqVKBrg5Y_yHO4VvTjvXO\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AiVAFT3MVdckzKtiF938HEV\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AZOlUYfM5v3IcSyapKLEdfx\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Aquí puedes solicitar tu prueba gratuita de GPS Andaluz, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AruP4-6dLMep7qwugqciKpL\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATe_VKkt1MdE16Clzu-kDif\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Gracias! Si quieres ver MEDICATOR, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ARCZmoWA66XA5hN0Ag4wGqX\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOvgHYhK3g2zPEyk2Z5aNVN\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AD_lFeFSCPUzHcBH215SOh1\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6Bjl6JG0KlrcnepLLukhLY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Gracias por tu interés! Puedes solicitar la prueba gratuita de GPS Andaluz (sin tarjeta, sin datos bancarios y sin compromiso) aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AzY7os--J3CsaTuS7ULmug7\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Abf9SIkBKu7BIbBBWtt411j\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Hola! Si quieres probar MEDICATOR, puedes hacerlo gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVJU_ZFW361VWgwFlr_zeyZ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AMqfbi9oLxXfdYnAL47c8pt\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, pídela con prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhHjRooW3_y7fUDSm7-ZIvq\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhJoHb8lTDzA8PlHJjtfP_k\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Puedes probar GPS Andaluz cuando esté disponible en esta prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaXtiv1WrKti3L8k5b6zyZA\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsseghmdDfaCrS8j6n1BsjB\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por comentar. Si quieres ver cómo funciona MEDICATOR, tienes una prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aa_vYkD-epbDhB7X5fx3gG_\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APHbWxxauW7G96JGbN5FtvW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres ver cómo funciona Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AmmIFrl5XItnbiNkzHCzhDe\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGcXDEVPYpR2AHwas7JNYID\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Puedes probar GPS Andaluz sin tarjeta, sin datos bancarios y sin compromiso desde aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aq-k0uh9WP9R5Ju3oHsVFdI\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AWH_Kpa2gvljYkjW3CjV4VR\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR es orientativo y no sustituye a tu médico. Si quieres probarla, tienes una prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AITW1YYPyu27yqATEl_8KKe\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AKonLKOXwNXkYoGAElEVwhG\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVCiDW8eVRXr_f0bK3DCThp\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AyTnPPBuNtTufCh_vhwakl4\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ACC9CV7jmiQ5pB6LOKsYSGa\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AmSE2dygDFZHom8xQvld2Q8\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Medicator está pensada para hacer más fácil el día a día de las personas mayores y de quien las cuida. Puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Recuerda que es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaHnNwnKyi5YqU2z4opQL1-\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AwulgJvVPlwP5bJpI24Welr\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYskkseUlxoIrf7XdlVR5uU\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APhtVLs_nn4tCKfurL20PBn\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, la prueba gratuita es sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ag1vyg-fztxu2RjNhsR9ZXN\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Az04X4o0rmo_4RWq941CmxX\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Puedes solicitar la prueba gratuita de MEDICATOR sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AtB8RMmMbB2t9ePkwydkcA6\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXdUCHONHkZtQpPramMkgn9\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJZRE7ZOrvIMFnDz5t0RrEI\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUQ-I91wvDCXQ0mralyYQdA\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Si quieres echarle un vistazo a GPS Andaluz, aquí tienes la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A-M9IvTtzAgl0fn3gv_sj--\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ai5guttgFB9DzymYxph7cuT\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Gracias por tu interés! MEDICATOR es orientativo y no sustituye a tu médico. Puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADHJ9-1jz5AKqdgg8Q-Vc1j\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASgqg5j94d8TuPR-D6v2tZZ\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOOqDiCXAnjCEvdB5hxwTf0\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArM5T71DkYwzYpIw_9U_10J\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Hola, si quieres ver GPS Andaluz puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ApvFYLaNxlzh8vaoj1A6Ds5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AbB9BdJ3Ipa7VPh9HeKwXD5\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Hola! Puedes probar MEDICATOR sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Arwz_i9GHOC5HOsiYlXl8s4\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A53HcX-KUjLm1_rVcqgsQEe\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por tu interés! Puedes probar Factura7D Verifactu gratis: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhEm0-CA6ijF6fXnZPkof7i\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYBpJGrBbdRxOOczns2PdIf\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHssxA16TzaxfSXUAls2olq\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AB3aYjKIIZgRG2yBsZwV4MN\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribirnos. MEDICATOR es orientativo y no sustituye a tu médico. Puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AU6RkIAJeh273-L-mR3YNxY\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlkOXyz49YFxgEHdsp5AxKY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A99ITHeBlm73-Z-FiWI1VmN\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AfU0U0kOPvBzidCG_RjLLab\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Puedes entrar a probar GPS Andaluz sin tarjeta ni datos bancarios: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A8tVIWJK6DfW-Eya-u11zlw\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AW4V-KaOO57LRVh2M1daeAv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Hola! Si quieres probar MEDICATOR, tienes prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AwNHU2nwf8qvXSI6cPXZNkO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXPG_gG3xlNXgEW9tDC9jIW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D con Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9f16YCxToR2ccnwyT2XTHe\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AnwhUjiQmogaezY3FsZMK3u\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Buena pregunta! Puedes probar GPS Andaluz cuando esté disponible para todo el público. De momento, si quieres echarle un vistazo, aquí tienes el enlace de solicitud: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArXlsFADkq9g7EyusZX_slu\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AC3MJclEqs2k-GfHKS0ceqD\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribirnos. MEDICATOR está pensada para ayudarte con tus pastillas y citas, siempre como orientación, sin sustituir a tu médico. Puedes pedir tu prueba gratuita sin tarjeta ni compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AivIgfTZcHmTONiRho9rRHG\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A5ePkAbEysxza3vaoaaaqva\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3Q2cUzeoEfKDBGb50pPdNy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A5KxrSOPeo9uBvD-w5YpVoY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si te interesa GPS Andaluz, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AADR_IXQsPffOh6OYQzlDdy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaQIUulz5JQVZzZQdGFL5I2\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Puedes probar MEDICATOR gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Recuerda que es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJ0pYfaTb0N2xDbGtABss7A\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aa-Mz8ZR7H9sDgSaZBPvRnG\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por el interés! Puedes probar la app sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7Jh5PFoLWF_qSLP-Of3Weu\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ao8HoP4QfBt8K6rbcTqU7L2\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres ver GPS Andaluz, pásate por la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGtt6SfZJJ52NU6NfysElR5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVNaiH-qXPC29N1rQlVCCv-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Puedes probar MEDICATOR gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Akuf3Qptq5YRLOgJODEDFx7\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AbCnO9PFvWDoyTRlQbVX7QQ\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0PbuNJbsGKRP-o6bz8DdRV\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AitAV_E1w4gEDElmUAOWYqq\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes solicitar la prueba gratuita, sin tarjeta ni compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Av2s_Jtg5_hdXpnAILMaIMG\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AvEVwRfpi_jwSkHNp8aw7is\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "MEDICATOR es orientativo y no sustituye a tu médico. Si quieres probarla, la prueba es gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AmyROveUEe7h-I7B3EZLwOD\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjjeeVndCZRAR3SNjg4pEke\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Au8YWrhB-MCGQWRRR3e-JIg\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3inLO76HyxR498tHP2HsxE\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Puedes probar GPS Andaluz cuando esté disponible en la prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AKR2IP6AlRR0FxyjqbxkfWQ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOV9CrSZ8f4k5kg3G76XEYW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribir. Si quieres echarle un vistazo a MEDICATOR, tienes prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AOaSKEKfdSoZHeWLrsXkx2n\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A81z6A_p11hMfy9C4EB1njY\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHKxuz_nDYrFd9-99FUiwmY\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AAK6j1HDNu0M7HQTKYUWUs9\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Un saludo! Si te apetece probar GPS Andaluz, aquí puedes pedir tu prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3meto2qX8dxjVBdB_-De4e\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AZ5kTGXSf2oVUCG7diPFw0e\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por escribir. Si quieres probar MEDICATOR, puedes solicitar la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Am7JLH0hYwDAd1uz4lMRdjZ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AS_XJs5i8usGJNeGWFLBu3V\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, puedes pedir tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUNVFyqV-f3UBFFQzA6vClK\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ACaJYdpe8AsEeBZYTSEXfx3\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Puedes probar GPS Andaluz con una prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AboTuuutWcFA5-9QPJk8y9s\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVWKl1DHyAKtIdmrkG9U9tR\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por tu interés. Si quieres probar MEDICATOR, tienes una prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AyWuCBQnnorJM2eylqWN_H5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7WAT7t3NqG7W6OX4A4Ld8-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADX9HlSE6a9lUiR5evN7sMI\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQm9McI-4WEai-XGWsUrE6T\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! Si quieres echarle un vistazo, tienes prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ABbtk-gvg5_vu2BXx4c3O5T\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AMGMfvlGeiFFKQD11AtEgOi\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por tu comentario. MEDICATOR tiene prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUhMyKNxf8w7lhRvoP8PCxv\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AKsOCuCpPhhlriiGQ8OVytV\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_zk3eSA6fg7qLTfyPN9kjK\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"APqYtV6N5q6-37WtbMmG__b\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Gracias! Si te apetece probar GPS Andaluz, aquí puedes pedir tu prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjDy7jP3BPiY5DPekTIkNip\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjT0cSt799FXqq7q97HJGI9\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Buenas! Si quieres probar MEDICATOR, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Azhzb7Q99Y4zYJi7Nx48efL\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AL-1C5p7oE1QEhF6K6fTkXe\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AE8whAtxxXnjdG4h2hHkyns\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AZiHoiq-pcRKDAYWAkIiiLh\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por tu interés en GPS Andaluz. De momento no la tenemos disponible para pedir prueba, pero estaremos atentos a novedades. ¡Un saludo!",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYM3HF8ZFnOruxVsSKSa2-r\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A-hNgPPni_tUxtx1LX-NVKD\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese MEDICATOR! Puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Recuerda que es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A4AzdTI8qHP-xKGxsyjNJG8\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AficE3t7T-P9IzWYXp2viVv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso. Aquí tienes el enlace para solicitar tu prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ACANqk7deHIrv9u83cMsaTn\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AxYyn-iTKWJ3hlUxVzI3H6B\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Gracias por tu interés! Puedes solicitar tu prueba gratuita de GPS Andaluz desde aquí, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANw4eHUHNmGG2DO3KfBl2Uy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYeeKkvRyid88IvzbGZ-4ww\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Gracias por escribirnos! Si quieres probar MEDICATOR, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ayxf6UaiRifRyCAvwNmdwmP\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ak7eK85I3-g-5vgCjpEHFPP\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ab5T3ZWg4KOL20JByuP0cTJ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ak-ehZiX5Tht8kEV4HhB4qm\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, la prueba es gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQ-krfMYMwfvuFwRXsXC0Ei\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUEH0QYxgU7qWKZ3IAghoY7\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Puedes solicitar la prueba de MEDICATOR sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJtpILmKMwXtHJ4KKxwe2ky\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AeE_A0FNvDV-8EDvzpN2gkc\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVUgG8nmuEsIcf5CNPsUHij\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkZdA1araLcfM8gzIVI40H0\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. GPS Andaluz todavía no está abierta para probar, así que de momento no te puedo pasar enlace. Estate atento a la página y te avisamos cuando esté lista.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATNVaMq9tueQGTstgjgOpk1\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ABi6i8EtdSiB0Yqhgpnj5ti\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR es orientativo y no sustituye a tu médico, pero puedes probarla sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlAN4kh2QzdU8ym9cpC_TtF\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ApsehTWOWe4O7m5sCJZOC6q\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AmIH52qqUvY7NDUE8tYhIBs\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AG5vQSg0hXJnefkdkfXqQeG\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, la prueba gratuita es sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AADB9DpoHtuNMPdXKxTaH8P\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaL_5TXVUqZSand_U4H-ZgW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por interesarte. MEDICATOR es orientativo y no sustituye a tu médico. Puedes probarla sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AN8GDMvn3ZAbE_pGNfvFlv4\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A-6aLVmpIFQlM5FHXeabZ1s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, te dejo el enlace para pedir tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AmPldr1ZqKRx_TsDkMsvb4Y\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AfDpvIerBfS20wiuTCkaGaL\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Si quieres echarle un vistazo a GPS Andaluz, puedes pedir tu prueba gratuita aquí, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ap4hIiqEAOc-zUlS6Bx2TQ6\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7-S2VloDDbl-smbGflFerG\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR es orientativo y no sustituye a tu médico. Puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A4BfIotd0A34Rr-7Rq2pCwb\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AbQrOYjJPpdLQmeNqrKY1D3\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATQE0WlQIQZMUPrtm0VKA_7\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6rsXEeSzjRRXoNFIFVZ170\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Puedes solicitar la prueba gratuita de GPS Andaluz sin tarjeta ni compromiso en este enlace: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A-LMMYt0JNNLyJZRg4rGRuc\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AvQwt0snUkmCvadV-IKlKK-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR tiene prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9UA8h4jjdSjIDJNBLV8azN\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Aee2k5fdt0hzRCcSjCG26Q0\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres echarle un ojo a Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVgoX-84XcyIonSqRbc_o6v\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_m7Xyt5ved2Pr1zYmgahUT\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Si quieres probar GPS Andaluz cuando esté disponible, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AXsysbKLyhv_bTJfDOoaNXw\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AY9RZEXI6jdvlmRqWQ3X6eM\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Muchas gracias! Si quieres probar MEDICATOR, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ANK3luvKV0sZ0NTCz_oUtN5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A28CU5IF8829ruq420_VXFj\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AvY1So_M5JObPlZYb3wBBIW\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHlyzpCs-glab6dfDEcuM6s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Hola, si quieres ver cómo funciona GPS Andaluz, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AvAJoLI58XT7S8WDxXfGGMB\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGUFZDPep87EEQgePLGE5wv\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por interesarte. MEDICATOR puedes probarla gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativa y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AyVCnehpZnvns0e08BP4zFe\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AY6waPTXIqtkHO4EHvtXm4V\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AcNxXTNU2sU6UHnZRc0S_31\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ASKjs4VYmo4Qq-oSn5aUIPN\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Si te interesa GPS Andaluz, por ahora la estamos preparando, así que no la promocionamos todavía. Mientras tanto, puedes ver las apps disponibles en nuestro centro: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0QNVpidLSzkCiO-9Mn2LHz\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ARtn4Euecsz81Ejz59MEDJj\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR es orientativa y no sustituye a tu médico. Si quieres echarle un vistazo, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJQOb6Mp6OAUJt4lKQwm-6E\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AF0sC_NNiVzmSdQcXUyyP5E\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin coste: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AgEiAdXw3eIsNfhYi6BcPDV\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3z6HE48uXQ9fwtafk-xnrx\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Gracias por el interés. Si quieres ver GPS Andaluz en marcha, de momento está en pausa; te avisaremos cuando haya novedades. Mientras tanto, puedes echar un vistazo a nuestras otras apps en https://centro-de-contenido-apps-2f0a3cd6.base44.app",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AjkG_sxZJ1qghUDW-D0xLQy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AMAEjnMBvS8HG1tFSz5V35-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Qué bien que te interese! MEDICATOR te ayuda a llevar la medicación al día: ves la pastilla de ahora, con botón para marcarla como tomada, y puedes escanear la caja. Prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook. Es orientativo y no sustituye a tu médico.",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A9wiALqBxTcoVlncODhMOVm\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AhXp9aYMBKRNtpHaYKkXueK\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ae8WSRvsw-ymmndKK_ri-ft\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A1hxKAtn3N91eoe3N8PHC0s\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, GPS Andaluz tiene prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A7XynBY6hY1nk2VymUKqFMy\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2TptbZF4PG5vbCZLu3D0OX\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por tu interés. MEDICATOR se puede probar gratis, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AoXT3WAgI05jHLI9gPojigi\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AJwZ1QrdmMlXOM5F3XJ6vPS\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Si quieres probar la app de facturas y Verifactu, puedes solicitar tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A_yaZZsw_Tse5K4WYZmTMZ5\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AV9shEDzaUH98MoWe3-Fsry\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Hola! Puedes solicitar tu prueba gratuita de GPS Andaluz sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AS7x4FvF23QxId6uUWFvGGU\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AFAnnxWQVu39I5sIUfxuCPA\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "¡Gracias por escribir! MEDICATOR es una app orientativa para personas mayores y quien les cuida; puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A3cXgcYLJPo7Y6GPiI_zvTt\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AN49avBNcyFS12pgU-NryC4\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: no pedimos tarjeta ni datos bancarios. Aquí tienes la solicitud de la prueba gratuita → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AoMhkQbfyGA_l4iNU8lIrPO\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AC2hfYGMrxkSFw-f7I6DBl6\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo, puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVP2V_PH10wQXrR9jueGCDC\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ArQjYNATAttKwfldwYJ1Kkm\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por el interés. MEDICATOR es orientativo y no sustituye a tu médico. Puedes solicitar la prueba gratuita, sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A4ReyPu3Yfo4c0fJDEJ1qxQ\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AfhLdwUFh7d5fSgKEGGoJkD\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin compromiso: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlkdRf8UR3YUv8N6TT5uNpd\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A5DKOYedRsRL_-aTVfah0lT\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "¡Gracias por tu interés! Si quieres echarle un vistazo, aquí tienes la prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AsVEmeTKoQTQDUDV2Iv7LfI\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AFA_BccGtG2bJYIR6extn4Z\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por comentar. MEDICATOR es orientativo y no sustituye a tu médico. Puedes probarla sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQVEDTZyE3DzaVZTTJ3Vpq2\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A1e8WN4BmkD-QSOy5VCQre-\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
   "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AfWIlzvstf_1WjU9VPAR2Lp\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AWQ3csdl0kH8BrULlt1e1Ee\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
   "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes solicitar la prueba aquí (sin tarjeta, sin datos bancarios y sin compromiso): https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Ab8bcKQnqJfGEq-O5i2AaK1\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6SfY_HBdsDvvIg10MYKxJo\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
   "texto": "Gracias por tu interés. MEDICATOR es orientativo y no sustituye a tu médico. Puedes probarla sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
-  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AkpGk1YR5H9pwKhuRVj9YPU\"}}"
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ATVnS8QzrNkOhXwtUuW9mkW\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110265391536765_1126425530299455",
   "accion": "responder",
-  "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook"
+  "texto": "¡Gracias por pasarte! Puedes probar Factura7D Verifactu sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AbQpqvEsK5k9r1fgM04D7uS\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110331751536765_1145656004541910",
   "accion": "responder",
-  "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes solicitar la prueba aquí, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook"
+  "texto": "Si quieres echarle un vistazo a GPS Andaluz, puedes solicitar la prueba aquí, sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ACkfOJ2Cz3gfoI6ilLznkaf\"}}"
  },
  {
   "canal": "facebook",
   "id": "122110443915536765_1132614266144733",
   "accion": "responder",
-  "texto": "Claro, MEDICATOR está pensada para personas mayores y quien les cuida. Pide tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook"
+  "texto": "Claro, MEDICATOR está pensada para personas mayores y quien les cuida. Pide tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook",
+  "error": "ages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AN9UIGjrPxxMirEu_xBG-Mw\"}}"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110265391536765_1126425530299455",
+  "accion": "responder",
+  "texto": "¡Gracias por pasarte! Si quieres probar Factura7D Verifactu, puedes pedir tu prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=factura7d-verifactu&src=facebook"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110331751536765_1145656004541910",
+  "accion": "responder",
+  "texto": "¡Hola! GPS Andaluz está en pausa de momento, así que mejor no te lo recomiendo todavía. Si buscas otra cosa, puedes pedir una prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso en: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gps-andaluz&src=facebook"
+ },
+ {
+  "canal": "facebook",
+  "id": "122110443915536765_1132614266144733",
+  "accion": "responder",
+  "texto": "Hola, MEDICATOR está pensada para personas mayores y quien les cuida: recordatorios de pastillas, citas y constantes. Orientativo, no sustituye a tu médico. Puedes pedir la prueba gratuita sin tarjeta, sin datos bancarios y sin compromiso aquí: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=medicator&src=facebook"
  }
 ]

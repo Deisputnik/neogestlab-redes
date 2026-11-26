@@ -699,3 +699,4 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 2026-11-26 19:49 UTC · Calidad (API) · pasada sin piezas pendientes de evaluar (10 al día, 0 sin render todavía) · nada
 
 2026-11-26 20:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-26 21:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
