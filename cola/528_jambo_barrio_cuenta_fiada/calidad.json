@@ -9,5 +9,9 @@
   "como_arreglarlo": "CENTRO: regenerar solo dos frases con voz_disenada (Gemini TTS), sin perder sílabas ni sustituir palabras: (1) la línea de Sindy '...aquí se ficha con huella hasta para mear' debe pronunciar claramente 'para mear', no 'baramear'; (2) la línea de Felipe '¡Hay que joderse! Que lo resuelva el Neo' debe pronunciar 'el Neo' con claridad, no 'el nego'. El resto del audio y el guion.json están bien, no hace falta tocarlos. Re-renderizar con render.mjs --final solo esas dos escenas y volver a pasar por Calidad.",
   "fecha": "2026-11-26T15:40:23Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:39:07+00:00"
+  "render": "2026-11-26T15:39:07+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 83,
+  "caducado": "2026-11-26T16:10:00+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-26T16:10:00+00:00"
 }
