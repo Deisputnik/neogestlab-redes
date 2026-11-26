@@ -1,18 +1,13 @@
 {
   "aprobado": false,
-  "nota": 82,
+  "nota": 87,
   "motivos": [
-    "Contradicción en el cierre: Neo dice «nadie pagará los destrozos» (t≈42-45) y la moraleja del post dice «los pagas tú» (t≈48).",
-    "Voz edge-tts sin motor_voz voz_disenada: suena a IA, tope 89.",
-    "Falta giro en guion.json; la revelación del fontanero pirata no está sembrada.",
-    "Ninguna réplica recuerda un episodio anterior."
+    "Dicción defectuosa de la voz diseñada (no es jerga tipo 'illo/pa'): en la réplica de Jambo el guion dice 'dame un eurillo pa' la fregona' y se oye 'amé un orillo para la fregona'; son sustituciones de palabras reales que cambian el sentido, no elisiones coloquiales.",
+    "Segunda discrepancia en la réplica de Concha: guion 'Eso lo arreglamos la semana que viene' vs locución 'Sólo arreglamos la semana que viene'.",
+    "El resto del episodio cumple v11/v12: giro sembrado y presente, remate de Neo coincide con la moraleja, recuerdo del trastero en negro (522), bucle casa-casa correcto, logo 2026 correcto en todos los fotogramas, LUFS -14.95 y pico -1.44 dB dentro de rango, 64.5 s dentro de 45-70 s."
   ],
-  "como_arreglarlo": "Creador: reescribir la réplica de Neo para que coincida con la moraleja, añadir giro y recuerdo. Centro: voz_disenada.",
-  "fecha": "2026-11-25T17:50:00Z",
-  "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
-  "aprobado_anterior": false,
-  "nota_anterior": 82,
-  "caducado": "2026-11-26T10:45:54+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T10:45:54+00:00"
+  "como_arreglarlo": "CENTRO: regenerar solo esas dos líneas de audio (Jambo: 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' / Concha: 'A mí no me mires. Eso lo arreglamos la semana que viene. ¡Qué frío, hostia!') con voz_disenada Gemini TTS y volver a mezclar; no hace falta rehacer el resto del vídeo ni el guion, que ya está correcto (giro, moraleja y recuerdo resueltos respecto al rechazo anterior).",
+  "fecha": "2026-11-26T11:11:28Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T10:45:54+00:00"
 }

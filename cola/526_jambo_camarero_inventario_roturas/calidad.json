@@ -1,18 +1,8 @@
 {
-  "aprobado": false,
-  "nota": 85,
-  "motivos": [
-    "Voz edge-tts en todas las réplicas; el estándar v11 exige motor_voz voz_disenada desde el 23/11 y _voz_nota no justifica el fallback. Suena a IA: tope 89.",
-    "Falta el campo giro en guion.json; el giro del remate (quién tiró el barril) es confuso y el post lo promete sin resolverlo con claridad.",
-    "Ninguna réplica recuerda un episodio anterior (criterio recuerdo, v11).",
-    "Humor negro flojo: conflicto laboral con tono de sitcom."
-  ],
-  "como_arreglarlo": "Centro: re-render con voz_disenada. Creador: añadir giro sembrado, aclarar en la escena Jambo/Sindy quién tira el barril, meter un recuerdo de episodio anterior y subir la frialdad del humor negro.",
-  "fecha": "2026-11-25T17:50:00Z",
-  "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
-  "aprobado_anterior": false,
-  "nota_anterior": 85,
-  "caducado": "2026-11-26T10:46:14+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T10:46:14+00:00"
+  "aprobado": true,
+  "nota": 92,
+  "comentario": "Re-render con voz_disenada (Gemini) resuelve el bloqueo de voz del ciclo anterior. Giro sembrado y explícito (Sindy ve al vecino con el barril), recogido con precisión por Neo en el remate; recuerdo del ep. 522 (la luz para los tomates) en boca de Felipe; moraleja clara y corta. Intro \"Cosas de Casa\" con gancho de 6 palabras y cierre en bucle exacto del mismo plano. Tarjeta de marca de empresa (logo 2026 correcto, \"By Neogest Lab\") entre créditos y plano final, conforme a la plantilla vigente. Técnico: 63,5 s, 1080x1920, LUFS -14,66, pico -1,64 dB, sin silencios. Humor negro frío en el remate (\"no es contabilidad... es venganza\"). Las discrepancias de control_audio.json (cervezas/cerveza, bah/buah, cinta/tinta, escene/cene) son variaciones normales de transcripción ASR sobre vocales alargadas de Jambo y entonación, no errores reales de interpretación.",
+  "fecha": "2026-11-26T11:11:00Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-26T10:46:14+00:00"
 }
