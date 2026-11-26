@@ -1,0 +1,19 @@
+{
+  "media_id": "18123872197973521",
+  "enlace": "https://www.instagram.com/reel/DgNSez3NiHz/",
+  "prueba_no_seguidores": false,
+  "metodo": "video_url",
+  "publicado": "2026-11-26T14:11:32+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "4yT2Lf_VkzQ",
+    "enlace": "https://youtube.com/shorts/4yT2Lf_VkzQ",
+    "titulo": "Factura enviada, ¿y el cobro? #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1696792515183592",
+    "enlace": "https://www.facebook.com/reel/1696792515183592",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
