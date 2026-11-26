@@ -41,8 +41,9 @@
     "texto": "El agua llega a los tobillos y la culpa es del fontanero «pirata» sin factura. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
   "asset": "527_jambo_fontanero_factura_fuga.mp4",
-  "_nota_creador": "26/11/2026 Creador (desatasco dicción 3): réplica de Jambo reescrita en guion y voz, «Primo… suelta un euro para la fregona. Que me mojo entero.» (antes eurillo/ahogo, que Gemini no dijo bien en dos intentos), y Sindy con voz_tts «Como lo del trastero, en negro… Que lo resuelva, el Neo» (subtítulo sin cambios). Pedido en rama voces/2026-11-26-diccion5 con variantes. Whisper sobre el mp4 MEZCLADO jb527_d3.mp4: «Primo, suelta un euro para la fregona. Que me mojo entero.» y «Como lo del trastero, en negro, pero con charco. Que lo resuelva. El neo.». Resto del vídeo y audio sin cambios. Pendiente de que Calidad reevalúe.",
-  "renderizado": "2026-11-26T15:45:00+00:00",
+  "_nota_creador": "26/11/2026 Creador (d4, combinando pistas): Jambo nuevo y corto sin «fregona», subtítulo y voz iguales: «Primo… suelta un euro. Que me mojo todo.» («entero» salía duplicado); Sindy de d3 con subtítulo cambiado a lo que dice («Como lo del trastero, en negro…»); Concha y Neo regenerados (rama voces/2026-11-26-diccion7, variantes) porque en d2/d3 Whisper perdía «¡Qué frío, hostia!» y oía «señor Melano». Causa de la pérdida de Concha: la risa de sitcom pisaba el final de su réplica; ahora entra al acabar la réplica. Whisper small sobre el mp4 MEZCLADO jb527_d4.mp4 sin palabras de más ni de menos salvo jerga: «suelta un euro. Que me mojo todo», «Que frío, hostia», «Como lo del trastero. En negro, pero con charco. Que lo resuelva. El neo», «señora Melano»; única duda, la «¡Me cago en todo!» de Rosa no sale en la transcripción de la mezcla (audio sin tocar). Mp4 62,8 s. Pendiente de que Calidad reevalúe.",
+  "renderizado": false,
   "_cuando_anterior": "2026-11-26T08:30:00+01:00",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/66511689351458e7c4bab9d09a03dd37_jb527_d3.mp4"
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/66511689351458e7c4bab9d09a03dd37_jb527_d3.mp4",
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/04cc01aab05f089bcf5d1d65bb03b9a6_jb527_d4.mp4"
 }

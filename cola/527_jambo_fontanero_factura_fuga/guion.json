@@ -54,15 +54,15 @@
    "e": "gag",
    "h": "jambo",
    "emo": "cansado",
-   "v": "Primo… suelta un euro para la fregona. Que me mojo entero.",
-   "t": "Primo… suelta un euro para la fregona. Que me mojo entero.",
+   "v": "Primo… suelta un euro. Que me mojo todo.",
+   "t": "Primo… suelta un euro. Que me mojo todo.",
    "p": [
     "jambo"
    ],
    "a": {
     "jambo": "habla"
    },
-   "voz_tts": "Primo… suelta un euro para la fregona. Que me mojo entero."
+   "voz_tts": "Primo… suelta un euro. Que me mojo todo."
   },
   {
    "e": "gag",
@@ -110,8 +110,8 @@
    "e": "gag",
    "h": "sindy",
    "emo": "enfado",
-   "v": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
-   "t": "¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.",
+   "v": "¡Tres días sin ducharnos, joder! Como lo del trastero, en negro, pero con charco. Que lo resuelva el Neo.",
+   "t": "¡Tres días sin ducharnos, joder! Como lo del trastero, en negro, pero con charco. Que lo resuelva el Neo.",
    "p": [
     "sindy"
    ],
