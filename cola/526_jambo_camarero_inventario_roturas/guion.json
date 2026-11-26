@@ -1,1 +1,153 @@
-{"version": 1, "format": "9:16", "fps": 30, "music": {"track": "comedia:1", "volume": 0.34, "duck": true, "duckLevel": 0.45}, "subtitles": {"enabled": true, "words": 3, "style": "amarillo", "emojis": true, "size": 0.07}, "brand": {"watermark": true, "watermarkPos": "right", "progress": true}, "sfx": {"enabled": true, "volume": 0.6}, "scenes": [{"id": "c053d540", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": [{"id": "99c078ea", "text": "Esta casa del barrio tiene truco 👀", "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}]}, {"id": "6bfc4c94", "duration": 2.391, "transition": "none", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "rosa", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Felipe tiró tres cajas de cerveza al suelo!", "provider": "edge", "speaker": "rosa", "url": "/tmp/jb/526_0.mp3", "duration": 2.041, "words": [{"w": "Felipe", "s": 0.091, "e": 0.456}, {"w": "tiró", "s": 0.467, "e": 0.68}, {"w": "tres", "s": 0.68, "e": 0.914}, {"w": "cajas", "s": 0.924, "e": 1.188}, {"w": "de", "s": 1.188, "e": 1.259}, {"w": "cerveza", "s": 1.259, "e": 1.625}, {"w": "al", "s": 1.625, "e": 1.706}, {"w": "suelo", "s": 1.706, "e": 1.991}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": []}, {"id": "adcfecb5", "duration": 5.387, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral", "intro": true}], "voice": {"text": "¡Illo, Rosa! Tengo información segura de que las mermas las paga la Unión Europea.", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/526_1.mp3", "duration": 5.037, "words": [{"w": "Illo", "s": 0.1, "e": 0.536}, {"w": "Rosa", "s": 0.784, "e": 1.256}, {"w": "Tengo", "s": 1.546, "e": 1.855}, {"w": "información", "s": 1.868, "e": 2.437}, {"w": "segura", "s": 2.449, "e": 2.796}, {"w": "de", "s": 2.808, "e": 2.907}, {"w": "que", "s": 2.92, "e": 3.006}, {"w": "las", "s": 3.019, "e": 3.18}, {"w": "mermas", "s": 3.192, "e": 3.526}, {"w": "las", "s": 3.539, "e": 3.724}, {"w": "paga", "s": 3.737, "e": 3.984}, {"w": "la", "s": 3.996, "e": 4.096}, {"w": "Unión", "s": 4.108, "e": 4.343}, {"w": "Europea", "s": 4.355, "e": 4.987}], "offset": 0.05, "tail": 0.12}, "shot": "medio", "texts": [], "overlays": [{"id": "5e61f06d", "type": "emoji", "text": "🤯", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "fff7ac26", "duration": 4.4959999999999996, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Coño, Felipe! Si la única merma europea es lo que le quitas tú a las tapas.", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/526_2.mp3", "duration": 4.146, "words": [{"w": "Coño", "s": 0.1, "e": 0.472}, {"w": "Felipe", "s": 0.568, "e": 0.978}, {"w": "Si", "s": 1.268, "e": 1.48}, {"w": "la", "s": 1.49, "e": 1.596}, {"w": "única", "s": 1.607, "e": 1.872}, {"w": "merma", "s": 1.882, "e": 2.158}, {"w": "europea", "s": 2.168, "e": 2.613}, {"w": "es", "s": 2.624, "e": 2.719}, {"w": "lo", "s": 2.73, "e": 2.815}, {"w": "que", "s": 2.825, "e": 2.91}, {"w": "le", "s": 2.921, "e": 3.016}, {"w": "quitas", "s": 3.026, "e": 3.323}, {"w": "tú", "s": 3.334, "e": 3.429}, {"w": "a", "s": 3.44, "e": 3.471}, {"w": "las", "s": 3.482, "e": 3.62}, {"w": "tapas", "s": 3.63, "e": 4.096}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": [], "overlays": [{"id": "d45f6512", "type": "emoji", "text": "😱", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "ab95ea27", "duration": 8.851, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "jambo", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "Rosaaa… primaaaa… tropecé con el barril sin querer… me traspuse un segundo…", "provider": "edge", "speaker": "jambo", "url": "/tmp/jb/526_3.mp3", "duration": 8.501000000000001, "words": [{"w": "Rosaaa", "s": 0.1, "e": 1.156}, {"w": "primaaaa", "s": 1.646, "e": 2.688}, {"w": "tropecé", "s": 3.178, "e": 3.892}, {"w": "con", "s": 3.91, "e": 4.124}, {"w": "el", "s": 4.142, "e": 4.267}, {"w": "barril", "s": 4.285, "e": 4.732}, {"w": "sin", "s": 4.749, "e": 4.982}, {"w": "querer", "s": 4.999, "e": 5.678}, {"w": "me", "s": 6.181, "e": 6.528}, {"w": "traspuse", "s": 6.547, "e": 7.297}, {"w": "un", "s": 7.316, "e": 7.508}, {"w": "segundo", "s": 7.528, "e": 8.451}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [], "overlays": [{"id": "12abb279", "type": "emoji", "text": "💸", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "8f33566a", "duration": 4.513, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "sindy", "x": 0.72, "expr": "neutral"}], "voice": {"text": "¡Hostia, Rosa! ¡Si el vecino llevaba el barril a cuestas hacia su trastero!", "provider": "edge", "speaker": "sindy", "url": "/tmp/jb/526_4.mp3", "duration": 4.163, "words": [{"w": "Hostia", "s": 0.1, "e": 0.52}, {"w": "Rosa", "s": 0.615, "e": 1.016}, {"w": "Si", "s": 1.306, "e": 1.558}, {"w": "el", "s": 1.569, "e": 1.646}, {"w": "vecino", "s": 1.657, "e": 2.019}, {"w": "llevaba", "s": 2.03, "e": 2.402}, {"w": "el", "s": 2.413, "e": 2.501}, {"w": "barril", "s": 2.512, "e": 2.808}, {"w": "a", "s": 2.819, "e": 2.863}, {"w": "cuestas", "s": 2.874, "e": 3.247}, {"w": "hacia", "s": 3.258, "e": 3.466}, {"w": "su", "s": 3.477, "e": 3.598}, {"w": "trastero", "s": 3.609, "e": 4.113}], "offset": 0.05, "tail": 0.12}, "shot": "general", "texts": [], "overlays": [{"id": "0b017ca3", "type": "emoji", "text": "🙄", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "e9151508", "duration": 5.747999999999999, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "conchaqueton", "x": 0.72, "expr": "neutral", "intro": true}], "voice": {"text": "¡Manda huevos! El cristal roto lo arreglamos la semana que viene sin prisa.", "provider": "edge", "speaker": "conchaqueton", "url": "/tmp/jb/526_5.mp3", "duration": 5.398, "words": [{"w": "Manda", "s": 0.093, "e": 0.445}, {"w": "huevos", "s": 0.445, "e": 0.851}, {"w": "El", "s": 1.159, "e": 1.344}, {"w": "cristal", "s": 1.344, "e": 2.003}, {"w": "roto", "s": 2.003, "e": 2.459}, {"w": "lo", "s": 2.476, "e": 2.628}, {"w": "arreglamos", "s": 2.628, "e": 3.354}, {"w": "la", "s": 3.354, "e": 3.507}, {"w": "semana", "s": 3.507, "e": 4.03}, {"w": "que", "s": 4.03, "e": 4.216}, {"w": "viene", "s": 4.216, "e": 4.588}, {"w": "sin", "s": 4.588, "e": 4.875}, {"w": "prisa", "s": 4.875, "e": 5.348}], "offset": 0.05, "tail": 0.12}, "shot": "auto", "texts": [], "overlays": [{"id": "d6028c77", "type": "emoji", "text": "😳", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "6bfe0c9d", "duration": 4.345, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "rosa", "x": 0.72, "expr": "neutral"}], "voice": {"text": "¡Silencio! Esto lo descuento de la nómina de Felipe aunque no coma este mes.", "provider": "edge", "speaker": "rosa", "url": "/tmp/jb/526_6.mp3", "duration": 3.9949999999999997, "words": [{"w": "Silencio", "s": 0.093, "e": 0.648}, {"w": "Esto", "s": 0.933, "e": 1.183}, {"w": "lo", "s": 1.195, "e": 1.286}, {"w": "descuento", "s": 1.286, "e": 1.763}, {"w": "de", "s": 1.763, "e": 1.854}, {"w": "la", "s": 1.854, "e": 1.956}, {"w": "nómina", "s": 1.956, "e": 2.308}, {"w": "de", "s": 2.308, "e": 2.411}, {"w": "Felipe", "s": 2.411, "e": 2.808}, {"w": "aunque", "s": 2.808, "e": 3.047}, {"w": "no", "s": 3.047, "e": 3.172}, {"w": "coma", "s": 3.172, "e": 3.433}, {"w": "este", "s": 3.433, "e": 3.683}, {"w": "mes", "s": 3.683, "e": 3.945}], "offset": 0.05, "tail": 0.12}, "shot": "medio", "texts": [], "overlays": [{"id": "8be249c7", "type": "emoji", "text": "😤", "x": 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "4e8f6639", "duration": 8.423, "transition": "slide", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "neutral"}], "voice": {"text": "¡Joder, Rosa! Si me descuentas las botellas, mi sueldo pasa a ser negativo. ¡Que lo resuelva la aplicación!", "provider": "edge", "speaker": "felipe", "url": "/tmp/jb/526_7.mp3", "duration": 8.073, "words": [{"w": "Joder", "s": 0.1, "e": 0.552}, {"w": "Rosa", "s": 0.804, "e": 1.224}, {"w": "Si", "s": 1.514, "e": 1.819}, {"w": "me", "s": 1.834, "e": 1.956}, {"w": "descuentas", "s": 1.971, "e": 2.596}, {"w": "las", "s": 2.612, "e": 2.779}, {"w": "botellas", "s": 2.795, "e": 3.465}, {"w": "mi", "s": 3.755, "e": 3.892}, {"w": "sueldo", "s": 3.907, "e": 4.304}, {"w": "pasa", "s": 4.319, "e": 4.685}, {"w": "a", "s": 4.7, "e": 4.761}, {"w": "ser", "s": 4.776, "e": 5.02}, {"w": "negativo", "s": 5.035, "e": 5.858}, {"w": "Que", "s": 6.192, "e": 6.396}, {"w": "lo", "s": 6.41, "e": 6.512}, {"w": "resuelva", "s": 6.526, "e": 7.021}, {"w": "la", "s": 7.035, "e": 7.122}, {"w": "aplicación", "s": 7.137, "e": 8.023}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": [], "overlays": [{"id": "f685658d", "type": "emoji", "text": "🤯", "x": 0.82, "y": 0.32, "start": 0.25, "size": 0.12}]}, {"id": "66aa215e", "duration": 8.673, "transition": "flash", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "neo", "x": 0.72, "expr": "chulo", "intro": true}], "voice": {"text": "Rosa, nadie pagará esa factura descontando cervezas rotas del sueldo de un empleado. Soy Neo, y esto no es negociable.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/526_8.mp3", "duration": 8.323, "words": [{"w": "Rosa", "s": 0.102, "e": 0.66}, {"w": "nadie", "s": 0.979, "e": 1.258}, {"w": "pagará", "s": 1.272, "e": 1.631}, {"w": "esa", "s": 1.644, "e": 1.844}, {"w": "factura", "s": 1.857, "e": 2.296}, {"w": "descontando", "s": 2.309, "e": 2.987}, {"w": "cervezas", "s": 3.001, "e": 3.519}, {"w": "rotas", "s": 3.532, "e": 3.865}, {"w": "del", "s": 3.878, "e": 4.051}, {"w": "sueldo", "s": 4.064, "e": 4.357}, {"w": "de", "s": 4.37, "e": 4.477}, {"w": "un", "s": 4.49, "e": 4.61}, {"w": "empleado", "s": 4.623, "e": 5.314}, {"w": "Soy", "s": 5.647, "e": 6.04}, {"w": "Neo", "s": 6.054, "e": 6.42}, {"w": "y", "s": 6.686, "e": 6.785}, {"w": "esto", "s": 6.799, "e": 7.08}, {"w": "no", "s": 7.094, "e": 7.304}, {"w": "es", "s": 7.318, "e": 7.431}, {"w": "negociable", "s": 7.445, "e": 8.273}], "offset": 0.05, "tail": 0.12}, "shot": "primerplano", "texts": []}, {"id": "49c28c21", "duration": 4.0889999999999995, "transition": "zoom", "background": {"type": "set", "set": "salon", "hour": 16, "night": false}, "characters": [{"who": "felipe", "x": 0.3, "expr": "cansado"}, {"who": "neo", "x": 0.72, "expr": "feliz"}], "shot": "general", "voice": {"text": "Los riesgos del negocio jamás deben cargarse al trabajador.", "provider": "edge", "speaker": "neo", "url": "/tmp/jb/526_9.mp3", "duration": 3.489, "words": [{"w": "Los", "s": 0.102, "e": 0.407}, {"w": "riesgos", "s": 0.421, "e": 0.806}, {"w": "del", "s": 0.82, "e": 0.953}, {"w": "negocio", "s": 0.966, "e": 1.418}, {"w": "jamás", "s": 1.431, "e": 1.83}, {"w": "deben", "s": 1.844, "e": 2.123}, {"w": "cargarse", "s": 2.136, "e": 2.588}, {"w": "al", "s": 2.602, "e": 2.668}, {"w": "trabajador", "s": 2.681, "e": 3.439}], "offset": 0.05, "tail": 0.12}, "texts": [{"id": "5761742b", "text": "Los riesgos del negocio jamás deben cargarse al trabajador.", "style": "badge", "anim": "pop", "y": 0.12, "sfx": "impacto"}, {"id": "b934dd75", "text": "Los riesgos del negocio jamás deben cargarse al trabajador.", "style": "hook", "anim": "pop", "start": 0.5, "y": 0.26}]}, {"id": "027b352c", "duration": 4.199999999999999, "transition": "fade", "voice": null, "background": {"type": "set", "set": "salon", "hour": 22, "night": true}, "characters": [], "texts": [{"id": "62b4be7e", "text": "REPARTO", "style": "badge", "anim": "pop", "start": 0.0, "y": 0.1, "sfx": "impacto"}, {"id": "a27db75f", "text": "Rosa Melano", "style": "hook", "anim": "pop", "start": 0.3, "y": 0.24}, {"id": "ea09d453", "text": "Felipe Lotas", "style": "hook", "anim": "pop", "start": 0.6499999999999999, "y": 0.36}, {"id": "6aa13ce2", "text": "Sindy Entes", "style": "hook", "anim": "pop", "start": 1.0, "y": 0.48}, {"id": "4a5edceb", "text": "Jambo Reseco", "style": "hook", "anim": "pop", "start": 1.3499999999999999, "y": 0.6}, {"id": "87b83451", "text": "Concha Quetón", "style": "hook", "anim": "pop", "start": 1.7, "y": 0.72}, {"id": "48d637d1", "text": "Neo", "style": "hook", "anim": "pop", "start": 2.05, "y": 0.84}, {"id": "dd5ec9e8", "text": "By Neogest Lab", "style": "badge", "anim": "pop", "start": 2.5999999999999996, "y": 1.1}]}, {"id": "a03d7342", "kind": "outro", "duration": 3.0, "transition": "fade", "voice": null, "background": {"type": "gradient"}, "characters": [], "texts": [{"id": "b40b471d", "text": "Apps con IA para tu negocio", "style": "hook", "anim": "pop", "start": 0.25, "y": 0.17}, {"id": "20ffb4af", "text": "Pide tu prueba gratuita", "style": "hook", "anim": "pop", "start": 0.7, "y": 0.68}, {"id": "560bd0d1", "text": "Sin tarjeta · sin datos bancarios · sin compromiso", "style": "badge", "anim": "pop", "start": 1.0, "y": 0.78}]}, {"id": "2c506776", "duration": 1.6, "transition": "none", "voice": null, "background": {"type": "video", "url": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4ae3afde4_cosas-de-casa-intro.mp4", "start": 0.0}, "texts": []}]}
+{
+ "slug": "526_jambo_camarero_inventario_roturas",
+ "set": "salon",
+ "hora": 16,
+ "moraleja": "Los riesgos del negocio jamás deben cargarse al trabajador.",
+ "gancho_tipo": "afirmacion_imposible",
+ "gancho_casa": "Tres cajas rotas. ¿Quién las paga? 🍺",
+ "promesa": "¿Quién va a pagar las tres cajas de cerveza rotas?",
+ "giro": "Parecía torpeza de Felipe y fue el vecino llevándose un barril",
+ "recuerdo": "El mismo vecino que pinchó la luz para sus tomates (522)",
+ "bucle_visual": "Rosa señalando las cajas rotas, misma pose",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Tres cajas de cerveza reventadas en el suelo! ¡Esto lo paga Felipe!",
+   "t": "¡Tres cajas de cerveza reventadas en el suelo! ¡Esto lo paga Felipe!",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Buah! Tranquila, jefa. Las roturas las paga Europa. Lo sé de buena tinta.",
+   "t": "¡Buah! Tranquila, jefa. Las roturas las paga Europa. Lo sé de buena tinta.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "ironia",
+   "v": "¿Que paga Europa? ¡Anda ya! ¿Y ese reguero de cerveza hasta el trastero, qué?",
+   "t": "¿Que paga Europa? ¡Anda ya! ¿Y ese reguero de cerveza hasta el trastero, qué?",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "susurra",
+   "v": "Prima… válgame. Yo solo pasaba… ¿Qué te estaba diciendo?",
+   "t": "Prima… válgame. Yo solo pasaba… ¿Qué te estaba diciendo?",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "voz_tts": "Primaaa… válgame. Yo solo pasabaaa… ¿Qué te estaba diciendooo?"
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¡Lo he visto yo, Rosa! El vecino se llevaba un barril a cuestas. ¡Tropezó y tumbó las tres cajas, hostia!",
+   "t": "¡Lo he visto yo, Rosa! El vecino se llevaba un barril a cuestas. ¡Tropezó y tumbó las tres cajas, hostia!",
+   "p": [
+    "sindy",
+    "jambo"
+   ],
+   "a": {
+    "sindy": "desespera"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Era prestado, prima… Mañana te lo devuelvo. Vacío.",
+   "t": "Era prestado, prima… Mañana te lo devuelvo. Vacío.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "risas": true,
+   "voz_tts": "Era prestado, primaaa… Mañana te lo devuelvooo. Vacío."
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "seco",
+   "v": "Me da igual quién fuera. Se lo descuento a Felipe. Que cene el mes que viene.",
+   "t": "Me da igual quién fuera. Se lo descuento a Felipe. Que cene el mes que viene.",
+   "p": [
+    "rosa"
+   ],
+   "a": {
+    "rosa": "fria"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "llora",
+   "v": "¿Yo? ¡Si fue este, joder! El mismo que pinchó la luz para sus tomates. Que lo resuelva el Neo.",
+   "t": "¿Yo? ¡Si fue este, joder! El mismo que pinchó la luz para sus tomates. Que lo resuelva el Neo.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   }
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. La rotura la causó el vecino, y hay testigo. Descontarla de otra nómina no es contabilidad, señora Melano. Es venganza.",
+   "t": "Resuelto. La rotura la causó el vecino, y hay testigo. Descontarla de otra nómina no es contabilidad, señora Melano. Es venganza.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Los riesgos del negocio jamás deben cargarse al trabajador.",
+   "t": "Los riesgos del negocio jamás deben cargarse al trabajador.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}
