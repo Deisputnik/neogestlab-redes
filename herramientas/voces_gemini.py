@@ -172,6 +172,8 @@ def cortar(pedido, out, modelo_whisper="small"):
     for ep in [fusionar(pedido)]:
         n = "lote"; manifiesto = {}; informe = {}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h") and e.get("v")):
+            if pedido.get("solo") and quien not in pedido["solo"]:
+                continue
             wav = f"{out}/{n}_{quien}.wav"; ls = lineas_de(ep, quien)
             if not os.path.exists(wav):
                 informe[quien] = "falta el audio"; ok = False; continue
