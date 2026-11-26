@@ -2,16 +2,12 @@
   "aprobado": false,
   "nota": 83,
   "motivos": [
-    "control_audio.json sigue en bloqueo real tras el re-render del 26/11 (jb528_d2.mp4): faltan ['para','mear','buah','neo'], sobran ['baramear','va','a','nego']. La réplica de Jambo Reseco se arregló (ahora completa y audible), pero persisten dos fallos de pronunciación: (1) 'hasta para mear' suena 'hasta baramear' (rompe el gag de Sindy); (2) el nombre 'Neo' en la frase de Felipe '¡Hay que joderse! Que lo resuelva el Neo' se oye 'nego', perdiendo el nombre propio que da pie al remate de Neo, pieza clave del giro.",
-    "No son casos de jerga no transcrita (illo/pa/tacos): son palabras completas sustituidas por otras sin sentido, señal de audio mal generado en esas dos frases concretas.",
-    "Resto correcto: vídeo 1080x1920, 59,94 s (dentro de 45-70 s), LUFS -14,68, pico -1,47 dB, sin silencios; bucle casa-casa con el mismo plano y gancho de texto ≤8 palabras; logo 2026 correcto en insignia y en tarjeta de cierre (coincide con la referencia oficial); tarjeta de marca de 3 s con 'Apps con IA para tu negocio' + prueba gratuita antes del cierre; texto del post con el cierre fijo correcto."
+    "control_audio.json del render jb528_d3.mp4 sigue en bloqueo real: faltan ['buena','tinta','neo'], sobran ['guanatinta','a','a','ne']. El re-render del 26/11 arregló las dos frases del rechazo anterior (Sindy 'para mear' y Jambo Reseco completo) pero genera DOS fallos nuevos de pronunciación: (1) la frase de Felipe 'Lo sé de buena tinta' suena 'Lo sé de guanatinta' (palabra inventada sin sentido); (2) el nombre 'Neo' en '¡Hay que joderse! Que lo resuelva el Neo' sigue sin pronunciarse bien, ahora se oye 'el ne' (antes era 'nego'), perdiendo otra vez el nombre propio que da pie al remate/giro de Neo.",
+    "No son casos de jerga no transcrita (illo/pa/tacos): son palabras completas sustituidas por sonidos sin sentido o nombres propios cortados, señal de audio mal generado en esas frases concretas.",
+    "Resto correcto: vídeo 1080x1920, 59,1 s (dentro de 45-70 s), LUFS -14,6, pico -1,5 dB, sin silencios; bucle casa-casa con el mismo plano y gancho de texto ≤8 palabras; logo 2026 correcto en insignia y en tarjeta de cierre (coincide con la referencia oficial); tarjeta de marca de 3 s con 'Apps con IA para tu negocio' + prueba gratuita antes del cierre; texto del post con el cierre fijo correcto."
   ],
-  "como_arreglarlo": "CENTRO: regenerar solo dos frases con voz_disenada (Gemini TTS), sin perder sílabas ni sustituir palabras: (1) la línea de Sindy '...aquí se ficha con huella hasta para mear' debe pronunciar claramente 'para mear', no 'baramear'; (2) la línea de Felipe '¡Hay que joderse! Que lo resuelva el Neo' debe pronunciar 'el Neo' con claridad, no 'el nego'. El resto del audio y el guion.json están bien, no hace falta tocarlos. Re-renderizar con render.mjs --final solo esas dos escenas y volver a pasar por Calidad.",
-  "fecha": "2026-11-26T15:40:23Z",
+  "como_arreglarlo": "CENTRO: tercer intento, esta vez SOLO regenerar con voz_disenada (Gemini TTS) las dos frases que fallan en ESTE render, sin tocar las que ya quedaron bien (Sindy 'para mear' y Jambo Reseco ya están correctas, no reprocesarlas): (1) la línea de Felipe '...Eso es ley. Lo sé de buena tinta.' debe pronunciar con claridad 'buena tinta' como dos palabras separadas, no 'guanatinta'; (2) la línea de Felipe '¡Hay que joderse! Que lo resuelva el Neo.' debe pronunciar el nombre 'Neo' completo y claro, no 'el ne' ni 'el nego'. Recomendación: generar 'Neo' aislado o con pausa antes (p.ej. 'el... Neo') para evitar que el motor lo trague. Re-renderizar con render.mjs --final solo esas dos frases/escenas y volver a pasar control_audio.py antes de mandarlo a Calidad otra vez.",
+  "fecha": "2026-11-26T16:11:02Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:39:07+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 83,
-  "caducado": "2026-11-26T16:10:00+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T16:10:00+00:00"
+  "render": "2026-11-26T16:10:00+00:00"
 }
