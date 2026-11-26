@@ -1,18 +1,16 @@
 {
   "aprobado": false,
-  "nota": 86,
+  "nota": 85,
   "motivos": [
-    "El reintento de dicción no resolvió el problema original: la réplica de Jambo sigue mal ('dame un eurillo pa' la fregona. Que me ahogo aquí' se oye 'dame un neurillo para la fregona que me hago aquí'); 'eurillo'→'neurillo' y 'ahogo'→'hago' son sustituciones de palabras reales con cambio de sentido, no jerga tipo illo/pa que el control deba ignorar.",
-    "Nueva discrepancia de dicción en la réplica de Sindy, no señalada en el rechazo anterior y que no se tocó en este re-render: guion 'Como con el trastero en negro, pero con charco. Que lo resuelva el Neo' se oye 'Como con el trasero negro, pero con charco. Que los resuelva el neo'. 'trastero'→'trasero' es grave porque es la palabra clave del recuerdo del episodio 522 (trastero en negro) y queda irreconocible.",
-    "La réplica de Concha ('Eso lo arreglamos la semana que viene') sí quedó arreglada respecto al rechazo anterior.",
-    "Resto del episodio correcto: estructura v11/v12 (gancho conflicto en marcha, escalada, giro de Felipe sembrado, remate de Neo con moraleja, recuerdo del trastero intencionado aunque mal pronunciado), bucle casa-casa exacto, logo 2026 correcto en todos los fotogramas incluida la tarjeta de marca, LUFS -14.92 y pico -1.44 dB en rango, 64.9 s dentro de 45-70 s."
+    "control_audio.json sigue en bloqueo en este re-render: faltan ['fregona','que','frio','con','el','senora'] y sobran ['freguna','lo','del','senor'] respecto al guion.",
+    "Jambo: guion 'suelta un euro para la fregona' se dice 'freguna' en el audio (confirmado por la transcripción whisper); es la tercera réplica de Jambo con una sustitución de palabra real distinta a la del guion (antes fallaron 'eurillo' y 'ahogo' en intentos previos), no es jerga tipo illo/pa.",
+    "Concha: la frase '¡Qué frío, hostia!' del guion no aparece en la transcripción del audio (se salta directamente de 'la semana que viene' a 'Me cago en todo'); parece un corte o pérdida de la frase en el render de voz, no una jerga ignorable.",
+    "Neo: guion 'los destrozos, señora Melano' se oye 'señor Melano' en el audio; cambio de género de una palabra real y con significado concreto (referencia al personaje Rosa), no es variante de pronunciación aceptable.",
+    "Positivo: 'trastero' de Sindy ya se dice correctamente en este render (antes se oía 'trasero'), ese punto del rechazo previo queda resuelto.",
+    "Resto del episodio correcto: estructura v11/v12, bucle casa-casa exacto, logo 2026 correcto en todos los fotogramas y en la tarjeta de marca, LUFS -14.76 y pico -1.44 dB en rango, 64.6 s dentro de 45-70 s."
   ],
-  "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: Jambo 'Primo… dame un eurillo pa' la fregona. Que me ahogo aquí.' (vigilar especialmente 'eurillo' y 'ahogo', que ya fallaron en dos intentos) y Sindy '¡Tres días sin ducharnos, joder! Como con el trastero en negro, pero con charco. Que lo resuelva el Neo.' (vigilar 'trastero' y 'lo resuelva'). No hace falta tocar guion, vídeo, giro, recuerdo ni el resto del audio, que ya están correctos.",
-  "fecha": "2026-11-26T15:29:56Z",
+  "como_arreglarlo": "CENTRO: regenerar de nuevo con voz_disenada Gemini TTS (rama voces/2026-11-26, voz_tts) solo estas réplicas, verificando cada una contra Whisper antes de resubir: (1) Jambo 'Primo… suelta un euro para la fregona. Que me mojo entero.' (vigilar especialmente 'fregona', que ya lleva tres intentos fallidos con palabras distintas cada vez: probar con pausa o énfasis distinto si vuelve a fallar); (2) Concha '¡Qué frío, hostia!' (comprobar que la frase entera está presente en el audio renderizado, parece haberse perdido); (3) Neo 'Los destrozos, señora Melano, los paga usted' (vigilar 'señora', que se oye como 'señor'). No hace falta tocar guion, vídeo, giro, recuerdo, la réplica de Sindy (ya correcta) ni el resto del audio.",
+  "fecha": "2026-11-26T15:46:01Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-26T15:28:17+00:00",
-  "aprobado_anterior": false,
-  "nota_anterior": 86,
-  "caducado": "2026-11-26T15:45:00+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-26T15:45:00+00:00"
+  "render": "2026-11-26T15:45:00+00:00"
 }
