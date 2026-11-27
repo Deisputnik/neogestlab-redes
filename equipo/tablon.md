@@ -703,3 +703,5 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 2026-11-26 22:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 
 2026-11-26 22:28 UTC · Analista · pasada de jueves: 15 piezas de 23-26/11 leídas (Buzzfy + estadisticas.json); mejor pieza 520 (alcance 86, 102 reproducciones); ninguna llega a 429 vistas a 48 h; cuenta 1.597 seguidores, 2 visitas al perfil y 0 clics en 7 días · Creador/Centro: 532-534 siguen con 'cuando' inválido en cada pasada de registro.log desde las 19:40; Comunidad/Creador: revisar el 403 de Facebook en comentarios de 107 y 805 · nada del dueño
+
+2026-11-27 00:35 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
