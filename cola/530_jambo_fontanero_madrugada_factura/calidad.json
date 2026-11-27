@@ -1,16 +1,16 @@
 {
   "aprobado": false,
-  "nota": 78,
+  "nota": 76,
   "motivos": [
-    "Falta la atribución musical en el texto del post (en 526-529 sí está); el campo musica de post.json no basta. Rechazo automático.",
-    "Voz edge-tts sin motor_voz voz_disenada: suena a IA, tope 89.",
-    "Sin giro a mitad ni campo giro: el diálogo escala pero no revela nada.",
-    "Neo afirma algo jurídico tajante («las horas nocturnas sin contrato son nulas»): consejo legal no verificado.",
-    "Ficha de YouTube «humor familiar» frente a «humor negro» en el texto del post: incoherente.",
-    "Ninguna réplica recuerda un episodio anterior."
+    "Voz edge-tts sin motor_voz voz_disenada y sin justificación en _voz_nota (cuota o fallo del workflow): tope 89 por «suena a IA».",
+    "Sin giro a mitad ni recuerdo de episodio anterior: las escenas centrales solo escalan; sin giro no se pasa de 89.",
+    "Neo afirma consejo legal tajante («las horas nocturnas sin contrato son nulas») no verificado y fuera de hechos_verificados.",
+    "Humor negro flojo: no hay golpe negro real; Neo no suena culto y respetuoso.",
+    "Incoherencia de texto: el post dice «sin contrato» y la moraleja en pantalla «no pagadas»; youtube.descripcion y etiquetas siguen con «humor familiar» (no con «humor negro»)."
   ],
-  "como_arreglarlo": "Texto del post (Creador): añadir la línea de música con atribución real y unificar el tipo de humor en YouTube. Creador: giro, recuerdo y réplica de Neo sin afirmación legal. Centro: voz_disenada.",
-  "fecha": "2026-11-25T17:50:00Z",
-  "revisor": "Calidad (respaldo)",
-  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json."
+  "como_arreglarlo": "Creador (texto): reescribir guion con giro sembrado a mitad y distinto del remate, réplica con recuerdo de un episodio publicado, quitar la afirmación legal de Neo, alinear moraleja post/vídeo y cambiar «humor familiar» por «humor negro» en youtube.descripcion y etiquetas. Centro (render): regenerar voces con voz_disenada (equipo/voz_gemini.json) o justificar en _voz_nota, y re-renderizar.",
+  "fecha": "2026-11-27T17:45:09Z",
+  "revisor": "Calidad (respaldo, Claude)",
+  "comentario": "Evaluación con ffmpeg (duración, LUFS −14, pico −1,0 dBTP, sin silencios ≥0,4 s) y fotogramas de contact sheet. Sin whisper en esta sesión: el audio no se ha oído ni transcrito; las observaciones de habla salen de guion.json.",
+  "nota_calidad": "Evaluado por juicio sobre guion y fotogramas; no se pudo transcribir el audio (sin whisper en la sesión). Medidas: 59,2 s, 1080x1920, −14,4 LUFS, pico −1,38 dBTP, sin silencios > 0,3 s. Intro y bucle correctos; isotipo 2026 correcto."
 }
