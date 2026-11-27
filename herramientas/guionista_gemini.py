@@ -40,7 +40,11 @@ PENDIENTES = os.path.join(RAIZ, "equipo", "guiones_gemini", "pendientes")
 # (saturados) y gemini-2.5-flash/gemini-2.5-flash-lite dieron 404 "no disponible para cuentas
 # nuevas" con esta clave: se dejan de últimos por si cambia. Lista larga a propósito para
 # aguantar baches de saturación sin dejar de producir guiones.
+# 27/11/2026 (orden del dueño: «los mejores que permita mi plan»): la clave es de nivel gratuito; sondeados todos
+# los modelos: gemini-pro-latest, 3.1-pro, 4-argon, 4-carbon, 4-neon y omni dan 429 «limit: 0» (sin cuota gratis).
+# gemini-4-hydrogen sí responde y va primero; si Google da cuota a los pro en el plan gratuito, añadirlos aquí.
 MODELOS = [
+    "gemini-4-hydrogen",
     "gemini-3.7-flash",
     "gemini-3.8-flash",
     "gemini-3.6-flash",
@@ -49,6 +53,7 @@ MODELOS = [
     "gemini-flash-lite-latest",
     "gemini-3.5-flash",
     "gemini-2.5-flash",
+    "gemini-3-flash-preview",
 ]
 N_POR_DEFECTO = 4   # 2 pasadas al día x 4 = hasta 8 borradores para cubrir 5 episodios diarios tras el filtro del validador
 # 21/11/2026 (orden del dueño): Jambo Reseco vuelve al reparto del formato de barrio/salon
