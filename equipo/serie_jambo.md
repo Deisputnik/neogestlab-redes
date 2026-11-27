@@ -117,7 +117,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - «IA», «Neogest», «app» o el nombre de una función en el título;
    - los nombres de los personajes en el título (nadie los conoce todavía), salvo «el cuñado» o «la vecina» como tipo de persona;
    - los títulos de más de 60 caracteres.
-2. **Texto fijo en pantalla**: el título (sin el emoji ni #Shorts) va escrito arriba, en grande y legible, durante todo el vídeo y no solo en el plano de la casa. No puede tapar las caras ni los subtítulos. *Tarea de Mejora, prioridad alta (aprobada por el dueño el 27/11): implementarlo en el render: campo `titulo_fijo` del episodio en `gen_episodios.py`, que pinte un texto persistente en todas las escenas. Hasta que esté, `gancho_casa` debe ser ese mismo título.*
+2. **Texto fijo en pantalla**: el título (sin el emoji ni #Shorts) va escrito arriba, en grande y legible, durante todo el vídeo y no solo en el plano de la casa. No puede tapar las caras ni los subtítulos. *Implementado el 27/11 en la primera escena (`titulo_fijo` en `gen_episodios.py`). Tarea de Mejora, prioridad alta: que el texto se quede fijo en TODAS las escenas, no solo en la primera, y hacerlo en el render: campo `titulo_fijo` del episodio en `gen_episodios.py`, que pinte un texto persistente en todas las escenas. *
 3. **Ironía en el gancho**: el título promete lo contrario de lo que pasa, o pone en duda algo que el público ya vive. El remate de Neo contesta de verdad a esa promesa.
 4. **Comentarios**:
    - El comentario fijado de YouTube es SIEMPRE una pregunta que se contesta con una cifra o con una experiencia propia («¿A ti cuántos días te pagan? Una cifra.», «¿Quién es el cuñado de tu familia? Etiquétalo.»). Nunca un enlace ni una venta.
@@ -257,6 +257,34 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 5. **Promos de apps en TikTok**: también cortas, de 20 s como mucho, con la diferencia de la app en el primer segundo. Las de 31-34 s de ahora se pierden en el segundo 2.
 6. **Medir**: Analista apunta cada semana, por vídeo de TikTok (Zernio, `analytics_get_analytics` con `platform=tiktok`), la duración, el % que lo ve entero, el tiempo medio visto, las veces compartido y si era la versión corta. Lo deja en `equipo/virales_semana.md`. El objetivo es pasar del 7 % que lo ve entero; el vídeo que lo supere pide su «Parte 2» en 24-48 h.
 
+## 12. Bucle viral y de monetización (orden del dueño 27/11/2026 noche: «hasta que den con la clave de lo que funciona realmente y puede monetizar»)
+Todo el equipo trabaja en un solo bucle, cada semana, hasta encontrar la fórmula que crece **y** trae dinero. Nadie da nada por cierto sin cifras.
+
+**Cómo se puede ganar dinero hoy** (requisitos leídos el 27/11/2026 en fuentes oficiales o publicadas; el Analista los vuelve a comprobar antes de usarlos):
+- **Negocio propio (la vía real a corto plazo)**: los vídeos llevan a la prueba gratuita de Gestión Integral 7D, a las apps y a webs a medida. La métrica que manda es la de la DIRECTIVA §9: altas en prueba. Hoy el embudo está en 0 € y 0 solicitudes (`equipo/monetizacion.md`).
+- **YouTube (Programa de Partners)**: hoy pide 1.000 suscriptores y 4.000 horas de visualización en 12 meses, o 1.000 suscriptores y 10 millones de visualizaciones de Shorts en 90 días. Desde el 1/2/2027, los nuevos necesitan 8.000 horas o 20 millones de visualizaciones de Shorts. Hay un nivel previo de 500 suscriptores para la financiación de fans. Tenemos 216 suscriptores.
+- **TikTok (Programa de Recompensas para Creadores)**: 10.000 seguidores, 100.000 visualizaciones en los últimos 30 días, y solo cobran los vídeos de 1 minuto o más. Hoy estamos lejos. Cuando la cuenta pase de 5.000 seguidores, el Estratega prueba una versión de más de 1 minuto para TikTok, sin tocar la regla de la versión corta del §11.4 hasta entonces.
+- **Facebook**: la página vuelve a ser de tipo «Creador» (27/11) para tener las herramientas de monetización. Los requisitos se leen en el panel para creadores antes de dar ninguna cifra.
+
+**El bucle semanal (quién hace qué)**:
+1. **Cazador (lunes)**: además de los virales, busca **vídeos que monetizan** y explica **por qué** ganan dinero. Escribe en `equipo/monetizan.md` (máx. ~120 líneas, lo nuevo arriba) al menos 6 casos por semana, en dos grupos:
+   - a) cuentas de humor o series cortas en español que ya cobran de la plataforma o tienen patrocinios visibles;
+   - b) creadores que venden su propio servicio con vídeos, como apps, IA para negocios o reformas de negocios con IA.
+   
+   De cada caso apunta formato, duración, gancho, frecuencia, cómo lleva al dinero (programa, patrocinio, enlace, oferta, directo) y sus cifras públicas. Después propone **1 fórmula «clonar y mejorar»** que encaje en la biblia: se copia la estructura, nunca el contenido, la voz ni los personajes de nadie.
+2. **Guionista y Creador**: cada semana, al menos 1 de cada 5 episodios aplica la fórmula «clonar y mejorar» de la semana (en `por_que_funcionara` se cita el caso de `monetizan.md`).
+3. **Analista (martes, jueves y domingo)**: mide por red con las reglas del §11 (salidas o % visto entero, compartidos, comentarios, clics con `src`, solicitudes). Un patrón queda **CONFIRMADO** cuando 3 piezas o más que lo usan superan el doble de la mediana de su red. Queda **DESCARTADO** cuando 3 o más se quedan por debajo de la mediana.
+4. **Estratega (lunes)**: lo CONFIRMADO entra en el §11 de esta biblia como regla, sustituyendo a la anterior, y lo DESCARTADO sale. Cada cambio va con su cifra en el registro de cambios. Un experimento nuevo por semana, con su regla de decisión escrita antes de ver el dato.
+5. Cuando una fórmula mueva el embudo (clics con `src` o solicitudes), se le da prioridad sobre la que solo da visualizaciones.
+
+**Jerarquía de fuentes (para que no haya conflictos de información)**:
+1. Orden del dueño.
+2. `equipo/DIRECTIVA_VIGENTE.md`.
+3. Esta biblia (formato del episodio y reglas por red, §6 y §11).
+4. `equipo/roles/*.md`.
+
+Todo lo demás (`virales_semana.md`, `monetizan.md`, `tecnicas_virales.md`, `formulas_ganadoras_ia.md`, `modelos_ganadores.md`, `aprendizajes.md`…) son **datos y propuestas, no reglas**: si algo de ahí contradice a los de arriba, manda lo de arriba, y quien lo vea lo corrige en el sitio y lo apunta en el tablón.
+
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
 | Cifra | Dato | Fuente leída | Matiz |
 |---|---|---|---|
@@ -266,6 +294,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · §12 nuevo, «Bucle viral y de monetización»: requisitos de cobro de YouTube y TikTok leídos hoy, `equipo/monetizan.md` del Cazador (vídeos que ganan dinero y por qué, más 1 fórmula «clonar y mejorar» por semana), patrones CONFIRMADOS o DESCARTADOS según las cifras del Analista y jerarquía de fuentes.
 - 2026-11-27 (noche) · §11.4 nuevo, TikTok: con los datos de Zernio, los vídeos de 18-19 s se ven enteros un 6,6-6,8 % y los episodios de 64 s un 0-0,5 %. Desde el 28/11, TikTok publica siempre la versión corta (≤ 25 s, sin promo final, `tiktok.video_corto`). La primera línea del texto lleva las palabras de búsqueda y `redes_zernio.py` limpia la palabra «Moraleja» y el reparto. Pendiente para Mejora: comentarios de TikTok en Comunidad.
 - 2026-11-27 (noche) · §11.3 nuevo, Facebook: datos de la página (972 visualizaciones en 28 días, de 0 a 6 por reel) y la política de originalidad de Meta (marzo de 2026). Reglas: una sola subida por vídeo, texto pensado para compartir, enlace en el primer comentario, comentarios en la primera hora, reel de marca mensual. Volumen: 4 al día, aprobado y aplicado.
 - 2026-11-27 (noche) · Orden del dueño: **apertura en frío para todos los episodios**. Se empieza en el lío con `titulo_fijo` en grande, la casa va después sin texto y no hay casa al cierre. §6 reescrito y borrado lo que lo contradecía: el bucle de casa al abrir y cerrar y la prueba con reels de prueba del §11.2. `gen_episodios.py`, el Guionista (campo `titulo_fijo` obligatorio, `bucle_visual` opcional), Calidad y el Creador están alineados.

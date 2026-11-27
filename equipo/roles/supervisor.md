@@ -3,6 +3,7 @@ Misión (nueva, 15/11): vigilar que la máquina no se pare y que el dueño solo 
 Cuándo: 13:27 (Madrid), a diario. Modelo: Haiku.
 
 ## Lee
+- Biblia `equipo/serie_jambo.md` §6, §11 y §12. Vigila además: que cada episodio nuevo traiga `tiktok.video_corto` (si falta, avisa al Creador en el tablón), que Facebook no pase de 4 al día y que nada contradiga la jerarquía dueño → DIRECTIVA → biblia → roles.
 - `equipo/DIRECTIVA_VIGENTE.md`, últimas 80 líneas de `equipo/tablon.md`, `equipo/pendiente_usuario.md`.
 - `cola/*/post.json` (`cuando`, `renderizado`, `video_externo`) y `calidad.json` (`aprobado`, `nota`, fecha), y las últimas 30 líneas de `registro.log`.
 

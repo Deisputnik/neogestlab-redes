@@ -2,6 +2,10 @@
 
 Creado el 16/11/2026 por Coordinación (orden del dueño). Manda `equipo/DIRECTIVA_VIGENTE.md`; esto es el manual operativo.
 
+## Reglas vigentes (biblia §11.4, 27/11/2026; mandan sobre lo de abajo si chocan)
+- TikTok publica SIEMPRE la versión corta (≤ 25 s, sin promo final) si existe: `post.json` → `"tiktok": {"video_corto": "https://…"}`; el Creador la hace en todos los episodios desde el 28/11. Si no existe, publica la larga (45-70 s), que es la peor opción. Promos de apps en TikTok: ≤ 20 s.
+- La primera línea del texto es el `titulo_fijo` con las palabras de búsqueda; el texto sale sin «Moraleja» ni el reparto entero. Lo de abajo («descarga el vídeo de Instagram», «2 al día», huecos fijos) es la vía antigua de Buffer; la vigente es Zernio en modo espejo (`equipo/zernio/`).
+
 ## Qué hace
 `herramientas/redes_buffer.py tiktok` (workflow `redes_buffer.yml`, 07:23 y 16:23 hora de Madrid) coge los reels de `publicados/` con calidad aprobada y render desde el 14/11/2026, descarga el vídeo de Instagram, lo deja en la release pública «redes» y lo programa en Buffer (plan gratis) para TikTok. No hay producción aparte: TikTok vive de lo que Calidad ya aprobó.
 

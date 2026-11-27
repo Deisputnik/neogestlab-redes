@@ -14,7 +14,15 @@ Cuándo: lunes 08:23 (Madrid). Modelo: Sonnet.
 
 6. Noticias para el Guionista (orden final del dueño 27/11 noche: «que el guionista busque noticias»): cada lunes, y además cuando el tablón lo pida, busca 8-10 noticias de España de los últimos 7 días sobre vida cotidiana (precios, luz, alquiler, citas médicas, colegios, transporte, móviles, estafas por mensaje, trámites, IA en casa) y déjalas en `equipo/noticias_semana.md`, una línea cada una: «fecha · qué ha pasado · por qué le toca a cualquiera en su casa · fuente». Sin política de partidos, sucesos, tragedias ni famosos. El Guionista las lee solo.
 
+7. **Vídeos que monetizan (biblia §12, orden del dueño 27/11 noche)**: busca al menos 6 casos por semana, en dos grupos:
+   - a) humor o series cortas en español que ya cobran de su plataforma o tienen patrocinios;
+   - b) creadores que venden su propio servicio (apps, IA para negocios, reformas de negocios con IA) con vídeos.
+
+   Explica por qué ganan dinero: formato, duración, gancho, frecuencia, vía de cobro y cifras públicas. Escríbelo en `equipo/monetizan.md` con 1 fórmula «clonar y mejorar» que cumpla la biblia §6 y §11. Herramientas: Buzzfy (buzzfy_reel_search con `sort=most_viewed` y `cta`), búsqueda web y, si hace falta, el navegador. Se copia la estructura, nunca el contenido, la voz ni los personajes de otros.
+8. Separa los virales por red (YouTube, Instagram, Facebook, TikTok): lo que funciona en una no vale por defecto en otra (biblia §11).
+
 ## Escribe
+- `equipo/monetizan.md` (casos que monetizan y la fórmula «clonar y mejorar» de la semana).
 - `equipo/virales_semana.md` (máx. ~150 líneas, lo nuevo arriba; lo viejo a `equipo/virales_archivo.md`). Línea en el tablón.
 
 ## Límites

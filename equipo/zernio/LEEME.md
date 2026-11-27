@@ -24,6 +24,8 @@ tras la suspensión de esa cuenta de GitHub (21/11/2026); todo el pipeline vive 
 
 ## Cómo funciona
 
+> Vigente (27/11/2026, biblia §11.4): `modo: espejo` (publica lo que Instagram ya ha publicado, no hay 2 pasadas fijas) y, si la pieza lleva `"tiktok": {"video_corto": "https://…"}`, se sube esa versión corta (≤ 25 s, sin promo final) en vez del largo; el texto se limpia de «Moraleja» y del reparto (`texto_tiktok`).
+
 - Workflow `.github/workflows/redes_zernio.yml`, dos pasadas al día (12:45 y 19:45, hora de Madrid).
 - Reutiliza la misma selección de piezas y el mismo texto por canal que Buffer/Metricool
   (`herramientas/redes_buffer.py`), para que las 3 vías no publiquen nunca el mismo vídeo dos veces.

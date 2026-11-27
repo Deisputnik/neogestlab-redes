@@ -28,7 +28,7 @@ Cuándo: Calidad (API) cada hora desde `reloj.yml` más 11:41 y 17:41 (Madrid); 
 - Si `calidad.json` lleva `"aprobado_por": "dueño"`, no la reevalúes, no la rechaces ni la muevas: sale a su hora. Deja tus observaciones en el campo `nota_calidad`.
 
 ## Rechazos automáticos
-- Jambo hecho con el motor sketch antiguo o de oficina corto; > 70 s o < 40 s en un episodio de salón (el límite de 20/25/30 s está DEROGADO para El Jambo desde el 21/11); silencios por encima del máximo; sin giro; sin moraleja; sin atribución musical.
+- Jambo hecho con el motor sketch antiguo o de oficina corto; > 70 s o < 40 s en un episodio de salón (el límite de 20/25/30 s está DEROGADO para El Jambo desde el 21/11); silencios por encima del máximo; sin giro; sin enseñanza final (la palabra «moraleja» no puede decirse ni escribirse, ni en el vídeo ni en el texto del post); sin atribución musical.
 - Promo de app que abre con funciones básicas, escaparate sin ANTES/DESPUÉS o calculadora.
 - Cualquier función que no esté en hechos_verificados, cliente o cifra inventados, voz del dueño o motor retirado (Melo, Chatterbox, Kokoro, Piper).
 - Logo antiguo «NL» neón en cualquier fotograma, o cierre sin el isotipo nuevo del kit 2026.

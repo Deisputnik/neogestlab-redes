@@ -87,7 +87,7 @@ def _limpiar(texto, maximo):
     return texto[:maximo]
 
 
-def _titulo_corto(titulo, maximo=60):
+def _titulo_corto(titulo, maximo=53):
     """Título de Short con « #Shorts» al final y como mucho `maximo` caracteres en total, cortando por palabra."""
     sufijo = " #Shorts"
     lim = maximo - len(sufijo)
@@ -112,9 +112,9 @@ def metadatos(post):
     primera = texto.split("\n", 1)[0].strip()
     titulo = yt.get("titulo") or primera
     if not yt.get("titulo") and not yt.get("largo") and "#shorts" not in titulo.lower():
-        titulo = _titulo_corto(titulo)   # DIRECTIVA §14: ≤ 60 caracteres con #Shorts (los títulos escritos a mano por el Creador no se tocan)
+        titulo = _titulo_corto(titulo)   # DIRECTIVA §14: ≤ 45 caracteres + « #Shorts» = 53 (biblia §11.1, 27/11/2026; antes 60) (los títulos escritos a mano por el Creador no se tocan)
     elif not yt.get("largo") and "#shorts" not in titulo.lower():
-        titulo = titulo[:91].rstrip() + " #Shorts"
+        titulo = titulo[:45].rstrip() + " #Shorts"
     app = post.get("app")
     enlace = f"{CENTRO}/solicitar?{'app=' + app + '&' if app else ''}src=youtube"
     texto_l = texto.lower()

@@ -3,6 +3,7 @@ Misión: aprovechar lo que funciona: «Parte 2» (o «Parte 3») de los reels qu
 Cuándo: lunes, miércoles y viernes 09:00 (Madrid). Modelo: Sonnet. Termina enseguida, sin mensaje, si no hay ningún candidato.
 
 ## Lee
+- Biblia `equipo/serie_jambo.md` §6 (apertura en frío) y §11 (reglas por red; segunda vida de lo que funcionó, §11.2 punto 6: se rehace con el reparto vigente, nunca se resube el vídeo viejo).
 - `equipo/DIRECTIVA_VIGENTE.md` (§5 El Jambo), últimas 40 líneas del tablón (avisos del Analista), `estadisticas.json`, `publicados/` y `cola/` (para no duplicar), `equipo/remasters_hechos.txt`.
 
 ## Pasos

@@ -372,9 +372,9 @@ FORMATO_VIGENTE = (
     "casa al cierre. Rechaza el episodio producido desde el 28/11 que abra con la casa o con un texto que no sea la situación; lo "
     "renderizado antes con casa al abrir y cerrar no se rechaza por eso. Evalúa además (orden del dueño 22/11): "
     "todos hablan con vocabulario vulgar/choni de barrio y tacos comunes; Neo es el ÚNICO culto y habla con respeto; los demás MUY mal hablados y muy vulgares (no un taco suelto), Felipe Lotas como cuñado enterado y Jambo Reseco como gorrón caradura (orden del dueño 22/11 noche); humor negro "
-    "real; Jambo Reseco presente cuando toque; giro de Neo, moraleja y recuerdo. «illo», «pa» y los tacos que Whisper no transcribe "
-    "NO son error de voz. El listón de 90 se mantiene. Cierre fijo del post: «Pide tu prueba gratuita: sin tarjeta, sin datos "
-    "bancarios y sin compromiso»; prohibido cualquier embudo («comenta X y te envío»). Repo vivo: Deisputnik/neogestlab-redes."
+    "real; Jambo Reseco presente cuando toque; giro de Neo, enseñanza final (la palabra «moraleja» NO puede decirse ni escribirse, ni en el vídeo ni en el texto del post: si aparece, rechaza) y recuerdo. «illo», «pa» y los tacos que Whisper no transcribe "
+    "NO son error de voz. El listón de 90 se mantiene. Cierre fijo del post de Instagram: «Pide tu prueba gratuita: sin tarjeta, sin datos "
+    "bancarios y sin compromiso» (en Facebook el enlace va en el primer comentario, no en el texto); el texto del post tiene en la línea 1 la situación con el colectivo, en la 2 a quién mandárselo y en la 3 una pregunta que se contesta con una cifra, 3-5 hashtags, sin el reparto entero ni preguntas de producto como gancho (biblia §11); prohibido cualquier embudo («comenta X y te envío»). Repo vivo: Deisputnik/neogestlab-redes."
 )
 
 

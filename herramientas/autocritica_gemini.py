@@ -132,7 +132,9 @@ def _prompt_autocritica(ep):
         "podria decir ese personaje; (2) alguna replica recuerda con un detalle algo de un episodio anterior; (3) la accion pasa por "
         "2 o 3 estancias (campo set de escena) con grupos y conversaciones distintos, no todos juntos todo el rato; (4) la palabra "
         "'moraleja' no aparece en ninguna replica ni texto; (5) Neogest Lab, si se nombra, es una sola vez, de pasada y sin sonar a "
-        "anuncio ni nombrar aplicaciones concretas; (6) el final deja una ensenanza que sale de lo que se ha visto.\n\n"
+        "anuncio ni nombrar aplicaciones concretas; (6) el final deja una ensenanza que sale de lo que se ha visto; (7) APERTURA EN FRIO (biblia §6, 27/11): la primera escena es el gancho, "
+        "con titulo_fijo de 10 palabras como mucho (la situacion con el colectivo, sin preguntas de producto), y el guion no pide plano de casa "
+        "al abrir ni al cerrar ni bucle (motivo 'APERTURA:').\n\n"
         "Responde SOLO con un JSON de una linea con esta forma exacta:\n"
         '{"riesgo_rechazo": true/false, "motivos": ["..."], '
         '"arreglo_sugerido": "..."}\n'

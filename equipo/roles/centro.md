@@ -4,6 +4,7 @@ Cuándo: lunes y jueves 11:17 (Madrid). Modelo: Sonnet (lo mecánico en Haiku).
 Centro: Base44 appId 6ae5244d4e2b32702f0a3cd6, https://centro-de-contenido-apps-2f0a3cd6.base44.app
 
 ## Lee
+- Biblia `equipo/serie_jambo.md` §11 (reglas por red; promos de apps: ≤ 20 s en TikTok con la diferencia en el primer segundo) y §12 (bucle viral y de monetización). Jerarquía: dueño → DIRECTIVA → biblia → roles; el resto son datos.
 - `equipo/DIRECTIVA_VIGENTE.md` (§5 vídeo de presentación y promo, §6 voz), últimas 40 líneas del tablón, líneas «CENTRO:» de `equipo/peticiones_mejora.md` (rechazos de Calidad), `equipo/virales_semana.md`.
 - Docs del proyecto (herramienta Projects, si la sesión la tiene): `claude/redes/rehacer_videos_centro_elevenlabs.md` (manda en estos vídeos; registro de vídeos hechos y caracteres gastados), `claude/redes/promos_diferenciales_2026-11-15.md`, `claude/mejora-continua-centro.md`, `claude/marca_2026_LEEME.md`.
 - En el Centro: entidad VideoMezcla (notas y niveles del dueño, estados) y SolicitudInfo; `/app/video-studio/README.md` y `MEZCLA.md` del sandbox.

@@ -67,6 +67,7 @@ def texto_canal(nombre, post, cfg, canal):
         l = linea.strip()
         if not l or re.fullmatch(r"(#\w+\s*)+", l, re.U):
             continue                                   # fuera las etiquetas de Instagram
+        l = re.sub(r"(?i)^moraleja:\s*", "", l)          # 27/11/2026: nunca la palabra «Moraleja» en el texto de ninguna red
         if l.lower().startswith("pide tu prueba gratuita") or l.lower().startswith("pruébala gratis"):
             continue                                   # el cierre se pone una sola vez, abajo
         if canal == "google" and re.search(r"m[aá]ndaselo|cu[eé]ntalo en comentarios\.?$", l, re.I):

@@ -14,6 +14,11 @@ Cuándo: martes, jueves y domingo 23:23 (Madrid); los domingos añade el embudo 
 5. Captación: a las 48 h de cada pieza de 7D, visitas al perfil, clics con `src` y solicitudes nuevas.
 6. Fallos de publicación o de token en registro.log: arriba en «## ALERTAS» de aprendizajes.md y hora exacta en `equipo/pendiente_usuario.md`.
 
+## Por red (biblia §11 y §12, desde el 28/11/2026)
+- Mide cada red con sus propias reglas: YouTube (vistas a 7 días, me gusta, comentarios, molde de título, corto o largo), Instagram (salidas en los primeros segundos, compartidos, comentarios, texto del primer fotograma, feed o prueba), Facebook (visualizaciones, tiempo medio, compartidos, enlace en el texto o en el comentario) y TikTok (Zernio `analytics_get_analytics` con `platform=tiktok`: % que lo ve entero, tiempo medio, versión corta o larga).
+- Marca cada patrón como CONFIRMADO (3 piezas o más por encima del doble de la mediana de su red) o DESCARTADO (3 o más por debajo de la mediana), con cifras, en `equipo/virales_semana.md` → «Qué funciona por red». El Estratega lo pasa a la biblia.
+- Comprueba cada semana los requisitos de cobro de las plataformas (biblia §12) frente a nuestras cifras y apunta lo que falta en `equipo/monetizacion.md`.
+
 ## Los domingos (embudo y monetización)
 1. `python3 herramientas/embudo.py` regenera `equipo/embudo.md`: alcance → visitas al perfil → clics → solicitudes (SolicitudInfo y Clic del Centro, Base44 6ae5244d4e2b32702f0a3cd6, por origen instagram|facebook|youtube) → altas en prueba. El paso más débil es la prioridad de la semana.
 2. Escribe en `equipo/monetizacion.md` (máx. ~120 líneas) el estado con cifras y 3-5 acciones concretas para el Estratega, una de ellas un experimento medible.

@@ -11,7 +11,7 @@ Concha Quetón/Neo). v5.1 (20/11/2026 noche, orden del dueño tras ver el piloto
   - Risas de sitcom: marca "risas: true" en una escena de gag para añadir el sfx "risas" al final de la
     réplica (biblioteca ya incluida en Neogest Studio, src/studio/library.js).
 v5.2 (21/11/2026 madrugada, orden del dueño):
-  - Créditos finales: tras el bucle de cierre, una escena "REPARTO" con el nombre y apellido de cada
+  - [DEROGADO 27/11/2026: ya no hay créditos ni bucle de cierre, biblia §6] Créditos finales: tras el bucle de cierre, una escena "REPARTO" con el nombre y apellido de cada
     personaje que ha salido en el episodio (por si la etiqueta al entrar pasa desapercibida).
   - Ropa de ir por casa para Rosa/Felipe/Sindy (sin corbata ni traje de oficina), acorde al set "salón"
     — ver src/studio/characters.js en el app de Neogest Studio.
@@ -147,7 +147,7 @@ async def tts(text, who, path, accion="habla", emo=None):
 HOOK_CASA = "Esta casa del barrio tiene truco 👀"
 
 def bookend(hook=False, texto=None):
-    # Misma tarjeta EXACTA en apertura y cierre de todos los episodios (bucle imperceptible); solo
+    # [DEROGADO 27/11/2026: ya no se usa al cierre; solo tras el gancho y entre estancias] Misma tarjeta EXACTA en apertura y cierre (bucle imperceptible); solo
     # cambia el overlay de texto, que va únicamente en la apertura (hook=True).
     # Empuje de cámara hacia el porche/puerta iluminada (orden del dueño 26/11: "ampliar partes de la
     # casa" y que tenga profundidad, gratis). Son keyframes [{t,x,y,zoom}] del motor (engine.js
@@ -271,10 +271,11 @@ async def main():
         # 27/11/2026 noche (orden del dueño, datos de Instagram: con la casa al abrir se va el 57-100 % en los primeros segundos;
         # abriendo en el lío, el 22-30 %): APERTURA EN FRÍO. La primera escena es la del gancho con el título fijo encima desde el
         # fotograma 0; la casa por fuera va DESPUÉS, sin texto, como cabecera de comedia americana. Ya no hay plano de casa al cierre.
-        titulo = ep.get("titulo_fijo") or ep.get("gancho_casa") or HOOK_CASA
+        titulo = ep.get("titulo_fijo") or ep.get("gancho_casa")   # sin título no se pinta el viejo «Esta casa del barrio tiene truco» (derogado)
         if scenes:
             scenes[0]["transition"] = "none"
-            scenes[0].setdefault("texts", []).insert(0, {"id": uid(), "text": titulo, "style": "hook", "anim": "pop", "start": 0.0, "y": 0.18})
+            if titulo:
+                scenes[0].setdefault("texts", []).insert(0, {"id": uid(), "text": titulo, "style": "hook", "anim": "pop", "start": 0.0, "y": 0.18})
             scenes.insert(1, bookend())
         else:
             scenes.insert(0, bookend(hook=True, texto=titulo))

@@ -35,7 +35,13 @@ Al montar el `eps.json` copia tal cual del guion del Guionista `emo`, `p`, `a` y
 - Registro (22/11): todos con vocabulario vulgar/choni de barrio salvo Neo, único culto y respetuoso; muy mal hablados y muy vulgares, Felipe Lotas de cuñado enterado y Jambo Reseco de gorrón caradura (22/11 noche); humor negro real de lo cotidiano; SIN créditos de reparto (27/11): los nombres y apellidos se dicen en el diálogo.
 - Guion (biblia v5.3, 27/11: lío de casa o de vida cotidiana, patrón fijo de estancias, los cinco aportan, memoria, sin la palabra «moraleja»): Rosa manda en la casa y pide algo absurdo · los demás lo sufren o lo lían y escalan en 5-8 golpes, cada uno peor · UN giro a mitad (golpe con `giro: true`, sembrado antes, DISTINTO del remate de Neo) · Neo resuelve ESE conflicto y deja a Rosa en evidencia · enseñanza de 6-9 palabras en el cierre (campo `moraleja`, sin decir esa palabra) + pregunta, sin contradecir lo que dice Neo · una réplica recuerda un episodio anterior YA publicado (campo `recuerdo`).
 - Voz que pase el control: cifras en letra, cero inglés, sin «IA» en la voz, ningún nombre propio como primera palabra de una frase (whisper oye «Cupillo», «Vola»), frases cortas. Revisa el guion en voz alta antes de entregarlo.
-- Ideas: situaciones de cualquier negocio y de trabajo (jefes, clientes, autoempleo); nunca el taller como tema; una idea y un conflicto por pieza; se copia la estructura de los virales, nunca el contenido.
+- Ideas: como mucho UNA de trabajo o negocio por tanda; el resto, líos de casa y de la vida cotidiana (biblia §6 y apartado J del Guionista); nunca el taller como tema; una idea y un conflicto por pieza; se copia la estructura de los virales, nunca el contenido.
+
+- **Texto del post y bloques por red (biblia §11, 27/11/2026; manda sobre cualquier regla anterior):**
+  - `texto` (Instagram): línea 1 = la situación con el colectivo (= `titulo_fijo`, ≤ 10 palabras); línea 2 = a quién mandárselo; línea 3 = pregunta que se contesta con una cifra o una palabra; después la prueba gratuita y los avisos de IA y ficción; 3-5 hashtags (#humor o #humornegro, el del colectivo, #serieeljambo). Nunca la palabra «Moraleja» ni el reparto entero («Rosa, Felipe, Sindy, Jambo…»); nunca una pregunta de producto como gancho («¿Apuntas el stock…?»).
+  - `youtube`: título ≤ 45 caracteres + « #Shorts» (colectivo + situación + 1-2 emojis; sin «IA», «app», «Neogest» ni nombres de personajes; «· Parte N» si continúa); 1 de cada 5 episodios, `"youtube": {"corto": true}`; descripción y comentario fijado según §11.1.
+  - `facebook`: texto en 3 líneas (situación; «Compártelo con… 😂»; pregunta con cifra), máx. 3 hashtags; el enlace de la prueba SOLO en el primer comentario; máx. 4 reels al día en total; un vídeo se sube una sola vez.
+  - `tiktok`: siempre la versión corta ≤ 25 s sin promo final (`"tiktok": {"video_corto": "https://…"}`), en todos los episodios desde el 28/11.
 
 ## Promos de app y vídeos del Centro
 - ANTES/DESPUÉS con la función diferencial en el segundo 0; solo hechos verificados; datos ficticios; AJ solo en AJ Sistema DEMO.
@@ -49,7 +55,7 @@ Al montar el `eps.json` copia tal cual del guion del Guionista `emo`, `p`, `a` y
 2. Promo de app: `"motor_voz": "elevenlabs"` (render `--final`); edge solo con `_voz_nota` de cuota agotada.
 3. `guion.json` del episodio (no el spec) con `giro` y `recuerdo`, y el recuerdo dicho en una réplica.
 4. Atribución musical en el TEXTO del post («Música: …»), no solo en el campo `musica`.
-5. Moraleja del post coherente con la última réplica de Neo; réplica final de Neo ≤ 20 palabras.
+5. Enseñanza final del post coherente con la última réplica de Neo (nunca con la palabra «Moraleja»: ni en el texto del post de ninguna red ni en el vídeo); réplica final de Neo ≤ 20 palabras.
 6. Tomas de app dentro del marco de móvil a zoom 1 con rótulo encima y subtítulos debajo (evita el solape subtítulo/botón de 109, 110, 407 y 408; LEEME).
 7. Voz que se entienda (26/11, orden del dueño, opción b): golpes ≤ 14 palabras, remate de Neo ≤ 20, Jambo ≤ 10, frases de 3-8 palabras separadas por punto y ninguna palabra de `equipo/voz_palabras_dificiles.json` (fregona, eurillo, buena tinta…). Si Calidad rechaza otra palabra por dicción, se añade a esa lista. Se arregla en el guion antes del pedido de voces, no regenerando la voz una y otra vez.
 Sin `pre_entrega.py` a 0 ERRORES no se entrega: se arregla primero.

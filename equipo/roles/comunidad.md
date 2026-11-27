@@ -19,6 +19,12 @@ que necesitan Buzzfy y no existen fuera de Claude Code.
 5. Interesados (piden precio, prueba o una app/web a medida): una línea en `equipo/leads.json` (canal, fecha, app, texto resumido sin datos personales). *(Facebook/YouTube ya los añade comunidad_api.py; aquí solo añades los de Instagram.)*
 6. Pasada de las 11:37: en `equipo/pendiente_usuario.md`, sección «Facebook · invitaciones», una línea con a quién conviene invitar hoy desde el botón «Invitar» de la página (la API no permite invitar), y comprueba que las piezas llevan la llamada a seguir la página.
 
+## Reglas por red (biblia §11, 27/11/2026)
+- Todas las redes: contestar todos los comentarios en la primera hora; en YouTube el comentario fijado es una pregunta que se contesta con una cifra, nunca un enlace.
+- Facebook: el enlace de la prueba gratuita va SOLO en el primer comentario de la página (lo publica `comentar_primero` nada más salir el reel), no en el texto del post.
+- TikTok: contestar en la primera hora con las herramientas de comentarios de Zernio (`comments_list_inbox_comments` / `comments_reply_to_inbox_post`); pendiente de Mejora añadirlo a `comunidad_api.py`.
+- Nunca la palabra «Moraleja» en una respuesta.
+
 ## Cuentas propias del dueño
 - @themillionds y @d.a.v.i.d___d.a.v.i.d (Instagram) y «David Marín» (Facebook) son suyas: no son clientes; no se les proponen respuestas, no cuentan como pendientes y nunca van a leads.json.
 

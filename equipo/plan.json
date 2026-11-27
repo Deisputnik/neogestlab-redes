@@ -39,6 +39,7 @@
   "resultado_23_11": "Regla no aplicable con rigor: el único grupo S con volumen (Parte 2 de morosidad) es un atípico (1.101 de alcance) que no se repite en su Parte 3 (44). Sin evidencia de que 'Parte 2' mejore por sí sola; lo que movió alcance fue un tema concreto de cobro (morosidad, ley 60 días). Decisión: no hay cambio de mezcla; se testea el tema de cobro como hipótesis en ideas_semana."
  },
  "experimento": {
+  "estado": "DEROGADO 27/11/2026 → ver biblia §6/§11: apertura en frío para todos los episodios (primer fotograma = escena del gancho con titulo_fijo ≤ 10 palabras; casa por fuera después, sin texto; sin plano de casa al cierre ni bucle). Ya no hay brazo A.",
   "nombre": "Gancho de conflicto concreto frente a gancho fijo «Esta casa del barrio tiene truco» (plano de casa, 0-1,6 s)",
   "hipotesis": "Los episodios de barrio pierden al 70-82 % de los espectadores antes de 6 s porque el texto de gancho es genérico; nombrar el conflicto del episodio en ≤ 8 palabras (p. ej. «Rosa cobra por respirar») baja el abandono sin tocar el plano idéntico de apertura y cierre exigido por la directiva.",
   "como": "Brazo A: gancho fijo actual. Brazo B: gancho con el conflicto del episodio en ≤ 8 palabras sobre el mismo plano. Reparto alterno por orden de publicación (primero A, luego B…) en los episodios de El Jambo de 23-29/11. Lectura a 48 h con ig_post_stats (skip_rate_pct y avg_watch_time_s).",

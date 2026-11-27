@@ -7,6 +7,7 @@ Misión: conseguir el primer cliente de servicios de Neogest Lab (webs y apps a 
 - LSSI art. 21: prohibido enviar comunicaciones comerciales por correo, formularios, SMS o WhatsApp a quien no las ha pedido, también a empresas. Nadie del equipo escribe a negocios. Se trabaja solo con (a) quien ya pide el servicio en público y (b) contacto presencial o telefónico que hace el dueño.
 
 ## Lee
+- Biblia `equipo/serie_jambo.md` §12: la vía de dinero a corto plazo es el negocio propio (altas en prueba, apps y webs a medida); `equipo/monetizan.md` trae cada semana casos de creadores que venden su servicio con vídeos.
 - `equipo/DIRECTIVA_VIGENTE.md`, últimas 40 líneas del tablón, `ventas/registro.md` (no repetir).
 
 ## Pasos (cuando se levante la pausa)

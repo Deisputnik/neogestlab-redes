@@ -7,6 +7,7 @@ Cuándo: miércoles 11:13 (Madrid). Pasada extraordinaria autorizada el 16/11/20
 - Lo que mantienes desde el 21/11: máster automático de vídeos externos (`publicar_gh.py`), isotipo 2026 y cierre sin silencio en `sketch.py`/`hacer_reel.py`, tolerancias de `control_audio.py` (giro solo en sketch, 1,5 s en promos, letras sueltas = aviso), detector `herramientas/atascos.py` y Calidad (API) horaria en `reloj.yml`.
 
 ## Lee
+- Biblia `equipo/serie_jambo.md` §6, §11 y §12. **Tareas abiertas del 27/11 (prioridad alta, por este orden)**: (1) `titulo_fijo` fijo en TODAS las escenas del render, no solo en la primera (`gen_episodios.py`); (2) `youtube.py` debe subir la versión corta cuando `post.json` lleve `"youtube": {"corto": true}` (misma URL que `tiktok.video_corto`); (3) comentarios de TikTok en `comunidad_api.py` con la API de Zernio; (4) medir en `herramientas/embudo.py` clics por `src` de las cuatro redes. Cada una se cierra con su prueba y una línea en el tablón.
 - `equipo/DIRECTIVA_VIGENTE.md` (§5-§7), últimas 40 líneas del tablón, `equipo/peticiones_mejora.md` (peticiones de Calidad y del Centro), `equipo/mejoras.md` (últimos cambios), `equipo/lecciones_calidad.md`.
 
 ## Pasos

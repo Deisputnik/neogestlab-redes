@@ -47,6 +47,17 @@ def revisar(carpeta):
         t = post.get("texto", "")
         if CIERRE_ANTIGUO.search(t): e.append("B6 cierre antiguo «comenta/escríbeme X» en el texto del post")
         if any(CIERRE_ANTIGUO.search(x) for x in textos(guion)): e.append("B6 cierre antiguo «comenta/escríbeme X» en la voz o el texto del guion")
+        # 27/11/2026 (biblia §11): nunca «Moraleja» en el texto del post ni en el título/descripción de YouTube; títulos de YouTube ≤ 45 car. + « #Shorts»
+        if re.search(r"moraleja", t, re.I): e.append("§11 la palabra «Moraleja» aparece en el texto del post (prohibida en todas las redes, biblia §11.2)")
+        yt = post.get("youtube") or {}
+        ytt = str(yt.get("titulo") or "")
+        if re.search(r"moraleja", ytt + " " + str(yt.get("descripcion") or ""), re.I): e.append("§11.1 «Moraleja» en el bloque youtube")
+        if "jambo" in os.path.basename(carpeta) and ytt:
+            base = re.sub(r"\s*#shorts\s*$", "", ytt, flags=re.I).strip()
+            if len(base) > 45: a.append("§11.1 título de YouTube de %d caracteres (máximo 45 sin « #Shorts»)" % len(base))
+            if re.search(r"\b(IA|app|Neogest)\b|[¿]", base, re.I): a.append("§11.1 título de YouTube con «IA», «app», «Neogest» o pregunta de producto")
+        if "jambo" in os.path.basename(carpeta) and not (guion.get("titulo_fijo") or post.get("titulo_fijo")):
+            a.append("§6 falta titulo_fijo (≤ 10 palabras) en el guion: obligatorio desde la apertura en frío del 27/11")
         if not post.get("monetizacion"): a.append("MONETIZACIÓN falta el bloque «monetizacion» en post.json: {\"objetivo\": \"visita_perfil|clic_enlace|solicitud|dm\", \"oferta\": \"qué se ofrece\", \"paso_embudo\": \"el paso de equipo/embudo.md que mueve\"}")
         if not post.get("comentario_fijado"): a.append("B8 falta comentario_fijado")
         if not post.get("avance_siguiente"): a.append("B8 falta avance_siguiente")
@@ -55,7 +66,7 @@ def revisar(carpeta):
         txt = (guion.get("gancho_corto") or (g or {}).get("texto") or "")
         n = len(re.sub(r"[*¡!¿?«»]", "", txt).split())
         if txt and n > 8: a.append("B1 gancho de %d palabras (máximo 8): «%s»" % (n, txt[:60]))
-        # Directiva 15/11 §5: el post de un episodio de El Jambo cierra con la prueba gratuita (con enlace /solicitar) y la pregunta
+        # Directiva 15/11 §5: el post de un episodio de El Jambo cierra con la prueba gratuita (con enlace /solicitar) y la pregunta (vale para Instagram; en Facebook el enlace va en el primer comentario, biblia §11.3)
         if "jambo" in os.path.basename(carpeta) and not re.search(r"prueba gratuita", t, re.I):
             a.append("§5 el texto del post de un episodio no lleva el cierre «Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso» con el enlace /solicitar")
         revisar_14(carpeta, post, guion, e, a)

@@ -236,7 +236,7 @@ def _prompt(n):
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
         "titulo_fijo": "OBLIGATORIO: ≤ 10 palabras, la situación con el colectivo que se reconoce (p. ej. «CUANDO TU JEFA FICHA POR DOS», «EL VECINO QUE NO DEVUELVE EL TALADRO»); va en grande desde el primer fotograma y es también el título de YouTube (biblia §11.1-11.2). Nunca una pregunta de producto ni las palabras IA, app o Neogest",
-        "bucle_visual": "OPCIONAL (ya no hay bucle obligatorio desde el 27/11 noche): 4-10 palabras describiendo qué pose, plano o elemento visual del gancho (escena 'e':'gancho') se repite igual en el cierre, para que el vídeo se pueda ver en bucle sin notar el corte entre el final y el siguiente visionado (p.ej. 'Rosa con el móvil en la mano, misma postura'; 'la taza de café a medio llenar en primer plano'). Describe la imagen, no la moraleja ni el texto.",
+        "bucle_visual": "DEROGADO 27/11/2026 (biblia §6): ya no hay bucle ni plano de casa al cierre; déjalo vacío o no lo pongas.",
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
@@ -262,7 +262,7 @@ def _prompt(n):
             {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
             {"e": "remate", "h": "neo", "emo": "seco", "p": ["neo", "rosa"], "plano": "primerplano", "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
-            {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
+            {"e": "cierre", "h": "neo", "t": "texto en pantalla con la enseñanza en una línea, SIN la palabra «moraleja» (la promo de 3 s la añade el código; no hay plano de casa al cierre ni bucle)"},
         ],
     }
 

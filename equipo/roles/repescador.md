@@ -18,3 +18,6 @@ Cuándo: cada 2 h, 08:33-20:33 (Madrid), 8 min antes de cada pasada de Calidad. 
 
 ## Origen
 - Creado 20/11/2026 (orden del dueño, revisión de agentes) tras encontrar 107_catalogo_stock y 108_cobrar_facturas: 10+ pasadas de Calidad rechazadas por falta de material mientras el reel real llevaba desde el 18/11 renderizado y caducado en errores/, sin que nadie lo recolocara.
+
+## Lee también (27/11/2026)
+- Biblia `equipo/serie_jambo.md` §6 y §11: lo que se repesque ya debe cumplir la apertura en frío, `titulo_fijo` y las reglas de texto por red (sin «Moraleja», sin reparto entero).
