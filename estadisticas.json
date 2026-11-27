@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-27T13:10:45+00:00",
+  "actualizado": "2026-11-27T19:13:10+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1597,
@@ -18,15 +18,15 @@
       "permalink": "https://www.instagram.com/reel/DgPpjZ_Sc_4/",
       "timestamp": "2026-11-27T12:11:41+0000",
       "metricas": {
-        "reach": 2,
-        "views": 4,
+        "reach": 4,
+        "views": 11,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 0,
         "total_interactions": 0,
-        "ig_reels_avg_watch_time": 923,
-        "ig_reels_video_view_total_time": 1847
+        "ig_reels_avg_watch_time": 21004,
+        "ig_reels_video_view_total_time": 105023
       }
     },
     {
@@ -39,15 +39,15 @@
       "permalink": "https://www.instagram.com/reel/DgNxdXKhF-F/",
       "timestamp": "2026-11-26T18:42:24+0000",
       "metricas": {
-        "reach": 4,
-        "views": 7,
+        "reach": 5,
+        "views": 8,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 1,
         "total_interactions": 2,
-        "ig_reels_avg_watch_time": 17358,
-        "ig_reels_video_view_total_time": 69433
+        "ig_reels_avg_watch_time": 14094,
+        "ig_reels_video_view_total_time": 70472
       }
     },
     {
@@ -81,15 +81,15 @@
       "permalink": "https://www.instagram.com/reel/DgNSez3NiHz/",
       "timestamp": "2026-11-26T14:11:26+0000",
       "metricas": {
-        "reach": 4,
-        "views": 5,
+        "reach": 5,
+        "views": 7,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 2,
         "total_interactions": 3,
-        "ig_reels_avg_watch_time": 8490,
-        "ig_reels_video_view_total_time": 50940
+        "ig_reels_avg_watch_time": 7692,
+        "ig_reels_video_view_total_time": 53850
       }
     },
     {
@@ -954,6 +954,10 @@
     },
     {
       "fecha": "2026-11-27T13:10+00:00",
+      "seguidores": 1597
+    },
+    {
+      "fecha": "2026-11-27T19:13+00:00",
       "seguidores": 1597
     }
   ]

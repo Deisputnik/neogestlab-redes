@@ -1,16 +1,3 @@
-2026-11-25 08:10  521_jambo_fichar_en_casa: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-25 12:09  Estadísticas actualizadas (30 posts, 1596 seguidores)
-2026-11-25 18:09  521_jambo_fichar_en_casa: publicando…
-2026-11-25 18:10  subida directa fallida ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} (código None, subcódigo None)); se reintenta en esta misma pasada
-2026-11-25 18:11  publicado por video_url desde la URL pública del vídeo (la subida directa falló)
-2026-11-25 18:11  521_jambo_fichar_en_casa: YouTube publicado https://youtube.com/shorts/7v3RgUku78M
-2026-11-25 18:11  521_jambo_fichar_en_casa: Facebook publicado https://www.facebook.com/reel/1145673608361166
-2026-11-25 18:11  521_jambo_fichar_en_casa: publicado https://www.instagram.com/reel/DgLCN23q85Q/
-2026-11-25 18:11  109_gestion7d_stock_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.5 pico=-2.2
-2026-11-25 18:11  109_gestion7d_stock_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-25 18:11  110_gestion7d_cobro_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.1 pico=-1.5
-2026-11-25 18:11  110_gestion7d_cobro_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-25 19:01  805_recepcionista_horario_voces: vídeo externo masterizado en el ciclo (LUFS -15.1, pico -2.2 -> -14 / -1,5)
 2026-11-25 19:01  805_recepcionista_horario_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.5 pico=-1.1
 2026-11-25 19:01  805_recepcionista_horario_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-25 19:01  806_recepcionista_24h_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.7 pico=-1.3
@@ -598,3 +585,16 @@
 2026-11-27 20:09  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 20:09  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 20:09  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:13  Estadísticas actualizadas (30 posts, 1597 seguidores)
