@@ -106,5 +106,14 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:32:50Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: Ninguna réplica del diálogo pronuncia el recuerdo de un episodio anterior (el campo 'recuerdo' no aparece en el texto de ninguna escena)."
+    ],
+    "arreglo_sugerido": "Añadir la referencia a un episodio anterior dentro de una réplica (por ejemplo, que Sindy o Felipe digan 'Igual que cuando nos cobraron las horas de fichar') y corregir el primer diálogo de Rosa en el gancho donde grita su propio nombre.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:35:25.898790Z"
+  }
 }

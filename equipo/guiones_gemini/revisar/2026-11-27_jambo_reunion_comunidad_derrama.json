@@ -106,5 +106,14 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:32:50Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: ninguna réplica del guion incluye el detalle del episodio anterior listado en el campo 'recuerdo' (el cultivo enganchado del ep. 522)."
+    ],
+    "arreglo_sugerido": "Meter una réplica (por ejemplo de Felipe o Sindy) recordando el cultivo enganchado del episodio anterior y explicitar en el diálogo el giro de Concha cobrándole al Pintas.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:34:25.582760Z"
+  }
 }

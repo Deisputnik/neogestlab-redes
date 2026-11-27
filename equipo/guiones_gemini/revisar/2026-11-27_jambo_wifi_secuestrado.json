@@ -106,5 +106,14 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:32:50Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: ninguna réplica del guion incluye el recuerdo del episodio anterior definido en los metadatos ('Como cuando se inundo el salon...')."
+    ],
+    "arreglo_sugerido": "Incluir en una réplica de Felipe o Sindy la mención explícita al recuerdo de la bañera de Rosa en el episodio 530, y decir el nombre completo 'Felipe Lotas' en el diálogo.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:36:05.483232Z"
+  }
 }
