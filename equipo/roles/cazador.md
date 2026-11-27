@@ -12,6 +12,8 @@ Cuándo: lunes 08:23 (Madrid). Modelo: Sonnet.
 4. Con el Estratega: aporta candidatas a las 5 ideas mejoradas de la semana (`plan.json › ideas_semana`).
 5. Los lunes, sección «Qué funcionó»: compara en estadisticas.json los reels hechos con fórmulas de este archivo frente al resto (salto, tiempo visto, compartidos, alcance a no seguidores) y di qué repetir y qué abandonar.
 
+6. Noticias para el Guionista (orden final del dueño 27/11 noche: «que el guionista busque noticias»): cada lunes, y además cuando el tablón lo pida, busca 8-10 noticias de España de los últimos 7 días sobre vida cotidiana (precios, luz, alquiler, citas médicas, colegios, transporte, móviles, estafas por mensaje, trámites, IA en casa) y déjalas en `equipo/noticias_semana.md`, una línea cada una: «fecha · qué ha pasado · por qué le toca a cualquiera en su casa · fuente». Sin política de partidos, sucesos, tragedias ni famosos. El Guionista las lee solo.
+
 ## Escribe
 - `equipo/virales_semana.md` (máx. ~150 líneas, lo nuevo arriba; lo viejo a `equipo/virales_archivo.md`). Línea en el tablón.
 

@@ -29,6 +29,8 @@ BIBLIA = os.path.join(RAIZ, "equipo", "serie_jambo.md")
 LECCIONES = os.path.join(RAIZ, "equipo", "lecciones_calidad.md")
 VIRALES = os.path.join(RAIZ, "equipo", "virales_semana.md")
 TABLON = os.path.join(RAIZ, "equipo", "tablon.md")
+NOTICIAS = os.path.join(RAIZ, "equipo", "noticias_semana.md")   # lo mantiene el Cazador (27/11/2026); opcional
+ESTADISTICAS = os.path.join(RAIZ, "estadisticas.json")
 COLA = os.path.join(RAIZ, "cola")
 PENDIENTES = os.path.join(RAIZ, "equipo", "guiones_gemini", "pendientes")
 
@@ -76,6 +78,10 @@ except Exception:
 # una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
 MIN_GAGS, MAX_GAGS = 5, 8
 MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 100, 170   # 26/11: mínimo 105 → 100 al acortar las réplicas   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
+# Estancias para guiones NUEVOS: los cuatro decorados con profundidad del 27/11/2026 (salon2, cocina2, portal, terraza) y los que no tienen
+# sustituto (dormitorio, bar, calle). «salon» y «cocina» (antiguos) solo siguen valiendo en gen_episodios.py para los guiones ya escritos.
+ESTANCIAS = {"salon2", "cocina2", "portal", "terraza", "dormitorio", "bar", "calle"}
+REPARTO_FIJO = ("rosa", "felipe", "sindy", "jambo", "neo")   # 27/11/2026: todos aportan algo en cada episodio (apartado K)
 AMBITOS = {"casa", "familia", "compras", "salud_y_citas", "dinero_de_casa", "ocio_y_viajes", "barrio", "trabajo"}   # apartado J (27/11/2026)
 ACCIONES = {"habla", "desespera", "delega", "presume", "fria"}   # gen_episodios.py ACCION_A_EMO / EXPR
 EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
@@ -132,8 +138,87 @@ def _coletillas_recientes(max_por_carpeta=15, tope=40):
     return "; ".join(vistas[-tope:]) or "(ninguna todavía: esta es la primera tanda, todas valen)"
 
 
+def _memoria(max_n=14):
+    """27/11/2026 (orden del dueño: «tienen memoria en los episodios de lo que les pasó en veces anteriores»): qué pasó en los últimos
+    episodios de El Jambo (publicados/ y cola/), para que los personajes lo recuerden. Sale de los propios guion.json."""
+    lineas = []
+    for base in (os.path.join(RAIZ, "publicados"), COLA):
+        if not os.path.isdir(base):
+            continue
+        for x in sorted(os.listdir(base)):
+            if "jambo" not in x:
+                continue
+            try:
+                g = json.load(open(os.path.join(base, x, "guion.json"), encoding="utf-8"))
+            except Exception:
+                continue
+            que = g.get("resumen") or " → ".join(str(g.get(k)) for k in ("promesa", "giro") if g.get(k))
+            if not que:
+                continue
+            quienes = sorted({e.get("h") for e in (g.get("escenas") or []) if isinstance(e, dict) and e.get("h")})
+            lineas.append(f"- {x[:3]} · {que} · quedó claro que: {g.get('moraleja') or '—'} · salían: {', '.join(quienes) or '—'}")
+    return "\n".join(lineas[-max_n:]) or "(todavía no hay episodios anteriores que recordar)"
+
+
+def _rendimiento(max_n=5):
+    """27/11/2026 (orden del dueño: «sabiendo antes qué ha funcionado y el porqué»): mejores y peores vídeos propios según estadisticas.json."""
+    try:
+        posts = json.load(open(ESTADISTICAS, encoding="utf-8")).get("posts") or []
+    except Exception:
+        return "(sin datos propios todavía)"
+    filas = []
+    for p in posts:
+        m = p.get("metricas") or {}
+        if not m.get("views"):
+            continue
+        filas.append((m.get("views", 0), round((m.get("ig_reels_avg_watch_time") or 0) / 1000, 1), m.get("shares", 0), m.get("saved", 0),
+                      " ".join(str(p.get("caption") or "").split())[:90]))
+    if len(filas) < 4:
+        return "(sin datos propios suficientes todavía)"
+    def fmt(f):
+        return f"  · {f[0]} vistas, {f[1]} s vistos de media, {f[2]} compartidos, {f[3]} guardados · «{f[4]}»"
+    por_vistas = sorted(filas, reverse=True); por_tiempo = sorted(filas, key=lambda f: -f[1])
+    return ("LOS QUE MÁS SE VIERON:\n" + "\n".join(fmt(f) for f in por_vistas[:max_n]) +
+            "\nLOS QUE MÁS RATO SE QUEDÓ LA GENTE:\n" + "\n".join(fmt(f) for f in por_tiempo[:3]) +
+            "\nLOS QUE MENOS FUNCIONARON:\n" + "\n".join(fmt(f) for f in por_vistas[-3:]))
+
+
+_NOTICIAS_CACHE = []
+
+
+def _noticias():
+    """27/11/2026 (orden del dueño: «que el guionista busque noticias»): titulares de vida cotidiana para adaptar. Dos fuentes, las dos
+    opcionales: equipo/noticias_semana.md (lo mantiene el Cazador) y una búsqueda de Gemini con Google Search. Si algo falla, texto vacío:
+    este paso nunca bloquea al Guionista."""
+    if _NOTICIAS_CACHE:
+        return _NOTICIAS_CACHE[0]
+    partes = []
+    arch = _leer(NOTICIAS, lineas=30)
+    if arch.strip():
+        partes.append(arch.strip())
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if api_key:
+        body = {"contents": [{"parts": [{"text": (
+                    "Busca noticias de ESPAÑA de los últimos 7 días sobre la vida cotidiana de la gente corriente (precios de la compra, luz, "
+                    "alquiler, citas médicas, colegios, transporte, móviles, estafas por mensaje, trámites, inteligencia artificial en casa, "
+                    "vecinos, vacaciones). Nada de política de partidos, sucesos, tragedias ni famosos. Devuelve 8 líneas, una por noticia: "
+                    "«fecha · qué ha pasado en una frase · por qué le toca a cualquiera en su casa». Solo hechos que hayas encontrado.")}]}],
+                "tools": [{"google_search": {}}], "generationConfig": {"temperature": 1.0}}
+        for modelo in MODELOS[:2]:
+            try:
+                data = _llamar_un_modelo(modelo, api_key, body)
+                txt = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"]).strip()
+                if txt:
+                    partes.append(txt[:1800]); print(f"Noticias buscadas con {modelo} ({len(txt)} caracteres)"); break
+            except Exception as e:   # sin búsqueda en el plan gratuito, modelo sin la herramienta, red…: se sigue sin noticias
+                print(f"Noticias: {modelo} no ha podido buscar ({type(e).__name__}: {str(e)[:120]})")
+    _NOTICIAS_CACHE.append("\n".join(partes) or "(sin noticias esta vez: tira de situaciones cotidianas de siempre)")
+    return _NOTICIAS_CACHE[0]
+
+
 def _prompt(n):
     coletillas = _coletillas_recientes()
+    memoria = _memoria(); rendimiento = _rendimiento(); noticias = _noticias(); estancias = ", ".join(sorted(ESTANCIAS))
     biblia = _leer(BIBLIA)
     lecciones = _leer(LECCIONES, lineas=25)
     virales = _leer(VIRALES, lineas=60)
@@ -141,7 +226,7 @@ def _prompt(n):
 
     esquema = {
         "slug": "texto-corto-sin-espacios, 2-4 palabras, nueva situación",
-        "set": "salon (por defecto, interior de la casa — orden del dueño 21/11: los episodios nuevos transcurren en una casa, no en la oficina) | cocina (si la situación es de verdad de cocina: comida, fregar, una cena, un recibo de la compra) | dormitorio (si es de verdad de dormitorio: irse a dormir, levantarse, una discusión de madrugada, estar enfermo en la cama) | oficina | despacho | bar | calle | reunion (estos últimos solo si la situación concreta de verdad lo pide, p.ej. un cliente en su tienda); no cambies de estancia solo por variar, solo cuando la propia situación transcurra ahí; la apertura/cierre es SIEMPRE la tarjeta fija 'Cosas de Casa' que pone el código, igual en todos los episodios — no va aquí, no hace falta flow ni bucle_visual desde la corrección del 20/11 noche",
+        "set": "estancia donde EMPIEZA el episodio: salon2 (el salón, por defecto) | cocina2 (la cocina) | portal (el portal del bloque, con buzones y escalera) | terraza (la terraza o azotea) | dormitorio | bar | calle",
         "hora": "entero 0-23 (hora del día de la escena)",
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
@@ -149,6 +234,9 @@ def _prompt(n):
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
+        "marca": "true en 1 de cada 3 guiones (un personaje nombra a Neogest Lab UNA vez, apartado M); false en el resto",
+        "nombre_completo_dicho": "rosa | felipe | sindy | conchaqueton | jambo: a quién llaman por su nombre y apellido en este episodio (apartado K4)",
+        "por_que_funcionara": "1 frase: qué patrón de los datos propios, de los virales o de las noticias aplica este guion (apartado O)",
         "ambito": "casa | familia | compras | salud_y_citas | dinero_de_casa | ocio_y_viajes | barrio | trabajo (apartado J: como mucho 1 de cada 4 guiones es de trabajo)",
         "chiste_base": "1 frase (8-30 palabras): el chiste o la situación de humor ACTUAL que adaptas en este episodio, como planteamiento → remate (apartado I)",
         "resumen": "1 frase (10-28 palabras) que entendería un niño de doce años: quién quiere qué, qué lo impide y cómo acaba (apartado I5)",
@@ -163,7 +251,7 @@ def _prompt(n):
                 "plano": "general",
             },
             {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 14 palabras, en frases de 3-8 palabras separadas por punto), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
-            {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
+            {"e": "gag", "h": "rosa", "emo": "ironia", "set": "cocina2", "p": ["rosa", "sindy"], "t": "golpe 2, peor que el 1, ya en OTRA estancia y con otro grupo (apartado N): aquí se trama lo que en el salón no saben"},
             {"e": "gag", "h": "jambo", "emo": "cansado", "p": ["jambo"], "plano": "primerplano", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, pícaro del sur relajadísimo, frases cortas y claras en ortografía normal, con una coletilla NUEVA suya: «Rosa, guapa… eso se arregla solo. Fíame cinco euros y me callo.»)"},
             {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
@@ -173,8 +261,10 @@ def _prompt(n):
     }
 
     return f"""Eres el guionista de la serie de humor "El Jambo que sabe" (Instagram @neogestlab,
-Neogest Lab). Español de España, humor negro y satírico contra la cultura del trabajo y la
-burocracia, NUNCA contra personas reales, colectivos ni marcas. Escribe {n} guiones de
+Neogest Lab). Español de España, humor negro de lo cotidiano: los líos de una casa de barrio que resuelve una
+inteligencia artificial, NUNCA contra personas reales ni colectivos.
+PRIORIDAD: los apartados G a O del final (órdenes del dueño del 27/11/2026) y la biblia v5.3 MANDAN sobre cualquier regla o
+ejemplo anterior de este texto que hable de oficina, jefa y empleados, papeleo, créditos de reparto o voz arrastrada. Escribe {n} guiones de
 episodio NUEVOS, cada uno con un conflicto y una situación distintos entre sí y distintos de
 los temas ya usados: {temas}.
 
@@ -186,18 +276,15 @@ encajan de verdad; no inventes cifras nuevas):
 
 ORDEN DEL DUEÑO 21/11 MADRUGADA (tras ver el piloto v3, se suma a todo lo de arriba y manda
 sobre cualquier instrucción anterior que lo contradiga):
-1. ESCENARIO: el salón de una casa de barrio, no la oficina. "set" por defecto = "salon".
-2. (SUPERADA el 27/11 por el apartado J: la mayoría de episodios son de casa y vida cotidiana, no de empleos.) TODO TIPO DE EMPLEOS: no te centres en contratos, nóminas ni estadísticas de oficina. Cada
-   episodio debe representar un oficio o una situación de vida distinta (fontanero, camarero,
-   repartidor, cuidado de un mayor, una tienda de barrio, un autónomo, una gestión cualquiera
-   del día a día) — la variedad de oficios es tan importante como la variedad de temas.
+1. ESCENARIO: una casa de barrio y su entorno (apartado N). "set" por defecto = "salon2".
+2. TEMAS: los del apartado J (casa y vida cotidiana; como mucho un guion de trabajo por tanda).
 3. COTIDIANO Y QUE EMPATICE: la situación tiene que ser algo que cualquiera reconozca de su
    propio día a día. Apóyate en estadísticas reales de la tabla de la biblia cuando encajen de
    verdad, y no tengas miedo de tocar temas sociales (no solo laborales) siempre dentro de las
    líneas rojas de siempre.
 4. APPS DE IA QUE NO SIEMPRE SON BUENA IDEA: de vez en cuando, el conflicto puede nacer de que
-   algún personaje usa o se inventa una aplicación de IA (SIEMPRE genérica y ficticia, nunca un
-   producto real de Neogest Lab ni de terceros, nunca el nombre de una marca real) cuya idea no
+   algún personaje usa o se inventa una aplicación de IA (SIEMPRE genérica y ficticia, nunca una
+   aplicación real de Neogest Lab ni de terceros, nunca una marca ajena; el nombre de la empresa Neogest Lab sí puede salir como dice el apartado M) cuya idea no
    sale bien — hasta que llega Neo y la resuelve de verdad. Es una fuente más de situaciones,
    no la única.
 5. REGISTRO MÁS PALETO Y VULGAR, CON ÉNFASIS: dentro de las líneas rojas de siempre, no
@@ -475,7 +562,7 @@ G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no
        hable de él o le hable.
    G3. COLETILLAS NUEVAS Y MÁS GRACIOSAS en cada tanda: inventa para cada personaje una coletilla corta (máx 6 palabras, que se entienda
        dicha en voz alta) coherente con su rol y que haga reír por sí sola: Jambo = pícaro del sur relajado (promesa con descaro, excusa
-       absurda, filosofía de barrio a destiempo); Rosa = jefa tirana y cursi; Felipe = cuñado enterado; Sindy = directa y sin filtros;
+       absurda, filosofía de barrio a destiempo); Rosa = la que manda en la casa, tacaña y cursi; Felipe = cuñado enterado; Sindy = directa y sin filtros;
        Concha = mantiene «Eso lo arreglamos la semana que viene»; Neo = culto y seco. Rellena "coletillas_nuevas" (como mínimo jambo, rosa y
        felipe) y haz que cada una salga de verdad en una réplica de ese personaje. NO repitas ninguna de las ya usadas en episodios
        recientes: {coletillas}. Las viejas («primo», «válgame», «hermano», «un eurillo», «mañana te lo devuelvo») pueden aparecer de vez
@@ -547,6 +634,62 @@ J) TEMAS: LA IA EN CASA Y EN LA VIDA DIARIA (orden del dueño 27/11 noche: «los
        nunca consejo médico, legal ni financiero: Neo organiza y explica, no diagnostica ni promete.
    J4. El espectador tiene que pensar «eso me pasa a mí en casa» y «anda, para eso sirve la IA». Si el lío solo lo entiende quien
        lleva un negocio, cámbialo.
+
+K) REPARTO CON IDENTIDAD Y MEMORIA (orden del dueño 27/11 noche: «los personajes bien definida su identidad, cada uno aporta su grano de
+   arena en los capítulos y tienen memoria en los episodios de lo que les pasó en veces anteriores»):
+   K1. QUIÉN ES CADA UNO (si una réplica la podría decir otro sin que se note, está mal escrita):
+       - Rosa Melano: manda en la casa, tacaña y cursi, pone normas absurdas, se escaquea y jamás reconoce un error.
+       - Felipe Lotas: el cuñado enterado, cara de empanado; sentencia cosas falsas con seguridad total y la realidad le deja en evidencia.
+       - Sindy Entes: tres dientes y cero filtros; la única que dice la verdad a la cara, con un argumento que no se puede rebatir.
+       - Concha Quetón (no sale siempre): siempre tiene frío, pide plazos y favores, «Eso lo arreglamos la semana que viene».
+       - Jambo Reseco, «el Pintas»: el gorrón de la calle; pide, vende algo dudoso y se sabe las trampas de todo (apartado G).
+       - Neo: la inteligencia artificial de la casa, culto y seco; no opina, resuelve con hechos. Es un prototipo de Neogest Lab (apartado M).
+   K2. TODOS APORTAN: Rosa, Felipe, Sindy, Jambo y Neo tienen al menos una réplica en cada episodio, y cada una empuja la historia con lo
+       que solo ese personaje haría (Rosa manda, Felipe la lía sentenciando, Sindy lo destapa, Jambo saca tajada, Neo lo resuelve).
+   K3. MEMORIA: esto es lo que ya ha pasado en la serie, de más antiguo a más reciente:
+{memoria}
+       Los personajes se acuerdan: al menos una réplica menciona con un detalle concreto algo de esa lista que le pasó a quien habla o
+       a quien se lo echa en cara (una deuda que sigue viva, una norma de Rosa, una metedura de pata de Felipe), y el campo "recuerdo"
+       dice cuál. Las deudas, rencores y manías continúan de un episodio a otro. No inventes pasados que no estén en la lista.
+   K4. NOMBRES Y APELLIDOS EN EL DIÁLOGO: el vídeo ya NO termina con los créditos del reparto, así que los nombres se dicen hablando. En
+       cada episodio alguien llama a otro por su nombre y apellido una vez, con naturalidad (una bronca, pasar lista, con sorna):
+       «Rosa Melano», «Felipe Lotas», «Sindy Entes», «Concha Quetón»; a Jambo, «el Reseco» o «el Pintas» (NUNCA la palabra «Jambo»). Ve
+       rotando a quién le toca y apúntalo en "nombre_completo_dicho". El nombre nunca es la primera palabra de una frase.
+L) HUMOR NEGRO DE LO COTIDIANO, CON PRINCIPIO, GANCHO Y FINAL (orden del dueño 27/11 noche): busca situaciones de casa y de la calle que
+   dan rabia o apuro de verdad y ríete de ellas con frialdad (dentro de las líneas rojas de siempre). La historia es coherente de la primera
+   a la última réplica y el final deja una enseñanza clara, pero LA PALABRA «MORALEJA» NO APARECE JAMÁS en ninguna réplica ni texto en
+   pantalla, ni tampoco «la lección es» o «conclusión»: el campo "moraleja" es una frase que podría decir cualquiera en la barra de un bar.
+M) NEOGEST LAB DENTRO DE LA SERIE (orden del dueño 27/11 noche: «que a veces nombren a la empresa como la que les da las soluciones, ya que
+   Neo es un prototipo de la empresa»). SUSTITUYE la prohibición antigua de nombrar a Neogest Lab: Neo es un prototipo hecho por Neogest Lab,
+   la empresa que hace aplicaciones con inteligencia artificial. En UNO de cada tres guiones ("marca": true) un personaje la nombra UNA sola
+   vez y de pasada, como quien habla del fabricante de la lavadora («Esto es cosa del Neo, el invento ese de Neogest Lab», «Díselo a los de
+   Neogest Lab, que para eso lo hicieron»). Nunca suena a anuncio: sin eslogan, sin precios, sin «descárgala», sin nombrar ninguna aplicación
+   concreta ni prometer funciones. En los demás guiones "marca": false y nadie la nombra (el logo ya sale en el decorado). Se escribe siempre
+   «Neogest Lab». Sigue prohibido nombrar marcas o aplicaciones de terceros.
+N) ESTANCIAS Y CASA POR FUERA: EL PATRÓN FIJO DE CADA EPISODIO (órdenes del dueño 27/11 noche: «que la trama pueda tener a los personajes en
+   el mismo capítulo en diferentes estancias y hacer la transición con la imagen inicial de la casa, al estilo comedia americana» y «no
+   tienen por qué estar todos juntos en la misma estancia todo el capítulo… tiene que ser más dinámico, pero siguiendo siempre ese mismo
+   patrón»). SIEMPRE así:
+   N1. El episodio pasa por 2 o 3 estancias: SIEMPRE hay al menos 1 cambio y como mucho 2. La escena donde cambia lleva el campo "set" con
+       la estancia nueva ({estancias}) y la acción sigue ahí hasta el siguiente cambio. El "set" del episodio es donde empieza.
+   N2. NO están todos juntos: en cada estancia hay un grupo distinto (dos o tres personajes) con SU conversación. Lo que se dice en una
+       no lo saben en la otra, y de ahí sale el lío: en la cocina (cocina2) traman, en el salón (salon2) sentencian, en el portal o en la
+       calle Jambo saca tajada, en la terraza alguien se esconde a hablar por el móvil. El campo "p" de cada escena solo lleva a quien está en esa estancia.
+   N3. Cada cambio hace avanzar la historia (alguien llega con lo que ha oído, se descubre lo que tramaban, la mentira cambia de
+       habitación). El remate reúne lo que pasó en las distintas estancias y Neo lo resuelve.
+   N4. El plano de la casa por fuera entre estancias (cada vez con un encuadre distinto) lo pone el render solo, como en las comedias
+       americanas: no lo escribas ni lo cuentes como escena.
+O) ANTES DE ESCRIBIR, MIRA QUÉ HA FUNCIONADO Y POR QUÉ (orden del dueño 27/11 noche: «que el guionista busque noticias, adapte chistes, pero
+   sabiendo antes qué ha funcionado y el porqué, para ir adaptando los guiones»):
+   O1. NUESTROS PROPIOS VÍDEOS (datos reales de la cuenta):
+{rendimiento}
+       Saca tú la conclusión (qué tienen en común los que más se vieron y los que más retuvieron: tema, gancho, quién sale, tono) y aplícala;
+       evita lo que comparten los que menos funcionaron. Con pocos datos, fíate más de las fórmulas virales de arriba.
+   O2. NOTICIAS DE ESTOS DÍAS que puedes convertir en un lío de la casa:
+{noticias}
+       Úsalas solo como trampolín para una situación cotidiana (la subida de la luz → la bronca por el brasero); nunca nombres a personas,
+       partidos, empresas ni tragedias reales, y no des ningún dato de la noticia como cierto en el guion.
+   O3. En "por_que_funcionara" escribe en una frase qué patrón de O1, de los virales o qué noticia de O2 aplica ese guion.
 
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
@@ -647,7 +790,7 @@ def _validar(ep):
     # de esa madrugada - todo guion nuevo se estaba rechazando por "set invalido: 'salon'".
     # 26/11/2026: se añaden "cocina" y "dormitorio" como estancias de la casa (orden del dueño,
     # "ampliar partes de la casa"), ya dibujadas en Neogest Studio (characters.js SETS).
-    if ep.get("set") not in {"salon", "cocina", "dormitorio", "oficina", "despacho", "bar", "calle", "reunion"}:
+    if ep.get("set") not in ESTANCIAS:   # 27/11/2026: el episodio empieza en una estancia de la casa o del barrio (ya no oficina/despacho/reunión)
         motivos.append(f"set inválido: {ep.get('set')!r}")
     moraleja_palabras = len(str(ep.get("moraleja", "")).split())
     if not (6 <= moraleja_palabras <= 9):
@@ -688,6 +831,28 @@ def _validar(ep):
                 del e["a"]
         if isinstance(e, dict) and "plano" in e and e.get("plano") not in ("auto", "medio", "primerplano", "general"):
             del e["plano"]   # «plano» inválido: se quita, nunca tumba el guion
+    # 27/11/2026 (orden final del dueño): estancias por escena (se normalizan, nunca tumban el guion), reparto completo, sin la palabra
+    # «moraleja», y Neogest Lab como mucho una vez.
+    cambios, actual = 0, ep.get("set")
+    for e in escenas:
+        if isinstance(e, dict) and "set" in e:
+            if e.get("set") not in ESTANCIAS or e.get("set") == actual or cambios >= 2:
+                del e["set"]
+            else:
+                cambios += 1; actual = e["set"]
+    if cambios == 0:
+        motivos.append('no hay ningún cambio de estancia: el patrón fijo pide al menos uno (campo "set" en la escena donde se cambia; apartado N), con otro grupo de personajes y otra conversación')
+    hablan = {e.get("h") for e in escenas if isinstance(e, dict) and e.get("h")}
+    faltan_p = [q for q in REPARTO_FIJO if q not in hablan]
+    if faltan_p:
+        motivos.append(f"no tienen ninguna réplica: {', '.join(faltan_p)} (apartado K2: Rosa, Felipe, Sindy, Jambo y Neo aportan algo en cada episodio)")
+    textos = " ".join(str(e.get("t", "")) for e in escenas if isinstance(e, dict)) + " " + str(ep.get("moraleja") or "")
+    if re.search(r"\bmoralej", textos, re.I):
+        motivos.append("aparece la palabra «moraleja» en una réplica o texto: la enseñanza se dice sin nombrarla (apartado L)")
+    n_marca = sum(1 for e in escenas if isinstance(e, dict) and re.search(r"neogest", str(e.get("t", "")), re.I))
+    if n_marca > 1:
+        motivos.append(f"Neogest Lab se nombra en {n_marca} réplicas: como mucho una, de pasada (apartado M)")
+    ep["marca"] = bool(n_marca)
     if ep.get("ambito") not in AMBITOS:   # 27/11/2026 (noche): ámbito del lío; si viene mal se deja en «casa», nunca tumba el guion
         ep["ambito"] = "casa"
     # 27/11/2026: coletillas nuevas por personaje (opcional, no bloquea): solo textos cortos de personajes válidos
