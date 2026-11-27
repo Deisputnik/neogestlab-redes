@@ -13,7 +13,7 @@
   "sindy": "voice_mtya9dgnf5nm",
   "neo": "voice_0c92tuvk9d7n",
   "conchaqueton": "voice_g8r7hbsck4cp",
-  "jambo": "voice_wv8rkv67e84q"
+  "jambo": "voice_t33qotu98tpq"
  },
  "medidas_audicion": {
   "rosa": "200 Hz, 6,6 st",
@@ -45,12 +45,13 @@
   "jambo": "voice_8m527iisp3d8",
   "_nota": "23/11 22:27, el dueño tras oír la audición: «Rosa suena a sudamericano; el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui; un poco de velocidad en el resto».",
   "jambo_v2": "voice_547fk3wuo8fy",
-  "jambo_b2": "voice_rfaaj38z5daa"
+  "jambo_b2": "voice_rfaaj38z5daa",
+  "jambo_v5": "voice_wv8rkv67e84q"
  },
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
- "_nota_jambo": "27/11/2026 (orden del dueño: «la voz del jambo no se entiende apenas»): español del sur con ceceo suave y natural, relajadísimo y pachorra total, tipo colocado, PERO con dicción nítida: la relajación va en las pausas y la entonación, no en arrastrar las sílabas. El ceceo lo refuerza voces_gemini.py (ceceo(): s→z solo en el texto que va al TTS; el guion no cambia) y el control de audio no lo cuenta como fallo. Voz en producción: voice_wv8rkv67e84q (jambo_voz_v5), que sustituye a la B2 (voice_rfaaj38z5daa, eses aspiradas y muy arrastrada). Arquetipo: «el Piezas» / «el Pintas» del barrio. Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
+ "_nota_jambo": "27/11/2026 (órdenes del dueño: «la voz del jambo no se entiende apenas» y después «habla demasiado plano, debe hablar tipo toxicómano de los 80»): quinqui pasota de barrio de los años ochenta, del sur y con ceceo; habla CANTANDO (melodía quejumbrosa y pedigüeña, estira la última vocal de cada réplica), relajadísimo, pero se le entiende. Voz en producción: voice_t33qotu98tpq (jambo_voz_v8). El ceceo y el alargue los pone voces_gemini.py solo en el texto que va al TTS; el guion no cambia y el control de audio no cuenta el ceceo como fallo. Arquetipo: «el Piezas» / «el Pintas». Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
  "jambo_voz_v5": {
-  "estado": "EN PRODUCCIÓN desde el 27/11/2026 (voice_wv8rkv67e84q). Puerta de Whisper superada: 50 de 51 palabras entendidas (98 %) en cinco réplicas de prueba (rama voces/2026-11-27-jambo-v5).",
+  "estado": "SUSTITUIDA el 27/11/2026 por jambo_voz_v8 (el dueño: «habla demasiado plano»). Sigue disponible en voces_anteriores.jambo_v5 (voice_wv8rkv67e84q).",
   "genero": "male",
   "nombre": "Jambo-serie · jambo v5 (ceceo suave, dicción nítida)",
   "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo suave y natural (las eses suenan como zetas, sin exagerar ni silbar). Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Dicción NÍTIDA: pronuncia completas todas las sílabas, marca bien la primera consonante de cada palabra y separa las palabras entre sí, sin juntarlas; la calma está en las pausas entre frases y en la entonación cantarina, nunca arrastra, ni murmura, ni se come letras. Ritmo de unas dos palabras por segundo, tranquilo pero perfectamente comprensible, como quien cuenta un chiste despacio.",
@@ -67,6 +68,19 @@
   },
   "puerta": "ANTES de usar la voz nueva en producción: generar la frase de prueba (en español normal: ceceo() la convierte sola) con ella en un pedido mínimo con \"solo\": [\"jambo\"], transcribirla con Whisper (faster-whisper small, es; herramientas/transcribir_audicion.py) y comparar con el texto SIN ceceo normalizando s/z/c(e,i) en ambos lados (igual que control_audio.py). Debe entenderse al menos el 90 % de las palabras. Si no llega, se itera la descripción (más articulada, menos arrastrada) y se repite la prueba; NUNCA se publica con una voz ininteligible. Si no se aprueba, sigue en producción la B2 con el ritmo nuevo y el ceceo del TTS.",
   "si_el_dueno_no_la_quiere": "volver a la B2: poner voces.jambo = voces_anteriores.jambo_b2 (voice_rfaaj38z5daa). El ceceo del texto y el ritmo de 2,2 palabras/s no dependen de la voz."
+ },
+ "jambo_voz_v8": {
+  "estado": "EN PRODUCCIÓN desde el 27/11/2026 (voice_t33qotu98tpq). orden del dueño 27/11: «habla demasiado plano, debe hablar tipo toxicómano de los 80». Tres candidatas con cinco réplicas de prueba: v8 47/51 palabras casadas por Whisper y solo 1 palabra sin pareja en control_audio.py (igual que la v5); v6 y v7 dejaban 5 y 4 sin pareja (bloquearían episodios).",
+  "genero": "male",
+  "nombre": "Jambo-serie · jambo v8 (quinqui de los 80, cantarín)",
+  "descripcion": "Hombre de unos 40 años, quinqui de barrio de los años ochenta, pasota y buscavidas del sur de España. Voz cascada, nasal y algo aguda, gastada por la mala vida, con acento andaluz de barrio y ceceo. Habla CANTANDO: melodía quejumbrosa y pedigüeña que sube y baja mucho, estira la última vocal de cada frase y la deja caer, como quien te pide algo con mucha cara y mucha pachorra. Muy relajado, como colocado, pero vivo y pícaro, nunca monótono ni plano. Se le entiende todo: consonantes claras y palabras separadas.",
+  "como_suena_por_codigo": "voces_gemini.py: CARACTER['jambo'] (cante de quinqui pasota de los 80), EMO_JAMBO (cada emoción con su cante, nunca plano) y alargar() (estira la última vocal de cada réplica, solo en el texto del TTS), además de ceceo().",
+  "candidatas_descartadas": {
+   "v6 (voz + estilo)": "voice_balqolpltyzh",
+   "v7 (v6 + cante por emoción)": "voice_0nlz4k1z8onb"
+  },
+  "puerta": "Cualquier voz nueva de Jambo se prueba igual antes de usarse: cinco réplicas, Whisper, y como mucho 1 palabra sin pareja de cada 50 en control_audio.py. NUNCA se publica con voz ininteligible.",
+  "si_el_dueno_no_la_quiere": "voces.jambo = voces_anteriores.jambo_v5 (más neutra) o jambo_b2 (la del 23/11)."
  },
  "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2,2 (antes 1,6; sigue siendo el más lento); pausas internas máx. 0,35 s (Jambo 0,55).",
  "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «el Pintas», «el Piezas», «este», «el vecino».",
