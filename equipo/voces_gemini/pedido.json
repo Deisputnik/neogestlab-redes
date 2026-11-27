@@ -1,161 +1,73 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
+ "_nota": "PRUEBA de voz de Jambo, candidata v8 (orden del dueño 27/11: «habla demasiado plano, debe hablar tipo toxicómano de los 80»). No es un episodio. Gasta UNA petición de voz.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
+ "solo": [
+  "jambo"
+ ],
+ "disenar": {
+  "jambo": {
+   "genero": "male",
+   "descripcion": "Hombre de unos 40 años, quinqui de barrio de los años ochenta, pasota y buscavidas del sur de España. Voz cascada, nasal y algo aguda, gastada por la mala vida, con acento andaluz de barrio y ceceo. Habla CANTANDO: melodía quejumbrosa y pedigüeña que sube y baja mucho, estira la última vocal de cada frase y la deja caer, como quien te pide algo con mucha cara y mucha pachorra. Muy relajado, como colocado, pero vivo y pícaro, nunca monótono ni plano. Se le entiende todo: consonantes claras y palabras separadas.",
+   "nombre": "Jambo-serie · jambo v8 (quinqui de los 80, cantarín)"
+  }
+ },
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "908_prueba_jambo_v8",
    "set": "salon",
-   "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
-   "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
    "escenas": [
-    {
-     "e": "gancho",
-     "h": "rosa",
-     "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "p": [
-      "rosa",
-      "felipe"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "felipe",
-     "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "presume"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "p": [
-      "sindy",
-      "felipe"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "p": [
-      "rosa",
-      "sindy"
-     ],
-     "a": {
-      "rosa": "desespera"
-     }
-    },
-    {
-     "e": "gag",
-     "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "p": [
-      "jambo",
-      "rosa"
-     ],
-     "a": {
-      "jambo": "delega"
-     },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
-    },
-    {
-     "e": "gag",
-     "h": "felipe",
-     "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "desespera"
-     },
-     "giro": true
-    },
     {
      "e": "gag",
      "h": "jambo",
      "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
+     "v": "Ozú, prima, esa señora no tiene ni idea del salón.",
+     "t": "Ozú, prima, esa señora no tiene ni idea del salón.",
      "p": [
-      "jambo",
-      "felipe"
-     ],
-     "a": {
-      "jambo": "delega"
-     },
-     "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
+      "jambo"
+     ]
     },
     {
      "e": "gag",
-     "h": "sindy",
-     "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "h": "jambo",
+     "emo": "chulea",
+     "v": "Dame cinco euros y mañana te los devuelvo. ¿Eso qué es, un rato?",
+     "t": "Dame cinco euros y mañana te los devuelvo. ¿Eso qué es, un rato?",
      "p": [
-      "sindy",
       "jambo"
-     ],
-     "a": {
-      "sindy": "habla"
-     }
+     ]
     },
     {
-     "e": "remate",
-     "h": "neo",
-     "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "p": [
-      "neo",
-      "rosa"
-     ],
-     "a": {
-      "neo": "presume"
-     },
-     "sello": "PILLADOS"
-    },
-    {
-     "e": "cierre",
-     "h": "neo",
+     "e": "gag",
+     "h": "jambo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "v": "Eso se arregla solo, Rosa. Siéntate y respira despacio.",
+     "t": "Eso se arregla solo, Rosa. Siéntate y respira despacio.",
+     "p": [
+      "jambo"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "ironia",
+     "v": "Yo de facturas sé más que el gestor. Pregúntale a cualquiera.",
+     "t": "Yo de facturas sé más que el gestor. Pregúntale a cualquiera.",
+     "p": [
+      "jambo"
+     ]
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "seco",
+     "v": "Sin prisa, vecina. Las cosas buenas salen solas.",
+     "t": "Sin prisa, vecina. Las cosas buenas salen solas.",
+     "p": [
+      "jambo"
+     ]
     }
    ]
   }
