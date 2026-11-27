@@ -30,6 +30,28 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Comprobar clave de Gemini (27/11/2026)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys, urllib.request, urllib.error
+          sys.path.insert(0, "herramientas")
+          from guionista_gemini import MODELOS
+          k = os.environ.get("GEMINI_API_KEY")
+          if not k:
+              print("::error::GEMINI_API_KEY vacía en los secretos del repo"); sys.exit(1)
+          try:
+              with urllib.request.urlopen(f"https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000&key={k}", timeout=30) as r:
+                  disp = {m["name"].split("/")[-1] for m in json.load(r).get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])}
+          except urllib.error.HTTPError as e:
+              print(f"::error::Clave de Gemini rechazada: HTTP {e.code} {e.read().decode()[:300]}"); sys.exit(1)
+          ok = [m for m in MODELOS if m in disp]
+          print(f"Clave OK. Modelos de la lista disponibles: {ok or 'NINGUNO'}")
+          if not ok:
+              print(f"::error::Ningún modelo de MODELOS está disponible. Disponibles: {sorted(disp)}"); sys.exit(1)
+          PY
+
       - name: Pedir guiones a Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

@@ -965,13 +965,44 @@ def _prompt_correccion(malos):
     )
 
 
+def _generado_ts(ruta):
+    """Momento de generación del borrador (campo «generado»; si falta, la fecha del nombre)."""
+    try:
+        with open(ruta, encoding="utf-8") as fh:
+            g = json.load(fh).get("generado")
+        if g:
+            return datetime.datetime.strptime(g, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc).timestamp()
+    except Exception:
+        pass
+    try:
+        d = datetime.date.fromisoformat(os.path.basename(ruta)[:10])
+        return datetime.datetime(d.year, d.month, d.day, tzinfo=datetime.timezone.utc).timestamp()
+    except Exception:
+        return time.time()
+
+
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else N_POR_DEFECTO
     os.makedirs(PENDIENTES, exist_ok=True)
 
     # 23/11/2026: el Reloj lanza al Guionista 4 veces al día (antes 2) para que una pasada fallida por cuota o
     # saturación de Gemini se recupere sola; a cambio, si ya hay guiones de sobra esperando al Creador no se pide nada.
-    en_espera = [f for f in os.listdir(PENDIENTES) if f.endswith(".json")]
+    # 27/11/2026: el tope contaba también borradores viejos; con 8 del 25/11 sin usar, el Guionista dejó de pedir
+    # guiones nuevos (biblia v5.3, chistes modernos) durante 2 días. Ahora solo cuentan los de < 36 h y los de
+    # más de 72 h sin usar pasan a descartados/ para no atascar.
+    ahora = time.time()
+    descartados = os.path.join(os.path.dirname(PENDIENTES), "descartados")
+    en_espera = []
+    for f in os.listdir(PENDIENTES):
+        if not f.endswith(".json"):
+            continue
+        edad_h = (ahora - _generado_ts(os.path.join(PENDIENTES, f))) / 3600
+        if edad_h > 72:
+            os.makedirs(descartados, exist_ok=True)
+            os.replace(os.path.join(PENDIENTES, f), os.path.join(descartados, f))
+            print(f"Archivado en descartados/ por antiguo ({edad_h:.0f} h): {f}")
+        elif edad_h < 36:
+            en_espera.append(f)
     if len(en_espera) >= MAX_EN_ESPERA:
         print(f"Ya hay {len(en_espera)} guiones en pendientes/ (tope {MAX_EN_ESPERA}): no se pide ninguno ni se gasta cuota.")
         return 0
