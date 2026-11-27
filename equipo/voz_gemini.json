@@ -80,9 +80,10 @@
    "v7 (v6 + cante por emoción)": "voice_0nlz4k1z8onb"
   },
   "puerta": "Cualquier voz nueva de Jambo se prueba igual antes de usarse: cinco réplicas, Whisper, y como mucho 1 palabra sin pareja de cada 50 en control_audio.py. NUNCA se publica con voz ininteligible.",
-  "si_el_dueno_no_la_quiere": "voces.jambo = voces_anteriores.jambo_v5 (más neutra) o jambo_b2 (la del 23/11)."
+  "si_el_dueno_no_la_quiere": "voces.jambo = voces_anteriores.jambo_v5 (más neutra) o jambo_b2 (la del 23/11).",
+  "vocales": "27/11 noche (orden del dueño 27/11 noche: «más estiradas las vocales»): alargar() estira a 4 letras la última vocal de CADA frase de Jambo (antes solo la de la réplica, a 3) y el corte ya no le acelera más de 1,2x. Prueba con las cinco réplicas: 33,2 s frente a 23,2 s y 2 palabras sin pareja de 51 en control_audio.py (las dos por la interjección «Ozú»). Una variante más extrema (6 letras, comas estiradas, sin acelerar) dejaba 7 sin pareja: descartada."
  },
- "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2,2 (antes 1,6; sigue siendo el más lento); pausas internas máx. 0,35 s (Jambo 0,55).",
+ "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 1,7 y sin acelerarle más de 1,2x (27/11 noche; antes 2,2 con hasta 1,78x, que le aplastaba las vocales); pausas internas máx. 0,35 s (Jambo 0,55).",
  "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «el Pintas», «el Piezas», «este», «el vecino».",
  "candidatas_jambo": {
   "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada. (Superado el 27/11: ver jambo_voz_v5.)",
