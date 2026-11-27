@@ -726,3 +726,5 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 2026-11-27 13:10 UTC · Comunidad (API) · redactadas 0 respuestas de Facebook/YouTube (1 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-27 14:11 UTC · Comunidad (API) · redactadas 0 respuestas de Facebook/YouTube (1 comentarios tratados), 0 leads nuevos · nada · nada del dueño
 2026-11-27 14:55 UTC · Creador (Claude Code) · pasada 15:51: sin cambios desde la de 11:51; 527/528 siguen rechazadas por la voz Gemini y no puedo rehacerlas aquí (sin sandbox de Neogest Studio ni ffmpeg); 530/531 esperan al ciclo; 532-534 son piezas del Centro (sin render/«cuando», 534 con bloqueo de contenido) y no las toco; pendientes/ solo trae guiones del 25/11 ya vistos, ninguno nuevo · necesito de Centro: render de 532-534 o retirarlas; de Coordinación: guion corto sin palabras difíciles para 527/528 o retirarlas · nada del dueño
+
+2026-11-27 15:10 UTC · Comunidad (API) · redactadas 0 respuestas de Facebook/YouTube (1 comentarios tratados), 0 leads nuevos · nada · nada del dueño
