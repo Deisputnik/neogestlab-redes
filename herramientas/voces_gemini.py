@@ -26,10 +26,12 @@ CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back"
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
 # velocidad en el resto de voces». Jambo nunca se acelera; el resto se lleva a unas 3 palabras por segundo.
+# 27/11/2026 (noche, «más estiradas las vocales»): el corte aceleraba a Jambo hasta 1,78x para llegar a 2,2 palabras/s y le aplastaba las vocales;
+# ahora su objetivo es 1,7 palabras/s y nunca se acelera más de 1,2x. Historial: 1,6 (23/11) -> 2,2 (27/11 tarde) -> 1,7 (27/11 noche).
 # 27/11/2026: Jambo sube de 1,6 a 2,2 palabras por segundo para que se entienda (sigue siendo el más lento del reparto).
 LENTOS_QUIEN = {"jambo"}
-PAL_S = {None: 3.0, "jambo": 2.2, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
-TEMPO_MAX = {None: 1.3, "jambo": 1.8}                 # tope de aceleración sin cambiar el tono (atempo)
+PAL_S = {None: 3.0, "jambo": 1.7, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
+TEMPO_MAX = {None: 1.3, "jambo": 1.2}                 # tope de aceleración sin cambiar el tono (atempo)
 PAUSA_MAX = {None: 0.35, "jambo": 0.55}               # ninguna pausa interna más larga que esto (segundos)
 
 
@@ -45,10 +47,17 @@ EMO_JAMBO = {"normal": "lazy melodic chat, voice sliding up and down", "seco": "
              "chulea": "cocky wheedling sing-song, teasing", "susurra": "conspiratorial sing-song whisper"}
 
 
+ALARGUE, ALARGUE_COMA = 4, 0   # letras de la última vocal de cada frase de Jambo y de la vocal anterior a una coma (0 = no)
+
+
 def alargar(texto):
-    """Jambo estira la última vocal de la última palabra de cada réplica (solo en el texto del TTS)."""
-    m = re.search(r"([aeiouáéíóú])([^aeiouáéíóú\s]*)([.!?…]*)\s*$", texto, re.I)
-    return texto if not m else texto[:m.start()] + m.group(1) * 3 + m.group(2) + m.group(3)
+    """Jambo estira la última vocal de CADA frase (y, si ALARGUE_COMA, la de la palabra anterior a cada coma). Solo en el texto del TTS."""
+    def una(f):
+        if ALARGUE_COMA:
+            f = re.sub(r"([aeiouáéíóú])([^aeiouáéíóú\s,]*),", lambda m: m.group(1) * ALARGUE_COMA + m.group(2) + ",", f, flags=re.I)
+        m = re.search(r"([aeiouáéíóú])([^aeiouáéíóú\s]*)([.!?…]*)\s*$", f, re.I)
+        return f if not m else f[:m.start()] + m.group(1) * ALARGUE + m.group(2) + m.group(3)
+    return " ".join(una(f) for f in frases(texto))
 
 
 def frases(texto):
