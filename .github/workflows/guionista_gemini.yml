@@ -9,6 +9,10 @@ name: Guionista · El Jambo vía Gemini (API, 17/11/2026)
 
 on:
   workflow_dispatch:
+    inputs:
+      sondear:
+        description: "1 = probar los modelos pro de la clave y no pedir guiones"
+        default: "0"
   # 23/11/2026: sin cron propio. El cron de GitHub llegaba 6-8 h tarde en esta cuenta; ahora lo lanza reloj.yml a su hora
   # (función «toca», horas de Madrid: 09:15 y 15:15). Para cambiar el horario, cambia la línea «toca guionista_gemini.yml» de reloj.yml.
 
@@ -33,6 +37,7 @@ jobs:
       - name: Comprobar clave de Gemini (27/11/2026)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SONDEAR: ${{ inputs.sondear }}
         run: |
           python3 - <<'PY'
           import json, os, sys, urllib.request, urllib.error
@@ -46,6 +51,19 @@ jobs:
                   disp = {m["name"].split("/")[-1] for m in json.load(r).get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])}
           except urllib.error.HTTPError as e:
               print(f"::error::Clave de Gemini rechazada: HTTP {e.code} {e.read().decode()[:300]}"); sys.exit(1)
+          print(f"Modelos de la clave (generateContent): {sorted(disp)}")
+          if os.environ.get("SONDEAR") == "1":
+              import time
+              for m in sorted(x for x in disp if "pro" in x or "ultra" in x or "thinking" in x):
+                  body = json.dumps({"contents": [{"parts": [{"text": "Responde solo: OK"}]}]}).encode()
+                  req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={k}", data=body, headers={"Content-Type": "application/json"})
+                  try:
+                      with urllib.request.urlopen(req, timeout=90) as r: json.load(r); print(f"SONDEO {m}: OK")
+                  except urllib.error.HTTPError as e:
+                      print(f"SONDEO {m}: HTTP {e.code} {e.read().decode()[:160]}")
+                  except Exception as e:
+                      print(f"SONDEO {m}: {e}")
+                  time.sleep(2)
           ok = [m for m in MODELOS if m in disp]
           print(f"Clave OK. Modelos de la lista disponibles: {ok or 'NINGUNO'}")
           if not ok:
@@ -53,6 +71,7 @@ jobs:
           PY
 
       - name: Pedir guiones a Gemini
+        if: inputs.sondear != '1'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 herramientas/guionista_gemini.py 4
