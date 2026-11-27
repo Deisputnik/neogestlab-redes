@@ -1,16 +1,3 @@
-2026-11-25 19:01  805_recepcionista_horario_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.5 pico=-1.1
-2026-11-25 19:01  805_recepcionista_horario_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-25 19:01  806_recepcionista_24h_voces: control de audio del vídeo externo: aprobado=None LUFS=-14.7 pico=-1.3
-2026-11-25 19:01  806_recepcionista_24h_voces: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-25 19:01  Estadísticas actualizadas (30 posts, 1597 seguidores)
-2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: publicando…
-2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: fallo al publicar 1/3: gh release download cola: no assets match the file pattern
-2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: publicando…
-2026-11-25 19:51  524_jambo_repartidor_turnos_paquetes: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
-2026-11-25 20:09  524_jambo_repartidor_turnos_paquetes: publicando…
-2026-11-25 20:09  524_jambo_repartidor_turnos_paquetes: fallo al publicar 3/3: gh release download cola: no assets match the file pattern
-2026-11-25 22:09  525_jambo_cuidado_mayores_turno_noche: publicando…
-2026-11-25 22:09  525_jambo_cuidado_mayores_turno_noche: fallo al publicar 1/3: gh release download cola: no assets match the file pattern
 2026-11-25 22:09  525_jambo_cuidado_mayores_turno_noche: publicando…
 2026-11-25 22:09  525_jambo_cuidado_mayores_turno_noche: fallo al publicar 2/3: gh release download cola: no assets match the file pattern
 2026-11-25 23:09  525_jambo_cuidado_mayores_turno_noche: publicando…
@@ -598,3 +585,16 @@
 2026-11-27 20:12  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 20:12  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 20:13  Estadísticas actualizadas (30 posts, 1597 seguidores)
+2026-11-27 20:17  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:17  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 20:18  Estadísticas actualizadas (30 posts, 1597 seguidores)
