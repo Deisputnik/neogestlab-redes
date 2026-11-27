@@ -1,0 +1,110 @@
+{
+  "slug": "jambo-reunion-comunidad-derrama",
+  "set": "portal",
+  "hora": 20,
+  "moraleja": "Las derramas de vecinos siempre tienen un origen cercano",
+  "recuerdo": "Como cuando se descubrio el cultivo enganchado en el episodio quinientos veintidos",
+  "titulo_fijo": "CUANDO EN LA REUNIÓN DE VECINOS PIDEN UNA DERRAMA EXTRA",
+  "gancho_tipo": "afirmacion_imposible",
+  "promesa": "¿por qué ha subido el recibo de la luz comunitaria?",
+  "giro": "Concha le alquilo el enchufe comunal al Pintas para cobrar ella",
+  "marca": false,
+  "nombre_completo_dicho": "conchaqueton",
+  "por_que_funcionara": "Lío de comunidad de vecinos en el portal, altamente compartible por grupos de WhatsApp de fincas.",
+  "ambito": "barrio",
+  "chiste_base": "Impugnan la factura del luz del portal porque un vecino ha puesto a cargar un congelador entero en la escalera.",
+  "resumen": "Rosa exige una derrama para pagar el portal y Neo descubre que la factura subió por una toma ilegal en el pasillo.",
+  "coletillas_nuevas": {
+    "jambo": "eso lo pagamos a escote, colega.",
+    "rosa": "a mi no me saca un duro nadie.",
+    "felipe": "la ley de propiedad horizontal me avala.",
+    "sindy": "a otro perro con ese hueso."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Vecinos! ¡Toca pagar 100 euros de derrama!",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Illo, Rosa! ¡La ley horizontal me avala, es ilegal!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "t": "¡Concha Queton lleva seis meses sin pagar un duro!"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "cansado",
+      "t": "¡Ay! Eso lo arreglamos la semana que viene, guapitos."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "set": "calle",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Chacho... eso a escote. Puse un enchufe pequeño."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "giro": true,
+      "t": "¡Hostia! ¡La derrama sube por la nevera del pasillo!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "miedo",
+      "t": "¡Venga ya! Que Neo intervenga antes del corte."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡A mi no me saca un duro nadie mas!"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "ironia",
+      "t": "¡Que exagerados sois todos en este portal por nada!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "He localizado el fraude de luz del pasillo y anulado el cobro de la derrama extra."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Las derramas de vecinos siempre tienen un origen cercano",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:32:50Z",
+  "corregido_en_ronda": 1
+}

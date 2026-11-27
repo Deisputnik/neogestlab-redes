@@ -1,0 +1,110 @@
+{
+  "slug": "jambo-suscripcion-olvidada",
+  "set": "salon2",
+  "hora": 16,
+  "moraleja": "Las pruebas gratuitas siempre cobran el mes siguiente",
+  "recuerdo": "Igual que cuando nos cobraron las horas de fichar en el episodio quinientos veintiuno",
+  "titulo_fijo": "CUANDO TE COBRAN LA SUSCRIPCIÓN PROBADA UN MES GRATIS",
+  "gancho_tipo": "pregunta_abierta",
+  "promesa": "¿quién autorizó el cargo mensual del canal de televisión?",
+  "giro": "Felipe contrató el canal para impresionar a una cita y lo olvidó",
+  "marca": false,
+  "nombre_completo_dicho": "rosa",
+  "por_que_funcionara": "Recibo bancario inesperado, conflicto clásico del presupuesto doméstico de barrio.",
+  "ambito": "compras",
+  "chiste_base": "Nadie admite haber contratado un canal Premium hasta que la aplicación muestra el historial de búsquedas nocturnas.",
+  "resumen": "Rosa descubre un recibo de tele de pago y Neo rastrea el perfil activo hasta la cuenta de Felipe para cancelarla.",
+  "coletillas_nuevas": {
+    "jambo": "al loro con el cobro, quillo.",
+    "rosa": "mi dinero no se tira en chorradas.",
+    "felipe": "eso fue una prueba sin compromiso.",
+    "sindy": "ya salto la liebre otra vez."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Rosa! ¿Quien ha pagado 30 euros de tele?",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "t": "¡Mi dinero no se tira! Preguntale al cuñado del sofa."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "t": "¡Eso fue una prueba sin compromiso para ver las semifinales!"
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "set": "bar",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo... al loro con el cobro. Yo pase la clave."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "giro": true,
+      "t": "¡Hostia! ¡Se me olvido dar de baja la suscripcion!"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "t": "¡Seis meses pagando telenovelas que no ve nadie aqui!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "t": "¡Que lo resuelva Neo antes del proximo cobro!"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡Aqui nadie vuelve a contratar nada sin mi permiso!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "miedo",
+      "t": "¡Eso lo arreglamos en dos minutos sin drama!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "He cancelado el cargo de la tele y gestionado la devolucion integra de los treinta euros."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Las pruebas gratuitas siempre cobran el mes siguiente",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:32:50Z",
+  "corregido_en_ronda": 1
+}

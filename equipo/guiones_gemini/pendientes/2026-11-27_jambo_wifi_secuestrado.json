@@ -1,0 +1,110 @@
+{
+  "slug": "jambo-wifi-secuestrado",
+  "set": "salon2",
+  "hora": 19,
+  "moraleja": "Quien cobra el wifi termina pagando averias ajenas",
+  "recuerdo": "Como cuando se inundo el salon con la banera de Rosa en el episodio quinientos treinta",
+  "titulo_fijo": "CUANDO TU VECINA SECUESTRA LA CONTRASEÑA DEL WIFI",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿quién ha cambiado la clave del wifi y cómo la pagarán?",
+  "giro": "Rosa no cambió el wifi para ahorrar, sino para vendérselo al vecino del portal",
+  "marca": true,
+  "nombre_completo_dicho": "felipe",
+  "por_que_funcionara": "Aplica la fórmula de gags sobre la fibra de casa y la picardía de barrio que triunfa en Instagram Reels.",
+  "ambito": "casa",
+  "chiste_base": "Una vecina cambia la clave del router para cobrar al resto y descubre que el vecino le ha duplicado la señal gratis.",
+  "resumen": "Rosa cambia la contraseña del wifi para cobrar a los de la casa, pero Neo demuestra que el Pintas le robaba la señal con un repetidor.",
+  "coletillas_nuevas": {
+    "jambo": "eso con diez duros tira, tronco.",
+    "rosa": "aqui nada es gratis, encanto.",
+    "felipe": "eso lo se yo por logica pura.",
+    "sindy": "te has vuelto a lucir, guapa."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "sorpresa",
+      "t": "¡Felipe! ¡He cambiado la clave del wifi!",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "enfado",
+      "t": "¡Coño, Rosa! ¡No puedes cortarnos la red de casa!"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "t": "¡Manda huevos! ¡Cobrar cinco euros por conectar el movil!"
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "set": "cocina2",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo... la clave es floja, con diez duros tira."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "giro": true,
+      "t": "¡Madre mia! ¡El Pintas te ha pinchado la red!"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Illo, no! La fibra la instalaron los de Neogest."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "t": "¡Venga ya! Que lo resuelva Neo antes de arruinarnos."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¡Aqui nada es gratis, encanto, pagas o te desconectas!"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "miedo",
+      "t": "¡Eso lo se yo por logica pura, no pago!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Tranquilos, he restablecido la clave original del wifi y bloqueado a los vecinos gorrones."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Quien cobra el wifi termina pagando averias ajenas",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:32:50Z",
+  "corregido_en_ronda": 1
+}
