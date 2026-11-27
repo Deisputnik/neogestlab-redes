@@ -128,5 +128,14 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:20:53Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: ninguna réplica menciona en el diálogo el episodio anterior indicado en el campo 'recuerdo' (los novecientos euros de luz del enchufe trucado)."
+    ],
+    "arreglo_sugerido": "Integra en una réplica (por ejemplo de Rosa o Sindy al quejarse de los cables) el recuerdo del enchufe trucado y los novecientos euros de luz, no empieces el gancho con el nombre propio ('¡Felipe Lotas, ...') y usa la frase canónica 'Que lo resuelva el Neo'.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:23:09.967880Z"
+  }
 }

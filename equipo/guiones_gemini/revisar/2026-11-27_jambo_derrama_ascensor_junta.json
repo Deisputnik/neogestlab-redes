@@ -126,5 +126,15 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:20:53Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: ninguna réplica menciona el recuerdo del episodio anterior especificado en los metadatos ('530 · Madrugada, el salón se inunda...')",
+      "ESTRUCTURA: falta el campo obligatorio 'titulo_fijo' para la apertura en frío."
+    ],
+    "arreglo_sugerido": "Añadir el campo 'titulo_fijo' (ej. 'CUANDO NO QUIERES PAGAR EL ASCENSOR') y hacer que Sindy o Rosa mencionen en una réplica la inundación del episodio 530 (ej. 'Ya nos inundaste el salón y ahora nos arruinas con el ascensor').",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:23:58.849642Z"
+  }
 }

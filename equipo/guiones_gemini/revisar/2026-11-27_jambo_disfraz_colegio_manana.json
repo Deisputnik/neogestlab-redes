@@ -125,5 +125,14 @@
     }
   ],
   "fuente": "gemini",
-  "generado": "2026-11-27T21:16:05Z"
+  "generado": "2026-11-27T21:16:05Z",
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: Ninguna réplica del diálogo hace referencia al episodio anterior indicado en el campo 'recuerdo' (535 · Tres días de lentejas y nadie sabe quién hizo la compra)."
+    ],
+    "arreglo_sugerido": "Incluir en una de las réplicas (por ejemplo de Felipe o Sindy) una mención explícita con un detalle del episodio anterior de las lentejas, y corregir la primera réplica para que Rosa no se grite a sí misma por su propio nombre.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:25:16.630938Z"
+  }
 }

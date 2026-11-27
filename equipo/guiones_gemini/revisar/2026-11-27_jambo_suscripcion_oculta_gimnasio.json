@@ -128,5 +128,14 @@
   ],
   "fuente": "gemini",
   "generado": "2026-11-27T21:20:53Z",
-  "corregido_en_ronda": 1
+  "corregido_en_ronda": 1,
+  "_autocritica_calidad": {
+    "riesgo_rechazo": true,
+    "motivos": [
+      "MEMORIA: Ninguna réplica de los personajes menciona o recuerda un detalle de un episodio anterior (el campo de metadatos 'recuerdo' no se refleja en el diálogo)."
+    ],
+    "arreglo_sugerido": "Añadir en una réplica (por ejemplo, de Felipe o Rosa al principio) un recuerdo explícito a lo que pasó en el episodio anterior del paquete no pedido.",
+    "fuente": "gemini",
+    "fecha": "2026-11-27T21:25:35.667108Z"
+  }
 }
