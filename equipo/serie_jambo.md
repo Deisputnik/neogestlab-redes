@@ -79,6 +79,56 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 - Cambios en el dibujo o en los decorados: `src/studio/characters.js` y `engine.js` de Neogest Studio, siempre con punto de restauración antes y nunca con el builder IA de Base44.
 - Vídeo real de la casa: nunca personas identificables, marcas ni direcciones reconocibles.
 
+## 11. Adaptación por red (el mismo episodio, empaquetado para cada red)
+Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube (27/11/2026). Pendiente: Instagram, Facebook y TikTok.
+
+### 11.1 YouTube Shorts (estudio del 27/11/2026, orden del dueño)
+**Lo que dicen nuestros datos** (canal @neogestlab, 60 vídeos, 216 suscriptores, vistas leídas el 27/11):
+- Lo que más funcionó: «Parte 2» de una historia (1,1 K y 1 K), el Short con la coletilla de la serie y emoji en el título (1.061), «La reunión rápida que no lo fue» (901), «¿Quién paga las botellas rotas?» (586) y «Cobrar por respirar: el cuñado lo defiende» (500).
+- Lo que no funcionó: los títulos de anuncio con pregunta sobre un producto («¿Apuntas el stock en una libreta?», «¿Y si tu teléfono se cogiera solo?», «¿Cuántas llamadas pierdes al día?»): 0-4 vistas. Los episodios de barrio recientes con título descriptivo y sin emoji: 32-133 vistas.
+- La duración no explica la diferencia: «botellas rotas» (63 s, 586 vistas) y «El domingo que nadie cobra» (64 s, 79 vistas) duran lo mismo. Lo que cambia es el título y lo claro que es el conflicto.
+- Nadie comenta: 0 comentarios y 1-8 me gusta por Short. YouTube no recibe ninguna señal de que el vídeo interese.
+
+**Lo que hacen los virales del nicho** (humor de autónomos, curro y vida cotidiana en España):
+- Nachter (6,55 M suscriptores): «Ventajas de ser autónomo en España 🫠🤣» tiene 411 K vistas, 12 K me gusta y 246 comentarios con 8 s de duración. «Autónomos en la cena de empresa 🍽🤣» tiene 367 K vistas y 30 K me gusta con 35 s. Otros del mismo estilo («Cuando te tomas vacaciones pero eres autónomo», «Autónomos vs políticos») tienen entre 183 K y 217 K. Su serie numerada «Millennial en el año 2060 · Capítulo 8» tiene 1,6 M.
+- Los cuatro rasgos que comparten:
+  1. **El título nombra a un colectivo que se reconoce** (autónomos, el cuñado, la madre, el que paga a 90 días) y una situación. Quien es de ese colectivo lo comenta y lo comparte.
+  2. **El título va escrito en el vídeo, fijo arriba, desde el primer fotograma hasta el último.** Quien entra a mitad sabe al momento de qué va.
+  3. **El título y el vídeo son irónicos**: dicen «ventajas» y enseñan lo contrario. Termina en seco, sin explicaciones, y vuelve a empezar (bucle).
+  4. **Las series van numeradas** («Capítulo 9»). En nuestro canal, «Parte 2» también es lo que más se vio.
+- Los Shorts genéricos de «humor con IA» del mismo nicho se quedan en 300-1.200 vistas: poner «IA» en el título no atrae a nadie. Lo que atrae es la situación de la gente.
+
+**Reglas para YouTube (las cumple quien rellena el bloque `youtube` de `post.json` y quien publica):**
+1. **Título** de 45 caracteres como mucho, más « #Shorts». La fórmula es: colectivo o personaje que se reconoce + situación + 1 o 2 emojis (🫠🤣, 😂, 💀, 🍽…). Moldes que valen:
+   - «Cuando eres autónomo y…»
+   - «Ventajas de [ser X / tener un cuñado así]»
+   - «[X] en [la cena / la reunión / el grupo de la familia]»
+   - «[X] ANTES vs AHORA»
+   - «El cuñado que…»
+   - Si el episodio sigue a otro: «… · Parte N».
+   
+   Prohibido:
+   - las preguntas de anuncio sobre un producto;
+   - «IA», «Neogest», «app» o el nombre de una función en el título;
+   - los nombres de los personajes en el título (nadie los conoce todavía), salvo «el cuñado» o «la vecina» como tipo de persona;
+   - los títulos de más de 60 caracteres.
+2. **Texto fijo en pantalla**: el título (sin el emoji ni #Shorts) va escrito arriba, en grande y legible, durante todo el vídeo y no solo en el plano de la casa. No puede tapar las caras ni los subtítulos. *Pendiente de implementar en el render (Mejora): campo `titulo_fijo` del episodio en `gen_episodios.py`, que pinte un texto persistente en todas las escenas. Hasta que esté, `gancho_casa` debe ser ese mismo título.*
+3. **Ironía en el gancho**: el título promete lo contrario de lo que pasa, o pone en duda algo que el público ya vive. El remate de Neo contesta de verdad a esa promesa.
+4. **Comentarios**:
+   - El comentario fijado de YouTube es SIEMPRE una pregunta que se contesta con una cifra o con una experiencia propia («¿A ti cuántos días te pagan? Una cifra.», «¿Quién es el cuñado de tu familia? Etiquétalo.»). Nunca un enlace ni una venta.
+   - Comunidad contesta en la primera hora todos los comentarios de YouTube.
+5. **Descripción**:
+   - Primera línea: la situación en una frase con el colectivo («Para todos los que alguna vez han…»).
+   - Segunda línea: «Más episodios de El Jambo que sabe 👉 lista de la serie».
+   - Después, la prueba gratuita (`/solicitar?…&src=youtube`), «Web: neogestlab.com» y «By Neogest Lab».
+   - Como mucho 3 hashtags: #humor, el del colectivo (#autonomos, #cuñados, #vecinos…) y #shorts.
+6. **Serie y orden**:
+   - Cada episodio entra en la lista de reproducción «El Jambo que sabe», en orden.
+   - Cuando un episodio continúa otro, el anterior lleva como «vídeo relacionado» el siguiente. Así quien termina uno pasa al otro.
+   - Las historias que dan para más se cortan en partes («Parte 1 / Parte 2»): es lo que mejor nos ha funcionado en YouTube.
+7. **Duración**: se mantiene el formato de 45-70 s del §6, que es orden del dueño. Dato para decidir: los virales del nicho duran 8-35 s y nuestros Shorts de 40-64 s no se diferencian entre sí por la duración. *Pendiente del dueño (§12 de la DIRECTIVA): probar en YouTube una versión corta de 20-35 s (gancho, 3 golpes y remate) de 1 de cada 5 episodios y comparar las vistas a los 7 días.*
+8. **Medir**: Analista apunta cada semana, por Short de YouTube, las vistas, los me gusta, los comentarios y qué molde de título llevaba, y deja en `equipo/virales_semana.md` qué molde gana. El molde que pierde dos semanas seguidas se retira de esta lista.
+
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
 | Cifra | Dato | Fuente leída | Matiz |
 |---|---|---|---|
@@ -88,5 +138,6 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · §11 nuevo, «Adaptación por red», empezando por YouTube (orden del dueño: estudiar por qué funcionan los virales del nicho y adaptar cada red). Basado en los datos del canal propio y en los Shorts virales de autónomos y curro (Nachter). Pendiente: Instagram, Facebook y TikTok.
 - 2026-11-27 · biblia v5.3 · órdenes del dueño de ese día, en este orden: (1) la voz de Jambo no se entendía → voz de calle real, del sur y con ceceo, tras pasar por una plana y una cantarina que sonaba impostada; «el Pintas» / «el Piezas»; coletillas nuevas; mejora de planos; (2) el Guionista adapta chistes modernos y los guiones tienen que entenderse; (3) temas de casa y vida cotidiana en vez de oficina; (4) orden final: decorados con profundidad, humor negro cotidiano con gancho y enseñanza sin la palabra «moraleja», identidad y memoria de los personajes, todos aportan, noticias y aprender de lo que funciona, mejor música, fuera los créditos, nombres en el diálogo, Neogest Lab discreta en decorado o ropa y nombrada a veces, estancias con transición de la casa por fuera y más dinamismo; biblia reescrita y limpia de todo lo anterior.
 - Versiones anteriores (v1 a v5.2, del 13/11 al 23/11/2026): en el historial de git de este archivo.
