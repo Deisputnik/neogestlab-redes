@@ -76,6 +76,7 @@ except Exception:
 # una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
 MIN_GAGS, MAX_GAGS = 5, 8
 MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 100, 170   # 26/11: mínimo 105 → 100 al acortar las réplicas   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
+ACCIONES = {"habla", "desespera", "delega", "presume", "fria"}   # gen_episodios.py ACCION_A_EMO / EXPR
 EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
 
 
@@ -100,7 +101,38 @@ def _temas_recientes():
     return temas
 
 
+def _coletillas_recientes(max_por_carpeta=15, tope=40):
+    """27/11/2026: coletillas que ya han usado los episodios recientes (campo «coletillas_nuevas» de cada guion en pendientes/, usados/,
+    cola/ y publicados/), para que Gemini no las repita. Sin ninguna todavía devuelve texto vacío y no pasa nada."""
+    vistas = []
+    carpetas = [(PENDIENTES, None), (os.path.join(os.path.dirname(PENDIENTES), "usados"), None),
+                (COLA, "guion.json"), (os.path.join(RAIZ, "publicados"), "guion.json")]
+    for base, nombre in carpetas:
+        if not os.path.isdir(base):
+            continue
+        rutas = []
+        for x in sorted(os.listdir(base))[-max_por_carpeta:]:
+            ruta = os.path.join(base, x)
+            if nombre and os.path.isdir(ruta):
+                ruta = os.path.join(ruta, nombre)
+            if ruta.endswith(".json") and os.path.isfile(ruta):
+                rutas.append(ruta)
+        for ruta in rutas:
+            try:
+                col = json.load(open(ruta, encoding="utf-8")).get("coletillas_nuevas")
+            except Exception:
+                continue
+            if isinstance(col, dict):
+                for quien, frase in col.items():
+                    if isinstance(frase, str) and frase.strip():
+                        item = f"{quien}: «{frase.strip()}»"
+                        if item not in vistas:
+                            vistas.append(item)
+    return "; ".join(vistas[-tope:]) or "(ninguna todavía: esta es la primera tanda, todas valen)"
+
+
 def _prompt(n):
+    coletillas = _coletillas_recientes()
     biblia = _leer(BIBLIA)
     lecciones = _leer(LECCIONES, lineas=25)
     virales = _leer(VIRALES, lineas=60)
@@ -116,19 +148,21 @@ def _prompt(n):
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
+        "coletillas_nuevas": {"jambo": "coletilla NUEVA y graciosa de Jambo (≤ 6 palabras) que dice en este episodio", "rosa": "coletilla nueva de Rosa", "felipe": "coletilla nueva de Felipe", "sindy": "coletilla nueva de Sindy (opcional: un personaje más si encaja)"},
         "escenas": [
             {
                 "e": "gancho",
                 "h": "rosa",
                 "emo": "sorpresa",
                 "t": "texto exacto que dice o el texto en pantalla, máx 8 palabras, situación reconocible desde el fotograma 0 (visible en los primeros 0,5 s, antes incluso de que se lea el texto entero); dirígete a otro personaje por su nombre si tiene sentido",
+                "p": ["rosa", "felipe"],
             },
             {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 14 palabras, en frases de 3-8 palabras separadas por punto), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
             {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
-            {"e": "gag", "h": "jambo", "emo": "cansado", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, habla arrastrada: «Rosaaa, prima… un eurillo, que mañana te lo devuelvo…»)"},
+            {"e": "gag", "h": "jambo", "emo": "cansado", "p": ["jambo"], "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, pícaro del sur relajadísimo, frases cortas y claras en ortografía normal, con una coletilla NUEVA suya: «Rosa, guapa… eso se arregla solo. Fíame cinco euros y me callo.»)"},
             {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
-            {"e": "remate", "h": "neo", "emo": "seco", "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
+            {"e": "remate", "h": "neo", "emo": "seco", "p": ["neo", "rosa"], "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
             {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
         ],
     }
@@ -307,10 +341,12 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    CARADURA: se apunta a todo, nunca paga, se lleva lo que puede y encima exige.
    Orden del dueño 23/11 (noche): Jambo Reseco tiene RASGOS DE TOXICÓMANO de barrio de toda la vida, y se
    tienen que notar en CADA réplica suya por cómo habla y por lo que pide (nunca porque alguien lo diga):
-   - habla arrastrada: alarga vocales («primoooo», «Rosaaa»), frases cortas que se quedan a medias con
-     «…», se le va el hilo («¿qué te estaba diciendo?») y lo retoma por otro lado;
-   - muletillas suyas: «primo/prima», «válgame», «hermano», «te lo juro por mi madre», «un eurillo», «mañana te lo
-     devuelvo», «que estoy limpio, ¿eh?», «no digas mi nombre»;
+   - habla relajadísima pero CLARA (orden del dueño 27/11, sustituye al «habla arrastrada»): frases cortas con pausas
+     «…», se le va el hilo («¿qué te estaba diciendo?») y lo retoma por otro lado; NO alargues vocales («primoooo») ni
+     deformes palabras: la pachorra va en las pausas y el descaro, no en sílabas ininteligibles;
+   - coletillas: las viejas («primo/prima», «válgame», «hermano», «te lo juro por mi madre», «mañana te lo devuelvo»,
+     «que estoy limpio, ¿eh?») pueden salir de vez en cuando pero NO son obligatorias ni las únicas: inventa coletillas
+     nuevas y más graciosas en cada tanda (ver apartado G);
    - siempre pide algo (un euro, un cigarro, veinte pavos «pa'l autobús», que le fíen) o vende algo de
      procedencia dudosa (un taladro «casi nuevo», un jamón sin etiqueta) y luego te lo pide prestado;
    - cambia de humor en seco: del susurro pedigüeño al grito impaciente y otra vez a la calma, como si nada;
@@ -319,7 +355,7 @@ Reglas duras (si no las cumples, el episodio se rechaza):
    comenta: se le nota). Habla muy despacio, así que sus réplicas son CORTAS: máximo 10 palabras cada una.
    Es el más desaliñado de todos (greñas, ojeras, barba, camiseta con manchas): los demás pueden aludir a
    su pinta. NADIE pronuncia la palabra «Jambo» en ninguna réplica (la voz la dice mal): se le llama
-   «primo», «este», «el vecino», «el del trastero».
+   «el Pintas», «el Piezas», «este», «el vecino».
    LÍNEAS ROJAS DE JAMBO (innegociables): no se nombra, se enseña ni se describe ninguna sustancia, dosis,
    forma de conseguirla o de consumirla; nada de sobredosis, enfermedad, jeringuillas ni muerte; nadie le
    llama «yonqui» ni «drogadicto»; el chiste es su cara dura y su despiste, jamás la adicción de la gente
@@ -384,8 +420,8 @@ A) ESTRUCTURA: 1 gancho (máx 8 palabras) + entre {MIN_GAGS} y {MAX_GAGS} golpes
    (eso da 45-70 s). CUENTA las palabras de cada "t" antes de responder: si un golpe pasa de
    {MAX_PALABRAS_GAG}, recórtalo; no lo partas en dos escenas iguales.
 B) JAMBO RESECO sale SIEMPRE: al menos una réplica suya ("h": "jambo") en la escalada, de gorrón
-   caradura (se apunta, no paga, exige) y con su habla de toxicómano de barrio: arrastrada, con «…», con
-   una muletilla suya («primo», «un eurillo», «mañana te lo devuelvo») y, si cabe, perdiendo el hilo. Felipe mete al menos una sentencia falsa de cuñado.
+   caradura (se apunta, no paga, exige), el «Pintas» del barrio: relajadísimo, pícaro del sur, con «…» y una coletilla
+   NUEVA suya (apartado G) y, si cabe, perdiendo el hilo. Felipe mete al menos una sentencia falsa de cuñado.
 C) ESCRIBE PARA LA VOZ (las voces son sintéticas y suenan planas si el texto es plano):
    - Cada réplica son 2 o 3 frases CORTAS, no una frase larga con comas. Mezcla una exclamación, una
      pregunta o unos puntos suspensivos con una frase seca: «¡Hostia, Rosa! ¿Otra vez? Pues nada…».
@@ -423,6 +459,33 @@ F) RETENCIÓN v12 (orden del dueño 23/11 22:11: «ganchos potentes, giros inesp
        nombre), deja a Rosa en evidencia Y repite una palabra u objeto del gancho (el espectador siente que
        todo encaja). Nada de finales abiertos, «continuará» ni moralejas que no salen de lo visto.
    F6. BUCLE: el cierre empalma con el gancho ("bucle_visual") para que el segundo visionado empiece solo.
+
+G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no se entiende apenas… coletillas más graciosas». MANDA
+   SOBRE TODO LO ANTERIOR en lo que contradiga a la voz de Jambo y a sus muletillas):
+   G1. JAMBO = «el Pintas» / «el Piezas» del barrio: el buscavidas con mala pinta que cae gracioso, de español del sur, relajadísimo, con
+       pachorra total y aire de colocado. Su ceceo (las eses dichas como zetas) lo pone el sistema al generar la voz: TÚ escribes con
+       ORTOGRAFÍA NORMAL, sin zetas por eses y sin alargar vocales («primoooo» está prohibido). La gracia va en frases CORTAS, pausas
+       «…», descaro tranquilo y lógica de pícaro, nunca en palabras deformadas. Se tiene que entender cada palabra.
+   G2. Los demás personajes pueden llamarle «el Pintas» o «el Piezas» (nunca «Jambo»); úsalo al menos una vez por episodio cuando alguien
+       hable de él o le hable.
+   G3. COLETILLAS NUEVAS Y MÁS GRACIOSAS en cada tanda: inventa para cada personaje una coletilla corta (máx 6 palabras, que se entienda
+       dicha en voz alta) coherente con su rol y que haga reír por sí sola: Jambo = pícaro del sur relajado (promesa con descaro, excusa
+       absurda, filosofía de barrio a destiempo); Rosa = jefa tirana y cursi; Felipe = cuñado enterado; Sindy = directa y sin filtros;
+       Concha = mantiene «Eso lo arreglamos la semana que viene»; Neo = culto y seco. Rellena "coletillas_nuevas" (como mínimo jambo, rosa y
+       felipe) y haz que cada una salga de verdad en una réplica de ese personaje. NO repitas ninguna de las ya usadas en episodios
+       recientes: {coletillas}. Las viejas («primo», «válgame», «hermano», «un eurillo», «mañana te lo devuelvo») pueden aparecer de vez
+       en cuando, pero no son obligatorias ni pueden ser las únicas.
+H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura lo que su réplica): el render alterna solo medio, primer
+   plano y general y fuerza primer plano en el remate; tú controlas el ritmo y quién sale en cada plano:
+   H1. MÁS CAMBIOS DE PLANO: réplicas cortas (el tope de palabras ya está) y alternancia de personajes en cada golpe: ningún plano debe
+       alargarse con una réplica larga. Tras un golpe fuerte mete como un golpe más una REACCIÓN muy corta de otro personaje (1-3 palabras:
+       «¿Qué?», «Pff…», «Ni de coña.») para cortar y dar primer plano a la cara.
+   H2. CAMPO "p" (opcional pero recomendado, máx 2 personajes y siempre incluye a quien habla): el gancho muestra a los dos protagonistas del
+       lío (plano que sitúa: "p": ["rosa", "felipe"]); en discusiones, plano de dos; en reacciones y en los golpes de Jambo, solo el que
+       habla o reacciona ("p": ["jambo"]) para que la cámara se acerque a su cara; en el remate, Neo y Rosa ("p": ["neo", "rosa"]) para
+       que se vea a Rosa en evidencia. El plano general solo sitúa: no lo pidas para golpes.
+   H3. CAMPO "a" (opcional): acción de cada personaje en plano, solo uno de habla, desespera, delega, presume, fria (p. ej. "a": {{"felipe":
+       "presume"}}); varía las acciones entre golpes. Las risas ("risas": true) en 1-3 golpes como mucho y "sello" (texto muy corto) solo en el remate.
 
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
@@ -549,6 +612,23 @@ def _validar(ep):
     for e in escenas:
         if isinstance(e, dict) and e.get("emo") not in EMOCIONES:
             e["emo"] = "normal"   # una emoción desconocida o ausente no tumba el guion: se dice normal
+        # 27/11/2026 (planos): «p» (personajes en plano, máx 2, con quien habla) y «a» (acción) son opcionales; si vienen mal se quitan,
+        # no tumban el guion (gen_episodios.py romperia con un personaje que no existe).
+        if isinstance(e, dict) and "p" in e:
+            p_ = e.get("p")
+            if not (isinstance(p_, list) and 1 <= len(p_) <= 2 and all(x in PERSONAJES_VALIDOS for x in p_) and (not e.get("h") or e.get("h") in p_)):
+                del e["p"]
+        if isinstance(e, dict) and "a" in e:
+            a_ = e.get("a")
+            a_ = {k: v for k, v in a_.items() if k in PERSONAJES_VALIDOS and v in ACCIONES} if isinstance(a_, dict) else {}
+            if a_:
+                e["a"] = a_
+            else:
+                del e["a"]
+    # 27/11/2026: coletillas nuevas por personaje (opcional, no bloquea): solo textos cortos de personajes válidos
+    col = ep.get("coletillas_nuevas")
+    ep["coletillas_nuevas"] = ({k: v.strip() for k, v in col.items() if k in PERSONAJES_VALIDOS and isinstance(v, str) and 0 < len(v.split()) <= 8}
+                               if isinstance(col, dict) else {})
     emos = [e.get("emo") for e in escenas]
     if len(escenas) >= 6 and emos.count("normal") > len(escenas) // 2:
         motivos.append("más de la mitad de las réplicas van con emo «normal»: marca la emoción de cada una (grita, ironia, chulea, seco…)")
@@ -578,7 +658,7 @@ def _validar(ep):
         if e.get("h") == "jambo" and len(str(e.get("t", "")).split()) > MAX_PALABRAS_JAMBO:
             motivos.append(f"réplica de Jambo con {len(str(e['t']).split())} palabras (máx {MAX_PALABRAS_JAMBO}: habla muy despacio)")
         if e.get("h") and re.search(r"\bjambo\b", str(e.get("t", "")), re.I):
-            motivos.append("una réplica dice «Jambo»: nadie pronuncia ese nombre (se le llama «primo», «este», «el vecino»)")
+            motivos.append("una réplica dice «Jambo»: nadie pronuncia ese nombre (se le llama «el Pintas», «el Piezas», «este», «el vecino»)")
     motivos.extend(_validar_retencion(ep, escenas, gags, remate))
     return motivos
 

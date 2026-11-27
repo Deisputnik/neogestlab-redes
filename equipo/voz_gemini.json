@@ -1,6 +1,6 @@
 {
  "_nota": "Voces de El Jambo que sabe diseñadas con Gemini TTS (23/11/2026, orden del dueño: «que sean todas las voces naturales, diferentes y expresivas, busca soluciones gratis»). Voces sintéticas creadas a partir de una descripción escrita: no son la voz de nadie ni un clon. EN AUDICIÓN: no están en producción hasta que el dueño las apruebe de oído; hasta entonces manda edge-tts v6 (gen_episodios.py). Rehacer una: workflow «Audición de voces Gemini (El Jambo)» con redisenar=<personaje> (cambia la descripción en herramientas/audicion_gemini.py).",
- "estado": "EN PRODUCCIÓN y APROBADAS por el dueño de oído el 24/11/2026 11:12 tras ver el 522 publicado («así perfecto todo, a partir de ahora todo así»). Respaldo si falla o no queda cuota: edge-tts v6.",
+ "estado": "EN PRODUCCIÓN y APROBADAS por el dueño de oído el 24/11/2026 11:12 tras ver el 522 publicado («así perfecto todo, a partir de ahora todo así»). Respaldo si falla o no queda cuota: edge-tts v6. 27/11/2026: el dueño pide que la voz de Jambo se entienda (ver jambo_diseno_v3).",
  "clave": "secreto de Actions GEMINI_API_KEY (la del Guionista, plan gratuito)",
  "modelos": [
   "gemini-3.8-flash-tts",
@@ -39,7 +39,7 @@
   "seco": "flat, short, matter-of-fact",
   "pregunta": "puzzled, questioning"
  },
- "pendiente": "pronunciación de «Jambo» (sale «Yambo»): probar respellings en voz_tts; hasta entonces nadie dice el nombre en voz.",
+ "pendiente": "pronunciación de «Jambo» (sale «Yambo»): probar respellings en voz_tts; hasta entonces nadie dice el nombre en voz (27/11: se le llama «el Pintas» o «el Piezas»).",
  "voces_anteriores": {
   "rosa": "voice_99rp3vq423k6",
   "jambo": "voice_8m527iisp3d8",
@@ -47,11 +47,19 @@
   "jambo_v2": "voice_547fk3wuo8fy"
  },
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
- "_nota_jambo": "B2: deje de barrio del sur, eses aspiradas, lento, arrastrado, como colocado y con sueño (su estado normal; el guion nunca lo dice). voces_gemini.py lo lleva a 1,6 palabras/s.",
- "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 1,6; pausas internas máx. 0,35 s (Jambo 0,55).",
- "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «primo», «este», «el vecino».",
+ "_nota_jambo": "27/11/2026 (orden del dueño: «la voz del jambo no se entiende apenas»): español del sur con CECEO (las eses se dicen como zetas), relajadísimo y pachorra total, tipo colocado, PERO articulando: la relajación va en las pausas y la entonación, no en arrastrar las sílabas. El ceceo lo hace voces_gemini.py (ceceo(): s→z solo en el texto que va al TTS; el guion no cambia) y el control de audio no lo cuenta como fallo. Voz en producción: B2 (voice_rfaaj38z5daa, la del 23/11, eses aspiradas y muy arrastrada) hasta que se rediseñe con jambo_diseno_v3. Arquetipo: «el Piezas» / «el Pintas» del barrio (el buscavidas con mala pinta que cae gracioso). Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
+ "jambo_diseno_v3": {
+  "estado": "PENDIENTE DE REDISEÑAR (27/11/2026). Lo hace el Creador en su próxima pasada con la clave del workflow: poner este bloque como pedido[\"disenar\"][\"jambo\"] (campos genero, descripcion, nombre) en equipo/voces_gemini/pedido.json, o como pedido[\"muestras\"] [{clave, genero, descripcion}] con \"sin_generar\": true para solo diseñar y oír la muestra sin gastar cuota de voz (herramientas/voces_gemini.py generar).",
+  "genero": "male",
+  "nombre": "Jambo-serie · jambo v3 (ceceo inteligible)",
+  "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo marcado: pronuncia las eses como zetas. Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Habla pausado pero NATURAL y articula cada palabra con claridad: la calma está en las pausas y en la entonación, nunca arrastra ni come las sílabas ni murmura. Ritmo de unas dos palabras por segundo, el más lento del grupo pero perfectamente comprensible.",
+  "frase_prueba": "Ozú, prima, esa señora no tiene ni idea del salón. Dame cinco euros y mañana te los devuelvo, ¿eso qué es, un rato?",
+  "puerta": "ANTES de usar la voz nueva en producción: generar la frase de prueba (en español normal: ceceo() la convierte sola) con ella en un pedido mínimo con \"solo\": [\"jambo\"], transcribirla con Whisper (faster-whisper small, es; herramientas/transcribir_audicion.py) y comparar con el texto SIN ceceo normalizando s/z/c(e,i) en ambos lados (igual que control_audio.py). Debe entenderse al menos el 90 % de las palabras. Si no llega, se itera la descripción (más articulada, menos arrastrada) y se repite la prueba; NUNCA se publica con una voz ininteligible. Si no se aprueba, sigue en producción la B2 con el ritmo nuevo y el ceceo del TTS."
+ },
+ "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2,2 (antes 1,6; sigue siendo el más lento); pausas internas máx. 0,35 s (Jambo 0,55).",
+ "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «el Pintas», «el Piezas», «este», «el vecino».",
  "candidatas_jambo": {
-  "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada.",
+  "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada. (Superado el 27/11: ver jambo_diseno_v3.)",
   "a_barrio_madrid": "voice_0l5tiwh9fm7h",
   "b_barrio_sur": "voice_xnnl9tocgb79",
   "c_nasal": "voice_j0owswua6qxb"
