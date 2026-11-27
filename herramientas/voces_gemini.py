@@ -21,7 +21,7 @@ API = "https://generativelanguage.googleapis.com/v1beta"
 # la pachorra va en las pausas y la entonación, no en arrastrar las sílabas hasta hacerlas ininteligibles.
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
             "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
-            "jambo": "1980s Spanish street hustler drawl, whiny nasal wheedling sing-song melody with big lazy pitch swings, stretching and bending the last vowel of each phrase, raspy worn-out voice, dazed and unhurried but playful and cheeky, never monotone, southern Andalusian accent with ceceo, every word still clear and separate",
+            "jambo": "real unacted street talk, raw documentary feel, low husky smoker's voice, lazy tired drawl with naturally long vowels, half-voiced and offhand, deadpan streetwise sarcasm, southern Andalusian working-class accent, never theatrical, never sing-song, never cartoonish, still intelligible",
             "cliente": "impatient"}
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
@@ -42,12 +42,11 @@ def ceceo(texto):
     return "".join(p if p.startswith("<") else p.replace("s", "z").replace("S", "Z") for p in partes)
 
 
-EMO_JAMBO = {"normal": "lazy melodic chat, voice sliding up and down", "seco": "deadpan but sing-song, dropping the last word low",
-             "cansado": "lazy long sigh, whiny melodic complaint", "ironia": "mocking sing-song sarcasm, drawn out",
-             "chulea": "cocky wheedling sing-song, teasing", "susurra": "conspiratorial sing-song whisper"}
+EMO_JAMBO = {"normal": "casual, offhand, half-voiced", "seco": "deadpan, low, final", "cansado": "tired, low, long sigh",
+             "ironia": "dry street sarcasm, slow", "chulea": "cocky, streetwise, taking his time", "susurra": "low conspiratorial murmur"}
 
 
-ALARGUE, ALARGUE_COMA = 4, 0   # letras de la última vocal de cada frase de Jambo y de la vocal anterior a una coma (0 = no)
+ALARGUE, ALARGUE_COMA = 1, 0   # letras de la última vocal de cada frase de Jambo y de la vocal anterior a una coma (0 = no)
 
 
 def alargar(texto):
@@ -148,7 +147,7 @@ def generar(pedido, out):
             for k, (i, e) in enumerate(lineas_de(ep, quien)):
                 texto = e.get("voz_tts") or e["v"]
                 if quien == "jambo":   # 27/11/2026: ceceo solo en el texto que va al TTS; «v» (subtítulos, control) queda intacto
-                    texto = ceceo(texto)
+                    pass   # candidata sin ceceo en el texto: el acento lo pone la voz
                     texto = alargar(texto)
                 for j, f in enumerate(frases(texto)):
                     partes.append({"text": ("<long pause> " if k and j == 0 else "") + f, "speech_metadata": {"style": estilo(quien, e.get("emo"), f)}})
