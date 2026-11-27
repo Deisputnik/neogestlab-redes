@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 46.2,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['resuelva', 'el', 'neo'], sobran ['resuelvan'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Nos han dejado un aviso de paquete. Nadie lo pidió. Es una estafa, Sindy. Lo vi en la tele. Que tontería, joder. Yo nunca pido nada. Prima. Si es comida, me lo quedo yo. Rosa, el paquete es tuyo. Pone tu nombre. Igual que la luz. Siempre la culpa es de otro. Ya vale, Rosa. Que lo resuelvan. Resuelto. He leído el aviso. Tres cajas entrega mañana. Rosa apuntelo en su agenda y baje usted. Antes de culpar al repartidor, revisa tus pedidos.",
+  "guion": "¡Nos han dejado un aviso de paquete! ¡Nadie lo pidió! ¡Es una estafa, Sindy! Lo vi en la tele. ¡Qué tontería, joder! Yo nunca pido nada. Prima… si es comida, me lo quedo yo. ¡Rosa, el paquete es tuyo! ¡Pone tu nombre! ¡Igual que la luz! ¡Siempre la culpa es de otro! ¡Ya vale, Rosa! ¡Que lo resuelva el Neo! Resuelto. He leído el aviso: tres cajas, entrega mañana. Rosa, apúntelo en su agenda y baje usted. Antes de culpar al repartidor, revisa tus pedidos.",
+  "lufs": -14.7,
+  "pico_dbfs": -1.5
+}
