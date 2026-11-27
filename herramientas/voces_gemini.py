@@ -9,6 +9,7 @@ El plan gratuito da 10 peticiones por día y por modelo, así que no se puede pe
       Localiza cada palabra con Whisper, corta el audio por réplica, ajusta ritmo y volumen y escribe <n>_<i>.mp3 y
       <n>_voces.json (duración y tiempos de cada palabra, lo que necesita gen_episodios.py para los subtítulos).
 Voces y estilos: equipo/voz_gemini.json. Creado el 23/11/2026 (orden del dueño: voces naturales, distintas, expresivas y gratis).
+27/11/2026 (orden del dueño): Jambo habla con CECEO (s = z) y se le entiende; ver ceceo() más abajo.
 """
 import base64, difflib, json, os, re, struct, subprocess, sys, time, unicodedata, urllib.error, urllib.request
 
@@ -16,17 +17,27 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(RAIZ, "equipo", "voz_gemini.json"), encoding="utf-8"))
 API = "https://generativelanguage.googleapis.com/v1beta"
 # carácter fijo de cada personaje al decir cualquier frase (se suma a la emoción de la escena)
+# 27/11/2026 (orden del dueño: «la voz del jambo no se entiende apenas»): Jambo sigue siendo el más relajado, pero articulando:
+# la pachorra va en las pausas y la entonación, no en arrastrar las sílabas hasta hacerlas ininteligibles.
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
             "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
-            "jambo": "slow, drawn-out dazed drawl, drowsy and spaced-out, lazy slurred tongue, stretching the vowels and trailing off",
+            "jambo": "extremely laid-back and unhurried, dazed, spaced-out and mellow southern Spanish drawl, lisping every s as a th sound, relaxed in the pauses and the intonation but articulating every word clearly and distinctly, never mumbling or slurring",
             "cliente": "impatient"}
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
 # velocidad en el resto de voces». Jambo nunca se acelera; el resto se lleva a unas 3 palabras por segundo.
+# 27/11/2026: Jambo sube de 1,6 a 2,2 palabras por segundo para que se entienda (sigue siendo el más lento del reparto).
 LENTOS_QUIEN = {"jambo"}
-PAL_S = {None: 3.0, "jambo": 1.6, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
+PAL_S = {None: 3.0, "jambo": 2.2, "neo": 2.8}       # palabras por segundo a las que se lleva cada réplica si sale más lenta
 TEMPO_MAX = {None: 1.3, "jambo": 1.8}                 # tope de aceleración sin cambiar el tono (atempo)
 PAUSA_MAX = {None: 0.35, "jambo": 0.55}               # ninguna pausa interna más larga que esto (segundos)
+
+
+def ceceo(texto):
+    """CECEO de Jambo (27/11/2026): s -> z en el texto que va al TTS (solo réplicas de Jambo). El texto del guion («v») no se toca:
+    subtítulos y control de audio siguen usando el original. «eso es una señora cosa» -> «ezo ez una zeñora coza»."""
+    partes = re.split(r"(<[^>]*>)", texto)   # las marcas del TTS (<long pause>...) no se tocan
+    return "".join(p if p.startswith("<") else p.replace("s", "z").replace("S", "Z") for p in partes)
 
 
 def frases(texto):
@@ -114,6 +125,8 @@ def generar(pedido, out):
             partes = []
             for k, (i, e) in enumerate(lineas_de(ep, quien)):
                 texto = e.get("voz_tts") or e["v"]
+                if quien == "jambo":   # 27/11/2026: ceceo solo en el texto que va al TTS; «v» (subtítulos, control) queda intacto
+                    texto = ceceo(texto)
                 for j, f in enumerate(frases(texto)):
                     partes.append({"text": ("<long pause> " if k and j == 0 else "") + f, "speech_metadata": {"style": estilo(quien, e.get("emo"), f)}})
             cuerpo = {"contents": [{"role": "user", "parts": partes}],
@@ -160,6 +173,11 @@ def _norm(w):
     return re.sub(r"[^a-z0-9ñ]", "", w)
 
 
+def _norm_ceceo(w):
+    """Como _norm pero sin distinguir s/z/c(e,i): Whisper oye «ezo» donde el guion dice «eso» (ceceo de Jambo, 27/11/2026)."""
+    return re.sub(r"c(?=[ei])", "s", _norm(w)).replace("z", "s")
+
+
 def _palabras(texto):
     texto = re.sub(r"<[^>]+>", " ", texto)
     return [w for w in texto.split() if _norm(w)]
@@ -173,6 +191,7 @@ def cortar(pedido, out, modelo_whisper="small"):
         n = "lote"; manifiesto = {}; informe = {}
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h") and e.get("v")):
             wav = f"{out}/{n}_{quien}.wav"; ls = lineas_de(ep, quien)
+            nz = _norm_ceceo if quien == "jambo" else _norm   # Jambo cecea: se alinea sin distinguir s/z/c(e,i)
             if not os.path.exists(wav):
                 informe[quien] = "falta el audio"; ok = False; continue
             raw = subprocess.run([ff, "-v", "error", "-i", wav, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
@@ -180,7 +199,7 @@ def cortar(pedido, out, modelo_whisper="small"):
             segs, _ = wm.transcribe(x, language="es", word_timestamps=True)
             rec = [(w.word, w.start, w.end) for s in segs for w in s.words if _norm(w.word)]
             esp = [(k, w) for k, (_, e) in enumerate(ls) for w in _palabras(e["v"])]
-            sm = difflib.SequenceMatcher(None, [_norm(w) for _, w in esp], [_norm(w) for w, _, _ in rec], autojunk=False)
+            sm = difflib.SequenceMatcher(None, [nz(w) for _, w in esp], [nz(w) for w, _, _ in rec], autojunk=False)
             t = [None] * len(esp)
             for a, b, size in sm.get_matching_blocks():
                 for d in range(size):
@@ -240,7 +259,7 @@ def cortar(pedido, out, modelo_whisper="small"):
                 fin_raw = subprocess.run([ff, "-v", "error", "-i", mp3, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
                 y = np.frombuffer(fin_raw, np.int16).astype(np.float32) / 32768; real = len(y) / 16000
                 s2, _ = wm.transcribe(y, language="es", word_timestamps=True); r2 = [(w.word, w.start, w.end) for sg in s2 for w in sg.words if _norm(w.word)]
-                m2 = difflib.SequenceMatcher(None, [_norm(w) for w, _ in pal], [_norm(w) for w, _, _ in r2], autojunk=False); tiempos = [None] * len(pal)
+                m2 = difflib.SequenceMatcher(None, [nz(w) for w, _ in pal], [nz(w) for w, _, _ in r2], autojunk=False); tiempos = [None] * len(pal)
                 for a_, b_, size in m2.get_matching_blocks():
                     for d in range(size):
                         tiempos[a_ + d] = (r2[b_ + d][1], r2[b_ + d][2])

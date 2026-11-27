@@ -134,12 +134,24 @@ def _preparar(lex):
 LEXICO = cargar_lexico()
 _PREP = _preparar(LEXICO)
 
+# 27/11/2026 (orden del dueño): Jambo habla con CECEO (s = z = c ante e/i) y la voz lo hace de verdad. Whisper oye «ezo ez una
+# zeñora coza» donde el guion dice «eso es una señora cosa»: eso NO es un fallo de la voz. En las palabras de las réplicas de
+# Jambo (_JAMBO, que rellena verificar()) se compara la forma sin distinción s/z/c(e,i); el resto de personajes se compara igual
+# que siempre. Lo ininteligible de verdad («guanatinta» por «buena tinta») sigue fallando porque no coincide ni sin ceceo.
+_JAMBO = set()
+
+
+def _cec(w):
+    """Forma canónica sin distinción s/z/c(e,i) (solo para palabras de Jambo)."""
+    return re.sub(r"c(?=[ei])", "s", w).replace("z", "s")
+
 
 def igual(a, b):
     if a == b: return True
     if a.endswith(("cientas", "cientos")) and b.endswith(("cientas", "cientos")) and a[:-2] == b[:-2]: return True
     ka, kb = _clave(a), _clave(b)
-    return ka == kb or any((a in h or ka in h) and (b in h or kb in h) for h in _PREP["grupos"])
+    if ka == kb or any((a in h or ka in h) and (b in h or kb in h) for h in _PREP["grupos"]): return True
+    return bool(_JAMBO) and a in _JAMBO and _cec(ka) == _cec(kb)
 
 
 def unir(esp, got):
@@ -225,10 +237,16 @@ def texto_de(pal):
     return out.strip()
 
 
-def verificar(guion_txt, texto, lex=None):
-    """Compara el guion con lo que oyó Whisper (ambos normalizados). Devuelve (faltan, sobran). Se usa en control() y en las pruebas."""
-    esp, got = unir(norm(guion_txt, lex), norm(texto, lex))
-    return comparar(esp, got)
+def verificar(guion_txt, texto, lex=None, jambo_txt=None):
+    """Compara el guion con lo que oyó Whisper (ambos normalizados). Devuelve (faltan, sobran). Se usa en control() y en las pruebas.
+    jambo_txt (27/11/2026): texto de las réplicas de Jambo; sus palabras se comparan sin distinguir s/z/c(e,i) (ceceo)."""
+    global _JAMBO
+    _JAMBO = set(norm(jambo_txt, lex)) if jambo_txt else set()
+    try:
+        esp, got = unir(norm(guion_txt, lex), norm(texto, lex))
+        return comparar(esp, got)
+    finally:
+        _JAMBO = set()
 
 
 SIL_PROMO = 1.5          # silencio máximo entre frases en promos de app (DIRECTIVA §5)
@@ -306,6 +324,8 @@ def control(video, guion, post=None, tramos=None, wavs=None):
     # 22/11/2026: los guiones de promo de app (hacer_reel.py) usan "voz" y los episodios del estudio "v": se leen las dos.
     # Leyendo solo "v", el guion de toda promo salía vacío y su re-render se bloqueaba entero como «sobrante» (405, 406, 408).
     guion_txt = " ".join(re.sub(r"\*", "", e.get("v") or e.get("voz") or "") for e in esc if (e.get("v") or e.get("voz")))
+    # 27/11/2026: réplicas de Jambo (se comparan sin distinguir s/z/c(e,i): ceceo, ver _JAMBO). El texto del guion NO cambia.
+    jambo_txt = " ".join(re.sub(r"\*", "", e.get("v") or e.get("voz") or "") for e in esc if e.get("h") == "jambo" and (e.get("v") or e.get("voz")))
     pal = transcribir(video)
     texto = texto_de(pal)
     modo = str(g.get("modo") or "").lower()
@@ -318,7 +338,7 @@ def control(video, guion, post=None, tramos=None, wavs=None):
         # con "estilo" esta comprobación no encontraba nunca el giro y bloqueaba todos los episodios nuevos.
         if modo in ("", "sketch") and not any("remate" in (e.get("e"), e.get("estilo")) for e in esc):
             bloqueos.append("falta el giro (escena «remate»)")
-        faltan, sobran = verificar(guion_txt, texto)
+        faltan, sobran = verificar(guion_txt, texto, jambo_txt=jambo_txt)
         malas = [w for w in sobran if w in ("ehm", "eh", "em", "mm", "hmm")]
         if malas: bloqueos.append(f"muletillas «ehm» en la voz: {malas}")
         if faltan or sobran:

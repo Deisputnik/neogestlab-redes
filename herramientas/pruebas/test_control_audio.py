@@ -84,7 +84,20 @@ def main():
         ok = ca.norm(a) == ca.norm(b)
         fallos += not ok
         print(("  OK    " if ok else "  MAL   ") + "%r == %r  (%s | %s)" % (a, b, ca.norm(a), ca.norm(b)))
-    print("RESULTADO: %s (%d casos)" % ("TODO COMO DEBE" if not fallos else "%d FALLOS" % fallos, len(BUENOS) + len(MALOS) + 5))
+    # ceceo de Jambo (27/11/2026): en SUS réplicas s/z/c(e,i) no cuentan como fallo; lo ininteligible y el resto del reparto, sí
+    print("== Ceceo de Jambo ==")
+    CECEO = [
+        ("ceceo en réplica de Jambo", "Eso es una señora cosa.", "Ezo ez una zeñora coza.", "Eso es una señora cosa.", True),
+        ("el mismo ceceo sin ser de Jambo", "Eso es una señora cosa.", "Ezo ez una zeñora coza.", None, False),
+        ("Jambo ininteligible sigue fallando", "Lo sé de buena tinta.", "Lo sé de guanatinta.", "Lo sé de buena tinta.", False),
+        ("ceceo en otro personaje del mismo episodio", "Rosa, eso es una señora cosa. Dame veinte pavos.", "Roza, ezo ez una zeñora coza. Dame veinte pavoz.", "Dame veinte pavos.", False),
+    ]
+    for nombre, g, t, jambo, debe_pasar in CECEO:
+        faltan, sobran = ca.verificar(g, ca.texto_de([(w, 0.0, 0.0) for w in t.split()]), jambo_txt=jambo)
+        ok = (not faltan and not sobran) == debe_pasar
+        fallos += not ok
+        print(("  OK    " if ok else "  MAL   ") + nombre + "  -> faltan=%s sobran=%s" % (faltan, sobran))
+    print("RESULTADO: %s (%d casos)" % ("TODO COMO DEBE" if not fallos else "%d FALLOS" % fallos, len(BUENOS) + len(MALOS) + 5 + len(CECEO)))
     sys.exit(1 if fallos else 0)
 
 
