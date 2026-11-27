@@ -121,6 +121,12 @@ def _prompt_autocritica(ep):
         "LECCIONES DE RECHAZOS ANTERIORES:\n" + lecciones + "\n\n"
         "BIBLIA DE LA SERIE:\n" + biblia + "\n\n"
         "GUION A REVISAR (JSON):\n" + guion + "\n\n"
+        "CRITERIO NUEVO (orden del dueno 27/11/2026: 'no se entiende mucho el sentido de los guiones, tienen que mejorar; "
+        "que adapte chistes modernos'): lee el guion UNA sola vez como un espectador que no conoce la serie. "
+        "riesgo_rechazo=true tambien si (a) no puedes resumir en una frase quien quiere que, que lo impide y como acaba; "
+        "(b) el remate no se entiende a la primera o no sale de lo visto; (c) hay mas de una idea o golpes sueltos que no "
+        "son consecuencia del anterior; (d) el chiste es rancio o no se reconoce ningun chiste o situacion de humor actual. "
+        "En ese caso el motivo empieza por 'NO SE ENTIENDE:' o 'CHISTE:' y arreglo_sugerido dice que simplificar.\n\n"
         "Responde SOLO con un JSON de una linea con esta forma exacta:\n"
         '{"riesgo_rechazo": true/false, "motivos": ["..."], '
         '"arreglo_sugerido": "..."}\n'

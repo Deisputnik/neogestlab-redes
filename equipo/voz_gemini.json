@@ -13,7 +13,7 @@
   "sindy": "voice_mtya9dgnf5nm",
   "neo": "voice_0c92tuvk9d7n",
   "conchaqueton": "voice_g8r7hbsck4cp",
-  "jambo": "voice_rfaaj38z5daa"
+  "jambo": "voice_wv8rkv67e84q"
  },
  "medidas_audicion": {
   "rosa": "200 Hz, 6,6 st",
@@ -44,22 +44,34 @@
   "rosa": "voice_99rp3vq423k6",
   "jambo": "voice_8m527iisp3d8",
   "_nota": "23/11 22:27, el dueño tras oír la audición: «Rosa suena a sudamericano; el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui; un poco de velocidad en el resto».",
-  "jambo_v2": "voice_547fk3wuo8fy"
+  "jambo_v2": "voice_547fk3wuo8fy",
+  "jambo_b2": "voice_rfaaj38z5daa"
  },
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
- "_nota_jambo": "27/11/2026 (orden del dueño: «la voz del jambo no se entiende apenas»): español del sur con CECEO (las eses se dicen como zetas), relajadísimo y pachorra total, tipo colocado, PERO articulando: la relajación va en las pausas y la entonación, no en arrastrar las sílabas. El ceceo lo hace voces_gemini.py (ceceo(): s→z solo en el texto que va al TTS; el guion no cambia) y el control de audio no lo cuenta como fallo. Voz en producción: B2 (voice_rfaaj38z5daa, la del 23/11, eses aspiradas y muy arrastrada) hasta que se rediseñe con jambo_diseno_v3. Arquetipo: «el Piezas» / «el Pintas» del barrio (el buscavidas con mala pinta que cae gracioso). Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
- "jambo_diseno_v3": {
-  "estado": "PENDIENTE DE REDISEÑAR (27/11/2026). Lo hace el Creador en su próxima pasada con la clave del workflow: poner este bloque como pedido[\"disenar\"][\"jambo\"] (campos genero, descripcion, nombre) en equipo/voces_gemini/pedido.json, o como pedido[\"muestras\"] [{clave, genero, descripcion}] con \"sin_generar\": true para solo diseñar y oír la muestra sin gastar cuota de voz (herramientas/voces_gemini.py generar).",
+ "_nota_jambo": "27/11/2026 (orden del dueño: «la voz del jambo no se entiende apenas»): español del sur con ceceo suave y natural, relajadísimo y pachorra total, tipo colocado, PERO con dicción nítida: la relajación va en las pausas y la entonación, no en arrastrar las sílabas. El ceceo lo refuerza voces_gemini.py (ceceo(): s→z solo en el texto que va al TTS; el guion no cambia) y el control de audio no lo cuenta como fallo. Voz en producción: voice_wv8rkv67e84q (jambo_voz_v5), que sustituye a la B2 (voice_rfaaj38z5daa, eses aspiradas y muy arrastrada). Arquetipo: «el Piezas» / «el Pintas» del barrio. Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
+ "jambo_voz_v5": {
+  "estado": "EN PRODUCCIÓN desde el 27/11/2026 (voice_wv8rkv67e84q). Puerta de Whisper superada: 50 de 51 palabras entendidas (98 %) en cinco réplicas de prueba (rama voces/2026-11-27-jambo-v5).",
   "genero": "male",
-  "nombre": "Jambo-serie · jambo v3 (ceceo inteligible)",
-  "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo marcado: pronuncia las eses como zetas. Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Habla pausado pero NATURAL y articula cada palabra con claridad: la calma está en las pausas y en la entonación, nunca arrastra ni come las sílabas ni murmura. Ritmo de unas dos palabras por segundo, el más lento del grupo pero perfectamente comprensible.",
-  "frase_prueba": "Ozú, prima, esa señora no tiene ni idea del salón. Dame cinco euros y mañana te los devuelvo, ¿eso qué es, un rato?",
-  "puerta": "ANTES de usar la voz nueva en producción: generar la frase de prueba (en español normal: ceceo() la convierte sola) con ella en un pedido mínimo con \"solo\": [\"jambo\"], transcribirla con Whisper (faster-whisper small, es; herramientas/transcribir_audicion.py) y comparar con el texto SIN ceceo normalizando s/z/c(e,i) en ambos lados (igual que control_audio.py). Debe entenderse al menos el 90 % de las palabras. Si no llega, se itera la descripción (más articulada, menos arrastrada) y se repite la prueba; NUNCA se publica con una voz ininteligible. Si no se aprueba, sigue en producción la B2 con el ritmo nuevo y el ceceo del TTS."
+  "nombre": "Jambo-serie · jambo v5 (ceceo suave, dicción nítida)",
+  "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo suave y natural (las eses suenan como zetas, sin exagerar ni silbar). Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Dicción NÍTIDA: pronuncia completas todas las sílabas, marca bien la primera consonante de cada palabra y separa las palabras entre sí, sin juntarlas; la calma está en las pausas entre frases y en la entonación cantarina, nunca arrastra, ni murmura, ni se come letras. Ritmo de unas dos palabras por segundo, tranquilo pero perfectamente comprensible, como quien cuenta un chiste despacio.",
+  "frases_prueba": [
+   "Ozú, prima, esa señora no tiene ni idea del salón.",
+   "Dame cinco euros y mañana te los devuelvo. ¿Eso qué es, un rato?",
+   "Eso se arregla solo, Rosa. Siéntate y respira despacio.",
+   "Yo de facturas sé más que el gestor. Pregúntale a cualquiera.",
+   "Sin prisa, vecina. Las cosas buenas salen solas."
+  ],
+  "candidatas_descartadas": {
+   "v3 (primera descripción)": "voice_x0iijuuy54ol · 45/51 (88 %), no pasa",
+   "v4 (descripción nueva, estilo antiguo)": "voice_49x8l69pxxrc · 48/51 (94 %), con palabras inventadas en la transcripción"
+  },
+  "puerta": "ANTES de usar la voz nueva en producción: generar la frase de prueba (en español normal: ceceo() la convierte sola) con ella en un pedido mínimo con \"solo\": [\"jambo\"], transcribirla con Whisper (faster-whisper small, es; herramientas/transcribir_audicion.py) y comparar con el texto SIN ceceo normalizando s/z/c(e,i) en ambos lados (igual que control_audio.py). Debe entenderse al menos el 90 % de las palabras. Si no llega, se itera la descripción (más articulada, menos arrastrada) y se repite la prueba; NUNCA se publica con una voz ininteligible. Si no se aprueba, sigue en producción la B2 con el ritmo nuevo y el ceceo del TTS.",
+  "si_el_dueno_no_la_quiere": "volver a la B2: poner voces.jambo = voces_anteriores.jambo_b2 (voice_rfaaj38z5daa). El ceceo del texto y el ritmo de 2,2 palabras/s no dependen de la voz."
  },
  "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 2,2 (antes 1,6; sigue siendo el más lento); pausas internas máx. 0,35 s (Jambo 0,55).",
  "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «el Pintas», «el Piezas», «este», «el vecino».",
  "candidatas_jambo": {
-  "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada. (Superado el 27/11: ver jambo_diseno_v3.)",
+  "_nota": "23/11 22:57, el dueño: «la 2 voz es la mejor, lo único que tiene que ser más arrastrada, tipo yonqui, colocado y con sueño, pero no debe decir que tiene sueño: es su estado normal». En producción la B2 (voice_rfaaj38z5daa), rediseño de la B más lenta y arrastrada. (Superado el 27/11: ver jambo_voz_v5.)",
   "a_barrio_madrid": "voice_0l5tiwh9fm7h",
   "b_barrio_sur": "voice_xnnl9tocgb79",
   "c_nasal": "voice_j0owswua6qxb"

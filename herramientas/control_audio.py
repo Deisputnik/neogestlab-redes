@@ -51,6 +51,7 @@ def _cifras(t):
     t = re.sub(r"(\d+)\s*€", r"\1 euros ", t)
     t = re.sub(r"(\d+)\s*\$", r"\1 dolares ", t)
     t = re.sub(r"(\d),(\d+),", r"\1 coma \2", t)                        # 2,5 -> 2 coma 5 (9,90 -> 9 coma 90)
+    t = re.sub(r"(\d),(\d)", r"\1 coma \2", t)                        # 9,90 sin símbolo -> 9 coma 90 (Whisper escribe «9,90», el guion dice «nueve con noventa»)
     t = re.sub(r"(\d)\s*%", r"\1 por ciento", t)
     t = re.sub(r"(\d)\s*h\b", r"\1 horas", t)
     t = re.sub(r"(\d)[:.](\d)", r"\1 \2", t)                            # 23:47 -> 23 47

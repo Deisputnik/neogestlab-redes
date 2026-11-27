@@ -148,6 +148,8 @@ def _prompt(n):
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
+        "chiste_base": "1 frase (8-30 palabras): el chiste o la situación de humor ACTUAL que adaptas en este episodio, como planteamiento → remate (apartado I)",
+        "resumen": "1 frase (10-28 palabras) que entendería un niño de doce años: quién quiere qué, qué lo impide y cómo acaba (apartado I5)",
         "coletillas_nuevas": {"jambo": "coletilla NUEVA y graciosa de Jambo (≤ 6 palabras) que dice en este episodio", "rosa": "coletilla nueva de Rosa", "felipe": "coletilla nueva de Felipe", "sindy": "coletilla nueva de Sindy (opcional: un personaje más si encaja)"},
         "escenas": [
             {
@@ -156,13 +158,14 @@ def _prompt(n):
                 "emo": "sorpresa",
                 "t": "texto exacto que dice o el texto en pantalla, máx 8 palabras, situación reconocible desde el fotograma 0 (visible en los primeros 0,5 s, antes incluso de que se lea el texto entero); dirígete a otro personaje por su nombre si tiene sentido",
                 "p": ["rosa", "felipe"],
+                "plano": "general",
             },
             {"e": "gag", "h": "felipe|sindy|jambo|conchaqueton", "emo": "enfado", "t": "golpe 1 de la escalada (máx 14 palabras, en frases de 3-8 palabras separadas por punto), registro de barrio con réplica inteligente, nombrando a quien se dirige", "risas": "true solo si este golpe es de verdad el más fuerte del episodio, si no omite el campo"},
             {"e": "gag", "h": "rosa", "emo": "ironia", "t": "golpe 2, peor que el 1"},
-            {"e": "gag", "h": "jambo", "emo": "cansado", "p": ["jambo"], "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, pícaro del sur relajadísimo, frases cortas y claras en ortografía normal, con una coletilla NUEVA suya: «Rosa, guapa… eso se arregla solo. Fíame cinco euros y me callo.»)"},
+            {"e": "gag", "h": "jambo", "emo": "cansado", "p": ["jambo"], "plano": "primerplano", "t": "golpe 3: Jambo Reseco se mete y lo empeora (gorrón caradura, pícaro del sur relajadísimo, frases cortas y claras en ortografía normal, con una coletilla NUEVA suya: «Rosa, guapa… eso se arregla solo. Fíame cinco euros y me callo.»)"},
             {"e": "gag", "h": "felipe", "emo": "chulea", "giro": True, "t": "golpe 4 = EL GIRO (lleva giro:true, uno solo por episodio, del golpe 3 al penúltimo): da la vuelta a lo que se creía, con algo sembrado antes; aquí además Felipe sentencia algo falso (cuñado enterado)"},
             {"e": "gag", "h": "sindy|rosa", "emo": "grita", "t": "golpe 5, el peor; puedes llegar hasta 8 golpes; el último remata con 'Que lo resuelva el Neo' (lo dice Felipe o Sindy)"},
-            {"e": "remate", "h": "neo", "emo": "seco", "p": ["neo", "rosa"], "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
+            {"e": "remate", "h": "neo", "emo": "seco", "p": ["neo", "rosa"], "plano": "primerplano", "t": "remate (máx 20 palabras): Neo responde a la PROMESA con algo concreto (cifra, objeto, nombre), recoge una palabra u objeto del gancho y deja a Rosa en evidencia, nombrándola"},
             {"e": "cierre", "h": "neo", "t": "texto en pantalla, debe coincidir o repetir la moraleja (el bucle con la tarjeta 'Cosas de Casa' ya lo resuelve el código, no hace falta pensarlo aquí)"},
         ],
     }
@@ -475,8 +478,8 @@ G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no
        felipe) y haz que cada una salga de verdad en una réplica de ese personaje. NO repitas ninguna de las ya usadas en episodios
        recientes: {coletillas}. Las viejas («primo», «válgame», «hermano», «un eurillo», «mañana te lo devuelvo») pueden aparecer de vez
        en cuando, pero no son obligatorias ni pueden ser las únicas.
-H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura lo que su réplica): el render alterna solo medio, primer
-   plano y general y fuerza primer plano en el remate; tú controlas el ritmo y quién sale en cada plano:
+H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura lo que su réplica): tú controlas el ritmo, quién sale en
+   cada plano y, con el campo opcional "plano", el tipo de plano de cada escena:
    H1. MÁS CAMBIOS DE PLANO: réplicas cortas (el tope de palabras ya está) y alternancia de personajes en cada golpe: ningún plano debe
        alargarse con una réplica larga. Tras un golpe fuerte mete como un golpe más una REACCIÓN muy corta de otro personaje (1-3 palabras:
        «¿Qué?», «Pff…», «Ni de coña.») para cortar y dar primer plano a la cara.
@@ -484,8 +487,32 @@ H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura 
        lío (plano que sitúa: "p": ["rosa", "felipe"]); en discusiones, plano de dos; en reacciones y en los golpes de Jambo, solo el que
        habla o reacciona ("p": ["jambo"]) para que la cámara se acerque a su cara; en el remate, Neo y Rosa ("p": ["neo", "rosa"]) para
        que se vea a Rosa en evidencia. El plano general solo sitúa: no lo pidas para golpes.
+   H4. CAMPO "plano" (opcional; "auto" o ausente = el render decide solo): "general" solo para situar en el gancho o en un cambio de sitio;
+       "primerplano" en reacciones, golpes de Jambo y remate; "medio" en diálogo de dos. No repitas el mismo plano en más de 2 escenas seguidas.
    H3. CAMPO "a" (opcional): acción de cada personaje en plano, solo uno de habla, desespera, delega, presume, fria (p. ej. "a": {{"felipe":
        "presume"}}); varía las acciones entre golpes. Las risas ("risas": true) en 1-3 golpes como mucho y "sello" (texto muy corto) solo en el remate.
+
+I) CHISTES MODERNOS Y QUE SE ENTIENDA (orden del dueño 27/11/2026: «el guionista que adapte chistes modernos, no se entiende mucho el
+   sentido de los guiones, tienen que mejorar». MANDA sobre cualquier regla anterior que complique la historia):
+   I1. CADA EPISODIO ADAPTA UN CHISTE: parte de un chiste o de una situación de humor ACTUAL, de las que la gente comparte hoy en vídeos
+       cortos, memes y grupos de mensajes (el audio o el mensaje que se malinterpreta, el grupo de la comunidad de vecinos, el pago con el
+       móvil que «ya te lo he mandado», el repartidor y el paquete, la reseña de una estrella, la contraseña del wifi, el alquiler, las
+       suscripciones que nadie recuerda, la cita por aplicación, el cuñado que lo ha visto en un vídeo, la inteligencia artificial que se lo
+       toma todo al pie de la letra…) y conviértelo en sketch con los personajes de la casa. Escribe en "chiste_base" ese chiste en una
+       frase (planteamiento → remate). PROHIBIDO el chiste rancio («van dos y…», «mamá, mamá…», suegras, pueblos) y copiar el número de
+       un cómico conocido: se adapta la idea con palabras propias.
+   I2. UNA SOLA IDEA por episodio: un conflicto, un objeto, un malentendido. Si para entenderlo hay que explicar dos cosas, sobra una.
+       Todas las réplicas hablan de ESE asunto; ningún golpe abre un tema nuevo ni mete un dato que no se use después.
+   I3. CAUSA → EFECTO a la vista: el gancho deja claro QUIÉN quiere QUÉ y cuál es el problema, con palabras de la calle (sin siglas, cifras
+       raras ni referencias que haya que conocer de antes). Cada golpe es consecuencia del anterior («y por eso…», «pero entonces…»),
+       nunca una frase ingeniosa suelta que no viene a cuento. Cada réplica se entiende sola al oírla una vez.
+   I4. EL REMATE SE PILLA A LA PRIMERA: quien vea el episodio una sola vez, sin conocer la serie, tiene que entender por qué tiene gracia.
+       El remate es el del chiste adaptado: la sorpresa lógica que estaba delante todo el rato. Si hay que explicarlo, no vale. La moraleja
+       sale de lo que se ha visto, no de otra cosa.
+   I5. PRUEBA DEL RESUMEN: rellena "resumen" con una frase que entendería un niño de doce años (quién quiere qué, qué lo impide y cómo
+       acaba). Si no puedes escribirla, o no cuenta lo que de verdad pasa en las escenas, el guion está mal: reescríbelo antes de responder.
+   I6. Todo lo demás sigue (personajes, registro de barrio, giro, moraleja, recuerdo de otro episodio), pero PRIMERO SE ENTIENDE: si una de
+       esas piezas enreda la historia, redúcela a una línea que no estorbe. El recuerdo de otro episodio es una frase que se entiende sola.
 
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
@@ -625,6 +652,8 @@ def _validar(ep):
                 e["a"] = a_
             else:
                 del e["a"]
+        if isinstance(e, dict) and "plano" in e and e.get("plano") not in ("auto", "medio", "primerplano", "general"):
+            del e["plano"]   # «plano» inválido: se quita, nunca tumba el guion
     # 27/11/2026: coletillas nuevas por personaje (opcional, no bloquea): solo textos cortos de personajes válidos
     col = ep.get("coletillas_nuevas")
     ep["coletillas_nuevas"] = ({k: v.strip() for k, v in col.items() if k in PERSONAJES_VALIDOS and isinstance(v, str) and 0 < len(v.split()) <= 8}
@@ -659,6 +688,11 @@ def _validar(ep):
             motivos.append(f"réplica de Jambo con {len(str(e['t']).split())} palabras (máx {MAX_PALABRAS_JAMBO}: habla muy despacio)")
         if e.get("h") and re.search(r"\bjambo\b", str(e.get("t", "")), re.I):
             motivos.append("una réplica dice «Jambo»: nadie pronuncia ese nombre (se le llama «el Pintas», «el Piezas», «este», «el vecino»)")
+    # 27/11/2026 (orden del dueño: «que adapte chistes modernos, no se entiende el sentido de los guiones»): chiste adaptado y resumen claro
+    if not 6 <= len(str(ep.get("chiste_base") or "").split()) <= 40:
+        motivos.append("falta «chiste_base»: el chiste o situación de humor actual que adapta el episodio, en una frase (apartado I1)")
+    if not 8 <= len(str(ep.get("resumen") or "").split()) <= 35:
+        motivos.append("falta «resumen»: una frase que cualquiera entienda con quién quiere qué, qué lo impide y cómo acaba (apartado I5)")
     motivos.extend(_validar_retencion(ep, escenas, gags, remate))
     return motivos
 

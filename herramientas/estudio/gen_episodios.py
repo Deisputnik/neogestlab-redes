@@ -20,7 +20,7 @@ Uso (en el sandbox de Neogest Studio, Base44 6af862101565c330cf06389f):
   pip install edge-tts; python3 gen_episodios.py eps.json /tmp/jb
   node scripts/render.mjs /tmp/jb/<n>.json /tmp/jb/<n>.mp4 --hoja
 eps.json: [{"slug","set","hora","moraleja","escenas":[{"e":gancho|gag|remate|cierre,"h":personaje,"v":voz,
-"t":texto,"p":[personajes],"a":{personaje:accion},"emo":emoción de la voz (ver EMO_VOZ),"sello","risas"}]}]
+"t":texto,"p":[personajes],"a":{personaje:accion},"emo":emoción de la voz (ver EMO_VOZ),"plano":auto|medio|primerplano|general (opcional),"sello","risas"}]}]
 Humor negro real (biblia v5, guionista_gemini.py): tono frío, nunca sobre pobreza/enfermedad/muerte reales;
 los personajes se llaman por su nombre entre ellos (registro de barrio con réplica inteligente).
 """
@@ -47,6 +47,7 @@ EXPR_MOD = {"habla": (0, 0), "desespera": (18, 10), "delega": (-12, -8), "presum
 EXPR = {"habla": "neutral", "desespera": "enfadado", "delega": "cansado", "presume": "chulo", "fria": "neutral"}
 EMO = ["😤", "🤯", "😱", "💸", "🙄", "😳"]
 uid = lambda: "%08x" % random.getrandbits(32)
+PLANOS = ("medio", "primerplano", "general")   # valores válidos del campo opcional "plano" de escena
 # nombre y apellido completos, para los créditos finales (orden del dueño 21/11 madrugada:
 # además de la etiqueta en pantalla al entrar cada personaje, que a veces pasa desapercibida,
 # el reparto completo se repite siempre al final como créditos de cine).
@@ -221,6 +222,10 @@ async def main():
             if i >= 1 and e["e"] == "gag" and e["h"] != "neo":
                 sc["overlays"] = [{"id": uid(), "type": "emoji", "text": EMO[i % len(EMO)], "x": 0.82 if xs.get(e["h"], 0.3) < 0.5 else 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]
             if e["e"] == "remate": sc["shot"] = "primerplano"; sc["transition"] = "flash"
+            # Campo opcional "plano" por escena (27/11): medio | primerplano | general; "auto", ausente o desconocido = el
+            # automático de arriba, idéntico a antes. Se ignora (sin error) si quien habla no está en plano.
+            pl = e.get("plano")
+            if pl in PLANOS and (e["h"] is None or e["h"] in [c["who"] for c in cast]): sc["shot"] = pl
             if e.get("sello"): sc["texts"].append({"id": uid(), "text": e["sello"], "style": "badge", "anim": "pop", "start": 0.4, "y": 0.3, "sfx": "impacto"})
             if e.get("risas"): sc["texts"].append({"id": uid(), "text": "😂", "style": "badge", "anim": "pop", "start": max(0.1, dur * 0.55), "y": 0.08, "sfx": "risas"})
             scenes.append(sc)
