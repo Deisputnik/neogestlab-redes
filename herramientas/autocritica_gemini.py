@@ -111,7 +111,7 @@ def _llamar_gemini(prompt, api_key):
 def _prompt_autocritica(ep):
     estandar = _leer(ESTANDAR, 6000)
     lecciones = _leer(LECCIONES, 6000)
-    biblia = _leer(BIBLIA, 4000)
+    biblia = _leer(BIBLIA, 12000)   # 27/11/2026: la biblia v5.3 es corta y limpia; se lee hasta el patrón fijo (apartados 1-6)
     guion = json.dumps(ep, ensure_ascii=False, indent=2)
     return (
         "Eres el mismo Calidad que evalua los videos ya renderizados de "
@@ -127,6 +127,12 @@ def _prompt_autocritica(ep):
         "(b) el remate no se entiende a la primera o no sale de lo visto; (c) hay mas de una idea o golpes sueltos que no "
         "son consecuencia del anterior; (d) el chiste es rancio o no se reconoce ningun chiste o situacion de humor actual. "
         "En ese caso el motivo empieza por 'NO SE ENTIENDE:' o 'CHISTE:' y arreglo_sugerido dice que simplificar.\n\n"
+        "CRITERIOS DE LA ORDEN FINAL DEL 27/11/2026 (riesgo_rechazo=true si falla alguno; el motivo empieza por 'REPARTO:', "
+        "'MEMORIA:', 'ESTANCIAS:' o 'MARCA:'): (1) Rosa, Felipe, Sindy, Jambo y Neo tienen replica y cada una solo la "
+        "podria decir ese personaje; (2) alguna replica recuerda con un detalle algo de un episodio anterior; (3) la accion pasa por "
+        "2 o 3 estancias (campo set de escena) con grupos y conversaciones distintos, no todos juntos todo el rato; (4) la palabra "
+        "'moraleja' no aparece en ninguna replica ni texto; (5) Neogest Lab, si se nombra, es una sola vez, de pasada y sin sonar a "
+        "anuncio ni nombrar aplicaciones concretas; (6) el final deja una ensenanza que sale de lo que se ha visto.\n\n"
         "Responde SOLO con un JSON de una linea con esta forma exacta:\n"
         '{"riesgo_rechazo": true/false, "motivos": ["..."], '
         '"arreglo_sugerido": "..."}\n'

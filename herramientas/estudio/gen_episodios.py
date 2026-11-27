@@ -20,7 +20,7 @@ Uso (en el sandbox de Neogest Studio, Base44 6af862101565c330cf06389f):
   pip install edge-tts; python3 gen_episodios.py eps.json /tmp/jb
   node scripts/render.mjs /tmp/jb/<n>.json /tmp/jb/<n>.mp4 --hoja
 eps.json: [{"slug","set","hora","moraleja","escenas":[{"e":gancho|gag|remate|cierre,"h":personaje,"v":voz,
-"t":texto,"p":[personajes],"a":{personaje:accion},"emo":emoción de la voz (ver EMO_VOZ),"plano":auto|medio|primerplano|general (opcional),"sello","risas"}]}]
+"t":texto,"p":[personajes],"a":{personaje:accion},"emo":emoción de la voz (ver EMO_VOZ),"plano":auto|medio|primerplano|general (opcional),"set":otra estancia para esa escena y las siguientes (opcional),"sello","risas"}], "merch":[personajes con camiseta de marca] (opcional), "musica":{...} (opcional)}]
 Humor negro real (biblia v5, guionista_gemini.py): tono frío, nunca sobre pobreza/enfermedad/muerte reales;
 los personajes se llaman por su nombre entre ellos (registro de barrio con réplica inteligente).
 """
@@ -162,9 +162,38 @@ def bookend(hook=False, texto=None):
     texts = [{"id": uid(), "text": texto or HOOK_CASA, "style": "hook", "anim": "pop", "start": 0.1, "y": 0.18}] if hook else []
     return {"id": uid(), "duration": 1.6, "transition": "none", "voice": None, "background": bg, "texts": texts}
 
+# 27/11/2026 (orden del dueño: «que vayan intercalando diferentes planos de la casa exterior, la de la intro, para cambiar de estancia y
+# conversación… hacer la transición de plano con la imagen inicial de la casa, al estilo comedia americana»). Una escena del episodio puede
+# llevar "set" propio; al cambiar de estancia se mete un plano corto de la casa por fuera, cada vez con un encuadre distinto del mismo
+# vídeo de la intro (sin texto ni voz; la música sigue sonando, así que no cuenta como silencio en el control de audio).
+# Decorados del estudio (src/studio/characters.js y sets2.js). Los cuatro últimos son los NUEVOS del 27/11/2026, con profundidad y un objeto
+# discreto con el logo 2026 (calendario, imán de nevera, folleto del tablón, bolsa de tela); los guiones nuevos usan esos.
+ESTANCIAS = {"salon", "cocina", "dormitorio", "bar", "calle", "salon2", "cocina2", "portal", "terraza"}
+MAX_CAMBIOS_ESTANCIA = 2
+ENCUADRES_CASA = [
+    [{"t": 0.0, "x": 0.39, "y": 0.60, "zoom": 1.38}, {"t": 1.2, "x": 0.5, "y": 0.52, "zoom": 1.0, "move": 1.2}],    # de la puerta a la casa entera
+    [{"t": 0.0, "x": 0.36, "y": 0.52, "zoom": 1.25}, {"t": 1.2, "x": 0.64, "y": 0.52, "zoom": 1.25, "move": 1.2}],  # barrido de izquierda a derecha
+    [{"t": 0.0, "x": 0.5, "y": 0.5, "zoom": 1.0}, {"t": 1.2, "x": 0.5, "y": 0.46, "zoom": 1.2, "move": 1.2}],      # empuje suave al centro
+]
+
+def transicion_casa(k):
+    bg = ({"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0, "camera": ENCUADRES_CASA[k % len(ENCUADRES_CASA)]} if COSAS_DE_CASA_VIDEO
+          else {"type": "set", "set": "casa", "hour": 19, "night": False})
+    return {"id": uid(), "duration": 1.2, "transition": "fade", "voice": None, "background": bg, "texts": []}
+
 # Música (orden del dueño 23/11 22:42: «falta música»): antes iba a 0,16 y bajaba a 0,3 bajo la voz, y medida quedaba a
 # -30 dB en los huecos y casi inaudible bajo las voces. Ahora 0,34 y 0,45 bajo la voz. "musica" en el episodio lo cambia.
 MUSICA = {"track": "comedia:1", "volume": 0.34, "duck": True, "duckLevel": 0.45}
+# 27/11/2026 (orden del dueño: «mejora la música, de más calidad»): hasta hoy TODOS los episodios llevaban la misma pista (comedia:1).
+# Ahora rota por número de episodio entre las pistas de comedia de la biblioteca del estudio (Pixabay, MP3 a 256 kb/s), así dos episodios
+# seguidos nunca comparten música. "musica" en el episodio sigue mandando si viene.
+PISTAS = ["comedia:1", "comedia:3", "comedia:4", "comedia:2"]
+
+def musica_de(n):
+    try:
+        return {**MUSICA, "track": PISTAS[int(n) % len(PISTAS)]}
+    except ValueError:
+        return dict(MUSICA)
 
 def promo_empresa():
     # 3 s de promo de la empresa y sus aplicaciones entre los créditos y el plano final de la casa (orden del dueño
@@ -189,8 +218,15 @@ def creditos(elenco):
 async def main():
     for ep in EPS:
         n = ep["slug"][:3]; bg = {"type": "set", "set": ep["set"], "hour": ep["hora"], "night": ep["hora"] >= 21}; scenes = []
+        # Prenda con marca: uno de cada tres episodios, Felipe lleva la camiseta de «NEOGEST LAB» (publicidad discreta); "merch" en el episodio manda.
+        merch = ep["merch"] if isinstance(ep.get("merch"), list) else (["felipe"] if n.isdigit() and int(n) % 3 == 0 else [])
+        bg0 = bg; estancia = ep["set"]; cambios = 0   # 27/11/2026: una escena puede traer su propio "set" (otra estancia de la casa)
         vistos = {}  # dict en vez de set para conservar el orden de aparición (créditos finales)
         for i, e in enumerate(ep["escenas"]):
+            est = e.get("set") if e.get("set") in ESTANCIAS else estancia   # sin "set" de escena (o desconocido) se sigue en la estancia actual
+            if est != estancia and cambios < MAX_CAMBIOS_ESTANCIA:
+                scenes.append(transicion_casa(cambios)); cambios += 1; estancia = est   # plano de la casa por fuera entre estancias, como en las comedias americanas
+            bg = bg0 if estancia == ep["set"] else {**bg0, "set": estancia}
             accion = e["a"].get(e["h"], "habla") if e.get("a") else "habla"
             path = f"{OUT}/{n}_{i}.mp3"; hecho = PREFAB.get(f"{n}_{i}")
             if hecho:
@@ -213,6 +249,7 @@ async def main():
                 ex = EXPR.get((e.get("a") or {}).get(w, "habla"), "neutral")
                 if e["e"] == "remate": ex = "chulo" if w == e["h"] else "sorprendido"
                 entry = {"who": w, "x": xs[w], "expr": ex}
+                if w in merch: entry["merch"] = True   # 27/11/2026: camiseta con «NEOGEST LAB» (opcional; el estudio la dibuja solo en humanos)
                 if w not in vistos: entry["intro"] = True; vistos[w] = True
                 cast.append(entry)
             # BUG corregido 20/11 noche (4.ª pasada): la duración estaba fijada a 0.4s sin importar el audio real,
@@ -232,10 +269,11 @@ async def main():
         # v5.3 (22/11): los créditos van ANTES del plano de cierre; el ÚLTIMO plano del vídeo es la tarjeta
         # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
         scenes.insert(0, bookend(hook=True, texto=ep.get("gancho_casa")))   # gancho propio del episodio (retención v12); si no viene, el fijo
-        scenes.append(creditos(list(vistos.keys())))
+        # 27/11/2026 (orden del dueño: «quita el final donde salen los nombres de los personajes, para hacer el efecto bucle»): ya NO hay
+        # créditos de reparto; los nombres y apellidos se dicen en el diálogo (Guionista, apartado K) y siguen saliendo en la etiqueta de entrada.
         scenes.append(promo_empresa())
         scenes.append(bookend())
-        spec = {"version": 1, "format": "9:16", "fps": 30, "music": {**MUSICA, **(ep.get("musica") or {})}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
+        spec = {"version": 1, "format": "9:16", "fps": 30, "music": {**musica_de(n), **(ep.get("musica") or {})}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.6}, "scenes": scenes}
         json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas")
 
