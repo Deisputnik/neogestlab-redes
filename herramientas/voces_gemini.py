@@ -21,7 +21,7 @@ API = "https://generativelanguage.googleapis.com/v1beta"
 # la pachorra va en las pausas y la entonación, no en arrastrar las sílabas hasta hacerlas ininteligibles.
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
             "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
-            "jambo": "extremely laid-back and unhurried, mellow and spaced-out southern Spanish Andalusian accent with a soft natural ceceo, crisp clear diction with every word fully pronounced and well separated, relaxed in the pauses and the intonation, never mumbling or slurring",
+            "jambo": "1980s Spanish street hustler drawl, whiny nasal wheedling sing-song melody with big lazy pitch swings, stretching and bending the last vowel of each phrase, raspy worn-out voice, dazed and unhurried but playful and cheeky, never monotone, southern Andalusian accent with ceceo, every word still clear and separate",
             "cliente": "impatient"}
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
@@ -40,6 +40,11 @@ def ceceo(texto):
     return "".join(p if p.startswith("<") else p.replace("s", "z").replace("S", "Z") for p in partes)
 
 
+EMO_JAMBO = {"normal": "lazy melodic chat, voice sliding up and down", "seco": "deadpan but sing-song, dropping the last word low",
+             "cansado": "lazy long sigh, whiny melodic complaint", "ironia": "mocking sing-song sarcasm, drawn out",
+             "chulea": "cocky wheedling sing-song, teasing", "susurra": "conspiratorial sing-song whisper"}
+
+
 def frases(texto):
     return [f.strip() for f in re.findall(r"[^.!?…]+(?:[.!?…]+|$)", texto) if f.strip()]
 
@@ -52,6 +57,8 @@ def estilo(quien, emo, frase):
         base = "sudden loud burst, " + base
     if quien in LENTOS_QUIEN:   # nunca «fast» para Jambo: se altera, pero sigue arrastrando
         base = base.replace(", fast", ", agitated but still drawling").replace("hurried", "agitated")
+    if quien == "jambo":   # Jambo nunca suena plano: cada emoción con su cante (27/11/2026)
+        base = EMO_JAMBO.get(emo or "normal", base)
     partes = [CARACTER.get(quien, ""), base]
     if quien not in LENTOS_QUIEN:
         partes.append(RITMO)
