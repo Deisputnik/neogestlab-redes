@@ -711,7 +711,7 @@ def _llamar_un_modelo(modelo, api_key, body):
         headers={"Content-Type": "application/json"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=60) as resp:   # 23/11/2026: con 25 s los modelos buenos no llegaban a contestar 4 guiones
+    with urllib.request.urlopen(req, timeout=150) as resp:   # 27/11/2026: 60 s cortaba a gemini-3.6-flash (timeout) y caía en flash-lite, que escribe guiones cortos. 23/11/2026: con 25 s los modelos buenos no llegaban a contestar 4 guiones
         return json.loads(resp.read().decode("utf-8"))
 
 
