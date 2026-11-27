@@ -1,0 +1,141 @@
+{
+ "slug": "531_jambo_paquete_aviso_fantasma",
+ "set": "salon",
+ "hora": 23,
+ "moraleja": "Antes de culpar al repartidor, revisa tus pedidos",
+ "recuerdo": "Igual que la luz: Rosa ya culpó a otros de la factura (522)",
+ "bucle_visual": "Rosa con el aviso de paquete en la mano, misma pose",
+ "gancho_tipo": "afirmacion_imposible",
+ "gancho_casa": "¡Alguien ha pedido tres cajas! 👀",
+ "promesa": "¿De quién es el paquete del aviso?",
+ "giro": "El paquete fantasma lo había pedido Rosa con el nombre de Felipe",
+ "ambito": "casa",
+ "chiste_base": "Llega un aviso de paquete que nadie recuerda haber pedido",
+ "resumen": "Llega un aviso de paquete que nadie ha pedido y Rosa jura que ella nunca compra, hasta que Neo lee el aviso.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "sindy",
+   "emo": "grita",
+   "v": "¡Nos han dejado un aviso de paquete! ¡Nadie lo pidió!",
+   "t": "¡Nos han dejado un aviso de paquete! ¡Nadie lo pidió!",
+   "p": [
+    "sindy",
+    "felipe"
+   ],
+   "a": {
+    "sindy": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Es una estafa, Sindy! Lo vi en la tele.",
+   "t": "¡Es una estafa, Sindy! Lo vi en la tele.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "ironia",
+   "v": "¡Qué tontería, joder! Yo nunca pido nada.",
+   "t": "¡Qué tontería, joder! Yo nunca pido nada.",
+   "p": [
+    "rosa"
+   ],
+   "a": {
+    "rosa": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Prima… si es comida, me lo quedo yo.",
+   "t": "Prima… si es comida, me lo quedo yo.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¡Rosa, el paquete es tuyo! ¡Pone tu nombre!",
+   "t": "¡Rosa, el paquete es tuyo! ¡Pone tu nombre!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "conchaqueton",
+   "emo": "llora",
+   "v": "¡Igual que la luz! ¡Siempre la culpa es de otro!",
+   "t": "¡Igual que la luz! ¡Siempre la culpa es de otro!",
+   "p": [
+    "conchaqueton"
+   ],
+   "a": {
+    "conchaqueton": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+   "t": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. He leído el aviso: tres cajas, entrega mañana. Rosa, apúntelo en su agenda y baje usted.",
+   "t": "Resuelto. He leído el aviso: tres cajas, entrega mañana. Rosa, apúntelo en su agenda y baje usted.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Antes de culpar al repartidor, revisa tus pedidos.",
+   "t": "Antes de culpar al repartidor, revisa tus pedidos.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}

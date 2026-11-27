@@ -1,0 +1,44 @@
+{
+ "tipo": "reel",
+ "compartir_en_feed": true,
+ "prueba_no_seguidores": false,
+ "formato": "Serie El Jambo",
+ "publico": "barrio",
+ "portada_ms": 0,
+ "monetizacion": {
+  "objetivo": "visita_perfil",
+  "oferta": "prueba gratuita en /solicitar (texto del post)",
+  "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+ },
+ "musica": {
+  "titulo": "Biblioteca Pixabay de Neogest Studio",
+  "autor": "Pixabay",
+  "licencia": "Licencia de contenido de Pixabay",
+  "archivo": "estudio"
+ },
+ "motor": "neogest-studio",
+ "texto": "Madrugada, el salón inundado y Rosa jura que no ha tocado nada… hasta que Sindy mira su bañera.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMoraleja: quien manda en casa también cierra el grifo.\nMándaselo a quien jura que nunca deja el grifo abierto.\n#humornegro #casa #fuga #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+ "cuando": "2026-11-28T08:30:00+01:00",
+ "formula": "El Jambo que sabe v5.2 (casa y vida cotidiana, giro a mitad, remate de Neo, moraleja + recuerdo)",
+ "_comprobado": "Episodio de humor de casa, sin cifras ni funciones de producto; Neo hace lo que una inteligencia artificial hace de verdad (avisar, leer, planificar).",
+ "motor_voz": "voz_disenada",
+ "_voz_nota": "Voces diseñadas por personaje con Gemini TTS (rama voces/2026-11-27-desatasco-creador); voz de Jambo vigente (voice_jsbas0g97111).",
+ "comentario_fijado": "¿Quién en tu casa deja siempre el grifo abierto? Episodio nuevo cada día en @neogestlab",
+ "avance_siguiente": "Siguiente: el aviso de un paquete que nadie pidió",
+ "youtube": {
+  "titulo": "El grifo abierto de Rosa #Shorts",
+  "descripcion": "Humor negro de ficción: el salón se inunda y Rosa jura que no ha tocado nada, hasta que aparece su bañera rebosando. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nBy Neogest Lab",
+  "etiquetas": [
+   "humornegro",
+   "casa",
+   "fuga",
+   "serieeljambo",
+   "neogestlab"
+  ]
+ },
+ "facebook": {
+  "texto": "Madrugada, el salón inundado y Rosa jura que no ha tocado nada… hasta que Sindy mira su bañera. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+ },
+ "renderizado": false,
+ "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/dc2266bdc58e66380c99ae7707d0e306_530_jambo_fuga_banera_rebosando.mp4"
+}

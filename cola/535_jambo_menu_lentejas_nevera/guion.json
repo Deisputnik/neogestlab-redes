@@ -1,0 +1,141 @@
+{
+ "slug": "535_jambo_menu_lentejas_nevera",
+ "set": "salon",
+ "hora": 14,
+ "moraleja": "Planificar la semana evita comer lentejas cada día",
+ "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+ "bucle_visual": "Rosa con la olla de lentejas, misma pose",
+ "gancho_tipo": "pregunta_abierta",
+ "gancho_casa": "¡Tres días comiendo lentejas! 👀",
+ "promesa": "¿Quién hizo la compra de esta semana?",
+ "giro": "La nevera estaba llena de yogures de Rosa y por eso sobraban lentejas",
+ "ambito": "casa",
+ "chiste_base": "Se repite la comida toda la semana por no planificar el menú",
+ "resumen": "Tres días de lentejas y nadie sabe quién hizo la compra, hasta que se abre la nevera y Neo hace el menú.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
+   "t": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
+   "t": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
+   "t": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Prima… yo me como las lentejas. Todas.",
+   "t": "Prima… yo me como las lentejas. Todas.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "sorpresa",
+   "v": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
+   "t": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
+   "p": [
+    "felipe",
+    "rosa"
+   ],
+   "a": {
+    "felipe": "habla"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "conchaqueton",
+   "emo": "llora",
+   "v": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
+   "t": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
+   "p": [
+    "conchaqueton"
+   ],
+   "a": {
+    "conchaqueton": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "grita",
+   "v": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
+   "t": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
+   "t": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Planificar la semana evita comer lentejas cada día.",
+   "t": "Planificar la semana evita comer lentejas cada día.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}

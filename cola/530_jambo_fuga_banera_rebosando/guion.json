@@ -1,0 +1,141 @@
+{
+ "slug": "530_jambo_fuga_banera_rebosando",
+ "set": "salon",
+ "hora": 2,
+ "moraleja": "Quien manda en casa también cierra el grifo",
+ "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+ "bucle_visual": "Rosa con el cubo en la mano, misma pose",
+ "gancho_tipo": "afirmacion_imposible",
+ "gancho_casa": "¡Se inunda el salón! 👀",
+ "promesa": "¿Quién ha dejado el agua abierta?",
+ "giro": "El agua no salía del fregadero: la bañera de Rosa llevaba rebosando desde las diez",
+ "ambito": "casa",
+ "chiste_base": "Se inunda la casa y la culpable jura que no ha tocado nada",
+ "resumen": "Madrugada, el salón se inunda y Rosa jura que ella no ha tocado nada, hasta que se descubre su bañera rebosando.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
+   "t": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
+   "t": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
+   "t": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Prima… yo tapo el agujero con un bocadillo.",
+   "t": "Prima… yo tapo el agujero con un bocadillo.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
+   "t": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "conchaqueton",
+   "emo": "llora",
+   "v": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
+   "t": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
+   "p": [
+    "conchaqueton"
+   ],
+   "a": {
+    "conchaqueton": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+   "t": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
+   "t": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Quien manda en casa también cierra el grifo.",
+   "t": "Quien manda en casa también cierra el grifo.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ]
+}
