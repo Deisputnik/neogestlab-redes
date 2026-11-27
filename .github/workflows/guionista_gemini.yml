@@ -54,13 +54,13 @@ jobs:
           print(f"Modelos de la clave (generateContent): {sorted(disp)}")
           if os.environ.get("SONDEAR") == "1":
               import time
-              for m in sorted(x for x in disp if "pro" in x or "ultra" in x or "thinking" in x):
+              for m in ["gemini-pro-latest", "gemini-3.1-pro-preview", "gemini-4-argon", "gemini-4-carbon", "gemini-4-hydrogen", "gemini-4-neon", "gemini-omni-1.2-flash", "gemini-3-flash-preview"]:
                   body = json.dumps({"contents": [{"parts": [{"text": "Responde solo: OK"}]}]}).encode()
                   req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={k}", data=body, headers={"Content-Type": "application/json"})
                   try:
                       with urllib.request.urlopen(req, timeout=90) as r: json.load(r); print(f"SONDEO {m}: OK")
                   except urllib.error.HTTPError as e:
-                      print(f"SONDEO {m}: HTTP {e.code} {e.read().decode()[:160]}")
+                      print(f"SONDEO {m}: HTTP {e.code} {" ".join(e.read().decode().split())[:420]}")
                   except Exception as e:
                       print(f"SONDEO {m}: {e}")
                   time.sleep(2)
