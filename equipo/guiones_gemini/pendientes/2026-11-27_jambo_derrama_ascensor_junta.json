@@ -1,0 +1,130 @@
+{
+  "slug": "jambo-derrama-ascensor-junta",
+  "set": "portal",
+  "hora": 18,
+  "moraleja": "Escaquearse de la junta sale siempre más caro.",
+  "recuerdo": "530 · Madrugada, el salón se inunda y Rosa jura que no ha tocado nada",
+  "bucle_visual": "Rosa apoyada en la barandilla del portal con cara de vinagre",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién se libra de pagar el arreglo del bloque?",
+  "giro": "Felipe votó a favor pensando que aprobaba una fiesta",
+  "marca": false,
+  "nombre_completo_dicho": "conchaqueton",
+  "por_que_funcionara": "Humor vecinal puro: la reunión de comunidad y el terror compartido a las derramas extraordinarias.",
+  "ambito": "barrio",
+  "chiste_base": "Los vecinos intentan escaquearse del pago del ascensor diciendo que no lo usan, pero ya firmaron el acta.",
+  "resumen": "Rosa se niega a pagar la derrama del ascensor del bloque, pero Neo revisa el acta firmada por Felipe.",
+  "coletillas_nuevas": {
+    "jambo": "Quillo… yo subo por la fachada.",
+    "rosa": "¡A mí no me embarga nadie!",
+    "felipe": "La ley de propiedad me avala."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Esta derrama del ascensor no la pago!",
+      "p": [
+        "rosa",
+        "conchaqueton"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "cansado",
+      "p": [
+        "conchaqueton"
+      ],
+      "plano": "primerplano",
+      "t": "¡Hostia, Rosa! Concha Quetón se congela de frío en esta maldita escalera comunitaria."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "set": "salon2",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Ni un euro! Nosotros usamos las piernas como personas decentes de este edificio."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "p": [
+        "sindy"
+      ],
+      "plano": "primerplano",
+      "t": "¡Manda huevos, vecina! Vivimos en un cuarto piso y acabamos con la lengua fuera."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Quillo… Concha no paga y sube en brazos, colega."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "giro": true,
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "plano": "medio",
+      "t": "¡Callaos todos! Firmé el acta de la derrama creyendo que costeaba una fiesta."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "grita",
+      "p": [
+        "sindy"
+      ],
+      "plano": "primerplano",
+      "t": "¡Joder, Felipe! Nos has arruinado. Que venga Neo a salvarnos de esta catástrofe."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "plano": "medio",
+      "t": "¡Neo, sácanos de dudas! ¿Hay alguna forma legal de romper ese papel firmado?"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, pagarás esa derrama; Felipe firmó el presupuesto de lujo con cabina dorada y música."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Escaquearse de la junta sale siempre más caro.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:20:53Z",
+  "corregido_en_ronda": 1
+}

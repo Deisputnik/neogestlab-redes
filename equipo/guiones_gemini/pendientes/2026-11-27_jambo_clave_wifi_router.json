@@ -1,0 +1,132 @@
+{
+  "slug": "jambo-clave-wifi-router",
+  "set": "salon2",
+  "hora": 19,
+  "moraleja": "Quien no paga la fibra culpa al vecino.",
+  "recuerdo": "522 · ¿Quién ha gastado novecientos euros de luz? con el enchufe trucado",
+  "bucle_visual": "Rosa de pie mirando la pantalla del móvil apagada",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién se está chupando la conexión del piso?",
+  "giro": "Felipe cree que les hackean y están colgados del bar",
+  "marca": false,
+  "nombre_completo_dicho": "felipe",
+  "por_que_funcionara": "Aplica el gancho de conflicto doméstico inmediato por tecnología que todos sufren en casa.",
+  "ambito": "casa",
+  "chiste_base": "Un vecino acusa a todos de robarle el internet tras cambiar la clave, pero nadie en el piso paga la línea.",
+  "resumen": "Felipe cambia la clave del wifi acusando a los demás de lentitud, pero Neo revela que nadie paga la factura.",
+  "coletillas_nuevas": {
+    "jambo": "Illo, tronco… no rula na.",
+    "rosa": "¡Aquí no se regala nada!",
+    "felipe": "Eso lo blindo yo rápido."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "sorpresa",
+      "t": "¡Felipe Lotas, has vuelto a cambiar la wifi!",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "plano": "medio",
+      "t": "¡Hostia, Rosa! Llevo dos horas enteras sin poder ver mis vídeos favoritos."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "felipe"
+      ],
+      "plano": "primerplano",
+      "t": "¡Tranquilas todas! He blindado la red del piso contra los hackers del este."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "set": "terraza",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Me cago en diez! Llevas toda la santa tarde tocando los cables."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo, tronco… esto no rula. Pásame dos duros, anda."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "set": "salon2",
+      "giro": true,
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Manda huevos! Si estamos pillando la señal pirata del bar de Manolo."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "enfado",
+      "p": [
+        "felipe"
+      ],
+      "plano": "primerplano",
+      "t": "¡Joder! Menuda pillada. Que venga Neo a ponernos orden en este lío."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Habla claro de una vez, Neo! ¿A quién le echamos la culpa?"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, esa wifi no existe. El router lleva apagado medio año por falta de pago."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Quien no paga la fibra culpa al vecino.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:20:53Z",
+  "corregido_en_ronda": 1
+}

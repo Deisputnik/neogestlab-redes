@@ -1,0 +1,129 @@
+{
+  "slug": "jambo-disfraz-colegio-manana",
+  "set": "salon2",
+  "hora": 23,
+  "moraleja": "Dejar todo para mañana cuesta el doble siempre.",
+  "recuerdo": "535 · Tres días de lentejas y nadie sabe quién hizo la compra",
+  "bucle_visual": "Rosa con unas tijeras oxidadas mirando al suelo fijamente",
+  "gancho_tipo": "amenaza_con_plazo",
+  "promesa": "¿De qué van a vestir al crío en seis horas?",
+  "giro": "El cartón para el disfraz era la garantía del televisor nuevo",
+  "marca": true,
+  "nombre_completo_dicho": "rosa",
+  "por_que_funcionara": "Viral clásico de padres sufriendo con tareas escolares de última hora en tono de pura resignación.",
+  "ambito": "familia",
+  "chiste_base": "Una madre pide a medianoche un disfraz escolar de árbol genealógico con reciclaje y destrozan media casa.",
+  "resumen": "Rosa intenta improvisar un disfraz de colegio a medianoche usando cajas viejas, hasta que Neo revisa el calendario escolar.",
+  "coletillas_nuevas": {
+    "jambo": "Chacho… yo te apaño eso.",
+    "rosa": "¡Esto se soluciona con maña!",
+    "felipe": "Eso con cinta aislante queda niquelado."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡A las doce avisas del disfraz, Rosa!",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "felipe"
+      ],
+      "plano": "primerplano",
+      "t": "¡Coño, Rosa Melano! A esta hora solo abren las gasolineras."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "set": "cocina2",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "plano": "medio",
+      "t": "¡Cállate, Felipe! Con dos bolsas de basura hacemos un pino."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "rie",
+      "p": [
+        "sindy"
+      ],
+      "plano": "primerplano",
+      "t": "¡Hostia! Al crío le van a llamar bolsa de basura."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Chacho… yo tengo una sábana rota. Fíame un cigarro."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "set": "salon2",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "giro": true,
+      "plano": "medio",
+      "t": "¡Usa la caja grande! Esa que guardaba en el altillo."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "miedo",
+      "p": [
+        "felipe"
+      ],
+      "plano": "primerplano",
+      "t": "¡Manda huevos! Esa caja era la garantía de mi televisor."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "seco",
+      "p": [
+        "sindy"
+      ],
+      "plano": "primerplano",
+      "t": "¡Vaya tela! Esto es de Neogest Lab. Que lo resuelva el Neo."
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, he leído la circular del colegio. La fiesta del disfraz fue el viernes pasado."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Dejar todo para mañana cuesta el doble siempre.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:16:05Z"
+}

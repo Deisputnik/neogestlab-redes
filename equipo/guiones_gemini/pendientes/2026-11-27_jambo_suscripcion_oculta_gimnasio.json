@@ -1,0 +1,132 @@
+{
+  "slug": "jambo-suscripcion-oculta-gimnasio",
+  "set": "cocina2",
+  "hora": 11,
+  "moraleja": "Las pruebas gratuitas nunca salen gratis a nadie.",
+  "recuerdo": "531 · Llega un aviso de paquete que nadie ha pedido",
+  "bucle_visual": "Rosa señalando el extracto bancario en la mesa de cocina",
+  "gancho_tipo": "pregunta_abierta",
+  "promesa": "¿Quién contrató el cargo mensual que nadie usa?",
+  "giro": "El Pintas metió la tarjeta ajena para ver películas piratas",
+  "marca": false,
+  "nombre_completo_dicho": "sindy",
+  "por_que_funcionara": "Dolor financiero real: suscripciones fantasma que se renuevan solas sin que nadie admita la culpa.",
+  "ambito": "compras",
+  "chiste_base": "Llega un cobro mensual recurrente de una aplicación y todos juran inocencia hasta revisar el historial.",
+  "resumen": "Rosa descubre un cobro mensual desconocido en su cuenta y Neo desenmascara quién metió los datos bancarios.",
+  "coletillas_nuevas": {
+    "jambo": "Tronco… eso venía de regalo.",
+    "rosa": "¡Ni un céntimo sin justificar!",
+    "felipe": "Esos cargos se anulan solos."
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "enfado",
+      "t": "¿Quién ha pagado otra vez esa suscripción?",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "p": [
+        "sindy"
+      ],
+      "plano": "primerplano",
+      "t": "¡Hostia, Rosa! Treinta pavos de golpe en una dichosa aplicación de yoga."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "felipe"
+      ],
+      "plano": "primerplano",
+      "t": "¡Eso lo sé yo! Te cobran un dineral solo por mirar la pantalla."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "set": "portal",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Me cago en todo! Aquí nadie estira ni las piernas para caminar."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo… quise bajar una peli y pedían tarjeta, colega."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "giro": true,
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "plano": "medio",
+      "t": "¡Coño, Sindy Entes no perdona! El Pintas usó tu tarjeta para sus rollos."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "set": "salon2",
+      "p": [
+        "felipe",
+        "rosa"
+      ],
+      "plano": "medio",
+      "t": "¡Joder! Menuda faena con la cuenta. Que venga Neo a frenar el sangrado."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "medio",
+      "t": "¡Neo, por favor! Dinos ya quién autorizó semejante desastre en el banco."
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, cancelé esa suscripción; diste tus datos para una prueba de quince días gratis."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Las pruebas gratuitas nunca salen gratis a nadie.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-27T21:20:53Z",
+  "corregido_en_ronda": 1
+}
