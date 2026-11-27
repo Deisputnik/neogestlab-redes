@@ -1,7 +1,7 @@
 """Genera los spec.json de Neogest Studio para episodios de El Jambo que sabe (reparto Rosa/Felipe/Sindy/
 Concha Quetón/Neo). v5.1 (20/11/2026 noche, orden del dueño tras ver el piloto v1):
-  - Bucle "Cosas de Casa": apertura y cierre usan el MISMO objeto de escena (misma tarjeta, mismo plano,
-    sin texto distinto por episodio) para que el bucle sea imperceptible. Se usa en TODOS los episodios,
+  - [DEROGADO el 27/11/2026 noche: ahora hay apertura en frío; la casa va tras la primera escena, sin texto, y no se repite al cierre]
+    Bucle "Cosas de Casa": apertura y cierre usaban el MISMO objeto de escena. Se usa en TODOS los episodios,
     no varía por hora/noche ni depende de "flow" (eso se reserva para b-roll real dentro del episodio si
     algún día hace falta). Mientras no haya un vídeo real de fachada de barrio, usa el set vectorial "casa".
   - Etiqueta de nombre y apellido: la dibuja engine.js en espacio de pantalla, fuera del zoom de cámara
@@ -268,11 +268,19 @@ async def main():
             scenes.append(sc)
         # v5.3 (22/11): los créditos van ANTES del plano de cierre; el ÚLTIMO plano del vídeo es la tarjeta
         # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
-        scenes.insert(0, bookend(hook=True, texto=ep.get("gancho_casa")))   # gancho propio del episodio (retención v12); si no viene, el fijo
+        # 27/11/2026 noche (orden del dueño, datos de Instagram: con la casa al abrir se va el 57-100 % en los primeros segundos;
+        # abriendo en el lío, el 22-30 %): APERTURA EN FRÍO. La primera escena es la del gancho con el título fijo encima desde el
+        # fotograma 0; la casa por fuera va DESPUÉS, sin texto, como cabecera de comedia americana. Ya no hay plano de casa al cierre.
+        titulo = ep.get("titulo_fijo") or ep.get("gancho_casa") or HOOK_CASA
+        if scenes:
+            scenes[0]["transition"] = "none"
+            scenes[0].setdefault("texts", []).insert(0, {"id": uid(), "text": titulo, "style": "hook", "anim": "pop", "start": 0.0, "y": 0.18})
+            scenes.insert(1, bookend())
+        else:
+            scenes.insert(0, bookend(hook=True, texto=titulo))
         # 27/11/2026 (orden del dueño: «quita el final donde salen los nombres de los personajes, para hacer el efecto bucle»): ya NO hay
         # créditos de reparto; los nombres y apellidos se dicen en el diálogo (Guionista, apartado K) y siguen saliendo en la etiqueta de entrada.
-        scenes.append(promo_empresa())
-        scenes.append(bookend())
+        scenes.append(promo_empresa())   # último plano: la promo (sin casa de cierre desde el 27/11 noche)
         spec = {"version": 1, "format": "9:16", "fps": 30, "music": {**musica_de(n), **(ep.get("musica") or {})}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.6}, "scenes": scenes}
         json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas")

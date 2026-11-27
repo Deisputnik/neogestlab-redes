@@ -49,13 +49,17 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 - *Bit* (la esfera dorada) no pertenece a esta serie: vive en los vídeos de trucos de aplicaciones.
 
 ## 6. El patrón fijo de cada episodio
-1. **Apertura**: plano de la casa por fuera («Cosas de Casa», 1,6 s) con un gancho de texto de 8 palabras como mucho. Es el primer fotograma del bucle.
+1. **Apertura en frío** (orden del dueño 27/11 noche, por los datos del §11.2):
+   - El primer fotograma es la escena del gancho, en mitad del lío.
+   - Encima va el título fijo (`titulo_fijo`): la situación con el colectivo que se reconoce («CUANDO TU JEFA FICHA POR DOS»), en grande y con 10 palabras como mucho.
+   - La frase más fuerte del conflicto se oye en los 2 primeros segundos.
+   - Justo después van 1,6 s de la casa por fuera, **sin texto**, como cabecera de comedia americana. La pone el render solo.
 2. **Gancho** en mitad del lío: quién quiere qué y qué hay en juego, reconocible en el primer segundo. Abre una pregunta (`promesa`) que solo se responde en el remate.
 3. **Escalada** de 5 a 8 golpes, cada uno peor y consecuencia del anterior, con un giro sembrado a mitad (`giro`).
 4. **Estancias**: la acción pasa por 2 o 3 estancias de la casa o del barrio; siempre hay al menos un cambio y como mucho dos (campo `set` en la escena donde se cambia). **No están todos juntos todo el capítulo**: en cada estancia hay un grupo distinto, de dos o tres, con su conversación, y lo que se dice en una no lo saben en la otra. Cada cambio hace avanzar la historia.
-5. **Transición**: entre estancia y estancia va un plano corto de la casa por fuera, cada vez con un encuadre distinto del mismo plano de la apertura. Lo pone el render solo; no se escribe en el guion.
+5. **Transición**: entre estancia y estancia va un plano corto de la casa por fuera, cada vez con un encuadre distinto del plano de la cabecera. Lo pone el render solo; no se escribe en el guion.
 6. **Remate de Neo**: reúne lo que pasó en las distintas estancias, responde a la pregunta del gancho con algo concreto y deja la enseñanza.
-7. **Cierre**: 3 s de promo de la empresa y, como último plano, la casa por fuera IDÉNTICA a la de la apertura (bucle sin costura). **No hay créditos de reparto.**
+7. **Cierre**: remate de Neo y 3 s de promo de la empresa, que es el último plano. Ya no hay plano de casa al cierre ni bucle obligatorio. **No hay créditos de reparto.**
 - Ritmo: réplicas cortas, cambio de plano constante, primer plano en reacciones y remates, plano general solo para situar, reacciones de una a tres palabras tras los golpes fuertes. El guion puede fijar quién sale (`p`), la acción (`a`), la emoción de la voz (`emo`) y el plano (`plano`). Risas de público en 1-3 golpes como mucho (`risas`).
 
 ## 7. Neogest Lab dentro de la serie
@@ -127,7 +131,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - Cada episodio entra en la lista de reproducción «El Jambo que sabe», en orden.
    - Cuando un episodio continúa otro, el anterior lleva como «vídeo relacionado» el siguiente. Así quien termina uno pasa al otro.
    - Las historias que dan para más se cortan en partes («Parte 1 / Parte 2»): es lo que mejor nos ha funcionado en YouTube.
-7. **Duración (aprobado por el dueño el 27/11/2026)**: el episodio sigue siendo de 45-70 s (§6) en todas las redes. Además, en YouTube se prueba una **versión corta de 20-35 s en 1 de cada 5 episodios**: gancho, 3 golpes y remate de Neo, el mismo plano de casa al abrir y cerrar (bucle) y la promo de 3 s. Funciona así:
+7. **Duración (aprobado por el dueño el 27/11/2026)**: el episodio sigue siendo de 45-70 s (§6) en todas las redes. Además, en YouTube se prueba una **versión corta de 20-35 s en 1 de cada 5 episodios**: con la misma apertura en frío del §6, 3 golpes, el remate de Neo y la promo de 3 s. Funciona así:
    - El Creador marca en `cola/<pieza>/post.json` `"youtube": {"corto": true}` y genera un segundo render solo con esas escenas.
    - Ese segundo render es el que se sube a YouTube; Instagram, Facebook y TikTok publican el largo.
    - A los 7 días, Analista compara en `equipo/virales_semana.md` las vistas, los me gusta y los comentarios de los cortos con la media de los largos de la misma semana.
@@ -172,10 +176,11 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - Grande y con la situación, al estilo «Cuando…»: «CUANDO TU JEFA FICHA POR DOS», «EL VECINO QUE NO DEVUELVE EL TALADRO»…
    - Como mucho 10 palabras. Se queda fijo durante todo el reel: es el mismo `titulo_fijo` de §11.1, sin emoji.
    - Prohibido abrir con una pregunta de producto.
-2. **Apertura en el lío**: la frase más fuerte del conflicto se oye en los 2 primeros segundos.
-   - **Feed:** el patrón del §6 (casa por fuera al abrir y al cerrar) es orden del dueño y se mantiene en el reel del feed.
-   - **Prueba con reels de prueba (solo para gente que no te sigue; no salen en la cuadrícula del perfil), en 1 de cada 5 episodios.** Es una segunda versión, que puede ser la misma versión corta de YouTube (§11.1, punto 7). Abre en frío: 2-3 s con la frase más fuerte del episodio y su texto, después la casa y el resto, como el «cold open» de las comedias americanas.
-   - Analista compara las salidas y el alcance de esa versión con el reel del feed. Si la de apertura en frío gana dos semanas seguidas, se propone al dueño cambiar la apertura del feed. Hasta entonces, nada cambia.
+2. **Apertura en el lío (aprobado por el dueño el 27/11 noche, para TODOS los episodios y todas las redes)**:
+   - El vídeo arranca en la escena del gancho, con la frase más fuerte del conflicto en los 2 primeros segundos y el texto del punto 1 en pantalla.
+   - La casa por fuera va después, sin texto, como cabecera.
+   - No hay plano de casa al cierre.
+   - Está en el §6.
 3. **Hecho para mandarlo**: cada episodio tiene un «a quién se lo mandas» evidente (la jefa, el cuñado, el vecino, el que paga tarde). La primera línea del texto lo dice: «Mándaselo a tu cuñado, el que lo sabe todo».
 4. **Texto del post (caption)**:
    - Línea 1: la situación con el colectivo, la misma idea que el texto en pantalla.
@@ -199,6 +204,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · Orden del dueño: **apertura en frío para todos los episodios**. Se empieza en el lío con `titulo_fijo` en grande, la casa va después sin texto y no hay casa al cierre. §6 reescrito y borrado lo que lo contradecía: el bucle de casa al abrir y cerrar y la prueba con reels de prueba del §11.2. `gen_episodios.py`, el Guionista (campo `titulo_fijo` obligatorio, `bucle_visual` opcional), Calidad y el Creador están alineados.
 - 2026-11-27 (noche) · §11.2 nuevo, Instagram, a partir de los insights propios (los reels que abren en el lío tienen un 22-30 % de salidas; el formato con la casa al abrir, un 57-100 %) y de los virales del nicho (Buzzfy). Prueba con reels de prueba de la apertura en frío en 1 de cada 5 episodios, sin tocar el feed. Fuera la palabra «Moraleja» y el reparto entero del texto del post.
 - 2026-11-27 (noche) · §11 nuevo, «Adaptación por red», empezando por YouTube (orden del dueño: estudiar por qué funcionan los virales del nicho y adaptar cada red). Basado en los datos del canal propio y en los Shorts virales de autónomos y curro (Nachter). Pendiente: Instagram, Facebook y TikTok.
 - 2026-11-27 · biblia v5.3 · órdenes del dueño de ese día, en este orden: (1) la voz de Jambo no se entendía → voz de calle real, del sur y con ceceo, tras pasar por una plana y una cantarina que sonaba impostada; «el Pintas» / «el Piezas»; coletillas nuevas; mejora de planos; (2) el Guionista adapta chistes modernos y los guiones tienen que entenderse; (3) temas de casa y vida cotidiana en vez de oficina; (4) orden final: decorados con profundidad, humor negro cotidiano con gancho y enseñanza sin la palabra «moraleja», identidad y memoria de los personajes, todos aportan, noticias y aprender de lo que funciona, mejor música, fuera los créditos, nombres en el diálogo, Neogest Lab discreta en decorado o ropa y nombrada a veces, estancias con transición de la casa por fuera y más dinamismo; biblia reescrita y limpia de todo lo anterior.

@@ -230,7 +230,8 @@ def _prompt(n):
         "hora": "entero 0-23 (hora del día de la escena)",
         "moraleja": "6-9 palabras, tono serio, el mensaje que se queda; si hay una cifra de la tabla de la biblia que encaje, inclúyela",
         "recuerdo": "6-12 palabras, una línea que conecta con un episodio anterior ya publicado (de los temas ya usados) — un personaje menciona o reacciona a algo que pasó en otro capítulo; null si no hay ninguno con el que conectar todavía",
-        "bucle_visual": "CAMPO OBLIGATORIO, no lo omitas: 4-10 palabras describiendo qué pose, plano o elemento visual del gancho (escena 'e':'gancho') se repite igual en el cierre, para que el vídeo se pueda ver en bucle sin notar el corte entre el final y el siguiente visionado (p.ej. 'Rosa con el móvil en la mano, misma postura'; 'la taza de café a medio llenar en primer plano'). Describe la imagen, no la moraleja ni el texto.",
+        "titulo_fijo": "OBLIGATORIO: ≤ 10 palabras, la situación con el colectivo que se reconoce (p. ej. «CUANDO TU JEFA FICHA POR DOS», «EL VECINO QUE NO DEVUELVE EL TALADRO»); va en grande desde el primer fotograma y es también el título de YouTube (biblia §11.1-11.2). Nunca una pregunta de producto ni las palabras IA, app o Neogest",
+        "bucle_visual": "OPCIONAL (ya no hay bucle obligatorio desde el 27/11 noche): 4-10 palabras describiendo qué pose, plano o elemento visual del gancho (escena 'e':'gancho') se repite igual en el cierre, para que el vídeo se pueda ver en bucle sin notar el corte entre el final y el siguiente visionado (p.ej. 'Rosa con el móvil en la mano, misma postura'; 'la taza de café a medio llenar en primer plano'). Describe la imagen, no la moraleja ni el texto.",
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
@@ -362,15 +363,11 @@ espectador reconozca de inmediato por haberla vivido, y considera si el conflict
 podría tener una "Parte 2" natural para otro episodio (dilo en el slug con "_parte2" si es
 la continuación de un tema ya usado: {temas}).
 
-GANCHO DE MEDIO SEGUNDO Y VÍDEO EN BUCLE (orden del dueño, 20/11, "vídeos completamente
-adictivos"): no basta con que el gancho tenga ≤ 8 palabras, tiene que entenderse la situación
-SOLO con la imagen en los primeros 0,5 s, antes de que el espectador llegue a leer el texto
-completo o a procesar el audio — el texto confirma lo que la imagen ya contaba. Además, el
-episodio tiene que poder reproducirse en bucle sin que se note el corte entre el cierre y el
-siguiente visionado: el último fotograma (cierre/moraleja) debe volver a la misma pose, plano
-o elemento visual del gancho (campo "bucle_visual" del esquema), para que quien lo ve una vez
-no se canse al verlo dos o tres veces seguidas — eso es lo que más sube el tiempo visto medio
-(objetivo > 60 % de la duración, aprendizajes.md).
+GANCHO DE MEDIO SEGUNDO Y APERTURA EN FRÍO (orden del dueño 27/11 noche, sustituye al bucle del 20/11):
+el vídeo EMPIEZA con tu escena 'gancho' (la casa por fuera va después, la pone el código). Esa
+escena tiene que entenderse SOLO con la imagen en los primeros 0,5 s y su frase debe ser la más
+fuerte del conflicto, dicha en los 2 primeros segundos; el "titulo_fijo" va encima en grande.
+Ya no hay bucle obligatorio ni plano de casa al cierre.
 
 BUCLE DE RETENCIÓN (orden del dueño, 20/11: el mismo bucle de dopamina que usan los casinos
 para que no puedas dejar de mirar la mesa). Cada episodio tiene que montarse sobre estos 4
@@ -499,10 +496,9 @@ Tres cambios nuevos sobre todo lo de arriba (que sigue mandando):
    natural, añade una línea breve en el cierre donde un personaje lo menciona o reacciona a
    ello (p. ej. Sindy: "Como lo del jueves, pero peor"). Si no encaja ninguno todavía, deja el
    campo "recuerdo" en null — nunca inventes una referencia a un episodio que no existe.
-El plano de apertura y cierre ("Cosas de Casa", estilo cabecera de comedia americana, igual
-en todos los episodios para el bucle) lo pone el código siempre, no hace falta escribirlo
-como escena ni pensar en "set"/"flow" para eso (corregido 20/11 noche: antes variaba por
-episodio y el bucle no quedaba idéntico; ahora es una tarjeta fija compartida).
+El plano de la casa por fuera ("Cosas de Casa", cabecera de comedia americana) lo pone el código
+justo DESPUÉS de tu escena 'gancho' (apertura en frío, 27/11 noche) y entre estancias; no lo
+escribas como escena. No hay plano de casa al cierre.
 
 FORMATO VIGENTE v11 + RETENCIÓN v12 (23/11/2026). MANDA SOBRE TODO LO ANTERIOR: donde arriba leas «exactamente 3
 golpes», «5-7 escenas», «6 y 9 escenas» o «un episodio al día», vale lo de aquí.
@@ -550,7 +546,7 @@ F) RETENCIÓN v12 (orden del dueño 23/11 22:11: «ganchos potentes, giros inesp
    F5. CONCLUSIÓN SATISFACTORIA: el remate de Neo responde a la promesa con algo concreto (cifra, objeto,
        nombre), deja a Rosa en evidencia Y repite una palabra u objeto del gancho (el espectador siente que
        todo encaja). Nada de finales abiertos, «continuará» ni moralejas que no salen de lo visto.
-   F6. BUCLE: el cierre empalma con el gancho ("bucle_visual") para que el segundo visionado empiece solo.
+   F6. APERTURA EN FRÍO: el gancho es la primera escena del vídeo; su frase es la más fuerte y lleva "titulo_fijo" (≤ 10 palabras).
 
 G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no se entiende apenas… coletillas más graciosas». MANDA
    SOBRE TODO LO ANTERIOR en lo que contradiga a la voz de Jambo y a sus muletillas):
@@ -795,8 +791,9 @@ def _validar(ep):
     moraleja_palabras = len(str(ep.get("moraleja", "")).split())
     if not (6 <= moraleja_palabras <= 9):
         motivos.append(f"moraleja con {moraleja_palabras} palabras (debe ser 6-9)")
-    if not isinstance(ep.get("bucle_visual"), str) or not ep["bucle_visual"].strip():
-        motivos.append("falta bucle_visual (qué elemento del gancho se repite en el cierre para que se vea en bucle sin notar el corte)")
+    tf = ep.get("titulo_fijo")
+    if not isinstance(tf, str) or not tf.strip() or len(tf.split()) > 10:
+        motivos.append("falta titulo_fijo o pasa de 10 palabras (texto grande del primer fotograma y título de YouTube, biblia §11)")
     escenas = ep.get("escenas") or []
     if len(escenas) < 8:
         motivos.append(f"solo {len(escenas)} escenas (mínimo 8: gancho + {MIN_GAGS} golpes + remate + cierre)")
@@ -959,7 +956,7 @@ def _prompt_correccion(malos):
         "- retención: \"gancho_tipo\", \"promesa\" (5-10 palabras) y \"giro\" (6-14 palabras) van rellenos; el gancho arranca en mitad del lío (sin saludar "
         "ni explicar) y lleva exclamación, pregunta, cifra o puntos suspensivos; exactamente UN golpe lleva \"giro\": true, entre el 3.º y el penúltimo; "
         "nunca dos réplicas seguidas del mismo personaje; el remate de Neo repite una palabra del gancho o de la promesa y la responde;\n"
-        "- el campo \"bucle_visual\" va relleno (qué elemento del gancho se repite en el cierre para que se vea en bucle);\n"
+        "- el campo \"titulo_fijo\" va relleno, con 10 palabras como mucho (la situación con el colectivo, sin preguntas de producto);\n"
         "- el remate lo dice \"neo\"; no cambies \"set\", \"slug\" ni los nombres de personaje (\"h\").\n\n"
         "Guiones rechazados:\n" + json.dumps(casos, ensure_ascii=False, indent=1)
     )
