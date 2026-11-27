@@ -13,7 +13,7 @@
   "sindy": "voice_mtya9dgnf5nm",
   "neo": "voice_0c92tuvk9d7n",
   "conchaqueton": "voice_g8r7hbsck4cp",
-  "jambo": "voice_t33qotu98tpq"
+  "jambo": "voice_jsbas0g97111"
  },
  "medidas_audicion": {
   "rosa": "200 Hz, 6,6 st",
@@ -46,10 +46,11 @@
   "_nota": "23/11 22:27, el dueño tras oír la audición: «Rosa suena a sudamericano; el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui; un poco de velocidad en el resto».",
   "jambo_v2": "voice_547fk3wuo8fy",
   "jambo_b2": "voice_rfaaj38z5daa",
-  "jambo_v5": "voice_wv8rkv67e84q"
+  "jambo_v5": "voice_wv8rkv67e84q",
+  "jambo_v8": "voice_t33qotu98tpq"
  },
  "_nota_rosa": "Voz de BIBLIOTECA de Google etiquetada «Castilian Spanish» (locutora de radio, 56 años, grave): acento de España garantizado por la etiqueta. Alternativa diseñada sin probar: voice_6t4cua39f6am.",
- "_nota_jambo": "27/11/2026 (órdenes del dueño: «la voz del jambo no se entiende apenas» y después «habla demasiado plano, debe hablar tipo toxicómano de los 80»): quinqui pasota de barrio de los años ochenta, del sur y con ceceo; habla CANTANDO (melodía quejumbrosa y pedigüeña, estira la última vocal de cada réplica), relajadísimo, pero se le entiende. Voz en producción: voice_t33qotu98tpq (jambo_voz_v8). El ceceo y el alargue los pone voces_gemini.py solo en el texto que va al TTS; el guion no cambia y el control de audio no cuenta el ceceo como fallo. Arquetipo: «el Piezas» / «el Pintas». Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
+ "_nota_jambo": "27/11/2026 (cuatro órdenes del dueño el mismo día: no se entendía → demasiado plano → vocales más estiradas → «no parece real, parece impostada, tiene que ser más callejera»): voz REAL de calle, fina, nasal y quebrada, de chaval de barrio de los ochenta que se ha hecho mayor en la calle, del sur y con ceceo; habla a media voz, cansino, sin teatro ni cante. Voz en producción: voice_jsbas0g97111 (jambo_voz_calle). El ceceo lo refuerza voces_gemini.py solo en el texto del TTS; el guion no cambia y el control de audio no lo cuenta como fallo. Arquetipo: «el Piezas» / «el Pintas». Líneas rojas intactas: ni sustancia ni consumo, ninguna etnia ni colectivo, nunca dice que tiene sueño.",
  "jambo_voz_v5": {
   "estado": "SUSTITUIDA el 27/11/2026 por jambo_voz_v8 (el dueño: «habla demasiado plano»). Sigue disponible en voces_anteriores.jambo_v5 (voice_wv8rkv67e84q).",
   "genero": "male",
@@ -70,7 +71,7 @@
   "si_el_dueno_no_la_quiere": "volver a la B2: poner voces.jambo = voces_anteriores.jambo_b2 (voice_rfaaj38z5daa). El ceceo del texto y el ritmo de 2,2 palabras/s no dependen de la voz."
  },
  "jambo_voz_v8": {
-  "estado": "EN PRODUCCIÓN desde el 27/11/2026 (voice_t33qotu98tpq). orden del dueño 27/11: «habla demasiado plano, debe hablar tipo toxicómano de los 80». Tres candidatas con cinco réplicas de prueba: v8 47/51 palabras casadas por Whisper y solo 1 palabra sin pareja en control_audio.py (igual que la v5); v6 y v7 dejaban 5 y 4 sin pareja (bloquearían episodios).",
+  "estado": "SUSTITUIDA el 27/11/2026 (noche) por jambo_voz_calle (el dueño: «no parece real, parece impostada»). Sigue en voces_anteriores.jambo_v8 (voice_t33qotu98tpq).",
   "genero": "male",
   "nombre": "Jambo-serie · jambo v8 (quinqui de los 80, cantarín)",
   "descripcion": "Hombre de unos 40 años, quinqui de barrio de los años ochenta, pasota y buscavidas del sur de España. Voz cascada, nasal y algo aguda, gastada por la mala vida, con acento andaluz de barrio y ceceo. Habla CANTANDO: melodía quejumbrosa y pedigüeña que sube y baja mucho, estira la última vocal de cada frase y la deja caer, como quien te pide algo con mucha cara y mucha pachorra. Muy relajado, como colocado, pero vivo y pícaro, nunca monótono ni plano. Se le entiende todo: consonantes claras y palabras separadas.",
@@ -82,6 +83,19 @@
   "puerta": "Cualquier voz nueva de Jambo se prueba igual antes de usarse: cinco réplicas, Whisper, y como mucho 1 palabra sin pareja de cada 50 en control_audio.py. NUNCA se publica con voz ininteligible.",
   "si_el_dueno_no_la_quiere": "voces.jambo = voces_anteriores.jambo_v5 (más neutra) o jambo_b2 (la del 23/11).",
   "vocales": "27/11 noche (orden del dueño 27/11 noche: «más estiradas las vocales»): alargar() estira a 4 letras la última vocal de CADA frase de Jambo (antes solo la de la réplica, a 3) y el corte ya no le acelera más de 1,2x. Prueba con las cinco réplicas: 33,2 s frente a 23,2 s y 2 palabras sin pareja de 51 en control_audio.py (las dos por la interjección «Ozú»). Una variante más extrema (6 letras, comas estiradas, sin acelerar) dejaba 7 sin pareja: descartada."
+ },
+ "jambo_voz_calle": {
+  "estado": "EN PRODUCCIÓN desde el 27/11/2026 noche (voice_jsbas0g97111). orden del dueño 27/11 noche: «no parece real, parece impostada, tiene que ser más callejera». Tres candidatas con cinco réplicas: esta (voz fina, nasal y quebrada) deja 0 palabras sin pareja de 47 en control_audio.py; la ronca dejaba 7 y la ronca sin ceceo en el texto (modelo lite) 9.",
+  "genero": "male",
+  "nombre": "Jambo-serie · jambo c2 (calle nasal)",
+  "descripcion": "Hombre de unos 35 años, chaval de barrio de los ochenta que se ha hecho mayor en la calle, del sur de España. Voz REAL, no de actor: fina, nasal y quebrada, gastada, con la boca medio cerrada al hablar. Tono cansino de pedir un favor sin ganas, alarga el final de las frases con naturalidad, acento andaluz de barrio con ceceo. Lento, pasota, como colocado. Sin teatro, sin cantar, sin exagerar: suena a un tío de verdad sentado en un portal. Se le entiende.",
+  "como_suena_por_codigo": "voces_gemini.py: CARACTER['jambo'] (habla de calle real, sin teatro ni cante), EMO_JAMBO (emociones naturales, a media voz), ALARGUE = 2 (la última vocal de cada frase apenas se alarga: el arrastre lo pone la voz), ceceo() y corte sin acelerar más de 1,2x (1,7 palabras/s).",
+  "leccion": "Cuanto más se fuerza desde el texto (vocales con 4-6 letras, estilo «sing-song»), más impostada suena. Lo que funciona: describir una persona real y pedir habla sin actuar.",
+  "candidatas_descartadas": {
+   "calle ronca": "voice_w1sk62k9rqn7 (7 sin pareja)",
+   "calle ronca sin ceceo en el texto, modelo lite": "voice_muw46gipvqrf (9 sin pareja)"
+  },
+  "si_el_dueno_no_la_quiere": "voces.jambo = voces_anteriores.jambo_v8 (cantarina), jambo_v5 (neutra) o jambo_b2 (la del 23/11)."
  },
  "ritmo": "voces_gemini.py: resto de personajes a 3 palabras/s, Neo 2,8, Jambo 1,7 y sin acelerarle más de 1,2x (27/11 noche; antes 2,2 con hasta 1,78x, que le aplastaba las vocales); pausas internas máx. 0,35 s (Jambo 0,55).",
  "pronunciacion": "OJO: Felipe y Neo dijeron «Yambo» al leer «Jambo» (23/11). Hasta resolverlo, que nadie diga el nombre «Jambo» en voz: se le llama «el Pintas», «el Piezas», «este», «el vecino».",
