@@ -1,0 +1,19 @@
+{
+  "media_id": "18100896161670114",
+  "enlace": "https://www.instagram.com/reel/DgPpjZ_Sc_4/",
+  "prueba_no_seguidores": false,
+  "metodo": "video_url",
+  "publicado": "2026-11-27T12:11:48+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "_OseKpHjmYM",
+    "enlace": "https://youtube.com/shorts/_OseKpHjmYM",
+    "titulo": "El domingo que nadie cobra #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "27751052201259826",
+    "enlace": "https://www.facebook.com/reel/27751052201259826",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
