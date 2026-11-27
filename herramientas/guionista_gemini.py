@@ -478,6 +478,13 @@ G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no
        felipe) y haz que cada una salga de verdad en una réplica de ese personaje. NO repitas ninguna de las ya usadas en episodios
        recientes: {coletillas}. Las viejas («primo», «válgame», «hermano», «un eurillo», «mañana te lo devuelvo») pueden aparecer de vez
        en cuando, pero no son obligatorias ni pueden ser las únicas.
+   G4. JAMBO HABLA COMO UN QUINQUI PASOTA DE LOS AÑOS OCHENTA (orden del dueño 27/11: «habla demasiado plano, debe hablar tipo toxicómano
+       de los 80»). El cante lo pone la voz, pero solo si TÚ lo escribes así: frases muy cortas que acaban en vocativo o coletilla
+       («…, tronco.», «…, colega.», «…, tío.», «…, ¿sabes?», «…, ¿o qué?»), una pausa «…» por réplica y una o dos palabras del barrio de
+       entonces: «tronco», «colega», «tío», «qué mal rollo», «menuda movida», «chungo», «mola», «al loro», «el menda», «pasta», «pelas»,
+       «duros» (pide «veinte duros» o «mil pelas» y luego lo pasa mal a euros: es parte de su gracia). Siempre en ortografía normal y con
+       palabras que se entiendan dichas en voz alta. PROHIBIDA la jerga de sustancias y de delitos (líneas rojas de Jambo): su argot es
+       de pasota y de pedir, nunca de consumo.
 H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura lo que su réplica): tú controlas el ritmo, quién sale en
    cada plano y, con el campo opcional "plano", el tipo de plano de cada escena:
    H1. MÁS CAMBIOS DE PLANO: réplicas cortas (el tope de palabras ya está) y alternancia de personajes en cada golpe: ningún plano debe
