@@ -21,7 +21,7 @@ API = "https://generativelanguage.googleapis.com/v1beta"
 # la pachorra va en las pausas y la entonación, no en arrastrar las sílabas hasta hacerlas ininteligibles.
 CARACTER = {"rosa": "bossy, theatrical", "felipe": "smug know-it-all, laid-back", "sindy": "cheeky, streetwise, fast",
             "neo": "calm, polite, composed", "conchaqueton": "whiny, wheedling",
-            "jambo": "extremely laid-back and unhurried, dazed, spaced-out and mellow southern Spanish drawl, lisping every s as a th sound, relaxed in the pauses and the intonation but articulating every word clearly and distinctly, never mumbling or slurring",
+            "jambo": "extremely laid-back and unhurried, mellow and spaced-out southern Spanish Andalusian accent with a soft natural ceceo, crisp clear diction with every word fully pronounced and well separated, relaxed in the pauses and the intonation, never mumbling or slurring",
             "cliente": "impatient"}
 RITMO = "fast, lively sitcom pace"
 # Orden del dueño 23/11 22:27: «el Jambo tiene que arrastrar más las eses y hablar más lento, tipo yonqui, y un poco de
