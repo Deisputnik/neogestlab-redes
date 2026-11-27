@@ -109,13 +109,11 @@ def texto_facebook(post):
         t = fb["texto"]
     else:
         t = post.get("texto", "").replace("src=instagram", "src=facebook").replace("src=youtube", "src=facebook")
-        if producto:
-            t = re.sub(r"Enlace en el perfil\.?", f"Pídela aquí: {enlace}", t, flags=re.I)
-        else:
-            t = re.sub(r"(?im)^.*enlace en el perfil.*$", "", t)
+        # 27/11/2026 (biblia §11.3, punto 4): en Facebook el enlace de la prueba va SOLO en el primer comentario
+        # (comentar_primero), no en el texto del post; y sin la palabra «Moraleja» (biblia §3).
+        t = re.sub(r"(?im)^.*(enlace en el perfil|solicitar\?|prueba gratuita).*$", "", t)
+        t = re.sub(r"(?im)^moraleja:\s*", "", t)
         t = re.sub(r"(?im)^.*(comenta|escríbeme|escribeme).{0,60}por privado.*$", "", t)
-        if producto and enlace not in t and "ajreparacion.com" not in t:
-            t += f"\n\n{enlace}"
     if SEGUIR not in t:
         t += f"\n\n{SEGUIR}"
     if "By Neogest Lab" not in t:
