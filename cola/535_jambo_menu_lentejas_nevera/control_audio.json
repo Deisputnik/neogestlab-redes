@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "duracion_s": 47.51,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['lentejas', 'como', 'neo'], sobran ['ah', 'lenteas', 'ay', 'no', 'mes'] (rehacer esas frases)"
+  ],
+  "avisos": [],
+  "transcripcion": "¡Tres días comiendo lentejas! ¿Quién hizo la compra? Ah, tranquila, Rosa. Lo barato nunca falla. Es ciencia. ¡Manda huevos! ¡Yo pagué la compra! ¡Con mi tarjeta! Prima. Yo me como las lenteas. Todas. Rosa, abre la nevera. Hay doce yogures tuyos. Ay, no lo de fichar con huella. ¡Manda ella y no compra! ¡Ya vale, joder! ¡Que lo resuelva el mes! Resuelto. Con lo que hay, hago un menú de siete días. Sin repetir, Rosa cocina usted el lunes. Planificar la semana evita comer lentejas cada día.",
+  "guion": "¡Tres días comiendo lentejas! ¿Quién hizo la compra? ¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia. ¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta! Prima… yo me como las lentejas. Todas. ¡Rosa, abre la nevera! ¡Hay doce yogures tuyos! ¡Como lo de fichar con huella! ¡Manda ella y no compra! ¡Ya vale, joder! ¡Que lo resuelva el Neo! Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes. Planificar la semana evita comer lentejas cada día.",
+  "lufs": -14.7,
+  "pico_dbfs": -1.1
+}
