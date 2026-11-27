@@ -81,6 +81,7 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 
 ## 11. Adaptación por red (el mismo episodio, empaquetado para cada red)
 Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube (27/11/2026). Pendiente: Instagram, Facebook y TikTok.
+- 2026-11-27 (noche) · §11.1 aprobado por el dueño entero, incluida la prueba de la versión corta de 20-35 s en YouTube (1 de cada 5 episodios).
 
 ### 11.1 YouTube Shorts (estudio del 27/11/2026, orden del dueño)
 **Lo que dicen nuestros datos** (canal @neogestlab, 60 vídeos, 216 suscriptores, vistas leídas el 27/11):
@@ -112,7 +113,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - «IA», «Neogest», «app» o el nombre de una función en el título;
    - los nombres de los personajes en el título (nadie los conoce todavía), salvo «el cuñado» o «la vecina» como tipo de persona;
    - los títulos de más de 60 caracteres.
-2. **Texto fijo en pantalla**: el título (sin el emoji ni #Shorts) va escrito arriba, en grande y legible, durante todo el vídeo y no solo en el plano de la casa. No puede tapar las caras ni los subtítulos. *Pendiente de implementar en el render (Mejora): campo `titulo_fijo` del episodio en `gen_episodios.py`, que pinte un texto persistente en todas las escenas. Hasta que esté, `gancho_casa` debe ser ese mismo título.*
+2. **Texto fijo en pantalla**: el título (sin el emoji ni #Shorts) va escrito arriba, en grande y legible, durante todo el vídeo y no solo en el plano de la casa. No puede tapar las caras ni los subtítulos. *Tarea de Mejora, prioridad alta (aprobada por el dueño el 27/11): implementarlo en el render: campo `titulo_fijo` del episodio en `gen_episodios.py`, que pinte un texto persistente en todas las escenas. Hasta que esté, `gancho_casa` debe ser ese mismo título.*
 3. **Ironía en el gancho**: el título promete lo contrario de lo que pasa, o pone en duda algo que el público ya vive. El remate de Neo contesta de verdad a esa promesa.
 4. **Comentarios**:
    - El comentario fijado de YouTube es SIEMPRE una pregunta que se contesta con una cifra o con una experiencia propia («¿A ti cuántos días te pagan? Una cifra.», «¿Quién es el cuñado de tu familia? Etiquétalo.»). Nunca un enlace ni una venta.
@@ -126,7 +127,11 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - Cada episodio entra en la lista de reproducción «El Jambo que sabe», en orden.
    - Cuando un episodio continúa otro, el anterior lleva como «vídeo relacionado» el siguiente. Así quien termina uno pasa al otro.
    - Las historias que dan para más se cortan en partes («Parte 1 / Parte 2»): es lo que mejor nos ha funcionado en YouTube.
-7. **Duración**: se mantiene el formato de 45-70 s del §6, que es orden del dueño. Dato para decidir: los virales del nicho duran 8-35 s y nuestros Shorts de 40-64 s no se diferencian entre sí por la duración. *Pendiente del dueño (§12 de la DIRECTIVA): probar en YouTube una versión corta de 20-35 s (gancho, 3 golpes y remate) de 1 de cada 5 episodios y comparar las vistas a los 7 días.*
+7. **Duración (aprobado por el dueño el 27/11/2026)**: el episodio sigue siendo de 45-70 s (§6) en todas las redes. Además, en YouTube se prueba una **versión corta de 20-35 s en 1 de cada 5 episodios**: gancho, 3 golpes y remate de Neo, el mismo plano de casa al abrir y cerrar (bucle) y la promo de 3 s. Funciona así:
+   - El Creador marca en `cola/<pieza>/post.json` `"youtube": {"corto": true}` y genera un segundo render solo con esas escenas.
+   - Ese segundo render es el que se sube a YouTube; Instagram, Facebook y TikTok publican el largo.
+   - A los 7 días, Analista compara en `equipo/virales_semana.md` las vistas, los me gusta y los comentarios de los cortos con la media de los largos de la misma semana.
+   - Si los cortos ganan dos semanas seguidas, YouTube pasa a publicar solo versiones cortas. Si pierden, se retira la prueba. En los dos casos se anota aquí.
 8. **Medir**: Analista apunta cada semana, por Short de YouTube, las vistas, los me gusta, los comentarios y qué molde de título llevaba, y deja en `equipo/virales_semana.md` qué molde gana. El molde que pierde dos semanas seguidas se retira de esta lista.
 
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
