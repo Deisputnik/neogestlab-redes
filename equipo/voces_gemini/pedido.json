@@ -1,28 +1,30 @@
 {
- "_nota": "Pedido del 522 v4 (orden del dueño 23/11 22:57: Jambo ha pinchado la luz para un cultivo de «tomates» en el trastero). Pendiente de generar el 24/11 tras las 09:00 (cuota). Para lanzarlo: copiar este archivo a una rama voces/<algo> y subirla. Uso general: herramientas/estudio/LEEME.md («Voces nuevas»).",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
  "episodios": [
   {
-   "slug": "522_jambo_factura_luz",
+   "slug": "530_jambo_fuga_banera_rebosando",
    "set": "salon",
-   "hora": 19,
-   "moraleja": "Lo que alquilas en negro te sale caro",
-   "recuerdo": "Rosa ya hizo fichar con huella a las visitas",
-   "bucle_visual": "Rosa con la factura de la luz en alto, misma pose",
-   "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "900 € de luz. ¿Quién ha sido? 👀",
-   "promesa": "¿Quién ha gastado novecientos euros de luz?",
-   "giro": "Parecía que solo cargaba el móvil y hay un cultivo en el trastero",
+   "hora": 2,
+   "moraleja": "Quien manda en casa también cierra el grifo",
+   "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+   "bucle_visual": "Rosa con el cubo en la mano, misma pose",
+   "gancho_tipo": "afirmacion_imposible",
+   "gancho_casa": "¡Se inunda el salón! 👀",
+   "promesa": "¿Quién ha dejado el agua abierta?",
+   "giro": "El agua no salía del fregadero: la bañera de Rosa llevaba rebosando desde las diez",
+   "ambito": "casa",
+   "chiste_base": "Se inunda la casa y la culpable jura que no ha tocado nada",
+   "resumen": "Madrugada, el salón se inunda y Rosa jura que ella no ha tocado nada, hasta que se descubre su bañera rebosando.",
    "escenas": [
     {
      "e": "gancho",
      "h": "rosa",
      "emo": "grita",
-     "v": "¡Novecientos euros de luz! ¿Quién ha sido?",
-     "t": "¡Novecientos euros de luz! ¿Quién ha sido?",
+     "v": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
+     "t": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
      "p": [
       "rosa",
       "felipe"
@@ -35,11 +37,10 @@
      "e": "gag",
      "h": "felipe",
      "emo": "chulea",
-     "v": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
-     "t": "¡Buah! Eso es el contador, Rosa. De noche cuenta doble. Lo sé de buena tinta.",
+     "v": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
+     "t": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
      "p": [
-      "felipe",
-      "rosa"
+      "felipe"
      ],
      "a": {
       "felipe": "presume"
@@ -48,12 +49,11 @@
     {
      "e": "gag",
      "h": "sindy",
-     "emo": "rie",
-     "v": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
-     "t": "¡Anda ya, Felipe! El contador no trasnocha. ¿Y ese cable que baja al trastero, qué?",
+     "emo": "enfado",
+     "v": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
+     "t": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
      "p": [
-      "sindy",
-      "felipe"
+      "sindy"
      ],
      "a": {
       "sindy": "habla"
@@ -61,13 +61,255 @@
     },
     {
      "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Prima… yo tapo el agujero con un bocadillo.",
+     "t": "Prima… yo tapo el agujero con un bocadillo.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "sorpresa",
+     "v": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
+     "t": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "a": {
+      "sindy": "habla"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
+     "t": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+     "t": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
+     "t": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "PILLADA"
+    },
+    {
+     "e": "cierre",
+     "h": "neo",
+     "emo": "normal",
+     "v": "Quien manda en casa también cierra el grifo.",
+     "t": "Quien manda en casa también cierra el grifo.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "531_jambo_paquete_aviso_fantasma",
+   "set": "salon",
+   "hora": 23,
+   "moraleja": "Antes de culpar al repartidor, revisa tus pedidos",
+   "recuerdo": "Rosa ya culpó a otros de la factura de la luz (522)",
+   "bucle_visual": "Rosa con el aviso de paquete en la mano, misma pose",
+   "gancho_tipo": "afirmacion_imposible",
+   "gancho_casa": "¡Alguien ha pedido tres cajas! 👀",
+   "promesa": "¿De quién es el paquete del aviso?",
+   "giro": "El paquete fantasma lo había pedido Rosa con el nombre de Felipe",
+   "ambito": "casa",
+   "chiste_base": "Llega un aviso de paquete que nadie recuerda haber pedido",
+   "resumen": "Llega un aviso de paquete que nadie ha pedido y Rosa jura que ella nunca compra, hasta que Neo lee el aviso.",
+   "escenas": [
+    {
+     "e": "gancho",
+     "h": "sindy",
+     "emo": "grita",
+     "v": "¡Nos han dejado un aviso de paquete! ¡Nadie lo pidió!",
+     "t": "¡Nos han dejado un aviso de paquete! ¡Nadie lo pidió!",
+     "p": [
+      "sindy",
+      "felipe"
+     ],
+     "a": {
+      "sindy": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "chulea",
+     "v": "¡Es una estafa, Sindy! Lo vi en la tele.",
+     "t": "¡Es una estafa, Sindy! Lo vi en la tele.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "presume"
+     }
+    },
+    {
+     "e": "gag",
      "h": "rosa",
-     "emo": "enfado",
-     "v": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
-     "t": "¿Qué cable? ¡Me cago en todo! ¡Al que me pincha la luz lo denuncio hoy mismo!",
+     "emo": "ironia",
+     "v": "¡Qué tontería, joder! Yo nunca pido nada.",
+     "t": "¡Qué tontería, joder! Yo nunca pido nada.",
+     "p": [
+      "rosa"
+     ],
+     "a": {
+      "rosa": "presume"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Prima… si es comida, me lo quedo yo.",
+     "t": "Prima… si es comida, me lo quedo yo.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "sorpresa",
+     "v": "¡Rosa, el paquete es tuyo! ¡Pone tu nombre!",
+     "t": "¡Rosa, el paquete es tuyo! ¡Pone tu nombre!",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "a": {
+      "sindy": "habla"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "¡Igual que la luz! ¡Siempre la culpa es de otro!",
+     "t": "¡Igual que la luz! ¡Siempre la culpa es de otro!",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+     "t": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. He leído el aviso: tres cajas, entrega mañana. Rosa, apúntelo en su agenda y baje usted.",
+     "t": "Resuelto. He leído el aviso: tres cajas, entrega mañana. Rosa, apúntelo en su agenda y baje usted.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "PILLADA"
+    },
+    {
+     "e": "cierre",
+     "h": "neo",
+     "emo": "normal",
+     "v": "Antes de culpar al repartidor, revisa tus pedidos.",
+     "t": "Antes de culpar al repartidor, revisa tus pedidos.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "535_jambo_menu_lentejas_nevera",
+   "set": "salon",
+   "hora": 14,
+   "moraleja": "Planificar la semana evita comer lentejas cada día",
+   "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+   "bucle_visual": "Rosa con la olla de lentejas, misma pose",
+   "gancho_tipo": "pregunta_abierta",
+   "gancho_casa": "¡Tres días comiendo lentejas! 👀",
+   "promesa": "¿Quién hizo la compra de esta semana?",
+   "giro": "La nevera estaba llena de yogures de Rosa y por eso sobraban lentejas",
+   "ambito": "casa",
+   "chiste_base": "Se repite la comida toda la semana por no planificar el menú",
+   "resumen": "Tres días de lentejas y nadie sabe quién hizo la compra, hasta que se abre la nevera y Neo hace el menú.",
+   "escenas": [
+    {
+     "e": "gancho",
+     "h": "rosa",
+     "emo": "grita",
+     "v": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
+     "t": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
      "p": [
       "rosa",
-      "sindy"
+      "felipe"
      ],
      "a": {
       "rosa": "desespera"
@@ -75,87 +317,113 @@
     },
     {
      "e": "gag",
-     "h": "jambo",
-     "emo": "susurra",
-     "v": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "t": "Prima… válgame. Yo solo cargo el móvil… ¿Qué te estaba diciendo?",
-     "p": [
-      "jambo",
-      "rosa"
-     ],
-     "a": {
-      "jambo": "delega"
-     },
-     "voz_tts": "Primaaa… válgame. Yo solo cargo el móviiil… ¿Qué te estaba diciendooo?"
-    },
-    {
-     "e": "gag",
      "h": "felipe",
-     "emo": "grita",
-     "v": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
-     "t": "¡Vengo del trastero, Rosa! ¡Hay doce lámparas encendidas y una selva de macetas, coño!",
+     "emo": "chulea",
+     "v": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
+     "t": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
      "p": [
-      "felipe",
-      "rosa"
-     ],
-     "a": {
-      "felipe": "desespera"
-     },
-     "giro": true
-    },
-    {
-     "e": "gag",
-     "h": "jambo",
-     "emo": "cansado",
-     "v": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "t": "Son tomates, primo… Tomates de los buenos. Necesitan lucecita día y noche.",
-     "p": [
-      "jambo",
       "felipe"
      ],
      "a": {
-      "jambo": "delega"
-     },
-     "risas": true,
-     "voz_tts": "Son tomates, primooo… Tomates de los buenos. Necesitan lucecita día y nocheee."
+      "felipe": "presume"
+     }
     },
     {
      "e": "gag",
      "h": "sindy",
-     "emo": "ironia",
-     "v": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
-     "t": "¿Tomates con doce lámparas? Sí, claro… ¡Y yo soy notaria! Que lo resuelva el Neo.",
+     "emo": "enfado",
+     "v": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
+     "t": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
      "p": [
-      "sindy",
-      "jambo"
+      "sindy"
      ],
      "a": {
       "sindy": "habla"
      }
     },
     {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Prima… yo me como las lentejas. Todas.",
+     "t": "Prima… yo me como las lentejas. Todas.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "sorpresa",
+     "v": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
+     "t": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
+     "p": [
+      "felipe",
+      "rosa"
+     ],
+     "a": {
+      "felipe": "habla"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "conchaqueton",
+     "emo": "llora",
+     "v": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
+     "t": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
+     "p": [
+      "conchaqueton"
+     ],
+     "a": {
+      "conchaqueton": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "grita",
+     "v": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
+     "t": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "desespera"
+     },
+     "risas": true
+    },
+    {
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
-     "t": "Resuelto. Los novecientos euros de luz son de esas doce lámparas. Y el trastero, Rosa, se lo alquila usted en negro.",
+     "v": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
+     "t": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
      "p": [
       "neo",
       "rosa"
      ],
      "a": {
-      "neo": "presume"
+      "neo": "fria"
      },
-     "sello": "PILLADOS"
+     "sello": "PILLADA"
     },
     {
      "e": "cierre",
      "h": "neo",
      "emo": "normal",
-     "v": "Lo que alquilas en negro te sale caro.",
-     "t": "Lo que alquilas en negro te sale caro",
-     "p": null,
-     "a": null
+     "v": "Planificar la semana evita comer lentejas cada día.",
+     "t": "Planificar la semana evita comer lentejas cada día.",
+     "p": [
+      "felipe",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
     }
    ]
   }
