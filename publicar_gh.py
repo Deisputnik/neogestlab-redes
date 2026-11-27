@@ -1904,6 +1904,14 @@ def publicar_en_facebook(medio, post, nombre, tipo):
     try:
         sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "herramientas"))
         import facebook
+        try:   # 27/11/2026 (biblia §11.3 punto 6): tope diario TOTAL de Facebook (ciclo + atrasos), 4 al día
+            import atrasos
+            hechas, _ = atrasos._publicadas_hoy("facebook")
+            if hechas >= atrasos.MAX_POR_CANAL["facebook"]:
+                log(f"{nombre}: Facebook omitido, tope diario de {atrasos.MAX_POR_CANAL['facebook']} alcanzado (biblia §11.3)")
+                return {"estado": "omitido", "motivo": "tope diario de Facebook (biblia §11.3)"}
+        except Exception as e:
+            log(f"{nombre}: no se pudo comprobar el tope de Facebook, se publica igual: {str(e)[-120:]}")
         res = facebook.publicar_reel(medio, post) if tipo == "reel" else facebook.publicar_foto(medio, post)
         log(f"{nombre}: Facebook {res.get('estado')} {res.get('enlace', '')}")
         return res

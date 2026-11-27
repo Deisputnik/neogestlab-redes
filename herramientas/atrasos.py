@@ -32,7 +32,9 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 CENTRO = "https://centro-de-contenido-apps-2f0a3cd6.base44.app"
 # 12/11/2026 (dueño: «en Facebook se pueden subir reels de forma masiva»): Facebook hasta 12 al día; YouTube sigue en 6 por la cuota.
-MAX_POR_CANAL = {"facebook": 12, "youtube": 6}
+# 27/11/2026 (orden del dueño, biblia §11.3 punto 6): Facebook baja a 4 al día EN TOTAL (ciclo + atrasos): con 12 al día cada reel
+# se quedaba en 0-6 visualizaciones. Prueba de 2 semanas; Analista compara visualizaciones medias por reel.
+MAX_POR_CANAL = {"facebook": 4, "youtube": 6}
 MAX_DIA, HORA_INI, HORA_FIN, SEPARACION_MIN, NOTA_MIN = 6, 9, 22, 60, 90
 COLAS = {c: os.path.join(RAIZ, "atrasos", f"{c}.json") for c in ("facebook", "youtube")}
 
@@ -197,11 +199,11 @@ def _publicadas_hoy(canal):
             if t.astimezone(MADRID).date() == hoy:
                 n += 1
             ultima = max(ultima, t) if ultima else t
-    if canal == "youtube":   # la cuota cuenta también los Shorts del ciclo
+    if canal in ("youtube", "facebook"):   # el tope cuenta también lo publicado por el ciclo (Facebook desde el 27/11/2026)
         for f in glob.glob(os.path.join(RAIZ, "publicados", "*", "resultado.json")):
             r = _json(f, {})
-            if (r.get("youtube") or {}).get("estado") == "publicado" and r.get("publicado"):
-                cuando = r["youtube"].get("publicado") or r["publicado"]   # 23/11/2026: un Short recuperado cuenta el día en que se subió
+            if (r.get(canal) or {}).get("estado") == "publicado" and r.get("publicado"):
+                cuando = r[canal].get("publicado") or r["publicado"]   # 23/11/2026: un Short recuperado cuenta el día en que se subió
                 t = datetime.fromisoformat(cuando).replace(tzinfo=timezone.utc) if "+" not in cuando else datetime.fromisoformat(cuando)
                 if t.astimezone(MADRID).date() == hoy:
                     n += 1
