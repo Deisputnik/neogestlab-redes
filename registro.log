@@ -1,15 +1,3 @@
-2026-11-23 00:10  Control de audio: FALLA voz distinta del guion: faltan ['me', 'cago', 'en', 'todo', 'felipe', 'tu', 'no', 'has', 'acertado', 'una', 'en', 'tu', 'vida', 'excusa', 'queton', 'cafelito'], sobran ['espusa', 'keton', 'cacelito', 'a'] (rehacer esas frases); duración 68.7 s
-2026-11-23 00:10  517_jambo_concha_cobro: control de audio del vídeo externo: aprobado=False LUFS=-14.0 pico=-1.3
-2026-11-23 00:10  517_jambo_concha_cobro: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-23 00:10  108_cobrar_facturas_reel: control de audio del vídeo externo: aprobado=None LUFS=-14.0 pico=-1.4
-2026-11-23 00:10  108_cobrar_facturas_reel: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-23 00:11  107_catalogo_stock_reel: control de audio del vídeo externo: aprobado=None LUFS=-14.1 pico=-1.4
-2026-11-23 00:11  107_catalogo_stock_reel: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-23 00:12  Control de audio: FALLA voz distinta del guion: faltan ['cafelito', 'mecaguen', 'gritar'], sobran ['cacelito', 'me', 'cagen', 'en', 'vital'] (rehacer esas frases); duración 65.1 s
-2026-11-23 00:12  518_jambo_impuesto_aire: control de audio del vídeo externo: aprobado=False LUFS=-13.9 pico=-1.3
-2026-11-23 00:12  518_jambo_impuesto_aire: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-23 00:16  Control de audio: OK; duración 64.2 s; avisos: ["voz distinta del guion: faltan ['lejia', 'lejia'], sobran ['a', 'elegia', 'elegia', 'a'] (rehacer esas frases)"]
-2026-11-23 00:16  519_jambo_sindy_receta: control de audio del vídeo externo: aprobado=True LUFS=-14.0 pico=-1.4
 2026-11-23 00:16  519_jambo_sindy_receta: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-23 00:16  801_recepcionista_horario: control de audio del vídeo externo: aprobado=None LUFS=-13.8 pico=-1.3
 2026-11-23 00:16  801_recepcionista_horario: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
@@ -598,3 +586,15 @@
 2026-11-27 14:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 14:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-27 14:10  Estadísticas actualizadas (30 posts, 1597 seguidores)
+2026-11-27 15:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
+2026-11-27 15:10  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
