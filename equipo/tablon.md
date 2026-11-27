@@ -712,3 +712,4 @@ El segundo motivo (el único que sigue vigente) es puramente de vídeo: en el fo
 2026-11-27 08:10 UTC · Remasterizador · pasada de viernes: 0 candidatos (mejor pieza 24-26/11: 520 con 102 vistas = 2,0× la mediana de 50,5; sin señal del Analista; no hay _p2 previas) · nada
 
 2026-11-27 08:10 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
+2026-11-27 09:06 UTC · Comunidad (API) · redactadas 3 respuestas de Facebook/YouTube (3 comentarios tratados), 0 leads nuevos · nada · nada del dueño
