@@ -1,0 +1,8 @@
+{
+  "aprobado": true,
+  "nota": 92,
+  "comentario": "Episodio sólido: intro \"Cosas de Casa\" con gancho ≤8 palabras y cierre en bucle exacto del mismo plano, tarjeta de marca correcta antes del cierre, isotipo 2026 válido en todos los fotogramas, audio en rango (LUFS -14.85, pico -1.14 dB, sin silencios detectados), duración 47.5s dentro de 45-70s. Registro de personajes correcto (Neo único culto, resto vulgar/choni con tacos), giro a mitad bien sembrado (yogures de Rosa) y resuelto por Neo, remate que responde al gancho, moraleja en frase natural + recuerdo del episodio 521. Voz diseñada por personaje (Gemini TTS) con _voz_nota. Post con cierre fijo correcto y CTA de envío válido.",
+  "como_arreglarlo": "Menor, no bloquea: para episodios futuros desde el 28/11 conviene ya el patrón v5.3 de 2-3 estancias con plano de casa por fuera intercalado (aquí solo hay una estancia), y decir nombre+apellido de algún personaje en el diálogo.",
+  "fecha": "2026-11-27T21:11:36Z",
+  "revisor": "Calidad (API)"
+}
