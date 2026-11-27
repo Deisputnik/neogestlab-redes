@@ -106,6 +106,12 @@ def medio_zernio(api_key, nombre, post, res, canal):
     publicarse. Ahora el vídeo se baja de Instagram (el reel ya publicado y aprobado) y se sube al almacenamiento de Zernio
     (POST /media/presign + PUT), que devuelve una URL pública. Si Instagram no da el fichero (música con licencia), se usa el
     vídeo externo original de la pieza, que ya es público (media.base44.com)."""
+    # 27/11/2026 (biblia §11.4): TikTok publica la VERSIÓN CORTA (≤ 25 s) cuando la pieza la trae en post["tiktok"]["video_corto"]
+    # (URL pública https del render corto que sube el Creador). Si no la trae, sigue como antes con el reel de Instagram.
+    corto = (post.get("tiktok") or {}).get("video_corto")
+    if isinstance(corto, str) and corto.startswith("https://"):
+        print(f"{nombre}: TikTok usa la versión corta {corto[:80]}")
+        return corto
     fichero = "/tmp/%s_%s.mp4" % (canal, nombre)
     try:
         pub = leer(os.path.join(RAIZ, "equipo", "config_publico.json"), {})
@@ -131,6 +137,15 @@ def medio_zernio(api_key, nombre, post, res, canal):
             print(f"{nombre}: sin copia de Instagram ({str(e)[:120]}); se usa el vídeo externo de la pieza")
             return externo
         raise
+
+
+def texto_tiktok(nombre, post, cfg, canal):
+    """27/11/2026 (biblia §11.4): el texto de TikTok sale del de Instagram, pero sin la palabra «Moraleja» ni la línea del reparto
+    entero («Rosa, Felipe, Sindy…»), que nadie conoce y no ayudan a que TikTok entienda de qué va el vídeo."""
+    t = texto_canal(nombre, post, cfg, canal)
+    t = re.sub(r"(?i)\bmoraleja:\s*(\w)", lambda m: m.group(1).upper(), t)
+    t = re.sub(r"(?i)\bRosa, Felipe[^.\n]*\.[ \t]*\n?", "", t)
+    return re.sub(r"[ \t]{2,}", " ", re.sub(r"\n{3,}", "\n\n", t)).strip()
 
 
 def crear_post(api_key, account_id, texto, cuando_iso, url):
@@ -172,7 +187,7 @@ def main():
     print(f"zernio/{canal}: {pendientes} programados, cupo {cupo}, {len(lista)} piezas disponibles")
     if simular:
         for (nombre, post, _), cuando in zip(lista, huecos_libres(cfg, estado, ahora)):
-            print(f"\n=== {nombre} · {cuando}\n{texto_canal(nombre, post, cfg, canal)}")
+            print(f"\n=== {nombre} · {cuando}\n{texto_tiktok(nombre, post, cfg, canal)}")
         return
     api_key = os.environ.get("ZERNIO_API_KEY")
     if not api_key:
@@ -191,7 +206,7 @@ def main():
         else:
             nuevas = []
             for nombre, post, res in lista:
-                if _clave_texto(texto_canal(nombre, post, cfg, canal)) in existentes:
+                if _clave_texto(texto_tiktok(nombre, post, cfg, canal)) in existentes:
                     estado["enviados"][nombre] = {"dueAt": "", "ya_en_tiktok": True, "enviado": ahora_iso}
                     print(f"{nombre}: ya está en TikTok (o programado) según Zernio; no se repite")
                 else:
@@ -208,7 +223,7 @@ def main():
         for (nombre, post, res), cuando in zip(lista[:cupo], cuandos):
             try:
                 url = medio_zernio(api_key, nombre, post, res, canal)
-                pid = crear_post(api_key, account_id, texto_canal(nombre, post, cfg, canal), cuando, url)
+                pid = crear_post(api_key, account_id, texto_tiktok(nombre, post, cfg, canal), cuando, url)
             except Exception as e:   # una pieza que falla no bloquea a las demás; se reintenta en la pasada siguiente
                 estado["ultimo_error"] = f"{ahora_iso} · {nombre}: {e}"[:500]
                 print(f"ERROR zernio/{canal} en {nombre}:", str(e)[:300])

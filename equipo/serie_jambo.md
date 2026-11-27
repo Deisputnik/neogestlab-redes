@@ -84,7 +84,7 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 - Vídeo real de la casa: nunca personas identificables, marcas ni direcciones reconocibles.
 
 ## 11. Adaptación por red (el mismo episodio, empaquetado para cada red)
-Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube, Instagram y Facebook (27/11/2026). Pendiente: TikTok.
+Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: las cuatro redes, YouTube, Instagram, Facebook y TikTok (27/11/2026). Cada red, sus reglas.
 - 2026-11-27 (noche) · §11.1 aprobado por el dueño entero, incluida la prueba de la versión corta de 20-35 s en YouTube (1 de cada 5 episodios).
 
 ### 11.1 YouTube Shorts (estudio del 27/11/2026, orden del dueño)
@@ -132,7 +132,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - Cuando un episodio continúa otro, el anterior lleva como «vídeo relacionado» el siguiente. Así quien termina uno pasa al otro.
    - Las historias que dan para más se cortan en partes («Parte 1 / Parte 2»): es lo que mejor nos ha funcionado en YouTube.
 7. **Duración (aprobado por el dueño el 27/11/2026)**: el episodio sigue siendo de 45-70 s (§6) en todas las redes. Además, en YouTube se prueba una **versión corta de 20-35 s en 1 de cada 5 episodios**: con la misma apertura en frío del §6, 3 golpes, el remate de Neo y la promo de 3 s. Funciona así:
-   - El Creador marca en `cola/<pieza>/post.json` `"youtube": {"corto": true}` y genera un segundo render solo con esas escenas.
+   - El Creador marca en `cola/<pieza>/post.json` `"youtube": {"corto": true}`. La versión corta es la misma que se hace para TikTok en todos los episodios (§11.4).
    - Ese segundo render es el que se sube a YouTube; Instagram, Facebook y TikTok publican el largo.
    - A los 7 días, Analista compara en `equipo/virales_semana.md` las vistas, los me gusta y los comentarios de los cortos con la media de los largos de la misma semana.
    - Si los cortos ganan dos semanas seguidas, YouTube pasa a publicar solo versiones cortas. Si pierden, se retira la prueba. En los dos casos se anota aquí.
@@ -225,6 +225,38 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 7. **Reel de marca**: el único formato que ha pasado de 200 visualizaciones en Facebook es el de imagen de marca. Se publica uno al mes, con novedades reales de Neogest Lab, nunca inventadas.
 8. **Medir**: Analista apunta cada semana, por reel de Facebook, las visualizaciones, el tiempo medio, las interacciones, las veces compartido y si llevaba enlace en el texto. Lo deja en `equipo/virales_semana.md`.
 
+### 11.4 TikTok (estudio del 27/11/2026, orden del dueño)
+**Lo que dicen nuestros datos** (@neogestlab vía Zernio: 51 publicaciones desde el 1/11, leídas el 27/11):
+- TikTok ya reparte. Cada vídeo público recibe su primera tanda de unas **150-230 visualizaciones**, pero ninguno pasa de ahí: 0 veces compartido, 0 comentarios y 0-2 me gusta.
+- Lo que decide si pasa a la siguiente tanda es cuánto se ve, y ahí la duración lo explica todo:
+
+| Duración del vídeo | % que lo ve entero | Tiempo medio visto |
+|---|---|---|
+| 18-19 s («Las 23:47…», «Por quinta vez, un huésped…») | 6,6-6,8 % | 5,4-12,9 s |
+| 22-28 s | 2,5-4,7 % | 3,1-5 s |
+| 31-34 s (promos de apps) | 0-2,5 % | 1,8-9,7 s |
+| 63-64 s (episodios de barrio) | 0-0,5 % | 3,1-4,6 s |
+
+- Los últimos episodios largos van a menos: 154, 64 y 33 visualizaciones.
+
+**Reglas para TikTok:**
+1. **En TikTok va siempre la versión corta**: 25 s como mucho, mejor entre 15 y 20.
+   - Lleva la apertura en frío del §6 con su `titulo_fijo`, 2-3 golpes y el remate de Neo.
+   - Sin promo de 3 s al final: la marca va en la marca de agua. Cada segundo de más resta gente que lo ve entero.
+   - El Creador la hace para TODOS los episodios desde el 28/11 (son las mismas voces con menos escenas), la sube como hace con `video_externo` y pone su URL pública en `post.json` → `"tiktok": {"video_corto": "https://…"}`.
+   - `herramientas/redes_zernio.py` ya la usa sola si existe. Si no existe, TikTok publica la larga como hasta ahora: es la peor opción, pero no se para la publicación.
+   - Es la misma versión corta de YouTube (§11.1, punto 7).
+2. **Primera línea del texto = el `titulo_fijo` con las palabras que la gente busca** («autónomo», «cuñado», «factura de la luz», «vecino», «casero»…). En TikTok se busca como en Google y esa línea es lo que lee el buscador. Después:
+   - a quién mandárselo;
+   - la pregunta que se contesta con una cifra;
+   - el aviso de IA y de ficción.
+   
+   El texto se limpia solo (`texto_tiktok` en `redes_zernio.py`): sin la palabra «Moraleja» ni el reparto entero. Hashtags: los 5 de `equipo/zernio/config.json`.
+3. **Etiqueta de IA**: siempre la oficial de TikTok («Generado por IA») y el aviso en el texto. Ya lo hace la publicación.
+4. **Comentarios**: Comunidad contesta en la primera hora los comentarios de TikTok, con las herramientas de comentarios de Zernio (`comments_list_inbox_comments` / `comments_reply_to_inbox_post`). *Tarea de Mejora: añadir TikTok a `comunidad_api.py`, que hoy solo lleva Facebook y YouTube.*
+5. **Promos de apps en TikTok**: también cortas, de 20 s como mucho, con la diferencia de la app en el primer segundo. Las de 31-34 s de ahora se pierden en el segundo 2.
+6. **Medir**: Analista apunta cada semana, por vídeo de TikTok (Zernio, `analytics_get_analytics` con `platform=tiktok`), la duración, el % que lo ve entero, el tiempo medio visto, las veces compartido y si era la versión corta. Lo deja en `equipo/virales_semana.md`. El objetivo es pasar del 7 % que lo ve entero; el vídeo que lo supere pide su «Parte 2» en 24-48 h.
+
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
 | Cifra | Dato | Fuente leída | Matiz |
 |---|---|---|---|
@@ -234,6 +266,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · §11.4 nuevo, TikTok: con los datos de Zernio, los vídeos de 18-19 s se ven enteros un 6,6-6,8 % y los episodios de 64 s un 0-0,5 %. Desde el 28/11, TikTok publica siempre la versión corta (≤ 25 s, sin promo final, `tiktok.video_corto`). La primera línea del texto lleva las palabras de búsqueda y `redes_zernio.py` limpia la palabra «Moraleja» y el reparto. Pendiente para Mejora: comentarios de TikTok en Comunidad.
 - 2026-11-27 (noche) · §11.3 nuevo, Facebook: datos de la página (972 visualizaciones en 28 días, de 0 a 6 por reel) y la política de originalidad de Meta (marzo de 2026). Reglas: una sola subida por vídeo, texto pensado para compartir, enlace en el primer comentario, comentarios en la primera hora, reel de marca mensual. Volumen: 4 al día, aprobado y aplicado.
 - 2026-11-27 (noche) · Orden del dueño: **apertura en frío para todos los episodios**. Se empieza en el lío con `titulo_fijo` en grande, la casa va después sin texto y no hay casa al cierre. §6 reescrito y borrado lo que lo contradecía: el bucle de casa al abrir y cerrar y la prueba con reels de prueba del §11.2. `gen_episodios.py`, el Guionista (campo `titulo_fijo` obligatorio, `bucle_visual` opcional), Calidad y el Creador están alineados.
 - 2026-11-27 (noche) · §11.2 nuevo, Instagram, a partir de los insights propios (los reels que abren en el lío tienen un 22-30 % de salidas; el formato con la casa al abrir, un 57-100 %) y de los virales del nicho (Buzzfy). Prueba con reels de prueba de la apertura en frío en 1 de cada 5 episodios, sin tocar el feed. Fuera la palabra «Moraleja» y el reparto entero del texto del post.
