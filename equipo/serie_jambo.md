@@ -84,7 +84,7 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 - Vídeo real de la casa: nunca personas identificables, marcas ni direcciones reconocibles.
 
 ## 11. Adaptación por red (el mismo episodio, empaquetado para cada red)
-Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube e Instagram (27/11/2026). Pendiente: Facebook y TikTok.
+Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube, Instagram y Facebook (27/11/2026). Pendiente: TikTok.
 - 2026-11-27 (noche) · §11.1 aprobado por el dueño entero, incluida la prueba de la versión corta de 20-35 s en YouTube (1 de cada 5 episodios).
 
 ### 11.1 YouTube Shorts (estudio del 27/11/2026, orden del dueño)
@@ -195,6 +195,34 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 7. **Comentarios**: Comunidad contesta todos en la primera hora y fija el que tenga más gracia. Si nadie comenta en 1 h, el comentario fijado de la cuenta repite la pregunta con un ejemplo propio («Yo empiezo: 120 días»).
 8. **Medir**: Analista apunta cada semana, por reel, las salidas, las veces compartido, los comentarios, qué texto llevaba en el primer fotograma y si era feed o reel de prueba. Lo deja en `equipo/virales_semana.md` con qué texto y qué apertura ganan.
 
+### 11.3 Facebook Reels (estudio del 27/11/2026, orden del dueño)
+**Lo que dicen nuestros datos** (página Neogest Lab, leídos el 27/11):
+- **Últimos 28 días**: 972 visualizaciones en toda la página, 30 interacciones y 49 seguidores.
+- **Por reel**: casi todos los episodios y promos se quedan entre 0 y 6 visualizaciones. Las únicas excepciones son el reel de marca «Nueva imagen, la misma misión» (269) y dos reels con 243.
+- **Estado de la página**: correcto, sin restricciones. El problema no es un castigo, es que Facebook no ve motivo para recomendar.
+- **Volumen**: hoy se suben hasta 12 reels al día más los atrasos (`herramientas/atrasos.py`, orden del 12/11 «subir de forma masiva»). Con tan poco alcance total, cada reel nuevo se reparte las mismas pocas visualizaciones.
+
+**Lo que dice Meta** (anuncio «Rewarding Original Creators on Facebook», marzo de 2026, y su guía de contenido):
+- Facebook da prioridad en el Feed y en Reels al contenido original, el que produce la propia página, y le baja el alcance al contenido sin originalidad.
+- Meta saca una huella de cada vídeo y apunta qué cuenta lo subió primero.
+- Se considera sin originalidad volver a subir algo sin cambios de valor (poner bordes, subtítulos o cambiar la velocidad no cuenta como cambio).
+- Las cuentas que lo hacen a menudo pueden quedar fuera de las recomendaciones.
+- Nuestros episodios son nuestros y originales; lo que hay que cuidar es no subir dos veces el mismo vídeo ni copias con cambios mínimos.
+
+**Reglas para Facebook:**
+1. **Mismo episodio, misma apertura en frío** (§6) y mismo `titulo_fijo` en pantalla. Se sube el archivo del render propio, nunca una copia descargada de Instagram (que lleva marca de agua).
+2. **Una sola subida por vídeo**: un mismo vídeo no se sube dos veces a Facebook, ni como reel ni como vídeo del Feed ni desde atrasos. Si hay que repetir un tema, se hace un episodio nuevo.
+3. **Texto del post para el público de Facebook** (más adulto, comparte por WhatsApp y Messenger):
+   - Línea 1: la situación con el colectivo, igual que en Instagram.
+   - Línea 2: «Compártelo con [quien sea] 😂».
+   - Línea 3: la pregunta que se contesta con una cifra o con una experiencia.
+   - Sin la palabra «Moraleja» ni el reparto entero. Como mucho 3 hashtags.
+4. **El enlace de la prueba gratuita va en el primer comentario de la página, no en el texto del post.** Así el post se ve como contenido y no como anuncio. Comunidad lo publica nada más salir el reel. Analista compara durante 2 semanas el alcance con enlace en el texto y sin él.
+5. **Comentarios**: Comunidad contesta todos en la primera hora. Una conversación en los comentarios es la señal que más empuja a un reel en Facebook. Además, los que comparte el propio dueño desde su perfil personal (David Marín) cuentan como reparto real: 1 o 2 por semana, los mejores.
+6. **Volumen (cambio pendiente del visto bueno del dueño)**: pasar de «12 al día más atrasos» a **como mucho 4 reels al día**: los episodios nuevos del día y una promo, sin vaciar atrasos. Durante 2 semanas se miden las visualizaciones medias por reel frente a las 2 semanas anteriores. Hasta que el dueño lo apruebe, `atrasos.py` sigue igual.
+7. **Reel de marca**: el único formato que ha pasado de 200 visualizaciones en Facebook es el de imagen de marca. Se publica uno al mes, con novedades reales de Neogest Lab, nunca inventadas.
+8. **Medir**: Analista apunta cada semana, por reel de Facebook, las visualizaciones, el tiempo medio, las interacciones, las veces compartido y si llevaba enlace en el texto. Lo deja en `equipo/virales_semana.md`.
+
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
 | Cifra | Dato | Fuente leída | Matiz |
 |---|---|---|---|
@@ -204,6 +232,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · §11.3 nuevo, Facebook: datos de la página (972 visualizaciones en 28 días, de 0 a 6 por reel) y la política de originalidad de Meta (marzo de 2026). Reglas: una sola subida por vídeo, texto pensado para compartir, enlace en el primer comentario, comentarios en la primera hora, reel de marca mensual. Bajar el volumen a 4 al día queda pendiente del dueño.
 - 2026-11-27 (noche) · Orden del dueño: **apertura en frío para todos los episodios**. Se empieza en el lío con `titulo_fijo` en grande, la casa va después sin texto y no hay casa al cierre. §6 reescrito y borrado lo que lo contradecía: el bucle de casa al abrir y cerrar y la prueba con reels de prueba del §11.2. `gen_episodios.py`, el Guionista (campo `titulo_fijo` obligatorio, `bucle_visual` opcional), Calidad y el Creador están alineados.
 - 2026-11-27 (noche) · §11.2 nuevo, Instagram, a partir de los insights propios (los reels que abren en el lío tienen un 22-30 % de salidas; el formato con la casa al abrir, un 57-100 %) y de los virales del nicho (Buzzfy). Prueba con reels de prueba de la apertura en frío en 1 de cada 5 episodios, sin tocar el feed. Fuera la palabra «Moraleja» y el reparto entero del texto del post.
 - 2026-11-27 (noche) · §11 nuevo, «Adaptación por red», empezando por YouTube (orden del dueño: estudiar por qué funcionan los virales del nicho y adaptar cada red). Basado en los datos del canal propio y en los Shorts virales de autónomos y curro (Nachter). Pendiente: Instagram, Facebook y TikTok.
