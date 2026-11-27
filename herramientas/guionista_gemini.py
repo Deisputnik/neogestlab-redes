@@ -76,6 +76,7 @@ except Exception:
 # una emoción de voz por réplica ("emo"), que gen_episodios.py convierte en entonación.
 MIN_GAGS, MAX_GAGS = 5, 8
 MIN_PALABRAS_VOZ, MAX_PALABRAS_VOZ = 100, 170   # 26/11: mínimo 105 → 100 al acortar las réplicas   # 170 (antes 185): desde el 23/11 hay 3 s de promo de empresa antes del plano final
+AMBITOS = {"casa", "familia", "compras", "salud_y_citas", "dinero_de_casa", "ocio_y_viajes", "barrio", "trabajo"}   # apartado J (27/11/2026)
 ACCIONES = {"habla", "desespera", "delega", "presume", "fria"}   # gen_episodios.py ACCION_A_EMO / EXPR
 EMOCIONES = {"normal", "grita", "enfado", "sorpresa", "ironia", "chulea", "cansado", "susurra", "miedo", "llora", "rie", "seco", "pregunta"}
 
@@ -148,6 +149,7 @@ def _prompt(n):
         "gancho_tipo": "conflicto_en_marcha | afirmacion_imposible | amenaza_con_plazo | pregunta_abierta (ver F1)",
         "promesa": "5-10 palabras: la pregunta que abre el gancho y que el espectador necesita ver resuelta; solo se responde en el remate",
         "giro": "6-14 palabras: qué creía el espectador y qué resulta ser en el golpe marcado con giro:true",
+        "ambito": "casa | familia | compras | salud_y_citas | dinero_de_casa | ocio_y_viajes | barrio | trabajo (apartado J: como mucho 1 de cada 4 guiones es de trabajo)",
         "chiste_base": "1 frase (8-30 palabras): el chiste o la situación de humor ACTUAL que adaptas en este episodio, como planteamiento → remate (apartado I)",
         "resumen": "1 frase (10-28 palabras) que entendería un niño de doce años: quién quiere qué, qué lo impide y cómo acaba (apartado I5)",
         "coletillas_nuevas": {"jambo": "coletilla NUEVA y graciosa de Jambo (≤ 6 palabras) que dice en este episodio", "rosa": "coletilla nueva de Rosa", "felipe": "coletilla nueva de Felipe", "sindy": "coletilla nueva de Sindy (opcional: un personaje más si encaja)"},
@@ -185,7 +187,7 @@ encajan de verdad; no inventes cifras nuevas):
 ORDEN DEL DUEÑO 21/11 MADRUGADA (tras ver el piloto v3, se suma a todo lo de arriba y manda
 sobre cualquier instrucción anterior que lo contradiga):
 1. ESCENARIO: el salón de una casa de barrio, no la oficina. "set" por defecto = "salon".
-2. TODO TIPO DE EMPLEOS: no te centres en contratos, nóminas ni estadísticas de oficina. Cada
+2. (SUPERADA el 27/11 por el apartado J: la mayoría de episodios son de casa y vida cotidiana, no de empleos.) TODO TIPO DE EMPLEOS: no te centres en contratos, nóminas ni estadísticas de oficina. Cada
    episodio debe representar un oficio o una situación de vida distinta (fontanero, camarero,
    repartidor, cuidado de un mayor, una tienda de barrio, un autónomo, una gestión cualquiera
    del día a día) — la variedad de oficios es tan importante como la variedad de temas.
@@ -478,13 +480,14 @@ G) VOZ DE JAMBO Y COLETILLAS (orden del dueño 27/11/2026: «la voz del jambo no
        felipe) y haz que cada una salga de verdad en una réplica de ese personaje. NO repitas ninguna de las ya usadas en episodios
        recientes: {coletillas}. Las viejas («primo», «válgame», «hermano», «un eurillo», «mañana te lo devuelvo») pueden aparecer de vez
        en cuando, pero no son obligatorias ni pueden ser las únicas.
-   G4. JAMBO HABLA COMO UN QUINQUI PASOTA DE LOS AÑOS OCHENTA (orden del dueño 27/11: «habla demasiado plano, debe hablar tipo toxicómano
-       de los 80»). El cante lo pone la voz, pero solo si TÚ lo escribes así: frases muy cortas que acaban en vocativo o coletilla
-       («…, tronco.», «…, colega.», «…, tío.», «…, ¿sabes?», «…, ¿o qué?»), una pausa «…» por réplica y una o dos palabras del barrio de
-       entonces: «tronco», «colega», «tío», «qué mal rollo», «menuda movida», «chungo», «mola», «al loro», «el menda», «pasta», «pelas»,
-       «duros» (pide «veinte duros» o «mil pelas» y luego lo pasa mal a euros: es parte de su gracia). Siempre en ortografía normal y con
-       palabras que se entiendan dichas en voz alta. PROHIBIDA la jerga de sustancias y de delitos (líneas rojas de Jambo): su argot es
-       de pasota y de pedir, nunca de consumo.
+   G4. JAMBO HABLA COMO LA CALLE DE VERDAD, la de un barrio del sur en los años ochenta (órdenes del dueño 27/11: «debe hablar tipo
+       toxicómano de los 80» y «no parece real, parece impostada, tiene que ser más callejera»). Nada de caricatura ni de frases de
+       guion: habla como alguien real apoyado en un portal. Escríbelo así: frases muy cortas, a medio hacer, que acaban en vocativo o
+       coletilla («…, tronco.», «…, colega.», «…, quillo.», «…, ¿sabes?», «…, ¿o qué?») o que empiezan por «Illo,» / «Chacho,»; una pausa
+       «…» por réplica; y una o dos palabras de calle: «tronco», «colega», «tío», «illo», «quillo», «chacho», «pa» (para), «na» (nada),
+       «qué mal rollo», «menuda movida», «chungo», «al loro», «el menda», «pasta», «pelas», «duros» (pide «veinte duros» o «mil pelas»
+       y luego lo pasa mal a euros). Sin vocales alargadas ni palabras deformadas: el arrastre lo pone la voz. PROHIBIDA la jerga de
+       sustancias y de delitos (líneas rojas de Jambo): su argot es de pasota y de pedir, nunca de consumo.
 H) PLANOS (solo lo que el render hace de verdad; cada escena es un plano y dura lo que su réplica): tú controlas el ritmo, quién sale en
    cada plano y, con el campo opcional "plano", el tipo de plano de cada escena:
    H1. MÁS CAMBIOS DE PLANO: réplicas cortas (el tope de palabras ya está) y alternancia de personajes en cada golpe: ningún plano debe
@@ -520,6 +523,30 @@ I) CHISTES MODERNOS Y QUE SE ENTIENDA (orden del dueño 27/11/2026: «el guionis
        acaba). Si no puedes escribirla, o no cuenta lo que de verdad pasa en las escenas, el guion está mal: reescríbelo antes de responder.
    I6. Todo lo demás sigue (personajes, registro de barrio, giro, moraleja, recuerdo de otro episodio), pero PRIMERO SE ENTIENDE: si una de
        esas piezas enreda la historia, redúcela a una línea que no estorbe. El recuerdo de otro episodio es una frase que se entiende sola.
+
+J) TEMAS: LA IA EN CASA Y EN LA VIDA DIARIA (orden del dueño 27/11 noche: «los guiones que no sean solo temáticas de oficina, hay más cosas para implantar la IA en cosas de casa, o en la vida cotidiana». MANDA sobre la regla «TODO TIPO DE EMPLEOS» del 21/11 y sobre
+   cualquier ejemplo anterior de oficina, papeleo o negocio):
+   J1. De los {n} guiones de esta tanda, COMO MUCHO UNO va de trabajo, negocio o papeleo (facturas, nóminas, clientes, fichar). El resto
+       son líos de CASA y de la VIDA COTIDIANA, cada uno de un ámbito distinto (campo "ambito"):
+       - casa: la compra y el menú de la semana, qué cenar con lo que hay en la nevera, el turno de limpiar, la lavadora, la avería y el
+         manual que nadie lee, la mudanza, las plantas, la mascota, la contraseña del wifi, las fotos del móvil, la tele y las plataformas;
+       - familia: los deberes de los críos, el disfraz del colegio para mañana, el móvil de la abuela, el grupo de la familia, el
+         cumpleaños que se olvida, quién recoge a quién;
+       - compras: comparar precios, la garantía, devolver un paquete, la letra pequeña, la suscripción que nadie recuerda;
+       - salud_y_citas: pedir cita, acordarse de la pastilla de un mayor, entender un papel del médico, la dieta, el plan para moverse;
+       - dinero_de_casa: llegar a fin de mes, la factura de la luz o del teléfono, el recibo que sube, el alquiler, repartir gastos del piso;
+       - ocio_y_viajes: organizar un viaje, la ruta en coche, traducir una carta o un menú, el plan del fin de semana, la boda del primo;
+       - barrio: la reunión de la comunidad, el vecino del ruido, reclamar algo, la cita previa, un mensaje difícil (al casero, al
+         profesor, a la compañía).
+   J2. ROSA manda en la casa igual que mandaría en un negocio (reparte tareas, pone normas absurdas, se escaquea); Felipe sentencia de
+       cuñado sobre cualquier cosa doméstica; Sindy planta cara; Concha pide y aplaza; Jambo gorronea. Nadie necesita un empleo para
+       que haya conflicto.
+   J3. NEO ES LA IA EN LO COTIDIANO: resuelve haciendo algo que una inteligencia artificial hace DE VERDAD en esa situación (ordenar,
+       resumir, recordar y avisar, calcular, comparar, redactar, traducir, planificar con lo que hay) y lo dice en concreto («con lo
+       que hay en la nevera salen tres cenas», «el recibo sube por esta línea»). Nunca magia, nunca una marca ni una aplicación real,
+       nunca consejo médico, legal ni financiero: Neo organiza y explica, no diagnostica ni promete.
+   J4. El espectador tiene que pensar «eso me pasa a mí en casa» y «anda, para eso sirve la IA». Si el lío solo lo entiende quien
+       lleva un negocio, cámbialo.
 
 Devuelve SOLO un array JSON (sin texto fuera del JSON, sin ``` ) con {n} objetos, cada uno
 con este esquema exacto (valores de ejemplo, escríbelos tú con contenido real distinto en
@@ -661,6 +688,8 @@ def _validar(ep):
                 del e["a"]
         if isinstance(e, dict) and "plano" in e and e.get("plano") not in ("auto", "medio", "primerplano", "general"):
             del e["plano"]   # «plano» inválido: se quita, nunca tumba el guion
+    if ep.get("ambito") not in AMBITOS:   # 27/11/2026 (noche): ámbito del lío; si viene mal se deja en «casa», nunca tumba el guion
+        ep["ambito"] = "casa"
     # 27/11/2026: coletillas nuevas por personaje (opcional, no bloquea): solo textos cortos de personajes válidos
     col = ep.get("coletillas_nuevas")
     ep["coletillas_nuevas"] = ({k: v.strip() for k, v in col.items() if k in PERSONAJES_VALIDOS and isinstance(v, str) and 0 < len(v.split()) <= 8}
