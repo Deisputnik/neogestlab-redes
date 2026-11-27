@@ -1,5 +1,5 @@
 {
- "_nota": "PRUEBA de la voz nueva de Jambo (jambo_diseno_v3, orden del dueño 27/11/2026). No es un episodio: solo diseña la voz y dice cinco réplicas de prueba para la puerta de Whisper (>= 90 % de palabras entendidas). Gasta UNA petición de voz.",
+ "_nota": "PRUEBA de la voz nueva de Jambo (candidata v4, orden del dueño 27/11/2026). No es un episodio: solo diseña la voz y dice cinco réplicas de prueba para la puerta de Whisper (>= 90 % de palabras entendidas). Gasta UNA petición de voz.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
@@ -10,13 +10,13 @@
  "disenar": {
   "jambo": {
    "genero": "male",
-   "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo marcado: pronuncia las eses como zetas. Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Habla pausado pero NATURAL y articula cada palabra con claridad: la calma está en las pausas y en la entonación, nunca arrastra ni come las sílabas ni murmura. Ritmo de unas dos palabras por segundo, el más lento del grupo pero perfectamente comprensible.",
-   "nombre": "Jambo-serie · jambo v3 (ceceo inteligible)"
+   "descripcion": "Hombre de unos 35-40 años, voz grave algo rasposa, acento andaluz de barrio con ceceo suave y natural (las eses suenan como zetas, sin exagerar ni silbar). Muy relajado, pachorra total, como colocado, de vuelta de todo, con aire de pícaro simpático. Dicción NÍTIDA: pronuncia completas todas las sílabas, marca bien la primera consonante de cada palabra y separa las palabras entre sí, sin juntarlas; la calma está en las pausas entre frases y en la entonación cantarina, nunca arrastra, ni murmura, ni se come letras. Ritmo de unas dos palabras por segundo, tranquilo pero perfectamente comprensible, como quien cuenta un chiste despacio.",
+   "nombre": "Jambo-serie · jambo v4 (ceceo suave, dicción nítida)"
   }
  },
  "episodios": [
   {
-   "slug": "900_prueba_jambo_v3",
+   "slug": "904_prueba_jambo_v4",
    "set": "salon",
    "escenas": [
     {
