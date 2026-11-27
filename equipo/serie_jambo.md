@@ -80,7 +80,7 @@ Si una réplica la podría decir otro personaje sin que se note, está mal escri
 - Vídeo real de la casa: nunca personas identificables, marcas ni direcciones reconocibles.
 
 ## 11. Adaptación por red (el mismo episodio, empaquetado para cada red)
-Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube (27/11/2026). Pendiente: Instagram, Facebook y TikTok.
+Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) es el mismo para todas; lo que cambia por red es cómo se presenta: título, texto en pantalla, descripción, comentario fijado, lista y orden. Se estudia y se cierra una red cada vez. Hecho: YouTube e Instagram (27/11/2026). Pendiente: Facebook y TikTok.
 - 2026-11-27 (noche) · §11.1 aprobado por el dueño entero, incluida la prueba de la versión corta de 20-35 s en YouTube (1 de cada 5 episodios).
 
 ### 11.1 YouTube Shorts (estudio del 27/11/2026, orden del dueño)
@@ -134,6 +134,62 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
    - Si los cortos ganan dos semanas seguidas, YouTube pasa a publicar solo versiones cortas. Si pierden, se retira la prueba. En los dos casos se anota aquí.
 8. **Medir**: Analista apunta cada semana, por Short de YouTube, las vistas, los me gusta, los comentarios y qué molde de título llevaba, y deja en `equipo/virales_semana.md` qué molde gana. El molde que pierde dos semanas seguidas se retira de esta lista.
 
+### 11.2 Instagram Reels (estudio del 27/11/2026, orden del dueño)
+**Lo que dicen nuestros datos** (insights de @neogestlab vía Buzzfy, leídos el 27/11):
+- **Lo que mejor funcionó**:
+  - «Parte 2: el cliente que paga a 90 días. La ley dice 60.»: 1.389 vistas, 1.101 cuentas alcanzadas y un 29,5 % de gente que se va en los primeros segundos (en adelante, «salidas»).
+  - «Parte 2: le diste el bar entero a la IA…»: 710 vistas y 22,2 % de salidas.
+  
+  Los dos abrían directamente en el conflicto, con la frase del lío en pantalla desde el primer fotograma.
+- **El formato de barrio actual**, que abre con 1,6 s de la casa por fuera:
+  - «El vecino que no devuelve el taladro»: 134 vistas y 70 % de salidas.
+  - «El perro del vecino»: 130 vistas y 80 % de salidas.
+  - «Cobrar por respirar»: 48 vistas y 57 % de salidas.
+  - Los dos últimos episodios: 8-11 vistas y 100 % de salidas.
+  
+  Quien llega desde Explorar ve una casa, no un lío, y se va. Instagram deja de enseñar el reel.
+- **Las promos con pregunta de producto** («¿Apuntas el stock…?», «¿Y si tu teléfono…?»): 9-13 vistas y 62-75 % de salidas.
+- **En toda la cuenta**: 0 comentarios y casi 0 veces compartido. Nadie lo manda a nadie, que es justo lo que Instagram premia.
+
+**Lo que hacen los virales del nicho** (biblioteca de Buzzfy, sketches de humor sobre jefes, clientes y vida cotidiana):
+- **Sketches con actores**:
+  - «Cuando llega la jefa» (@zeebra.chile): 64 K vistas, 14 s.
+  - «EL CLIENTE QUE LE HICISTE FRENOS DICE QUE AHORA NO ARRANCA» (@avalos.racing): 36 K vistas, 29 s, 176 veces compartido y una pregunta para comentar.
+  - «El paciente más tranquilo de España» (@xavi.rigau): 16,8 K vistas, 40 s.
+  
+  En los tres, el texto en pantalla del primer fotograma ES la situación («Cuando…», en mayúsculas o en grande) y la primera frase dicha ya está en mitad del lío.
+- **Sketches animados con IA sobre la vida de casa** (familia, vecinos, el marido que ronca, el que se pasa el día en el móvil): 18 K, 57 K y 223 K vistas con 14-32 s. Son gags visuales que se entienden sin sonido y se comparten mucho (294 veces el de 223 K).
+- **Reglas del Playbook de Buzzfy** (531 K cuentas, cada una comparada consigo misma):
+  1. Si en los 3 primeros segundos se va menos del 30 %, el reel despega 1 de cada 3 veces; lo normal es que se vaya el 57 %.
+  2. Los que despegan se comparten 1 vez por cada 8 me gusta.
+  3. El reel que se publica justo después de uno que despega tiene 1,8 veces más opciones de despegar también.
+  4. Subtítulos quemados.
+  5. Como mucho 5 hashtags.
+  6. Sábado y domingo rinden un 10 % más.
+
+**Reglas para Instagram:**
+1. **Texto del primer fotograma**:
+   - Grande y con la situación, al estilo «Cuando…»: «CUANDO TU JEFA FICHA POR DOS», «EL VECINO QUE NO DEVUELVE EL TALADRO»…
+   - Como mucho 10 palabras. Se queda fijo durante todo el reel: es el mismo `titulo_fijo` de §11.1, sin emoji.
+   - Prohibido abrir con una pregunta de producto.
+2. **Apertura en el lío**: la frase más fuerte del conflicto se oye en los 2 primeros segundos.
+   - **Feed:** el patrón del §6 (casa por fuera al abrir y al cerrar) es orden del dueño y se mantiene en el reel del feed.
+   - **Prueba con reels de prueba (solo para gente que no te sigue; no salen en la cuadrícula del perfil), en 1 de cada 5 episodios.** Es una segunda versión, que puede ser la misma versión corta de YouTube (§11.1, punto 7). Abre en frío: 2-3 s con la frase más fuerte del episodio y su texto, después la casa y el resto, como el «cold open» de las comedias americanas.
+   - Analista compara las salidas y el alcance de esa versión con el reel del feed. Si la de apertura en frío gana dos semanas seguidas, se propone al dueño cambiar la apertura del feed. Hasta entonces, nada cambia.
+3. **Hecho para mandarlo**: cada episodio tiene un «a quién se lo mandas» evidente (la jefa, el cuñado, el vecino, el que paga tarde). La primera línea del texto lo dice: «Mándaselo a tu cuñado, el que lo sabe todo».
+4. **Texto del post (caption)**:
+   - Línea 1: la situación con el colectivo, la misma idea que el texto en pantalla.
+   - Línea 2: a quién mandárselo.
+   - Línea 3: la pregunta para comentar, que se contesta con una cifra o con una palabra.
+   - Después, la prueba gratuita y los avisos de IA y ficción.
+   - Nunca la palabra «Moraleja» (tampoco en el texto del post, igual que en el vídeo, §3).
+   - Nunca el reparto entero («Rosa, Felipe, Sindy, Jambo…»): nadie lo conoce y le quita sitio al gancho.
+   - 3-5 hashtags: #humor o #humornegro, el del colectivo (#autonomos, #cuñados, #vecinos, #hosteleria…) y #serieeljambo.
+5. **Reel que despega**: si un reel supera el doble de la mediana de vistas de la cuenta, en las 24-48 h siguientes se publica su «Parte 2» o un episodio del mismo tema. Es la regla de las rachas, y aquí ya funcionó con «Parte 2».
+6. **Segunda vida**: «Parte 2: el cliente que paga a 90 días» (1.389 vistas) y «Parte 2: el bar» (710) se rehacen con el reparto vigente y el mismo arranque, como episodios nuevos. El vídeo viejo no se vuelve a subir: lleva el reparto retirado.
+7. **Comentarios**: Comunidad contesta todos en la primera hora y fija el que tenga más gracia. Si nadie comenta en 1 h, el comentario fijado de la cuenta repite la pregunta con un ejemplo propio («Yo empiezo: 120 días»).
+8. **Medir**: Analista apunta cada semana, por reel, las salidas, las veces compartido, los comentarios, qué texto llevaba en el primer fotograma y si era feed o reel de prueba. Lo deja en `equipo/virales_semana.md` con qué texto y qué apertura ganan.
+
 ## 10. Anexo: cifras verificadas (solo para el episodio de trabajo de cada tanda; confirmar la fuente antes de reutilizar)
 | Cifra | Dato | Fuente leída | Matiz |
 |---|---|---|---|
@@ -143,6 +199,7 @@ Cada red premia cosas distintas. El episodio (guion, render y patrón del §6) e
 | Registro de jornada | Obligatorio para todas las empresas desde el 12/05/2019 | Estatuto de los Trabajadores, art. 34.9, Real Decreto-ley 8/2019 | Información general, no asesoramiento legal. |
 
 ## Registro de cambios
+- 2026-11-27 (noche) · §11.2 nuevo, Instagram, a partir de los insights propios (los reels que abren en el lío tienen un 22-30 % de salidas; el formato con la casa al abrir, un 57-100 %) y de los virales del nicho (Buzzfy). Prueba con reels de prueba de la apertura en frío en 1 de cada 5 episodios, sin tocar el feed. Fuera la palabra «Moraleja» y el reparto entero del texto del post.
 - 2026-11-27 (noche) · §11 nuevo, «Adaptación por red», empezando por YouTube (orden del dueño: estudiar por qué funcionan los virales del nicho y adaptar cada red). Basado en los datos del canal propio y en los Shorts virales de autónomos y curro (Nachter). Pendiente: Instagram, Facebook y TikTok.
 - 2026-11-27 · biblia v5.3 · órdenes del dueño de ese día, en este orden: (1) la voz de Jambo no se entendía → voz de calle real, del sur y con ceceo, tras pasar por una plana y una cantarina que sonaba impostada; «el Pintas» / «el Piezas»; coletillas nuevas; mejora de planos; (2) el Guionista adapta chistes modernos y los guiones tienen que entenderse; (3) temas de casa y vida cotidiana en vez de oficina; (4) orden final: decorados con profundidad, humor negro cotidiano con gancho y enseñanza sin la palabra «moraleja», identidad y memoria de los personajes, todos aportan, noticias y aprender de lo que funciona, mejor música, fuera los créditos, nombres en el diálogo, Neogest Lab discreta en decorado o ropa y nombrada a veces, estancias con transición de la casa por fuera y más dinamismo; biblia reescrita y limpia de todo lo anterior.
 - Versiones anteriores (v1 a v5.2, del 13/11 al 23/11/2026): en el historial de git de este archivo.
