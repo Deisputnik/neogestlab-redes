@@ -1,0 +1,147 @@
+{
+ "slug": "536_jambo_disfraz_para_manana",
+ "set": "salon2",
+ "hora": 21,
+ "titulo_fijo": "CUANDO EL DISFRAZ ES PARA MAÑANA",
+ "gancho_tipo": "conflicto_en_marcha",
+ "ambito": "familia",
+ "marca": false,
+ "moraleja": "Mirar el grupo a tiempo evita disfrazarse de prisa",
+ "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+ "promesa": "¿Quién disfraza al crío esta noche?",
+ "giro": "El aviso del cole llevaba un mes en el grupo que Rosa silenció",
+ "chiste_base": "El aviso del disfraz del cole llega la noche antes y nadie lo había visto en el grupo silenciado",
+ "resumen": "Rosa descubre a las diez de la noche que el crío necesita disfraz para mañana, y resulta que silenció el grupo donde avisaron.",
+ "nombre_completo_dicho": "Rosa Melano",
+ "por_que_funcionara": "Situación que vive cualquier familia con críos; causa y efecto claros; remate en seco.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡El disfraz es para mañana! ¡Son las diez!",
+   "t": "¡El disfraz es para mañana! ¡Son las diez!",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "Tranquila, mujer. Con una sábana, de fantasma. Eso lo sé yo. Sin problema.",
+   "t": "Tranquila, mujer. Con una sábana, de fantasma. Eso lo sé yo. Sin problema.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¡La sábana buena no se toca! ¡Y nadie me avisa! ¡Ese grupo no suena!",
+   "t": "¡La sábana buena no se toca! ¡Y nadie me avisa! ¡Ese grupo no suena!",
+   "p": [
+    "rosa"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "¡Joder! ¡Silenciaste el grupo del cole hace un mes! ¡Aquí está el aviso!",
+   "t": "¡Joder! ¡Silenciaste el grupo del cole hace un mes! ¡Aquí está el aviso!",
+   "p": [
+    "sindy",
+    "jambo"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "set": "cocina2",
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Un disfraz de pirata. Veinte duros. Barato, colega.",
+   "t": "Un disfraz de pirata. Veinte duros. Barato, colega.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "Mira, Rosa Melano. ¡Un mes leyendo el grupo yo sola! ¡Qué morro!",
+   "t": "Mira, Rosa Melano. ¡Un mes leyendo el grupo yo sola! ¡Qué morro!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "set": "salon2"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "Como lo de fichar con huella. ¡Siempre igual! ¡Que lo resuelva Neo!",
+   "t": "Como lo de fichar con huella. ¡Siempre igual! ¡Que lo resuelva Neo!",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Con sábana, caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa.",
+   "t": "Resuelto. Con sábana, caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Mirar el grupo a tiempo evita disfrazarse de prisa.",
+   "t": "Mirar el grupo a tiempo evita disfrazarse de prisa.",
+   "p": [
+    "rosa",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ],
+ "_estado": "28/11 Creador: guion v5.3 validado con _validar. Voces Gemini hechas (536 y 538 renderizadas 51 s en el estudio y con control OK; 537 pendiente de reparar 537_1 y 537_3 en la rama voces/2026-11-28-creador-pm3). Sin video_externo: falta publicar el mp4 desde el estudio (el deploy lo denegó el clasificador). No tiene versión corta todavía."
+}

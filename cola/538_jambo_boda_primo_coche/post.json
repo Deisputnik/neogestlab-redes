@@ -1,0 +1,42 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "motor_voz": "voz_disenada",
+  "texto": "Rosa quiere llevar a toda la familia en un solo coche a la boda del primo, pero no caben: su coche va lleno con la tarta y cuatro sillas.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMándaselo a quien organiza los viajes familiares.\n#humornegro #bodas #familia #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-29T11:30:00+01:00",
+  "formula": "El Jambo que sabe v5.3",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; el giro es de ficción.",
+  "comentario_fijado": "¿En tu familia también se discute quién va en cada coche? Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: otro lío en casa de Rosa",
+  "youtube": {
+    "titulo": "La boda del primo y no caben 🚗 #Shorts",
+    "descripcion": "Humor negro de ficción: Rosa quiere a toda la familia en un solo coche para la boda del primo y no caben. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nWeb: neogestlab.com\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "bodas",
+      "familia"
+    ]
+  },
+  "facebook": {
+    "texto": "Rosa quiere a toda la familia en un solo coche para la boda del primo y no caben. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/50d3a13fbbba9af9065ad3c7b21233ab_538_jambo_boda_coche_v2.mp4",
+  "_nota_creador": "28/11/2026 (sesión con el dueño): mp4 renderizado por el Creador en Neogest Studio (public/entregas/) y subido a la biblioteca de medios tras publicar el estudio. Sin versión corta para TikTok (gen_episodios.py aún no la genera)."
+}

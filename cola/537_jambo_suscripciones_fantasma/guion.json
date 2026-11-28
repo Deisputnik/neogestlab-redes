@@ -1,0 +1,147 @@
+{
+ "slug": "537_jambo_suscripciones_fantasma",
+ "set": "salon2",
+ "hora": 20,
+ "titulo_fijo": "EL CUÑADO QUE PAGA CUATRO PLATAFORMAS",
+ "gancho_tipo": "afirmacion_imposible",
+ "ambito": "compras",
+ "marca": true,
+ "moraleja": "Lo que nadie ve se sigue cobrando cada mes",
+ "recuerdo": "Felipe no entendió la factura de la luz (522)",
+ "promesa": "¿Quién paga la plataforma que nadie ve?",
+ "giro": "La cuarta plataforma la contrató Rosa para un programa que nadie ve",
+ "chiste_base": "Pagas cuatro plataformas de tele y siempre acabas viendo la misma serie de hace diez años",
+ "resumen": "Felipe presume de ahorrar y Sindy descubre que pagan cuatro plataformas de tele, una de ellas que contrató Rosa y nadie ve.",
+ "nombre_completo_dicho": "ninguno",
+ "por_que_funcionara": "Todos tenemos una suscripción olvidada; Neo resuelve con una lista y un aviso, nada de consejo financiero.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "¡Solo pago una plataforma! ¡Yo ahorro mucho!",
+   "t": "¡Solo pago una plataforma! ¡Yo ahorro mucho!",
+   "p": [
+    "felipe",
+    "sindy"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "¡Mira el móvil, hombre! Salen cuatro cobros distintos. ¡Cuatro!",
+   "t": "¡Mira el móvil, hombre! Salen cuatro cobros distintos. ¡Cuatro!",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "sorpresa",
+   "v": "¿Cuatro? Pero si yo… solo veo una. La de siempre.",
+   "t": "¿Cuatro? Pero si yo… solo veo una. La de siempre.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Yo veo la del vecino. Gratis. Con su clave, colega.",
+   "t": "Yo veo la del vecino. Gratis. Con su clave, colega.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "set": "terraza"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "enfado",
+   "v": "¡Aquí nadie toca mis cosas! ¡Esa plataforma es mía! ¡Mi concurso de cocina!",
+   "t": "¡Aquí nadie toca mis cosas! ¡Esa plataforma es mía! ¡Mi concurso de cocina!",
+   "p": [
+    "rosa",
+    "jambo"
+   ],
+   "a": {
+    "rosa": "habla"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "pregunta",
+   "v": "¿Tu concurso? ¡Si no lo has visto ni un día! ¡Llevas dos años pagando!",
+   "t": "¿Tu concurso? ¡Si no lo has visto ni un día! ¡Llevas dos años pagando!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "set": "salon2"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "¡Pero qué cuñado más inútil! ¡Que lo resuelva Neo!",
+   "t": "¡Pero qué cuñado más inútil! ¡Que lo resuelva Neo!",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa.",
+   "t": "Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Lo que nadie ve se sigue cobrando cada mes.",
+   "t": "Lo que nadie ve se sigue cobrando cada mes.",
+   "p": [
+    "felipe",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ],
+ "_estado": "28/11 Creador: guion v5.3 validado con _validar. Voces Gemini hechas (536 y 538 renderizadas 51 s en el estudio y con control OK; 537 pendiente de reparar 537_1 y 537_3 en la rama voces/2026-11-28-creador-pm3). Sin video_externo: falta publicar el mp4 desde el estudio (el deploy lo denegó el clasificador). No tiene versión corta todavía."
+}

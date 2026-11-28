@@ -1,0 +1,42 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "formato": "Serie El Jambo",
+  "publico": "barrio",
+  "portada_ms": 0,
+  "monetizacion": {
+    "objetivo": "visita_perfil",
+    "oferta": "prueba gratuita en /solicitar (texto del post)",
+    "paso_embudo": "alcance → visita al perfil → prueba gratuita"
+  },
+  "musica": {
+    "titulo": "Biblioteca Pixabay de Neogest Studio",
+    "autor": "Pixabay",
+    "licencia": "Licencia de contenido de Pixabay",
+    "archivo": "estudio"
+  },
+  "motor": "neogest-studio",
+  "motor_voz": "voz_disenada",
+  "texto": "Felipe presume de ahorrar y Sindy descubre que en casa pagan cuatro plataformas de tele. La cuarta la contrató Rosa para un programa que nadie ve.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMándaselo a quien paga suscripciones que ya ni recuerda.\n#humornegro #suscripciones #ahorro #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "cuando": "2026-11-29T08:30:00+01:00",
+  "formula": "El Jambo que sabe v5.3",
+  "_fuentes": [],
+  "_comprobado": "Episodio de humor sin cifras verificables; el giro es de ficción.",
+  "comentario_fijado": "¿Cuántas plataformas pagas sin verlas? Dilo en un número. Episodio nuevo cada día en @neogestlab",
+  "avance_siguiente": "Siguiente: una boda en otra provincia y no caben en el coche",
+  "youtube": {
+    "titulo": "Cuatro plataformas y nadie las ve 📺 #Shorts",
+    "descripcion": "Humor negro de ficción: Felipe presume de ahorrar, pero en casa se pagan cuatro plataformas y una no la ve nadie. Pide tu prueba gratuita: https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube\nWeb: neogestlab.com\nBy Neogest Lab",
+    "etiquetas": [
+      "humornegro",
+      "suscripciones",
+      "ahorro"
+    ]
+  },
+  "facebook": {
+    "texto": "Felipe presume de ahorrar, pero en casa se pagan cuatro plataformas y una no la ve nadie. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+  },
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/4a5f5eea91c503b9888a15cdcb110bef_537_jambo_suscripciones_v2.mp4",
+  "_nota_creador": "28/11/2026 (sesión con el dueño): mp4 renderizado por el Creador en Neogest Studio (public/entregas/) y subido a la biblioteca de medios tras publicar el estudio. Sin versión corta para TikTok (gen_episodios.py aún no la genera)."
+}
