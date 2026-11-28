@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 78,
+  "motivos": [
+    "Ruptura de estilo grave: en t≈24,5 s aparece un plano de una casa fotorrealista (foto/render realista, luces cálidas, estética de stock americano) totalmente ajeno al estilo 2D plano/ilustrado de todo el resto del episodio (personajes, salón, terraza). Parece un clip de stock insertado por error, no una toma dibujada de la casa de la serie.",
+    "La biblia v5.3 pide planos de la casa por fuera ENTRE estancias, con encuadres distintos pero coherentes con el estilo de la serie; un salto a fotorrealismo a mitad de episodio no cumple eso y se nota a la legua (criterio H4/'parece hecho por humanos' v9: imagen inconsistente, salto de calidad que delata producción con IA sin control de estilo).",
+    "Ese plano aparece a los 24,5 s, en medio de la trama (no es la transición de casa-tras-el-gancho de la apertura en frío, que ya está bien resuelta en el fotograma 0 con el título); es un corte de continuidad adicional no previsto en el guion."
+  ],
+  "como_arreglarlo": "CREADOR: sustituir el plano fotorrealista de la casa (≈t=24,5s) por una toma de la casa en el mismo estilo 2D/ilustrado del resto del episodio (igual que las escenas de salón2 y terraza), manteniendo el mismo encuadre narrativo de transición entre estancias que pide la biblia v5.3. Re-renderizar solo ese inserto en Neogest Studio y volver a generar el mp4 completo; el resto (audio, LUFS -14, pico -1.48 dB, silencios ≤0.6s, apertura en frío, cierre con isotipo 2026 y tarjeta de marca) está correcto y no hace falta tocarlo.",
+  "fecha": "2026-11-28T11:10:49Z",
+  "revisor": "Calidad (API)"
+}

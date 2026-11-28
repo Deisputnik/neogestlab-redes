@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 86,
+  "motivos": [
+    "Vídeo correcto técnicamente: 51.28 s, 1080x1920, LUFS -14.35, pico -0.31 dB, sin silencios largos, apertura en frío cumplida (gancho con título ≤10 palabras desde el fotograma 0), cierre con remate de Neo + tarjeta de marca 2026 sin plano de casa al final: todo esto aprueba.",
+    "Texto del post incumple biblia §11: la línea 2 lista el reparto entero ('Rosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción') en vez de decir a quién mandárselo; además falta la línea 3 de pregunta que se contesta con una cifra (el comentario_fijado sí la trae pero no está en el cuerpo del post).",
+    "facebook.texto lleva el enlace de la prueba gratuita en el propio texto; la directiva exige que en Facebook el enlace vaya en el primer comentario, no en el texto.",
+    "Discrepancia menor: el post nombra a 'Concha' como personaje presente pero no aparece con línea ni acción en el guion; no es bloqueante pero conviene revisar coherencia."
+  ],
+  "fecha": "2026-11-28T11:11:21Z",
+  "revisor": "Calidad (API)"
+}

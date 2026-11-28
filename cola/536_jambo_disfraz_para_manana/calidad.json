@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 84,
+  "motivos": [
+    "B6 (pie del post): la línea 2 del texto de Instagram lista el reparto entero ('Rosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción'), justo lo que la biblia §11/B6 prohíbe explícitamente; además falta la línea 3 obligatoria de pregunta que se conteste con una cifra (el texto pasa del reparto directo al CTA de mandárselo a alguien)",
+    "Inconsistencia de contenido: el texto del post nombra a 'Concha' como parte del reparto de este episodio, pero Concha no aparece en ninguna escena del guion ni se la menciona en el diálogo; es una afirmación sobre el contenido que no se sostiene con lo que se ve/oye en el vídeo"
+  ],
+  "como_arreglarlo": "CALIDAD/texto (no requiere render): reescribir la línea 2-3 del post sin listar el reparto completo, siguiendo el patrón de biblia §11: línea 1 situación (ya está bien), línea 2 a quién mandárselo (ya está, pero quitar el listado de nombres), línea 3 una pregunta que se conteste con una cifra (p.ej. '¿Cuántos avisos tenías sin leer en el grupo del cole?'). Quitar a 'Concha' de la mención si no participa en el episodio, o confirmar con el Creador si falta una escena suya; marcar renderizado:false solo si se decide tocar el guion, si es solo el texto del post basta con editar post.json y relanzar sin re-render.",
+  "fecha": "2026-11-28T11:10:19Z",
+  "revisor": "Calidad (API)"
+}
