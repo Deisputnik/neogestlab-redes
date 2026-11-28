@@ -1,5 +1,5 @@
 {
- "_nota": "28/11/2026: rehacer voces de 530 y 535 (bloqueo de control_audio: «el Neo» y «lentejas» no se entendían). Con la protección de palabras claras de herramientas/voces_gemini.py.",
+ "_nota": "28/11/2026: rehacer voces de 530 y 535 (bloqueo de control_audio: «el Neo» y «lentejas» no se entendían). Con la protección de palabras claras de herramientas/voces_gemini.py. Pasada 2 (reparación automática activa).",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
