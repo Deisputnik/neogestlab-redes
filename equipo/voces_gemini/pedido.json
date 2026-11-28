@@ -1,31 +1,40 @@
 {
- "_nota": "28/11/2026 09:20: reparar 535 tras el control del mp4 final: 535_2 «Manda», 535_4 «yogures», 535_6 «¡Ah!» de más, 535_7 «Resuelto» y «el lunes». 530 ya aprobado.",
+ "_nota": "28/11/2026 Creador: reparar 537_1 (Anda ya/Felipe) y 537_3 (tronco) tras el control del mp4 final.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
  ],
+ "reparar": {
+  "base": "https://media.zernio.com/temp/1795858436180_1cd75574ce2e2565_voces_536_537_538.mp3",
+  "replicas": [
+   "537_1",
+   "537_3"
+  ]
+ },
  "episodios": [
   {
-   "slug": "530_jambo_fuga_banera_rebosando",
-   "set": "salon",
-   "hora": 2,
-   "moraleja": "Quien manda en casa también cierra el grifo",
+   "slug": "536_jambo_disfraz_para_manana",
+   "set": "salon2",
+   "hora": 21,
+   "titulo_fijo": "CUANDO EL DISFRAZ ES PARA MAÑANA",
+   "gancho_tipo": "conflicto_en_marcha",
+   "ambito": "familia",
+   "marca": false,
+   "moraleja": "Mirar el grupo a tiempo evita disfrazarse de prisa",
    "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
-   "bucle_visual": "Rosa con el cubo en la mano, misma pose",
-   "gancho_tipo": "afirmacion_imposible",
-   "gancho_casa": "¡Se inunda el salón! 👀",
-   "promesa": "¿Quién ha dejado el agua abierta?",
-   "giro": "El agua no salía del fregadero: la bañera de Rosa llevaba rebosando desde las diez",
-   "ambito": "casa",
-   "chiste_base": "Se inunda la casa y la culpable jura que no ha tocado nada",
-   "resumen": "Madrugada, el salón se inunda y Rosa jura que ella no ha tocado nada, hasta que se descubre su bañera rebosando.",
+   "promesa": "¿Quién disfraza al crío esta noche?",
+   "giro": "El aviso del cole llevaba un mes en el grupo que Rosa silenció",
+   "chiste_base": "El aviso del disfraz del cole llega la noche antes y nadie lo había visto en el grupo silenciado",
+   "resumen": "Rosa descubre a las diez de la noche que el crío necesita disfraz para mañana, y resulta que silenció el grupo donde avisaron.",
+   "nombre_completo_dicho": "Rosa Melano",
+   "por_que_funcionara": "Situación que vive cualquier familia con críos; causa y efecto claros; remate en seco.",
    "escenas": [
     {
      "e": "gancho",
      "h": "rosa",
      "emo": "grita",
-     "v": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
-     "t": "¡Se inunda el salón! ¡Y yo no he tocado nada!",
+     "v": "¡El disfraz es para mañana! ¡Son las diez!",
+     "t": "¡El disfraz es para mañana! ¡Son las diez!",
      "p": [
       "rosa",
       "felipe"
@@ -38,8 +47,8 @@
      "e": "gag",
      "h": "felipe",
      "emo": "chulea",
-     "v": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
-     "t": "¡Tranquila, Rosa! Es la presión del agua. Lo sé.",
+     "v": "Tranquila, mujer. Con una sábana, de fantasma. Eso lo sé yo. Sin problema.",
+     "t": "Tranquila, mujer. Con una sábana, de fantasma. Eso lo sé yo. Sin problema.",
      "p": [
       "felipe"
      ],
@@ -49,23 +58,39 @@
     },
     {
      "e": "gag",
-     "h": "sindy",
+     "h": "rosa",
      "emo": "enfado",
-     "v": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
-     "t": "¡Manda huevos! Llevo una hora con el cubo. ¡Descalza!",
+     "v": "¡La sábana buena no se toca! ¡Y nadie me avisa! ¡Ese grupo no suena!",
+     "t": "¡La sábana buena no se toca! ¡Y nadie me avisa! ¡Ese grupo no suena!",
      "p": [
-      "sindy"
+      "rosa"
+     ],
+     "a": {
+      "rosa": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "sorpresa",
+     "v": "¡Joder! ¡Silenciaste el grupo del cole hace un mes! ¡Aquí está el aviso!",
+     "t": "¡Joder! ¡Silenciaste el grupo del cole hace un mes! ¡Aquí está el aviso!",
+     "p": [
+      "sindy",
+      "jambo"
      ],
      "a": {
       "sindy": "habla"
-     }
+     },
+     "set": "cocina2",
+     "giro": true
     },
     {
      "e": "gag",
      "h": "jambo",
      "emo": "cansado",
-     "v": "Prima… yo tapo el agujero con un bocadillo.",
-     "t": "Prima… yo tapo el agujero con un bocadillo.",
+     "v": "Un disfraz de pirata. Veinte duros. Barato, colega.",
+     "t": "Un disfraz de pirata. Veinte duros. Barato, colega.",
      "p": [
       "jambo"
      ],
@@ -76,9 +101,9 @@
     {
      "e": "gag",
      "h": "sindy",
-     "emo": "sorpresa",
-     "v": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
-     "t": "¡Ojo! ¡Tu bañera lleva rebosando desde las diez!",
+     "emo": "enfado",
+     "v": "Mira, Rosa Melano. ¡Un mes leyendo el grupo yo sola! ¡Qué morro!",
+     "t": "Mira, Rosa Melano. ¡Un mes leyendo el grupo yo sola! ¡Qué morro!",
      "p": [
       "sindy",
       "rosa"
@@ -86,27 +111,14 @@
      "a": {
       "sindy": "habla"
      },
-     "giro": true
-    },
-    {
-     "e": "gag",
-     "h": "conchaqueton",
-     "emo": "llora",
-     "v": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
-     "t": "¡Como lo de fichar con huella! ¡Siempre acaba pagando otra!",
-     "p": [
-      "conchaqueton"
-     ],
-     "a": {
-      "conchaqueton": "habla"
-     }
+     "set": "salon2"
     },
     {
      "e": "gag",
      "h": "felipe",
      "emo": "grita",
-     "v": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
-     "t": "¡Ya vale, Rosa! ¡Que lo resuelva el Neo!",
+     "v": "Como lo de fichar con huella. ¡Siempre igual! ¡Que lo resuelva Neo!",
+     "t": "Como lo de fichar con huella. ¡Siempre igual! ¡Que lo resuelva Neo!",
      "p": [
       "felipe"
      ],
@@ -119,8 +131,8 @@
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
-     "t": "Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted.",
+     "v": "Resuelto. Con sábana, caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa.",
+     "t": "Resuelto. Con sábana, caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa.",
      "p": [
       "neo",
       "rosa"
@@ -134,8 +146,154 @@
      "e": "cierre",
      "h": "neo",
      "emo": "normal",
-     "v": "Quien manda en casa también cierra el grifo.",
-     "t": "Quien manda en casa también cierra el grifo.",
+     "v": "Mirar el grupo a tiempo evita disfrazarse de prisa.",
+     "t": "Mirar el grupo a tiempo evita disfrazarse de prisa.",
+     "p": [
+      "rosa",
+      "neo"
+     ],
+     "a": {
+      "neo": "habla"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "537_jambo_suscripciones_fantasma",
+   "set": "salon2",
+   "hora": 20,
+   "titulo_fijo": "EL CUÑADO QUE PAGA CUATRO PLATAFORMAS",
+   "gancho_tipo": "afirmacion_imposible",
+   "ambito": "compras",
+   "marca": true,
+   "moraleja": "Lo que nadie ve se sigue cobrando cada mes",
+   "recuerdo": "Felipe no entendió la factura de la luz (522)",
+   "promesa": "¿Quién paga la plataforma que nadie ve?",
+   "giro": "La cuarta plataforma la contrató Rosa para un programa que nadie ve",
+   "chiste_base": "Pagas cuatro plataformas de tele y siempre acabas viendo la misma serie de hace diez años",
+   "resumen": "Felipe presume de ahorrar y Sindy descubre que pagan cuatro plataformas de tele, una de ellas que contrató Rosa y nadie ve.",
+   "nombre_completo_dicho": "ninguno",
+   "por_que_funcionara": "Todos tenemos una suscripción olvidada; Neo resuelve con una lista y un aviso, nada de consejo financiero.",
+   "escenas": [
+    {
+     "e": "gancho",
+     "h": "felipe",
+     "emo": "chulea",
+     "v": "¡Solo pago una plataforma! ¡Yo ahorro mucho!",
+     "t": "¡Solo pago una plataforma! ¡Yo ahorro mucho!",
+     "p": [
+      "felipe",
+      "sindy"
+     ],
+     "a": {
+      "felipe": "presume"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "enfado",
+     "v": "¡Mira el móvil, hombre! Salen cuatro cobros distintos. ¡Cuatro!",
+     "t": "¡Mira el móvil, hombre! Salen cuatro cobros distintos. ¡Cuatro!",
+     "p": [
+      "sindy"
+     ],
+     "a": {
+      "sindy": "habla"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "sorpresa",
+     "v": "¿Cuatro? Pero si yo… solo veo una. La de siempre.",
+     "t": "¿Cuatro? Pero si yo… solo veo una. La de siempre.",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     }
+    },
+    {
+     "e": "gag",
+     "h": "jambo",
+     "emo": "cansado",
+     "v": "Yo veo la del vecino. Gratis. Con su clave, colega.",
+     "t": "Yo veo la del vecino. Gratis. Con su clave, colega.",
+     "p": [
+      "jambo"
+     ],
+     "a": {
+      "jambo": "habla"
+     },
+     "set": "terraza"
+    },
+    {
+     "e": "gag",
+     "h": "rosa",
+     "emo": "enfado",
+     "v": "¡Aquí nadie toca mis cosas! ¡Esa plataforma es mía! ¡Mi concurso de cocina!",
+     "t": "¡Aquí nadie toca mis cosas! ¡Esa plataforma es mía! ¡Mi concurso de cocina!",
+     "p": [
+      "rosa",
+      "jambo"
+     ],
+     "a": {
+      "rosa": "habla"
+     },
+     "giro": true
+    },
+    {
+     "e": "gag",
+     "h": "sindy",
+     "emo": "pregunta",
+     "v": "¿Tu concurso? ¡Si no lo has visto ni un día! ¡Llevas dos años pagando!",
+     "t": "¿Tu concurso? ¡Si no lo has visto ni un día! ¡Llevas dos años pagando!",
+     "p": [
+      "sindy",
+      "rosa"
+     ],
+     "a": {
+      "sindy": "habla"
+     },
+     "set": "salon2"
+    },
+    {
+     "e": "gag",
+     "h": "felipe",
+     "emo": "grita",
+     "v": "¡Pero qué cuñado más inútil! ¡Que lo resuelva Neo!",
+     "t": "¡Pero qué cuñado más inútil! ¡Que lo resuelva Neo!",
+     "p": [
+      "felipe"
+     ],
+     "a": {
+      "felipe": "desespera"
+     },
+     "risas": true
+    },
+    {
+     "e": "remate",
+     "h": "neo",
+     "emo": "seco",
+     "v": "Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa.",
+     "t": "Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa.",
+     "p": [
+      "neo",
+      "rosa"
+     ],
+     "a": {
+      "neo": "fria"
+     },
+     "sello": "PILLADA"
+    },
+    {
+     "e": "cierre",
+     "h": "neo",
+     "emo": "normal",
+     "v": "Lo que nadie ve se sigue cobrando cada mes.",
+     "t": "Lo que nadie ve se sigue cobrando cada mes.",
      "p": [
       "felipe",
       "neo"
@@ -144,34 +302,31 @@
       "neo": "habla"
      }
     }
-   ],
-   "claras": [
-    "descalza",
-    "empieza",
-    "usted"
    ]
   },
   {
-   "slug": "535_jambo_menu_lentejas_nevera",
-   "set": "salon",
-   "hora": 14,
-   "moraleja": "Planificar la semana evita comer lentejas cada día",
+   "slug": "538_jambo_boda_primo_coche",
+   "set": "portal",
+   "hora": 11,
+   "titulo_fijo": "CUANDO LA BODA ES EN OTRA PROVINCIA",
+   "gancho_tipo": "amenaza_con_plazo",
+   "ambito": "ocio_y_viajes",
+   "marca": false,
+   "moraleja": "Un plan escrito evita discutir dentro del coche",
    "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
-   "bucle_visual": "Rosa con la olla de lentejas, misma pose",
-   "gancho_tipo": "pregunta_abierta",
-   "gancho_casa": "¡Tres días comiendo lentejas! 👀",
-   "promesa": "¿Quién hizo la compra de esta semana?",
-   "giro": "La nevera estaba llena de yogures de Rosa y por eso sobraban lentejas",
-   "ambito": "casa",
-   "chiste_base": "Se repite la comida toda la semana por no planificar el menú",
-   "resumen": "Tres días de lentejas y nadie sabe quién hizo la compra, hasta que se abre la nevera y Neo hace el menú.",
+   "promesa": "¿Quién va en cada coche a la boda?",
+   "giro": "El coche de Rosa no tenía sitio porque llevaba la tarta y cuatro sillas",
+   "chiste_base": "Seis personas, un coche de cinco plazas y todos jurando que cabe uno más",
+   "resumen": "Rosa quiere ir toda la familia en un solo coche a la boda del primo, pero no caben, y Neo reparte coches y horas.",
+   "nombre_completo_dicho": "Rosa Melano",
+   "por_que_funcionara": "Viaje en familia: todos reconocen el lío de quién va con quién; causa y efecto claros.",
    "escenas": [
     {
      "e": "gancho",
      "h": "rosa",
      "emo": "grita",
-     "v": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
-     "t": "¡Tres días comiendo lentejas! ¿Quién hizo la compra?",
+     "v": "¡Nos vamos todos en mi coche!",
+     "t": "¡Nos vamos todos en mi coche!",
      "p": [
       "rosa",
       "felipe"
@@ -184,8 +339,8 @@
      "e": "gag",
      "h": "felipe",
      "emo": "chulea",
-     "v": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
-     "t": "¡Tranquila, Rosa! Lo barato nunca falla. Es ciencia.",
+     "v": "Caben seis. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo.",
+     "t": "Caben seis. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo.",
      "p": [
       "felipe"
      ],
@@ -197,8 +352,8 @@
      "e": "gag",
      "h": "sindy",
      "emo": "enfado",
-     "v": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
-     "t": "¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!",
+     "v": "¡Apretar, dice! ¡Cinco plazas, Felipe! ¡Y tú pesas por tres!",
+     "t": "¡Apretar, dice! ¡Cinco plazas, Felipe! ¡Y tú pesas por tres!",
      "p": [
       "sindy"
      ],
@@ -210,54 +365,57 @@
      "e": "gag",
      "h": "jambo",
      "emo": "cansado",
-     "v": "Prima… yo me como las lentejas. Todas.",
-     "t": "Prima… yo me como las lentejas. Todas.",
+     "v": "Yo voy en el maletero. Gratis. Sin problema, colega.",
+     "t": "Yo voy en el maletero. Gratis. Sin problema, colega.",
      "p": [
       "jambo"
      ],
      "a": {
       "jambo": "habla"
-     }
+     },
+     "set": "calle"
     },
     {
      "e": "gag",
-     "h": "felipe",
-     "emo": "sorpresa",
-     "v": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
-     "t": "¡Rosa, abre la nevera! ¡Hay doce yogures tuyos!",
+     "h": "rosa",
+     "emo": "grita",
+     "v": "¡Pues el maletero lleva la tarta! ¡Y cuatro sillas! ¡Para mi mesa!",
+     "t": "¡Pues el maletero lleva la tarta! ¡Y cuatro sillas! ¡Para mi mesa!",
      "p": [
-      "felipe",
-      "rosa"
+      "rosa",
+      "jambo"
      ],
      "a": {
-      "felipe": "habla"
+      "rosa": "desespera"
      },
      "giro": true
     },
     {
      "e": "gag",
-     "h": "conchaqueton",
-     "emo": "llora",
-     "v": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
-     "t": "¡Como lo de fichar con huella! ¡Manda ella y no compra!",
+     "h": "sindy",
+     "emo": "sorpresa",
+     "v": "Mira, Rosa Melano. ¡Cinco plazas, no seis! ¡Qué manía!",
+     "t": "Mira, Rosa Melano. ¡Cinco plazas, no seis! ¡Qué manía!",
      "p": [
-      "conchaqueton"
+      "sindy",
+      "rosa"
      ],
      "a": {
-      "conchaqueton": "habla"
-     }
+      "sindy": "habla"
+     },
+     "set": "portal"
     },
     {
      "e": "gag",
-     "h": "sindy",
+     "h": "felipe",
      "emo": "grita",
-     "v": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
-     "t": "¡Ya vale, joder! ¡Que lo resuelva el Neo!",
+     "v": "Como lo de fichar con huella. ¡Todo mal! ¡Que lo resuelva Neo!",
+     "t": "Como lo de fichar con huella. ¡Todo mal! ¡Que lo resuelva Neo!",
      "p": [
-      "sindy"
+      "felipe"
      ],
      "a": {
-      "sindy": "desespera"
+      "felipe": "desespera"
      },
      "risas": true
     },
@@ -265,8 +423,8 @@
      "e": "remate",
      "h": "neo",
      "emo": "seco",
-     "v": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
-     "t": "Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.",
+     "v": "Resuelto. Dos coches, tres personas en cada uno, parada a mitad de camino. Horas en el grupo, Rosa.",
+     "t": "Resuelto. Dos coches, tres personas en cada uno, parada a mitad de camino. Horas en el grupo, Rosa.",
      "p": [
       "neo",
       "rosa"
@@ -280,34 +438,17 @@
      "e": "cierre",
      "h": "neo",
      "emo": "normal",
-     "v": "Planificar la semana evita comer lentejas cada día.",
-     "t": "Planificar la semana evita comer lentejas cada día.",
+     "v": "Un plan escrito evita discutir dentro del coche.",
+     "t": "Un plan escrito evita discutir dentro del coche.",
      "p": [
-      "felipe",
+      "rosa",
       "neo"
      ],
      "a": {
       "neo": "habla"
      }
     }
-   ],
-   "claras": [
-    "lentejas",
-    "yogures",
-    "todas",
-    "manda",
-    "resuelto",
-    "lunes"
    ]
   }
- ],
- "reparar": {
-  "base": "https://media.zernio.com/temp/1795852988722_b3da8023b8816e18_voces_530_535.mp3",
-  "replicas": [
-   "535_2",
-   "535_4",
-   "535_6",
-   "535_7"
-  ]
- }
+ ]
 }
