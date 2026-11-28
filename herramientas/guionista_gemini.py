@@ -942,6 +942,74 @@ def _validar_retencion(ep, escenas, gags, remate):
 RONDAS_CORRECCION = 2
 MAX_EN_ESPERA = 8   # guiones sin usar en pendientes/ a partir de los cuales no se piden más
 
+# 24/11/2026 (orden del dueño: «elimina el embudo»): un guion que SOLO falla por frases largas (réplica de Jambo,
+# gag, gancho o remate) ya no se pierde ni gasta una ronda de corrección entera:
+# 1) se le piden a Gemini SOLO esas frases, recortadas (una llamada corta para todos los guiones de la ronda);
+# 2) si aun así queda alguna larga, el guion se guarda igual en pendientes/ con el campo "ajustar" (qué frase recortar);
+#    el Creador adapta cada guion antes de renderizar, así que recorta esa frase y no escribe uno desde cero.
+# Los topes no cambian (MAX_PALABRAS_JAMBO, MAX_PALABRAS_GAG, MAX_PALABRAS_REMATE, gancho de 8).
+PATRON_SOLO_LARGO = re.compile(r"^(réplica de Jambo con \d+ palabras|gag \d+ tiene \d+ palabras|el gancho supera las 8 palabras"
+                               r"|remate de Neo con \d+ palabras)")
+
+
+def _solo_largo(motivos):
+    return bool(motivos) and all(PATRON_SOLO_LARGO.match(m) for m in motivos)
+
+
+def _frases_largas(ep):
+    """[(índice de escena, tope de palabras)] de cada réplica que se pasa del tope que aplica _validar."""
+    fuera = []
+    for i, e in enumerate(ep.get("escenas") or []):
+        if not isinstance(e, dict):
+            continue
+        n = len(str(e.get("t", "")).split())
+        tope = None
+        if i == 0 and e.get("h"):
+            tope = 8
+        if e.get("h") == "jambo":
+            tope = min(tope or MAX_PALABRAS_JAMBO, MAX_PALABRAS_JAMBO)
+        if e.get("e") == "gag":
+            tope = min(tope or MAX_PALABRAS_GAG, MAX_PALABRAS_GAG)
+        if e.get("e") == "remate":
+            tope = min(tope or MAX_PALABRAS_REMATE, MAX_PALABRAS_REMATE)
+        if tope and n > tope:
+            fuera.append((i, tope))
+    return fuera
+
+
+def _recortar_frases(malos):
+    """Pide a Gemini solo las frases largas de estos guiones, más cortas, y las sustituye si cumplen el tope."""
+    casos = []
+    for k, (ep, _) in enumerate(malos):
+        for i, tope in _frases_largas(ep):
+            e = ep["escenas"][i]
+            casos.append({"id": f"{k}:{i}", "personaje": e.get("h"), "emo": e.get("emo"), "max_palabras": tope, "frase": e.get("t")})
+    if not casos:
+        return
+    print(f"Recorte por frases: {len(casos)} frases largas vuelven a Gemini (solo la frase, no el guion)")
+    resp = _llamar_gemini(
+        "Eres el guionista de la serie de humor «El Jambo que sabe». Estas frases de tus guiones son DEMASIADO LARGAS para "
+        "decirlas en voz. Reescribe cada una con el mismo chiste, el mismo registro de barrio y la misma emoción, pero con "
+        "\"max_palabras\" palabras COMO MÁXIMO (cuéntalas una a una; mejor que sobren dos que pasarte por una). Quita relleno, "
+        "no cambies de tema, no añadas nombres propios ni la palabra «Jambo», cifras siempre en letra. Devuelve SOLO un array "
+        "JSON con un objeto por frase: {\"id\": \"el mismo id\", \"frase\": \"la frase recortada\"}.\n\n"
+        + json.dumps(casos, ensure_ascii=False, indent=1)
+    )
+    if isinstance(resp, dict):
+        resp = resp.get("frases") if isinstance(resp.get("frases"), list) else [resp]
+    if not isinstance(resp, list):
+        return
+    for r in resp:
+        try:
+            k, i = (int(x) for x in str(r.get("id")).split(":"))
+            ep = malos[k][0]
+            tope = dict(_frases_largas(ep)).get(i)
+            nueva = str(r.get("frase") or "").strip()
+        except (AttributeError, ValueError, IndexError, TypeError):
+            continue
+        if tope and nueva and len(nueva.split()) <= tope and not re.search(r"\bjambo\b", nueva, re.I):
+            ep["escenas"][i]["t"] = nueva
+
 
 def _prompt_correccion(malos):
     """Devuelve a Gemini los guiones rechazados con sus motivos para que los arregle sin cambiar la idea."""
@@ -1026,7 +1094,25 @@ def main():
     # validador tumbó los 4 guiones (gag de 15-21 palabras, falta bucle_visual, gancho de más de 8 palabras) y la
     # pasada terminaba con 0 guardados: el Creador se quedaba sin guiones para los 5 episodios diarios. Ahora lo
     # rechazado vuelve a Gemini con sus motivos para que lo corrija (hasta 2 rondas) antes de darlo por perdido.
-    guardados, rechazados = [], []
+    guardados, rechazados, por_ajustar = [], [], []
+
+    def _guardar(ep, i, ronda, ajustar=False):
+        slug = re.sub(r"[^a-z0-9_]+", "_", str(ep.get("slug") or "").lower()).strip("_") or f"ep{i}"
+        nombre = f"{hoy}_{slug}.json"
+        ep["fuente"] = "gemini"
+        ep["generado"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        if ronda:
+            ep["corregido_en_ronda"] = ronda
+        if ajustar:
+            ep["ajustar"] = ["ANTES DE RENDERIZAR recorta estas frases (el resto del guion pasa el validador):"] + [
+                f"escena {n + 1} ({ep['escenas'][n].get('h')}), máximo {tope} palabras: «{ep['escenas'][n].get('t')}»"
+                for n, tope in _frases_largas(ep)
+            ]
+        with open(os.path.join(PENDIENTES, nombre), "w", encoding="utf-8") as f:
+            json.dump(ep, f, ensure_ascii=False, indent=2)
+        guardados.append(nombre)
+        return nombre
+
     lote = guiones
     for ronda in range(RONDAS_CORRECCION + 1):
         malos = []
@@ -1038,16 +1124,21 @@ def main():
             if motivos:
                 malos.append((ep, motivos))
                 continue
-            slug = re.sub(r"[^a-z0-9_]+", "_", str(ep["slug"]).lower()).strip("_") or f"ep{i}"
-            nombre = f"{hoy}_{slug}.json"
-            ruta = os.path.join(PENDIENTES, nombre)
-            ep["fuente"] = "gemini"
-            ep["generado"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            if ronda:
-                ep["corregido_en_ronda"] = ronda
-            with open(ruta, "w", encoding="utf-8") as f:
-                json.dump(ep, f, ensure_ascii=False, indent=2)
-            guardados.append(nombre)
+            _guardar(ep, i, ronda)
+        # 24/11/2026: lo que solo falla por frases largas se arregla frase a frase (ver PATRON_SOLO_LARGO), sin
+        # devolver el guion entero ni gastar una ronda de corrección en él.
+        largos = [(ep, m) for ep, m in malos if _solo_largo(m)]
+        if largos:
+            _recortar_frases(largos)
+            malos = [(ep, m) for ep, m in malos if not _solo_largo(m)]
+            for i, (ep, _) in enumerate(largos):
+                motivos = _validar(ep)
+                if not motivos:
+                    _guardar(ep, i, ronda)
+                elif _solo_largo(motivos):
+                    por_ajustar.append(_guardar(ep, i, ronda, ajustar=True))
+                else:
+                    malos.append((ep, motivos))
         corregidos = None
         if malos and ronda < RONDAS_CORRECCION:
             print(f"Ronda de corrección {ronda + 1}: {len(malos)} guiones vuelven a Gemini con sus motivos")
@@ -1060,6 +1151,8 @@ def main():
         lote = corregidos
 
     resumen = f"{len(guardados)} guardados, {len(rechazados)} rechazados por el validador"
+    if por_ajustar:
+        resumen += f" · {len(por_ajustar)} de los guardados llevan «ajustar» (Creador: recorta la frase que indica antes de renderizar)"
     if rechazados:
         detalle = "; ".join(f"{slug}: {', '.join(m)}" for slug, m in rechazados[:3])
         resumen += f" ({detalle})"
