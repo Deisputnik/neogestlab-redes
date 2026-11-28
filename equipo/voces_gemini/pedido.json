@@ -1,5 +1,5 @@
 {
- "_nota": "28/11/2026: reparar 530/535 sobre la pasada 2; solo se repiten las réplicas que no pasaron el control.",
+ "_nota": "28/11/2026 09:00: reparar 530/535 tras el control del mp4 final (Calidad): 530_2 descalza, 530_7 empieza, 530_8 «vale» de más, 535_3 todas.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
@@ -144,6 +144,11 @@
       "neo": "habla"
      }
     }
+   ],
+   "claras": [
+    "descalza",
+    "empieza",
+    "usted"
    ]
   },
   {
@@ -288,16 +293,18 @@
    ],
    "claras": [
     "lentejas",
-    "yogures"
+    "yogures",
+    "todas"
    ]
   }
  ],
  "reparar": {
-  "base": "https://media.zernio.com/temp/1795847773062_223394036c413a5a_voces_530_535.mp3",
+  "base": "https://media.zernio.com/temp/1795848156364_9b17a838a6d5d2ef_voces_530_535.mp3",
   "replicas": [
-   "530_6",
-   "535_1",
-   "530_2"
+   "530_2",
+   "530_7",
+   "530_8",
+   "535_3"
   ]
  }
 }
