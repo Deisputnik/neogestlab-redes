@@ -1,0 +1,141 @@
+{
+  "slug": "533_jambo_derrama_humedad",
+  "set": "portal",
+  "hora": 17,
+  "moraleja": "Ignorar la gotera multiplica el gasto final.",
+  "recuerdo": "Como cuando fichábamos gratis en la casa.",
+  "titulo_fijo": "CUANDO LLEGA LA DERRAMA POR GOTERAS",
+  "bucle_visual": "",
+  "gancho_tipo": "afirmacion_imposible",
+  "promesa": "¿Quién causó la gotera del portal?",
+  "giro": "Felipe culpaba a la lluvia y el agua venía de la bañera de Rosa.",
+  "marca": false,
+  "nombre_completo_dicho": "sindy",
+  "por_que_funcionara": "Fórmula viral de bronca de comunidad de vecinos con roles de barrio muy compartible en WhatsApp y Facebook.",
+  "ambito": "barrio",
+  "chiste_base": "Una junta vecinal improvisada en el portal por una gotera gigante donde todos echan balones fuera.",
+  "resumen": "Los vecinos se pelean por pagar un parche en el portal hasta que la IA descubre de qué piso cae el agua.",
+  "coletillas_nuevas": {
+    "jambo": "el agua busca camino",
+    "rosa": "a mí no me salpiques",
+    "felipe": "eso es condensación pura",
+    "sindy": "se cae el techo encima"
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "sindy",
+      "emo": "grita",
+      "t": "¡El techo del portal se cae a pedazos!",
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "t": "Eso es condensación pura. Lo he visto en internet, Sindy."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "set": "salon2",
+      "p": [
+        "rosa",
+        "sindy"
+      ],
+      "t": "A mí no me salpiques. Yo no pago derramas tuberías."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "¡Coño, Rosa! Llueve dentro y huele a sales de lavanda."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "set": "portal",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo… el agua busca camino. Dame diez duros, anda."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "giro": true,
+      "p": [
+        "felipe",
+        "rosa"
+      ],
+      "t": "¡Hostia, Rosa! Tu jacuzzi de plástico está rebosando al pasillo."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "rie",
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "risas": true,
+      "t": "¡Manda huevos! Te montas balneario y culpas a las nubes."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "¿Acaso no puedo relajarme en mi propia casa?"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "enfado",
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "t": "¡No cuando inundas la entrada de todos los vecinos!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, la gotera del techo la provocó tu bañera desbordada mientras escuchabas música."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "La culpa comunitaria casi siempre tiene dueño.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-28T09:23:45Z",
+  "corregido_en_ronda": 1
+}

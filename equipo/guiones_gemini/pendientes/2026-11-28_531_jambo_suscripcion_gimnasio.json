@@ -1,0 +1,141 @@
+{
+  "slug": "531_jambo_suscripcion_gimnasio",
+  "set": "salon2",
+  "hora": 11,
+  "moraleja": "Firmar sin leer cuesta dinero cada mes.",
+  "recuerdo": "Como cuando nadie quería pagar las botellas rotas.",
+  "titulo_fijo": "CUANDO LLEGA EL CARGO DEL GIMNASIO",
+  "bucle_visual": "",
+  "gancho_tipo": "amenaza_con_plazo",
+  "promesa": "¿Quién autorizó la cuota del gimnasio?",
+  "giro": "Rosa acusaba a Felipe y fue ella quien aceptó la permanencia.",
+  "marca": false,
+  "nombre_completo_dicho": "rosa",
+  "por_que_funcionara": "Aplica el viral de las suscripciones trampa olvidadas que generan alto engagement en Instagram y Facebook.",
+  "ambito": "compras",
+  "chiste_base": "Llega un cargo bancario por un gimnasio al que nadie va y todos juran que no han firmado nada.",
+  "resumen": "Rosa monta en cólera por un recibo del gimnasio, acusa al resto y la IA demuestra que ella lo contrató por error.",
+  "coletillas_nuevas": {
+    "jambo": "el menda entrena gratis",
+    "rosa": "a mí no me timan",
+    "felipe": "eso desgrava fijo",
+    "sindy": "vaya tela marinera"
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Cincuenta euros del gimnasio! ¿Quién ha sido?",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "Eso desgrava fijo, Rosa. Ponte las zapatillas y cállate ya."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "ironia",
+      "set": "cocina2",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "¡Joder, Rosa! Aquí el único músculo que usas es la lengua."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "enfado",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "A mí no me timan. Neo investigará este fraude bancario."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "cansado",
+      "set": "portal",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Chacho… el menda entrena gratis. Dame un cigarro, quillo."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "giro": true,
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "t": "¡Hostia! El contrato tiene foto de carnet y tu firma."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "rie",
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "risas": true,
+      "t": "¡Vaya tela marinera! Salías tú posando con mallas fluorescentes."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "¿Por qué firmé esa cuota sin leer la letra pequeña?"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "rie",
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "t": "¡Te regalaban una toalla rosa y caíste como siempre!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, autorizaste la cuota del gimnasio para tener toalla gratis y la baja requiere tres meses."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "El regalo de bienvenida siempre se paga caro.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-28T09:23:45Z",
+  "corregido_en_ronda": 1
+}

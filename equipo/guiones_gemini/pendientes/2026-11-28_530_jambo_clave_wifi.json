@@ -1,0 +1,141 @@
+{
+  "slug": "530_jambo_clave_wifi",
+  "set": "salon2",
+  "hora": 19,
+  "moraleja": "Lo que ahorras pirateando lo pagas luego.",
+  "recuerdo": "Como la factura de luz de novecientos euros.",
+  "titulo_fijo": "CUANDO TE CAMBIAN LA CLAVE DEL WIFI",
+  "bucle_visual": "",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién ha cambiado la clave del wifi?",
+  "giro": "Felipe creía que pirateaban al cuarto y la red era del Pintas.",
+  "marca": false,
+  "nombre_completo_dicho": "felipe",
+  "por_que_funcionara": "Aplica el patrón de conflicto doméstico inmediato por internet y cuñado sabelotodo que triunfa en vídeos cortos.",
+  "ambito": "casa",
+  "chiste_base": "Toda la casa se queda sin conexión porque alguien no pagó su parte del wifi pirateado al vecino.",
+  "resumen": "Rosa se queda sin internet para ver sus series, culpa a Felipe y descubren que el router lo manejaba el Pintas.",
+  "coletillas_nuevas": {
+    "jambo": "al loro con la antena",
+    "rosa": "aquí se respeta el streaming",
+    "felipe": "eso cae por satélite",
+    "sindy": "a mí no me enredes"
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡Felipe! ¡Nos han cortado el internet ahora mismo!",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "Tranquila, Rosa. Eso cae por satélite. Lo sé seguro."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "set": "cocina2",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "¡Coño, Rosa! Llevas seis meses chupando del router del tercero."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "Aquí se respeta el streaming. Felipe prometió señal eterna."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "set": "portal",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo… al loro con la antena. Fíame dos pavos."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "sorpresa",
+      "giro": true,
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "t": "¡Hostia! La red no era del vecino. Es del Pintas."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "rie",
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "risas": true,
+      "t": "¡Manda huevos! Le pagabas al Pintas por aire. Que lo arregle Neo."
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "pregunta",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "¿Y dónde está la antena de ese vagabundo ahora?"
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "enfado",
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "t": "¡Está pegada con chicle al marco de la ventana!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, cortaron el internet al desenchufar Felipe la red para su maquinilla."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Quien busca señal gratis acaba desconectado siempre.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-28T09:23:45Z",
+  "corregido_en_ronda": 1
+}

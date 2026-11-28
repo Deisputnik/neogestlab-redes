@@ -1,0 +1,130 @@
+{
+  "slug": "532_jambo_termostato_invierno",
+  "set": "salon2",
+  "hora": 21,
+  "moraleja": "Tapar la avería nunca baja la factura.",
+  "recuerdo": "Como la guardia del domingo que nadie cobró.",
+  "titulo_fijo": "CUANDO PONEN LA CALEFACCIÓN A ESCONDIDAS",
+  "bucle_visual": "",
+  "gancho_tipo": "conflicto_en_marcha",
+  "promesa": "¿Quién ha encendido la caldera saltándose el racionamiento de Rosa?",
+  "giro": "Creían que Concha encendió la caldera y fue el Pintas secando zapatillas.",
+  "marca": false,
+  "nombre_completo_dicho": "conchaqueton",
+  "por_que_funcionara": "El conflicto clásico del termostato doméstico y el frío polar con humor negro que genera debate en comentarios.",
+  "ambito": "dinero_de_casa",
+  "chiste_base": "Alguien sube el termostato a escondidas por el frío y descubren que el radiador calienta la calle.",
+  "resumen": "Rosa persigue a quien encendió la calefacción en plena ola de frío y la IA descubre un radiador puesto en la ventana.",
+  "coletillas_nuevas": {
+    "jambo": "el calorcito da vida",
+    "rosa": "abrígate o te largas",
+    "felipe": "el mercurio engaña mucho",
+    "sindy": "estamos en Siberia pura"
+  },
+  "escenas": [
+    {
+      "e": "gancho",
+      "h": "rosa",
+      "emo": "grita",
+      "t": "¡El termostato marca veinticinco grados! ¡Qué crimen!",
+      "p": [
+        "rosa",
+        "conchaqueton"
+      ],
+      "plano": "general"
+    },
+    {
+      "e": "gag",
+      "h": "conchaqueton",
+      "emo": "llora",
+      "p": [
+        "rosa",
+        "conchaqueton"
+      ],
+      "t": "Rosa, tengo frío. Eso lo arreglamos la semana que viene."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "chulea",
+      "p": [
+        "rosa",
+        "felipe"
+      ],
+      "t": "El mercurio engaña mucho. Con dos batas no gastas un duro."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "enfado",
+      "set": "cocina2",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "¡Illo, Rosa! Concha Quetón tiene carámbanos en las pestañas. ¡Manda huevos!"
+    },
+    {
+      "e": "gag",
+      "h": "rosa",
+      "emo": "ironia",
+      "p": [
+        "sindy",
+        "rosa"
+      ],
+      "t": "Abrígate o te largas. En este piso manda el contador."
+    },
+    {
+      "e": "gag",
+      "h": "jambo",
+      "emo": "susurra",
+      "set": "terraza",
+      "p": [
+        "jambo"
+      ],
+      "plano": "primerplano",
+      "t": "Illo… el calorcito da vida, tronco. Menuda movida."
+    },
+    {
+      "e": "gag",
+      "h": "sindy",
+      "emo": "sorpresa",
+      "giro": true,
+      "p": [
+        "sindy",
+        "felipe"
+      ],
+      "t": "¡Hostia! El radiador de la terraza está ardiendo fuera."
+    },
+    {
+      "e": "gag",
+      "h": "felipe",
+      "emo": "enfado",
+      "p": [
+        "felipe",
+        "sindy"
+      ],
+      "risas": true,
+      "t": "¡El Piezas saca el tubo pa calentar el patio! ¡Que lo resuelva Neo!"
+    },
+    {
+      "e": "remate",
+      "h": "neo",
+      "emo": "seco",
+      "p": [
+        "neo",
+        "rosa"
+      ],
+      "plano": "primerplano",
+      "t": "Rosa, la caldera lleva doce horas calentando la calle porque el Pintas secaba sus playeras con la ventana abierta."
+    },
+    {
+      "e": "cierre",
+      "h": "neo",
+      "t": "Ahorrar en casa exige cerrar las ventanas.",
+      "emo": "normal"
+    }
+  ],
+  "fuente": "gemini",
+  "generado": "2026-11-28T09:22:51Z"
+}
