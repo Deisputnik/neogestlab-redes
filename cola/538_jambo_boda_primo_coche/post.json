@@ -18,12 +18,12 @@
   },
   "motor": "neogest-studio",
   "motor_voz": "voz_disenada",
-  "texto": "Rosa quiere llevar a toda la familia en un solo coche a la boda del primo, pero no caben: su coche va lleno con la tarta y cuatro sillas.\nRosa, Felipe, Sindy, Jambo, Concha y Neo, humor negro de ficción.\nMándaselo a quien organiza los viajes familiares.\n#humornegro #bodas #familia #serieeljambo #neogestlab\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
+  "texto": "Familias que van a una boda en otra provincia: nadie sabe quién va en qué coche.\nMándaselo a quien organiza los viajes de la familia.\n¿Cuántas horas de coche aguantas antes de discutir? Dilo con un número.\n#humornegro #familia #bodas #serieeljambo\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nHumor negro de ficción; los personajes son inventados. Voz y personajes generados por IA\n\nMúsica: biblioteca Pixabay de Neogest Studio (licencia de contenido de Pixabay)",
   "cuando": "2026-11-29T11:30:00+01:00",
   "formula": "El Jambo que sabe v5.3",
   "_fuentes": [],
   "_comprobado": "Episodio de humor sin cifras verificables; el giro es de ficción.",
-  "comentario_fijado": "¿En tu familia también se discute quién va en cada coche? Episodio nuevo cada día en @neogestlab",
+  "comentario_fijado": "¿Cuántas horas de coche aguantas antes de discutir? Dilo con un número. Episodio nuevo cada día en @neogestlab",
   "avance_siguiente": "Siguiente: otro lío en casa de Rosa",
   "youtube": {
     "titulo": "La boda del primo y no caben 🚗 #Shorts",
@@ -35,7 +35,8 @@
     ]
   },
   "facebook": {
-    "texto": "Rosa quiere a toda la familia en un solo coche para la boda del primo y no caben. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
+    "texto": "Familias que van a una boda en otra provincia: nadie sabe quién va en qué coche.\nCompártelo con quien organiza los viajes de la familia 😂\n¿Cuántas horas de coche aguantas antes de discutir? Dilo con un número.",
+    "comentario": "Pide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
   "_nota_creador": "28/11/2026 (sesión con el dueño): mp4 renderizado por el Creador en Neogest Studio (public/entregas/) y subido a la biblioteca de medios tras publicar el estudio. Sin versión corta para TikTok (gen_episodios.py aún no la genera).",
   "_master_ciclo": "2026-11-28T12:10:06+00:00: LUFS -14.2 / pico -0.3 -> loudnorm -14 / -1,5",
