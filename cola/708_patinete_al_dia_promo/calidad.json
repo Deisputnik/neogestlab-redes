@@ -1,0 +1,8 @@
+{
+  "aprobado": false,
+  "nota": 82,
+  "motivos": "[\"Bloqueo 2 (texto ilegible/tapado): en varios fotogramas (≈11s, 22s, 33s, 40s) la caja de subtítulos se superpone y tapa contenido relevante de la pantalla de la app: '0 de 4 pasos hechos' queda parcialmente oculto, el bloque de 'Regístralo en la DGT' se tapa en su parte inferior, y en el cierre del embudo 7D el subtítulo tapa literalmente el CTA '¿Tienes un negocio?' y la línea 'By Neogest Lab'.\", \"Es un patrón repetido en la misma pieza (4 de 6 fotogramas muestreados), no un caso aislado: probablemente el motor no reserva una banda libre para los subtítulos sobre las capturas de la app con texto denso.\"], \"como_arreglarlo\">\"CREADOR/CENTRO: ajustar la plantilla de hyperframes para que la banda de subtítulos no se superponga a texto de la UI (reservar zona y=1450-1650 libre de contenido de app, o mover el subtítulo a una posición fija que no coincida con los bloques de texto/CTA de la captura) y re-renderizar esta pieza. Si es un fallo general del motor que afecta a más piezas de esta serie, repórtalo como URGENTE en equipo/peticiones_mejora.md en vez de corregir una a una.\"",
+  "fecha": "2026-11-28T15:09:51Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-28T12:10:27+00:00"
+}

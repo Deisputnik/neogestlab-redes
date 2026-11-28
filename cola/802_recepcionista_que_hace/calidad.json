@@ -1,0 +1,8 @@
+{
+  "aprobado": true,
+  "nota": 93,
+  "comentario": "Recreación de Recepcionista 24h correcta: 29,4 s dentro de 25-45 s de promo de app, LUFS -14,5/pico -0,98 dB dentro de norma. Voz ElevenLabs (Martin Osborne), cumple orden 23/11. Rótulo «RECREACIÓN · voces sintéticas» visible mientras suena la llamada recreada (t=7.35s, t=14.7s). Insignia e isotipo 2026 correctos en todos los fotogramas; tarjeta de cierre con logo 2026, «By Neogest Lab» y «Enlace en el perfil», sin URL en pantalla. Todas las afirmaciones (atiende 24h, reserva citas, correo resumen, precio 150€/mes sin permanencia) respaldadas por _fuentes/_comprobado de la ficha. Texto del post con estructura correcta (situación/destinatario/pregunta con cifra), cierre «Solicita información gratuita» correcto para esta app, enlace en comentario en Facebook. Sin cebos, sin datos de clientes reales, sin marcas ajenas.",
+  "fecha": "2026-11-28T15:10:36Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:20:03+00:00"
+}
