@@ -34,7 +34,7 @@ except ImportError:   # con voces ya hechas (VOCES_PREFAB) no hace falta edge-tt
 # Neo con ElevenLabs Johnny (orden del dueño 28/11/2026, DIRECTIVA §6 punto 2): cambio de golpe y para siempre, nunca a medias.
 # Render con `node scripts/render.mjs <spec> <mp4> --final` (genera la voz con el secreto de la app y controla el saldo).
 # NEO_VOZ=gemini solo como respaldo si ElevenLabs no tiene saldo (se anota en post.json y en el tablón); por defecto, ElevenLabs.
-NEO_VOICE_ID = "HMCmDsbKeaSZp5LMOYKR"   # Johnny, la misma voz del narrador de las promos (gen_promos.py ELEVEN["narr"])
+NEO_VOICE_ID = "HMCmDsbKeaSZp5LMOYKR"   # Johnny (desde el 28/11/2026 SOLO Neo; el narrador de promos es Martin Osborne en gen_promos.py ELEVEN["narr"])
 NEO_ELEVEN = os.environ.get("NEO_VOZ", "elevenlabs") == "elevenlabs"; ELEVEN_CHARS = 0
 PREFAB = json.load(open(os.environ["VOCES_PREFAB"], encoding="utf-8")) if os.environ.get("VOCES_PREFAB") else {}
 EPS = json.load(open(sys.argv[1])); OUT = sys.argv[2]

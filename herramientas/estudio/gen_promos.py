@@ -1,7 +1,7 @@
 """Genera los spec.json de Neogest Studio para PROMOS DE APP (no El Jambo): clips reales de la
 Biblioteca + tomas reales de la app, cierre con el logo 2026 y VOZ DE ELEVENLABS.
 23/11/2026 (orden del dueño: «en las aplicaciones usamos Eleven siempre»): las promos de app llevan SIEMPRE
-ElevenLabs (narrador Johnny). Antes salían con edge-tts porque los agentes no tenían la clave; ahora la pone
+ElevenLabs (narrador Martin Osborne, desde el 28/11/2026). Antes salían con edge-tts porque los agentes no tenían la clave; ahora la pone
 el propio estudio (render.mjs --final usa el secreto de la app por /api/render-voz, la clave no pasa por ti).
 Uso (sandbox de Neogest Studio):
   python3 gen_promos.py promos.json /tmp/pr
@@ -19,8 +19,8 @@ interpreta); las cifras en letra; «Ajota» para AJ y «Éxcel» para Excel; la 
 import json, asyncio, random, sys, os
 EPS = json.load(open(sys.argv[1])); OUT = sys.argv[2]; os.makedirs(OUT, exist_ok=True)
 EDGE = "--voz" in sys.argv and sys.argv[sys.argv.index("--voz") + 1] == "edge"
-# ElevenLabs («Mis voces», acento peninsular): narrador Johnny; asistente Lydia; quien llama Raquel.
-ELEVEN = {"narr": "HMCmDsbKeaSZp5LMOYKR", "asis": "SDVJaMLoJa7wc3s2sn7d", "cli": "1eHrpOW5l98cxiSRjbzJ"}
+# ElevenLabs («Mis voces», acento peninsular): narrador Martin Osborne (28/11/2026, antes Johnny); asistente Lydia; quien llama Raquel.
+ELEVEN = {"narr": "D7dkYvH17OKLgp4SLulf", "asis": "SDVJaMLoJa7wc3s2sn7d", "cli": "1eHrpOW5l98cxiSRjbzJ"}
 # expresión por escena: (stability, style, speed). Menos estabilidad y más estilo = más interpretación.
 EMO = {"normal": (0.40, 0.40, 1.03), "energia": (0.30, 0.60, 1.07), "calma": (0.55, 0.25, 0.97),
        "sorpresa": (0.28, 0.65, 1.04), "cercano": (0.45, 0.45, 1.0)}
