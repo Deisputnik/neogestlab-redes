@@ -35,11 +35,43 @@ TEMPO_MAX = {None: 1.3, "jambo": 1.2}                 # tope de aceleración sin
 PAUSA_MAX = {None: 0.35, "jambo": 0.55}               # ninguna pausa interna más larga que esto (segundos)
 
 
-def ceceo(texto):
+def ceceo(texto, claras=()):
     """CECEO de Jambo (27/11/2026): s -> z en el texto que va al TTS (solo réplicas de Jambo). El texto del guion («v») no se toca:
     subtítulos y control de audio siguen usando el original. «eso es una señora cosa» -> «ezo ez una zeñora coza»."""
     partes = re.split(r"(<[^>]*>)", texto)   # las marcas del TTS (<long pause>...) no se tocan
-    return "".join(p if p.startswith("<") else p.replace("s", "z").replace("S", "Z") for p in partes)
+    def zz(t):   # 28/11/2026: las palabras CLARAS (nombres, palabra clave del episodio) no se cecean: «lentejas» salía «lenteas»
+        return re.sub(r"\w+", lambda m: m.group(0) if _clara(m.group(0), claras) else m.group(0).replace("s", "z").replace("S", "Z"), t)
+    return "".join(p if p.startswith("<") else zz(p) for p in partes)
+
+
+# 28/11/2026 (orden del dueño «que no pase más»): 535 y 530 bloqueados porque «¡Que lo resuelva el Neo!» se oía «el mes» /
+# «que lo insuva» y «lentejas» salía «lenteas». Las palabras CLARAS se protegen en todo el proceso: sin ceceo ni alargue, con
+# una pausa antes del nombre al final de un grito, con orden expresa de articularlas despacio y, al cortar, se comprueba que
+# Whisper las oye; si no, la réplica sale en informe.json/listo.json como «repetir» ANTES de mezclar el vídeo.
+CLARAS_FIJAS = ["Neo", "Rosa", "Felipe", "Sindy", "Jambo", "Concha", "Neogest"]
+
+
+def _clara(w, claras):
+    return bool(claras) and _norm(w) in {_norm(c) for c in claras}
+
+
+def claras_de(ep, pedido=None):
+    """Palabras que tienen que oírse sí o sí: fijas + voz_gemini.json «claras» + pedido/episodio «claras» + palabras largas de la moraleja."""
+    c = list(CLARAS_FIJAS) + list(CFG.get("claras") or []) + list((pedido or {}).get("claras") or []) + list(ep.get("claras") or [])
+    c += [w for w in re.findall(r"\w+", ep.get("moraleja") or "") if len(w) >= 7]
+    return list(dict.fromkeys(c))
+
+
+def claras_en(frase, claras):
+    return [w for w in re.findall(r"\w+", frase) if _clara(w, claras)]
+
+
+def despejar(frase, claras):
+    """Pausa (coma) antes de un nombre CLARO al final de una frase gritada: «resuelva el Neo!» -> «resuelva, el Neo!». Solo texto del TTS."""
+    m = re.search(r"(\w)(\s+)((?:el|la|al|del)\s+)?(\w+)([.!?…]*)\s*$", frase)
+    if m and _clara(m.group(4), claras) and "," not in frase[max(0, m.start() - 2):m.start(2) + 1]:
+        return frase[:m.start(2)] + "," + frase[m.start(2):]
+    return frase
 
 
 EMO_JAMBO = {"normal": "casual, offhand, half-voiced", "seco": "deadpan, low, final", "cansado": "tired, low, long sigh",
@@ -49,12 +81,15 @@ EMO_JAMBO = {"normal": "casual, offhand, half-voiced", "seco": "deadpan, low, fi
 ALARGUE, ALARGUE_COMA = 2, 0   # letras de la última vocal de cada frase de Jambo y de la vocal anterior a una coma (0 = no)
 
 
-def alargar(texto):
+def alargar(texto, claras=()):
     """Jambo estira la última vocal de CADA frase (y, si ALARGUE_COMA, la de la palabra anterior a cada coma). Solo en el texto del TTS."""
     def una(f):
         if ALARGUE_COMA:
             f = re.sub(r"([aeiouáéíóú])([^aeiouáéíóú\s,]*),", lambda m: m.group(1) * ALARGUE_COMA + m.group(2) + ",", f, flags=re.I)
         m = re.search(r"([aeiouáéíóú])([^aeiouáéíóú\s]*)([.!?…]*)\s*$", f, re.I)
+        ult = re.findall(r"\w+", f)
+        if ult and _clara(ult[-1], claras):   # 28/11/2026: nunca se estira una palabra CLARA
+            return f
         return f if not m else f[:m.start()] + m.group(1) * ALARGUE + m.group(2) + m.group(3)
     return " ".join(una(f) for f in frases(texto))
 
@@ -63,7 +98,7 @@ def frases(texto):
     return [f.strip() for f in re.findall(r"[^.!?…]+(?:[.!?…]+|$)", texto) if f.strip()]
 
 
-def estilo(quien, emo, frase):
+def estilo(quien, emo, frase, claras=()):
     base = CFG["estilo_por_emo"].get(emo or "normal", CFG["estilo_por_emo"]["normal"])
     if frase.endswith("?") and emo not in ("pregunta", "sorpresa"):
         base = "questioning, " + base
@@ -73,8 +108,13 @@ def estilo(quien, emo, frase):
         base = base.replace(", fast", ", agitated but still drawling").replace("hurried", "agitated")
     if quien == "jambo":   # Jambo nunca suena plano: cada emoción con su cante (27/11/2026)
         base = EMO_JAMBO.get(emo or "normal", base)
-    partes = [CARACTER.get(quien, ""), base]
-    if quien not in LENTOS_QUIEN:
+    car = CARACTER.get(quien, "")
+    if claras:   # nada de «fast» en la frase que lleva la palabra clara
+        base = re.sub(r",?\s*\bfast\b", "", base).strip(", "); car = re.sub(r",?\s*\bfast\b", "", car).strip(", ")
+    partes = [car, base]
+    if claras:   # 28/11/2026: frase con nombre o palabra clave = sin prisa y vocalizándola
+        partes.append("say " + " and ".join(f"'{w}'" for w in claras) + " slowly, loud and crystal clear, fully articulated, never swallowed")
+    elif quien not in LENTOS_QUIEN:
         partes.append(RITMO)
     return ", ".join(p for p in partes if p)
 
@@ -84,7 +124,7 @@ def fusionar(pedido):
     escenas = []
     for ep in pedido["episodios"]:
         for i, e in enumerate(ep["escenas"]):
-            escenas.append({**e, "_n": ep["slug"][:3], "_i": i})
+            escenas.append({**e, "_n": ep["slug"][:3], "_i": i, "_claras": claras_de(ep, pedido)})
     return {"slug": "lote", "escenas": escenas}
 
 
@@ -145,12 +185,13 @@ def generar(pedido, out):
                 plan["personajes"][quien] = {"error": "sin voz diseñada"}; todo_bien = False; continue
             partes = []
             for k, (i, e) in enumerate(lineas_de(ep, quien)):
-                texto = e.get("voz_tts") or e["v"]
+                texto = e.get("voz_tts") or e["v"]; cl = e.get("_claras") or CLARAS_FIJAS
                 if quien == "jambo":   # 27/11/2026: ceceo solo en el texto que va al TTS; «v» (subtítulos, control) queda intacto
-                    texto = ceceo(texto)
-                    texto = alargar(texto)
+                    texto = ceceo(texto, cl)
+                    texto = alargar(texto, cl)
                 for j, f in enumerate(frases(texto)):
-                    partes.append({"text": ("<long pause> " if k and j == 0 else "") + f, "speech_metadata": {"style": estilo(quien, e.get("emo"), f)}})
+                    f = despejar(f, cl)
+                    partes.append({"text": ("<long pause> " if k and j == 0 else "") + f, "speech_metadata": {"style": estilo(quien, e.get("emo"), f, claras_en(f, cl))}})
             cuerpo = {"contents": [{"role": "user", "parts": partes}],
                       "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"voice": voz}}}}
             info = None
@@ -298,6 +339,11 @@ def cortar(pedido, out, modelo_whisper="small"):
                     else:
                         j += 1
                 words = [{"w": w.strip(".,;:¡!¿?…«»"), "s": round(max(0, s_), 3), "e": round(min(max(en, s_ + 0.05), real), 3)} for (w, _), (s_, en) in zip(pal, tiempos)]
+                oidas = {nz(w) for w, _, _ in r2}; faltan = [w for w in claras_en(e["v"], e.get("_claras") or CLARAS_FIJAS) if nz(w) not in oidas]
+                if faltan:   # 28/11/2026: la palabra clara no se oye -> esta réplica se repite antes de mezclar
+                    informe.setdefault("repetir", []).append({"replica": f"{e['_n']}_{e['_i']}", "quien": quien, "frase": e["v"], "no_se_oye": faltan,
+                                                             "oido": " ".join(w.strip() for w, _, _ in r2)})
+                    print("REPETIR", e["_n"], e["_i"], quien, faltan, flush=True)
                 manifiesto.setdefault(e["_n"], {})[f"{e['_n']}_{e['_i']}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3),
                                           "pal_s": round(len(pal) / real, 2), "texto": " ".join(w for w, _ in pal), "oido": " ".join(w.strip() for w, _, _ in r2)}
         for nn, mm in manifiesto.items():
@@ -317,7 +363,12 @@ def empaquetar(pedido, out):
         for nn in ns:
             for f in sorted(glob.glob(f"{out}/{nn}_[0-9]*.mp3")) + glob.glob(f"{out}/{nn}_voces.json"):
                 tar.add(f, arcname=os.path.basename(f))
-    listo["archivos"] = len(tarfile.open(ruta).getnames()); clave = os.environ.get("ZERNIO_API_KEY")
+    listo["archivos"] = len(tarfile.open(ruta).getnames())
+    try:   # 28/11/2026: si alguna palabra clara no se oyó, queda a la vista en el resumen del workflow
+        listo["repetir"] = json.load(open(f"{out}/informe.json", encoding="utf-8")).get("repetir") or []
+    except Exception:
+        pass
+    clave = os.environ.get("ZERNIO_API_KEY")
     if clave and listo["archivos"]:
         try:
             req = urllib.request.Request("https://zernio.com/api/v1/media/presign", data=json.dumps({"filename": f"voces_{'_'.join(ns)}.mp3", "contentType": "audio/mpeg"}).encode(),
