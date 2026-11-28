@@ -36,6 +36,7 @@ Orden del dueño: «haz una auditoría completa y que nada entre en conflicto; r
 - No se han podido borrar desde aquí, por falta de permiso: las 11 tareas programadas antiguas, la «Analista de monetización · v2» y las 67 ramas viejas (ver §3).
 
 ## 3. Pendiente del dueño (no lo puede hacer ningún agente)
+**Puntos 1 y 2 HECHOS por el dueño el 28/11 (comprobado): las 11 tareas antiguas y la «Analista de monetización · v2» están desactivadas; siguen activas solo las «· v2» de cada rol, el Reloj externo, el Aviso de atascos, el Lote diario de comentarios y el Laboratorio de ideas.**
 1. **Desactivar las 11 tareas programadas ANTIGUAS que siguen activas en paralelo con sus «· v2»**. Corren dos veces cada rol, gastan límite y pueden chocar al escribir en main. Ningún agente puede tocarlas: se crearon fuera de un agente. Hay que desactivar estas (sin el «· v2» en el nombre):
    - IG nube · Creador (repo): https://claude.ai/code/routines/trig_017GNtAYqjjfjrUsyDvPVWGW
    - IG nube · Respaldo de Calidad API (Deisputnik, 12:41 y 18:41): https://claude.ai/code/routines/trig_011yXgX84tQBFTREsTSZMZaY
