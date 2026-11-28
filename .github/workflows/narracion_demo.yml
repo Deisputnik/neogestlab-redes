@@ -59,9 +59,9 @@ jobs:
       - name: Música (por código)
         run: python3 herramientas/narracion_demo.py musica
 
-      - name: Voz Kokoro (CPU; referencia sintética y respaldo)
+      - name: Voz edge-tts (motor vigente de equipo/voz.json)
         if: ${{ inputs.solo_musica != 'true' }}
-        run: pip install --quiet kokoro soundfile pillow --extra-index-url https://download.pytorch.org/whl/cpu
+        run: pip install --quiet edge-tts pillow
 
       - name: Voz (genérica de España, no la del dueño)
         if: ${{ inputs.solo_musica != 'true' }}

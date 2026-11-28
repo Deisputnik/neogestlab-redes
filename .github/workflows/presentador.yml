@@ -110,7 +110,7 @@ jobs:
         continue-on-error: true
         run: |
           pip install --quiet numpy scipy pillow faster-whisper
-          pip install --quiet faster-whisper kokoro soundfile --extra-index-url https://download.pytorch.org/whl/cpu   # alineación y respaldo de Melo
+          pip install --quiet faster-whisper edge-tts   # alineación y voz vigente (motor edge)
 
       - name: Renderizar
         if: ${{ !inputs.dependencias }}
