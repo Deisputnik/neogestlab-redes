@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 70,
+  "motivos": [
+    "Bloqueo 2 (texto ilegible): en varios fotogramas (t=14,9s, t=29,8s y t=55,7s) el subtítulo/rótulo flotante se superpone literalmente encima del texto de fondo de la app (p. ej. 'PASO 2' sobre 'Regístralo en la DGT', 'Sin seguro, la multa' sobre 'Ficha de tu patinete / Marca y modelo', y 'y sin compromiso.' sobre 'By Neogest Lab'), dejando ambos bloques de texto ilegibles. No es un fotograma aislado: se repite al menos 3 veces en 6 fotogramas revisados, así que es un patrón del render, no una casualidad.",
+    "Bloqueo A5 de la serie APPS NEOGEST LAB (estándar v6): máximo 45 s para reels de app; esta pieza dura 59,7 s. El post.json describe el formato como 'Tutorial perenne... 60 s', pero esa duración no está amparada por ninguna derogación (la derogación de duración del 27-28/11 es solo para El Jambo que sabe, no para las promos/tutoriales de apps)."
+  ],
+  "como_arreglarlo": "CREADOR: 1) re-renderizar ajustando el posicionamiento del rótulo inferior (subtítulo/etiqueta de paso) para que nunca se solape con el texto de la demo de la app —bajar su opacidad de fondo no basta, hay que separar verticalmente las dos capas de texto o recortar/editar el guion para que no coincidan en el tiempo; 2) recortar el tutorial a 25-45 s (estándar v6, A5) eliminando pausas o acortando explicaciones por paso, o si el dueño quiere mantenerlo en 60 s, pedir primero una excepción explícita por escrito para la serie de apps (como ya existe para El Jambo) antes de aprobarlo.",
+  "fecha": "2026-11-28T12:10:59Z",
+  "revisor": "Calidad (API)"
+}

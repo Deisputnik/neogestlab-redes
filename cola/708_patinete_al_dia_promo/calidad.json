@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 84,
+  "motivos": [
+    "B6 (estructura del pie del post, biblia §11.2-11.3): la línea 2 debe ser 'a quién mandárselo' y la línea 3 una pregunta que se contesta con una cifra/palabra; en el texto actual las líneas 2 y 3 son párrafos explicativos de la DGT y de la app, y la frase de destinatario ('Mándaselo a quien va a todas partes en patinete') y la pregunta ('¿Tu patinete tiene certificado? Sí o no') aparecen mucho más abajo, no en las líneas 2-3.",
+    "Bloqueo 2 (texto parcialmente tapado): en los fotogramas ~0.3s y ~11.1s el subtítulo/título grande se superpone sobre el texto de la pantalla de la app, tapando partes legibles del checklist ('Tu ch...', '0 de 4 pasos hechos' se corta detrás del subtítulo negro)."
+  ],
+  "como_arreglarlo": "CALIDAD (texto, sin re-render): reordenar el texto del post de Instagram para que la línea 1 sea la situación ('Si tu patinete no tiene certificado, el 22 de enero deja de poder circular'), la línea 2 sea 'Mándaselo a quien va a todas partes en patinete' y la línea 3 sea '¿Tu patinete tiene certificado? Sí o no', moviendo el resto de explicación (DGT, checklist, avisos) después de esas 3 líneas; marcar renderizado:false solo si se decide tocar el vídeo. CREADOR (si se quiere corregir el solape de texto): ajustar el timing del subtítulo/título grande para que no se superponga sobre el panel de la app en los primeros segundos del montaje (hyperframes).",
+  "fecha": "2026-11-28T12:10:32Z",
+  "revisor": "Calidad (API)"
+}
