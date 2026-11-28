@@ -31,6 +31,11 @@ except ImportError:   # con voces ya hechas (VOCES_PREFAB) no hace falta edge-tt
     edge_tts = None
 # Voces ya generadas fuera (Gemini TTS, herramientas/voces_gemini.py): VOCES_PREFAB=<n>_voces.json con, por escena
 # "<n>_<i>": {"archivo", "duration", "words"}; los mp3 se dejan en la carpeta de salida con ese nombre de archivo.
+# Neo con ElevenLabs Johnny (orden del dueño 28/11/2026, DIRECTIVA §6 punto 2): cambio de golpe y para siempre, nunca a medias.
+# Render con `node scripts/render.mjs <spec> <mp4> --final` (genera la voz con el secreto de la app y controla el saldo).
+# NEO_VOZ=gemini solo como respaldo si ElevenLabs no tiene saldo (se anota en post.json y en el tablón); por defecto, ElevenLabs.
+NEO_VOICE_ID = "HMCmDsbKeaSZp5LMOYKR"   # Johnny, la misma voz del narrador de las promos (gen_promos.py ELEVEN["narr"])
+NEO_ELEVEN = os.environ.get("NEO_VOZ", "elevenlabs") == "elevenlabs"; ELEVEN_CHARS = 0
 PREFAB = json.load(open(os.environ["VOCES_PREFAB"], encoding="utf-8")) if os.environ.get("VOCES_PREFAB") else {}
 EPS = json.load(open(sys.argv[1])); OUT = sys.argv[2]
 # Vídeo real para "Cosas de Casa" (pedido en equipo/cola_gemini.md el 20/11: Gemini/Flow o,
@@ -216,6 +221,7 @@ def creditos(elenco):
     return {"id": uid(), "duration": dur, "transition": "fade", "voice": None, "background": bg, "characters": [], "texts": textos}
 
 async def main():
+    global ELEVEN_CHARS
     for ep in EPS:
         n = ep["slug"][:3]; bg = {"type": "set", "set": ep["set"], "hour": ep["hora"], "night": ep["hora"] >= 21}; scenes = []
         # Prenda con marca: uno de cada tres episodios, Felipe lleva la camiseta de «NEOGEST LAB» (publicidad discreta); "merch" en el episodio manda.
@@ -229,16 +235,23 @@ async def main():
             bg = bg0 if estancia == ep["set"] else {**bg0, "set": estancia}
             accion = e["a"].get(e["h"], "habla") if e.get("a") else "habla"
             path = f"{OUT}/{n}_{i}.mp3"; hecho = PREFAB.get(f"{n}_{i}")
-            if hecho:
-                words = hecho["words"]; dur = hecho["duration"]
+            neo_eleven = e["h"] == "neo" and NEO_ELEVEN   # 28/11/2026 (DIRECTIVA §6 punto 2): Neo SIEMPRE con ElevenLabs Johnny
+            if neo_eleven:
+                # Sin audio local: render.mjs --final genera la voz con el secreto de la app y pone la duración real (durationAuto).
+                txt = e["v"].replace("*", ""); dur = len(txt) / 15 + 0.05; words = []; ELEVEN_CHARS += len(txt)
+                voice = {"text": e["v"], "provider": "elevenlabs", "voiceId": NEO_VOICE_ID, "model": "eleven_multilingual_v2",
+                         "stability": 0.45, "style": 0.45, "speed": 1.0, "speaker": "neo", "offset": 0.05, "tail": 0.12}
             else:
-                words = await tts(e["v"], e["h"], path, accion, e.get("emo")); dur = (words[-1]["e"] if words else 1.0) + 0.05
-            voice = {"text": e["v"], "provider": "edge", "speaker": e["h"] or "narrador", "url": path, "duration": dur, "words": words, "offset": 0.05, "tail": 0.12}
+                if hecho:
+                    words = hecho["words"]; dur = hecho["duration"]
+                else:
+                    words = await tts(e["v"], e["h"], path, accion, e.get("emo")); dur = (words[-1]["e"] if words else 1.0) + 0.05
+                voice = {"text": e["v"], "provider": "edge", "speaker": e["h"] or "narrador", "url": path, "duration": dur, "words": words, "offset": 0.05, "tail": 0.12}
             if e["e"] == "cierre":
                 cierre_cast = [{"who": "felipe", "x": 0.3, "expr": "cansado"}, {"who": "neo", "x": 0.72, "expr": "feliz"}]
                 for cc in cierre_cast:
                     if cc["who"] not in vistos: cc["intro"] = True; vistos[cc["who"]] = True
-                scenes.append({"id": uid(), "duration": dur + 0.6, "transition": "zoom", "background": bg, "characters": cierre_cast, "shot": "general", "voice": voice,
+                scenes.append({"id": uid(), "duration": dur + 0.6, **({"durationAuto": True, "pad": 0.6} if neo_eleven else {}), "transition": "zoom", "background": bg, "characters": cierre_cast, "shot": "general", "voice": voice,
                                "texts": [{"id": uid(), "text": ep["moraleja"], "style": "badge", "anim": "pop", "y": 0.12, "sfx": "impacto"}, {"id": uid(), "text": e["t"], "style": "hook", "anim": "pop", "start": 0.5, "y": 0.26}]}); continue
             p = e["p"] or [e["h"]]; xs = {}
             if "felipe" in p: xs["felipe"] = 0.3
@@ -258,6 +271,7 @@ async def main():
             sc = {"id": uid(), "duration": dur + 0.35, "transition": "slide" if i else "none", "background": bg, "characters": cast, "voice": voice, "shot": ["auto", "medio", "primerplano", "auto", "general"][i % 5], "texts": []}
             if i >= 1 and e["e"] == "gag" and e["h"] != "neo":
                 sc["overlays"] = [{"id": uid(), "type": "emoji", "text": EMO[i % len(EMO)], "x": 0.82 if xs.get(e["h"], 0.3) < 0.5 else 0.18, "y": 0.32, "start": 0.25, "size": 0.12}]
+            if neo_eleven: sc["durationAuto"] = True; sc["pad"] = 0.35   # la duración real la fija render.mjs con el audio de ElevenLabs
             if e["e"] == "remate": sc["shot"] = "primerplano"; sc["transition"] = "flash"
             # Campo opcional "plano" por escena (27/11): medio | primerplano | general; "auto", ausente o desconocido = el
             # automático de arriba, idéntico a antes. Se ignora (sin error) si quien habla no está en plano.
@@ -285,6 +299,6 @@ async def main():
         scenes.append(promo_empresa())   # último plano: la promo (sin casa de cierre desde el 27/11 noche)
         spec = {"version": 1, "format": "9:16", "fps": 30, "music": {**musica_de(n), **(ep.get("musica") or {})}, "subtitles": {"enabled": True, "words": 3, "style": "amarillo", "emojis": True, "size": 0.07},
                 "brand": {"watermark": True, "watermarkPos": "right", "progress": True}, "sfx": {"enabled": True, "volume": 0.6}, "scenes": scenes}
-        json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas")
+        json.dump(spec, open(f"{OUT}/{n}.json", "w"), ensure_ascii=False); print(n, len(scenes), "escenas", f"· Neo ElevenLabs: {ELEVEN_CHARS} caracteres (renderizar con --final)" if NEO_ELEVEN else "· Neo con voz de respaldo (NEO_VOZ)")
 
 asyncio.run(main())

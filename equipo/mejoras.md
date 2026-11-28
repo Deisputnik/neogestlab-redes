@@ -404,3 +404,11 @@ Piezas relanzadas: 316, 329, 403 (render nuevo), 341-348 (vídeo externo recuper
 - **Comprobado:** el bloqueo de 521_jambo_fichar_en_casa (control_audio, 82) es REAL, no un falso del control: tras el hotword «Neo» del 24/11 ya no sale «Leo», pero Whisper oye «es solo sello seguro» por «¡Eso lo sé de buena tinta!» y «que lo resuelvan listo» por «que lo resuelva el Neo»; es defecto del TTS en esas dos frases. Le toca al Creador regenerarlas (fila de atascos.md); no se relaja el control.
 - **Pendiente cerrado:** el aviso de `pre_entrega.py` sobre «prueba gratuita» solo mira los textos de las escenas del vídeo (venta dentro del vídeo, vigente); el texto del post ya exige el cierre de prueba gratuita (§5). Nada que alinear.
 - **Sin tocar:** peticiones URGENTES del 22/11 (marco del móvil, render en Actions) siguen abiertas; no las empiezo a mitad de pasada sin poder probar en Actions.
+
+## 2026-11-28 · Neo con ElevenLabs Johnny en El Jambo (DIRECTIVA §6 punto 2)
+- **Cambio:** `herramientas/estudio/gen_episodios.py`: toda réplica de Neo (`h:"neo"`, incluida la del cierre) sale con `provider: elevenlabs`, voz Johnny `HMCmDsbKeaSZp5LMOYKR`, `eleven_multilingual_v2`, escena con `durationAuto` (la duración real la pone `render.mjs`). Ignora la voz prefab de Gemini para Neo. Al terminar imprime los caracteres de ElevenLabs del episodio (≈130 por episodio).
+- **Uso:** generar el spec igual que siempre y renderizar en el sandbox de Neogest Studio con `node scripts/render.mjs <spec> <mp4> --final`. Cambio de golpe y para siempre: no se mezclan voces de Neo.
+- **Respaldo:** `NEO_VOZ=gemini` (o edge) solo si ElevenLabs no tiene saldo; hay que anotarlo en `post.json` y en el tablón.
+- **Prueba:** episodio sintético de 4 escenas → las 3 de Neo salen elevenlabs/Johnny con durationAuto, las demás intactas. NO probado: render real con `--final` ni el efecto de la voz sobre `control_audio.py` (whisper): sin acceso al sandbox del estudio en esta sesión cloud. Calidad debe vigilar el primer episodio con Neo-Johnny.
+- **Revertir:** copiar `herramientas/versiones/gen_episodios_2026-11-28.py` sobre `herramientas/estudio/gen_episodios.py` (o usar `NEO_VOZ=gemini`).
+- **Pendiente:** `voces_gemini.py` aún genera audio de Neo con Gemini (se descarta en el spec, gasta cuota gratuita): conviene que deje de pedirlo; no lo he tocado en esta pasada.
