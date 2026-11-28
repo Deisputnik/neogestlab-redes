@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 51.38,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['problema', 'fichar'], sobran ['problemas', 'ficha'] (rehacer esas frases)"
+  ],
+  "transcripcion": "Nos vamos todos en mi coche. Caben 6. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo. Apretar, dice. 5 plazas, Felipe. Y tú pesas por 3. Yo voy en el maletero. Gratis. Sin problemas, colega. Pues el maletero lleva la tarta y cuatro sillas para mi mesa. Mira, Rosa, Melano. 5 plazas, no 6. Qué manía. Como lo de ficha con huella. Todo mal. Que lo resuelva Neo. Resuelto. 2 coches, 3 personas en cada uno. Parada a mitad de camino. Horas en el grupo, Rosa. Un plan escrito evita discutir dentro del coche.",
+  "guion": "¡Nos vamos todos en mi coche! Caben seis. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo. ¡Apretar, dice! ¡Cinco plazas, Felipe! ¡Y tú pesas por tres! Yo voy en el maletero. Gratis. Sin problema, colega. ¡Pues el maletero lleva la tarta! ¡Y cuatro sillas! ¡Para mi mesa! Mira, Rosa Melano. ¡Cinco plazas, no seis! ¡Qué manía! Como lo de fichar con huella. ¡Todo mal! ¡Que lo resuelva Neo! Resuelto. Dos coches, tres personas en cada uno, parada a mitad de camino. Horas en el grupo, Rosa. Un plan escrito evita discutir dentro del coche.",
+  "lufs": -14.3,
+  "pico_dbfs": -1.2
+}

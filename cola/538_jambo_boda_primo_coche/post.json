@@ -37,6 +37,9 @@
   "facebook": {
     "texto": "Rosa quiere a toda la familia en un solo coche para la boda del primo y no caben. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/50d3a13fbbba9af9065ad3c7b21233ab_538_jambo_boda_coche_v2.mp4",
-  "_nota_creador": "28/11/2026 (sesión con el dueño): mp4 renderizado por el Creador en Neogest Studio (public/entregas/) y subido a la biblioteca de medios tras publicar el estudio. Sin versión corta para TikTok (gen_episodios.py aún no la genera)."
+  "_nota_creador": "28/11/2026 (sesión con el dueño): mp4 renderizado por el Creador en Neogest Studio (public/entregas/) y subido a la biblioteca de medios tras publicar el estudio. Sin versión corta para TikTok (gen_episodios.py aún no la genera).",
+  "_master_ciclo": "2026-11-28T12:10:06+00:00: LUFS -14.2 / pico -0.3 -> loudnorm -14 / -1,5",
+  "renderizado": "2026-11-28T12:10:21+00:00",
+  "asset": "538_jambo_boda_primo_coche.mp4",
+  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/50d3a13fbbba9af9065ad3c7b21233ab_538_jambo_boda_coche_v2.mp4"
 }

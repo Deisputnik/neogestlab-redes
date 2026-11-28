@@ -43,7 +43,6 @@
   "facebook": {
     "texto": "Si tu patinete no tiene certificado, el 22 de enero deja de poder circular.\nCompártelo con quien va a todas partes en patinete.\n¿Tu patinete tiene certificado? Sí o no.\nPatinete al Día (gratis, sin cuenta): cuenta atrás y checklist de 4 pasos. No es una app oficial ni de la DGT.\nFuente: nota de prensa de la DGT del 27-1-2026.\nMúsica: \"Investigations\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA."
   },
-  "video_externo": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/943714151f268ea6404a0a4cb73d94a1_708_patinete_al_dia_promo.mp4",
   "portada_url": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/d16f09894a062d0a6be17908a2458f7c_708_patinete_al_dia_promo_portada.jpg",
   "duracion_s": 44.5,
   "audio": {
@@ -54,5 +53,8 @@
     "titulo": "Investigations",
     "atribucion": "Música: \"Investigations\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0"
   },
-  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (coincide; «Registrarlo» confirmado en la frase suelta); sin silencios > 1,5 s; −14,1 LUFS, pico real −2,1 dB; 44,5 s. Solo dice lo de la nota de la DGT y los hechos verificados. Sin: oficialidad, avisos, registro por el usuario, nube, cifras de propietarios, plazo de inscripción, Google Play. Lleva la cuenta atrás: publicar SOLO antes del 22-1-2027 (campo caduca); si no sale antes, a descartados/."
+  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (coincide; «Registrarlo» confirmado en la frase suelta); sin silencios > 1,5 s; −14,1 LUFS, pico real −2,1 dB; 44,5 s. Solo dice lo de la nota de la DGT y los hechos verificados. Sin: oficialidad, avisos, registro por el usuario, nube, cifras de propietarios, plazo de inscripción, Google Play. Lleva la cuenta atrás: publicar SOLO antes del 22-1-2027 (campo caduca); si no sale antes, a descartados/.",
+  "renderizado": "2026-11-28T12:10:27+00:00",
+  "asset": "708_patinete_al_dia_promo.mp4",
+  "_video_externo_usado": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/943714151f268ea6404a0a4cb73d94a1_708_patinete_al_dia_promo.mp4"
 }

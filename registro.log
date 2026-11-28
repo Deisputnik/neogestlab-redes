@@ -1,9 +1,3 @@
-2026-11-26 12:11  Control de audio: FALLA voz distinta del guion: faltan ['para', 'mear', 'buah', 'prima', 'apuntame', 'dos', 'raciones', 'manana', 'te', 'las', 'pago', 'te', 'lo', 'juro', 'joderse', 'que', 'resuelva', 'el', 'neo'], sobran ['baramear', 'va', 'a', 'resuelvan', 'jo'] (rehacer esas frases); duración 60.4 s
-2026-11-26 12:11  528_jambo_barrio_cuenta_fiada: control de audio del vídeo externo: aprobado=False LUFS=-14.6 pico=-1.5
-2026-11-26 12:11  528_jambo_barrio_cuenta_fiada: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
-2026-11-26 12:11  Control de audio: FALLA voz distinta del guion: faltan ['empatia', 'a', 'mi', 'el', 'que', 'en', 'lo', 'resuelva', 'neo', 'devuelvala'], sobran ['impadia', 'tambien', 'al', 'el', 'no', 'me', 'sube', 'balneo', 'devuelvo', 'a', 'la', 'a'] (rehacer esas frases); duración 62.99 s
-2026-11-26 12:11  529_jambo_cuidador_turno_domingo: control de audio del vídeo externo: aprobado=False LUFS=-14.6 pico=-1.2
-2026-11-26 12:11  529_jambo_cuidador_turno_domingo: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +592,9 @@
 2026-11-28 12:10  Control de audio: FALLA voz distinta del guion: faltan ['hombre', 'colega'], sobran ['maya', 'felipe', 'felipe', 'troco'] (rehacer esas frases); silencio de 0.60 s entre 12.9 y 13.5 s (máximo 0.6 s); duración 49.0 s
 2026-11-28 12:10  537_jambo_suscripciones_fantasma: control de audio del vídeo externo: aprobado=False LUFS=-13.8 pico=-1.5
 2026-11-28 12:10  537_jambo_suscripciones_fantasma: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-28 13:10  538_jambo_boda_primo_coche: vídeo externo masterizado en el ciclo (LUFS -14.2, pico -0.3 -> -14 / -1,5)
+2026-11-28 13:10  Control de audio: OK; duración 51.38 s; avisos: ["voz distinta del guion: faltan ['problema', 'fichar'], sobran ['problemas', 'ficha'] (rehacer esas frases)"]
+2026-11-28 13:10  538_jambo_boda_primo_coche: control de audio del vídeo externo: aprobado=True LUFS=-14.3 pico=-1.2
+2026-11-28 13:10  538_jambo_boda_primo_coche: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-28 13:10  708_patinete_al_dia_promo: control de audio del vídeo externo: aprobado=None LUFS=-14.1 pico=-2.1
+2026-11-28 13:10  708_patinete_al_dia_promo: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
