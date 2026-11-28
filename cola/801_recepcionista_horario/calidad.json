@@ -1,0 +1,12 @@
+{
+  "aprobado": false,
+  "nota": 86,
+  "motivos": [
+    "B6 (estructura del pie del post, biblia §11.2-11.3): el texto de Instagram no lleva los 3-5 hashtags exigidos (ni en el texto de IG ni en el de Facebook); tampoco respeta el orden línea 1 = situación / línea 2 = a quién mandárselo / línea 3 = pregunta-cifra: la frase 'Mándaselo a quien no da abasto con el teléfono' aparece después del precio y del cierre de prueba gratuita, no en la línea 2.",
+    "Técnicamente el vídeo está bien (29-32.6 s dentro de 25-45 s, LUFS -14.95 y pico -1.24 dB correctos, rótulo 'Recreación · voces sintéticas' visible durante la llamada, cierre con isotipo 2026 + 'By Neogest Lab' + 'Enlace en el perfil' correcto, voz ElevenLabs según _nota_voz_2026_11_28), pero el fallo de estructura del pie (B6) es un bloqueo del estándar v8 y no permite aprobar aunque el resto sea sólido."
+  ],
+  "como_arreglarlo": "CALIDAD/tú mismo (solo texto, no hace falta render): reordena el texto del post de Instagram y Facebook para que la línea 2 sea 'Mándaselo a quien no da abasto con el teléfono' justo después de la situación (línea 1), deja la pregunta-cifra en línea 3, y añade 3-5 hashtags del nicho (p.ej. #autonomos #pymes #atencionalcliente #asistentevirtual) antes o después del cierre de prueba gratuita. No requiere re-render del vídeo, solo editar post.json (texto y facebook.texto) y relanzar con renderizado:false si aplica, o publicar con el texto corregido.",
+  "fecha": "2026-11-28T13:02:45Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:16:31+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "aprobado": false,
+  "nota": 84,
+  "motivos": [
+    "B6 / biblia §11.2-11.3: el texto del post de Instagram no lleva los 3-5 hashtags obligatorios al final (tras el cierre y los avisos de recreación/IA). El resto del pie sí cumple: situación en la línea 1, destinatario ('Mándaselo a quien no da abasto con el teléfono'), pregunta que se contesta con una cifra, cierre fijo correcto para esta app ('Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso') y aviso de recreación/IA."
+  ],
+  "como_arreglarlo": "CALIDAD: arreglo de texto, no de render. Añadir 3-5 hashtags del nicho al final del texto de Instagram (ej. #recepcionista24h #autonomos #pymes #atencioncliente #inteligenciaartificial), dejando igual el texto de Facebook (allí el límite es 3 y el enlace va en el primer comentario, revisar que también lleve hashtags). Marcar \"renderizado\": false solo si se toca el JSON, y relanzar el ciclo para que recoja el texto corregido. El vídeo en sí (imagen, audio, marca, rótulo de recreación, duración) está correcto y no necesita re-render.",
+  "fecha": "2026-11-28T13:03:14Z",
+  "revisor": "Calidad (API)",
+  "render": "2026-11-22T23:20:03+00:00"
+}
