@@ -1,0 +1,13 @@
+{
+  "aprobado": false,
+  "duracion_s": 49.0,
+  "bloqueos": [
+    "voz distinta del guion: faltan ['hombre', 'colega'], sobran ['maya', 'felipe', 'felipe', 'troco'] (rehacer esas frases)",
+    "silencio de 0.60 s entre 12.9 y 13.5 s (máximo 0.6 s)"
+  ],
+  "avisos": [],
+  "transcripcion": "Solo pago una plataforma. Yo ahorro mucho. Maya, mira el móvil. Salen cuatro cobros distintos. ¡Cuatro! ¡Felipe! ¿Cuatro? Pero si yo solo veo una, la de siempre. ¡Felipe! Yo veo la del vecino. Gratis. Con su clave troco. Aquí nadie toca mis cosas. Esa plataforma es mía. Mi concurso de cocina. ¿Tu concurso? Si no lo has visto ni un día, llevas dos años pagando. Pero, qué cuñado más inútil. Que lo resuelva Neo. Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa. Lo que nadie ve, se sigue cobrando cada mes.",
+  "guion": "¡Solo pago una plataforma! ¡Yo ahorro mucho! ¡Mira el móvil, hombre! Salen cuatro cobros distintos. ¡Cuatro! ¿Cuatro? Pero si yo… solo veo una. La de siempre. Yo veo la del vecino. Gratis. Con su clave, colega. ¡Aquí nadie toca mis cosas! ¡Esa plataforma es mía! ¡Mi concurso de cocina! ¿Tu concurso? ¡Si no lo has visto ni un día! ¡Llevas dos años pagando! ¡Pero qué cuñado más inútil! ¡Que lo resuelva Neo! Resuelto. Hago la lista de plataformas con su fecha de cobro y aviso antes. Usted decide, Rosa. Lo que nadie ve se sigue cobrando cada mes.",
+  "lufs": -13.8,
+  "pico_dbfs": -1.5
+}

@@ -1,0 +1,12 @@
+{
+  "aprobado": true,
+  "duracion_s": 51.0,
+  "bloqueos": [],
+  "avisos": [
+    "voz distinta del guion: faltan ['duros', 'barato'], sobran ['duro', 'balato'] (rehacer esas frases)"
+  ],
+  "transcripcion": "El disfraz es para mañana. Son las 10. Tranquila, mujer. Con una sábana. De fantasma. Eso lo sé yo. Sin problema. La sábana buena no se toca. Y nadie me avisa. Ese grupo no suena. ¡Joder! Silenciaste el grupo del cole hace un mes. Aquí está el aviso. Un disfraz de pirata. Veinte duro. Balato, colega. Mira, Rosa Melano. Un mes leyendo el grupo yo sola. Que morro. Cómo lo de fichar con huella. Siempre igual. Que lo resuelva Neo. Resuelto. Con sábana caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa. Mirar el grupo a tiempo evita disfrazarse de prisa.",
+  "guion": "¡El disfraz es para mañana! ¡Son las diez! Tranquila, mujer. Con una sábana, de fantasma. Eso lo sé yo. Sin problema. ¡La sábana buena no se toca! ¡Y nadie me avisa! ¡Ese grupo no suena! ¡Joder! ¡Silenciaste el grupo del cole hace un mes! ¡Aquí está el aviso! Un disfraz de pirata. Veinte duros. Barato, colega. Mira, Rosa Melano. ¡Un mes leyendo el grupo yo sola! ¡Qué morro! Como lo de fichar con huella. ¡Siempre igual! ¡Que lo resuelva Neo! Resuelto. Con sábana, caja y bufanda salen tres disfraces. Leo la circular cada mañana, Rosa. Mirar el grupo a tiempo evita disfrazarse de prisa.",
+  "lufs": -13.8,
+  "pico_dbfs": -1.2
+}
