@@ -1,0 +1,147 @@
+{
+ "slug": "538_jambo_boda_primo_coche",
+ "set": "portal",
+ "hora": 11,
+ "titulo_fijo": "CUANDO LA BODA ES EN OTRA PROVINCIA",
+ "gancho_tipo": "amenaza_con_plazo",
+ "ambito": "ocio_y_viajes",
+ "marca": false,
+ "moraleja": "Un plan escrito evita discutir dentro del coche",
+ "recuerdo": "Rosa ya hizo fichar con huella a toda la casa (521)",
+ "promesa": "¿Quién va en cada coche a la boda?",
+ "giro": "El coche de Rosa no tenía sitio porque llevaba la tarta y cuatro sillas",
+ "chiste_base": "Seis personas, un coche de cinco plazas y todos jurando que cabe uno más",
+ "resumen": "Rosa quiere ir toda la familia en un solo coche a la boda del primo, pero no caben, y Neo reparte coches y horas.",
+ "nombre_completo_dicho": "Rosa Melano",
+ "por_que_funcionara": "Viaje en familia: todos reconocen el lío de quién va con quién; causa y efecto claros.",
+ "escenas": [
+  {
+   "e": "gancho",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Nos vamos todos en mi coche!",
+   "t": "¡Nos vamos todos en mi coche!",
+   "p": [
+    "rosa",
+    "felipe"
+   ],
+   "a": {
+    "rosa": "desespera"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "chulea",
+   "v": "Caben seis. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo.",
+   "t": "Caben seis. Lo sé yo. Solo hay que apretar un poco. Todo es proponérselo.",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "presume"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "enfado",
+   "v": "¡Apretar, dice! ¡Cinco plazas, Felipe! ¡Y tú pesas por tres!",
+   "t": "¡Apretar, dice! ¡Cinco plazas, Felipe! ¡Y tú pesas por tres!",
+   "p": [
+    "sindy"
+   ],
+   "a": {
+    "sindy": "habla"
+   }
+  },
+  {
+   "e": "gag",
+   "h": "jambo",
+   "emo": "cansado",
+   "v": "Yo voy en el maletero. Gratis. Sin problema, colega.",
+   "t": "Yo voy en el maletero. Gratis. Sin problema, colega.",
+   "p": [
+    "jambo"
+   ],
+   "a": {
+    "jambo": "habla"
+   },
+   "set": "calle"
+  },
+  {
+   "e": "gag",
+   "h": "rosa",
+   "emo": "grita",
+   "v": "¡Pues el maletero lleva la tarta! ¡Y cuatro sillas! ¡Para mi mesa!",
+   "t": "¡Pues el maletero lleva la tarta! ¡Y cuatro sillas! ¡Para mi mesa!",
+   "p": [
+    "rosa",
+    "jambo"
+   ],
+   "a": {
+    "rosa": "desespera"
+   },
+   "giro": true
+  },
+  {
+   "e": "gag",
+   "h": "sindy",
+   "emo": "sorpresa",
+   "v": "Mira, Rosa Melano. ¡Cinco plazas, no seis! ¡Qué manía!",
+   "t": "Mira, Rosa Melano. ¡Cinco plazas, no seis! ¡Qué manía!",
+   "p": [
+    "sindy",
+    "rosa"
+   ],
+   "a": {
+    "sindy": "habla"
+   },
+   "set": "portal"
+  },
+  {
+   "e": "gag",
+   "h": "felipe",
+   "emo": "grita",
+   "v": "Como lo de fichar con huella. ¡Todo mal! ¡Que lo resuelva Neo!",
+   "t": "Como lo de fichar con huella. ¡Todo mal! ¡Que lo resuelva Neo!",
+   "p": [
+    "felipe"
+   ],
+   "a": {
+    "felipe": "desespera"
+   },
+   "risas": true
+  },
+  {
+   "e": "remate",
+   "h": "neo",
+   "emo": "seco",
+   "v": "Resuelto. Dos coches, tres personas en cada uno, parada a mitad de camino. Horas en el grupo, Rosa.",
+   "t": "Resuelto. Dos coches, tres personas en cada uno, parada a mitad de camino. Horas en el grupo, Rosa.",
+   "p": [
+    "neo",
+    "rosa"
+   ],
+   "a": {
+    "neo": "fria"
+   },
+   "sello": "PILLADA"
+  },
+  {
+   "e": "cierre",
+   "h": "neo",
+   "emo": "normal",
+   "v": "Un plan escrito evita discutir dentro del coche.",
+   "t": "Un plan escrito evita discutir dentro del coche.",
+   "p": [
+    "rosa",
+    "neo"
+   ],
+   "a": {
+    "neo": "habla"
+   }
+  }
+ ],
+ "_estado": "28/11 Creador: guion v5.3 validado con _validar. Voces Gemini hechas (536 y 538 renderizadas 51 s en el estudio y con control OK; 537 pendiente de reparar 537_1 y 537_3 en la rama voces/2026-11-28-creador-pm3). Sin video_externo: falta publicar el mp4 desde el estudio (el deploy lo denegó el clasificador). No tiene versión corta todavía."
+}
