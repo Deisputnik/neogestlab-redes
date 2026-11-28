@@ -1,12 +1,12 @@
 {
   "aprobado": false,
-  "nota": 92,
-  "comentario": "Episodio sólido: intro \"Cosas de Casa\" con gancho ≤8 palabras y cierre en bucle exacto del mismo plano, tarjeta de marca correcta antes del cierre, isotipo 2026 válido en todos los fotogramas, audio en rango (LUFS -14.85, pico -1.14 dB, sin silencios detectados), duración 47.5s dentro de 45-70s. Registro de personajes correcto (Neo único culto, resto vulgar/choni con tacos), giro a mitad bien sembrado (yogures de Rosa) y resuelto por Neo, remate que responde al gancho, moraleja en frase natural + recuerdo del episodio 521. Voz diseñada por personaje (Gemini TTS) con _voz_nota. Post con cierre fijo correcto y CTA de envío válido.",
-  "como_arreglarlo": "Menor, no bloquea: para episodios futuros desde el 28/11 conviene ya el patrón v5.3 de 2-3 estancias con plano de casa por fuera intercalado (aquí solo hay una estancia), y decir nombre+apellido de algún personaje en el diálogo.",
-  "fecha": "2026-11-27T21:11:36Z",
+  "nota": 84,
+  "motivos": [
+    "Audio: control_audio.json marca bloqueo real de pronunciación: la frase clave '¡Que lo resuelva el Neo!' se oye como '¡Que lo resuelva el mes!', lo que rompe el remate (el nombre del personaje protagonista no se entiende en el momento bisagra del giro). También 'lentejas' se pronuncia 'lenteas' en un pase. No es jerga tipo illo/pa (que no se penaliza): es un fallo de dicción de la voz diseñada que afecta a la comprensión del chiste.",
+    "Por lo demás la pieza cumple: 47.5s dentro de 45-70s, LUFS -14.85 y pico -1.14 dB correctos, sin silencios, isotipo 2026 válido en insignia y tarjeta de cierre, registro de personajes correcto (Neo único culto, resto vulgar/choni), giro bien sembrado (yogures de Rosa) y resuelto, moraleja en frase natural sin decir la palabra, recuerdo del episodio 521, post con cierre fijo y CTA correctos. Al ser renderizado el 27/11 22:09 (antes del 28/11), no se penaliza por abrir/cerrar con la casa: esa regla solo aplica a piezas producidas desde el 28/11."
+  ],
+  "como_arreglarlo": "CREADOR: regenerar solo el audio de las frases 'Hay doce yogures tuyos' / '¡Que lo resuelva el Neo!' con el workflow de voces (Gemini TTS, voice_jsbas0g97111 para Jambo y la voz de Sindy en esa línea) para que 'Neo' y 'lentejas' se pronuncien con claridad, y volver a mezclar/renderizar el mp4 final (gen_promos.py + render.mjs --final en Neogest Studio). No hace falta tocar guion, imagen ni post.",
+  "fecha": "2026-11-28T00:13:39Z",
   "revisor": "Calidad (API)",
-  "aprobado_anterior": true,
-  "nota_anterior": 92,
-  "caducado": "2026-11-27T22:09:48+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-27T22:09:48+00:00"
+  "render": "2026-11-27T22:09:48+00:00"
 }
