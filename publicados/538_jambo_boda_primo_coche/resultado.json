@@ -1,0 +1,19 @@
+{
+  "media_id": "18135207667833320",
+  "enlace": "https://www.instagram.com/reel/DgSoUfpKe_d/",
+  "prueba_no_seguidores": false,
+  "metodo": "video_url",
+  "publicado": "2026-11-28T15:58:52+00:00",
+  "youtube": {
+    "estado": "publicado",
+    "video_id": "7jGxKqowlPk",
+    "enlace": "https://youtube.com/shorts/7jGxKqowlPk",
+    "titulo": "La boda del primo y no caben 🚗 #Shorts"
+  },
+  "facebook": {
+    "estado": "publicado",
+    "video_id": "1824052408643714",
+    "enlace": "https://www.facebook.com/reel/1824052408643714",
+    "comentario": "error: Facebook HTTP 403: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_engagement are not available. It could because either they are deprecated or need to be approved by App Review.\",\"t"
+  }
+}
