@@ -1,0 +1,58 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "app": "Patinete al Día",
+  "app_slug": "patinete-al-dia",
+  "publico": "Propietarios de patinete eléctrico (VMP)",
+  "motor": "hyperframes",
+  "portada_ms": 0,
+  "_fuentes": [
+    "Centro de Contenido Apps (Base44 6ae5244d4e2b32702f0a3cd6), Producto slug patinete-al-dia, hechos_verificados y prohibido_afirmar consultados por MCP el 28/11/2026.",
+    "Nota de prensa de la DGT del 27-1-2026 (https://www.dgt.es/comunicacion/notas-de-prensa/20260127-trafico-pone-en-marcha-registro-vehiculos-personales-ligeros/index.html), citada en la ficha: VMP sin certificado pueden circular hasta el 22-1-2027 y desde esa fecha no podrán; el registro es requisito para el seguro obligatorio; registro en la sede electrónica de la DGT, el 060 ayuda; multas: carecer del seguro 202-610 €, circular sin seguro 250-800 €.",
+    "Encargo del dueño 28/11/2026 (Patinete al Día: P1 promo, P2 tutorial, P3 Mis vencimientos) y DIRECTIVA §5/§6/§9."
+  ],
+  "monetizacion": {
+    "objetivo": "clic_enlace",
+    "oferta": "Patinete al Día gratis (captación) → prueba gratuita de Gestión Integral 7D en /solicitar",
+    "paso_embudo": "alcance → visita al perfil → clic en el enlace → alta en prueba gratuita 7D"
+  },
+  "voz": {
+    "motor": "elevenlabs",
+    "voz": "Johnny HMCmDsbKeaSZp5LMOYKR",
+    "modelo": "eleven_multilingual_v2"
+  },
+  "_datos_demo": "Grabado en la app publicada con datos ficticios: modelo «Patinete de ejemplo (demo)», serie «SERIE-EJEMPLO-0000», fechas de ejemplo; intro saltada con sessionStorage neogest_intro_patinete-al-dia=1.",
+  "texto": "¿Sabes cuándo te caduca el seguro del patinete?\nEn Patinete al Día apuntas en la ficha el fin del seguro y te cuenta los días que le quedan. En «Mis vencimientos» añades lo que caduca (revisión, batería, garantía…) con su fecha: la app los ordena y te enseña los días que faltan, con un color según lo urgente.\nGratis, sin cuenta y con los datos solo en tu móvil. No es una app oficial ni de la DGT.\nMándaselo a quien siempre se entera tarde de lo que caduca.\n¿Cuántos días le quedan a tu seguro? Dilo con un número.\nApp gratis → https://patinete-al-dia-5f6b9504.base44.app\n¿Tienes un negocio? Pide tu prueba gratuita de Gestión Integral 7D: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA. Datos de ejemplo.\n#patineteelectrico #VMP #seguro #NeogestLab",
+  "cuando": "2027-01-23T13:40:00+01:00",
+  "no_antes_de": "2027-01-22T00:00:00+01:00",
+  "gancho": "¿Cuándo te caduca el seguro del patinete?",
+  "titulo_fijo": "¿Cuándo te caduca el seguro del patinete?",
+  "formato": "Promo de app (P3 del encargo 28/11, desde el 22-1-2027): ficha + Mis vencimientos; grabada simulando el 5-2-2027 en la app publicada (la cabecera ya muestra los días para el próximo vencimiento, sin cuenta atrás al 22-1)",
+  "comentario_fijado": "¿Cuántos días le quedan a tu seguro? Dilo con un número. App gratis: enlace en el perfil.",
+  "avance_siguiente": "Siguiente: más utilidades gratis de Neogest Lab",
+  "youtube": {
+    "titulo": "¿Cuándo caduca tu seguro de patinete? 🛴 #Shorts",
+    "descripcion": "Patinete al Día (gratis, sin cuenta): ficha del patinete con los días que le quedan al seguro y «Mis vencimientos» para revisión, batería, garantía… ordenados y con los días que faltan. No es una app oficial ni de la DGT. App: https://patinete-al-dia-5f6b9504.base44.app · ¿Tienes un negocio? Pide tu prueba gratuita de Gestión Integral 7D: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube · Web: neogestlab.com · By Neogest Lab · Música: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+    "etiquetas": [
+      "#patineteelectrico",
+      "#VMP",
+      "#seguro"
+    ]
+  },
+  "facebook": {
+    "texto": "¿Sabes cuándo te caduca el seguro del patinete?\nCompártelo con quien siempre se entera tarde de lo que caduca.\n¿Cuántos días le quedan a tu seguro? Dilo con un número.\nPatinete al Día (gratis, sin cuenta): ficha y «Mis vencimientos» con los días que faltan. No es una app oficial ni de la DGT.\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA."
+  },
+  "video_externo": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/88abbbe51ef3f6e45b5186a896c327be_710_patinete_al_dia_vencimientos.mp4",
+  "portada_url": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/e6812f817dc3f7ec0f01c1a2b4a29196_710_patinete_al_dia_vencimientos_portada.jpg",
+  "duracion_s": 42.0,
+  "audio": {
+    "lufs_integrados": -14.0,
+    "pico_real_dbtp": -2.1
+  },
+  "musica": {
+    "titulo": "Life of Riley",
+    "atribucion": "Música: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0"
+  },
+  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (la frase «Es gratis, no pide cuenta» se rehízo porque «sin cuenta» no se entendía); sin silencios > 1,5 s; −14,0 LUFS, pico real −2,1 dB; 42 s. No nombra la cuenta atrás ni la fecha del 22-1 ni enseña el checklist. Publicar SOLO desde el 22-1-2027."
+}

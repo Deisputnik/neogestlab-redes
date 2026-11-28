@@ -1,0 +1,58 @@
+{
+  "tipo": "reel",
+  "compartir_en_feed": true,
+  "prueba_no_seguidores": false,
+  "app": "Patinete al Día",
+  "app_slug": "patinete-al-dia",
+  "publico": "Propietarios de patinete eléctrico (VMP)",
+  "motor": "hyperframes",
+  "portada_ms": 0,
+  "_fuentes": [
+    "Centro de Contenido Apps (Base44 6ae5244d4e2b32702f0a3cd6), Producto slug patinete-al-dia, hechos_verificados y prohibido_afirmar consultados por MCP el 28/11/2026.",
+    "Nota de prensa de la DGT del 27-1-2026 (https://www.dgt.es/comunicacion/notas-de-prensa/20260127-trafico-pone-en-marcha-registro-vehiculos-personales-ligeros/index.html), citada en la ficha: VMP sin certificado pueden circular hasta el 22-1-2027 y desde esa fecha no podrán; el registro es requisito para el seguro obligatorio; registro en la sede electrónica de la DGT, el 060 ayuda; multas: carecer del seguro 202-610 €, circular sin seguro 250-800 €.",
+    "Encargo del dueño 28/11/2026 (Patinete al Día: P1 promo, P2 tutorial, P3 Mis vencimientos) y DIRECTIVA §5/§6/§9."
+  ],
+  "monetizacion": {
+    "objetivo": "clic_enlace",
+    "oferta": "Patinete al Día gratis (captación) → prueba gratuita de Gestión Integral 7D en /solicitar",
+    "paso_embudo": "alcance → visita al perfil → clic en el enlace → alta en prueba gratuita 7D"
+  },
+  "voz": {
+    "motor": "elevenlabs",
+    "voz": "Johnny HMCmDsbKeaSZp5LMOYKR",
+    "modelo": "eleven_multilingual_v2"
+  },
+  "_datos_demo": "Grabado en la app publicada con datos ficticios: modelo «Patinete de ejemplo (demo)», serie «SERIE-EJEMPLO-0000», fechas de ejemplo; intro saltada con sessionStorage neogest_intro_patinete-al-dia=1.",
+  "texto": "Cómo dejar tu patinete en regla en 4 pasos.\n1) Mira si tiene certificado. 2) Regístralo en la sede electrónica de la DGT (el 060 te ayuda). 3) Pon la etiqueta identificativa. 4) Contrata el seguro obligatorio: registrarlo es requisito para obtenerlo.\nSegún la DGT, carecer del seguro se sanciona con entre 202 y 610 € y circular sin seguro con entre 250 y 800 €.\nCon Patinete al Día marcas cada paso y apuntas la ficha de tu patinete. Gratis, sin cuenta y con los datos solo en tu móvil. No es una app oficial ni de la DGT.\nGuárdalo y mándaselo a quien acaba de comprarse un patinete.\n¿En qué paso estás? Di un número del 1 al 4.\nApp gratis → https://patinete-al-dia-5f6b9504.base44.app\n¿Tienes un negocio? Pide tu prueba gratuita de Gestión Integral 7D: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=instagram\nFuente: nota de prensa de la DGT del 27-1-2026.\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA. Datos de ejemplo.\n#patineteelectrico #DGT #VMP #NeogestLab",
+  "cuando": "2026-12-01T13:40:00+01:00",
+  "perenne": true,
+  "gancho": "Tu patinete en regla en 4 pasos",
+  "titulo_fijo": "Tu patinete en regla en 4 pasos",
+  "formato": "Tutorial perenne (P2 del encargo 28/11), 60 s, con la app abierta; sin la cuenta atrás (cabecera difuminada y fuera de plano; texto con fecha del paso 1 tapado)",
+  "comentario_fijado": "¿En qué paso estás? Di un número del 1 al 4. App gratis: enlace en el perfil.",
+  "avance_siguiente": "Siguiente: no te olvides de cuándo caduca el seguro",
+  "youtube": {
+    "titulo": "Patinete en regla en 4 pasos 🛴 #Shorts",
+    "descripcion": "Cómo dejar tu patinete en regla en 4 pasos: certificado, registro en la DGT, etiqueta y seguro obligatorio, con Patinete al Día (gratis, sin cuenta). No es una app oficial ni de la DGT. App: https://patinete-al-dia-5f6b9504.base44.app · ¿Tienes un negocio? Pide tu prueba gratuita de Gestión Integral 7D: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=youtube · Fuente: nota de prensa de la DGT del 27-1-2026 · Web: neogestlab.com · By Neogest Lab · Música: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0",
+    "etiquetas": [
+      "#patineteelectrico",
+      "#DGT",
+      "#VMP"
+    ]
+  },
+  "facebook": {
+    "texto": "Cómo dejar tu patinete en regla en 4 pasos.\nCompártelo con quien acaba de comprarse un patinete.\n¿En qué paso estás? Di un número del 1 al 4.\nCertificado, registro en la DGT, etiqueta y seguro obligatorio, con Patinete al Día (gratis, sin cuenta). No es una app oficial ni de la DGT.\nFuente: nota de prensa de la DGT del 27-1-2026.\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA."
+  },
+  "video_externo": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/aadf0dc2e9a45ecfcc00efbd82409856_709_patinete_al_dia_tutorial.mp4",
+  "portada_url": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/3cefe7cb426eee7ef4a7e4cd1cde76d4_709_patinete_al_dia_tutorial_portada.jpg",
+  "duracion_s": 59.7,
+  "audio": {
+    "lufs_integrados": -13.8,
+    "pico_real_dbtp": -2.0
+  },
+  "musica": {
+    "titulo": "Life of Riley",
+    "atribucion": "Música: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0"
+  },
+  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (coincide); sin silencios > 1,5 s; −13,8 LUFS, pico real −2,0 dB; 59,7 s. No nombra ni enseña la cuenta atrás. Solo hechos verificados y nota de la DGT; nada de lo prohibido."
+}
