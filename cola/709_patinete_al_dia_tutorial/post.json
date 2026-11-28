@@ -43,7 +43,6 @@
   "facebook": {
     "texto": "Cómo dejar tu patinete en regla en 4 pasos.\nCompártelo con quien acaba de comprarse un patinete.\n¿En qué paso estás? Di un número del 1 al 4.\nCertificado, registro en la DGT, etiqueta y seguro obligatorio, con Patinete al Día (gratis, sin cuenta). No es una app oficial ni de la DGT.\nFuente: nota de prensa de la DGT del 27-1-2026.\nMúsica: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0\nVoz generada por IA."
   },
-  "video_externo": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/aadf0dc2e9a45ecfcc00efbd82409856_709_patinete_al_dia_tutorial.mp4",
   "portada_url": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/3cefe7cb426eee7ef4a7e4cd1cde76d4_709_patinete_al_dia_tutorial_portada.jpg",
   "duracion_s": 59.7,
   "audio": {
@@ -54,5 +53,8 @@
     "titulo": "Life of Riley",
     "atribucion": "Música: \"Life of Riley\" de Kevin MacLeod (incompetech.com), licencia CC BY 4.0"
   },
-  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (coincide); sin silencios > 1,5 s; −13,8 LUFS, pico real −2,0 dB; 59,7 s. No nombra ni enseña la cuenta atrás. Solo hechos verificados y nota de la DGT; nada de lo prohibido."
+  "_comprobado": "28/11/2026: voz transcrita con Whisper contra el guion (coincide); sin silencios > 1,5 s; −13,8 LUFS, pico real −2,0 dB; 59,7 s. No nombra ni enseña la cuenta atrás. Solo hechos verificados y nota de la DGT; nada de lo prohibido.",
+  "renderizado": "2026-11-28T13:09:25+00:00",
+  "asset": "709_patinete_al_dia_tutorial.mp4",
+  "_video_externo_usado": "https://base44.app/api/apps/6ae5244d4e2b32702f0a3cd6/files/mp/public/6ae5244d4e2b32702f0a3cd6/aadf0dc2e9a45ecfcc00efbd82409856_709_patinete_al_dia_tutorial.mp4"
 }

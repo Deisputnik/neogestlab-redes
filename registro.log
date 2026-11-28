@@ -1,5 +1,3 @@
-2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
-2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  534_appcc_facil_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  532_ghplus_vertical_hyperframes: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
 2026-11-26 12:11  533_gestoria7d_vertical: post.json sin 'cuando' válido ('NoneType' object has no attribute 'strip')
@@ -598,3 +596,5 @@
 2026-11-28 13:10  538_jambo_boda_primo_coche: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
 2026-11-28 13:10  708_patinete_al_dia_promo: control de audio del vídeo externo: aprobado=None LUFS=-14.1 pico=-2.1
 2026-11-28 13:10  708_patinete_al_dia_promo: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)
+2026-11-28 14:09  709_patinete_al_dia_tutorial: control de audio del vídeo externo: aprobado=None LUFS=-13.8 pico=-2.0
+2026-11-28 14:09  709_patinete_al_dia_tutorial: vídeo externo subido a la release 'cola' (Calidad debe evaluarlo)

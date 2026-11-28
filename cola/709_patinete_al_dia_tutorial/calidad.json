@@ -7,5 +7,9 @@
   ],
   "como_arreglarlo": "CREADOR: 1) re-renderizar ajustando el posicionamiento del rótulo inferior (subtítulo/etiqueta de paso) para que nunca se solape con el texto de la demo de la app —bajar su opacidad de fondo no basta, hay que separar verticalmente las dos capas de texto o recortar/editar el guion para que no coincidan en el tiempo; 2) recortar el tutorial a 25-45 s (estándar v6, A5) eliminando pausas o acortando explicaciones por paso, o si el dueño quiere mantenerlo en 60 s, pedir primero una excepción explícita por escrito para la serie de apps (como ya existe para El Jambo) antes de aprobarlo.",
   "fecha": "2026-11-28T12:10:59Z",
-  "revisor": "Calidad (API)"
+  "revisor": "Calidad (API)",
+  "aprobado_anterior": false,
+  "nota_anterior": 70,
+  "caducado": "2026-11-28T13:09:25+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-28T13:09:25+00:00"
 }
