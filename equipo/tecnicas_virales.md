@@ -45,5 +45,5 @@ Reparto sugerido: 1 de cada 3 reels humor/personaje, 1 experimento, 1 cálculo o
 - Publicar en fin de semana (1,10× frente a 0,96×) y no más de 3 piezas al día. Usar reels de prueba para desconocidos si la herramienta lo permite (cuentas pequeñas superan su alcance habitual el 21 % de las veces).
 - Medir cada reel a las 48 h con ig_post_stats: abandono (meta < 40 %), compartidos ÷ me gusta × 100 (meta ≥ 8) y visualización media (meta ≥ 15 s). Lo que no mejore al tercer intento se descarta.
 
-## 5. Ideas listas para producir (para Creador; la bandeja de propuestas continúa en equipo/briefs_v8.md)
-Ver equipo/briefs_v8.md: 12 piezas con gancho, espina, hechos que hacen falta y por qué debería compartirse.
+## 5. Ideas listas para producir (para Creador; la bandeja de propuestas continúa en equipo/archivo/briefs_v8.md)
+Ver equipo/archivo/briefs_v8.md: 12 piezas con gancho, espina, hechos que hacen falta y por qué debería compartirse.

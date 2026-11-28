@@ -3,7 +3,7 @@
 
 Lo ejecuta .github/workflows/ciclo.yml varias veces al día. En cada pasada:
   1. Renderiza los reels nuevos de cola/ (guion.json -> hacer_reel.py, remaster.json -> remaster.py),
-     les pone la voz (Chatterbox, Kokoro, Kyutai Pocket TTS o Piper, según equipo/voz.json "motor" y "respaldo")
+     les pone la voz (edge-tts, según equipo/voz.json "motor")
      y guarda el vídeo como archivo de la release "cola" (no en el historial de git).
   2. Publica en Instagram los que ya tienen su hora y el visto bueno de Calidad (calidad.json).
   3. Responde a los comentarios con la palabra clave de cada reel.
@@ -16,7 +16,7 @@ Formato de una carpeta de cola/<NNN_tema>/:
   calidad.json {"aprobado": true, ...}   (lo escribe el agente de Calidad)
 
 Secretos/variables del repositorio: PAGE_TOKEN (secreto). El resto está en equipo/config_publico.json.
-Solo usa la librería estándar, Pillow/numpy (para los generadores), ffmpeg, gh, Piper y (opcional) pocket-tts.
+Solo usa la librería estándar, Pillow/numpy (para los generadores), ffmpeg, gh y edge-tts (voz).
 """
 import glob
 import hashlib
@@ -26,7 +26,6 @@ import re
 import shutil
 import subprocess
 import sys
-import tarfile
 import time
 import urllib.error
 import urllib.parse
@@ -49,24 +48,9 @@ HERR_REEL = os.path.join(BASE, "herramientas")
 CACHE = os.path.expanduser(os.environ.get("CACHE_HERRAMIENTAS", "~/.cache/expedientes"))
 GRAPH = "https://graph.facebook.com"
 RELEASE = "cola"
-PIPER_URLS = [
-    "https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_linux_x86_64.tar.gz",
-    "https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz",
-]
-VOZ_RAIZ = "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/"
-VOZ_POCKET = os.path.join(BASE, "herramientas", "voz_pocket.py")
-VOZ_CHATTERBOX = os.path.join(BASE, "herramientas", "voz_chatterbox.py")
-VOZ_KOKORO = os.path.join(BASE, "herramientas", "voz_kokoro.py")
-VOZ_MELO = os.path.join(BASE, "herramientas", "voz_melo.py")
 VOZ_EDGE = os.path.join(BASE, "herramientas", "voz_edge.py")
-# MeloTTS va en su propio venv (Python 3.10, dependencias fijadas): las workflows exportan PYTHON_MELO (.github/actions/melo)
-PYTHON_MELO = os.environ.get("PYTHON_MELO") or sys.executable
-# Chatterbox va en su propio entorno virtual (fija torch 2.6 y transformers 4.46): ciclo.yml exporta PYTHON_CHATTERBOX
-PYTHON_CHATTERBOX = os.environ.get("PYTHON_CHATTERBOX") or sys.executable
-ATRIBUCION_POCKET = "Voz: Kyutai Pocket TTS (CC BY 4.0)"
-# Chatterbox (MIT) y Kokoro (Apache 2.0) no exigen atribución, pero Meta pide marcar el audio realista generado:
 ATRIBUCION_IA = "Voz generada por IA"
-ATRIBUCIONES = {"edge": ATRIBUCION_IA, "melo": ATRIBUCION_IA, "pocket": ATRIBUCION_POCKET, "chatterbox": ATRIBUCION_IA, "kokoro": ATRIBUCION_IA}
+ATRIBUCIONES = {"edge": ATRIBUCION_IA}
 MAX_RENDERS = 2
 GRACIA_SIN_CALIDAD = timedelta(hours=3)  # ya no se usa (7/11/2026)
 NOTA_MINIMA = 90  # nota mínima de Calidad para publicar (7/11/2026)
@@ -219,76 +203,25 @@ def gh(*args, check=True):
     return r
 
 
-# ---------------------------------------------------------------- voz (Chatterbox / Kokoro / Pocket TTS / Piper)
-MOTORES = ("edge", "melo", "chatterbox", "kokoro", "pocket", "piper")
+# ---------------------------------------------------------------- voz (edge-tts; DIRECTIVA §6: Chatterbox, MeloTTS, Kokoro, Pocket y Piper retirados)
+MOTORES = ("edge",)
 
 
 def ajustes_voz():
-    base = {"motor": "piper", "respaldo": ["pocket", "piper"],
-            "modelo": "es/es_ES/davefx/medium/es_ES-davefx-medium", "lentitud": 1.08,
-            "volumen_voz": 1.25, "umbral_duck": 0.04, "ratio_duck": 3, "limite": 0.7, "variacion": 0.667,
-            "ruido": 0.8, "cadena_voz": "",
-            "pocket": {"idioma": "spanish", "voz": "lola", "temperatura": None, "ganancia": 1.0, "max_s": 600},
-            "chatterbox": {"modelo": "es-es", "idioma": "es", "exageracion": 0.6, "cfg": 0.35, "temperatura": 0.75,
-                           "referencia": None, "referencia_kokoro": "em_alex",
-                           "ganancia": 1.0, "semilla": 7, "max_s": 1500},
-            "kokoro": {"voz": "em_alex", "velocidad": 0.95, "ganancia": 1.0, "max_s": 300},
-            "melo": {"idioma": "ES", "speaker": "ES", "velocidad": 1.0, "ganancia": 1.0, "max_s": 900}}
+    base = {"motor": "edge", "respaldo": [],
+            "volumen_voz": 1.25, "umbral_duck": 0.04, "ratio_duck": 3, "limite": 0.7, "cadena_voz": ""}
     base.update(leer_json(AJUSTES_VOZ, {}) or {})
     return base
 
 
 def cadena_motores(aj):
-    """Motor principal y después los de respaldo, sin repetir y solo los conocidos. Piper cierra la lista salvo "permitir_piper": false."""
-    orden = [str(aj.get("motor", "piper")).lower()] + [str(m).lower() for m in (aj.get("respaldo") or [])]
-    if aj.get("permitir_piper", True):   # 10/11/2026: con "permitir_piper": false el render FALLA antes que salir con Piper (robótico)
-        orden.append("piper")
+    """Motor principal y después los de respaldo, sin repetir y solo los conocidos (hoy solo edge-tts)."""
+    orden = [str(aj.get("motor", "edge")).lower()] + [str(m).lower() for m in (aj.get("respaldo") or [])]
     vistos = []
     for m in orden:
         if m in MOTORES and m not in vistos:
             vistos.append(m)
     return vistos
-
-
-def ruta_piper():
-    p = os.path.join(CACHE, "piper", "piper")
-    if os.path.exists(p):
-        return p
-    os.makedirs(CACHE, exist_ok=True)
-    for url in PIPER_URLS:
-        try:
-            tgz = os.path.join(CACHE, "piper.tar.gz")
-            descargar(url, tgz)
-            with tarfile.open(tgz) as t:
-                t.extractall(CACHE)
-            os.remove(tgz)
-            if os.path.exists(p):
-                os.chmod(p, 0o755)
-                return p
-        except Exception as e:
-            log(f"Piper: fallo con {url}: {e}")
-    raise ErrorAPI("No se pudo descargar Piper")
-
-
-def modelo_voz():
-    rel = ajustes_voz()["modelo"]
-    destino = os.path.join(CACHE, "voces", os.path.basename(rel) + ".onnx")
-    if not os.path.exists(destino):
-        os.makedirs(os.path.dirname(destino), exist_ok=True)
-        descargar(VOZ_RAIZ + rel + ".onnx.json", destino + ".json")
-        descargar(VOZ_RAIZ + rel + ".onnx", destino)
-    return destino
-
-
-def sintetizar(texto, salida):
-    a = ajustes_voz()
-    piper = ruta_piper()
-    r = subprocess.run([piper, "--model", modelo_voz(), "--output_file", salida,
-                        "--length_scale", str(a["lentitud"]), "--noise_scale", str(a["variacion"]),
-                        "--noise_w", str(a["ruido"])],
-                       input=texto.encode(), cwd=os.path.dirname(piper), capture_output=True, timeout=180)
-    if r.returncode != 0 or not os.path.exists(salida):
-        raise ErrorAPI(f"Piper falló: {r.stderr.decode(errors='replace')[-300:]}")
 
 
 def _sintetizar_lote(nombre, script, python, lote_datos, textos, salidas, trabajo, max_s, extras=None):
@@ -329,112 +262,6 @@ def ajustes_por_estilo(cfg_motor, estilos, claves):
     return out if any(out) else None
 
 
-def sintetizar_pocket(textos, salidas, trabajo, aj, estilos=None):
-    pk = dict(aj.get("pocket") or {})
-    info = _sintetizar_lote("Pocket TTS", VOZ_POCKET, sys.executable,
-                            {"idioma": pk.get("idioma", "spanish"), "voz": pk.get("voz", "lola"),
-                             "temperatura": pk.get("temperatura"), "ganancia": pk.get("ganancia", 1.0)},
-                            textos, salidas, trabajo, pk.get("max_s", 600))
-    log(f"Voz con Pocket TTS ({pk.get('idioma', 'spanish')}/{pk.get('voz', 'lola')}): "
-        f"{len(textos)} frases en {info['_segundos']} s")
-
-
-def sintetizar_chatterbox(textos, salidas, trabajo, aj, estilos=None):
-    """Chatterbox (Resemble AI, MIT). Referencia de voz: solo la del usuario (voces/referencia_usuario.wav)
-    o una con licencia libre; si el archivo no existe se usa la voz integrada del modelo."""
-    cb = dict(aj.get("chatterbox") or {})
-    ref = cb.get("referencia")
-    if ref and aj.get("prohibir_voz_dueno", True) and any(k in str(ref) for k in ("voz_dueno", "referencia_usuario")):
-        # Orden del dueño (9/11/2026 23:55): su voz no se usa en ningún vídeo nuevo.
-        log("Voz del dueño prohibida por la directiva: se ignora la referencia y se usa una sintética con licencia libre")
-        ref = None
-    if ref and not os.path.isabs(ref):
-        ref = os.path.join(BASE, ref)
-    if ref and os.path.exists(ref) and cb.get("eq_referencia"):
-        ref = referencia_con_eq(ref, str(cb["eq_referencia"]))
-    if not (ref and os.path.exists(ref)) and cb.get("referencia_kokoro"):
-        # Sin voz del usuario: referencia sintética con licencia libre (Kokoro, Apache 2.0), generada aquí mismo
-        # y guardada en la caché. No es la voz de ninguna persona real.
-        ref = referencia_kokoro(str(cb["referencia_kokoro"]), aj, trabajo)
-    info = _sintetizar_lote("Chatterbox", VOZ_CHATTERBOX, PYTHON_CHATTERBOX,
-                            {"modelo": cb.get("modelo", "es-es"), "idioma": cb.get("idioma", "es"),
-                             "exageracion": cb.get("exageracion", 0.5), "cfg": cb.get("cfg", 0.5),
-                             "temperatura": cb.get("temperatura", 0.8), "referencia": ref if ref and os.path.exists(ref) else None,
-                             "ganancia": cb.get("ganancia", 1.0), "semilla": cb.get("semilla"),
-                             "theta": cb.get("theta") or ""},
-                            textos, salidas, trabajo, cb.get("max_s", 1500),
-                            extras=ajustes_por_estilo(cb, estilos, ("exageracion", "cfg", "temperatura")))
-    log(f"Voz con Chatterbox ({info.get('modelo_usado', '?')}, referencia={'sí' if info.get('referencia') else 'integrada'}, "
-        f"exageración {cb.get('exageracion', 0.5)}, cfg {cb.get('cfg', 0.5)}): {len(textos)} frases en {info['_segundos']} s"
-        + (f"; avisos: {info['avisos']}" if info.get("avisos") else ""))
-
-
-def referencia_con_eq(ref, filtros):
-    """Copia de la referencia de voz con una ecualización (ffmpeg, p. ej. realce de agudos si la grabación suena
-    apagada, como una nota de voz de móvil o una voz separada de la música). Con caché; si falla, la original."""
-    try:
-        import hashlib
-        clave = hashlib.md5((os.path.abspath(ref) + "|" + filtros + "|" + str(os.path.getmtime(ref))).encode()).hexdigest()[:12]
-        destino = os.path.join(CACHE, "voces", f"ref_eq_{clave}.wav")
-        if os.path.exists(destino) and os.path.getsize(destino) > 20000:
-            return destino
-        os.makedirs(os.path.dirname(destino), exist_ok=True)
-        r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", ref, "-af", filtros + ",alimiter=limit=0.85:level=false",
-                            "-ar", "24000", "-ac", "1", destino], capture_output=True, timeout=120)
-        if r.returncode != 0 or not os.path.exists(destino):
-            raise ErrorAPI(r.stderr.decode(errors="replace")[-160:])
-        return destino
-    except Exception as e:
-        log(f"EQ de la referencia no aplicada ({str(e)[-120:]}); se usa la referencia tal cual")
-        return ref
-
-
-TEXTO_REFERENCIA = ("A ver, te cuento una cosa que me pasó el otro día. Estaba en casa, tranquilo, y de repente… "
-                    "oigo un ruido en la cocina. Nada, pensé. Pero no. Ojo, que esto se pone bueno.")
-
-
-def referencia_kokoro(voz, aj, trabajo):
-    """Clip de referencia (~10 s, español) generado con Kokoro para que Chatterbox imite su timbre. Con caché."""
-    destino = os.path.join(CACHE, "voces", f"referencia_kokoro_{voz}.wav")
-    if os.path.exists(destino) and os.path.getsize(destino) > 20000:
-        return destino
-    try:
-        os.makedirs(os.path.dirname(destino), exist_ok=True)
-        tmp = os.path.join(trabajo, "ref_kokoro.wav")
-        _sintetizar_lote("Kokoro (referencia)", VOZ_KOKORO, sys.executable,
-                         {"voz": voz, "velocidad": 1.0, "ganancia": 1.0}, [TEXTO_REFERENCIA], [tmp], trabajo, 300)
-        shutil.copy(tmp, destino)
-        return destino
-    except Exception as e:
-        log(f"Referencia Kokoro no disponible ({str(e)[-160:]}); Chatterbox usa su voz integrada")
-        return None
-
-
-def sintetizar_kokoro(textos, salidas, trabajo, aj, estilos=None):
-    kk = dict(aj.get("kokoro") or {})
-    info = _sintetizar_lote("Kokoro", VOZ_KOKORO, sys.executable,
-                            {"voz": kk.get("voz", "em_alex"), "velocidad": kk.get("velocidad", 1.0),
-                             "ganancia": kk.get("ganancia", 1.0)},
-                            textos, salidas, trabajo, kk.get("max_s", 300),
-                            extras=ajustes_por_estilo(kk, estilos, ("velocidad",)))
-    log(f"Voz con Kokoro ({kk.get('voz', 'em_alex')}): {len(textos)} frases en {info['_segundos']} s")
-
-
-def sintetizar_melo(textos, salidas, trabajo, aj, estilos=None):
-    """MeloTTS ES (MIT, voz genérica, 44,1 kHz). 13/11/2026: elección del dueño en la audición v2. Sin remuestrear aquí."""
-    ml = dict(aj.get("melo") or {})
-    info = _sintetizar_lote("MeloTTS", VOZ_MELO, PYTHON_MELO,
-                            {"idioma": ml.get("idioma", "ES"), "speaker": ml.get("speaker", "ES"),
-                             "velocidad": ml.get("velocidad", 1.0), "ganancia": ml.get("ganancia", 1.0),
-                             "pronunciacion": ml.get("pronunciacion") or {}, "semilla": ml.get("semilla"),
-                             "sdp_ratio": ml.get("sdp_ratio", 0.2), "noise_scale": ml.get("noise_scale", 0.6),
-                             "noise_scale_w": ml.get("noise_scale_w", 0.8)},
-                            textos, salidas, trabajo, ml.get("max_s", 900),
-                            extras=ajustes_por_estilo(ml, estilos, ("velocidad",)))
-    log(f"Voz con MeloTTS ({ml.get('idioma', 'ES')}/{ml.get('speaker', 'ES')}, {info.get('sr', '?')} Hz, velocidad {ml.get('velocidad', 1.0)}): "
-        f"{len(textos)} frases en {info['_segundos']} s")
-
-
 def sintetizar_edge(textos, salidas, trabajo, aj, estilos=None, hablantes=None):
     """edge-tts (Microsoft Edge neural, gratis), una voz por personaje y cadena de audio de la DIRECTIVA 14/11/2026."""
     ed = dict(aj.get("edge") or {})
@@ -444,18 +271,12 @@ def sintetizar_edge(textos, salidas, trabajo, aj, estilos=None, hablantes=None):
     log(f"Voz con edge-tts: {len(textos)} frases en {info['_segundos']} s")
 
 
-def sintetizar_piper(textos, salidas, trabajo, aj, estilos=None):
-    for t, s in zip(textos, salidas):
-        sintetizar(t, s)
-
-
-SINTETIZADORES = {"edge": sintetizar_edge, "melo": sintetizar_melo, "chatterbox": sintetizar_chatterbox, "kokoro": sintetizar_kokoro,
-                  "pocket": sintetizar_pocket, "piper": sintetizar_piper}
+SINTETIZADORES = {"edge": sintetizar_edge}
 
 
 def generar_locucion(textos, trabajo, aj=None, estilos=None, hablantes=None):
     """Devuelve (lista de wav, motor usado). Se prueba el motor de equipo/voz.json y, si falla, los de "respaldo"
-    en orden (Piper siempre el último). Toda la locución sale del mismo motor: no se mezclan voces.
+    en orden. Toda la locución sale del mismo motor: no se mezclan voces.
     estilos: estilo de la escena de cada frase (gancho, giro...) para los ajustes por estilo del motor."""
     aj = aj or ajustes_voz()
     salidas = [os.path.join(trabajo, f"voz{i}.wav") for i in range(len(textos))]
@@ -479,7 +300,7 @@ def generar_locucion(textos, trabajo, aj=None, estilos=None, hablantes=None):
 
 
 def con_atribucion(texto, motor):
-    """Pocket TTS (CC BY 4.0) exige atribución; con Chatterbox/Kokoro se marca que la voz es generada.
+    """Se marca que la voz es generada por IA (Meta pide marcar el audio realista generado).
     Se añade al final del texto del post (una sola vez)."""
     linea = ATRIBUCIONES.get(str(motor or "").lower())
     if not linea or linea in (texto or "") or "Voz generada" in (texto or "") or "Voz: generada" in (texto or ""):
@@ -1462,11 +1283,9 @@ class ControlAudioFallo(Exception):
 def renderizar_pendientes(cfg):
     hechos = 0
     if os.environ.get("OMITIR_RENDER") == "1":   # ciclo.yml: falta el motor de voz o faster-whisper; no se gastan intentos
-        log("Render omitido: ciclo.yml avisó de que falta un motor de voz o faster-whisper (no se cae a Piper)")
+        log("Render omitido: ciclo.yml avisó de que falta un motor de voz o faster-whisper ")
         return
-    # 10/11/2026 (Mejora, tarde): con Chatterbox (≈8 min de síntesis por reel en CPU, medido en prueba_voz) solo 1 render por
-    # ciclo: así el ciclo no pasa de ~15 min y no retrasa la publicación de las 13:40 / 20:40; el resto se hace en los siguientes.
-    limite = 1 if str(ajustes_voz().get("motor", "")).lower() == "chatterbox" else MAX_RENDERS
+    limite = MAX_RENDERS
     for _, carpeta, post in carpetas_cola():
         if post.get("renderizado") or post.get("tipo") in ("carrusel", "imagen", "historia") or hechos >= limite:
             continue

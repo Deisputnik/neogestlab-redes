@@ -1,33 +1,34 @@
-# Expedientes Imposibles · @nosabesloquehasvisto
+# neogestlab-redes · redes de Neogest Lab
 
-Sistema automático de la cuenta de Instagram. Funciona sin ningún dispositivo encendido.
+Sistema automático de las redes de Neogest Lab (Instagram @neogestlab, Facebook Neogestlab, YouTube NeogestLab y TikTok @neogestlab). Funciona en la nube, sin ningún dispositivo encendido.
+
+**Manda `equipo/DIRECTIVA_VIGENTE.md`** (la biblia). Si algo de este README o de otro archivo la contradice, gana la directiva. Cada rol tiene su archivo en `equipo/roles/`.
 
 ## Cómo funciona
-- **Agentes de Claude** (tareas programadas en la nube): investigan, escriben el guion (`cola/<NNN_tema>/guion.json` o `remaster.json`) y el texto (`post.json`), revisan la calidad (`calidad.json`), analizan y planifican (`equipo/`).
-- **GitHub Actions** (`.github/workflows/ciclo.yml`, cada 30 min por la tarde-noche): `publicar_gh.py` renderiza el vídeo, le pone la voz, lo guarda en la release `cola`, lo publica a su hora si Calidad lo aprobó, responde comentarios con la palabra clave y actualiza `estadisticas.json`.
+- **Guionista y Autocrítica (Gemini, GitHub Actions):** borradores de episodios de *El Jambo que sabe* en `equipo/guiones_gemini/`.
+- **Creador (Claude Code):** elige guion y renderiza en Neogest Studio (Base44); deja la pieza en `cola/<NNN_tema>/` (`post.json`, guion y vídeo en la release `cola`).
+- **Calidad (`calidad_api.yml`):** aprueba con nota ≥ 90 (`calidad.json`).
+- **Ciclo (`ciclo.yml`, lanzado por `reloj.yml` cada 30 min):** `publicar_gh.py` publica en Instagram, Facebook y YouTube lo aprobado, según la parrilla de `equipo/plan.json`, y actualiza `estadisticas.json` y `registro.log`.
+- **TikTok:** Zernio en espejo (`redes_zernio.yml`). Buffer y Metricool quedan como vías secundarias.
+- Coordinación entre roles: `equipo/tablon.md`. Atascos: `equipo/atascos.md`. Lo que solo puede hacer el dueño: `equipo/pendiente_usuario.md`.
 
 ## Carpetas
 | Carpeta | Qué hay |
 |---|---|
-| `cola/` | Reels pendientes (solo JSON; el vídeo está en la release `cola`) |
-| `publicados/` | Reels ya publicados con su `resultado.json` (enlace e id) |
-| `revision/` | Reels que Calidad no aprobó |
-| `errores/` | Reels que fallaron 3 veces |
-| `originales/` | Datos de los reels antiguos de la cuenta (para remasterizar) |
-| `equipo/` | Plan semanal, aprendizajes, estándar de calidad, ajustes de voz, mejoras |
-| `herramientas/` | Generadores de vídeo (`hacer_reel.py`, `remaster.py`) |
-| `herramientas/datos.py`, `control_datos.py` | Modo `datos`: reels explicativos con datos verificados y gráficos animados (contadores, barras, líneas, comparativas, anillos, rankings); ficha de datos obligatoria y control de calidad automático. Manual: `equipo/FORMATO_DATOS.md` |
-
-## Secreto necesario
-`PAGE_TOKEN` en *Settings → Secrets and variables → Actions*: token de página de Facebook vinculado a la cuenta (no caduca salvo cambio de contraseña).
-
-Para lanzar un ciclo a mano: pestaña *Actions → Ciclo Instagram → Run workflow*.
+| `cola/` | Piezas pendientes (solo JSON; el vídeo está en la release `cola`) |
+| `publicados/` | Piezas publicadas con su `resultado.json` |
+| `revision/` · `errores/` · `descartados/` | No aprobadas · fallidas 3 veces · retiradas |
+| `atrasos/` | Material aprobado que Facebook y YouTube publican cuando sobra hueco |
+| `equipo/` | Directiva, roles, plan, estándar de calidad, voz, tablón; lo antiguo en `equipo/archivo/` (solo consulta) |
+| `herramientas/` | Scripts del ciclo, de los agentes API y del estudio (`herramientas/estudio/LEEME.md`) |
 
 ## Voz
-- Motor de voz en `equipo/voz.json` (`"motor"`) y cadena de respaldo (`"respaldo"`, Piper siempre al final; toda la locución sale del mismo motor):
-  - `chatterbox`: Chatterbox de Resemble AI (código y pesos MIT, uso comercial libre; github.com/resemble-ai/chatterbox). Afinado para español de España `ResembleAI/Chatterbox-Multilingual-es-es` (MIT) sobre el multilingüe; CPU, en su propio venv (`herramientas/voz_chatterbox.py`). Expresividad: `exageracion` y `cfg`. Referencia de voz: solo `voces/referencia_usuario.wav` (la del propio usuario, si la deja en el repo) o una sintética con licencia libre generada con Kokoro (`referencia_kokoro`); nunca la de otra persona real.
-  - `kokoro`: Kokoro-82M (Apache 2.0; hexgrad/Kokoro-82M), voces españolas `em_alex`, `ef_dora`, `em_santa`; muy rápido en CPU (`herramientas/voz_kokoro.py`).
-  - `pocket`: Kyutai Pocket TTS (código MIT, pesos CC BY 4.0), voz «lola». Atribución obligatoria **Voz: Kyutai Pocket TTS (CC BY 4.0)**: se añade sola al final del texto de cada post que lleva esta voz. La voz «lola» procede de un clip de Mozilla Common Voice (CC0).
-  - `piper`: Piper (MIT), voz `es_ES-davefx-medium`.
-- Flujo «voz primero» (reels nuevos con guion.json): se genera la voz antes del render, cada escena se alarga a la duración real de su frase (la voz no se acelera) y los subtítulos palabra a palabra siguen el ritmo real de cada frase.
-- Prueba comparativa a mano: *Actions → Prueba de voz → Run workflow* (resultado en `equipo/pruebas/prueba_voz.json`, vídeos y mp3 de voz sola en la release `pruebas`).
+- Motor de los reels: **edge-tts** (`equipo/voz.json`, `herramientas/voz_edge.py`), una voz por personaje.
+- Voces Gemini de los episodios: `herramientas/voces_gemini.py` y `equipo/voz_gemini.json`.
+- ElevenLabs (Johnny) para promos de app, vídeos del Centro y reels de datos, desde Neogest Studio.
+- Retirados: Chatterbox, MeloTTS, Kokoro, Pocket TTS y Piper. Prohibida la voz del dueño.
+
+## Secretos
+Solo en *Settings → Secrets and variables → Actions* (nunca en el repo, que es público): `PAGE_TOKEN`, `FACEBOOK_PAGE_TOKEN`, `YOUTUBE_*`, `PUENTE_TOKEN`, `BUFFER_API_KEY`, `GEMINI_API_KEY`, etc.
+
+Ciclo a mano: *Actions → Ciclo Instagram → Run workflow*.

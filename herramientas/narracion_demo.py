@@ -3,14 +3,14 @@
 
 Uso: python3 herramientas/narracion_demo.py [musica|voz|duraciones|verificar|todo]
 
-- voz: lee herramientas/demo_narracion.json, sintetiza cada clip con voz_chatterbox.py y la configuración vigente de
+- voz: lee herramientas/demo_narracion.json, sintetiza cada clip con el motor vigente (publicar_gh.generar_locucion) y la configuración de
   equipo/voz.json (desde el 12/11/2026 la voz genérica de España de los reels; la del dueño está prohibida), y deja un mp3 por clip en demo_audio/
   (mono, 44,1 kHz, 112 kbps, -16 LUFS, sin silencios largos al principio ni al final).
 - musica: pista de fondo en bucle, GENERADA POR CÓDIGO (numpy), sin material de terceros: sin problemas de licencia.
   ~74 s a 104 bpm (32 compases), -26 LUFS (la voz va a -16: la app además la baja con ducking).
 - duraciones: demo_audio/duraciones.json {"clips": {id: segundos}, "musica": segundos}.
 - verificar: transcribe 3 clips con faster-whisper y compara con el texto (demo_audio/verificacion.json).
-Chatterbox corre con PYTHON_CHATTERBOX (entorno propio); el resto con el Python actual.
+La voz la pone publicar_gh.generar_locucion con el motor vigente de equipo/voz.json.
 """
 import difflib
 import json
@@ -27,9 +27,6 @@ SALIDA = os.path.join(BASE, "demo_audio")
 TRABAJO = "/tmp/narracion_demo"
 GUION = os.path.join(BASE, "herramientas", "demo_narracion.json")
 VOZ_JSON = os.path.join(BASE, "equipo", "voz.json")
-VOZ_CB = os.path.join(BASE, "herramientas", "voz_chatterbox.py")
-PY_CB = os.environ.get("PYTHON_CHATTERBOX") or sys.executable
-REFERENCIA_DEMO = os.path.join(BASE, "voz_dueno", "referencia_demo_8nov_41-54s.wav")
 LUFS_VOZ = -16.0
 LUFS_MUSICA = -26.0
 
@@ -78,11 +75,10 @@ def voz():
         clips = [c for c in clips if c["id"] in solo]
         print("solo clips:", [c["id"] for c in clips])
     cfg = json.load(open(VOZ_JSON, encoding="utf-8"))
-    cb = cfg["chatterbox"]
-    if cfg.get("prohibir_voz_dueno", True):
+    if True:  # voz genérica vigente de equipo/voz.json (motor edge); la voz del dueño está prohibida
         # Orden del dueño (9/11/2026 23:55): su voz no se usa en ningún audio nuevo (tampoco en la demo del Centro).
         # 12/11/2026 (Mejora): en vez de abortar, la demo se narra con la MISMA voz genérica de España que los reels
-        # (publicar_gh.generar_locucion: Chatterbox es-es sin referencia de persona, respaldo Kokoro em_alex), con el mismo
+        # (publicar_gh.generar_locucion con el motor de equipo/voz.json, hoy edge-tts), con el mismo
         # recorte, cadena de voz y -16 LUFS. Así el mp3 que queda en demo_audio/ ya no es el de la voz del dueño.
         os.makedirs(TRABAJO, exist_ok=True)
         os.makedirs(SALIDA, exist_ok=True)
@@ -99,41 +95,6 @@ def voz():
         for c, wav in zip(clips, rutas):
             normalizar_a_mp3(wav, os.path.join(SALIDA, c["id"] + ".mp3"), LUFS_VOZ, previo)
             print("clip", c["id"], duracion(os.path.join(SALIDA, c["id"] + ".mp3")), "s")
-        return
-    os.makedirs(TRABAJO, exist_ok=True)
-    os.makedirs(SALIDA, exist_ok=True)
-    # Referencia propia de la demo (8/11/2026): tramo 41,26-54,13 s (12,9 s, el más limpio y expresivo) de la nota de voz
-    # larga voz_dueno/referencia_usuario_8nov.wav (83 s). Si falta, la de equipo/voz.json.
-    ref = REFERENCIA_DEMO if os.path.exists(REFERENCIA_DEMO) else cb.get("referencia")
-    if ref and not os.path.isabs(ref):
-        ref = os.path.join(BASE, ref)
-    if not (ref and os.path.exists(ref)):
-        raise SystemExit("falta la voz de referencia del dueño: " + str(ref))
-    estilos = cb.get("por_estilo") or {}
-    frases = []
-    for c in clips:
-        f = {"texto": c["texto"], "salida": os.path.join(TRABAJO, c["id"] + ".wav")}
-        f.update({k: v for k, v in (estilos.get(c.get("estilo")) or {}).items() if k in ("exageracion", "cfg", "temperatura")})
-        frases.append(f)
-    lote = {"modelo": cb.get("modelo", "es-es"), "idioma": cb.get("idioma", "es"), "exageracion": cb.get("exageracion", 0.5),
-            "cfg": cb.get("cfg", 0.5), "temperatura": cb.get("temperatura", 0.8), "referencia": ref,
-            "ganancia": cb.get("ganancia", 1.0), "semilla": cb.get("semilla"), "theta": cb.get("theta") or "", "frases": frases}
-    ruta_lote = os.path.join(TRABAJO, "lote.json")
-    json.dump(lote, open(ruta_lote, "w", encoding="utf-8"), ensure_ascii=False)
-    r = subprocess.run([PY_CB, VOZ_CB, ruta_lote], text=True, capture_output=True)
-    sys.stdout.write(r.stdout[-1500:])
-    if r.returncode != 0:
-        sys.stderr.write(r.stderr[-3000:])
-        raise SystemExit("Chatterbox falló")
-    # cadena de voz vigente (misma que los reels) + recorte de silencios + -16 LUFS
-    cadena = (cfg.get("cadena_voz") or "").strip().strip(",")
-    recorte = ("silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.06,areverse,"
-               "silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.12,areverse")
-    previo = (cadena + "," if cadena else "") + recorte
-    for c in clips:
-        wav = os.path.join(TRABAJO, c["id"] + ".wav")
-        normalizar_a_mp3(wav, os.path.join(SALIDA, c["id"] + ".mp3"), LUFS_VOZ, previo)
-        print("clip", c["id"], duracion(os.path.join(SALIDA, c["id"] + ".mp3")), "s")
 
 
 # ───────────────────────────── música ─────────────────────────────

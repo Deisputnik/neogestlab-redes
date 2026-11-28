@@ -108,7 +108,7 @@ def revisar_26(carpeta, post, guion, e, a):
         if mv != "elevenlabs" and not nota_voz:
             e.append("VOZ promo de app con motor_voz «%s»: debe ser \"elevenlabs\" (gen_promos.py + render.mjs --final) o llevar _voz_nota de cuota agotada" % (mv or "falta"))
 
-# ---- Lista de Calidad del 13/11 (virales_13_11_navegador.md §6 y DIRECTIVA §14), la parte que se puede medir sin ver el vídeo ----
+# ---- Lista de Calidad del 13/11 (equipo/archivo/virales_13_11_navegador.md §6 y DIRECTIVA §14), la parte que se puede medir sin ver el vídeo ----
 VENTA_EN_VIDEO = re.compile(r"prueba gratuita|sin compromiso|sin tarjeta|pide tu|ajreparacion|maqueta|m[aá]s asequibles|\bdesde\s+\d+\s?€|\d+\s?€\s?/\s?mes", re.I)   # «presupuesto» y las cifras en euros del gag NO cuentan: son tema de la historia, no venta
 ENLACE = re.compile(r"https?://|www\.|\b[a-z0-9-]+\.(com|es|app|net|org)\b", re.I)
 REENVIO = re.compile(r"\b(env[ií]aselo|m[aá]ndaselo|p[aá]saselo|reenv[ií]aselo|comp[aá]rtelo|env[ií]alo|m[aá]ndalo|reenv[ií]alo)\b|\b(env[ií]a|manda|reenv[ií]a|pasa)\w*\s+(esto|este|este reel|el reel)?\s*a\b", re.I)

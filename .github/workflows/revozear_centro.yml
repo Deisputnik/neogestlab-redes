@@ -1,4 +1,4 @@
-name: Centro · rehacer la voz (la de equipo/voz.json, MeloTTS ES)
+name: Centro · rehacer la voz (la de equipo/voz.json)
 
 # Orden del dueño 12/11/2026 («suena telefónica»): rehace la voz de los 13 vídeos del Centro con Chatterbox es-es SIN muestra
 # y sustituye los mp4 de la release centro-v3 (mismo nombre: las colas de atrasos no cambian).
@@ -23,7 +23,6 @@ jobs:
         n: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/melo
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"

@@ -1,6 +1,6 @@
 # Monetización de @neogestlab (Neogest Lab · escaparate de apps y webs)
 
-Analista (incluye monetización). Versión 13: 27/11/2026 (pasada de viernes, a petición de la tarea programada). Sustituye a la v12 (22/11). Rige equipo/DIRECTIVA_VIGENTE.md (no se toca). Vías de Instagram y afiliados con fuentes: `monetizacion_v4_archivo.md`.
+Analista (incluye monetización). Versión 13: 27/11/2026 (pasada de viernes, a petición de la tarea programada). Sustituye a la v12 (22/11). Rige equipo/DIRECTIVA_VIGENTE.md (no se toca). Vías de Instagram y afiliados con fuentes: `archivo/monetizacion_v4_archivo.md`.
 Regla: lo que no se ha leído en una fuente va como «no consta» o «n/d». Sin gasto ni promociones sin visto bueno del dueño.
 Fuentes de hoy, solo lectura: Buzzfy (`ig_account_stats`, `ig_follower_growth`, `ig_inbox`, `ig_comments`; ventana 20-27/11). **No se leyó el Centro (Base44 `SolicitudInfo`) en esta pasada: solicitudes y pruebas gratuitas = n/d.** `equipo/embudo.md` se ejecutó, pero su script usa una foto de Buzzfy del 22/11 y no se regeneró con datos nuevos (ver §5).
 
@@ -36,7 +36,7 @@ Fuentes de hoy, solo lectura: Buzzfy (`ig_account_stats`, `ig_follower_growth`, 
 **No hay promoción de pago**: el alcance a no seguidores no justifica gasto y el dueño no lo ha pedido.
 
 ## 4. Programas de monetización de las plataformas
-- Sin lectura nueva de fuentes oficiales esta semana: no consta nada que aplicar. Se mantiene lo de `monetizacion_v4_archivo.md`, sin dar nada por cierto.
+- Sin lectura nueva de fuentes oficiales esta semana: no consta nada que aplicar. Se mantiene lo de `archivo/monetizacion_v4_archivo.md`, sin dar nada por cierto.
 
 ## 5. Fuentes y límites
 - Cifras de Buzzfy: de la API, con hasta 48 h de retraso. 25 y 26/11 de seguidores, pendientes.

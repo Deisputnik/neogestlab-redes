@@ -89,10 +89,6 @@ jobs:
             https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf || echo "Sin Anton: se usa Montserrat"
           cd herramientas/presentador && npx remotion browser ensure
 
-      - name: MeloTTS ES (voz)
-        if: ${{ !inputs.dependencias && inputs.voz }}
-        uses: ./.github/actions/melo
-
       - name: Python 3.11 (voz)
         if: ${{ !inputs.dependencias && inputs.voz }}
         uses: actions/setup-python@v5
