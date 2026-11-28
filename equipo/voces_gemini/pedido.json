@@ -1,5 +1,5 @@
 {
- "_nota": "28/11/2026 09:00: reparar 530/535 tras el control del mp4 final (Calidad): 530_2 descalza, 530_7 empieza, 530_8 «vale» de más, 535_3 todas.",
+ "_nota": "28/11/2026 09:20: reparar 535 tras el control del mp4 final: 535_2 «Manda», 535_4 «yogures», 535_6 «¡Ah!» de más, 535_7 «Resuelto» y «el lunes». 530 ya aprobado.",
  "modelos": [
   "gemini-3.8-flash-tts",
   "gemini-3.8-flash-lite-tts"
@@ -294,17 +294,20 @@
    "claras": [
     "lentejas",
     "yogures",
-    "todas"
+    "todas",
+    "manda",
+    "resuelto",
+    "lunes"
    ]
   }
  ],
  "reparar": {
-  "base": "https://media.zernio.com/temp/1795848156364_9b17a838a6d5d2ef_voces_530_535.mp3",
+  "base": "https://media.zernio.com/temp/1795852988722_b3da8023b8816e18_voces_530_535.mp3",
   "replicas": [
-   "530_2",
-   "530_7",
-   "530_8",
-   "535_3"
+   "535_2",
+   "535_4",
+   "535_6",
+   "535_7"
   ]
  }
 }
