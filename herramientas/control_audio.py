@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """CONTROL DE AUDIO (DIRECTIVA DE VÍDEO 14/11/2026). Uso: python3 control_audio.py video.mp4 guion.json [--salida control_audio.json]
 Transcribe el audio final con faster-whisper y lo compara con la voz del guion; mide silencios con silencedetect (-45 dB, 0,6 s).
-RECHAZO (exit 1): duración > 30 s (70 s si el guion tiene "set":"salon", biblia v5.2) · silencio > 0,6 s DENTRO de la voz ·
+RECHAZO (exit 1): duración > 30 s (70 s si el set es salon*/cocina*/portal*, biblia v5.2) · silencio > 0,6 s DENTRO de la voz ·
 palabra distinta del guion (salvo homófonos) · «ehm» · falta el giro (escena remate) · sin atribución musical si el
 post.json la exige. Los silencios al inicio/fin del vídeo no cuentan.
 Si falla, el reel NO se publica: publicar_gh.py anota el motivo en control_audio.json y lo deja sin publicar."""
 import json, os, re, subprocess, sys, unicodedata
 
 SIL_DB, SIL_S, DUR_MAX = -45, 0.6, 30.0
+SETS_SITCOM = ("salon", "cocina", "portal")  # 28/11/2026: incluye salon2, cocina2, portal
 DUR_MAX_SALON = 70.0  # 21/11/2026: biblia v5.2 ("El Jambo que sabe" en set "salon") pasa a sitcom de 45-70 s; ver control()
 LEXICO_RUTA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lexico_control.json")
 
@@ -317,7 +318,8 @@ def control(video, guion, post=None, tramos=None, wavs=None):
     d = dur(video)
     # 21/11/2026: gen_episodios.py (reparto v5.2) pone el set de El Jambo en "salon" (biblia v5.2: sitcom
     # de 45-70 s, ya no 15-25 s). DUR_MAX seguía en 30 s de la versión vieja y rechazaba todo episodio nuevo.
-    dur_max = DUR_MAX_SALON if g.get("set") == "salon" else DUR_MAX
+    # 28/11/2026: los sets nuevos (salon2, cocina2, portal…) son el mismo formato sitcom de 45-70 s.
+    dur_max = DUR_MAX_SALON if str(g.get("set") or "").startswith(SETS_SITCOM) else DUR_MAX
     if d > dur_max: bloqueos.append(f"dura {d:.1f} s (máximo {dur_max:.0f})")
     esc = g.get("escenas", [])
     # 21/11/2026: gen_episodios.py escribe el texto de cada escena en la clave "v" (no "voz"); con "voz" el
