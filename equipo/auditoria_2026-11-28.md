@@ -30,6 +30,11 @@ Orden del dueño: «haz una auditoría completa y que nada entre en conflicto; r
 - **Otros archivos**: `pendiente_usuario.md` (Zernio marcado como hecho; la cuenta buena es @neogestlab, sin punto) y título de `estandar_calidad.md` (@neogestlab).
 - Comprobado: todo el código Python compila, los tests pasan (7/7), todos los workflows son YAML válido y no queda ninguna referencia a archivos borrados.
 
+## 2 bis. Borrado el 28/11 (segunda pasada, orden del dueño: «elimina todo lo viejo que entre en conflicto y no se use»)
+- Workflows que no habían corrido nunca en este repo y pertenecían a formatos o voces retirados: `presentador.yml` (modo presentador, formato archivado), `revozear_centro.yml` y `remezclar_centro.yml` (rehacían la voz de los vídeos del Centro, que ahora van con ElevenLabs), `prueba_cdn.yml`, `explorar_web.yml` y `diagnostico_vinculacion.yml` (el script `diagnostico_vinculacion.py` se queda porque lo usa `respuestas_chat.yml`).
+- Scripts sin ningún uso: `herramientas/presentador/`, `revozear_centro.py`, `remezclar_centro.py`, `recorte_centro.py`, `explorar_web.py`, `kpi.py` (cuadro de la cuenta antigua @nosabesloquehasvisto), `grabar_caso.py` y `herramientas/casos/`.
+- No se han podido borrar desde aquí, por falta de permiso: las 11 tareas programadas antiguas, la «Analista de monetización · v2» y las 67 ramas viejas (ver §3).
+
 ## 3. Pendiente del dueño (no lo puede hacer ningún agente)
 1. **Desactivar las 11 tareas programadas ANTIGUAS que siguen activas en paralelo con sus «· v2»**. Corren dos veces cada rol, gastan límite y pueden chocar al escribir en main. Ningún agente puede tocarlas: se crearon fuera de un agente. Hay que desactivar estas (sin el «· v2» en el nombre):
    - IG nube · Creador (repo): https://claude.ai/code/routines/trig_017GNtAYqjjfjrUsyDvPVWGW
