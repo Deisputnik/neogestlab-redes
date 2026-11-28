@@ -16,8 +16,8 @@
  },
  "gestion_3": {
   "esperado": "Envías el presupuesto por email, con un enlace para aceptarlo.",
-  "oido": "Envías el presupuesto por e-mail, con un enlace para aceptarlo.",
-  "similitud": 0.857
+  "oido": "Envías el presupuesto por email, con un enlace para aceptarlo.",
+  "similitud": 1.0
  },
  "final": {
   "esperado": "¿Y si tu idea fuera una app? La hacemos a medida. Solicita acceso.",
