@@ -351,6 +351,7 @@ def cortar(pedido, out, modelo_whisper="small"):
                     f_, s_ = ca_._quitar_cercanas(f_, s_)
                 except Exception as ex_:
                     f_, s_ = [], []; print("aviso: control_audio no disponible:", ex_)
+                s_ = [w for w in s_ if _norm(w) not in INTERJ]   # una interjección suelta de más («¡Ah!», «vale») no es un fallo
                 if faltan or f_ or s_:   # 28/11/2026: no se oye bien -> esta réplica se repite (reparar) antes de mezclar
                     informe.setdefault("repetir", []).append({"replica": f"{e['_n']}_{e['_i']}", "quien": quien, "frase": e["v"],
                                                              "no_se_oye": list(dict.fromkeys(faltan + f_)), "sobra": s_, "oido": oido})
@@ -363,6 +364,24 @@ def cortar(pedido, out, modelo_whisper="small"):
         for q, v in informe.items():
             print(q, json.dumps(v, ensure_ascii=False)[:500])
     return 0 if ok else 1
+
+
+INTERJ = {"ah", "oh", "ay", "eh", "uh", "uy", "vale", "y", "no", "pues", "bueno", "anda", "venga", "va"}
+
+
+def preparar(pedido, out):
+    """28/11/2026: pedido con «reparar»: {"base": <URL de un voces.tar anterior>, "replicas": ["530_6", ...]} = no se genera el lote
+    entero: se baja el tar, se marcan esas réplicas para repetir y solo se piden ellas (una petición por personaje afectado)."""
+    rep = pedido.get("reparar")
+    if not rep:
+        return 0
+    import tarfile
+    urllib.request.urlretrieve(rep["base"], f"{out}/base.tar")
+    with tarfile.open(f"{out}/base.tar") as t:
+        t.extractall(out)
+    json.dump({"repetir": [{"replica": r} for r in rep["replicas"]]}, open(f"{out}/informe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    open(f"{out}/solo_reparar", "w").write("1"); print("preparar: base", rep["base"], "réplicas", rep["replicas"])
+    return 0
 
 
 def reparar(pedido, out, rondas=2):
@@ -444,4 +463,4 @@ def empaquetar(pedido, out):
 if __name__ == "__main__":
     modo, ruta, salida = sys.argv[1], sys.argv[2], sys.argv[3]; os.makedirs(salida, exist_ok=True)
     ped = json.load(open(ruta, encoding="utf-8"))
-    sys.exit({"generar": generar, "cortar": cortar, "reparar": reparar, "empaquetar": empaquetar}[modo](ped, salida))
+    sys.exit({"preparar": preparar, "generar": generar, "cortar": cortar, "reparar": reparar, "empaquetar": empaquetar}[modo](ped, salida))
