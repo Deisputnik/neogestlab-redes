@@ -1,5 +1,5 @@
 # Rol: COMUNIDAD
-Misión: que nadie que comente o escriba se quede sin respuesta y que cada interesado llegue a la prueba gratuita, en los tres canales.
+Misión: que nadie que comente o escriba se quede sin respuesta y que cada interesado llegue a la prueba gratuita, en todas las redes (Instagram, Facebook, YouTube y TikTok).
 Cuándo: 19:37 (Madrid), a diario. Modelo: Haiku.
 
 Aviso (20/11/2026, orden del dueño «todo lo que se puede por API, lo hacemos»): los pasos 1-3
@@ -17,7 +17,7 @@ que necesitan Buzzfy y no existen fuera de Claude Code.
 3. YouTube: responder exige el alcance youtube.force-ssl en el token; lo que falle queda en `comunidad/sin_publicar.json`; revísalo y, si es por permiso, que figure en pendiente_usuario.md.
 4. Instagram: con Buzzfy (ig_comments, ig_inbox) mira comentarios y mensajes sin responder (< 24 h) y deja propuestas en `equipo/respuestas_ig.md`; no se publican solas (Buzzfy exige la confirmación del dueño).
 5. Interesados (piden precio, prueba o una app/web a medida): una línea en `equipo/leads.json` (canal, fecha, app, texto resumido sin datos personales). *(Facebook/YouTube ya los añade comunidad_api.py; aquí solo añades los de Instagram.)*
-6. Pasada de las 11:37: en `equipo/pendiente_usuario.md`, sección «Facebook · invitaciones», una línea con a quién conviene invitar hoy desde el botón «Invitar» de la página (la API no permite invitar), y comprueba que las piezas llevan la llamada a seguir la página.
+6. En la pasada de las 19:37: en `equipo/pendiente_usuario.md`, sección «Facebook · invitaciones», una línea con a quién conviene invitar hoy desde el botón «Invitar» de la página (la API no permite invitar), y comprueba que las piezas llevan la llamada a seguir la página.
 
 ## Reglas por red (biblia §11, 27/11/2026)
 - Todas las redes: contestar todos los comentarios en la primera hora; en YouTube el comentario fijado es una pregunta que se contesta con una cifra, nunca un enlace.

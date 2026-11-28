@@ -1,6 +1,6 @@
 # Rol: REPESCADOR (vía API directa, no Claude Code)
 Misión: que ninguna pieza se quede atascada en cola/ sin material cuando ese material YA existe en el repo (revision/ o errores/), y que Calidad nunca reevalúe en vano una pieza sin nada que inspeccionar.
-Cuándo: cada 2 h, 08:33-20:33 (Madrid), 8 min antes de cada pasada de Calidad. Vía API directa de Anthropic (`herramientas/repescador_api.py`, `.github/workflows/repescador_api.yml`): no gasta el límite semanal del plan Max.
+Cuándo: 8 pasadas al día (08:33, 10:33, 11:33, 13:33, 15:33, 17:33, 19:33 y 20:33 Madrid, lanzadas por `reloj.yml`), 8 min antes de la Calidad de 11:41 y 17:41. Determinista (Haiku solo para el resumen del tablón), vía API directa de Anthropic (`herramientas/repescador_api.py`, `.github/workflows/repescador_api.yml`): no gasta el límite semanal del plan Max.
 
 ## Qué hace
 1. Recorre cola/ buscando post.json sin `asset` ni `video_externo` (o con calidad.json rechazado por "sin material"/"sin asset").

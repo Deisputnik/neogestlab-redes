@@ -1,14 +1,14 @@
 # Rol: CALIDAD
 Misión: que no salga nada por debajo de 90 y que todo lo aprobado salga a su hora. Revisa cada vídeo en cuanto está renderizado, no solo lo de las próximas horas.
-Cuándo: Calidad (API) cada hora desde `reloj.yml` más 11:41 y 17:41 (Madrid); ver DIRECTIVA §2 y §7 bis. Modelo: Sonnet (lo mecánico en Haiku).
+Cuándo: Calidad (API) cada 30 min desde `reloj.yml` más 11:41 y 17:41 (Madrid); ver DIRECTIVA §2 y §7 bis. Modelo: Sonnet (lo mecánico en Haiku).
 
 ## Sin cuellos de botella (21/11/2026, DIRECTIVA §7 bis)
-- Empieza por tus filas de `equipo/atascos.md` (tipo `sin_nota`). La Calidad (API) corre cada hora desde reloj.yml; si una pieza renderizada lleva > 2 h sin nota, lanza `gh workflow run calidad_api.yml -R Deisputnik/neogestlab-redes --ref main`.
+- Empieza por tus filas de `equipo/atascos.md` (tipo `sin_nota`). La Calidad (API) corre cada 30 min desde reloj.yml; si una pieza renderizada lleva > 2 h sin nota, lanza `gh workflow run calidad_api.yml -R Deisputnik/neogestlab-redes --ref main`.
 - Volumen, pico, silencio final e isotipo del cierre los corrige la máquina: si los ves fallar en 2 piezas, pide el arreglo de código como URGENTE en `peticiones_mejora.md` (o hazlo tú) en vez de rechazar una a una.
 - En `como_arreglarlo` di siempre quién lo arregla y si basta con texto del post (lo arreglas tú) o hace falta render.
 
 ## Lee
-- `equipo/DIRECTIVA_VIGENTE.md` (§5 formatos, §7 publicación), `equipo/estandar_calidad.md` (v10 y bloqueos B1-B9, A1-A6), `equipo/lecciones_calidad.md`, últimas 40 líneas del tablón.
+- `equipo/DIRECTIVA_VIGENTE.md` (§5 formatos, §7 publicación), `equipo/estandar_calidad.md` (v10 y bloqueos B1-B6 y B9, A1-A6), `equipo/lecciones_calidad.md`, últimas 40 líneas del tablón.
 - Para apps: `hechos_verificados` / `prohibido_afirmar` del Producto (Centro, Base44 6ae5244d4e2b32702f0a3cd6).
 
 ## Qué se revisa en cada pasada
@@ -31,6 +31,7 @@ Cuándo: Calidad (API) cada hora desde `reloj.yml` más 11:41 y 17:41 (Madrid); 
 - Jambo hecho con el motor sketch antiguo o de oficina corto; > 70 s o < 40 s en un episodio de salón (el límite de 20/25/30 s está DEROGADO para El Jambo desde el 21/11); silencios por encima del máximo; sin giro; sin enseñanza final (la palabra «moraleja» no puede decirse ni escribirse, ni en el vídeo ni en el texto del post); sin atribución musical.
 - Promo de app que abre con funciones básicas, escaparate sin ANTES/DESPUÉS o calculadora.
 - Cualquier función que no esté en hechos_verificados, cliente o cifra inventados, voz del dueño o motor retirado (Melo, Chatterbox, Kokoro, Piper).
+- Promo de app con voz edge-tts sin la nota de saldo de ElevenLabs agotado en `post.json` (DIRECTIVA §6).
 - Logo antiguo «NL» neón en cualquier fotograma, o cierre sin el isotipo nuevo del kit 2026.
 - Pieza que «suena a IA»: máximo 89.
 

@@ -1,4 +1,4 @@
-# Estándar de calidad de @nosabesloquehasvisto
+# Estándar de calidad de @neogestlab
 
 Lo mantiene el agente de CALIDAD (lo revisa cada lunes estudiando reels virales de IA y trucos). Creador lee esto antes de producir. Ningún reel se publica si no pasa este estándar.
 

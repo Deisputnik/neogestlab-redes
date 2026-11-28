@@ -18,7 +18,7 @@ Pediste poner **www.neogestlab.com** como web en todos los perfiles. Ningún con
 - **Renovar PAGE_TOKEN de Meta** (código 190: «Session has expired» el 22/11 05:00 PST). El contestador del chat de Instagram falla hasta entonces; el workflow ya no se marca como fallido, pero no contesta.
 - **Decidir cómo se renderiza El Jambo sin sesión manual** (cuello de botella n.º 1, ver `equipo/auditoria_agentes_2026-11-22.md`): activar la sincronización de GitHub de Neogest Studio en Base44 (o exportar su código a un repo) para poder montar el render en Actions. Sin eso, el ritmo de 5 episodios al día depende de la tarea del Creador.
 - **Crear los 3 secretos de Metricool** (`METRICOOL_TOKEN`, `METRICOOL_USER_ID`, `METRICOOL_BLOG_ID`) solo si quieres esa vía: su cron está desactivado hasta entonces (no falla ni gasta).
-- **Pegar `ZERNIO_API_KEY` y `BUFFER_API_KEY`** (ya pedidas abajo) para que TikTok, LinkedIn y Google publiquen solos.
+- **Pegar `BUFFER_API_KEY`** para que LinkedIn y Google publiquen solos. (`ZERNIO_API_KEY` ya está puesta: `redes_zernio.yml` publica TikTok en espejo desde el 23/11; comprobado el 28/11.)
 - ~~Editar a mano 4 tareas programadas con prompts viejos (repo `ajreparacion/instagram`)~~ — **resuelto el 26/11/2026**: «IG nube · Calidad (repo)», «IG nube · Calidad (noche) (repo)» y «Ventas · Prospección (repo)» reescritas a la plantilla corta (repo `Deisputnik/neogestlab-redes` + lectura de `equipo/DIRECTIVA_VIGENTE.md` y su `equipo/roles/<rol>.md`), vía Claude in Chrome (el agente no puede editarlas por API, solo son suyas las que él creó). «IG nube · Analista de monetización (repo)» ya citaba el repo correcto; sigue en pausa porque está fusionada en Analista. Todas siguen desactivadas: actívalas tú si las quieres de nuevo en marcha.
 
 ## Acceso al repo (22/11/2026, Calidad de respaldo 18:41)
@@ -29,7 +29,7 @@ Pediste poner **www.neogestlab.com** como web en todos los perfiles. Ningún con
 2. **En /panel/solicitudes, marcar la solicitud del 8/11** como contactada o descartada (o decir que fue una prueba) **y decir si alguna app tiene plan de pago o precio**. Sin eso el embudo no puede medir euros.
 3. **Archivar desde el móvil los duplicados** (la API no archiva): carruseles del 8/11 «Deja de pedirle así las cosas a la IA» ×3, «¿Pasas los presupuestos al Excel por la noche?» ×3, «5 tareas pesadas…» ×2 y el reel de AJ Web del 10/11 ×2; dejar uno de cada. Quitar de paso lo que aún diga «Escríbeme IDEA».
 
-## Zernio (21/11/2026): 1 paso tuyo, 2 minutos — tercera vía de TikTok, ya publica de verdad
+## ~~Zernio (21/11/2026): 1 paso tuyo~~ — HECHO (la clave está puesta y el workflow publica; comprobado el 28/11). La cuenta correcta es @neogestlab (sin punto); @neogest.lab es OTRA cuenta y no se usa (DIRECTIVA §4).
 Conectaste TikTok (@neogest.lab) e Instagram (@neogestlab) en Zernio por MCP. Falta solo la clave para que el robot (workflow automático) también pueda usarla:
 1. Entra en https://zernio.com/dashboard/api-keys (misma cuenta que conectó TikTok/IG) → «Create API key» → cópiala (empieza por `sk_`, no se vuelve a mostrar).
 2. Pégala como secreto `ZERNIO_API_KEY` en https://github.com/Deisputnik/neogestlab-redes/settings/secrets/actions/new .

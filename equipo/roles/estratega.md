@@ -14,7 +14,7 @@ Cuándo: lunes 10:13 (Madrid). Modelo: Sonnet.
 6. Directiva: solo si los datos o una orden del dueño lo piden. La línea nueva SUSTITUYE a la antigua en su sección y se anota en una línea en «Registro de cambios»; nada de cabeceras apiladas. Revisa que ningún archivo de rol contradiga la directiva y corrígelo en el sitio.
 7. Perfil: si procede, propuesta de bio (≤ 150 caracteres) en `equipo/perfil_propuesto.md`; el cambio lo hace el dueño (va a pendiente_usuario.md).
 
-8. **Bucle de la biblia §12 (desde el 30/11/2026)**:
+8. **Bucle de la biblia §12 (desde el 27/11/2026)**:
    - Pasa a la biblia §11 los patrones que el Analista marque como CONFIRMADOS y quita los DESCARTADOS, con su cifra en el registro de cambios.
    - Mete en el plan la fórmula «clonar y mejorar» de `equipo/monetizan.md` en al menos 1 de cada 5 episodios.
    - Revisa la jerarquía de fuentes (§12): ningún archivo puede contradecir a la DIRECTIVA ni a la biblia.
