@@ -22,7 +22,7 @@
   "formula": "El Jambo que sabe v5.2 (casa y vida cotidiana, giro a mitad, remate de Neo, moraleja + recuerdo)",
   "_comprobado": "Episodio de humor de casa, sin cifras ni funciones de producto; Neo hace lo que una inteligencia artificial hace de verdad (avisar, leer, planificar).",
   "motor_voz": "voz_disenada",
-  "_voz_nota": "Voces Gemini rehechas el 28/11/2026 (rama voces/2026-11-28-neo-530-535) con palabras claras protegidas y control réplica a réplica: «el Neo» y «lentejas» se oyen bien. Voz de Jambo vigente (voice_jsbas0g97111).",
+  "_voz_nota": "Voces Gemini rehechas y reparadas el 28/11/2026 (rama voces/2026-11-28-neo-530-535); risa enlatada movida al final de la réplica. control_audio.py pasado al mp4 FINAL antes de entregar: aprobado, 48,3 s, sin bloqueos.",
   "comentario_fijado": "¿Quién en tu casa deja siempre el grifo abierto? Episodio nuevo cada día en @neogestlab",
   "avance_siguiente": "Siguiente: el aviso de un paquete que nadie pidió",
   "youtube": {
@@ -39,7 +39,7 @@
   "facebook": {
     "texto": "Madrugada, el salón inundado y Rosa jura que no ha tocado nada… hasta que Sindy mira su bañera. Humor negro de ficción con El Jambo que sabe.\nPide tu prueba gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=gestion-integral-7d&src=facebook"
   },
-  "renderizado": "2026-11-28T07:10:10+00:00",
+  "renderizado": false,
   "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/7450769e2609a9b07560ff648bc396ac_530_jambo_v3.mp4",
-  "asset": "530_jambo_fuga_banera_rebosando.mp4"
+  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/92d8da577c36a43737aef25b1316203c_530_jambo_v4.mp4"
 }
