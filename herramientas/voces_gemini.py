@@ -372,7 +372,7 @@ def cortar(pedido, out, modelo_whisper="small"):
     return 0 if ok else 1
 
 
-INTERJ = {"ah", "oh", "ay", "eh", "uh", "uy", "vale", "y", "no", "pues", "bueno", "anda", "venga", "va"}
+INTERJ = {"ah", "oh", "ay", "eh", "uh", "uy"}   # 28/11/2026: solo sonidos sueltos; «vale», «no»… de más sí cuentan (Calidad los cuenta)
 
 
 def preparar(pedido, out):
