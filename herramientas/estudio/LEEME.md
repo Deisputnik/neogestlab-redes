@@ -53,7 +53,8 @@ Una voz diseñada por personaje con Gemini TTS, gratis con la clave del Guionist
 2. Espera al workflow «Voces Gemini de un episodio (El Jambo)» (3-8 min): `gh api "repos/Deisputnik/neogestlab-redes/actions/runs?branch=<rama>&per_page=1"`. Cuando acabe, baja el artefacto `voces-gemini` (`gh api repos/.../actions/artifacts/<id>/zip`) y lee `listo.json` (`url`) e `informe.json` (qué se oyó en cada pista; si falta un personaje o `url` es null, usa edge para ese pedido).
 3. En el sandbox: `mkdir -p /tmp/jb && cd /tmp/jb && curl -s -o voces.tar "<url>" && tar xf voces.tar` (deja `<n>_<i>.mp3` y `<n>_voces.json`).
 4. `VOCES_PREFAB=/tmp/jb/<n>_voces.json python3 gen_episodios.py eps.json /tmp/jb` (un episodio cada vez: el eps.json de esa llamada lleva solo ese episodio) y render como siempre. Sin `edge-tts` instalado también funciona.
-5. Comprueba la duración (45-70 s). Jambo va lento a propósito: si te pasas, recorta réplicas, no aceleres.
+5. **Control del vídeo FINAL antes de entregar (28/11/2026, obligatorio):** el control réplica a réplica no ve lo que tapa la mezcla (música, risas, efectos). En el sandbox: `pip install faster-whisper "av<14" num2words` y `python3 control_audio.py <mp4> <guion.json> --salida /tmp/c.json` (copia `herramientas/control_audio.py` y `lexico_control.json` del repo). Con `bloqueos` no vacío NO se entrega: se reparan esas réplicas (pedido con «reparar») y se vuelve a mezclar.
+6. Comprueba la duración (45-70 s). Jambo va lento a propósito: si te pasas, recorta réplicas, no aceleres.
 Si algo falla en los pasos 1-3, sigue con edge-tts (paso 3 de «Pasos») y anótalo en `post.json`: nunca se deja de producir por la voz.
 
 ## Promos de app en el estudio (22/11/2026; voz ElevenLabs SIEMPRE desde el 23/11)

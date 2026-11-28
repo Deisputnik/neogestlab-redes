@@ -163,6 +163,8 @@ def generar(pedido, out):
         for quien in dict.fromkeys(e["h"] for e in ep["escenas"] if e.get("h")):
             if pedido.get("solo") and quien not in pedido["solo"]:
                 continue
+            if not lineas_de(ep, quien):   # 28/11/2026: sin réplicas (p. ej. en una reparación) no se gasta petición
+                continue
             candidatas = list((pedido.get("voces") or {}).get(quien) or [])
             d = (pedido.get("disenar") or {}).get(quien)
             if d:   # voz nueva a partir de una descripción (no gasta la cuota de peticiones de voz)
@@ -351,7 +353,11 @@ def cortar(pedido, out, modelo_whisper="small"):
                     f_, s_ = ca_._quitar_cercanas(f_, s_)
                 except Exception as ex_:
                     f_, s_ = [], []; print("aviso: control_audio no disponible:", ex_)
-                s_ = [w for w in s_ if _norm(w) not in INTERJ]   # una interjección suelta de más («¡Ah!», «vale») no es un fallo
+                s_ = [w for w in s_ if _norm(w) not in INTERJ]
+                try:   # «Handa» por «Manda»: a una letra de una palabra de la réplica = error de Whisper, no de la voz
+                    s_ = [w for w in s_ if not any(ca_._distancia(ca_._clave(_norm(w)), ca_._clave(_norm(x))) <= 1 for x, _ in pal)]
+                except Exception:
+                    pass   # una interjección suelta de más («¡Ah!», «vale») no es un fallo
                 if faltan or f_ or s_:   # 28/11/2026: no se oye bien -> esta réplica se repite (reparar) antes de mezclar
                     informe.setdefault("repetir", []).append({"replica": f"{e['_n']}_{e['_i']}", "quien": quien, "frase": e["v"],
                                                              "no_se_oye": list(dict.fromkeys(faltan + f_)), "sobra": s_, "oido": oido})
@@ -366,7 +372,7 @@ def cortar(pedido, out, modelo_whisper="small"):
     return 0 if ok else 1
 
 
-INTERJ = {"ah", "oh", "ay", "eh", "uh", "uy", "vale", "y", "no", "pues", "bueno", "anda", "venga", "va"}
+INTERJ = {"ah", "oh", "ay", "eh", "uh", "uy"}   # 28/11/2026: solo sonidos sueltos; «vale», «no»… de más sí cuentan (Calidad los cuenta)
 
 
 def preparar(pedido, out):

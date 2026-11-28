@@ -1,12 +1,12 @@
 {
   "aprobado": false,
-  "nota": 84,
+  "nota": 85,
   "motivos": [
-    "Audio: control_audio.json marca bloqueo real de pronunciación: la frase clave '¡Que lo resuelva el Neo!' se oye como '¡Que lo resuelva el mes!', lo que rompe el remate (el nombre del personaje protagonista no se entiende en el momento bisagra del giro). También 'lentejas' se pronuncia 'lenteas' en un pase. No es jerga tipo illo/pa (que no se penaliza): es un fallo de dicción de la voz diseñada que afecta a la comprensión del chiste.",
-    "Por lo demás la pieza cumple: 47.5s dentro de 45-70s, LUFS -14.85 y pico -1.14 dB correctos, sin silencios, isotipo 2026 válido en insignia y tarjeta de cierre, registro de personajes correcto (Neo único culto, resto vulgar/choni), giro bien sembrado (yogures de Rosa) y resuelto, moraleja en frase natural sin decir la palabra, recuerdo del episodio 521, post con cierre fijo y CTA correctos. Al ser renderizado el 27/11 22:09 (antes del 28/11), no se penaliza por abrir/cerrar con la casa: esa regla solo aplica a piezas producidas desde el 28/11."
+    "control_audio.json sigue marcando bloqueo real de pronunciación en esta re-generación de voces: faltan las palabras 'todas' (remate de Jambo 'yo me como las lentejas. Todas.') y 'usted' (remate final de Neo 'Rosa, cocina usted el lunes'), y sobran 'anda' y 'ustedes'. En la práctica: 1) el taco de Sindy '¡Manda huevos!' se oye como '¡Anda huevos!', perdiendo el vulgarismo exigido para el personaje (orden del dueño 22/11: los demás MUY mal hablados, no un taco suelto se puede perder); 2) la frase bisagra de Neo 'Rosa, cocina usted el lunes' se oye como 'Rosa cocina Ustedes lunes', una concordancia rota justo en el remate que cierra el giro y entronca con la moraleja. No es jerga tipo illo/pa (eso no se penaliza): es un fallo de dicción/mezcla de la voz diseñada que afecta a la comprensión del remate, el mismo tipo de problema (aunque en frases distintas) que motivó el rechazo anterior (84) de este mismo episodio.",
+    "Por lo demás la pieza cumple el estándar: 47.6s dentro de 45-70s, LUFS -14.51 y pico -1.14 dB correctos, sin silencios, isotipo 2026 válido en insignia y tarjeta de cierre, apertura en frío correcta (abre directamente en la escena del lío con el gancho de texto, sin plano de casa), cierre en tarjeta de marca sin plano de casa, registro de personajes correcto donde se entiende, giro de los yogures bien sembrado y resuelto, moraleja en frase natural sin decir la palabra, recuerdo del episodio 521 presente y post con cierre fijo y CTA correctos."
   ],
-  "como_arreglarlo": "CREADOR: regenerar solo el audio de las frases 'Hay doce yogures tuyos' / '¡Que lo resuelva el Neo!' con el workflow de voces (Gemini TTS, voice_jsbas0g97111 para Jambo y la voz de Sindy en esa línea) para que 'Neo' y 'lentejas' se pronuncien con claridad, y volver a mezclar/renderizar el mp4 final (gen_promos.py + render.mjs --final en Neogest Studio). No hace falta tocar guion, imagen ni post.",
-  "fecha": "2026-11-28T00:13:39Z",
+  "como_arreglarlo": "CREADOR: regenerar solo el audio de las frases 'Prima… yo me como las lentejas. Todas.' (Jambo), '¡Manda huevos! Yo pagué la compra. ¡Con mi tarjeta!' (Sindy) y 'Resuelto. Con lo que hay hago un menú de siete días. Sin repetir. Rosa, cocina usted el lunes.' (Neo) con el workflow de voces (Gemini TTS, voces vigentes de cada personaje) para que 'todas', 'Manda' y 'usted' se pronuncien con claridad y sin sobrar palabras, y volver a mezclar/renderizar el mp4 final (gen_promos.py + render.mjs --final en Neogest Studio). No hace falta tocar guion, imagen ni post.",
+  "fecha": "2026-11-28T07:11:53Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-27T22:09:48+00:00"
+  "render": "2026-11-28T07:09:48+00:00"
 }

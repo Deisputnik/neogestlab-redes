@@ -264,7 +264,8 @@ async def main():
             pl = e.get("plano")
             if pl in PLANOS and (e["h"] is None or e["h"] in [c["who"] for c in cast]): sc["shot"] = pl
             if e.get("sello"): sc["texts"].append({"id": uid(), "text": e["sello"], "style": "badge", "anim": "pop", "start": 0.4, "y": 0.3, "sfx": "impacto"})
-            if e.get("risas"): sc["texts"].append({"id": uid(), "text": "😂", "style": "badge", "anim": "pop", "start": max(0.1, dur * 0.55), "y": 0.08, "sfx": "risas"})
+            if e.get("risas"):   # 28/11/2026: la risa entra al TERMINAR la réplica (antes al 55 % y tapaba el remate: «el Neo» no se oía en 530/535)
+                sc["texts"].append({"id": uid(), "text": "😂", "style": "badge", "anim": "pop", "start": dur + 0.05, "y": 0.08, "sfx": "risas"}); sc["duration"] = max(sc["duration"], dur + 0.9)
             scenes.append(sc)
         # v5.3 (22/11): los créditos van ANTES del plano de cierre; el ÚLTIMO plano del vídeo es la tarjeta
         # «Cosas de Casa» idéntica a la de apertura (Calidad rechazó 351/353 por acabar en créditos).
