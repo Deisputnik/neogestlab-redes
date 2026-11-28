@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-27T20:31:04+00:00",
+  "actualizado": "2026-11-28T02:41:04+00:00",
   "cuenta": {
     "id": "17841400403112257",
     "followers_count": 1597,
@@ -18,15 +18,15 @@
       "permalink": "https://www.instagram.com/reel/DgPpjZ_Sc_4/",
       "timestamp": "2026-11-27T12:11:41+0000",
       "metricas": {
-        "reach": 4,
-        "views": 11,
+        "reach": 8,
+        "views": 17,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 0,
         "total_interactions": 0,
-        "ig_reels_avg_watch_time": 21004,
-        "ig_reels_video_view_total_time": 105023
+        "ig_reels_avg_watch_time": 14486,
+        "ig_reels_video_view_total_time": 173835
       }
     },
     {
@@ -333,15 +333,15 @@
       "permalink": "https://www.instagram.com/reel/DgE7Cm1Ff81/",
       "timestamp": "2026-11-23T08:12:38+0000",
       "metricas": {
-        "reach": 31,
-        "views": 37,
+        "reach": 32,
+        "views": 38,
         "saved": 0,
         "shares": 1,
         "comments": 0,
         "likes": 2,
         "total_interactions": 4,
-        "ig_reels_avg_watch_time": 6542,
-        "ig_reels_video_view_total_time": 261708
+        "ig_reels_avg_watch_time": 6408,
+        "ig_reels_video_view_total_time": 262761
       }
     },
     {
@@ -459,15 +459,15 @@
       "permalink": "https://www.instagram.com/reel/Df-czNBlMRB/",
       "timestamp": "2026-11-20T19:53:01+0000",
       "metricas": {
-        "reach": 132,
-        "views": 171,
+        "reach": 133,
+        "views": 172,
         "saved": 0,
         "shares": 0,
         "comments": 0,
         "likes": 3,
         "total_interactions": 5,
-        "ig_reels_avg_watch_time": 9307,
-        "ig_reels_video_view_total_time": 1237931
+        "ig_reels_avg_watch_time": 9282,
+        "ig_reels_video_view_total_time": 1243807
       }
     },
     {
@@ -966,6 +966,10 @@
     },
     {
       "fecha": "2026-11-27T20:31+00:00",
+      "seguidores": 1597
+    },
+    {
+      "fecha": "2026-11-28T02:41+00:00",
       "seguidores": 1597
     }
   ]
