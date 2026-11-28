@@ -2,5 +2,9 @@
   "aprobado": false,
   "nota": 85,
   "fecha": "2026-11-27T21:10:45Z",
-  "revisor": "Calidad (API)"
+  "revisor": "Calidad (API)",
+  "aprobado_anterior": false,
+  "nota_anterior": 85,
+  "caducado": "2026-11-28T07:10:10+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-28T07:10:10+00:00"
 }

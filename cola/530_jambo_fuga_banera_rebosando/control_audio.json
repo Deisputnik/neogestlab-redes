@@ -1,12 +1,12 @@
 {
   "aprobado": false,
-  "duracion_s": 44.27,
+  "duracion_s": 46.0,
   "bloqueos": [
-    "voz distinta del guion: faltan ['resuelva', 'el', 'neo'], sobran ['insuva'] (rehacer esas frases)"
+    "voz distinta del guion: faltan ['descalza', 'prima', 'siempre', 'neo', 'empieza'], sobran ['deca', 'rima', 'asi', 'me', 'empiezo', 'vale'] (rehacer esas frases)"
   ],
   "avisos": [],
-  "transcripcion": "Se inunda el salón. Y yo no he tocado nada. Tranquila, Rosa. Es la presión del agua. Lo sé. Manda huevos. Llevo una hora con el cubo. Descalza. Prima, yo tapo el agujero con un bocadillo. Ojo, tu bañera lleva rebosando desde las diez. Como lo de fichar con huella. Siempre acaba pagando otra. Ya vale, Rosa. Que lo insuva. Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa empieza usted. Quien manda en casa también cierra el grifo.",
+  "transcripcion": "Se inunda el salón y yo no he tocado nada. Tranquila, Rosa. Es la presión del agua. Lo sé. Manda huevos. Llevo una hora con el cubo. Deca... Rima, yo... Tapo el agujero con un bocadillo. ¡Ojo! Tu bañera lleva rebosando desde las diez. ¡Como lo de fichar con huella! ¡Así me acaba pagando otra! Ya vale, Rosa. Que lo resuelva el... Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empiezo usted. Vale. Quien manda en casa también cierra el grifo.",
   "guion": "¡Se inunda el salón! ¡Y yo no he tocado nada! ¡Tranquila, Rosa! Es la presión del agua. Lo sé. ¡Manda huevos! Llevo una hora con el cubo. ¡Descalza! Prima… yo tapo el agujero con un bocadillo. ¡Ojo! ¡Tu bañera lleva rebosando desde las diez! ¡Como lo de fichar con huella! ¡Siempre acaba pagando otra! ¡Ya vale, Rosa! ¡Que lo resuelva el Neo! Resuelto. Pongo un aviso para cerrar el grifo y reparto la limpieza por turnos. Rosa, empieza usted. Quien manda en casa también cierra el grifo.",
-  "lufs": -14.8,
-  "pico_dbfs": -1.7
+  "lufs": -14.5,
+  "pico_dbfs": -1.4
 }

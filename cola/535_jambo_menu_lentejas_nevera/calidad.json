@@ -8,5 +8,9 @@
   "como_arreglarlo": "CREADOR: regenerar solo el audio de las frases 'Hay doce yogures tuyos' / '¡Que lo resuelva el Neo!' con el workflow de voces (Gemini TTS, voice_jsbas0g97111 para Jambo y la voz de Sindy en esa línea) para que 'Neo' y 'lentejas' se pronuncien con claridad, y volver a mezclar/renderizar el mp4 final (gen_promos.py + render.mjs --final en Neogest Studio). No hace falta tocar guion, imagen ni post.",
   "fecha": "2026-11-28T00:13:39Z",
   "revisor": "Calidad (API)",
-  "render": "2026-11-27T22:09:48+00:00"
+  "render": "2026-11-27T22:09:48+00:00",
+  "aprobado_anterior": false,
+  "nota_anterior": 84,
+  "caducado": "2026-11-28T07:09:48+00:00",
+  "motivo_caducidad": "vídeo externo subido 2026-11-28T07:09:48+00:00"
 }
