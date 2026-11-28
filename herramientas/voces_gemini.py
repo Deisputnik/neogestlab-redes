@@ -5,6 +5,7 @@ El plan gratuito da 10 peticiones por día y por modelo, así que no se puede pe
       Por cada personaje manda TODAS sus réplicas de TODOS los episodios del pedido en una sola petición, cada frase con su intención
       (emoción de la escena + carácter del personaje). Guarda lote_<personaje>.wav y plan.json.
   empaquetar <pedido.json> <salida>  voces.tar con los mp3 y los <n>_voces.json, subido a una URL pública temporal (listo.json).
+  reparar <pedido.json> <salida>   (28/11/2026) repite solo las réplicas que no pasan el control de Calidad (hasta 2 rondas)
   cortar <pedido.json> <salida>    (necesita faster-whisper, numpy y ffmpeg)
       Localiza cada palabra con Whisper, corta el audio por réplica, ajusta ritmo y volumen y escribe <n>_<i>.mp3 y
       <n>_voces.json (duración y tiempos de cada palabra, lo que necesita gen_episodios.py para los subtítulos).
@@ -219,13 +220,16 @@ def generar(pedido, out):
                         msg = e.read().decode("utf-8", "replace")[:500]; info = {"modelo": modelo, "voz": voz, "http": e.code, "error": msg}
                         if e.code in (500, 503) and intento == 0:
                             time.sleep(15); continue
+                        if e.code == 429 and intento == 0 and re.search(r"per ?minute", msg, re.I):
+                            # 28/11/2026: el plan gratuito también limita a 3 peticiones por MINUTO; Neo se quedó sin voz por esto
+                            time.sleep(65); info = None; continue
                         break
                     except Exception as e:
                         info = {"modelo": modelo, "error": f"{type(e).__name__}: {e}"[:300]}; break
                 if info and info.get("archivo"):
                     break
             plan["personajes"][quien] = info; todo_bien = todo_bien and bool(info and info.get("archivo"))
-            print(quien, json.dumps(info, ensure_ascii=False)[:400], flush=True); time.sleep(8)
+            print(quien, json.dumps(info, ensure_ascii=False)[:400], flush=True); time.sleep(21)   # 3 peticiones/minuto como mucho
         json.dump(plan, open(f"{out}/plan.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return 0 if todo_bien else 1
 
@@ -339,11 +343,18 @@ def cortar(pedido, out, modelo_whisper="small"):
                     else:
                         j += 1
                 words = [{"w": w.strip(".,;:¡!¿?…«»"), "s": round(max(0, s_), 3), "e": round(min(max(en, s_ + 0.05), real), 3)} for (w, _), (s_, en) in zip(pal, tiempos)]
-                oidas = {nz(w) for w, _, _ in r2}; faltan = [w for w in claras_en(e["v"], e.get("_claras") or CLARAS_FIJAS) if nz(w) not in oidas]
-                if faltan:   # 28/11/2026: la palabra clara no se oye -> esta réplica se repite antes de mezclar
-                    informe.setdefault("repetir", []).append({"replica": f"{e['_n']}_{e['_i']}", "quien": quien, "frase": e["v"], "no_se_oye": faltan,
-                                                             "oido": " ".join(w.strip() for w, _, _ in r2)})
-                    print("REPETIR", e["_n"], e["_i"], quien, faltan, flush=True)
+                oido = " ".join(w.strip() for w, _, _ in r2); oidas = {nz(w) for w, _, _ in r2}
+                faltan = [w for w in claras_en(e["v"], e.get("_claras") or CLARAS_FIJAS) if nz(w) not in oidas]
+                try:   # 28/11/2026: el MISMO comparador que usa Calidad (control_audio.py), réplica a réplica, antes de mezclar
+                    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import control_audio as ca_
+                    f_, s_ = ca_.verificar(" ".join(w for w, _ in pal), oido, jambo_txt=" ".join(w for w, _ in pal) if quien == "jambo" else None)
+                    f_, s_ = ca_._quitar_cercanas(f_, s_)
+                except Exception as ex_:
+                    f_, s_ = [], []; print("aviso: control_audio no disponible:", ex_)
+                if faltan or f_ or s_:   # 28/11/2026: no se oye bien -> esta réplica se repite (reparar) antes de mezclar
+                    informe.setdefault("repetir", []).append({"replica": f"{e['_n']}_{e['_i']}", "quien": quien, "frase": e["v"],
+                                                             "no_se_oye": list(dict.fromkeys(faltan + f_)), "sobra": s_, "oido": oido})
+                    print("REPETIR", e["_n"], e["_i"], quien, faltan + f_, s_, flush=True)
                 manifiesto.setdefault(e["_n"], {})[f"{e['_n']}_{e['_i']}"] = {"quien": quien, "archivo": os.path.basename(mp3), "duration": round(real, 3), "words": words, "tempo": round(tempo, 3),
                                           "pal_s": round(len(pal) / real, 2), "texto": " ".join(w for w, _ in pal), "oido": " ".join(w.strip() for w, _, _ in r2)}
         for nn, mm in manifiesto.items():
@@ -352,6 +363,51 @@ def cortar(pedido, out, modelo_whisper="small"):
         for q, v in informe.items():
             print(q, json.dumps(v, ensure_ascii=False)[:500])
     return 0 if ok else 1
+
+
+def reparar(pedido, out, rondas=2):
+    """28/11/2026 (orden del dueño «que no pase más»): repite SOLO las réplicas de informe.json → «repetir» y las de los personajes sin
+    audio (p. ej. un 429), hasta 2 rondas. Cada ronda gasta una petición por personaje afectado. Las réplicas nuevas sustituyen a las
+    viejas en <n>_voces.json; si una sigue mal, queda en «repetir» y el episodio NO se mezcla (LEEME del estudio)."""
+    import shutil
+    for r in range(1, rondas + 1):
+        inf = json.load(open(f"{out}/informe.json", encoding="utf-8"))
+        malas = {x["replica"] for x in inf.get("repetir") or []}
+        sin_audio = {q for q, v in inf.items() if q != "repetir" and (isinstance(v, str) or (isinstance(v, dict) and v.get("error")))}
+        if not malas and not sin_audio:
+            print("reparar: nada que repetir"); return 0
+        print(f"reparar ronda {r}: réplicas {sorted(malas)} · personajes sin audio {sorted(sin_audio)}", flush=True)
+        sub = json.loads(json.dumps(pedido)); sub.pop("solo", None); sub.pop("disenar", None); sub.pop("muestras", None)
+        for ep in sub["episodios"]:
+            for i, e in enumerate(ep["escenas"]):
+                if f"{ep['slug'][:3]}_{i}" not in malas and e.get("h") not in sin_audio:
+                    e.pop("v", None)   # sin «v» la réplica ni se pide ni se corta; el índice de escena se conserva
+        d = f"{out}/ronda{r}"; os.makedirs(d, exist_ok=True)
+        generar(sub, d)
+        try:
+            cortar(sub, d)
+        except Exception as ex:
+            print("reparar: corte fallido", ex); continue
+        inf2 = json.load(open(f"{d}/informe.json", encoding="utf-8")); malas2 = {x["replica"] for x in inf2.get("repetir") or []}
+        hechas = set()
+        for nn in sorted({ep["slug"][:3] for ep in pedido["episodios"]}):
+            if not os.path.exists(f"{d}/{nn}_voces.json"):
+                continue
+            nuevo = json.load(open(f"{d}/{nn}_voces.json", encoding="utf-8")); bp = f"{out}/{nn}_voces.json"
+            base = json.load(open(bp, encoding="utf-8")) if os.path.exists(bp) else {}
+            for k, v in nuevo.items():
+                if k in malas2 and k in base:
+                    continue   # la nueva sigue mal y había una vieja: se queda la vieja y sigue en «repetir»
+                shutil.copy(f"{d}/{v['archivo']}", f"{out}/{v['archivo']}"); base[k] = v; hechas.add(k)
+            json.dump(base, open(bp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        for q, v in inf2.items():
+            if q != "repetir" and isinstance(v, dict) and not v.get("error"):
+                inf[q] = v
+        inf["repetir"] = [x for x in inf.get("repetir") or [] if x["replica"] not in hechas] + [x for x in inf2.get("repetir") or [] if x["replica"] in hechas]
+        inf.setdefault("rondas", []).append({"ronda": r, "repetidas": sorted(malas), "sin_audio": sorted(sin_audio), "siguen_mal": sorted(malas2)})
+        json.dump(inf, open(f"{out}/informe.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    inf = json.load(open(f"{out}/informe.json", encoding="utf-8"))
+    return 0 if not inf.get("repetir") else 1
 
 
 def empaquetar(pedido, out):
@@ -388,4 +444,4 @@ def empaquetar(pedido, out):
 if __name__ == "__main__":
     modo, ruta, salida = sys.argv[1], sys.argv[2], sys.argv[3]; os.makedirs(salida, exist_ok=True)
     ped = json.load(open(ruta, encoding="utf-8"))
-    sys.exit({"generar": generar, "cortar": cortar, "empaquetar": empaquetar}[modo](ped, salida))
+    sys.exit({"generar": generar, "cortar": cortar, "reparar": reparar, "empaquetar": empaquetar}[modo](ped, salida))

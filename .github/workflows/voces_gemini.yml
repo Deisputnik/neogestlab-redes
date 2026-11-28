@@ -19,7 +19,7 @@ permissions:
 jobs:
   voces:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -37,7 +37,9 @@ jobs:
           ls /tmp/voces/lote_*.wav >/dev/null 2>&1 || { echo "Sin pistas que cortar"; exit 0; }
           pip install --quiet faster-whisper numpy imageio-ffmpeg
           export FFMPEG=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
-          python3 herramientas/voces_gemini.py cortar equipo/voces_gemini/pedido.json /tmp/voces
+          # 28/11/2026: un personaje sin audio o una réplica mal dicha ya no tumban el lote: «reparar» las repite (hasta 2 rondas)
+          python3 herramientas/voces_gemini.py cortar equipo/voces_gemini/pedido.json /tmp/voces || echo "cortar: hay réplicas o personajes por repetir"
+          python3 herramientas/voces_gemini.py reparar equipo/voces_gemini/pedido.json /tmp/voces || echo "reparar: quedan réplicas en «repetir» (ver listo.json)"
           python3 herramientas/voces_gemini.py empaquetar equipo/voces_gemini/pedido.json /tmp/voces
           echo '```' >> $GITHUB_STEP_SUMMARY; cat /tmp/voces/listo.json >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY
       - uses: actions/upload-artifact@v4
