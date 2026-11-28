@@ -182,7 +182,10 @@ ENCUADRES_CASA = [
 ]
 
 def transicion_casa(k):
-    bg = ({"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0, "camera": ENCUADRES_CASA[k % len(ENCUADRES_CASA)]} if COSAS_DE_CASA_VIDEO
+    # 28/11/2026: CASA_VECTORIAL=1 usa el set dibujado «casa» en los planos entre estancias (Calidad rechazó 537 por un plano
+    # que parecía fotorrealista a mitad de episodio). Sin la variable, igual que antes (vídeo de la intro).
+    vect = os.environ.get("CASA_VECTORIAL") == "1"
+    bg = ({"type": "video", "url": COSAS_DE_CASA_VIDEO, "start": 0.0, "camera": ENCUADRES_CASA[k % len(ENCUADRES_CASA)]} if COSAS_DE_CASA_VIDEO and not vect
           else {"type": "set", "set": "casa", "hour": 19, "night": False})
     return {"id": uid(), "duration": 1.2, "transition": "fade", "voice": None, "background": bg, "texts": []}
 

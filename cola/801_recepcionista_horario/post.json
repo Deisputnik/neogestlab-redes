@@ -1,56 +1,57 @@
 {
-  "tipo": "reel",
-  "texto": "¿Otra llamada solo para preguntar el horario?\nUn asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora.\nNosotros lo configuramos y lo mantenemos. Desde 150 € al mes, sin permanencia.\n¿Qué te preguntan más por teléfono? Dilo en una palabra.\nMándaselo a quien no da abasto con el teléfono.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=instagram\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA).",
-  "cuando": "2026-11-28T19:40:00+01:00",
-  "compartir_en_feed": true,
-  "formato": "Promo de app · RECREACIÓN (rótulo «Recreación · voces sintéticas» durante toda la llamada; voces ElevenLabs (narrador Martin Osborne, Lydia y Raquel); clips de la Biblioteca; música de la biblioteca del estudio)",
-  "app": "Recepcionista 24h",
-  "app_slug": "recepcionista-24h",
-  "gancho": "¿Otra llamada por el horario?",
-  "_fuentes": [
-    "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto slug recepcionista-24h (estado activo; consultada por MCP el 22/11/2026): hechos_verificados «Atiende llamadas las 24 horas», «Reserva citas durante la llamada con Google Calendar, Outlook, Cal.com o Calendly», «Después de cada llamada llega un correo con el resumen», «Responde con la información del negocio a partir de documentos propios», «Neogest Lab se encarga del alta, la configuración y los cambios», precio «150 €/mes con hasta 100 llamadas… sin permanencia».",
-    "equipo/encargos/recepcionista_24h.md (formato RECREACIÓN y cierre «Solicita información gratuita»)."
-  ],
-  "_comprobado": "22/11/2026: el vídeo es una RECREACIÓN rotulada en pantalla durante toda la llamada (voces sintéticas edge-tts); no se presenta como llamada real ni como persona. Cada afirmación sale de hechos_verificados de la ficha: atiende a cualquier hora, responde con la información del negocio, reserva citas en el calendario, correo con el resumen. Precio solo en el post («desde 150 € al mes», «sin permanencia»). No se nombra al proveedor, no hay clientes, cifras de ahorro ni «prueba gratuita» (prohibido en la ficha: el cierre es «Solicita información gratuita»). El horario y el hueco de la cita que se oyen son de ejemplo. Sin datos de ningún negocio real ni voz del dueño.",
-  "_nota_creador": "22/11/2026 Creador (sesión de desatasco, orden del dueño): el vídeo de la llamada real del 16/11 se perdió con el repo anterior (cuenta suspendida) y no está en la release. Pieza REHECHA en Neogest Studio como RECREACIÓN (respaldo previsto en el encargo), con música. Si el dueño vuelve a grabar una llamada real, se puede sustituir.",
-  "motor": "neogest-studio",
-  "comentario_fijado": "¿Qué te preguntan más por teléfono? Dilo en una palabra. Más en @neogestlab",
-  "avance_siguiente": "Siguiente: qué pasa cuando llaman con el negocio cerrado",
-  "portada_ms": 1000,
-  "monetizacion": {
-    "objetivo": "solicitud_informacion",
-    "oferta": "Recepcionista 24h: información gratuita en /solicitar",
-    "paso_embudo": "alcance → visita al perfil → solicitud de información"
-  },
-  "youtube": {
-    "titulo": "¿Otra llamada solo para preguntar el horario? #Shorts",
-    "descripcion": "¿Otra llamada solo para preguntar el horario? Un asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora. Recreación con voces sintéticas. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
-    "etiquetas": [
-      "asistente telefónico",
-      "recepcionista virtual",
-      "autónomos",
-      "pymes",
-      "negocios"
-    ]
-  },
-  "facebook": {
-    "texto": "¿Otra llamada solo para preguntar el horario?\nUn asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA)."
-  },
-  "asset": "801_recepcionista_horario.mp4",
-  "renderizado": "2026-11-22T23:16:31+00:00",
-  "duracion_s": 29.0,
-  "audio": {
-    "lufs_integrados": -13.8,
-    "pico_dbfs": -1.3,
-    "medido_con": "máster de Neogest Studio (scripts/masterizar.mjs, ebur128) y ffmpeg ebur128 sobre el mp4 subido"
-  },
-  "musica": {
-    "titulo": "Biblioteca de Neogest Studio · tech:1",
-    "licencia": "Pixabay Content License (sin atribución obligatoria)",
-    "origen": "src/studio/library.js de Neogest Studio"
-  },
-  "origen": "herramientas/estudio/gen_promos.py + promos_2026-11-22.json",
-  "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/eb09815c6b9ae1d648561936fe091812_801_recepcionista_horario_martin.mp4",
-  "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/eb09815c6b9ae1d648561936fe091812_801_recepcionista_horario_martin.mp4",
-  "_nota_voz_2026_11_28": "28/11/2026 (orden del dueño): re-render solo de audio con el narrador nuevo Martin Osborne (D7dkYvH17OKLgp4SLulf); misma imagen y guion. QC del render: LUFS -14,9/-14,4, pico -1,2/-1,0 dB."
+ "tipo": "reel",
+ "texto": "¿Otra llamada solo para preguntar el horario?\nMándaselo a quien no da abasto con el teléfono.\n¿Qué te preguntan más por teléfono? Dilo en una palabra.\nUn asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora. Nosotros lo configuramos y lo mantenemos. Desde 150 € al mes, sin permanencia.\nSolicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=instagram\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA).\n#autonomos #pymes #atencionalcliente #asistentevirtual",
+ "cuando": "2026-11-28T19:40:00+01:00",
+ "compartir_en_feed": true,
+ "formato": "Promo de app · RECREACIÓN (rótulo «Recreación · voces sintéticas» durante toda la llamada; voces ElevenLabs (narrador Martin Osborne, Lydia y Raquel); clips de la Biblioteca; música de la biblioteca del estudio)",
+ "app": "Recepcionista 24h",
+ "app_slug": "recepcionista-24h",
+ "gancho": "¿Otra llamada por el horario?",
+ "_fuentes": [
+  "Centro de Contenido Apps (Base44, appId 6ae5244d4e2b32702f0a3cd6), entidad Producto slug recepcionista-24h (estado activo; consultada por MCP el 22/11/2026): hechos_verificados «Atiende llamadas las 24 horas», «Reserva citas durante la llamada con Google Calendar, Outlook, Cal.com o Calendly», «Después de cada llamada llega un correo con el resumen», «Responde con la información del negocio a partir de documentos propios», «Neogest Lab se encarga del alta, la configuración y los cambios», precio «150 €/mes con hasta 100 llamadas… sin permanencia».",
+  "equipo/encargos/recepcionista_24h.md (formato RECREACIÓN y cierre «Solicita información gratuita»)."
+ ],
+ "_comprobado": "22/11/2026: el vídeo es una RECREACIÓN rotulada en pantalla durante toda la llamada (voces sintéticas edge-tts); no se presenta como llamada real ni como persona. Cada afirmación sale de hechos_verificados de la ficha: atiende a cualquier hora, responde con la información del negocio, reserva citas en el calendario, correo con el resumen. Precio solo en el post («desde 150 € al mes», «sin permanencia»). No se nombra al proveedor, no hay clientes, cifras de ahorro ni «prueba gratuita» (prohibido en la ficha: el cierre es «Solicita información gratuita»). El horario y el hueco de la cita que se oyen son de ejemplo. Sin datos de ningún negocio real ni voz del dueño.",
+ "_nota_creador": "22/11/2026 Creador (sesión de desatasco, orden del dueño): el vídeo de la llamada real del 16/11 se perdió con el repo anterior (cuenta suspendida) y no está en la release. Pieza REHECHA en Neogest Studio como RECREACIÓN (respaldo previsto en el encargo), con música. Si el dueño vuelve a grabar una llamada real, se puede sustituir.",
+ "motor": "neogest-studio",
+ "comentario_fijado": "¿Qué te preguntan más por teléfono? Dilo en una palabra. Más en @neogestlab",
+ "avance_siguiente": "Siguiente: qué pasa cuando llaman con el negocio cerrado",
+ "portada_ms": 1000,
+ "monetizacion": {
+  "objetivo": "solicitud_informacion",
+  "oferta": "Recepcionista 24h: información gratuita en /solicitar",
+  "paso_embudo": "alcance → visita al perfil → solicitud de información"
+ },
+ "youtube": {
+  "titulo": "¿Otra llamada solo para preguntar el horario? #Shorts",
+  "descripcion": "¿Otra llamada solo para preguntar el horario? Un asistente telefónico con inteligencia artificial coge la llamada, contesta con la información de tu negocio y puede reservar la cita, a cualquier hora. Recreación con voces sintéticas. Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=youtube · By Neogest Lab",
+  "etiquetas": [
+   "asistente telefónico",
+   "recepcionista virtual",
+   "autónomos",
+   "pymes",
+   "negocios"
+  ]
+ },
+ "facebook": {
+  "texto": "¿Otra llamada solo para preguntar el horario?\nCompártelo con quien no da abasto con el teléfono 😂\n¿Qué te preguntan más por teléfono? Dilo en una palabra.\nUn asistente telefónico con inteligencia artificial coge la llamada y contesta con la información de tu negocio, a cualquier hora.\nRecreación: no es una llamada real. Las voces son sintéticas (generadas por IA).\n#autonomos #pymes #atencionalcliente",
+  "comentario": "Solicita información gratuita: sin tarjeta, sin datos bancarios y sin compromiso → https://centro-de-contenido-apps-2f0a3cd6.base44.app/solicitar?app=recepcionista-24h&src=facebook"
+ },
+ "asset": "801_recepcionista_horario.mp4",
+ "renderizado": "2026-11-22T23:16:31+00:00",
+ "duracion_s": 29.0,
+ "audio": {
+  "lufs_integrados": -13.8,
+  "pico_dbfs": -1.3,
+  "medido_con": "máster de Neogest Studio (scripts/masterizar.mjs, ebur128) y ffmpeg ebur128 sobre el mp4 subido"
+ },
+ "musica": {
+  "titulo": "Biblioteca de Neogest Studio · tech:1",
+  "licencia": "Pixabay Content License (sin atribución obligatoria)",
+  "origen": "src/studio/library.js de Neogest Studio"
+ },
+ "origen": "herramientas/estudio/gen_promos.py + promos_2026-11-22.json",
+ "_video_externo_usado": "https://media.base44.com/videos/public/6af862101565c330cf06389f/eb09815c6b9ae1d648561936fe091812_801_recepcionista_horario_martin.mp4",
+ "video_externo": "https://media.base44.com/videos/public/6af862101565c330cf06389f/eb09815c6b9ae1d648561936fe091812_801_recepcionista_horario_martin.mp4",
+ "_nota_voz_2026_11_28": "28/11/2026 (orden del dueño): re-render solo de audio con el narrador nuevo Martin Osborne (D7dkYvH17OKLgp4SLulf); misma imagen y guion. QC del render: LUFS -14,9/-14,4, pico -1,2/-1,0 dB."
 }
