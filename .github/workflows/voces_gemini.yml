@@ -28,17 +28,20 @@ jobs:
       - name: Generar una pista por personaje
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 herramientas/voces_gemini.py generar equipo/voces_gemini/pedido.json /tmp/voces
+        run: |
+          python3 herramientas/voces_gemini.py preparar equipo/voces_gemini/pedido.json /tmp/voces
+          [ -f /tmp/voces/solo_reparar ] || python3 herramientas/voces_gemini.py generar equipo/voces_gemini/pedido.json /tmp/voces
       - name: Cortar por réplica y empaquetar
         if: ${{ !cancelled() }}
         env:
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          ls /tmp/voces/lote_*.wav >/dev/null 2>&1 || { echo "Sin pistas que cortar"; exit 0; }
+          [ -f /tmp/voces/solo_reparar ] || ls /tmp/voces/lote_*.wav >/dev/null 2>&1 || { echo "Sin pistas que cortar"; exit 0; }
           pip install --quiet faster-whisper numpy imageio-ffmpeg
           export FFMPEG=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
           # 28/11/2026: un personaje sin audio o una réplica mal dicha ya no tumban el lote: «reparar» las repite (hasta 2 rondas)
-          python3 herramientas/voces_gemini.py cortar equipo/voces_gemini/pedido.json /tmp/voces || echo "cortar: hay réplicas o personajes por repetir"
+          [ -f /tmp/voces/solo_reparar ] || python3 herramientas/voces_gemini.py cortar equipo/voces_gemini/pedido.json /tmp/voces || echo "cortar: hay réplicas o personajes por repetir"
           python3 herramientas/voces_gemini.py reparar equipo/voces_gemini/pedido.json /tmp/voces || echo "reparar: quedan réplicas en «repetir» (ver listo.json)"
           python3 herramientas/voces_gemini.py empaquetar equipo/voces_gemini/pedido.json /tmp/voces
           echo '```' >> $GITHUB_STEP_SUMMARY; cat /tmp/voces/listo.json >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY
@@ -49,5 +52,6 @@ jobs:
           path: |
             /tmp/voces/*.json
             /tmp/voces/*.wav
+            /tmp/voces/ronda*/*.json
             /tmp/voces/voces.tar
           if-no-files-found: ignore
