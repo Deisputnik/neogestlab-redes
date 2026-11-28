@@ -1,10 +1,12 @@
 {
   "aprobado": false,
-  "nota": 85,
-  "fecha": "2026-11-27T21:10:45Z",
+  "nota": 82,
+  "motivos": [
+    "control_audio.json del render marca aprobado:false: la voz no coincide con el guion en frases clave (faltan 'descalza', 'prima', 'siempre', 'neo', 'empieza'; sobran 'deca', 'rima', 'asi', 'me', 'empiezo', 'vale'). No es jerga que Whisper ignora (illo/pa/tacos): son palabras del guion mal pronunciadas o sustituidas que rompen el chiste de Jambo ('Prima, yo tapo el agujero con un bocadillo' se oye como 'Deca... Rima, yo...') y restan claridad al remate de Neo ('Rosa, empieza usted' se oye 'empiezo... vale'), que según el estándar v11/v9(H5) debe entenderse a la primera.",
+    "La _voz_nota solo confirma que 'el Neo' y 'lentejas' quedaron claras tras el rehecho de voces, pero el propio control_audio generado en este mismo render sigue detectando el fallo en otras réplicas: el rehecho no resolvió el problema."
+  ],
+  "como_arreglarlo": "CREADOR/CENTRO: regenerar la voz de las réplicas de Jambo ('Prima… yo tapo el agujero con un bocadillo') y de Neo ('Rosa, empieza usted') con el workflow de voces diseñadas (voice_jsbas0g97111 y la de Neo), protegiendo esas palabras concretas como ya se hizo con 'el Neo' y 'lentejas', y volver a correr control_audio.py hasta que salga aprobado:true antes de re-render final. El resto de la pieza (duración, apertura en frío, LUFS/pico, marca, cierre) ya cumple y no hace falta tocarlo.",
+  "fecha": "2026-11-28T07:11:27Z",
   "revisor": "Calidad (API)",
-  "aprobado_anterior": false,
-  "nota_anterior": 85,
-  "caducado": "2026-11-28T07:10:10+00:00",
-  "motivo_caducidad": "vídeo externo subido 2026-11-28T07:10:10+00:00"
+  "render": "2026-11-28T07:10:10+00:00"
 }
